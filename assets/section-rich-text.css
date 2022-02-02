@@ -16,6 +16,11 @@
   width: calc(100% - 5rem / var(--font-body-scale));
 }
 
+.rich-text__blocks p {
+  max-width: 690px;
+  margin: 0 auto;
+}
+
 .rich-text__blocks * {
   overflow-wrap: break-word;
 }

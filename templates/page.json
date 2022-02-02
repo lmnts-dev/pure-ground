@@ -14,30 +14,24 @@
           "type": "heading",
           "settings": {
             "heading": "European Operations",
-            "heading_size": "h0"
+            "heading_size": "h2"
           }
         },
         "16438188434dae6d1d-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Signe BV is the European sister company to Pure Ground Ingredients in the US, offering a full range of certified organic and fair trade botanicals, culinary herbs and spices to our European customers from our convenient location in the Netherlands.In compliance with organic European and German\/BNN standards, Signe BV provides every organic and fair trade ingredient after verification and rigorous testing for pesticides including Glyphosate, micros, heavy metals, PA’s, and other parameters as required. Signe BV is certified organic by Skal.From Holland we offer all organic ingredients treated and processed to your specs; including steam sterilization, milling & granulation, blending and roasting services as needed.Signe BV is a manifestation of the international commitment of Pure Ground Ingredients, USA and further establishes us as a global organic innovator.<\/p>"
+            "text": "<p>Signe BV is the European sister company to Pure Ground Ingredients in the US, offering a full range of certified organic and fair trade botanicals, culinary herbs and spices to our European customers from our convenient location in the Netherlands.In compliance with organic European and German/BNN standards, Signe BV provides every organic and fair trade ingredient after verification and rigorous testing for pesticides including Glyphosate, micros, heavy metals, PA’s, and other parameters as required. Signe BV is certified organic by Skal.From Holland we offer all organic ingredients treated and processed to your specs; including steam sterilization, milling & granulation, blending and roasting services as needed.Signe BV is a manifestation of the international commitment of Pure Ground Ingredients, USA and further establishes us as a global organic innovator.</p>"
           }
         }
       },
-      "block_order": [
-        "16438188434dae6d1d-0",
-        "16438188434dae6d1d-1"
-      ],
+      "block_order": ["16438188434dae6d1d-0", "16438188434dae6d1d-1"],
       "settings": {
         "color_scheme": "background-1",
         "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
+        "padding_top": 100,
+        "padding_bottom": 100
       }
     }
   },
-  "order": [
-    "main",
-    "1643818843f333eb74"
-  ]
+  "order": ["main", "1643818843f333eb74"]
 }
