@@ -1,0 +1,43 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "1643818843f333eb74": {
+      "type": "rich-text",
+      "blocks": {
+        "16438188434dae6d1d-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Our Mission",
+            "heading_size": "h0"
+          }
+        },
+        "16438188434dae6d1d-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>lorem ipsum<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16438188434dae6d1d-0",
+        "16438188434dae6d1d-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1643818843f333eb74"
+  ]
+}
