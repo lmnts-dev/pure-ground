@@ -7,6 +7,9 @@
         "padding_bottom": 100
       }
     },
+    "image": {
+      "type": "image"
+    },
     "1643818843f333eb74": {
       "type": "rich-text",
       "blocks": {
@@ -33,5 +36,5 @@
       }
     }
   },
-  "order": ["main", "1643818843f333eb74"]
+  "order": ["image", "main", "1643818843f333eb74"]
 }
