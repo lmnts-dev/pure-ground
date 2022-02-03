@@ -1,34 +1,42 @@
 /* Color custom properties */
 
 :root,
-.color-background-1 {
-  --color-foreground: var(--color-base-text);
-  --color-background: var(--color-base-background-1);
-  --gradient-background: var(--gradient-base-background-1);
+.color-background-1,
+.color-cream {
+  --color-foreground: rgba(var(--color-ground));
+  --color-background: rgba(var(--color-cream));
 }
 
-.color-background-2 {
-  --color-foreground: var(--color-base-text);
-  --color-background: var(--color-base-background-2);
-  --gradient-background: var(--gradient-base-background-2);
+.color-background-2,
+.color-dark-cream {
+  --color-foreground: rgba(var(--color-ground));
+  --color-background: rgba(var(--color-dark-cream));
 }
 
-.color-inverse {
-  --color-foreground: var(--color-base-background-1);
-  --color-background: var(--color-base-text);
-  --gradient-background: rgb(var(--color-base-text));
+.color-inverse,
+.color-ground {
+  --color-foreground: rgba(var(--color-cream));
+  --color-background: rgba(var(--color-ground));
 }
 
-.color-accent-1 {
-  --color-foreground: var(--color-base-solid-button-labels);
-  --color-background: var(--color-base-accent-1);
-  --gradient-background: var(--gradient-base-accent-1);
+.color-grass {
+  --color-foreground: rgba(var(--color-cream));
+  --color-background: rgba(var(--color-grass));
 }
 
-.color-accent-2 {
-  --color-foreground: var(--color-base-solid-button-labels);
-  --color-background: var(--color-base-accent-2);
-  --gradient-background: var(--gradient-base-accent-2);
+.color-sun {
+  --color-foreground: rgba(var(--color-ground));
+  --color-background: rgba(var(--color-sun));
+}
+
+.color-sky {
+  --color-foreground: rgba(var(--color-ground));
+  --color-background: rgba(var(--color-sky));
+}
+
+.color-tan {
+  --color-foreground: rgba(var(--color-ground));
+  --color-background: rgba(var(--color-tan));
 }
 
 .color-foreground-outline-button {
@@ -2700,10 +2708,7 @@ details-disclosure > details {
   position: absolute;
   inset: calc(var(--text-boxes-border-width) * -1);
   border-radius: var(--text-boxes-radius);
-  box-shadow: var(--text-boxes-shadow-horizontal-offset)
-    var(--text-boxes-shadow-vertical-offset)
-    var(--text-boxes-shadow-blur-radius)
-    rgba(var(--color-shadow), var(--text-boxes-shadow-opacity));
+  background: var(--color-background);
   z-index: -1;
 }
 

@@ -13,7 +13,8 @@
     {%- endif -%}
 
     {%- unless settings.type_header_font.system? and settings.type_body_font.system? -%}
-      <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
+      {% comment %} <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>{% endcomment %}
+      <link rel="stylesheet" href="https://use.typekit.net/lxx8fgf.css">
     {%- endunless -%}
 
     <title>
@@ -46,31 +47,39 @@
       {{ settings.type_header_font | font_face: font_display: 'swap' }}
 
       :root {
-        --font-body-family: {{ settings.type_body_font.family }}, {{ settings.type_body_font.fallback_families }};
+        --font-body-family: "Filson Pro"; /*{{ settings.type_body_font.family }}, {{ settings.type_body_font.fallback_families }};*/
         --font-body-style: normal; /*{{ settings.type_body_font.style }};*/
         --font-body-weight: 350; /*{{ settings.type_body_font.weight }};*/
 
-        --font-heading-family: {{ settings.type_header_font.family }}, {{ settings.type_header_font.fallback_families }};
+        --font-heading-family: "Filson Pro"; /*{{ settings.type_header_font.family }}, {{ settings.type_header_font.fallback_families }};*/
         --font-heading-style: normal; /*{{ settings.type_header_font.style }};*/
-        --font-heading-weight: bold; /*{{ settings.type_header_font.weight }};*/
+        --font-heading-weight: 900; /*{{ settings.type_header_font.weight }};*/
 
         --font-body-scale: 100%; /*{{ settings.body_scale | divided_by: 100.0 }};*/
         --font-heading-scale: 100%; /*{{ settings.heading_scale | times: 1.0 | divided_by: settings.body_scale }};*/
 
-        --color-base-text: 61, 41, 13; /*{{ settings.colors_text.red }}, {{ settings.colors_text.green }}, {{ settings.colors_text.blue }};*/
-        --color-shadow: 61, 41, 13; /* {{ settings.colors_text.red }}, {{ settings.colors_text.green }}, {{ settings.colors_text.blue }};*/
-        --color-base-background-1: 255, 248, 238; /*{{ settings.colors_background_1.red }}, {{ settings.colors_background_1.green }}, {{ settings.colors_background_1.blue }};*/
-        --color-base-background-2: 243, 239, 225; /*{{ settings.colors_background_2.red }}, {{ settings.colors_background_2.green }}, {{ settings.colors_background_2.blue }};*/
-        --color-base-solid-button-labels: 54, 106, 47; /*{{ settings.colors_solid_button_labels.red }}, {{ settings.colors_solid_button_labels.green }}, {{ settings.colors_solid_button_labels.blue }};*/
-        --color-base-outline-button-labels: 61, 41, 13; /*{{ settings.colors_outline_button_labels.red }}, {{ settings.colors_outline_button_labels.green }}, {{ settings.colors_outline_button_labels.blue }};*/
-        --color-base-accent-1: 54, 106, 47; /*{{ settings.colors_accent_1.red }}, {{ settings.colors_accent_1.green }}, {{ settings.colors_accent_1.blue }};*/
-        --color-base-accent-2: 213, 122, 32; /*{{ settings.colors_accent_2.red }}, {{ settings.colors_accent_2.green }}, {{ settings.colors_accent_2.blue }};*/
-        --payment-terms-background-color: 255, 248, 238; /*{{ settings.colors_background_1 }};*/
+        --color-cream: 255, 248, 238;
+        --color-dark-cream: 243, 239, 225;
+        --color-ground: 61, 41, 13;
+        --color-sun: 213, 122, 32;
+        --color-blue: 163, 205, 221;
+        --color-tan: 255, 233, 188;
+        --color-grass: 54, 106, 47;
 
-        --gradient-base-background-1: 255, 248, 238; /*{% if settings.gradient_background_1 != blank %}{{ settings.gradient_background_1 }}{% else %}{{ settings.colors_background_1 }}{% endif %};*/
-        --gradient-base-background-2: 243, 239, 225; /*{% if settings.gradient_background_2 != blank %}{{ settings.gradient_background_2 }}{% else %}{{ settings.colors_background_2 }}{% endif %};*/
-        --gradient-base-accent-1: 54, 106, 47; /*{% if settings.gradient_accent_1 != blank %}{{ settings.gradient_accent_1 }}{% else %}{{ settings.colors_accent_1 }}{% endif %};*/
-        --gradient-base-accent-2: 213, 122, 32; /*{% if settings.gradient_accent_2 != blank %}{{ settings.gradient_accent_2 }}{% else %}{{ settings.colors_accent_2 }}{% endif %};*/
+        --color-base-text: var(--color-ground); /*{{ settings.colors_text.red }}, {{ settings.colors_text.green }}, {{ settings.colors_text.blue }};*/
+        --color-shadow: var(--color-ground); /* {{ settings.colors_text.red }}, {{ settings.colors_text.green }}, {{ settings.colors_text.blue }};*/
+        --color-base-background-1: var(--color-cream); /*{{ settings.colors_background_1.red }}, {{ settings.colors_background_1.green }}, {{ settings.colors_background_1.blue }};*/
+        --color-base-background-2: var(--color-dark-cream); /*{{ settings.colors_background_2.red }}, {{ settings.colors_background_2.green }}, {{ settings.colors_background_2.blue }};*/
+        --color-base-solid-button-labels: var(--color-grass); /*{{ settings.colors_solid_button_labels.red }}, {{ settings.colors_solid_button_labels.green }}, {{ settings.colors_solid_button_labels.blue }};*/
+        --color-base-outline-button-labels: var(--color-ground); /*{{ settings.colors_outline_button_labels.red }}, {{ settings.colors_outline_button_labels.green }}, {{ settings.colors_outline_button_labels.blue }};*/
+        --color-base-accent-1: var(--color-grass); /*{{ settings.colors_accent_1.red }}, {{ settings.colors_accent_1.green }}, {{ settings.colors_accent_1.blue }};*/
+        --color-base-accent-2: var(--color-sun); /*{{ settings.colors_accent_2.red }}, {{ settings.colors_accent_2.green }}, {{ settings.colors_accent_2.blue }};*/
+        --payment-terms-background-color: var(--color-cream); /*{{ settings.colors_background_1 }};*/
+
+        --gradient-base-background-1: var(--color-cream); /*{% if settings.gradient_background_1 != blank %}{{ settings.gradient_background_1 }}{% else %}{{ settings.colors_background_1 }}{% endif %};*/
+        --gradient-base-background-2: var(--color-dark-cream); /*{% if settings.gradient_background_2 != blank %}{{ settings.gradient_background_2 }}{% else %}{{ settings.colors_background_2 }}{% endif %};*/
+        --gradient-base-accent-1: var(--color-grass); /*{% if settings.gradient_accent_1 != blank %}{{ settings.gradient_accent_1 }}{% else %}{{ settings.colors_accent_1 }}{% endif %};*/
+        --gradient-base-accent-2: var(--color-sun); /*{% if settings.gradient_accent_2 != blank %}{{ settings.gradient_accent_2 }}{% else %}{{ settings.colors_accent_2 }}{% endif %};*/
 
         --media-padding: 0px; /*{{ settings.media_padding }}px;*/
         --media-border-opacity: 1; /*{{ settings.media_border_opacity | divided_by: 100.0 }};*/
@@ -175,7 +184,7 @@
         min-height: 100%;
         margin: 0;
         font-size: 1.125rem;
-        letter-spacing: 0.06rem;
+        letter-spacing: 0.0rem;
         line-height: calc(1 + 0.8 / var(--font-body-scale));
         font-family: var(--font-body-family);
         font-style: var(--font-body-style);
@@ -190,6 +199,7 @@
     {% endstyle %}
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
+    {{ 'theme.css' | asset_url | stylesheet_tag }}
 
     {%- unless settings.type_body_font.system? -%}
       <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
