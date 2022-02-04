@@ -7,3 +7,25 @@ body {
   -webkit-font-smoothing: antialiased;
   min-height: 100%;
 }
+
+main {
+  > section {
+    > div {
+      padding: var(--sectionVerticalSpacing) var(--sectionHorizontalSpacing);
+      position: relative;
+      color: var(--color-foreground);
+
+      &:after {
+        content: "";
+        position: absolute;
+        pointer-events: none;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: var(--color-background);
+        z-index: -1;
+      }
+    }
+  }
+}

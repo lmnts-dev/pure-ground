@@ -1,6 +1,11 @@
 .section-footer {
   color: var(--color-foreground);
+  background: var(--color-background);
   position: relative;
+  padding: var(--sectionVerticalSpacing) var(--sectionHorizontalSpacing);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-columns: auto auto;
 
   &__plant-decor {
     display: flex;
@@ -19,5 +24,19 @@
         fill: var(--color-background);
       }
     }
+  }
+
+  &__branding {
+    grid-column: 1 / 2;
+  }
+
+  &__blocks {
+    grid-column: 2 / -1;
+    display: flex;
+    gap: var(--pxSize);
+  }
+
+  &__bottom {
+    grid-column: 1 / -1;
   }
 }

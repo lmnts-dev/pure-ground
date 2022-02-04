@@ -2,7 +2,7 @@
 {{ 'section-image.css' | asset_url | stylesheet_tag }}
 {% endcomment %}
 
-<div id="Section-image-{{ section.id }}" class="content-container section-image __style-{{ section.settings.image_style}} color-{{section.settings.color_scheme}}"  
+<div id="Section-image-{{ section.id }}" class="section-image __style-{{ section.settings.image_style}} color-{{section.settings.color_scheme}}"  
 >
   {%- if section.settings.image != blank -%}
     {%- if section.settings.image_style == "fullwidth" -%}
