@@ -1,5 +1,7 @@
 {% comment %}theme-check-disable UndefinedObject{% endcomment %}
+{% comment %}
 {{ 'section-footer.css' | asset_url | stylesheet_tag }}
+{% endcomment %}
 <link rel="stylesheet" href="{{ 'component-newsletter.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-list-menu.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-list-payment.css' | asset_url }}" media="print" onload="this.media='all'">
@@ -15,28 +17,26 @@
 <noscript>{{ 'disclosure.css' | asset_url | stylesheet_tag }}</noscript>
 
 {%- style -%}
-  .footer {
-    margin-top: {{ section.settings.margin_top | times: 0.75 | round: 0 }}px;
-  }
 
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
-
-  @media screen and (min-width: 750px) {
-    .footer {
-      margin-top: {{ section.settings.margin_top }}px;
-    }
-
-    .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
-    }
-  }
 {%- endstyle -%}
 
-<footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
+<footer class="section-footer content-container color-{{ section.settings.color_scheme }}">
+  <div class="section-footer__plant-decor">
+    {% render 'svg-plants' %}  
+    {% render 'svg-plants' %}  
+    {% render 'svg-plants' %}  
+    {% render 'svg-plants' %}  
+    {% render 'svg-plants' %}  
+  </div>
+
+  <div class="section-footer__logo">
+    {% render 'svg-logo-stacked' %}
+  </div>
+
   {%- if section.blocks.size > 0 or section.settings.newsletter_enable or section.settings.show_social -%}
     <div class="footer__content-top page-width">
       {%- if section.blocks.size > 0 -%}
@@ -388,7 +388,7 @@
 
 {% schema %}
 {
-  "name": "t:sections.footer.name",
+  "name": "Footer",
   "blocks": [
     {
       "type": "link_list",
@@ -476,28 +476,36 @@
       "id": "color_scheme",
       "options": [
         {
-          "value": "accent-1",
-          "label": "t:sections.footer.settings.color_scheme.options__1.label"
+          "value": "cream",
+          "label": "Cream (Default)"
         },
         {
-          "value": "accent-2",
-          "label": "t:sections.footer.settings.color_scheme.options__2.label"
+          "value": "dark-cream",
+          "label": "Dark Cream"
         },
         {
-          "value": "background-1",
-          "label": "t:sections.footer.settings.color_scheme.options__3.label"
+          "value": "grass",
+          "label": "Grass"
         },
         {
-          "value": "background-2",
-          "label": "t:sections.footer.settings.color_scheme.options__4.label"
+          "value": "sun",
+          "label": "Sun"
         },
         {
-          "value": "inverse",
-          "label": "t:sections.footer.settings.color_scheme.options__5.label"
+          "value": "ground",
+          "label": "Ground"
+        },
+        {
+          "value": "sky",
+          "label": "Sky"
+        },
+        {
+          "value": "tan",
+          "label": "Tan"
         }
       ],
-      "default": "background-1",
-      "label": "t:sections.footer.settings.color_scheme.label"
+      "default": "cream",
+      "label": "Color Scheme"
     },
     {
       "type": "header",

@@ -1,0 +1,22 @@
+.section-footer {
+  color: var(--color-foreground);
+  position: relative;
+
+  &__plant-decor {
+    display: flex;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    gap: 2%;
+
+    svg {
+      width: 20%;
+      height: auto;
+
+      * {
+        fill: var(--color-background);
+      }
+    }
+  }
+}

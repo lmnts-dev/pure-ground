@@ -13,9 +13,7 @@
               }
             }
           },
-          "block_order": [
-            "announcement-bar-0"
-          ]
+          "block_order": ["announcement-bar-0"]
         },
         "header": {
           "type": "header",
@@ -42,13 +40,10 @@
               }
             }
           },
-          "block_order": [
-            "footer-0",
-            "footer-1",
-            "footer-2"
-          ],
+          "block_order": ["footer-0", "footer-1", "footer-2"],
           "settings": {
             "show_social": true,
+            "color_scheme": "ground",
             "enable_country_selector": false,
             "enable_language_selector": false,
             "margin_top": 48
