@@ -37,8 +37,8 @@
           "footer-0": {
             "type": "link_list",
             "settings": {
-              "heading": "Products",
-              "menu": "footer"
+              "heading": "Resources",
+              "menu": "resources"
             }
           },
           "footer-1": {
