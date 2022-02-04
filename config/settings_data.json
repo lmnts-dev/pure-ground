@@ -47,23 +47,15 @@
               "heading": "Company",
               "menu": "company"
             }
-          },
-          "footer-2": {
-            "type": "text",
-            "settings": {
-              "heading": "Our mission",
-              "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
-            }
           }
         },
         "block_order": [
           "footer-0",
-          "footer-1",
-          "footer-2"
+          "footer-1"
         ],
         "settings": {
           "color_scheme": "ground",
-          "newsletter_enable": true,
+          "newsletter_enable": false,
           "newsletter_heading": "Subscribe to our emails",
           "show_social": true,
           "enable_country_selector": false,
