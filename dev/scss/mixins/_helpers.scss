@@ -13,10 +13,10 @@
 // --------------------------------------------------
 // svg background image
 
-$image-path: '{{ asset_url }}' !default;
+$image-path: "{{ asset_url }}" !default;
 
 @mixin background-svg($name, $size: false) {
-  background-image: url( #{'{{ "#{$name}.svg" | asset_url }}'} );
+  background-image: url(#{'{{ "#{$name}.svg" | asset_url }}'});
 
   @if ($size) {
     background-size: $size;
@@ -29,7 +29,8 @@ $image-path: '{{ asset_url }}' !default;
 //scss-lint:disable all
 @mixin font-file($asset-font-name) {
   src: url('{{ "#{$asset-font-name}.eot" | asset_url }}');
-  src: url('{{ "#{$asset-font-name}.eot" | asset_url }}?#iefix') format("embedded-opentype"),
+  src: url('{{ "#{$asset-font-name}.eot" | asset_url }}?#iefix')
+      format("embedded-opentype"),
     url('{{ "#{$asset-font-name}.woff" | asset_url }}') format("woff"),
     url('{{ "#{$asset-font-name}.ttf" | asset_url }}') format("truetype"),
     url('{{ "#{$asset-font-name}.svg" | asset_url }}') format("svg");
@@ -45,7 +46,7 @@ $image-path: '{{ asset_url }}' !default;
   position: relative;
 
   &::before {
-    content: '';
+    content: "";
     display: block;
     padding-top: ($height / $width) * 100%;
     width: 100%;
@@ -57,21 +58,6 @@ $image-path: '{{ asset_url }}' !default;
     position: absolute;
     right: 0;
     top: 0;
-  }
-}
-
-// --------------------------------------------------
-// links
-
-@mixin make-link($normal: $link-color, $hover: $link-hover-color, $active: $link-active-color) {
-  color: $normal;
-
-  &:hover {
-    color: $hover;
-  }
-
-  &:active {
-    color: $active;
   }
 }
 

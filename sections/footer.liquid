@@ -37,7 +37,7 @@
     {% render 'svg-logo-stacked' %}
 
     {%- if section.settings.address -%}
-      <div>
+      <div class="section-footer__branding__info p-sm">
         {{ section.settings.address }}
       </div>
     {%- endif -%}
@@ -48,16 +48,16 @@
       {%- for block in section.blocks -%}
         <div class="section-footer__blocks__block" {{ block.shopify_attributes }}>
           {%- if block.settings.heading != blank -%}
-            <p>{{- block.settings.heading | escape -}}</p>
+            <p class="section-footer__header caption">{{- block.settings.heading | escape -}}</p>
           {%- endif -%}
 
           {%- case block.type -%}
             {%- when 'link_list' -%}
               {%- if block.settings.menu != blank and block.settings.heading != blank -%}
-                <ul class="list-unstyled">
+                <ul class="section-footer__links list-unstyled">
                   {%- for link in block.settings.menu.links -%}
-                    <li>
-                      <a href="{{ link.url }}">
+                    <li class="section-footer__links__item">
+                      <a class="section-footer__links__item__link p-sm" href="{{ link.url }}">
                         {{ link.title }}
                       </a>
                     </li>
@@ -71,13 +71,26 @@
   {%- endif -%}
 
   <div class="section-footer__bottom">
+
+    <small class="section-footer__bottom__copywright p-sm">&copy; {{ shop.name }} {{ 'now' | date: "%Y" }}</small>
+
+    {%- if section.settings.secondary_links %}
+      <ul class="section-footer__bottom__sec-links section-footer__links list-unstyled">
+        {%- for link in section.settings.secondary_links.links -%}
+          <li class="section-footer__links__item">
+            <a class="section-footer__links__item__link p-sm" href="{{ link.url }}">
+              {{ link.title }}
+            </a>
+          </li>
+        {%- endfor -%}
+      </ul>
+    {%- endif -%}
+
     {%- if section.settings.show_social -%}
-      <div class="section-footer__social">
+      <div class="section-footer__bottom__social">
         {% render 'social-icons' %}
       </div>
     {%- endif -%}
-
-    <small class="copyright__content">&copy; {{ shop.name | link_to: routes.root_url }} {{ 'now' | date: "%Y" }}</small>
   </div>
 </footer>
 

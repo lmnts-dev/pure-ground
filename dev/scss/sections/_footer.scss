@@ -28,15 +28,66 @@
 
   &__branding {
     grid-column: 1 / 2;
+
+    &__info {
+      padding-top: var(--pxSize);
+    }
+
+    svg {
+      width: 100%;
+      height: auto;
+      max-width: 170px;
+
+      * {
+        fill: var(--color-foreground);
+      }
+    }
   }
 
   &__blocks {
     grid-column: 2 / -1;
     display: flex;
     gap: var(--pxSize);
+    justify-content: flex-end;
   }
 
   &__bottom {
     grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: var(--pxSize);
+
+    &__copywright,
+    &__sec-links {
+      opacity: 0.5;
+    }
+
+    &__copywright {
+      padding-right: var(--pxSize);
+      margin-bottom: 0;
+    }
+
+    &__sec-links {
+      flex: 1;
+      display: flex;
+      gap: var(--pxSize);
+    }
+
+    &__social {
+      padding-left: var(--pxSize);
+    }
+  }
+
+  &__header {
+    color: var(--color-accent);
+  }
+
+  &__links {
+    &__item {
+      &__link {
+        color: var(--color-foreground);
+      }
+    }
   }
 }
