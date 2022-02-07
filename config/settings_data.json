@@ -3,18 +3,8 @@
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
-        "blocks": {
-          "announcement-bar-0": {
-            "type": "announcement",
-            "settings": {
-              "text": "Welcome to our store",
-              "color_scheme": "background-1",
-              "link": ""
-            }
-          }
-        },
-        "block_order": ["announcement-bar-0"],
-        "settings": {}
+        "settings": {
+        }
       },
       "header": {
         "type": "header",
@@ -46,26 +36,33 @@
             }
           }
         },
-        "block_order": ["footer-0", "footer-1"],
+        "block_order": [
+          "footer-0",
+          "footer-1"
+        ],
         "settings": {
           "color_scheme": "ground",
           "newsletter_enable": false,
           "newsletter_heading": "Subscribe to our emails",
           "show_social": true,
-          "address": "<p>2535 Business Parkway<br/>Minden, NV 89423</p><p><a href=\"mailto:info@puregroundingredients.com\" title=\"mailto:info@puregroundingredients.com\">info@puregroundingredients.com</a><br/><a href=\"tel:775-297-4047\" title=\"tel:775-297-4047\">775-297-4047</a></p>",
+          "address": "<p>2535 Business Parkway<br\/>Minden, NV 89423<\/p><p><a href=\"mailto:info@puregroundingredients.com\" title=\"mailto:info@puregroundingredients.com\">info@puregroundingredients.com<\/a><br\/><a href=\"tel:775-297-4047\" title=\"tel:775-297-4047\">775-297-4047<\/a><\/p>",
           "secondary_links": "secondary"
         }
       },
       "main-password-header": {
         "type": "main-password-header",
-        "settings": {}
+        "settings": {
+        }
       },
       "main-password-footer": {
         "type": "main-password-footer",
-        "settings": {}
+        "settings": {
+        }
       }
     },
-    "content_for_index": []
+    "content_for_index": [
+
+    ]
   },
   "presets": {
     "Default": {
@@ -80,8 +77,11 @@
               }
             }
           },
-          "block_order": ["announcement-bar-0"],
-          "settings": {}
+          "block_order": [
+            "announcement-bar-0"
+          ],
+          "settings": {
+          }
         },
         "header": {
           "type": "header",
@@ -94,7 +94,8 @@
           "blocks": {
             "footer-0": {
               "type": "link_list",
-              "settings": {}
+              "settings": {
+              }
             },
             "footer-1": {
               "type": "link_list",
@@ -103,7 +104,10 @@
               }
             }
           },
-          "block_order": ["footer-0", "footer-1"],
+          "block_order": [
+            "footer-0",
+            "footer-1"
+          ],
           "settings": {
             "color_scheme": "ground",
             "show_social": true
@@ -111,11 +115,13 @@
         },
         "main-password-header": {
           "type": "main-password-header",
-          "settings": {}
+          "settings": {
+          }
         },
         "main-password-footer": {
           "type": "main-password-footer",
-          "settings": {}
+          "settings": {
+          }
         }
       }
     }
