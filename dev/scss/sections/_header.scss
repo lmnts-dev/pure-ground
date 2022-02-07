@@ -1,2 +1,22 @@
-.header {
+header {
+  height: var(--navSize);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .p-sm {
+    margin-bottom: 0;
+  }
+
+  nav.header__inline-menu {
+    flex: 1;
+
+    ul {
+      gap: calc(var(--pxSize) / 2);
+    }
+  }
+
+  .header__heading-link {
+    padding-right: var(--pxSize);
+  }
 }
