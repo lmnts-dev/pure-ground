@@ -27,8 +27,10 @@
         >
       </div>
     {% else %}
-      <div  style="background-image: url({{ section.settings.image | image_url: width: 1500 }})"
- class="section-image__blob"></div>
+      <div class="section-image__blob">
+        <div class="section-image__blob__image" style="background-image: url({{ section.settings.image | image_url: width: 1500 }})"></div>
+      </div>
+      
     {%- endif -%}
   {%- elsif section.settings.image_2 == blank -%}
     <div class="section-image__placeholder">
