@@ -1,12 +1,36 @@
 {
   "sections": {
     "main": {
-      "type": "main-page"
+      "type": "main-page",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     },
     "form": {
       "type": "contact-form",
+      "blocks": {
+        "aef2f29c-baf3-4adc-b452-2bf9f2cc8e4b": {
+          "type": "row",
+          "settings": {
+            "placeholder": "Name",
+            "placeholder-2": "Email"
+          }
+        },
+        "aaf58071-7232-401a-86c6-4049e5d22fd0": {
+          "type": "textarea",
+          "settings": {
+            "placeholder": "Message"
+          }
+        }
+      },
+      "block_order": [
+        "aef2f29c-baf3-4adc-b452-2bf9f2cc8e4b",
+        "aaf58071-7232-401a-86c6-4049e5d22fd0"
+      ],
       "settings": {
-        "heading": ""
+        "heading": "Send Us A Message",
+        "color_scheme": "cream"
       }
     }
   },
