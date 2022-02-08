@@ -30,7 +30,8 @@ body > div > footer {
 
 form {
   button,
-  input {
+  input,
+  textarea {
     font-family: var(--font-body-family);
     letter-spacing: 0.04rem;
   }
@@ -45,12 +46,17 @@ form {
     border-radius: 0px;
   }
 
-  input {
-    &[type="text"],
-    &[type="email"] {
-      border: 1px solid var(--color-foreground);
-      background: transparent;
-    }
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    border: 1px solid var(--color-foreground);
+    background: transparent;
+  }
+
+  textarea {
+    font-size: 1rem;
+    border-radius: 0px;
+    padding: calc(var(--inputHeight) / 3);
   }
 
   ::placeholder {
@@ -60,9 +66,25 @@ form {
 
   button,
   input[type="submit"] {
-    background: var(--color-foreground);
-    color: var(--color-background);
+    background: var(--color-accent);
+    color: var(--color-foreground);
     font-weight: 600;
     border: none;
+    border-radius: 7px;
+  }
+
+  &.__form-styles {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--inputHeight) / 3);
+
+    > div {
+      display: flex;
+      gap: calc(var(--inputHeight) / 3);
+
+      > input {
+        flex: 1;
+      }
+    }
   }
 }

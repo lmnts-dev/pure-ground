@@ -1,0 +1,10 @@
+.contact-form {
+  &__header {
+    color: var(--color-accent);
+  }
+
+  &__form,
+  &__header {
+    margin: 0 var(--sectionHorizontalBump);
+  }
+}
