@@ -7,6 +7,14 @@
         "padding_bottom": 28
       }
     },
+    "image": {
+      "type": "image",
+      "settings": {
+        "image": "shopify://shop_images/landscape_of_trees.jpg",
+        "image_style": "blob-1",
+        "color_scheme": "cream"
+      }
+    },
     "1643818843f333eb74": {
       "type": "rich-text",
       "blocks": {
@@ -14,20 +22,44 @@
           "type": "heading",
           "settings": {
             "heading": "Our Mission",
-            "heading_size": "h0"
+            "heading_size": "h2"
           }
         },
         "16438188434dae6d1d-1": {
           "type": "text",
           "settings": {
-            "text": "<p>lorem ipsum<\/p>"
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. Quisque sollicitudin lacus ut nulla viverra, eget fermentum dui imperdiet. Mauris at auctor ligula, eu convallis magna. Sed congue justo eu augue sagittis convallis. Phasellus lacinia ac eros vel ultrices. Praesent facilisis lorem ut urna vestibulum tempor. Quisque non vestibulum lectus. Fusce quis nulla non enim dictum semper tristique vel eros.</p>"
           }
         }
       },
-      "block_order": [
-        "16438188434dae6d1d-0",
-        "16438188434dae6d1d-1"
-      ],
+      "block_order": ["16438188434dae6d1d-0", "16438188434dae6d1d-1"],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "good-food": {
+      "type": "rich-text",
+      "blocks": {
+        "16438188434dae6d1d-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Good Food. Good Community",
+            "heading_size": "h2",
+            "subheading": "When farmers thrive, customers thrive.",
+            "heading_alignment": "left"
+          }
+        },
+        "16438188434dae6d1d-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. Quisque sollicitudin lacus ut nulla viverra, eget fermentum dui imperdiet. Mauris at auctor ligula, eu convallis magna. Sed congue justo eu augue sagittis convallis. Phasellus lacinia ac eros vel ultrices. Praesent facilisis lorem ut urna vestibulum tempor. Quisque non vestibulum lectus. Fusce quis nulla non enim dictum semper tristique vel eros.</p>"
+          }
+        }
+      },
+      "block_order": ["16438188434dae6d1d-0", "16438188434dae6d1d-1"],
       "settings": {
         "color_scheme": "background-1",
         "full_width": true,
@@ -36,8 +68,5 @@
       }
     }
   },
-  "order": [
-    "main",
-    "1643818843f333eb74"
-  ]
+  "order": ["main", "image", "1643818843f333eb74", "good-food"]
 }
