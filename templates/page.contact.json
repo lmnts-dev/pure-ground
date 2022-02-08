@@ -13,20 +13,12 @@
         "164435397975ac4950-0": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
-          }
-        },
-        "164435397975ac4950-1": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": ""
+            "text": "<p>Have feedback for us? Want to request more information? Whatever you wish to communicate, please use the form below:<\/p>"
           }
         }
       },
       "block_order": [
-        "164435397975ac4950-0",
-        "164435397975ac4950-1"
+        "164435397975ac4950-0"
       ],
       "settings": {
         "heading": "Contact Us",
