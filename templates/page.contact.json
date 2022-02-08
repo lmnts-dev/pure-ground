@@ -15,10 +15,17 @@
           "settings": {
             "text": "<p>Have feedback for us? Want to request more information? Whatever you wish to communicate, please use the form below:<\/p>"
           }
+        },
+        "1b1a72b1-22ac-497c-a5e1-70056b16d0d7": {
+          "type": "heading",
+          "settings": {
+            "heading": "We want your feedback"
+          }
         }
       },
       "block_order": [
-        "164435397975ac4950-0"
+        "164435397975ac4950-0",
+        "1b1a72b1-22ac-497c-a5e1-70056b16d0d7"
       ],
       "settings": {
         "heading": "Contact Us",
