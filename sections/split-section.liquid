@@ -1,9 +1,17 @@
 <div id="Split-section-{{ section.id }}" class="split-section color-{{section.settings.color_scheme}}">
-  <div class="split-section__text">        
-    <h2 class="split-section__text__heading {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}</h2>
+  <div class="split-section__text">    
+       
+    {% if section.settings.hero %}
+      <h1 class="split-section__text__heading {{ section.settings.heading_size }}">{{ section.settings.heading }}</h1>
+    {% else %}
+      <h2 class="split-section__text__heading {{ section.settings.heading_size }}">{{ section.settings.heading }}</h2>
+    {% endif %}
 
     {%- for block in section.blocks -%}
       {%- case block.type -%}
+        {%- when 'heading' -%}
+          <h3 class="split-section__text__subheading caption" {{ block.shopify_attributes }}>{{ block.settings.heading }}</h3>
+
         {%- when 'text' -%}
           <div class="split-section__text__rich-text" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
         {%- when 'button' -%}
@@ -14,7 +22,25 @@
     {%- endfor -%}
   </div>
   <div class="split-section__image">
-    Image
+    {%- if section.settings.image != blank -%}
+      <img
+        srcset="{%- if section.settings.image.width >= 165 -%}{{ section.settings.image | img_url: '165x' }} 165w,{%- endif -%}
+          {%- if section.settings.image.width >= 360 -%}{{ section.settings.image | img_url: '360x' }} 360w,{%- endif -%}
+          {%- if section.settings.image.width >= 535 -%}{{ section.settings.image | img_url: '535x' }} 535w,{%- endif -%}
+          {%- if section.settings.image.width >= 750 -%}{{ section.settings.image | img_url: '750x' }} 750w,{%- endif -%}
+          {%- if section.settings.image.width >= 1070 -%}{{ section.settings.image | img_url: '1070x' }} 1070w,{%- endif -%}
+          {%- if section.settings.image.width >= 1500 -%}{{ section.settings.image | img_url: '1500x' }} 1500w,{%- endif -%}
+          {{ section.settings.image | img_url: 'master' }} {{ section.settings.image.width }}w"
+        src="{{ section.settings.image | img_url: '1500x' }}"
+        sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+        alt="{{ section.settings.image.alt | escape }}"
+        loading="lazy"
+        width="{{ section.settings.image.width }}"
+        height="{{ section.settings.image.height }}"
+      >
+    {%- else -%}
+      {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+    {%- endif -%}
   </div>
 </div>
 
@@ -34,15 +60,15 @@
       "id": "heading_size",
       "options": [
         {
-          "value": "h2",
+          "value": "h3",
           "label": "Large"
         },
         {
-          "value": "h3",
+          "value": "h4",
           "label": "Medium"
         }
       ],
-      "default": "h2",
+      "default": "h3",
       "label": "Heading Size"
     },
     {
