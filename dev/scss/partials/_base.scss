@@ -8,24 +8,61 @@ body {
   min-height: 100%;
 }
 
-main {
-  > section {
-    > div {
-      padding: var(--sectionVerticalSpacing) var(--sectionHorizontalSpacing);
-      position: relative;
-      color: var(--color-foreground);
+main > section > div,
+body > div > section,
+body > div > footer {
+  padding: var(--sectionVerticalSpacing) var(--sectionHorizontalSpacing);
+  position: relative;
+  color: var(--color-foreground);
 
-      &:after {
-        content: "";
-        position: absolute;
-        pointer-events: none;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: var(--color-background);
-        z-index: -1;
-      }
+  &:after {
+    content: "";
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--color-background);
+    z-index: -1;
+  }
+}
+
+form {
+  button,
+  input {
+    font-family: var(--font-body-family);
+    letter-spacing: 0.04rem;
+  }
+
+  button,
+  input[type="submit"],
+  input[type="text"],
+  input[type="email"] {
+    height: var(--inputHeight);
+    padding: 0 calc(var(--inputHeight) / 3);
+    font-size: 1rem;
+    border-radius: 0px;
+  }
+
+  input {
+    &[type="text"],
+    &[type="email"] {
+      border: 1px solid var(--color-foreground);
+      background: transparent;
     }
+  }
+
+  ::placeholder {
+    color: var(--color-foreground);
+    opacity: 50%;
+  }
+
+  button,
+  input[type="submit"] {
+    background: var(--color-foreground);
+    color: var(--color-background);
+    font-weight: 600;
+    border: none;
   }
 }

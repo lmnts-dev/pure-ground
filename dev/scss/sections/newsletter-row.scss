@@ -1,0 +1,13 @@
+.newsletter-row {
+  text-align: center;
+
+  &__form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: calc(var(--sectionVerticalSpacing) / 2);
+
+    input[type="email"] {
+      min-width: 300px;
+    }
+  }
+}

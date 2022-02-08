@@ -1,0 +1,10 @@
+.rich-text {
+  &__heading {
+    text-align: center;
+  }
+
+  &__text {
+    max-width: 690px;
+    margin: 0 auto;
+  }
+}
