@@ -73,7 +73,7 @@
         </button>
       </div>
       {% endcomment %}
-      
+
     {%- endform -%}
   </div>
 </div>
@@ -129,18 +129,50 @@
   ],
   "blocks": [
      {
-       "name": "Row of Two Fields",
+       "name": "Row of Two Text Fields",
        "type": "row",
        "settings": [
          {
            "type": "text",
-           "id": "placeholder",
-           "label": "Placeholder"
+           "id": "placeholder-1",
+           "label": "First Field Placeholder Text"
+         },
+         {
+           "type": "radio",
+           "id": "type-1",
+           "label": "First Field Type",
+           "options": [
+              {
+                "value": "text",
+                "label": "Text"
+              },
+              {
+                "value": "email",
+                "label": "Email"
+              }
+            ],
+            "default": "text"
          },
          {
            "type": "text",
            "id": "placeholder-2",
-           "label": "Placeholder"
+           "label": "Second Field Placeholder Text"
+         },
+         {
+           "type": "radio",
+           "id": "type-2",
+           "label": "Second Field Type",
+           "options": [
+              {
+                "value": "text",
+                "label": "Text"
+              },
+              {
+                "value": "email",
+                "label": "Email"
+              }
+            ],
+            "default": "text"
          }
        ]
      },
