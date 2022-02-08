@@ -13,8 +13,19 @@
         "aef2f29c-baf3-4adc-b452-2bf9f2cc8e4b": {
           "type": "row",
           "settings": {
-            "placeholder": "Name",
-            "placeholder-2": "Email"
+            "placeholder-1": "Name",
+            "type-1": "text",
+            "placeholder-2": "Email",
+            "type-2": "email"
+          }
+        },
+        "9f028798-faf2-44b1-b542-781df905ba2d": {
+          "type": "row",
+          "settings": {
+            "placeholder-1": "Phone Number",
+            "type-1": "text",
+            "placeholder-2": "Subject",
+            "type-2": "text"
           }
         },
         "aaf58071-7232-401a-86c6-4049e5d22fd0": {
@@ -26,6 +37,7 @@
       },
       "block_order": [
         "aef2f29c-baf3-4adc-b452-2bf9f2cc8e4b",
+        "9f028798-faf2-44b1-b542-781df905ba2d",
         "aaf58071-7232-401a-86c6-4049e5d22fd0"
       ],
       "settings": {
