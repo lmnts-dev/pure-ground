@@ -21,11 +21,18 @@
           "settings": {
             "heading": "We want your feedback"
           }
+        },
+        "a7d76b5b-4b29-40cb-aeb1-19fd4c0e8647": {
+          "type": "heading",
+          "settings": {
+            "heading": "Address"
+          }
         }
       },
       "block_order": [
         "164435397975ac4950-0",
-        "1b1a72b1-22ac-497c-a5e1-70056b16d0d7"
+        "1b1a72b1-22ac-497c-a5e1-70056b16d0d7",
+        "a7d76b5b-4b29-40cb-aeb1-19fd4c0e8647"
       ],
       "settings": {
         "heading": "Contact Us",
