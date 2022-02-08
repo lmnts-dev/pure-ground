@@ -10,16 +10,16 @@
     "164435397998025e9c": {
       "type": "split-section",
       "blocks": {
-        "164435397975ac4950-0": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Have feedback for us? Want to request more information? Whatever you wish to communicate, please use the form below:<\/p>"
-          }
-        },
         "1b1a72b1-22ac-497c-a5e1-70056b16d0d7": {
           "type": "heading",
           "settings": {
             "heading": "We want your feedback"
+          }
+        },
+        "164435397975ac4950-0": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Have feedback for us? Want to request more information? Whatever you wish to communicate, please use the form below:<\/p>"
           }
         },
         "a7d76b5b-4b29-40cb-aeb1-19fd4c0e8647": {
@@ -27,12 +27,33 @@
           "settings": {
             "heading": "Address"
           }
+        },
+        "eba96e60-4b73-4bbf-a5a1-f0df199cd8c1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pure Ground Ingredients<br\/>2535 Business Parkway<br\/>Minden, NV 89423<\/p>"
+          }
+        },
+        "08fd0e00-47d9-49b5-8d75-bda3b9ca13bc": {
+          "type": "heading",
+          "settings": {
+            "heading": "General Contact"
+          }
+        },
+        "7cce6bb7-5dc2-4816-b956-cc78a5d5cb9c": {
+          "type": "text",
+          "settings": {
+            "text": "<p>info@puregroundingredients.com<br\/>775-297-4047<\/p>"
+          }
         }
       },
       "block_order": [
-        "164435397975ac4950-0",
         "1b1a72b1-22ac-497c-a5e1-70056b16d0d7",
-        "a7d76b5b-4b29-40cb-aeb1-19fd4c0e8647"
+        "164435397975ac4950-0",
+        "a7d76b5b-4b29-40cb-aeb1-19fd4c0e8647",
+        "eba96e60-4b73-4bbf-a5a1-f0df199cd8c1",
+        "08fd0e00-47d9-49b5-8d75-bda3b9ca13bc",
+        "7cce6bb7-5dc2-4816-b956-cc78a5d5cb9c"
       ],
       "settings": {
         "heading": "Contact Us",
