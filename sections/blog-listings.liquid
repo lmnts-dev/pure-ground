@@ -1,0 +1,92 @@
+{% style %}
+    .blog-listings {
+      --topSpacingRatio: {{section.settings.top_spacing}} / 100;
+      --bottomSpacingRatio: {{section.settings.bottom_spacing}} / 100;
+    }
+{% endstyle %}
+
+{%- if section.settings.blog.article.length > 0  -%}
+  <div id="Blog-listings-{{ section.id }}" class="blog-listings __style-{{ section.settings.image_style}} color-{{section.settings.color_scheme}}"  
+  >
+    <h2>{{section.settings.blog.title}}</h2>
+  </div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Blog Listings",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "blog",
+      "id": "blog",
+      "label": "Blog"
+    },
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "options": [
+        {
+          "value": "cream",
+          "label": "Cream (Default)"
+        },
+        {
+          "value": "dark-cream",
+          "label": "Dark Cream"
+        },
+        {
+          "value": "grass",
+          "label": "Grass"
+        },
+        {
+          "value": "sun",
+          "label": "Sun"
+        },
+        {
+          "value": "ground",
+          "label": "Ground"
+        },
+        {
+          "value": "sky",
+          "label": "Sky"
+        },
+        {
+          "value": "tan",
+          "label": "Tan"
+        }
+      ],
+      "default": "cream",
+      "label": "Color Scheme"
+    },
+    {
+      "type": "header",
+      "content": "Section Spacing"
+    },
+    {
+      "type": "range",
+      "id": "top_spacing",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "%",
+      "label": "Top Spacing",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "bottom_spacing",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "%",
+      "label": "Bottom Spacing",
+      "default": 50
+    }
+  ],
+  "presets": [
+    {
+      "name": "Blog Listings"
+    }
+  ]
+}
+{% endschema %}
