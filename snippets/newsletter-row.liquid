@@ -1,0 +1,16 @@
+<section class="newsletter-row color-sun">
+
+  {% if section.settings.newsletter_heading %}
+    <h2 class="h3">{{ section.settings.newsletter_heading }}</h2>
+  {% endif %}
+
+  {% if section.settings.newsletter_description %}
+    <p>{{ section.settings.newsletter_description }}<p>
+  {% endif %}
+
+  {% form 'customer', class: "newsletter-row__form" %}
+    <input type="email" placeholder="Email" name="contact[email]" />
+    <input type="submit" value="Subscribe" />
+  {% endform %}
+  
+</section>

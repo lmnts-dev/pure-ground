@@ -1,17 +1,114 @@
 {
   "sections": {
     "main": {
-      "type": "main-page"
+      "type": "main-page",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "164435397998025e9c": {
+      "type": "split-section",
+      "blocks": {
+        "1b1a72b1-22ac-497c-a5e1-70056b16d0d7": {
+          "type": "heading",
+          "settings": {
+            "heading": "We want your feedback"
+          }
+        },
+        "164435397975ac4950-0": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Have feedback for us? Want to request more information? Whatever you wish to communicate, please use the form below:<\/p>"
+          }
+        },
+        "a7d76b5b-4b29-40cb-aeb1-19fd4c0e8647": {
+          "type": "heading",
+          "settings": {
+            "heading": "Address"
+          }
+        },
+        "eba96e60-4b73-4bbf-a5a1-f0df199cd8c1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pure Ground Ingredients<br\/>2535 Business Parkway<br\/>Minden, NV 89423<\/p>"
+          }
+        },
+        "08fd0e00-47d9-49b5-8d75-bda3b9ca13bc": {
+          "type": "heading",
+          "settings": {
+            "heading": "General Contact"
+          }
+        },
+        "7cce6bb7-5dc2-4816-b956-cc78a5d5cb9c": {
+          "type": "text",
+          "settings": {
+            "text": "<p>info@puregroundingredients.com<br\/>775-297-4047<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1b1a72b1-22ac-497c-a5e1-70056b16d0d7",
+        "164435397975ac4950-0",
+        "a7d76b5b-4b29-40cb-aeb1-19fd4c0e8647",
+        "eba96e60-4b73-4bbf-a5a1-f0df199cd8c1",
+        "08fd0e00-47d9-49b5-8d75-bda3b9ca13bc",
+        "7cce6bb7-5dc2-4816-b956-cc78a5d5cb9c"
+      ],
+      "settings": {
+        "heading": "Contact Us",
+        "heading_size": "h3",
+        "hero": true,
+        "image": "shopify:\/\/shop_images\/ingredients.jpg",
+        "color_scheme": "color-cream",
+        "layout": "default",
+        "image_style": "default",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
     },
     "form": {
       "type": "contact-form",
+      "blocks": {
+        "aef2f29c-baf3-4adc-b452-2bf9f2cc8e4b": {
+          "type": "row",
+          "settings": {
+            "placeholder-1": "Name",
+            "type-1": "text",
+            "placeholder-2": "Email",
+            "type-2": "email"
+          }
+        },
+        "9f028798-faf2-44b1-b542-781df905ba2d": {
+          "type": "row",
+          "settings": {
+            "placeholder-1": "Phone Number",
+            "type-1": "text",
+            "placeholder-2": "Subject",
+            "type-2": "text"
+          }
+        },
+        "aaf58071-7232-401a-86c6-4049e5d22fd0": {
+          "type": "textarea",
+          "settings": {
+            "placeholder": "Message"
+          }
+        }
+      },
+      "block_order": [
+        "aef2f29c-baf3-4adc-b452-2bf9f2cc8e4b",
+        "9f028798-faf2-44b1-b542-781df905ba2d",
+        "aaf58071-7232-401a-86c6-4049e5d22fd0"
+      ],
       "settings": {
-        "heading": ""
+        "heading": "Send Us A Message",
+        "color_scheme": "cream"
       }
     }
   },
   "order": [
     "main",
+    "164435397998025e9c",
     "form"
   ]
 }

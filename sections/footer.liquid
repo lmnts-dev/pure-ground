@@ -24,6 +24,8 @@
   }
 {%- endstyle -%}
 
+{% render 'newsletter-row' %}
+
 <footer class="section-footer color-{{ section.settings.color_scheme }}">
   <div class="section-footer__plant-decor">
     {% render 'svg-plants' %}  
@@ -171,8 +173,13 @@
     {
       "type": "text",
       "id": "newsletter_heading",
-      "default": "Subscribe to our emails",
+      "default": "Subscribe to our newsletter",
       "label": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "newsletter_description",
+      "label": "Description"
     },
     {
       "type": "header",

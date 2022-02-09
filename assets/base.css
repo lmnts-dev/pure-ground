@@ -5,7 +5,7 @@
 .color-cream {
   --color-foreground: rgba(var(--color-ground));
   --color-background: rgba(var(--color-cream));
-  --color-accent: rgba(var(--color-ground));
+  --color-accent: rgba(var(--color-sun));
 }
 
 .color-background-2,
@@ -401,8 +401,9 @@ h6,
   font-weight: var(--font-heading-weight);
   letter-spacing: 0.06rem;
   color: rgb(var(--color-foreground));
-  line-height: calc(1 + 0.3 / max(1, var(--font-heading-scale)));
+  line-height: 1.15;
   word-break: break-word;
+  margin: 0 0 1rem 0;
 }
 
 h1,
@@ -432,6 +433,7 @@ h2,
 h3,
 .h3 {
   font-size: 3rem;
+  font-weight: 900;
 }
 
 @media only screen and (min-width: 750px) {

@@ -1,0 +1,244 @@
+{% style %}
+    .split-section {
+      --topSpacingRatio: {{section.settings.top_spacing}} / 100;
+      --bottomSpacingRatio: {{section.settings.bottom_spacing}} / 100;
+    }
+ {% endstyle %}
+
+<div id="Split-section-{{ section.id }}" class="split-section __layout-{{section.settings.layout}} __image-style-{{section.settings.image_style}} color-{{section.settings.color_scheme}}">
+  <div class="split-section__text">    
+       
+    {% if section.settings.hero %}
+      <h1 class="split-section__text__heading {{ section.settings.heading_size }}">{{ section.settings.heading }}</h1>
+    {% else %}
+      <h2 class="split-section__text__heading {{ section.settings.heading_size }}">{{ section.settings.heading }}</h2>
+    {% endif %}
+
+    {%- for block in section.blocks -%}
+      {%- case block.type -%}
+        {%- when 'heading' -%}
+          <h3 class="split-section__text__subheading caption" {{ block.shopify_attributes }}>{{ block.settings.heading }}</h3>
+
+        {%- when 'text' -%}
+          <div class="split-section__text__rich-text" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+        {%- when 'button' -%}
+          <a {% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} {{ block.shopify_attributes }}>
+            {{ block.settings.button_label | escape }}
+          </a>
+      {%- endcase -%}
+    {%- endfor -%}
+  </div>
+  <div class="split-section__image">
+    {%- if section.settings.image != blank -%}
+      <img
+        srcset="{%- if section.settings.image.width >= 165 -%}{{ section.settings.image | img_url: '165x' }} 165w,{%- endif -%}
+          {%- if section.settings.image.width >= 360 -%}{{ section.settings.image | img_url: '360x' }} 360w,{%- endif -%}
+          {%- if section.settings.image.width >= 535 -%}{{ section.settings.image | img_url: '535x' }} 535w,{%- endif -%}
+          {%- if section.settings.image.width >= 750 -%}{{ section.settings.image | img_url: '750x' }} 750w,{%- endif -%}
+          {%- if section.settings.image.width >= 1070 -%}{{ section.settings.image | img_url: '1070x' }} 1070w,{%- endif -%}
+          {%- if section.settings.image.width >= 1500 -%}{{ section.settings.image | img_url: '1500x' }} 1500w,{%- endif -%}
+          {{ section.settings.image | img_url: 'master' }} {{ section.settings.image.width }}w"
+        src="{{ section.settings.image | img_url: '1500x' }}"
+        sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+        alt="{{ section.settings.image.alt | escape }}"
+        loading="lazy"
+        width="{{ section.settings.image.width }}"
+        height="{{ section.settings.image.height }}"
+      >
+    {%- else -%}
+      {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Split section",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "Talk about your brand",
+      "label": "Heading"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "h3",
+          "label": "Large"
+        },
+        {
+          "value": "h4",
+          "label": "Medium"
+        }
+      ],
+      "default": "h3",
+      "label": "Heading Size"
+    },
+    {
+      "type": "checkbox",
+      "id": "hero",
+      "label": "Use as hero?",
+      "info": "Should be selected if this section is the first or second on a page and contains the page title. There should only be one page title/hero used per page."
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image",
+      "info": "Auto-cropped to fill available space."
+    },
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "options": [
+        {
+          "value": "color-cream",
+          "label": "Cream (Default)"
+        },
+        {
+          "value": "color-dark-cream",
+          "label": "Dark Cream"
+        },
+        {
+          "value": "color-grass",
+          "label": "Grass"
+        },
+        {
+          "value": "color-sun",
+          "label": "Sun"
+        },
+        {
+          "value": "color-ground",
+          "label": "Ground"
+        },
+        {
+          "value": "color-sky",
+          "label": "Sky"
+        },
+        {
+          "value": "color-tan",
+          "label": "Tan"
+        }
+      ],
+      "default": "color-cream",
+      "label": "Color Scheme"
+    },
+    {
+      "type": "select",
+      "id": "layout",
+      "options": [
+        {
+          "value": "default",
+          "label": "Align Image Right"
+        },
+        {
+          "value": "reversed",
+          "label": "Align Image Left"
+        }
+      ],
+      "default": "default",
+      "label": "Layout"
+    },
+    {
+      "type": "select",
+      "id": "image_style",
+      "options": [
+        {
+          "value": "default",
+          "label": "Wide, Without Space "
+        },
+        {
+          "value": "square",
+          "label": "Square, With Space"
+        }
+      ],
+      "default": "default",
+      "label": "Image Style"
+    },
+    {
+      "type": "header",
+      "content": "Section Spacing"
+    },
+    {
+      "type": "range",
+      "id": "top_spacing",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "%",
+      "label": "Top Spacing",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "bottom_spacing",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "%",
+      "label": "Bottom Spacing",
+      "default": 50
+    }
+  ],
+  "blocks": [
+    {
+      "type": "heading",
+      "name": "Heading",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "default": "Talk about your brand",
+          "label": "Heading"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "Text",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text",
+          "default": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
+          "label": "Description"
+        }
+      ]
+    },
+    {
+      "type": "button",
+      "name": "Button",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_label",
+          "default": "Button label",
+          "label": "Button Label"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Split section",
+      "blocks": [
+        {
+          "type": "text"
+        },
+        {
+          "type": "button"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,122 @@
+{% style %}
+    .featured-page-link {
+      --topSpacingRatio: {{section.settings.top_spacing}} / 100;
+      --bottomSpacingRatio: {{section.settings.bottom_spacing}} / 100;
+    }
+{% endstyle %}
+
+<div id="featured-page-link-{{ section.id }}" class="featured-page-link color-{{section.settings.color_scheme}}"  
+>
+  <div class="featured-page-link__inner">
+    <a href="{{section.settings.page_link.url}}" class="featured-page-link__link h2">
+      <span>{{section.settings.page_link.title}}</span>
+      {% render 'svg-arrow' %}
+    </a>
+    {%- if section.settings.image != blank -%}
+      <img
+        srcset="{%- if section.settings.image.width >= 375 -%}{{ section.settings.image | image_url: width: 375 }} 375w,{%- endif -%}
+          {%- if block.settings.image.width >= 550 -%}{{ block.settings.image | image_url: width: 550 }} 550w,{%- endif -%}
+          {%- if section.settings.image.width >= 750 -%}{{ section.settings.image | image_url: width: 750 }} 750w,{%- endif -%}
+          {%- if section.settings.image.width >= 1100 -%}{{ section.settings.image | image_url: width: 1100 }} 1100w,{%- endif -%}
+          {%- if section.settings.image.width >= 1500 -%}{{ section.settings.image | image_url: width: 1500 }} 1500w,{%- endif -%}
+          {%- if section.settings.image.width >= 1780 -%}{{ section.settings.image | image_url: width: 1780 }} 1780w,{%- endif -%}
+          {%- if section.settings.image.width >= 2000 -%}{{ section.settings.image | image_url: width: 2000 }} 2000w,{%- endif -%}
+          {%- if section.settings.image.width >= 3000 -%}{{ section.settings.image | image_url: width: 3000 }} 3000w,{%- endif -%}
+          {%- if section.settings.image.width >= 3840 -%}{{ section.settings.image | image_url: width: 3840 }} 3840w,{%- endif -%}
+          ç {{ section.settings.image.width }}w"
+        sizes="100vw"
+        src="{{ section.settings.image | image_url: width: 1500 }}"
+        loading="lazy"
+        alt="{{ section.settings.image.alt | escape }}"
+        width="{{ section.settings.image.width }}"
+        height="{{ section.settings.image.height }}"
+      >
+    {%- elsif section.settings.image_2 == blank -%}
+      {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Featured Page Link",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "page",
+      "id": "page_link",
+      "label": "Page To Link To"
+    },
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "options": [
+        {
+          "value": "cream",
+          "label": "Cream (Default)"
+        },
+        {
+          "value": "dark-cream",
+          "label": "Dark Cream"
+        },
+        {
+          "value": "grass",
+          "label": "Grass"
+        },
+        {
+          "value": "sun",
+          "label": "Sun"
+        },
+        {
+          "value": "ground",
+          "label": "Ground"
+        },
+        {
+          "value": "sky",
+          "label": "Sky"
+        },
+        {
+          "value": "tan",
+          "label": "Tan"
+        }
+      ],
+      "default": "cream",
+      "label": "Color Scheme"
+    },
+    {
+      "type": "header",
+      "content": "Section Spacing"
+    },
+    {
+      "type": "range",
+      "id": "top_spacing",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "%",
+      "label": "Top Spacing",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "bottom_spacing",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "%",
+      "label": "Bottom Spacing",
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "Featured Page Link"
+    }
+  ]
+}
+{% endschema %}
