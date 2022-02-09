@@ -56,12 +56,23 @@
         "top_spacing": 50,
         "bottom_spacing": 0
       }
+    },
+    "1644423507dbf32226": {
+      "type": "featured-page-link",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Group_of_people.jpg",
+        "page_link": "history",
+        "color_scheme": "cream",
+        "top_spacing": 0,
+        "bottom_spacing": 0
+      }
     }
   },
   "order": [
     "main",
     "1643991355e4feeedb",
     "1643818843f333eb74",
-    "1644423355dc027cd8"
+    "1644423355dc027cd8",
+    "1644423507dbf32226"
   ]
 }
