@@ -12,7 +12,9 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/Group_of_people.jpg",
         "image_style": "fullwidth",
-        "color_scheme": "cream"
+        "color_scheme": "cream",
+        "top_spacing": 0,
+        "bottom_spacing": 50
       }
     },
     "1643818843f333eb74": {
@@ -40,8 +42,9 @@
       ],
       "settings": {
         "color_scheme": "cream",
-        "padding_top": 100,
-        "padding_bottom": 100
+        "hero": false,
+        "top_spacing": 50,
+        "bottom_spacing": 50
       }
     },
     "16444193660de6d319": {
@@ -64,7 +67,9 @@
         "image": "shopify:\/\/shop_images\/2018-08-21_17.54_1-1.jpg",
         "color_scheme": "color-cream",
         "layout": "reversed",
-        "image_style": "square"
+        "image_style": "square",
+        "top_spacing": 50,
+        "bottom_spacing": 50
       }
     },
     "1644419517490faa29": {
@@ -87,7 +92,9 @@
         "image": "shopify:\/\/shop_images\/2018-08-21_17.54_1.jpg",
         "color_scheme": "color-cream",
         "layout": "default",
-        "image_style": "square"
+        "image_style": "square",
+        "top_spacing": 50,
+        "bottom_spacing": 50
       }
     }
   },
