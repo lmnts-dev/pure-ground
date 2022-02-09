@@ -1,3 +1,10 @@
+{% style %}
+    .split-section {
+      --topSpacingRatio: {{section.settings.top_spacing}} / 100;
+      --bottomSpacingRatio: {{section.settings.bottom_spacing}} / 100;
+    }
+ {% endstyle %}
+
 <div id="Split-section-{{ section.id }}" class="split-section __layout-{{section.settings.layout}} __image-style-{{section.settings.image_style}} color-{{section.settings.color_scheme}}">
   <div class="split-section__text">    
        
@@ -129,7 +136,7 @@
         },
         {
           "value": "reversed",
-          "label": "Align Image Right"
+          "label": "Align Image Left"
         }
       ],
       "default": "default",
@@ -150,6 +157,30 @@
       ],
       "default": "default",
       "label": "Image Style"
+    },
+    {
+      "type": "header",
+      "content": "Section Spacing"
+    },
+    {
+      "type": "range",
+      "id": "top_spacing",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "%",
+      "label": "Top Spacing",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "bottom_spacing",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "%",
+      "label": "Bottom Spacing",
+      "default": 50
     }
   ],
   "blocks": [

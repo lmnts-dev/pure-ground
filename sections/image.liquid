@@ -1,6 +1,9 @@
-{% comment %} Remove until we reconfigure gulp to output individual files, TODO
-{{ 'section-image.css' | asset_url | stylesheet_tag }}
-{% endcomment %}
+{% style %}
+    .section-image {
+      --topSpacingRatio: {{section.settings.top_spacing}} / 100;
+      --bottomSpacingRatio: {{section.settings.bottom_spacing}} / 100;
+    }
+{% endstyle %}
 
 <div id="Section-image-{{ section.id }}" class="section-image __style-{{ section.settings.image_style}} color-{{section.settings.color_scheme}}"  
 >
@@ -104,6 +107,30 @@
       ],
       "default": "cream",
       "label": "Color Scheme"
+    },
+    {
+      "type": "header",
+      "content": "Section Spacing"
+    },
+    {
+      "type": "range",
+      "id": "top_spacing",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "%",
+      "label": "Top Spacing",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "bottom_spacing",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "%",
+      "label": "Bottom Spacing",
+      "default": 50
     }
   ],
   "presets": [

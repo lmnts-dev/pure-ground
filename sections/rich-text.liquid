@@ -1,17 +1,32 @@
-<div id="Rich-text-{{ section.id }}" class="rich-text color-{{section.settings.color_scheme}}">
+{% style %}
+    .rich-text {
+      --topSpacingRatio: {{section.settings.top_spacing}} / 100;
+      --bottomSpacingRatio: {{section.settings.bottom_spacing}} / 100;
+    }
+ {% endstyle %}
+
+<div id="Rich-text-{{ section.id }}" class="rich-text color-{{section.settings.color_scheme}} __top-spacing-{{section.settings.top_spacing}} __bottom-spacing-{{section.settings.bottom_spacing}}">
   {%- for block in section.blocks -%}
     {%- case block.type -%}
+
       {%- when 'heading' -%}
-        <h2 class="rich-text__heading __align-{{block.settings.heading_alignment}} {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}</h2>
+        {% if section.settings.hero %}
+          <h1 class="rich-text__heading __align-{{block.settings.heading_alignment}} {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}</h1>
+        {% else %}
+          <h2 class="rich-text__heading __align-{{block.settings.heading_alignment}} {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}</h2>
+        {% endif %}
         {% if block.settings.subheading %}
           <h3 class="rich-text__subheading caption __align-{{block.settings.heading_alignment}}">{{block.settings.subheading}}</h3>
         {% endif %}
+
       {%- when 'text' -%}
         <div class="rich-text__text" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+      
       {%- when 'button' -%}
         <a {% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} {{ block.shopify_attributes }}>
           {{ block.settings.button_label | escape }}
         </a>
+
     {%- endcase -%}
   {%- endfor -%}
 </div>
@@ -58,28 +73,34 @@
       "label": "Color Scheme"
     },
     {
+      "type": "checkbox",
+      "id": "hero",
+      "label": "Use as hero?",
+      "info": "Should be selected if this section is the first or second on a page and contains the page title. There should only be one page title/hero used per page."
+    },
+    {
       "type": "header",
-      "content": "t:sections.all.padding.section_padding_heading"
+      "content": "Section Spacing"
     },
     {
       "type": "range",
-      "id": "padding_top",
+      "id": "top_spacing",
       "min": 0,
       "max": 100,
-      "step": 4,
-      "unit": "px",
-      "label": "t:sections.all.padding.padding_top",
-      "default": 100
+      "step": 10,
+      "unit": "%",
+      "label": "Top Spacing",
+      "default": 50
     },
     {
       "type": "range",
-      "id": "padding_bottom",
+      "id": "bottom_spacing",
       "min": 0,
       "max": 100,
-      "step": 4,
-      "unit": "px",
-      "label": "t:sections.all.padding.padding_bottom",
-      "default": 100
+      "step": 10,
+      "unit": "%",
+      "label": "Bottom Spacing",
+      "default": 50
     }
   ],
   "blocks": [
