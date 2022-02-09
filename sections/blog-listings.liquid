@@ -5,10 +5,23 @@
     }
 {% endstyle %}
 
-{%- if section.settings.blog.article.length > 0  -%}
+{%- if section.settings.blog.articles.size > 0  -%}
   <div id="Blog-listings-{{ section.id }}" class="blog-listings __style-{{ section.settings.image_style}} color-{{section.settings.color_scheme}}"  
   >
-    <h2>{{section.settings.blog.title}}</h2>
+    <h2 class="blog-listings__heading h3">{{section.settings.blog.title}}</h2>
+    <div class="blog-listings__container">
+      {% for article in section.settings.blog.articles limit: 4 %}
+        {% assign style = "default" %}
+        {% if forloop.index0 != 0 %}
+          {% assign style = "condensed" %}
+        {% endif %}
+        {% render 'article-card', article: article, style: style %}
+      {% endfor %}
+
+      <a class="blog-listings__button h4" href="{{section.settings.blog.url}}">
+        <span>View More</span>
+      </a>
+    </div>
   </div>
 {%- endif -%}
 
@@ -21,6 +34,12 @@
       "type": "blog",
       "id": "blog",
       "label": "Blog"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image",
+      "info": "Used as the 'View more' button's background image"
     },
     {
       "type": "select",

@@ -2,10 +2,9 @@
   position: relative;
   padding-left: 0;
   padding-right: 0;
+  overflow: hidden;
 
   &__inner {
-    overflow: hidden;
-
     &:after,
     img {
       position: absolute;
@@ -57,7 +56,7 @@
     svg {
       width: calc(var(--pxSize) * 1.25);
       height: auto;
-      margin: 0 calc(var(--pxSize) / 3) calc(var(--pxSize) / 3)
+      margin: calc(var(--pxSize) / 3) calc(var(--pxSize) / 3) 0
         calc(var(--pxSize) / 3);
 
       * {

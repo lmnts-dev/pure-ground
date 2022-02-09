@@ -508,6 +508,11 @@ p,
   text-transform: uppercase;
 }
 
+.caption-sm {
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+}
+
 a {
   text-decoration: none;
   color: var(--color-foreground);
