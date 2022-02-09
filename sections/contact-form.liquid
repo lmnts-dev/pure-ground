@@ -1,3 +1,10 @@
+{% style %}
+    .contact-form {
+      --topSpacingRatio: {{section.settings.top_spacing}} / 100;
+      --bottomSpacingRatio: {{section.settings.bottom_spacing}} / 100;
+    }
+{% endstyle %}
+
 <div id="Contact-form-{{ section.id }}" class="contact-form color-{{ section.settings.color_scheme }}">
     <h2 class="contact-form__header h3">{{ section.settings.heading | escape }}</h2>
 
@@ -140,6 +147,30 @@
       ],
       "default": "cream",
       "label": "Color Scheme"
+    },
+        {
+      "type": "header",
+      "content": "Section Spacing"
+    },
+    {
+      "type": "range",
+      "id": "top_spacing",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "%",
+      "label": "Top Spacing",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "bottom_spacing",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "%",
+      "label": "Bottom Spacing",
+      "default": 50
     }
   ],
   "blocks": [
