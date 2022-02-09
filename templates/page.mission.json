@@ -80,7 +80,8 @@
     "16444230281a285739": {
       "type": "featured-page-link",
       "settings": {
-        "page_link": "",
+        "image": "shopify:\/\/shop_images\/About_Components.jpg",
+        "page_link": "our-principles",
         "color_scheme": "cream",
         "top_spacing": 0,
         "bottom_spacing": 0
