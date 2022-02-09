@@ -1,0 +1,108 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "1643991355e4feeedb": {
+      "type": "image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Group_of_people.jpg",
+        "image_style": "fullwidth",
+        "color_scheme": "cream",
+        "top_spacing": 0,
+        "bottom_spacing": 50
+      }
+    },
+    "1643818843f333eb74": {
+      "type": "rich-text",
+      "blocks": {
+        "16438188434dae6d1d-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Our History",
+            "heading_size": "h2",
+            "heading_alignment": "center",
+            "subheading": ""
+          }
+        },
+        "16438188434dae6d1d-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16438188434dae6d1d-0",
+        "16438188434dae6d1d-1"
+      ],
+      "settings": {
+        "color_scheme": "cream",
+        "hero": true,
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
+    },
+    "16444193660de6d319": {
+      "type": "split-section",
+      "blocks": {
+        "1644419366881604f5-0": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Aliquam placerat ultrices risus. Vestibulum placerat dui eget nisi vulputate auctor. Etiam interdum neque vitae arcu scelerisque euismod. Aenean a cursus mauris, sed aliquet arcu. Donec a commodo dolor, non ultricies sapien. Etiam ac lectus nec diam convallis mattis at sit amet nulla. Nulla pellentesque consequat nunc, eu dictum purus venenatis quis. Cras quis nulla suscipit, pretium eros eu, lacinia tellus. Vivamus tristique lacus augue, id faucibus massa iaculis vel.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1644419366881604f5-0"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_size": "h3",
+        "hero": false,
+        "image": "shopify:\/\/shop_images\/2018-08-21_17.54_1-1.jpg",
+        "color_scheme": "color-cream",
+        "layout": "reversed",
+        "image_style": "square",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
+    },
+    "1644419517490faa29": {
+      "type": "split-section",
+      "blocks": {
+        "16444195172a1cbbf5-0": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Aliquam placerat ultrices risus. Vestibulum placerat dui eget nisi vulputate auctor. Etiam interdum neque vitae arcu scelerisque euismod. Aenean a cursus mauris, sed aliquet arcu. Donec a commodo dolor, non ultricies sapien. Etiam ac lectus nec diam convallis mattis at sit amet nulla. Nulla pellentesque consequat nunc, eu dictum purus venenatis quis. Cras quis nulla suscipit, pretium eros eu, lacinia tellus. Vivamus tristique lacus augue, id faucibus massa iaculis vel.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16444195172a1cbbf5-0"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_size": "h3",
+        "hero": false,
+        "image": "shopify:\/\/shop_images\/2018-08-21_17.54_1.jpg",
+        "color_scheme": "color-cream",
+        "layout": "default",
+        "image_style": "square",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1643991355e4feeedb",
+    "1643818843f333eb74",
+    "16444193660de6d319",
+    "1644419517490faa29"
+  ]
+}
