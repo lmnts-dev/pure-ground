@@ -5,7 +5,7 @@
     }
  {% endstyle %}
 
-<div id="Rich-text-{{ section.id }}" class="rich-text color-{{section.settings.color_scheme}} __top-spacing-{{section.settings.top_spacing}} __bottom-spacing-{{section.settings.bottom_spacing}}">
+<div id="Rich-text-{{ section.id }}" class="rich-text color-{{section.settings.color_scheme}}">
   {%- for block in section.blocks -%}
     {%- case block.type -%}
 
