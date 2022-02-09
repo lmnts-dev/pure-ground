@@ -12,7 +12,9 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/Working_in_field.jpg",
         "image_style": "blob-2",
-        "color_scheme": "cream"
+        "color_scheme": "cream",
+        "top_spacing": 50,
+        "bottom_spacing": 50
       }
     },
     "1643818843f333eb74": {
@@ -40,8 +42,9 @@
       ],
       "settings": {
         "color_scheme": "background-1",
-        "padding_top": 40,
-        "padding_bottom": 52
+        "hero": false,
+        "top_spacing": 50,
+        "bottom_spacing": 50
       }
     },
     "good-food": {
@@ -69,8 +72,9 @@
       ],
       "settings": {
         "color_scheme": "background-1",
-        "padding_top": 40,
-        "padding_bottom": 52
+        "hero": false,
+        "top_spacing": 50,
+        "bottom_spacing": 100
       }
     }
   },
