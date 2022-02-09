@@ -6,9 +6,29 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "16444369586030090c": {
+      "type": "blog-listings",
+      "settings": {
+        "blog": "guides",
+        "color_scheme": "cream",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
+    },
+    "164443697608885640": {
+      "type": "blog-listings",
+      "settings": {
+        "blog": "news",
+        "color_scheme": "cream",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "16444369586030090c",
+    "164443697608885640"
   ]
 }
