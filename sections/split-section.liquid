@@ -1,4 +1,4 @@
-<div id="Split-section-{{ section.id }}" class="split-section color-{{section.settings.color_scheme}}">
+<div id="Split-section-{{ section.id }}" class="split-section __layout-{{section.settings.layout}} __image-style-{{section.settings.image_style}} color-{{section.settings.color_scheme}}">
   <div class="split-section__text">    
        
     {% if section.settings.hero %}
@@ -118,6 +118,38 @@
       ],
       "default": "color-cream",
       "label": "Color Scheme"
+    },
+    {
+      "type": "select",
+      "id": "layout",
+      "options": [
+        {
+          "value": "default",
+          "label": "Align Image Right"
+        },
+        {
+          "value": "reversed",
+          "label": "Align Image Right"
+        }
+      ],
+      "default": "default",
+      "label": "Layout"
+    },
+    {
+      "type": "select",
+      "id": "image_style",
+      "options": [
+        {
+          "value": "default",
+          "label": "Wide, Without Space "
+        },
+        {
+          "value": "square",
+          "label": "Square, With Space"
+        }
+      ],
+      "default": "default",
+      "label": "Image Style"
     }
   ],
   "blocks": [
