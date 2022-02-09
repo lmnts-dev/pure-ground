@@ -12,7 +12,9 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/landscape_of_trees.jpg",
         "image_style": "blob-1",
-        "color_scheme": "cream"
+        "color_scheme": "cream",
+        "top_spacing": 50,
+        "bottom_spacing": 30
       }
     },
     "1643818843f333eb74": {
@@ -22,7 +24,9 @@
           "type": "heading",
           "settings": {
             "heading": "European Operations",
-            "heading_size": "h2"
+            "heading_size": "h2",
+            "heading_alignment": "center",
+            "subheading": ""
           }
         },
         "16438188434dae6d1d-1": {
@@ -38,9 +42,9 @@
       ],
       "settings": {
         "color_scheme": "cream",
-        "full_width": true,
-        "padding_top": 100,
-        "padding_bottom": 100
+        "hero": true,
+        "top_spacing": 0,
+        "bottom_spacing": 100
       }
     }
   },
