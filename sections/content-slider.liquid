@@ -1,0 +1,28 @@
+<div id="Content-slider-{{ section.id }}" class="Content-slider color-{{section.settings.color_scheme}}"  
+>
+ 
+</div>
+
+{% schema %}
+{
+  "name": "Content Slider",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    //ColorTheme
+    //TopSpacing
+    //BottomSpacing
+  ],
+  "blocks": [//Repeated in any order
+    //Slide
+      //Image
+      //Text
+      //Author?
+  ],
+  "presets": [
+    {
+      "name": "Content Slider"
+    }
+  ]
+}
+{% endschema %}

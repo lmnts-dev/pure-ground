@@ -1,0 +1,33 @@
+<div id="Section-image-{{ section.id }}" class="section-image color-{{section.settings.color_scheme}}"  
+>
+  
+</div>
+
+{% schema %}
+{
+  "name": "Content with Background Image",
+  "tag": "section",
+  "class": "section",
+  "settings": [//Aren't repeated
+    // Background Image
+    //Use as hero
+    //Include Icon?
+    //Alignment
+    //ColorTheme
+    //TopSpacing
+    //BottomSpacing
+  ], 
+  "blocks": [//Repeated in any order
+    //Heading
+    //Heading Size
+    //Subheading
+    //Rich Text
+    //Button
+  ],
+  "presets": [
+    {
+      "name": "Content with Background Image" //name of section
+    }
+  ]
+}
+{% endschema %}

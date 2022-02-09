@@ -1,0 +1,27 @@
+<div id="Gallery-{{ section.id }}" class="Gallery color-{{section.settings.color_scheme}}"  
+>
+ 
+</div>
+
+{% schema %}
+{
+  "name": "Gallery",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    //ColorTheme
+    //TopSpacing
+    //BottomSpacing
+  ],
+  "blocks": [
+    //Image
+      //Image Picker
+      //Alt
+  ],
+  "presets": [
+    {
+      "name": "Gallery"
+    }
+  ]
+}
+{% endschema %}
