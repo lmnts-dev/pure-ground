@@ -96,6 +96,16 @@
         "top_spacing": 50,
         "bottom_spacing": 50
       }
+    },
+    "164442397541aa9134": {
+      "type": "featured-page-link",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/About_Components.png",
+        "page_link": "sustainability",
+        "color_scheme": "cream",
+        "top_spacing": 0,
+        "bottom_spacing": 0
+      }
     }
   },
   "order": [
@@ -103,6 +113,7 @@
     "1643991355e4feeedb",
     "1643818843f333eb74",
     "16444193660de6d319",
-    "1644419517490faa29"
+    "1644419517490faa29",
+    "164442397541aa9134"
   ]
 }
