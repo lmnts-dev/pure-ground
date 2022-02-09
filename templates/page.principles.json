@@ -66,6 +66,16 @@
         "top_spacing": 0,
         "bottom_spacing": 0
       }
+    },
+    "16444235674120b381": {
+      "type": "featured-page-link",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/landscape.jpg",
+        "page_link": "",
+        "color_scheme": "cream",
+        "top_spacing": 0,
+        "bottom_spacing": 0
+      }
     }
   },
   "order": [
@@ -73,6 +83,7 @@
     "1643991355e4feeedb",
     "1643818843f333eb74",
     "1644423355dc027cd8",
-    "1644423507dbf32226"
+    "1644423507dbf32226",
+    "16444235674120b381"
   ]
 }
