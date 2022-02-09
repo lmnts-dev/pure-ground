@@ -76,12 +76,22 @@
         "top_spacing": 50,
         "bottom_spacing": 100
       }
+    },
+    "16444230281a285739": {
+      "type": "featured-page-link",
+      "settings": {
+        "page_link": "",
+        "color_scheme": "cream",
+        "top_spacing": 0,
+        "bottom_spacing": 0
+      }
     }
   },
   "order": [
     "main",
     "image",
     "1643818843f333eb74",
-    "good-food"
+    "good-food",
+    "16444230281a285739"
   ]
 }

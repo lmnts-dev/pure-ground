@@ -60,7 +60,11 @@
         "heading_size": "h3",
         "hero": true,
         "image": "shopify:\/\/shop_images\/ingredients.jpg",
-        "color_scheme": "color-cream"
+        "color_scheme": "color-cream",
+        "layout": "default",
+        "image_style": "default",
+        "top_spacing": 50,
+        "bottom_spacing": 50
       }
     },
     "form": {
