@@ -22,7 +22,20 @@
       {%- for block in section.blocks -%}
          {%- case block.type -%}
             {%- when 'image' -%}
-               <img src={{ block.settings.icon }} loading="lazy" width={{block.settings.icon.width}} height={{block.settings.icon.height}}>
+               <img srcset="{%- if collection.image.src.width >= 165 -%}{{ block.settings.icon.src | img_url: '165x' }} 165w,{%- endif -%}
+              {%- if block.settings.icon.src.width >= 360 -%}{{ block.settings.icon.src | img_url: '360x' }} 360w,{%- endif -%}
+              {%- if block.settings.icon.src.width >= 533 -%}{{ block.settings.icon.src | img_url: '533x' }} 533w,{%- endif -%}
+              {%- if block.settings.icon.src.width >= 720 -%}{{ block.settings.icon.src | img_url: '720x' }} 720w,{%- endif -%}
+              {%- if block.settings.icon.src.width >= 1000 -%}{{ block.settings.icon.src | img_url: '1000x' }} 1000w,{%- endif -%}
+              {%- if block.settings.icon.src.width >= 1500 -%}{{ block.settings.icon.src | img_url: '1500x' }} 1500w,{%- endif -%}
+              {{ block.settings.icon.src | img_url: 'master' }} {{ block.settings.icon.src.width }}w"
+            src="{{ block.settings.icon.src | img_url: '533x' }}"
+            sizes="100vw"
+            alt="{{ block.settings.icon.src.alt | escape }}"
+            loading="lazy"
+            width="{{ collection.image.width }}"
+            height="{{ collection.image.height }}"
+          >>
                <p>{{block.settings.text }}</p>
          {%- endcase -%}
       {%- endfor -%}
