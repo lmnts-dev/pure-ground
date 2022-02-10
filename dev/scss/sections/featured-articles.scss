@@ -1,0 +1,14 @@
+.featured-articles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: calc(var(--pxSize) / 2);
+
+  &__heading {
+    text-align: center;
+    grid-column: 1 / -1;
+  }
+
+  > *:not(.featured-articles__heading) {
+    background: var(--color-background-alt);
+  }
+}

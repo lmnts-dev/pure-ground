@@ -1,25 +1,35 @@
-<div id="Featured-articles-{{ section.id }}" class="Featured-articles color-{{section.settings.color_scheme}}"  
+<div id="Featured-articles-{{ section.id }}" class="featured-articles color-{{section.settings.color_scheme}}"  
 >
+
+   {% if section.settings.heading %}
+      <h2 class="featured-articles__heading h4">{{ section.settings.heading }}</h2>
+   {% endif %}
+
+   {% for block in section.blocks %}
+      {% assign article = block.settings.article %}
+
+      {% render 'article-card', article: article %}
+   {% endfor %}
  
 </div>
 
 {% schema %}
 {
-   "name":"Featured Articles",
-   "tag":"section",
-   "class":"section",
-   "settings":[
+   "name": "Featured Articles",
+   "tag": "section",
+   "class": "section",
+   "settings": [
       {
-         "type":"text",
-         "id":"heading",
-         "label":"Section Heading"
+         "type": "text",
+         "id": "heading",
+         "label":"Heading"
       },
       {
          "type":"select",
          "id":"color_scheme",
          "options":[
             {
-               "value":"cream",
+               "value": "cream",
                "label":"Cream (Default)"
             },
             {
@@ -80,7 +90,7 @@
             {
                "type":"article",
                "id":"article",
-               "label":"Select Article"
+               "label":"Article"
             }
          ]
       }
