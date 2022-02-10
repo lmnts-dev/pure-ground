@@ -1,6 +1,10 @@
-<div id="Split-text-{{ section.id }}" class="split-text color-{{section.settings.color_scheme}}"  
->
-  
+<div id="Split-text-{{ section.id }}" class="split-text color-{{section.settings.color_scheme}}">
+   <div class="split-section__text">    
+       
+    {% if section.settings.heading %}
+      <h1 class="split-section__text__heading {{ section.settings.heading_size }}">{{ section.settings.heading }}</h1>
+    {% endif %}
+  </div>
 </div>
 
 {% schema %}
@@ -19,7 +23,21 @@
         "id":"text",
         "label": "Text Content"
       },
-      //Add Button
+      {
+         "type": "header",
+         "content": "Button"
+      },       
+      {
+         "type": "text",
+         "id": "button_label",
+         "default": "Button label",
+         "label": "Button Label"
+      },
+      {
+         "type": "url",
+         "id": "button_link",
+         "label": "Button Link"
+      },
       {
          "type":"select",
          "id":"color_scheme",

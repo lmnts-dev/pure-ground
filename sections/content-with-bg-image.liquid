@@ -30,20 +30,25 @@
          "label":"Background Image"
       },
       {
-         "type":"radio",
-         "id":"hero",
-         "label":"Use as Hero?",
-         "options":[
-            {
-               "value":"true",
-               "label":"True"
-            },
-            {
-               "value":"false",
-               "label":"False"
-            }
-         ],
-         "default":"false"
+         "type": "header",
+         "content": "Button"
+      },       
+      {
+         "type": "text",
+         "id": "button_label",
+         "default": "Button label",
+         "label": "Button Label"
+      },
+      {
+         "type": "url",
+         "id": "button_link",
+         "label": "Button Link"
+      },
+      {
+         "type": "checkbox",
+         "id": "hero",
+         "label": "Use as hero?",
+         "info": "Should be selected if this section is the first or second on a page and contains the page title."
       },
       {
          "type":"radio",
@@ -66,20 +71,10 @@
          "default":"left"
       },
       {
-         "type":"radio",
-         "id":"icon",
-         "label":"Include Icon?",
-         "options":[
-            {
-               "value":"true",
-               "label":"True"
-            },
-            {
-               "value":"false",
-               "label":"False"
-            }
-         ],
-         "default":"true"
+         "type": "checkbox",
+         "id": "icon",
+         "label": "Include Icon?",
+         "info": "Adds an icon to the right of the section."
       },
       {
          "type":"select",
@@ -136,26 +131,6 @@
          "unit":"%",
          "label":"Bottom Spacing",
          "default":50
-      }
-   ],
-   "blocks": [
-      {
-        "type": "button",
-        "name": "Button",
-        "limit": 1,
-        "settings": [
-          {
-            "type": "text",
-            "id": "button_label",
-            "default": "Button label",
-            "label": "Button Label"
-          },
-          {
-            "type": "url",
-            "id": "button_link",
-            "label": "Button Link"
-          }
-        ]
       }
    ],
    "presets":[
