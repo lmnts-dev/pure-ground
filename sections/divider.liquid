@@ -8,16 +8,105 @@
   "name": "Divider",
   "tag": "section",
   "class": "section",
-  "settings": [
-    //Style 
-    //ColorTheme
-    //TopSpacing
-    //BottomSpacing
-  ],
-  "presets": [
-    {
-      "name": "Divider"
-    }
-  ]
+   "settings":[
+      {
+         "type":"style",
+         "id":"style",
+         "label":"Select Divider Style",
+         "options":[
+            {
+               "value":"grass",
+               "label":"Grass"
+            },
+            {
+               "value":"dots",
+               "label":"Dots"
+            }
+         ],
+         "default":"dots"
+      },
+      {
+         "type":"select",
+         "id":"color_scheme",
+         "options":[
+            {
+               "value":"cream",
+               "label":"Cream (Default)"
+            },
+            {
+               "value":"dark-cream",
+               "label":"Dark Cream"
+            },
+            {
+               "value":"grass",
+               "label":"Grass"
+            },
+            {
+               "value":"sun",
+               "label":"Sun"
+            },
+            {
+               "value":"ground",
+               "label":"Ground"
+            },
+            {
+               "value":"sky",
+               "label":"Sky"
+            },
+            {
+               "value":"tan",
+               "label":"Tan"
+            }
+         ],
+         "default":"cream",
+         "label":"Color Scheme"
+      },
+      {
+         "type":"range",
+         "id":"top_spacing",
+         "min":0,
+         "max":100,
+         "step":10,
+         "unit":"%",
+         "label":"Top Spacing",
+         "default":50
+      },
+      {
+         "type":"range",
+         "id":"bottom_spacing",
+         "min":0,
+         "max":100,
+         "step":10,
+         "unit":"%",
+         "label":"Bottom Spacing",
+         "default":50
+      }
+   ],
+   "blocks": [
+      {
+        "type": "button",
+        "name": "Button",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "text",
+            "id": "button_label",
+            "default": "Button label",
+            "label": "Button Label"
+          },
+          {
+            "type": "url",
+            "id": "button_link",
+            "label": "Button Link"
+          }
+        ]
+      }
+   ],
+   "presets":[
+      {
+         "name":"Content with Bg Image"
+      }
+   ]
 }
+
 {% endschema %}

@@ -8,16 +8,68 @@
   "name": "Product Reviews",
   "tag": "section",
   "class": "section",
-  "settings": [
-    //ColorTheme
-    //TopSpacing
-    //BottomSpacing
-  ],
-
-  "presets": [
-    {
-      "name": "Product Reviews"
-    }
-  ]
+   "settings":[
+      {
+         "type":"select",
+         "id":"color_scheme",
+         "options":[
+            {
+               "value":"cream",
+               "label":"Cream (Default)"
+            },
+            {
+               "value":"dark-cream",
+               "label":"Dark Cream"
+            },
+            {
+               "value":"grass",
+               "label":"Grass"
+            },
+            {
+               "value":"sun",
+               "label":"Sun"
+            },
+            {
+               "value":"ground",
+               "label":"Ground"
+            },
+            {
+               "value":"sky",
+               "label":"Sky"
+            },
+            {
+               "value":"tan",
+               "label":"Tan"
+            }
+         ],
+         "default":"cream",
+         "label":"Color Scheme"
+      },
+      {
+         "type":"range",
+         "id":"top_spacing",
+         "min":0,
+         "max":100,
+         "step":10,
+         "unit":"%",
+         "label":"Top Spacing",
+         "default":50
+      },
+      {
+         "type":"range",
+         "id":"bottom_spacing",
+         "min":0,
+         "max":100,
+         "step":10,
+         "unit":"%",
+         "label":"Bottom Spacing",
+         "default":50
+      }
+   ],
+   "presets":[
+      {
+         "name":"Product Reviews"
+      }
+   ]
 }
 {% endschema %}
