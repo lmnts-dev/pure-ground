@@ -7,9 +7,9 @@
 
 <div id="Section-image-{{ section.id }}" class="section-image color-{{section.settings.color_scheme}} __align-{{section.settings.alignment}}">
    {% if section.settings.hero %}
-      <h1 class="rich-text__heading {{ block.settings.heading_size }}">{{ block.settings.heading | escape }}</h1>
+      <h1 class="rich-text__heading {{ section.settings.heading_size }}">{{ section.settings.heading | escape }}</h1>
    {% else %}
-      <h2 class="rich-text__heading {{ block.settings.heading_size }}">{{ block.settings.heading | escape }}</h2>
+      <h2 class="rich-text__heading {{ section.settings.heading_size }}">{{ section.settings.heading | escape }}</h2>
    {% endif %}
    {% if section.settings.subheading %}
       <h2 class="split-section__text__heading">{{ section.settings.subheading }}</h1>
@@ -23,7 +23,6 @@
    {%- if section.settings.icon -%}
       <!--Image Here-->
    {%- endif -%}
-
 </div>
 
 {% schema %}
