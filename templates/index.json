@@ -3,15 +3,52 @@
     "164442413892b05956": {
       "type": "featured-page-link",
       "settings": {
-        "image": "shopify:\/\/shop_images\/man_in_field.jpg",
+        "image": "shopify://shop_images/man_in_field.jpg",
         "page_link": "mission",
         "color_scheme": "cream",
         "top_spacing": 0,
         "bottom_spacing": 0
       }
+    },
+    "collections-grid": {
+      "type": "collections-grid",
+      "blocks": {
+        "herbs": {
+          "type": "collection",
+          "settings": {
+            "collection": "herbs-roots-flowers"
+          }
+        },
+        "fair": {
+          "type": "collection",
+          "settings": {
+            "collection": "fair-trade-ingredients"
+          }
+        },
+        "rainforest": {
+          "type": "collection",
+          "settings": {
+            "collection": "rainforest-alliance-certified"
+          }
+        },
+        "teas": {
+          "type": "collection",
+          "settings": {
+            "collection": "organic-teas-leaves"
+          }
+        },
+        "chiles": {
+          "type": "collection",
+          "settings": {
+            "collection": "organic-dried-chiles"
+          }
+        }
+      },
+      "block_order": ["herbs", "fair", "rainforest", "teas", "chiles"],
+      "settings": {
+        "heading": "Browse Ingredient Categories"
+      }
     }
   },
-  "order": [
-    "164442413892b05956"
-  ]
+  "order": ["collections-grid", "164442413892b05956"]
 }

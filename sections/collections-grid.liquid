@@ -1,8 +1,42 @@
-<div id="Collections-grid-{{ section.id }}" class="Collections-grid color-{{section.settings.color_scheme}}"  
+{% style %}
+    .collections-grid {
+      --topSpacingRatio: {{section.settings.top_spacing}} / 100;
+      --bottomSpacingRatio: {{section.settings.bottom_spacing}} / 100;
+    }
+ {% endstyle %}
+ 
+ <div id="Collections-grid-{{ section.id }}" class="collections-grid {% if section.blocks.size > 3 %}__apply-masonry{% endif %} color-{{section.settings.color_scheme}}"  
 >
-   {% for collection in section.blocks %}
-      {{ collection.title }}
+  {% if section.settings.heading %}
+    <h2 class="collections-grid__heading h4">{{ section.settings.heading }}</h2>
+  {% endif %}
+
+  <div class="collections-grid__container">
+   {% for block in section.blocks %}
+      <div class="collections-grid__collection">
+        {% assign collection = block.settings.collection %}
+        <h3 class="collections-grid__collection__title h4">{{collection.title}}</h3>
+        {% if collection.image %}
+          <img
+            srcset="{%- if collection.image.src.width >= 165 -%}{{ collection.image.src | img_url: '165x' }} 165w,{%- endif -%}
+              {%- if collection.image.src.width >= 360 -%}{{ collection.image.src | img_url: '360x' }} 360w,{%- endif -%}
+              {%- if collection.image.src.width >= 533 -%}{{ collection.image.src | img_url: '533x' }} 533w,{%- endif -%}
+              {%- if collection.image.src.width >= 720 -%}{{ collection.image.src | img_url: '720x' }} 720w,{%- endif -%}
+              {%- if collection.image.src.width >= 1000 -%}{{ collection.image.src | img_url: '1000x' }} 1000w,{%- endif -%}
+              {%- if collection.image.src.width >= 1500 -%}{{ collection.image.src | img_url: '1500x' }} 1500w,{%- endif -%}
+              {{ collection.image.src | img_url: 'master' }} {{ collection.image.src.width }}w"
+            src="{{ collection.image.src | img_url: '533x' }}"
+            sizes="100vw"
+            alt="{{ collection.image.src.alt | escape }}"
+            loading="lazy"
+            width="{{ collection.image.width }}"
+            height="{{ collection.image.height }}"
+          >
+        {% endif %}
+
+      </div>
    {% endfor %}
+  </div>
 </div>
 
 {% schema %}
