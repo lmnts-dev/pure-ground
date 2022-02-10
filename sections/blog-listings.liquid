@@ -18,9 +18,28 @@
         {% render 'article-card', article: article, style: style %}
       {% endfor %}
 
-      <a class="blog-listings__button h4" href="{{section.settings.blog.url}}">
-        <span>View More</span>
-      </a>
+      {%- if section.settings.blog.articles.size > 4  -%}
+        <a class="blog-listings__button h4" href="{{section.settings.blog.url}}">
+          <span>View More</span>
+          {% if section.settings.image %}
+            <img
+              srcset="{%- if section.settings.image.src.width >= 165 -%}{{ section.settings.image.src | img_url: '165x' }} 165w,{%- endif -%}
+                {%- if section.settings.image.src.width >= 360 -%}{{ section.settings.image.src | img_url: '360x' }} 360w,{%- endif -%}
+                {%- if section.settings.image.src.width >= 533 -%}{{ section.settings.image.src | img_url: '533x' }} 533w,{%- endif -%}
+                {%- if section.settings.image.src.width >= 720 -%}{{ section.settings.image.src | img_url: '720x' }} 720w,{%- endif -%}
+                {%- if section.settings.image.src.width >= 1000 -%}{{ section.settings.image.src | img_url: '1000x' }} 1000w,{%- endif -%}
+                {%- if section.settings.image.src.width >= 1500 -%}{{ section.settings.image.src | img_url: '1500x' }} 1500w,{%- endif -%}
+                {{ section.settings.image.src | img_url: 'master' }} {{ section.settings.image.src.width }}w"
+              src="{{ section.settings.image.src | img_url: '533x' }}"
+              sizes="100vw"
+              alt="{{ section.settings.image.src.alt | escape }}"
+              loading="lazy"
+              width="{{ section.settings.image.width }}"
+              height="{{ section.settings.image.height }}"
+            >
+          {% endif %}
+        </a>
+    {%- endif -%}
     </div>
   </div>
 {%- endif -%}

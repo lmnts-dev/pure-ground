@@ -21,6 +21,7 @@
       "type": "blog-listings",
       "settings": {
         "blog": "news",
+        "image": "shopify:\/\/shop_images\/unsplash_EAt30ojfzOI.jpg",
         "color_scheme": "cream",
         "top_spacing": 50,
         "bottom_spacing": 50
@@ -30,6 +31,7 @@
       "type": "blog-listings",
       "settings": {
         "blog": "blog",
+        "image": "shopify:\/\/shop_images\/unsplash_4jnzsIB9vbg.jpg",
         "color_scheme": "cream",
         "top_spacing": 50,
         "bottom_spacing": 50
