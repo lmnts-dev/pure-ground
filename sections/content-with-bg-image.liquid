@@ -1,29 +1,85 @@
-<div id="Divider-{{ section.id }}" class="Divider color-{{section.settings.color_scheme}}"  
+<div id="Section-image-{{ section.id }}" class="section-image color-{{section.settings.color_scheme}}"  
 >
- 
+  
 </div>
 
 {% schema %}
 {
-  "name": "Divider",
-  "tag": "section",
-  "class": "section",
+   "name":"Content with Bg Image",
+   "tag":"section",
+   "class":"section",
    "settings":[
       {
+         "type":"text",
+         "id":"heading",
+         "label":"Section Heading"
+      },
+      {
+         "type":"text",
+         "id":"subheading",
+         "label":"Subheading"
+      },
+      {
+        "type":"richtext",
+        "id":"content",
+        "label":"Text Content"
+      },
+      {
+         "type":"image_picker",
+         "id":"background_image",
+         "label":"Background Image"
+      },
+      {
          "type":"radio",
-         "id":"style",
-         "label":"Select Divider Style",
+         "id":"hero",
+         "label":"Use as Hero?",
          "options":[
             {
-               "value":"grass",
-               "label":"Grass"
+               "value":"true",
+               "label":"True"
             },
             {
-               "value":"dots",
-               "label":"Dots"
+               "value":"false",
+               "label":"False"
             }
          ],
-         "default":"dots"
+         "default":"false"
+      },
+      {
+         "type":"radio",
+         "id":"alignment",
+         "label":"Select Alignment",
+         "options":[
+            {
+               "value":"left",
+               "label":"Left"
+            },
+            {
+               "value":"center",
+               "label":"Center"
+            },
+            {
+               "value":"right",
+               "label":"Right"
+            }
+         ],
+         "default":"left"
+      },
+      {
+         "type":"radio",
+         "id":"icon",
+         "label":"Include Icon?",
+         "options":[
+            {
+               "value":"true",
+               "label":"True"
+            },
+            {
+               "value":"false",
+               "label":"False"
+            }
+         ],
+         "default":"true"
       },
       {
          "type":"select",

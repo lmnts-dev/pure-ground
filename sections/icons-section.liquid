@@ -8,24 +8,101 @@
   "name": "Icons Section",
   "tag": "section",
   "class": "section",
-  "settings": [
-    //Caption
-    //Heading
-    //Text
-    //Seaction 
-    //ColorTheme
-    //TopSpacing
-    //BottomSpacing
-  ],
-  "blocks": [
-    //Icon Block
-      //Image Picker
-      //Text
-  ],
-  "presets": [
-    {
-      "name": "Icons Section"
-    }
-  ]
+   "settings":[
+       {
+         "type":"text",
+         "id":"caption",
+         "label":"Caption"
+      },
+      {
+         "type":"text",
+         "id":"heading",
+         "label":"Heading"
+      },
+       {
+         "type":"textarea",
+         "id":"text",
+         "label":"Text Content"
+      },
+      {
+         "type":"select",
+         "id":"color_scheme",
+         "options":[
+            {
+               "value":"cream",
+               "label":"Cream (Default)"
+            },
+            {
+               "value":"dark-cream",
+               "label":"Dark Cream"
+            },
+            {
+               "value":"grass",
+               "label":"Grass"
+            },
+            {
+               "value":"sun",
+               "label":"Sun"
+            },
+            {
+               "value":"ground",
+               "label":"Ground"
+            },
+            {
+               "value":"sky",
+               "label":"Sky"
+            },
+            {
+               "value":"tan",
+               "label":"Tan"
+            }
+         ],
+         "default":"cream",
+         "label":"Color Scheme"
+      },
+      {
+         "type":"range",
+         "id":"top_spacing",
+         "min":0,
+         "max":100,
+         "step":10,
+         "unit":"%",
+         "label":"Top Spacing",
+         "default":50
+      },
+      {
+         "type":"range",
+         "id":"bottom_spacing",
+         "min":0,
+         "max":100,
+         "step":10,
+         "unit":"%",
+         "label":"Bottom Spacing",
+         "default":50
+      }
+   ],
+   "blocks":[
+      {
+         "type":"image",
+         "name":"Icon",
+         "settings":[
+          {
+            "type":"image_picker",
+            "id":"icon",
+            "label":"Icon"
+          },
+          {
+            "type":"text",
+            "id":"alt",
+            "label":"Alt Text"
+          }
+         ]
+      }
+   ],
+   "presets":[
+      {
+         "name":"Icons Section"
+      }
+   ]
 }
 {% endschema %}
