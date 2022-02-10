@@ -1,0 +1,131 @@
+{% style %}
+    .collections-grid {
+      --topSpacingRatio: {{section.settings.top_spacing}} / 100;
+      --bottomSpacingRatio: {{section.settings.bottom_spacing}} / 100;
+    }
+ {% endstyle %}
+ 
+ <div id="Collections-grid-{{ section.id }}" class="collections-grid {% if section.blocks.size > 3 %}__apply-masonry{% endif %} color-{{section.settings.color_scheme}}"  
+>
+  {% if section.settings.heading %}
+    <h2 class="collections-grid__heading h4">{{ section.settings.heading }}</h2>
+  {% endif %}
+
+  <div class="collections-grid__container">
+   {% for block in section.blocks %}
+      <div class="collections-grid__collection">
+        {% assign collection = block.settings.collection %}
+        <h3 class="collections-grid__collection__title h4">{{collection.title}}</h3>
+        {% if collection.image %}
+          <img
+            srcset="{%- if collection.image.src.width >= 165 -%}{{ collection.image.src | img_url: '165x' }} 165w,{%- endif -%}
+              {%- if collection.image.src.width >= 360 -%}{{ collection.image.src | img_url: '360x' }} 360w,{%- endif -%}
+              {%- if collection.image.src.width >= 533 -%}{{ collection.image.src | img_url: '533x' }} 533w,{%- endif -%}
+              {%- if collection.image.src.width >= 720 -%}{{ collection.image.src | img_url: '720x' }} 720w,{%- endif -%}
+              {%- if collection.image.src.width >= 1000 -%}{{ collection.image.src | img_url: '1000x' }} 1000w,{%- endif -%}
+              {%- if collection.image.src.width >= 1500 -%}{{ collection.image.src | img_url: '1500x' }} 1500w,{%- endif -%}
+              {{ collection.image.src | img_url: 'master' }} {{ collection.image.src.width }}w"
+            src="{{ collection.image.src | img_url: '533x' }}"
+            sizes="100vw"
+            alt="{{ collection.image.src.alt | escape }}"
+            loading="lazy"
+            width="{{ collection.image.width }}"
+            height="{{ collection.image.height }}"
+          >
+        {% endif %}
+
+      </div>
+   {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Collections Grid",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Browse"
+    },
+    {
+    "type": "select",
+    "id": "color_scheme",
+    "options": [
+      {
+        "value": "cream",
+        "label": "Cream (Default)"
+      },
+      {
+        "value": "dark-cream",
+        "label": "Dark Cream"
+      },
+      {
+        "value": "grass",
+        "label": "Grass"
+      },
+      {
+        "value": "sun",
+        "label": "Sun"
+      },
+      {
+        "value": "ground",
+        "label": "Ground"
+      },
+      {
+        "value": "sky",
+        "label": "Sky"
+      },
+      {
+        "value": "tan",
+        "label": "Tan"
+      }
+    ],
+    "default": "cream",
+    "label": "Color Scheme"
+    },
+     {
+      "type": "range",
+      "id": "top_spacing",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "%",
+      "label": "Top Spacing",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "bottom_spacing",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "%",
+      "label": "Bottom Spacing",
+      "default": 50
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Collection",
+      "type": "collection",
+      "limit": 5,
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Collection"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Collections Grid"
+    }
+  ]
+}
+{% endschema %}
