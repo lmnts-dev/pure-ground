@@ -1,0 +1,10 @@
+.related-articles {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: calc(var(--pxSize) / 3);
+
+  &__heading {
+    grid-column: 1 / -1;
+    text-align: center;
+  }
+}
