@@ -5,29 +5,178 @@
 
 {% schema %}
 {
-  "name": "Content with Bg Image",
-  "tag": "section",
-  "class": "section",
-  "settings": [//Aren't repeated
-    // Background Image
-    //Use as hero
-    //Include Icon?
-    //Alignment
-    //ColorTheme
-    //TopSpacing
-    //BottomSpacing
-  ], 
-  "blocks": [//Repeated in any order
-    //Heading
-    //Heading Size
-    //Subheading
-    //Rich Text
-    //Button
-  ],
-  "presets": [
-    {
-      "name": "Content with Bg Image" //name of section
-    }
-  ]
+   "name":"Content with Bg Image",
+   "tag":"section",
+   "class":"section",
+   "settings":[
+      {
+         "type":"text",
+         "id":"heading",
+         "label":"Section Heading"
+      },
+      {
+         "type":"text",
+         "id":"subheading",
+         "label":"Subheading"
+      },
+      {
+         "type":"richtext",
+         "id":"content",
+         "label":"Text Content"
+      },
+      {
+         "type":"button",
+         "name":"Button",
+         "limit":1,
+         "settings":[
+            {
+               "type":"text",
+               "id":"button_label",
+               "default":"Button label",
+               "label":"Button Label"
+            },
+            {
+               "type":"url",
+               "id":"button_link",
+               "label":"Button Link"
+            }
+         ]
+      },
+      {
+         "type":"image_picker",
+         "id":"background_image",
+         "label":"Background Image"
+      },
+      {
+         "type":"radio",
+         "id":"hero",
+         "label":"Use as Hero?",
+         "options":[
+            {
+               "value":"true",
+               "label":"True"
+            },
+            {
+               "value":"false",
+               "label":"False"
+            }
+         ],
+         "default":"true"
+      },
+      {
+         "type":"radio",
+         "id":"hero",
+         "label":"Use as Hero?",
+         "options":[
+            {
+               "value":"true",
+               "label":"True"
+            },
+            {
+               "value":"false",
+               "label":"False"
+            }
+         ],
+         "default":"false"
+      },
+      {
+         "type":"radio",
+         "id":"alignment",
+         "label":"Select Alignment",
+         "options":[
+            {
+               "value":"left",
+               "label":"Left"
+            },
+            {
+               "value":"center",
+               "label":"Center"
+            },
+            {
+               "value":"right",
+               "label":"Right"
+            }
+         ],
+         "default":"left"
+      },
+      {
+         "type":"radio",
+         "id":"icon",
+         "label":"Include Icon?",
+         "options":[
+            {
+               "value":"true",
+               "label":"True"
+            },
+            {
+               "value":"false",
+               "label":"False"
+            }
+         ],
+         "default":"true"
+      },
+      {
+         "type":"select",
+         "id":"color_scheme",
+         "options":[
+            {
+               "value":"cream",
+               "label":"Cream (Default)"
+            },
+            {
+               "value":"dark-cream",
+               "label":"Dark Cream"
+            },
+            {
+               "value":"grass",
+               "label":"Grass"
+            },
+            {
+               "value":"sun",
+               "label":"Sun"
+            },
+            {
+               "value":"ground",
+               "label":"Ground"
+            },
+            {
+               "value":"sky",
+               "label":"Sky"
+            },
+            {
+               "value":"tan",
+               "label":"Tan"
+            }
+         ],
+         "default":"cream",
+         "label":"Color Scheme"
+      },
+      {
+         "type":"range",
+         "id":"top_spacing",
+         "min":0,
+         "max":100,
+         "step":10,
+         "unit":"%",
+         "label":"Top Spacing",
+         "default":50
+      },
+      {
+         "type":"range",
+         "id":"bottom_spacing",
+         "min":0,
+         "max":100,
+         "step":10,
+         "unit":"%",
+         "label":"Bottom Spacing",
+         "default":50
+      }
+   ],
+   "presets":[
+      {
+         "name":"Content with Bg Image"
+      }
+   ]
 }
+
 {% endschema %}
