@@ -3,7 +3,7 @@
 
     Expects:
     - article: {Object} Article object
-    - condensed: {String} The setting changes the layout and items shown on card, accepts nothing (default), or "condensed"
+    - condensed: {String} The setting changes the layout and items shown on card, accepts nothing ("default"), "condensed", or "horzontal"
 
     Usage:
     {% render 'article-card' article: article, style: "condensed" %}
@@ -12,21 +12,25 @@
 {%- if article and article != empty -%}
   <a href="{{ article.url }}" class="article-card __style-{% if style %}{{style}}{% else %}default{% endif %}">
     <div class="article-card__image">
-      <img
-        srcset="{%- if article.image.src.width >= 165 -%}{{ article.image.src | img_url: '165x' }} 165w,{%- endif -%}
-          {%- if article.image.src.width >= 360 -%}{{ article.image.src | img_url: '360x' }} 360w,{%- endif -%}
-          {%- if article.image.src.width >= 533 -%}{{ article.image.src | img_url: '533x' }} 533w,{%- endif -%}
-          {%- if article.image.src.width >= 720 -%}{{ article.image.src | img_url: '720x' }} 720w,{%- endif -%}
-          {%- if article.image.src.width >= 1000 -%}{{ article.image.src | img_url: '1000x' }} 1000w,{%- endif -%}
-          {%- if article.image.src.width >= 1500 -%}{{ article.image.src | img_url: '1500x' }} 1500w,{%- endif -%}
-          {{ article.image.src | img_url: 'master' }} {{ article.image.src.width }}w"
-        src="{{ article.image.src | img_url: '533x' }}"
-        sizes="100vw"
-        alt="{{ article.image.src.alt | escape }}"
-        loading="lazy"
-        width="{{ article.image.width }}"
-        height="{{ article.image.height }}"
-      >
+      {% if article.image %}
+        <img
+          srcset="{%- if article.image.src.width >= 165 -%}{{ article.image.src | img_url: '165x' }} 165w,{%- endif -%}
+            {%- if article.image.src.width >= 360 -%}{{ article.image.src | img_url: '360x' }} 360w,{%- endif -%}
+            {%- if article.image.src.width >= 533 -%}{{ article.image.src | img_url: '533x' }} 533w,{%- endif -%}
+            {%- if article.image.src.width >= 720 -%}{{ article.image.src | img_url: '720x' }} 720w,{%- endif -%}
+            {%- if article.image.src.width >= 1000 -%}{{ article.image.src | img_url: '1000x' }} 1000w,{%- endif -%}
+            {%- if article.image.src.width >= 1500 -%}{{ article.image.src | img_url: '1500x' }} 1500w,{%- endif -%}
+            {{ article.image.src | img_url: 'master' }} {{ article.image.src.width }}w"
+          src="{{ article.image.src | img_url: '533x' }}"
+          sizes="100vw"
+          alt="{{ article.image.src.alt | escape }}"
+          loading="lazy"
+          width="{{ article.image.width }}"
+          height="{{ article.image.height }}"
+        >
+      {% else %}
+          <div class="article-card__image__placeholder"></div>
+      {% endif %}
     </div>
     <div class="article-card__content">        
       <h3 class="article-card__content__heading {% if style == "horizontal" %}h5{% else %}h6{% endif %}">

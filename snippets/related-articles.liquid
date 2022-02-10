@@ -1,0 +1,62 @@
+{% comment %}
+  Returns section of next three posts in blog. Logic is circular so that if the current post is the last post, it returns the first three posts in blog
+
+  Expects:
+    - article: {Object} Article object
+    - blog: {Object} Blog object
+
+  Usage:
+  {% render 'related-articles' article: article, blog: blog %}
+{% endcomment %}
+
+
+{% assign related_articles = "" %}
+{% assign current_post_id = article.id %}
+{% assign current_post_index = -5 %}
+{% assign related_articles_count = 0 %}
+
+{% for article in blog.articles %}
+
+  {% if blog.articles.size > 4 %}
+    {% if article.id == current_post_id %}
+      {% assign current_post_index = forloop.index0 %}
+    {% endif %}
+
+    {% assign compare_post_1 = current_post_index | plus: 1 %}
+    {% assign compare_post_2 = current_post_index | plus: 2 %}
+    {% assign compare_post_3 = current_post_index | plus: 3 %}
+    {% if forloop.index0 == compare_post_1 or 
+      forloop.index0 == compare_post_2 or 
+      forloop.index0 == compare_post_3 
+    %}
+      {% capture post %}
+        {% render 'article-card', article: article %}
+      {% endcapture %}
+      {% assign related_articles = related_articles | append: post %}
+      {% assign related_articles_count = related_articles_count | plus: 1 %}
+    {% endif %}
+    {% if forloop.last and related_articles_count < 3 %}
+      {% for article2 in blog.articles limit: 3 %}
+        {% if related_articles_count < 3 and article2.id != current_post_id %}
+          {% capture post %}
+            {% render 'article-card', article: article2 %}
+          {% endcapture %}
+          {% assign related_articles = related_articles | append: post %}
+          {% assign related_articles_count = related_articles_count | plus: 1 %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+  {% else %}
+    {% if article.id != current_post_id %}
+      {% capture post %}
+        {% render 'article-card', article: article %}
+      {% endcapture %}
+      {% assign related_articles = related_articles | append: post %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+
+<div class="related-articles color-cream">
+  <h2 class="related-articles__heading h3">Related Articles</h2>
+  {{ related_articles }}
+</div>
