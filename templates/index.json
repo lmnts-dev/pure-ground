@@ -48,7 +48,28 @@
       "settings": {
         "heading": "Browse Ingredient Categories"
       }
+    },
+    "articles": {
+      "type": "featured-articles",
+      "settings": {
+        "heading": "Latest News in Organics"
+      },
+      "blocks": {
+        "art1": {
+          "type": "article",
+          "settings": {
+            "article": "blog/testing-2"
+          }
+        },
+        "art2": {
+          "type": "article",
+          "settings": {
+            "article": "blog/testing-3"
+          }
+        }
+      },
+      "block_order": ["art1", "art2"]
     }
   },
-  "order": ["collections-grid", "164442413892b05956"]
+  "order": ["collections-grid", "164442413892b05956", "articles"]
 }
