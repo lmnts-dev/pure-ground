@@ -1,6 +1,32 @@
-<div id="Icons-section-{{ section.id }}" class="Icons-section color-{{section.settings.color_scheme}}"  
+{% style %}
+    .icons-section {
+      --topSpacingRatio: {{section.settings.top_spacing}} / 100;
+      --bottomSpacingRatio: {{section.settings.bottom_spacing}} / 100;
+    }
+ {% endstyle %}
+
+<div id="Icons-section-{{ section.id }}" class="icons-section color-{{section.settings.color_scheme}}"  
 >
- 
+   <div class="icons-section__text">
+      {% if section.settings.caption %}
+         <span class="icons-section__text__caption">{{ section.settings.caption }}</span>
+      {% endif %}
+      {% if section.settings.heading %}
+         <h2 class="icons-section__text__heading">{{ section.settings.heading }}</h2>
+      {% endif %}
+      {% if section.settings.text %}
+         <p class="icons-section__text__text">{{ section.settings.text }}</p>
+      {% endif %}
+   </div>
+   <div>
+      {%- for block in section.blocks -%}
+         {%- case block.type -%}
+            {%- when 'icon' -%}
+               <img src={{ block.settings.icon }} loading="lazy" width={block.settings.icon.width} height={block.settings.icon.height}>
+               <p>{{ block.settings.text }}</p>
+         {%- endcase -%}
+      {%- endfor -%}
+   </div>
 </div>
 
 {% schema %}
@@ -93,8 +119,8 @@
           },
           {
             "type":"text",
-            "id":"alt",
-            "label":"Alt Text"
+            "id":"text",
+            "label":"Icon Text"
           }
          ]
       }
