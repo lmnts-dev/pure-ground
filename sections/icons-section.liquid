@@ -21,9 +21,9 @@
    <div>
       {%- for block in section.blocks -%}
          {%- case block.type -%}
-            {%- when 'icon' -%}
+            {%- when 'image' -%}
                <img src={{ block.settings.icon }} loading="lazy" width={block.settings.icon.width} height={block.settings.icon.height}>
-               <p>{{ block.settings.text }}</p>
+               <p>{{block.settings.text }}</p>
          {%- endcase -%}
       {%- endfor -%}
    </div>
