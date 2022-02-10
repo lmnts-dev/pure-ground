@@ -11,6 +11,7 @@
       "type": "blog-listings",
       "settings": {
         "blog": "guides",
+        "image": "shopify:\/\/shop_images\/ingredients_9e1eb5cc-a0c9-4b7f-a2f9-feeefd322b99.jpg",
         "color_scheme": "cream",
         "top_spacing": 50,
         "bottom_spacing": 50
@@ -38,6 +39,7 @@
       "type": "blog-listings",
       "settings": {
         "blog": "pure-ground-for-unity",
+        "image": "shopify:\/\/shop_images\/unsplash_WmJ5bXJC_Gs.jpg",
         "color_scheme": "cream",
         "top_spacing": 50,
         "bottom_spacing": 50
