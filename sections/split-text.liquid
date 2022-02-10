@@ -1,8 +1,21 @@
+
+{% style %}
+    .split-section {
+      --topSpacingRatio: {{section.settings.top_spacing}} / 100;
+      --bottomSpacingRatio: {{section.settings.bottom_spacing}} / 100;
+    }
+ {% endstyle %}
+
 <div id="Split-text-{{ section.id }}" class="split-text color-{{section.settings.color_scheme}}">
-   <div class="split-section__text">    
-       
+   <div class="split-section__text">      
     {% if section.settings.heading %}
       <h1 class="split-section__text__heading {{ section.settings.heading_size }}">{{ section.settings.heading }}</h1>
+    {% endif %}
+     {% if section.settings.text %}
+      <h1 class="split-section__text__heading {{ section.settings.heading_size }}">{{ section.settings.text }}</h1>
+    {% endif %}
+      {% if section.settings.button_link %}
+         <a href={{section.settings.button_link}}>{{section.settings.button_label}}</a>
     {% endif %}
   </div>
 </div>
