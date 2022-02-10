@@ -1,8 +1,9 @@
 .article-card {
+  --articleCardImageRatio: 75%;
   display: block;
 
   &__image {
-    padding-top: 75%;
+    padding-top: var(--articleCardImageRatio);
     position: relative;
 
     img {
@@ -22,13 +23,17 @@
     &__heading {
       margin: 0;
     }
+
+    &__text {
+      grid-column: 1 / -1;
+    }
   }
 
-  &:not(.__style-condensed) {
+  &:not(.__style-condensed):not(.__style-horizontal) {
     .article-card {
       &__content {
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: 1fr auto;
         gap: calc(var(--pxSize) / 3);
 
         &__heading {
@@ -38,6 +43,31 @@
         &__date {
           grid-column: 2 / 3;
         }
+      }
+    }
+  }
+
+  &.__style-horizontal {
+    display: flex;
+
+    .article-card {
+      &__image {
+        padding-top: calc(var(--articleCardImageRatio) / 2);
+      }
+
+      &__content {
+        display: flex;
+        flex-direction: column;
+        padding: var(--pxSize);
+
+        &__date {
+          flex: 1;
+        }
+      }
+
+      &__content,
+      &__image {
+        flex: 1;
       }
     }
   }

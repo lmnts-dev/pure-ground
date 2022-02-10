@@ -1,0 +1,19 @@
+.main-blog {
+  &__heading {
+    margin-bottom: calc(var(--sectionHorizontalSpacing) / 2);
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: calc(var(--pxSize) / 3);
+
+    > * {
+      background: var(--color-background-alt);
+
+      &:first-child {
+        grid-column: 1 / -1;
+      }
+    }
+  }
+}

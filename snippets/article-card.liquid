@@ -29,7 +29,7 @@
       >
     </div>
     <div class="article-card__content">        
-      <h3 class="article-card__content__heading h6">
+      <h3 class="article-card__content__heading {% if style == "horizontal" %}h5{% else %}h6{% endif %}">
         {{ article.title | truncate: 50 | escape }}
       </h3>
       <span class="article-card__content__date caption-sm">{{ article.published_at | date: "%B %Y" }}</span>
