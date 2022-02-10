@@ -11,12 +11,14 @@
     {% if section.settings.heading %}
       <h1 class="split-section__text__heading {{ section.settings.heading_size }}">{{ section.settings.heading }}</h1>
     {% endif %}
+    <div class="split-text__content">
      {% if section.settings.text %}
       <h1 class="split-section__text__heading {{ section.settings.heading_size }}">{{ section.settings.text }}</h1>
     {% endif %}
       {% if section.settings.button_link %}
          <a href={{section.settings.button_link}}>{{section.settings.button_label}}</a>
     {% endif %}
+   </div>
   </div>
 </div>
 
