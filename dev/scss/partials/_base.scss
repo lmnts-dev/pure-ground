@@ -1,3 +1,6 @@
+//Main structures
+////////////////////////////////////
+
 html {
   height: 100%;
 }
@@ -8,6 +11,8 @@ body {
   min-height: 100%;
 }
 
+//Sections' space and color defaults
+////////////////////////////////////
 main > section > div,
 body > div > section,
 body > div > footer {
@@ -31,6 +36,8 @@ body > div > footer {
   }
 }
 
+//Form styles
+////////////////////////////////////
 form {
   button,
   input,
@@ -90,4 +97,20 @@ form {
       }
     }
   }
+}
+
+//Button styles
+////////////////////////////////////
+
+.btn {
+  height: var(--btnHeight);
+  line-height: var(--btnHeight);
+  border-radius: 7px;
+  background: var(--color-foreground);
+  color: var(--color-background);
+  padding: 0 calc(var(--btnHeight) / 2);
+  display: inline-block;
+  text-align: center;
+  font-size: 0.8625rem;
+  font-weight: 500;
 }

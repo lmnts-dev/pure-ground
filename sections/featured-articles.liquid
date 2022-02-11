@@ -16,6 +16,12 @@
 
       {% render 'article-card', article: article %}
    {% endfor %}
+
+   {% if section.settings.button_label and section.settings.button_link %}
+      <div class="featured-articles__btn">
+         <a href="{{ section.settings.button_link }}" class="btn">{{ section.settings.button_label }}</a>
+      </div>
+   {% endif %}
  
 </div>
 
@@ -29,6 +35,21 @@
          "type": "text",
          "id": "heading",
          "label":"Heading"
+      },
+      {
+         "type": "header",
+         "content": "Button"
+      },       
+      {
+         "type": "text",
+         "id": "button_label",
+         "default": "Button label",
+         "label": "Button Label"
+      },
+      {
+         "type": "url",
+         "id": "button_link",
+         "label": "Button Link"
       },
       {
          "type":"select",

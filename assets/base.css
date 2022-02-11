@@ -2243,16 +2243,16 @@ input[type="checkbox"] {
 }
 
 .header__icon .icon {
-  height: calc(var(--navSize) / 2);
-  width: calc(var(--navSize) / 2);
+  height: calc(var(--navHeight) / 2);
+  width: calc(var(--navHeight) / 2);
   fill: none;
   vertical-align: middle;
 }
 
 .header__icon,
 .header__icon--cart .icon {
-  height: calc(var(--navSize) / 2);
-  width: calc(var(--navSize) / 2);
+  height: calc(var(--navHeight) / 2);
+  width: calc(var(--navHeight) / 2);
 }
 
 .header__icon--cart {

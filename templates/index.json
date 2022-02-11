@@ -76,7 +76,9 @@
         "art2"
       ],
       "settings": {
-        "heading": "Latest News in Organics"
+        "heading": "Latest News in Organics",
+        "button_label": "View More Resources",
+        "button_link": "\/resources"
       }
     }
   },
