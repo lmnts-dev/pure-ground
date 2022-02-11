@@ -35,27 +35,17 @@
 
     {%- for block in section.blocks -%}
     {%- case block.type -%}
-
-      {%- when 'heading' -%}
-        {% if section.settings.hero %}
-          <h1 class="rich-text__heading __align-{{block.settings.heading_alignment}} {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}</h1>
-        {% else %}
-          <h2 class="rich-text__heading __align-{{block.settings.heading_alignment}} {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}</h2>
-        {% endif %}
-        {% if block.settings.subheading %}
-          <h3 class="rich-text__subheading caption __align-{{block.settings.heading_alignment}}">{{block.settings.subheading}}</h3>
-        {% endif %}
-
       {%- when 'text' -%}
         <h3 class="rich-text__text">{{ block.settings.heading }}</h3>
+        <a {% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} {{ block.shopify_attributes }}>
+          {{ block.settings.button_label | escape }}
+        </a>
 
       {%- when 'content' -%}
         <p class="rich-text__text">{{ block.settings.content }}</p>
       
       {%- when 'button_link' -%}
-        <a {% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} {{ block.shopify_attributes }}>
-            {{ block.settings.button_label | escape }}
-        </a>
+    
     {%- endcase -%}
   {%- endfor -%}
 
