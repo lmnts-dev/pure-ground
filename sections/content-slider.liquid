@@ -19,7 +19,8 @@
                   height="{{ slide.image.height }}"
                >
             {%- when 'text' -%}
-              <p class="collections-grid__collection__title h4">{{slide.text}}</p>
+              <p class="">{{slide.text}}</p>
+               <p class="">{{slide.author}}</p>
          {%- endcase -%}
       {%- endfor -%}
 </div>
