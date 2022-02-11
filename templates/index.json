@@ -3,7 +3,7 @@
     "164442413892b05956": {
       "type": "featured-page-link",
       "settings": {
-        "image": "shopify://shop_images/man_in_field.jpg",
+        "image": "shopify:\/\/shop_images\/man_in_field.jpg",
         "page_link": "mission",
         "color_scheme": "cream",
         "top_spacing": 0,
@@ -44,34 +44,47 @@
           }
         }
       },
-      "block_order": ["herbs", "fair", "rainforest", "teas", "chiles"],
+      "block_order": [
+        "herbs",
+        "fair",
+        "rainforest",
+        "teas",
+        "chiles"
+      ],
       "settings": {
         "heading": "Browse Ingredient Categories"
       }
     },
     "articles": {
       "type": "featured-articles",
-      "settings": {
-        "heading": "Latest News in Organics",
-        "button_label": "View More Resources",
-        "button_link": "/resources"
-      },
       "blocks": {
         "art1": {
           "type": "article",
           "settings": {
-            "article": "blog/testing-2"
+            "article": "blog\/testing-2"
           }
         },
         "art2": {
           "type": "article",
           "settings": {
-            "article": "blog/testing-3"
+            "article": "blog\/testing-3"
           }
         }
       },
-      "block_order": ["art1", "art2"]
+      "block_order": [
+        "art1",
+        "art2"
+      ],
+      "settings": {
+        "heading": "Latest News in Organics",
+        "button_label": "View More Resources",
+        "button_link": "\/resources"
+      }
     }
   },
-  "order": ["collections-grid", "164442413892b05956", "articles"]
+  "order": [
+    "collections-grid",
+    "164442413892b05956",
+    "articles"
+  ]
 }
