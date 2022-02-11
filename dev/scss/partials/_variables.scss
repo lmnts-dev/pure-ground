@@ -65,8 +65,20 @@
   --color-accent: rgba(var(--color-ground));
 }
 
-// links
+// Sizing
 
-//$link-color:                    $color-black;
-//$link-hover-color:              lighten($link-color, 5);
-//$link-active-color:             lighten($link-color, 10);
+:root {
+  --pxSize: 50px;
+  --vwSize: 2vw;
+
+  --sectionVerticalSpacing: 100px;
+  --sectionHorizontalSpacing: calc(var(--vwSize) * 6);
+  --sectionHorizontalBump: calc(var(--vwSize) * 1.5);
+
+  --topSpacingRatio: 1;
+  --bottomSpacingRatio: 1;
+
+  --navHeight: 75px;
+  --inputHeight: 48px;
+  --btnHeight: 48px;
+}

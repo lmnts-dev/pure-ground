@@ -3,12 +3,13 @@
   grid-template-columns: 1fr 1fr;
   gap: calc(var(--pxSize) / 2);
 
-  &__heading {
+  &__heading,
+  &__btn {
     text-align: center;
     grid-column: 1 / -1;
   }
 
-  > *:not(.featured-articles__heading) {
+  > *:not(.featured-articles__heading):not(.featured-articles__btn) {
     background: var(--color-background-alt);
   }
 }
