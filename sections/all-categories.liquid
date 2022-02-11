@@ -1,6 +1,14 @@
-<div id="All-categories-{{ section.id }}" class="All-categories color-{{section.settings.color_scheme}}"  
->
- 
+{% style %}
+    .all-categories {
+      --topSpacingRatio: {{section.settings.top_spacing}} / 100;
+      --bottomSpacingRatio: {{section.settings.bottom_spacing}} / 100;
+    }
+ {% endstyle %}
+
+<div id="All-categories-{{ section.id }}" class="all-categories color-{{section.settings.color_scheme}}">
+   {% if section.settings.heading %}
+      <h2 class="split-section__text__heading">{{ section.settings.heading }}</h2>
+    {% endif %}
 </div>
 
 {% schema %}

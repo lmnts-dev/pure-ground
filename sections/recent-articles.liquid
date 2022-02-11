@@ -1,5 +1,11 @@
-<div id="Recent-articles-{{ section.id }}" class="Recent-articles color-{{section.settings.color_scheme}}"  
->
+{% style %}
+    .recent-articles {
+      --topSpacingRatio: {{section.settings.top_spacing}} / 100;
+      --bottomSpacingRatio: {{section.settings.bottom_spacing}} / 100;
+    }
+ {% endstyle %}
+
+<div id="Recent-articles-{{ section.id }}" class="recent-articles color-{{section.settings.color_scheme}}">
  
 </div>
 

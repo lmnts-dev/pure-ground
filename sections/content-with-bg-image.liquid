@@ -1,6 +1,28 @@
-<div id="Section-image-{{ section.id }}" class="section-image color-{{section.settings.color_scheme}}"  
->
-  
+{% style %}
+    .section-image {
+      --topSpacingRatio: {{section.settings.top_spacing}} / 100;
+      --bottomSpacingRatio: {{section.settings.bottom_spacing}} / 100;
+    }
+ {% endstyle %}
+
+<div id="Section-image-{{ section.id }}" class="section-image color-{{section.settings.color_scheme}} __align-{{section.settings.alignment}}">
+   {% if section.settings.hero %}
+      <h1 class="rich-text__heading {{ section.settings.heading_size }}">{{ section.settings.heading | escape }}</h1>
+   {% else %}
+      <h3 class="rich-text__heading {{ section.settings.heading_size }}">{{ section.settings.heading | escape }}</h3>
+   {% endif %}
+   {% if section.settings.subheading %}
+      <h2 class="split-section__text__heading">{{ section.settings.subheading }}</h1>
+   {% endif %}
+   {% if section.settings.content %}
+      <p class="split-section__text__content">{{ section.settings.content }}</h1>
+   {% endif %}
+    {% if section.settings.button_link %}
+         <a href={{section.settings.button_link}}>{{section.settings.button_label}}</a>
+    {% endif %}
+   {%- if section.settings.icon -%}
+      <!--Image Here-->
+   {%- endif -%}
 </div>
 
 {% schema %}
@@ -20,16 +42,6 @@
          "label":"Subheading"
       },
       {
-        "type":"richtext",
-        "id":"content",
-        "label":"Text Content"
-      },
-      {
-         "type":"image_picker",
-         "id":"background_image",
-         "label":"Background Image"
-      },
-      {
          "type": "header",
          "content": "Button"
       },       
@@ -43,6 +55,16 @@
          "type": "url",
          "id": "button_link",
          "label": "Button Link"
+      },
+      {
+        "type":"richtext",
+        "id":"content",
+        "label":"Text Content"
+      },
+      {
+         "type":"image_picker",
+         "id":"background_image",
+         "label":"Background Image"
       },
       {
          "type": "checkbox",

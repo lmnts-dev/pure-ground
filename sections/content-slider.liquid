@@ -1,6 +1,26 @@
-<div id="Content-slider-{{ section.id }}" class="Content-slider color-{{section.settings.color_scheme}}"  
->
- 
+{% style %}
+    .content-slider {
+      --topSpacingRatio: {{section.settings.top_spacing}} / 100;
+      --bottomSpacingRatio: {{section.settings.bottom_spacing}} / 100;
+    }
+ {% endstyle %}
+
+<div id="Content-slider-{{ section.id }}" class="content-slider color-{{section.settings.color_scheme}}">
+      {%- for block in section.blocks -%}
+         {%- case block.type -%}            
+            {%- when 'text' -%}
+               <img 
+                  src="{{ block.settings.image.src | img_url: '584x' }}"
+                  sizes="584px"
+                  alt="{{ block.settings.image.src.alt | escape }}"
+                  loading="lazy"
+                  width="{{ collection.image.width }}"
+                  height="{{ collection.image.height }}"
+               >
+              <p class="">{{block.settings.text}}</p>
+               <p class="">- {{block.settings.author}}</p>
+         {%- endcase -%}
+      {%- endfor -%}
 </div>
 
 {% schema %}
@@ -73,12 +93,12 @@
       "settings": [
         {
           "type": "text",
-          "id": "Text",
+          "id": "text",
           "label": "Text Content"
         },
         {
           "type": "text",
-          "id": "Author",
+          "id": "author",
           "label": "Author"
         },
         {

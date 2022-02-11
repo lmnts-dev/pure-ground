@@ -1,6 +1,28 @@
-<div id="Icons-row-{{ section.id }}" class="Icons-row color-{{section.settings.color_scheme}}"  
->
- 
+{% style %}
+    .icons-row {
+      --topSpacingRatio: {{section.settings.top_spacing}} / 100;
+      --bottomSpacingRatio: {{section.settings.bottom_spacing}} / 100;
+    }
+ {% endstyle %}
+
+<div id="Icons-row-{{ section.id }}" class="icons-row color-{{section.settings.color_scheme}}">
+   {% if section.settings.heading %}
+      <h2 class="icons-row_text__heading">{{ section.settings.heading }}</h2>
+   {% endif %}
+   {%- for block in section.blocks -%}
+         {%- case block.type -%}
+            {%- when 'image' -%}
+               <img 
+                  src="{{ block.settings.icon.src | img_url: '90x' }}"
+                  sizes="90px"
+                  alt="{{ block.settings.icon.src.alt | escape }}"
+                  loading="lazy"
+                  width="{{ collection.image.width }}"
+                  height="{{ collection.image.height }}"
+               >
+               <p>{{block.settings.text }}</p>
+         {%- endcase -%}
+      {%- endfor -%}
 </div>
 
 {% schema %}
@@ -76,16 +98,16 @@
          "type":"image",
          "name":"Icon",
          "settings":[
-          {
-            "type":"image_picker",
-            "id":"icon",
-            "label":"Icon"
-          },
-          {
-            "type":"text",
-            "id":"alt",
-            "label":"Alt Text"
-          }
+            {
+               "type":"image_picker",
+               "id":"icon",
+               "label":"Icon"
+            },
+            {
+               "type":"text",
+               "id":"text",
+               "label":"Icon Text"
+            }
          ]
       }
    ],
