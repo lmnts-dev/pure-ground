@@ -1,6 +1,15 @@
-<div id="Spec-sheet-{{ section.id }}" class="Spec-sheet color-{{section.settings.color_scheme}}"  
->
- 
+
+{% style %}
+    .spec-sheet {
+      --topSpacingRatio: {{section.settings.top_spacing}} / 100;
+      --bottomSpacingRatio: {{section.settings.bottom_spacing}} / 100;
+    }
+ {% endstyle %}
+
+<div id="Spec-sheet-{{ section.id }}" class="spec-sheet color-{{section.settings.color_scheme}}">
+   {% if section.settings.label %}
+      <p class="split-section__text__label">{{ section.settings.label }}</h2>
+   {% endif %}
 </div>
 
 {% schema %}
