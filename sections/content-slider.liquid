@@ -7,20 +7,19 @@
 
 <div id="Content-slider-{{ section.id }}" class="content-slider color-{{section.settings.color_scheme}}">
       {%- for block in section.blocks -%}
-        {% assign slide = block.settings.slide %}
          {%- case block.type -%}
             {%- when 'image' -%}
               <img 
-                  src="{{ slide.image.src | img_url: '90x' }}"
+                  src="{{ block.settings.slide.image.src | img_url: '90x' }}"
                   sizes="90px"
-                  alt="{{ slide.image.src.alt | escape }}"
+                  alt="{{ block.settings.slide.image.src.alt | escape }}"
                   loading="lazy"
-                  width="{{ slide.image.width }}"
-                  height="{{ slide.image.height }}"
+                  width="{{ block.settings.slide.image.width }}"
+                  height="{{ block.settings.slide.image.height }}"
                >
             {%- when 'text' -%}
-              <p class="">{{slide.text}}</p>
-               <p class="">{{slide.author}}</p>
+              <p class="">{{block.settings.slide.text}}</p>
+               <p class="">{{block.settings.slide.author}}</p>
          {%- endcase -%}
       {%- endfor -%}
 </div>
