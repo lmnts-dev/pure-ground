@@ -32,7 +32,7 @@
       ],
       "settings": {
         "color_scheme": "color-cream",
-        "hero": false,
+        "hero": true,
         "top_spacing": 80,
         "bottom_spacing": 20
       }
@@ -40,40 +40,40 @@
     "1644596729a71a0ba5": {
       "type": "accordions",
       "blocks": {
-        "764a4326-b46a-4185-aca5-9cfebd067941": {
-          "type": "text",
+        "db9e63c1-302a-451b-8b36-d805e639772c": {
+          "type": "accordion",
           "settings": {
             "heading": "What are ingredients?",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla."
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. <\/p>"
           }
         },
-        "373778ac-3c3f-4a5b-9838-619eb57353bc": {
-          "type": "text",
+        "76ac3bf6-96ef-4cb4-99a8-cecb989f922b": {
+          "type": "accordion",
           "settings": {
             "heading": "How many ingredients are there?",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla."
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. <\/p>"
           }
         },
-        "c83cf520-a0f9-45e6-9fa5-b840e6bafcc7": {
-          "type": "text",
+        "bfb177dd-4d38-46fe-b0eb-0a7afb9622c1": {
+          "type": "accordion",
           "settings": {
             "heading": "Where do the ingredients come from?",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla."
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. <\/p>"
           }
         },
-        "63f46891-51da-4c06-ae90-9d4ee77209f0": {
-          "type": "text",
+        "e1d8aa85-411d-43ea-ac15-580cb2c4ddd7": {
+          "type": "accordion",
           "settings": {
             "heading": "Why are they good?",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla."
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. <\/p>"
           }
         }
       },
       "block_order": [
-        "764a4326-b46a-4185-aca5-9cfebd067941",
-        "373778ac-3c3f-4a5b-9838-619eb57353bc",
-        "c83cf520-a0f9-45e6-9fa5-b840e6bafcc7",
-        "63f46891-51da-4c06-ae90-9d4ee77209f0"
+        "db9e63c1-302a-451b-8b36-d805e639772c",
+        "76ac3bf6-96ef-4cb4-99a8-cecb989f922b",
+        "bfb177dd-4d38-46fe-b0eb-0a7afb9622c1",
+        "e1d8aa85-411d-43ea-ac15-580cb2c4ddd7"
       ],
       "settings": {
         "color_scheme": "cream",
