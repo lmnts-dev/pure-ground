@@ -6,9 +6,54 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "1644596729a71a0ba5": {
+      "type": "accordions",
+      "blocks": {
+        "764a4326-b46a-4185-aca5-9cfebd067941": {
+          "type": "text",
+          "settings": {
+            "heading": "What are ingredients?",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla."
+          }
+        },
+        "373778ac-3c3f-4a5b-9838-619eb57353bc": {
+          "type": "text",
+          "settings": {
+            "heading": "How many ingredients are there?",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla."
+          }
+        },
+        "c83cf520-a0f9-45e6-9fa5-b840e6bafcc7": {
+          "type": "text",
+          "settings": {
+            "heading": "Where do the ingredients come from?",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla."
+          }
+        },
+        "63f46891-51da-4c06-ae90-9d4ee77209f0": {
+          "type": "text",
+          "settings": {
+            "heading": "Why are they good?",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla."
+          }
+        }
+      },
+      "block_order": [
+        "764a4326-b46a-4185-aca5-9cfebd067941",
+        "373778ac-3c3f-4a5b-9838-619eb57353bc",
+        "c83cf520-a0f9-45e6-9fa5-b840e6bafcc7",
+        "63f46891-51da-4c06-ae90-9d4ee77209f0"
+      ],
+      "settings": {
+        "color_scheme": "cream",
+        "top_spacing": 50,
+        "bottom_spacing": 100
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "1644596729a71a0ba5"
   ]
 }
