@@ -10,16 +10,16 @@
          {%- case block.type -%}
             {%- when 'image_picker' -%}
               <img 
-                  src="{{ block.settings.slide.image.src | img_url: '90x' }}"
+                  src="{{ block.settings.image.src | img_url: '90x' }}"
                   sizes="90px"
-                  alt="{{ block.settings.slide.image.src.alt | escape }}"
+                  alt="{{ block.settings.image.src.alt | escape }}"
                   loading="lazy"
-                  width="{{ block.settings.slide.image.width }}"
-                  height="{{ block.settings.slide.image.height }}"
+                  width="{{ block.settings.image.width }}"
+                  height="{{ block.settings.image.height }}"
                >
             {%- when 'text' -%}
-              <p class="">{{block.settings.slide.text}}</p>
-               <p class="">{{block.settings.slide.author}}</p>
+              <p class="">{{block.settings.text}}</p>
+               <p class="">{{block.settings.author}}</p>
          {%- endcase -%}
       {%- endfor -%}
 </div>
@@ -94,12 +94,12 @@
       "settings": [
         {
           "type": "text",
-          "id": "Text",
+          "id": "text",
           "label": "Text Content"
         },
         {
           "type": "text",
-          "id": "Author",
+          "id": "author",
           "label": "Author"
         },
         {
