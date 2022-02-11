@@ -1,6 +1,19 @@
-<div id="Accordions-{{ section.id }}" class="Accordions color-{{section.settings.color_scheme}}"  
+{% style %}
+    .accordions {
+      --topSpacingRatio: {{section.settings.top_spacing}} / 100;
+      --bottomSpacingRatio: {{section.settings.bottom_spacing}} / 100;
+    }
+ {% endstyle %}
+
+<div id="Accordions-{{ section.id }}" class="accordions color-{{section.settings.color_scheme}}"  
 >
- 
+   {%- for block in section.blocks -%}
+         {%- case block.type -%}            
+            {%- when 'text' -%}
+              <h3 class="">{{block.settings.heading}}</h3>
+               <p class="">- {{block.settings.content}}</p>
+         {%- endcase -%}
+      {%- endfor -%}
 </div>
 
 {% schema %}
