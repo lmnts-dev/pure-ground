@@ -1,6 +1,24 @@
-<div id="Gallery-{{ section.id }}" class="Gallery color-{{section.settings.color_scheme}}"  
->
- 
+{% style %}
+  .gallery {
+    --topSpacingRatio: {{section.settings.top_spacing}} / 100;
+    --bottomSpacingRatio: {{section.settings.bottom_spacing}} / 100;
+  }
+{% endstyle %}
+
+<div id="Gallery-{{ section.id }}" class="gallery color-{{section.settings.color_scheme}}">
+  {%- for block in section.blocks -%}
+      {%- case block.type -%}            
+        {%- when 'image' -%}
+          <img 
+              src="{{ block.settings.image.src | img_url: '90x' }}"
+              sizes="90px"
+              alt="{{ block.settings.image.alt | escape }}"
+              loading="lazy"
+              width="{{ collection.image.width }}"
+              height="{{ collection.image.height }}"
+            >
+      {%- endcase -%}
+    {%- endfor -%}
 </div>
 
 {% schema %}
