@@ -8,7 +8,7 @@
 <div id="Content-slider-{{ section.id }}" class="content-slider color-{{section.settings.color_scheme}}">
       {%- for block in section.blocks -%}
          {%- case block.type -%}
-            {%- when 'image' -%}
+            {%- when 'image_picker' -%}
               <img 
                   src="{{ block.settings.slide.image.src | img_url: '90x' }}"
                   sizes="90px"
