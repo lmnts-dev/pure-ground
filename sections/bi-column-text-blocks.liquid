@@ -49,10 +49,10 @@
       {%- when 'text' -%}
         <h3 class="rich-text__text">{{ block.settings.heading }}</h3>
 
-      {%- when 'textarea' -%}
+      {%- when 'content' -%}
         <p class="rich-text__text">{{ block.settings.content }}</p>
       
-      {%- when 'button' -%}
+      {%- when 'button_link' -%}
         <a {% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} {{ block.shopify_attributes }}>
             {{ block.settings.button_label | escape }}
         </a>
