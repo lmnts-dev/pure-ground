@@ -40,6 +40,9 @@
 </div>
 
 <script>
+   document.addEventListener("shopify:section:load", function(event) {
+  console.log('works here');
+});
   var elem = document.querySelector('.featured-cards .carousel');
   console.log(elem,'ELEM HERE!!!!')
   var flkty = new Flickity( elem, {
