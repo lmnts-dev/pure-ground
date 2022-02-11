@@ -7,6 +7,36 @@
         "padding_bottom": 28
       }
     },
+    "1644596818458e959a": {
+      "type": "rich-text",
+      "blocks": {
+        "1644596818ef38f807-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "FAQ",
+            "heading_size": "h2",
+            "heading_alignment": "center",
+            "subheading": ""
+          }
+        },
+        "1644596818ef38f807-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1644596818ef38f807-0",
+        "1644596818ef38f807-1"
+      ],
+      "settings": {
+        "color_scheme": "color-cream",
+        "hero": false,
+        "top_spacing": 80,
+        "bottom_spacing": 20
+      }
+    },
     "1644596729a71a0ba5": {
       "type": "accordions",
       "blocks": {
@@ -54,6 +84,7 @@
   },
   "order": [
     "main",
+    "1644596818458e959a",
     "1644596729a71a0ba5"
   ]
 }
