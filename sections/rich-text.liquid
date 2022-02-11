@@ -18,14 +18,17 @@
         {% if block.settings.subheading %}
           <h3 class="rich-text__subheading caption __align-{{block.settings.heading_alignment}}">{{block.settings.subheading}}</h3>
         {% endif %}
-
       {%- when 'text' -%}
-        <div class="rich-text__text" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
-      
+        {% if block.settings.content %}
+          <div class="rich-text__text" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+        {% endif %}
+
       {%- when 'button' -%}
-        <a {% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} {{ block.shopify_attributes }}>
-          {{ block.settings.button_label | escape }}
-        </a>
+        {% if block.settings.button_link %}
+          <a {% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} {{ block.shopify_attributes }}>
+            {{ block.settings.button_label | escape }}
+          </a>
+        {% endif %}
 
     {%- endcase -%}
   {%- endfor -%}

@@ -22,9 +22,11 @@
         {%- when 'text' -%}
           <div class="split-section__text__rich-text" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
         {%- when 'button' -%}
-          <a {% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} {{ block.shopify_attributes }}>
-            {{ block.settings.button_label | escape }}
-          </a>
+          {% if block.settings.button_link %}
+            <a {% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} {{ block.shopify_attributes }}>
+              {{ block.settings.button_label | escape }}
+            </a>
+        {% endif %}
       {%- endcase -%}
     {%- endfor -%}
   </div>
