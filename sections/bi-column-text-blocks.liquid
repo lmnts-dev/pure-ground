@@ -36,11 +36,17 @@
     {%- for block in section.blocks -%}
     {%- case block.type -%}
       {%- when 'text' -%}
-        <h3 class="rich-text__text">{{ block.settings.heading }}</h3>
-        <p class="rich-text__text">{{ block.settings.content }}</p>
-        <a {% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} {{ block.shopify_attributes }}>
-          {{ block.settings.button_label | escape }}
-        </a>
+        {% if block.settings.heading %}
+          <h3 class="rich-text__text">{{ block.settings.heading }}</h3>
+        {% endif %}
+        {% if block.settings.content %}
+          <p class="rich-text__text">{{ block.settings.content }}</p>
+        {% endif %}
+        {% if block.settings.button_link %}
+          <a {% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} {{ block.shopify_attributes }}>
+            {{ block.settings.button_label | escape }}
+          </a>
+        {% endif %}
     {%- endcase -%}
   {%- endfor -%}
 
