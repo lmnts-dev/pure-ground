@@ -11,8 +11,7 @@
    {% endif %}
 
    <div class="featured-cards">
-      <div class="carousel js-flickity"
-  data-flickity='{ "wrapAround": true }'>
+      <div class="carousel">
             {% for block in section.blocks %}
          <div class="carousel-cell">
                      <img
@@ -40,6 +39,28 @@
    </div>   
 </div>
 
+<script>
+  var elem = document.querySelector('.featured-cards .carousel');
+  var flkty = new Flickity( elem, {
+    contain: true,
+    imagesLoaded: true,
+    lazyLoad: 2,
+    wrapAround: true,
+    pageDots: false,
+  });
+  {% if request.design_mode %}
+   document.addEventListener("shopify:section:load", function(event) {
+    var elem = document.querySelector('.featured-cards .carousel');
+    var flkty = new Flickity( elem, {
+    contain: true,
+    imagesLoaded: true,
+    lazyLoad: 2,
+    wrapAround: true,
+    pageDots: false,
+    }); 
+  });
+  {% endif %}
+</script>
 
 {% schema %}
 {
