@@ -3,13 +3,13 @@
       --topSpacingRatio: {{section.settings.top_spacing}} / 100;
       --bottomSpacingRatio: {{section.settings.bottom_spacing}} / 100;
     }
- {% endstyle %}
+{% endstyle %}
 
 <div id="Accordions-{{ section.id }}" class="accordions color-{{section.settings.color_scheme}}"  
 >
    {%- for block in section.blocks -%}
       {%- case block.type -%}            
-        {%- when 'text' -%}
+        {%- when 'accordion' -%}
           <h3 class="">{{block.settings.heading}}</h3>
           <p class="">{{block.settings.content}}</p>
       {%- endcase -%}
@@ -81,8 +81,8 @@
   ],
   "blocks": [
     {
-      "name": "Accordion Item",
-      "type": "text",
+      "name": "Accordion",
+      "type": "accordion",
       "settings": [
         {
           "type": "text",
@@ -90,9 +90,9 @@
           "label": "Heading"
         },
         {
-          "type": "textarea",
+          "type": "richtext",
           "id": "content",
-          "label": "Text Content"
+          "label": "Content"
         }
       ]
     }
