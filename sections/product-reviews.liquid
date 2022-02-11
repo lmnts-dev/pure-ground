@@ -1,5 +1,11 @@
-<div id="Product-reviews-{{ section.id }}" class="Product-reviews color-{{section.settings.color_scheme}}"  
->
+{% style %}
+    .product-reviews {
+      --topSpacingRatio: {{section.settings.top_spacing}} / 100;
+      --bottomSpacingRatio: {{section.settings.bottom_spacing}} / 100;
+    }
+ {% endstyle %}
+
+<div id="Product-reviews-{{ section.id }}" class="product-reviews color-{{section.settings.color_scheme}}">
  
 </div>
 
