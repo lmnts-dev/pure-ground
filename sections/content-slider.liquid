@@ -7,9 +7,9 @@
 
 <div id="Content-slider-{{ section.id }}" class="content-slider color-{{section.settings.color_scheme}}">
       {%- for block in section.blocks -%}
-         {%- case block.type -%}
-            {%- when 'image' -%}
-             <img 
+         {%- case block.type -%}            
+            {%- when 'text' -%}
+               <img 
                   src="{{ block.settings.image.src | img_url: '90x' }}"
                   sizes="90px"
                   alt="{{ block.settings.image.src.alt | escape }}"
@@ -17,7 +17,6 @@
                   width="{{ collection.image.width }}"
                   height="{{ collection.image.height }}"
                >
-            {%- when 'text' -%}
               <p class="">{{block.settings.text}}</p>
                <p class="">- {{block.settings.author}}</p>
          {%- endcase -%}
