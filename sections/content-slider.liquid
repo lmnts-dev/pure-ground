@@ -9,17 +9,17 @@
       {%- for block in section.blocks -%}
          {%- case block.type -%}
             {%- when 'image' -%}
-              <img 
+             <img 
                   src="{{ block.settings.image.src | img_url: '90x' }}"
                   sizes="90px"
                   alt="{{ block.settings.image.src.alt | escape }}"
                   loading="lazy"
-                  width="{{ block.settings.image.width }}"
-                  height="{{ block.settings.image.height }}"
+                  width="{{ collection.image.width }}"
+                  height="{{ collection.image.height }}"
                >
             {%- when 'text' -%}
               <p class="">{{block.settings.text}}</p>
-               <p class="">-{{block.settings.author}}</p>
+               <p class="">- {{block.settings.author}}</p>
          {%- endcase -%}
       {%- endfor -%}
 </div>
