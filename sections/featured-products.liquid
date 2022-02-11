@@ -1,6 +1,17 @@
-<div id="Featured-products-{{ section.id }}" class="Featured-products color-{{section.settings.color_scheme}}"  
->
- 
+{% style %}
+   .featured-products {
+   --topSpacingRatio: {{section.settings.top_spacing}} / 100;
+   --bottomSpacingRatio: {{section.settings.bottom_spacing}} / 100;
+   }
+{% endstyle %}
+
+<div id="Featured-products-{{ section.id }}" class="featured-products color-{{section.settings.color_scheme}}">
+  {% if section.settings.heading %}
+      <h2 class="split-section__text__heading">{{ section.settings.heading }}</h2>
+   {% endif %}
+    {% if section.settings.button_link %}
+         <a href={{section.settings.button_link}}>{{section.settings.button_label}}</a>
+    {% endif %}
 </div>
 
 {% schema %}
