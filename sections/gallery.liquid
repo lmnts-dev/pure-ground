@@ -9,14 +9,21 @@
   {%- for block in section.blocks -%}
       {%- case block.type -%}            
         {%- when 'image' -%}
-          <img 
-              src="{{ block.settings.image.src | img_url: '90x' }}"
-              sizes="90px"
-              alt="{{ block.settings.image.alt | escape }}"
-              loading="lazy"
-              width="{{ collection.image.width }}"
-              height="{{ collection.image.height }}"
-            >
+          <img
+            srcset="{%- if block.settings.image.src.width >= 165 -%}{{ block.settings.image.src | img_url: '165x' }} 165w,{%- endif -%}
+              {%- if block.settings.image.src.width >= 360 -%}{{ block.settings.image.src | img_url: '360x' }} 360w,{%- endif -%}
+              {%- if block.settings.image.src.width >= 533 -%}{{ block.settings.image.src | img_url: '533x' }} 533w,{%- endif -%}
+              {%- if block.settings.image.src.width >= 720 -%}{{ block.settings.image.src | img_url: '720x' }} 720w,{%- endif -%}
+              {%- if block.settings.image.src.width >= 1000 -%}{{ block.settings.image.src | img_url: '1000x' }} 1000w,{%- endif -%}
+              {%- if block.settings.image.src.width >= 1500 -%}{{ block.settings.image.src | img_url: '1500x' }} 1500w,{%- endif -%}
+              {{ block.settings.image.src | img_url: 'master' }} {{ block.settings.image.src.width }}w"
+            src="{{ block.settings.image.src | img_url: '533x' }}"
+            sizes="100vw"
+            alt="{{ block.settings.image.src.alt | escape }}"
+            loading="lazy"
+            width="{{ block.settings.image.width }}"
+            height="{{ block.settings.image.height }}"
+          >
       {%- endcase -%}
     {%- endfor -%}
 </div>
