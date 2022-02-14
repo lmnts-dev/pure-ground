@@ -1,5 +1,5 @@
 // --------------------------------------------------
-// colours
+// Colors
 
 :root {
   --color-cream: 255, 248, 238;
@@ -81,4 +81,30 @@
   --navHeight: 75px;
   --inputHeight: 48px;
   --btnHeight: 48px;
+
+  @media (max-width: 1024px) {
+    --pxSize: 40px;
+    --vwSize: 1.6vw;
+
+    --sectionHorizontalSpacing: calc(var(--vwSize) * 3);
+    --sectionHorizontalBump: 0px;
+    --sectionVerticalSpacing: 70px;
+
+    --navHeight: 65px;
+    --inputHeight: 48px;
+    --btnHeight: 48px;
+  }
+
+  @media (max-width: 676px) {
+    --pxSize: 30px;
+    --vwSize: 1.2vw;
+
+    --sectionHorizontalSpacing: 25px;
+    --sectionHorizontalBump: 0px;
+    --sectionVerticalSpacing: 50px;
+
+    --navHeight: 60px;
+    --inputHeight: 45px;
+    --btnHeight: 45px;
+  }
 }

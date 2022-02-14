@@ -1,34 +1,144 @@
 h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: var(--font-heading-family);
+  font-style: var(--font-heading-style);
+  font-weight: var(--font-heading-weight);
+  letter-spacing: 0.06rem;
+  color: var(--color-foreground);
+  line-height: 1.15;
+  word-break: break-word;
+  margin: 0 0 1rem 0;
+}
+
+h1,
 .h1 {
-  @include h1();
+  font-size: 3rem;
+  text-decoration: uppercase;
+
+  @media (max-width: 1024px) {
+    font-size: 2rem;
+  }
+
+  @media (max-width: 676px) {
+    font-size: 1.5rem;
+  }
 }
 
 h2,
 .h2 {
-  @include h2();
+  font-size: 4rem;
+
+  @media (max-width: 1024px) {
+    font-size: 2.6rem;
+  }
+
+  @media (max-width: 676px) {
+    font-size: 2.25rem;
+  }
 }
 
 h3,
 .h3 {
-  @include h3();
+  font-size: 3rem;
+  font-weight: 900;
+
+  @media (max-width: 1024px) {
+    font-size: 2rem;
+  }
+
+  @media (max-width: 676px) {
+    font-size: 1.5rem;
+  }
 }
 
 h4,
 .h4 {
-  @include h4();
+  font-size: 2.25rem;
+  font-weight: bold;
+
+  @media (max-width: 1024px) {
+    font-size: 1.75rem;
+  }
+
+  @media (max-width: 676px) {
+    font-size: 1.25rem;
+  }
 }
 
 h5,
 .h5 {
-  @include h5();
+  font-size: 1.5rem;
+  font-weight: bold;
+
+  @media (max-width: 1024px) {
+    font-size: 1.75rem;
+  }
+
+  @media (max-width: 676px) {
+    font-size: 1.25rem;
+  }
 }
 
 h6,
 .h6 {
-  @include h6();
+  font-size: 1.5rem;
+  font-weight: 400;
+
+  @media (max-width: 1024px) {
+    font-size: 1.35rem;
+  }
+
+  @media (max-width: 676px) {
+    font-size: 1.2rem;
+  }
 }
 
 p,
-.p {
-  @include p();
+.p,
+.p-sm,
+.p-lg {
+  font-family: var(--font-body-family);
+  font-style: var(--font-body-style);
+  font-weight: var(--font-body-weight);
+  margin: 0 0 1rem 0;
+}
+
+.p-sm,
+.p-sm > p {
+  font-size: 0.875rem;
+}
+
+.p-lg,
+.p-lg > p,
+.caption {
+  font-size: 1.125rem;
+
+  @media (max-width: 1024px) {
+    font-size: 1rem;
+  }
+}
+
+.caption {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.caption-sm {
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-foreground);
 }

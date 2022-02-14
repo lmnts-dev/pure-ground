@@ -10,8 +10,12 @@
    {%- for block in section.blocks -%}
       {%- case block.type -%}            
         {%- when 'accordion' -%}
-          <h3 class="">{{block.settings.heading}}</h3>
-          <p class="">{{block.settings.content}}</p>
+          {% if block.settings.heading and block.settings.content %}
+            <div class="accordions__accordion">
+              <h3 class="h4">{{block.settings.heading}}</h3>
+              <div class="">{{block.settings.content}}</div>
+            </div>
+        {% endif %}
       {%- endcase -%}
     {%- endfor -%}
 </div>
