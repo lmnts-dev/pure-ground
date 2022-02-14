@@ -95,4 +95,18 @@
       }
     }
   }
+
+  @media screen and (max-width: 676px) {
+    .collections-grid {
+      &__container{
+        display:block;
+      }
+      &__collection {
+        margin-bottom: calc(var(--sectionHorizontalSpacing) / 2);
+        text-align: start;
+        padding-left: var(--pxSize);
+      }
+    }
+  }
+
 }
