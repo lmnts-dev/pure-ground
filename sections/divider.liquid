@@ -1,4 +1,11 @@
-<div id="Divider-{{ section.id }}" class="Divider color-{{section.settings.color_scheme}}">
+{% style %}
+    .divider {
+      --topSpacingRatio: {{section.settings.top_spacing}} / 100;
+      --bottomSpacingRatio: {{section.settings.bottom_spacing}} / 100;
+    }
+ {% endstyle %}
+
+<div id="Divider-{{ section.id }}" class="divider color-{{section.settings.color_scheme}}">
  
 </div>
 
@@ -79,26 +86,6 @@
          "unit":"%",
          "label":"Bottom Spacing",
          "default":50
-      }
-   ],
-   "blocks": [
-      {
-        "type": "button",
-        "name": "Button",
-        "limit": 1,
-        "settings": [
-          {
-            "type": "text",
-            "id": "button_label",
-            "default": "Button label",
-            "label": "Button Label"
-          },
-          {
-            "type": "url",
-            "id": "button_link",
-            "label": "Button Link"
-          }
-        ]
       }
    ],
    "presets":[
