@@ -12,4 +12,8 @@
   > *:not(.featured-articles__heading):not(.featured-articles__btn) {
     background: var(--color-background-alt);
   }
+
+  @media screen and (max-width: 676px) {
+      grid-template-columns: 1fr;
+  }
 }

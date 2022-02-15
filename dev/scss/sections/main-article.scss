@@ -62,4 +62,12 @@
   &__related-articles {
     display: flex;
   }
+
+  @media screen and (max-width: 1024px) {
+    max-width: calc(var(--sectionHorizontalSpacing) * 15);
+  }
+
+  @media screen and (max-width: 676px) {
+    max-width: none;
+  }
 }

@@ -16,4 +16,10 @@
       color: var(--color-background);
     }
   }
+  @media screen and (max-width: 676px) {
+    &__form {
+      flex-direction: column;
+      margin-top: var(--sectionVerticalSpacing);
+    }
+  }
 }
