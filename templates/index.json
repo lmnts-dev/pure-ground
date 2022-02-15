@@ -1,15 +1,5 @@
 {
   "sections": {
-    "164442413892b05956": {
-      "type": "featured-page-link",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/man_in_field.jpg",
-        "page_link": "mission",
-        "color_scheme": "cream",
-        "top_spacing": 0,
-        "bottom_spacing": 0
-      }
-    },
     "collections-grid": {
       "type": "collections-grid",
       "blocks": {
@@ -52,7 +42,20 @@
         "chiles"
       ],
       "settings": {
-        "heading": "Browse Ingredient Categories"
+        "heading": "Browse Ingredient Categories",
+        "color_scheme": "cream",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
+    },
+    "164442413892b05956": {
+      "type": "featured-page-link",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/man_in_field.jpg",
+        "page_link": "mission",
+        "color_scheme": "cream",
+        "top_spacing": 0,
+        "bottom_spacing": 0
       }
     },
     "articles": {
@@ -78,13 +81,26 @@
       "settings": {
         "heading": "Latest News in Organics",
         "button_label": "View More Resources",
-        "button_link": "\/resources"
+        "button_link": "\/resources",
+        "color_scheme": "cream",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
+    },
+    "1644888464b52992ef": {
+      "type": "blog-listings",
+      "settings": {
+        "blog": "blog",
+        "color_scheme": "cream",
+        "top_spacing": 50,
+        "bottom_spacing": 50
       }
     }
   },
   "order": [
     "collections-grid",
     "164442413892b05956",
-    "articles"
+    "articles",
+    "1644888464b52992ef"
   ]
 }
