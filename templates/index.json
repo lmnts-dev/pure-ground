@@ -5,11 +5,13 @@
       "settings": {
         "heading": "Always Organic",
         "subheading": "That's how we like it",
+        "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor lorem sit amet eros suscipit finibus. Mauris feugiat interdum lobortis.<\/p>",
         "heading_size": "h2",
+        "heading_color": "default",
         "button_label": "Shop All Ingredients",
-        "button_link": "/",
-        "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor lorem sit amet eros suscipit finibus. Mauris feugiat interdum lobortis.</p>",
-        "image": "shopify://shop_images/unsplash_IQVFVH0ajag.jpg",
+        "button_link": "\/",
+        "image": "shopify:\/\/shop_images\/unsplash_IQVFVH0ajag.jpg",
+        "overlay": 50,
         "hero": true,
         "alignment": "left",
         "icon": true,
@@ -23,15 +25,37 @@
       "settings": {
         "heading": "Culinary Herbs, Spices, & Vegetables",
         "subheading": "",
+        "text": "<p>For your restaurant or seasonings!<\/p>",
         "heading_size": "h3",
+        "heading_color": "default",
         "button_label": "Shop now",
-        "button_link": "shopify://collections",
-        "text": "<p>For your restaurant or seasonings!</p>",
-        "image": "shopify://shop_images/unsplash_VVe3zOZM88E.jpg",
+        "button_link": "shopify:\/\/collections",
+        "image": "shopify:\/\/shop_images\/unsplash_VVe3zOZM88E.jpg",
+        "overlay": 50,
         "hero": false,
         "alignment": "center",
         "icon": false,
-        "color_scheme": "cream",
+        "color_scheme": "ground",
+        "top_spacing": 100,
+        "bottom_spacing": 100
+      }
+    },
+    "16449719193cb6dff5": {
+      "type": "content-with-bg-image",
+      "settings": {
+        "heading": "Global Partnerships",
+        "subheading": "",
+        "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor lorem sit amet eros suscipit finibus. Mauris feugiat interdum lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.<\/p>",
+        "heading_size": "h3",
+        "heading_color": "default",
+        "button_label": "Learn where",
+        "button_link": "shopify:\/\/pages\/european-operations",
+        "image": "shopify:\/\/shop_images\/unsplash_xDwEa2kaeJA.jpg",
+        "overlay": 50,
+        "hero": false,
+        "alignment": "center",
+        "icon": false,
+        "color_scheme": "ground",
         "top_spacing": 100,
         "bottom_spacing": 100
       }
@@ -70,7 +94,13 @@
           }
         }
       },
-      "block_order": ["herbs", "fair", "rainforest", "teas", "chiles"],
+      "block_order": [
+        "herbs",
+        "fair",
+        "rainforest",
+        "teas",
+        "chiles"
+      ],
       "settings": {
         "heading": "Browse Ingredient Categories",
         "color_scheme": "cream",
@@ -81,7 +111,7 @@
     "164442413892b05956": {
       "type": "featured-page-link",
       "settings": {
-        "image": "shopify://shop_images/man_in_field.jpg",
+        "image": "shopify:\/\/shop_images\/man_in_field.jpg",
         "page_link": "mission",
         "color_scheme": "cream",
         "top_spacing": 0,
@@ -94,21 +124,24 @@
         "art1": {
           "type": "article",
           "settings": {
-            "article": "blog/testing-2"
+            "article": "blog\/testing-2"
           }
         },
         "art2": {
           "type": "article",
           "settings": {
-            "article": "blog/testing-3"
+            "article": "blog\/testing-3"
           }
         }
       },
-      "block_order": ["art1", "art2"],
+      "block_order": [
+        "art1",
+        "art2"
+      ],
       "settings": {
         "heading": "Latest News in Organics",
         "button_label": "View More Resources",
-        "button_link": "/resources",
+        "button_link": "\/resources",
         "color_scheme": "cream",
         "top_spacing": 50,
         "bottom_spacing": 50
@@ -121,24 +154,6 @@
         "color_scheme": "cream",
         "top_spacing": 50,
         "bottom_spacing": 50
-      }
-    },
-    "16449719193cb6dff5": {
-      "type": "content-with-bg-image",
-      "settings": {
-        "heading": "Global Partnerships",
-        "subheading": "",
-        "heading_size": "h3",
-        "button_label": "Learn where",
-        "button_link": "shopify://pages/european-operations",
-        "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor lorem sit amet eros suscipit finibus. Mauris feugiat interdum lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
-        "image": "shopify://shop_images/unsplash_xDwEa2kaeJA.jpg",
-        "hero": false,
-        "alignment": "center",
-        "icon": false,
-        "color_scheme": "cream",
-        "top_spacing": 100,
-        "bottom_spacing": 100
       }
     }
   },
