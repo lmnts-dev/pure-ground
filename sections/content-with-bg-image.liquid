@@ -8,12 +8,12 @@
 <div id="Content-with-bg-image-{{ section.id }}" class="content-with-bg-image color-{{section.settings.color_scheme}} __align-{{section.settings.alignment}}">
 
    {% if section.settings.hero %}
-      <h1 class="content-with-bg-image__heading h2">{{ section.settings.heading | escape }}</h1>
+      <h1 class="content-with-bg-image__heading {% if section.settings.heading_size %}{{section.settings.heading_size}}{% else %}h2{% endif %}">{{ section.settings.heading | escape }}</h1>
       {% if section.settings.subheading %}
          <h2 class="content-with-bg-image__subheading h5">{{ section.settings.subheading }}</h2>
       {% endif %}
    {% else %}
-      <h2 class="content-with-bg-image__heading">{{ section.settings.heading | escape }}</h2>
+      <h2 class="content-with-bg-image__heading {% if section.settings.heading_size %}{{section.settings.heading_size}}{% endif %}">{{ section.settings.heading | escape }}</h2>
       {% if section.settings.subheading %}
          <h3 class="content-with-bg-image__subheading h5">{{ section.settings.subheading }}</h3>
       {% endif %}
@@ -50,6 +50,26 @@
          "type":"text",
          "id":"subheading",
          "label":"Subheading"
+      },
+      {
+         "type": "select",
+         "id": "heading_size",
+         "options": [
+            {
+               "value": "h1",
+               "label": "Large"
+            },
+            {
+               "value": "h2",
+               "label": "Medium"
+            },
+            {
+               "value": "h3",
+               "label": "Small"
+            }
+         ],
+         "default": "h2",
+         "label": "Heading Size"
       },
       {
          "type": "header",
