@@ -92,31 +92,33 @@
     &__image {
       padding-top: 66.66666666666666%;
       margin: 0 calc(var(--sectionHorizontalSpacing)*-1);
-      width:100vw;
+    }
 
-      img {
-        left: 0;
-        bottom: 0;
-        right: 0;
-        top:0;
-        box-sizing: border-box;
-        padding: 0;
-        border: none;
-        margin: auto;
-        display: block;
-        width: 0;
-        height: 0;
-        min-width: 100%;
-        max-width: 100%;
-        min-height: 100%;
-        max-height: 100%;
+    &:not(.__image-style-square) {
+      .split-section{
+        &__text{
+          padding-right:0;
+        }
+      }
+    }
+
+    &.__layout-reversed{
+      flex-direction: column-reverse;
+    }
+
+    &:not(.__layout-reversed) {
+      .split-section {
+        &__text {
+          padding-right: 0;
+        }
       }
     }
 
     &__text {
+      margin-top: 1rem;
+
       &__heading {
         text-align: center;
-        margin-top: 1rem;
       }
     }
   }
