@@ -7,10 +7,10 @@
 
 <div id="Icons-row-{{ section.id }}" class="icons-row color-{{section.settings.color_scheme}}">
    {% if section.settings.heading %}
-      <h2 class="icons-row__heading">{{ section.settings.heading }}</h2>
+      <h2 class="icons-row__heading caption">{{ section.settings.heading }}</h2>
    {% endif %}
 
-   <div class="icons-row__icons">
+   <div class="icons-row__icons" data-flickity='{ "pageDots": false, "wrapAround": true }'>
       {% for block in section.blocks %}
          <div class="icons-row__icons__icon" {{ block.shopify_attributes }}>
             {% render 'next-gen-img', image: block.settings.icon, alt: block.settings.alt %}

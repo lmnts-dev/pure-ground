@@ -1,0 +1,22 @@
+.icons-row {
+  padding-left: calc(var(--sectionHorizontalSpacing) / 2);
+  padding-right: calc(var(--sectionHorizontalSpacing) / 2);
+
+  &__heading {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__icons {
+    &__icon {
+      margin: calc(var(--vwSize) * 2) calc(var(--vwSize) * 2) 0
+        calc(var(--vwSize) * 2);
+
+      img {
+        height: calc(var(--vwSize) * 4);
+        width: auto;
+      }
+    }
+  }
+}
