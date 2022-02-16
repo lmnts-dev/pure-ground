@@ -155,6 +155,67 @@
         "top_spacing": 50,
         "bottom_spacing": 50
       }
+    },
+    "16450306926c068d86": {
+      "type": "icons-row",
+      "blocks": {
+        "ddc6ae4f-850d-4af2-b30f-b2cfa4c27d8b": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/md.png",
+            "alt": "McCormick logo"
+          }
+        },
+        "0a3401c2-cdcb-45c7-a115-863942ecd068": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/starbucks.png",
+            "alt": "Starbucks logo"
+          }
+        },
+        "d2a015f6-ec5e-4279-a122-c75324dad550": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/simply_organice.png",
+            "alt": "Simply Organic logo"
+          }
+        },
+        "224b3659-8585-4ecd-af3b-1203bae4b59d": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/md.png",
+            "alt": "McCormick Logo"
+          }
+        },
+        "0f186d34-13dd-40c1-ae96-9266b6a353d1": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/starbucks.png",
+            "alt": "Starbucks logo"
+          }
+        },
+        "eeca8ca7-1223-42f4-be66-9d19c9680495": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/simply_organice.png",
+            "alt": "Simply Organic Logo"
+          }
+        }
+      },
+      "block_order": [
+        "ddc6ae4f-850d-4af2-b30f-b2cfa4c27d8b",
+        "0a3401c2-cdcb-45c7-a115-863942ecd068",
+        "d2a015f6-ec5e-4279-a122-c75324dad550",
+        "224b3659-8585-4ecd-af3b-1203bae4b59d",
+        "0f186d34-13dd-40c1-ae96-9266b6a353d1",
+        "eeca8ca7-1223-42f4-be66-9d19c9680495"
+      ],
+      "settings": {
+        "heading": "Used by",
+        "color_scheme": "cream",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
     }
   },
   "order": [
@@ -164,6 +225,7 @@
     "collections-grid",
     "164442413892b05956",
     "articles",
-    "1644888464b52992ef"
+    "1644888464b52992ef",
+    "16450306926c068d86"
   ]
 }
