@@ -2,38 +2,41 @@
     .content-with-bg-image {
       --topSpacingRatio: {{section.settings.top_spacing}} / 100;
       --bottomSpacingRatio: {{section.settings.bottom_spacing}} / 100;
-      --contentWithBgImageOverlay: {{section.settings.overlay}} / 100;
+      --overlayOpacity: calc({{section.settings.overlay}} / 100);
     }
  {% endstyle %}
 
-<div id="Content-with-bg-image-{{ section.id }}" class="content-with-bg-image color-{{section.settings.color_scheme}} __align-{{section.settings.alignment}} {% if section.settings.hero %}__as-hero{% endif %}">
+<div id="Content-with-bg-image-{{ section.id }}" class="content-with-bg-image color-{{section.settings.color_scheme}} __align-{{section.settings.alignment}} __text-color-{{section.settings.text_color}} {% if section.settings.hero %}__as-hero{% endif %}">
+   <div class="content-with-bg-image__inner">
 
-   {% if section.settings.hero %}
-      <h1 class="content-with-bg-image__heading {% if section.settings.heading_size %}{{section.settings.heading_size}}{% else %}h2{% endif %}">{{ section.settings.heading | escape }}</h1>
-      {% if section.settings.subheading %}
-         <h2 class="content-with-bg-image__subheading h5">{{ section.settings.subheading }}</h2>
+      {% if section.settings.hero %}
+         <h1 class="content-with-bg-image__heading {% if section.settings.heading_size %}{{section.settings.heading_size}}{% else %}h2{% endif %}">{{ section.settings.heading | escape }}</h1>
+         {% if section.settings.subheading %}
+            <h2 class="content-with-bg-image__subheading h5">{{ section.settings.subheading }}</h2>
+         {% endif %}
+      {% else %}
+         <h2 class="content-with-bg-image__heading {% if section.settings.heading_size %}{{section.settings.heading_size}}{% endif %}">{{ section.settings.heading | escape }}</h2>
+         {% if section.settings.subheading %}
+            <h3 class="content-with-bg-image__subheading h5">{{ section.settings.subheading }}</h3>
+         {% endif %}
       {% endif %}
-   {% else %}
-      <h2 class="content-with-bg-image__heading {% if section.settings.heading_size %}{{section.settings.heading_size}}{% endif %}">{{ section.settings.heading | escape }}</h2>
-      {% if section.settings.subheading %}
-         <h3 class="content-with-bg-image__subheading h5">{{ section.settings.subheading }}</h3>
+      {% if section.settings.text %}
+         <div class="content-with-bg-image__text">{{ section.settings.text }}</div>
       {% endif %}
-   {% endif %}
-   {% if section.settings.text %}
-      <div class="content-with-bg-image__text">{{ section.settings.text }}</div>
-   {% endif %}
-    {% if section.settings.button_link and section.settings.button_label %}
-         <a href="{{section.settings.button_link}}" class="content-with-bg-image__btn btn">{{section.settings.button_label}}</a>
-    {% endif %}
-   {%- if section.settings.icon -%}
-      <div class="content-with-bg-image__icon">
-         {% render 'svg-plant' %} 
-      </div>
-   {%- endif -%}
+      {% if section.settings.button_link and section.settings.button_label %}
+            <a href="{{section.settings.button_link}}" class="content-with-bg-image__btn btn">{{section.settings.button_label}}</a>
+      {% endif %}
+      {%- if section.settings.icon -%}
+         <div class="content-with-bg-image__icon">
+            {% render 'svg-plant' %} 
+         </div>
+      {%- endif -%}
 
-   {%- if section.settings.image != blank -%}
-      {% render 'next-gen-img', image: section.settings.image %}
-   {%- endif -%}
+      {%- if section.settings.image != blank -%}
+         {% render 'next-gen-img', image: section.settings.image %}
+      {%- endif -%}
+
+   </div>
 </div>
 
 {% schema %}
@@ -59,7 +62,7 @@
       {
         "type":"richtext",
         "id":"text",
-        "label":"Text Content"
+        "label":"Text"
       },
       {
          "type": "select",
@@ -83,19 +86,19 @@
       },
       {
          "type": "select",
-         "id": "heading_color",
+         "id": "text_color",
          "options": [
             {
-               "value": "default",
-               "label": "Default"
+               "value": "light",
+               "label": "Light"
             },
             {
-               "value": "accent",
-               "label": "Accent"
+               "value": "dark",
+               "label": "Dark"
             }
          ],
-         "default": "default",
-         "label": "Heading Color"
+         "default": "light",
+         "label": "Text Color"
       },
       {
          "type": "header",
