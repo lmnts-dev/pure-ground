@@ -97,9 +97,11 @@
         grid-column: 1/-1;
         display: flex;
         justify-content: space-between;
+        margin-bottom: calc(var(--pxSize)/1.75);
 
         svg {
           max-width:130px;
+          padding-right:var(--pxSize);
         }
       }
 
@@ -118,6 +120,7 @@
 
         &__sec-links{
           flex-direction: column;
+          text-align: center;
           gap: calc(var(--pxSize)/2);
         }
       }
