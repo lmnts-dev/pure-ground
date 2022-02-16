@@ -2,10 +2,11 @@
     .content-with-bg-image {
       --topSpacingRatio: {{section.settings.top_spacing}} / 100;
       --bottomSpacingRatio: {{section.settings.bottom_spacing}} / 100;
+      --contentWithBgImageOverlay: {{section.settings.overlay}} / 100;
     }
  {% endstyle %}
 
-<div id="Content-with-bg-image-{{ section.id }}" class="content-with-bg-image color-{{section.settings.color_scheme}} __align-{{section.settings.alignment}}">
+<div id="Content-with-bg-image-{{ section.id }}" class="content-with-bg-image color-{{section.settings.color_scheme}} __align-{{section.settings.alignment}} {% if section.settings.hero %}__as-hero{% endif %}">
 
    {% if section.settings.hero %}
       <h1 class="content-with-bg-image__heading {% if section.settings.heading_size %}{{section.settings.heading_size}}{% else %}h2{% endif %}">{{ section.settings.heading | escape }}</h1>
@@ -42,14 +43,23 @@
    "class":"section",
    "settings":[
       {
+         "type": "header",
+         "content": "Text Content"
+      },  
+      {
          "type":"text",
          "id":"heading",
-         "label":"Section Heading"
+         "label":"Heading"
       },
       {
          "type":"text",
          "id":"subheading",
          "label":"Subheading"
+      },
+      {
+        "type":"richtext",
+        "id":"text",
+        "label":"Text Content"
       },
       {
          "type": "select",
@@ -61,15 +71,31 @@
             },
             {
                "value": "h2",
-               "label": "Medium"
+               "label": "Large Alt"
             },
             {
                "value": "h3",
-               "label": "Small"
+               "label": "Medium"
             }
          ],
          "default": "h2",
          "label": "Heading Size"
+      },
+      {
+         "type": "select",
+         "id": "heading_color",
+         "options": [
+            {
+               "value": "default",
+               "label": "Default"
+            },
+            {
+               "value": "accent",
+               "label": "Accent"
+            }
+         ],
+         "default": "default",
+         "label": "Heading Color"
       },
       {
          "type": "header",
@@ -87,14 +113,28 @@
          "label": "Button Link"
       },
       {
-        "type":"richtext",
-        "id":"text",
-        "label":"Text Content"
+         "type": "header",
+         "content": "Background Image"
+      },  
+      {
+         "type": "image_picker",
+         "id": "image",
+         "label": "Image"
       },
       {
-         "type":"image_picker",
-         "id":"image",
-         "label":"Background Image"
+         "type": "range",
+         "id": "overlay",
+         "label": "Overlay Opacity",
+         "info": "If above 0%, an overlay will be added on top of the image to create contrast behind the text.",
+         "min": 0,
+         "max": 70,
+         "step": 10,
+         "unit": "%",
+         "default": 50
+      },
+      {
+         "type": "header",
+         "content": "Settings"
       },
       {
          "type": "checkbox",
@@ -172,7 +212,7 @@
          "step":10,
          "unit":"%",
          "label":"Top Spacing",
-         "default":50
+         "default":100
       },
       {
          "type":"range",
@@ -182,7 +222,7 @@
          "step":10,
          "unit":"%",
          "label":"Bottom Spacing",
-         "default":50
+         "default":100
       }
    ],
    "presets":[
