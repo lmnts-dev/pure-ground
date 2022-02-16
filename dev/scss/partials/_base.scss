@@ -97,6 +97,22 @@ form {
       }
     }
   }
+
+   @media screen and (max-width: 676px) {
+    &.__form-styles{
+      & > div{
+        display: block;
+      }
+
+      input{
+        width:100%;
+
+        &:first-of-type{
+          margin-bottom: calc(var(--inputHeight) / 3);
+        }
+      }
+    }
+  }
 }
 
 //Button styles

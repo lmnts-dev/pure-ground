@@ -103,9 +103,16 @@
       }
 
       &__collection {
-        margin-bottom: calc(var(--sectionHorizontalSpacing) / 2);
         text-align: start;
-        padding-left: var(--pxSize);
+
+        &__title{
+          padding-left: var(--pxSize);
+          padding-right: var(--pxSize);
+        }
+
+        &:not(:last-child){
+          margin-bottom: calc(var(--sectionHorizontalSpacing) / 2);
+        }
       }
     }
   }

@@ -126,4 +126,29 @@
       }
     }
   }
+
+  @media screen and (max-width: 1024px) {
+   &__icon{
+     overflow: hidden;
+   }
+  }
+
+  @media screen and (max-width: 676px) {
+
+    &__inner{
+      position: relative;
+    }
+
+    &.__as-hero{
+      .content-with-bg-image__inner{
+        height: 90vh;
+      }
+    }
+
+     &__icon {
+      bottom:0;
+      height: 50%;
+      top: auto;
+    }
+  }
 }
