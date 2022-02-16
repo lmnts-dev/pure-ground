@@ -1,5 +1,41 @@
 {
   "sections": {
+    "content-with-bg-image": {
+      "type": "content-with-bg-image",
+      "settings": {
+        "heading": "Always Organic",
+        "subheading": "That's how we like it",
+        "heading_size": "h2",
+        "button_label": "Shop All Ingredients",
+        "button_link": "\/",
+        "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor lorem sit amet eros suscipit finibus. Mauris feugiat interdum lobortis.<\/p>",
+        "image": "shopify:\/\/shop_images\/unsplash_IQVFVH0ajag.jpg",
+        "hero": true,
+        "alignment": "left",
+        "icon": true,
+        "color_scheme": "cream",
+        "top_spacing": 100,
+        "bottom_spacing": 100
+      }
+    },
+    "164497174668dcfe61": {
+      "type": "content-with-bg-image",
+      "settings": {
+        "heading": "Culinary Herbs, Spices, & Vegetables",
+        "subheading": "",
+        "heading_size": "h3",
+        "button_label": "Shop now",
+        "button_link": "shopify:\/\/collections",
+        "text": "<p>For your restaurant or seasonings!<\/p>",
+        "image": "shopify:\/\/shop_images\/unsplash_VVe3zOZM88E.jpg",
+        "hero": false,
+        "alignment": "center",
+        "icon": false,
+        "color_scheme": "cream",
+        "top_spacing": 100,
+        "bottom_spacing": 100
+      }
+    },
     "collections-grid": {
       "type": "collections-grid",
       "blocks": {
@@ -95,12 +131,33 @@
         "top_spacing": 50,
         "bottom_spacing": 50
       }
+    },
+    "16449719193cb6dff5": {
+      "type": "content-with-bg-image",
+      "settings": {
+        "heading": "Global Partnerships",
+        "subheading": "",
+        "heading_size": "h2",
+        "button_label": "Learn where",
+        "button_link": "shopify:\/\/pages\/european-operations",
+        "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor lorem sit amet eros suscipit finibus. Mauris feugiat interdum lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.<\/p>",
+        "image": "shopify:\/\/shop_images\/unsplash_xDwEa2kaeJA.jpg",
+        "hero": false,
+        "alignment": "center",
+        "icon": false,
+        "color_scheme": "cream",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
     }
   },
   "order": [
+    "content-with-bg-image",
+    "164497174668dcfe61",
     "collections-grid",
     "164442413892b05956",
     "articles",
-    "1644888464b52992ef"
+    "1644888464b52992ef",
+    "16449719193cb6dff5"
   ]
 }
