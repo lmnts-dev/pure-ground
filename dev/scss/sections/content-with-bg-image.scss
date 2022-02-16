@@ -1,0 +1,28 @@
+.content-with-bg-image {
+  &__heading {
+    text-transform: uppercase;
+    color: var(--color-accent);
+  }
+
+  &__text {
+    max-width: 550px;
+  }
+
+  &__icon {
+    position: absolute;
+    height: 100%;
+    right: 0;
+    top: 15%;
+    pointer-events: none;
+
+    svg {
+      height: 100%;
+      width: auto;
+      transform: translateX(45%);
+
+      * {
+        fill: var(--color-accent);
+      }
+    }
+  }
+}

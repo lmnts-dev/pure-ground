@@ -1,27 +1,38 @@
 {% style %}
-    .section-image {
+    .content-with-bg-image {
       --topSpacingRatio: {{section.settings.top_spacing}} / 100;
       --bottomSpacingRatio: {{section.settings.bottom_spacing}} / 100;
     }
  {% endstyle %}
 
-<div id="Section-image-{{ section.id }}" class="section-image color-{{section.settings.color_scheme}} __align-{{section.settings.alignment}}">
+<div id="Content-with-bg-image-{{ section.id }}" class="content-with-bg-image color-{{section.settings.color_scheme}} __align-{{section.settings.alignment}}">
+   {{section.settings}}
    {% if section.settings.hero %}
-      <h1 class="rich-text__heading {{ section.settings.heading_size }}">{{ section.settings.heading | escape }}</h1>
+      <h1 class="content-with-bg-image__heading h2">{{ section.settings.heading | escape }}</h1>
+      {% if section.settings.subheading %}
+         <h2 class="content-with-bg-image__subheading h5">{{ section.settings.subheading }}</h2>
+      {% endif %}
    {% else %}
-      <h3 class="rich-text__heading {{ section.settings.heading_size }}">{{ section.settings.heading | escape }}</h3>
+      <h2 class="content-with-bg-image__heading">{{ section.settings.heading | escape }}</h2>
+      {% if section.settings.subheading %}
+         <h3 class="content-with-bg-image__subheading h5">{{ section.settings.subheading }}</h3>
+      {% endif %}
    {% endif %}
-   {% if section.settings.subheading %}
-      <h2 class="split-section__text__heading">{{ section.settings.subheading }}</h1>
+   {% if section.settings.text %}
+      <div class="content-with-bg-image__text">{{ section.settings.text }}</div>
    {% endif %}
-   {% if section.settings.content %}
-      <p class="split-section__text__content">{{ section.settings.content }}</h1>
-   {% endif %}
-    {% if section.settings.button_link %}
-         <a href={{section.settings.button_link}}>{{section.settings.button_label}}</a>
+    {% if section.settings.button_link and section.settings.button_label %}
+         <a href="{{section.settings.button_link}}" class="content-with-bg-image__btn btn">{{section.settings.button_label}}</a>
     {% endif %}
    {%- if section.settings.icon -%}
-      <!--Image Here-->
+      <div class="content-with-bg-image__icon">
+         {% render 'svg-plant' %} 
+      </div>
+   {%- endif -%}
+
+   {%- if section.settings.image != blank -%}
+      hi
+      {% render 'next-gen-img', image: section.settings.image %}
    {%- endif -%}
 </div>
 
@@ -58,12 +69,12 @@
       },
       {
         "type":"richtext",
-        "id":"content",
+        "id":"text",
         "label":"Text Content"
       },
       {
          "type":"image_picker",
-         "id":"background_image",
+         "id":"image",
          "label":"Background Image"
       },
       {
