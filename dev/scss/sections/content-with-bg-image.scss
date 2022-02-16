@@ -1,6 +1,14 @@
 .content-with-bg-image {
   position: relative;
 
+  &__heading,
+  &__text,
+  &__icon,
+  &__subheading {
+    position: relative;
+    z-index: 1;
+  }
+
   &__heading {
     text-transform: uppercase;
     color: var(--color-accent);
@@ -35,6 +43,7 @@
     width: 100%;
     height: 100%;
     pointer-events: none;
+    z-index: 0;
   }
 
   &.__align-center {
