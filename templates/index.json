@@ -5,16 +5,18 @@
       "settings": {
         "heading": "Always Organic",
         "subheading": "That's how we like it",
+        "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor lorem sit amet eros suscipit finibus. Mauris feugiat interdum lobortis.<\/p>",
         "heading_size": "h2",
+        "text_color": "dark",
         "button_label": "Shop All Ingredients",
         "button_link": "\/",
-        "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor lorem sit amet eros suscipit finibus. Mauris feugiat interdum lobortis.<\/p>",
         "image": "shopify:\/\/shop_images\/unsplash_IQVFVH0ajag.jpg",
+        "overlay": 0,
         "hero": true,
         "alignment": "left",
         "icon": true,
         "color_scheme": "cream",
-        "top_spacing": 100,
+        "top_spacing": 0,
         "bottom_spacing": 100
       }
     },
@@ -23,11 +25,33 @@
       "settings": {
         "heading": "Culinary Herbs, Spices, & Vegetables",
         "subheading": "",
+        "text": "<p>For your restaurant or seasonings!<\/p>",
         "heading_size": "h3",
+        "text_color": "light",
         "button_label": "Shop now",
         "button_link": "shopify:\/\/collections",
-        "text": "<p>For your restaurant or seasonings!<\/p>",
         "image": "shopify:\/\/shop_images\/unsplash_VVe3zOZM88E.jpg",
+        "overlay": 50,
+        "hero": false,
+        "alignment": "center",
+        "icon": false,
+        "color_scheme": "cream",
+        "top_spacing": 100,
+        "bottom_spacing": 100
+      }
+    },
+    "16449719193cb6dff5": {
+      "type": "content-with-bg-image",
+      "settings": {
+        "heading": "Global Partnerships",
+        "subheading": "",
+        "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor lorem sit amet eros suscipit finibus. Mauris feugiat interdum lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.<\/p>",
+        "heading_size": "h3",
+        "text_color": "light",
+        "button_label": "Learn where",
+        "button_link": "shopify:\/\/pages\/european-operations",
+        "image": "shopify:\/\/shop_images\/unsplash_xDwEa2kaeJA.jpg",
+        "overlay": 30,
         "hero": false,
         "alignment": "center",
         "icon": false,
@@ -132,19 +156,62 @@
         "bottom_spacing": 50
       }
     },
-    "16449719193cb6dff5": {
-      "type": "content-with-bg-image",
+    "16450306926c068d86": {
+      "type": "icons-row",
+      "blocks": {
+        "ddc6ae4f-850d-4af2-b30f-b2cfa4c27d8b": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/md.png",
+            "alt": "McCormick logo"
+          }
+        },
+        "0a3401c2-cdcb-45c7-a115-863942ecd068": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/starbucks.png",
+            "alt": "Starbucks logo"
+          }
+        },
+        "d2a015f6-ec5e-4279-a122-c75324dad550": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/simply_organice.png",
+            "alt": "Simply Organic logo"
+          }
+        },
+        "224b3659-8585-4ecd-af3b-1203bae4b59d": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/md.png",
+            "alt": "McCormick Logo"
+          }
+        },
+        "0f186d34-13dd-40c1-ae96-9266b6a353d1": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/starbucks.png",
+            "alt": "Starbucks logo"
+          }
+        },
+        "eeca8ca7-1223-42f4-be66-9d19c9680495": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/simply_organice.png",
+            "alt": "Simply Organic Logo"
+          }
+        }
+      },
+      "block_order": [
+        "ddc6ae4f-850d-4af2-b30f-b2cfa4c27d8b",
+        "0a3401c2-cdcb-45c7-a115-863942ecd068",
+        "d2a015f6-ec5e-4279-a122-c75324dad550",
+        "224b3659-8585-4ecd-af3b-1203bae4b59d",
+        "0f186d34-13dd-40c1-ae96-9266b6a353d1",
+        "eeca8ca7-1223-42f4-be66-9d19c9680495"
+      ],
       "settings": {
-        "heading": "Global Partnerships",
-        "subheading": "",
-        "heading_size": "h2",
-        "button_label": "Learn where",
-        "button_link": "shopify:\/\/pages\/european-operations",
-        "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor lorem sit amet eros suscipit finibus. Mauris feugiat interdum lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.<\/p>",
-        "image": "shopify:\/\/shop_images\/unsplash_xDwEa2kaeJA.jpg",
-        "hero": false,
-        "alignment": "center",
-        "icon": false,
+        "heading": "Used by",
         "color_scheme": "cream",
         "top_spacing": 50,
         "bottom_spacing": 50
@@ -154,10 +221,11 @@
   "order": [
     "content-with-bg-image",
     "164497174668dcfe61",
+    "16449719193cb6dff5",
     "collections-grid",
     "164442413892b05956",
     "articles",
     "1644888464b52992ef",
-    "16449719193cb6dff5"
+    "16450306926c068d86"
   ]
 }

@@ -1,11 +1,11 @@
 {% style %}
-    .featured-page-link {
+    #Featured-page-link-{{ section.id }} {
       --topSpacingRatio: {{section.settings.top_spacing}} / 100;
       --bottomSpacingRatio: {{section.settings.bottom_spacing}} / 100;
     }
 {% endstyle %}
 
-<div id="featured-page-link-{{ section.id }}" class="featured-page-link color-{{section.settings.color_scheme}}"  
+<div id="Featured-page-link-{{ section.id }}" class="featured-page-link color-{{section.settings.color_scheme}}"  
 >
   <div class="featured-page-link__inner">
     <a href="{{section.settings.page_link.url}}" class="featured-page-link__link h2">

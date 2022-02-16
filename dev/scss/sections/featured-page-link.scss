@@ -66,8 +66,13 @@
   }
 
   @media screen and (max-width: 676px) {
-      &__inner{
-        min-height: calc(var(--vwSize) * 60);
-      }
+    &__inner {
+      min-height: calc(var(--vwSize) * 60);
+    }
+
+    &__link {
+      padding-left: var(--sectionHorizontalSpacing);
+      padding-right: var(--sectionHorizontalSpacing);
+    }
   }
 }

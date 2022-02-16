@@ -4,7 +4,6 @@
   position: relative;
   padding: var(--sectionVerticalSpacing) var(--sectionHorizontalSpacing);
   display: grid;
-  grid-template-columns: auto 1fr;
   grid-template-columns: auto auto;
 
   &__plant-decor {
@@ -93,6 +92,7 @@
 
    @media screen and (max-width: 676px) {
       grid-template-columns: 1fr;
+
       &__branding{
         grid-column: 1/-1;
         display: flex;
@@ -110,19 +110,19 @@
         flex-direction: column;
       }
 
-      &__bottom{
+    &__bottom {
+      flex-direction: column;
+
+      &__sec-links{
         flex-direction: column;
-
-        &__copywright{
-          padding-right: 0;
-          padding-bottom: calc(var(--pxSize)/2);
-        }
-
-        &__sec-links{
-          flex-direction: column;
-          text-align: center;
-          gap: calc(var(--pxSize)/2);
-        }
+        text-align: center;
+        gap: calc(var(--pxSize)/2);
       }
+      
+      &__copywright {
+        padding-right: 0;
+        padding-bottom: calc(var(--pxSize) / 2);
+      }
+    }
   }
 }
