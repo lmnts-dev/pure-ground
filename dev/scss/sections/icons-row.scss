@@ -9,9 +9,10 @@
   }
 
   &__icons {
+    margin-top: calc(var(--sectionVerticalSpacing) / 2);
+
     &__icon {
-      margin: calc(var(--vwSize) * 2) calc(var(--vwSize) * 2) 0
-        calc(var(--vwSize) * 2);
+      margin: 0 calc(var(--vwSize) * 2);
 
       img {
         height: calc(var(--vwSize) * 4);
