@@ -1,5 +1,5 @@
 {% style %}
-    .content-with-bg-image {
+    #Content-with-bg-image-{{ section.id }} {
       --topSpacingRatio: {{section.settings.top_spacing}} / 100;
       --bottomSpacingRatio: {{section.settings.bottom_spacing}} / 100;
       --overlayOpacity: calc({{section.settings.overlay}} / 100);
@@ -215,7 +215,7 @@
          "step":10,
          "unit":"%",
          "label":"Top Spacing",
-         "default":100
+         "default":0
       },
       {
          "type":"range",
@@ -225,7 +225,7 @@
          "step":10,
          "unit":"%",
          "label":"Bottom Spacing",
-         "default":100
+         "default":0
       }
    ],
    "presets":[
