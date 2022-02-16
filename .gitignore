@@ -15,6 +15,7 @@ Thumbs.db
 # ignore project files/directories
 node_modules/
 dev/package-lock.json
+dev/node_modules/
 
 # ignore OS generated files
 ehthumbs.db
