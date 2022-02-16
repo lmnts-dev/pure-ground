@@ -3,9 +3,10 @@
 
     Expects:
     - image: {Image} Image object
+    - alt: Alt text
 
     Usage:
-    {% render 'next-gen-img' image: image %}
+    {% render 'next-gen-img' image: image, alt: alt %}
 {% endcomment %}
 
 <img
@@ -22,7 +23,7 @@
     sizes="100vw"
     src="{{ image | image_url: width: 1500 }}"
     loading="lazy"
-    alt="{{ image.alt | escape }}"
+    alt="{% if alt %}{{ alt }}{% else %}{{ image.alt | escape }}{% endif %}"
     width="{{ image.width }}"
     height="{{ image.height }}"
   >

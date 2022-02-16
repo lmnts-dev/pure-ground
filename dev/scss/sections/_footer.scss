@@ -4,7 +4,6 @@
   position: relative;
   padding: var(--sectionVerticalSpacing) var(--sectionHorizontalSpacing);
   display: grid;
-  grid-template-columns: auto 1fr;
   grid-template-columns: auto auto;
 
   &__plant-decor {
@@ -91,35 +90,36 @@
     }
   }
 
-   @media screen and (max-width: 676px) {
-      grid-template-columns: 1fr;
-      &__branding{
-        grid-column: 1/-1;
-        display: flex;
-        justify-content: space-between;
+  @media screen and (max-width: 676px) {
+    grid-template-columns: 1fr;
 
-        svg {
-          max-width:130px;
-        }
+    &__branding {
+      grid-column: 1/-1;
+      display: flex;
+      justify-content: space-between;
+
+      svg {
+        max-width: 130px;
+      }
+    }
+
+    &__blocks {
+      grid-column: 1/-1;
+      flex-direction: column;
+    }
+
+    &__bottom {
+      flex-direction: column;
+
+      &__copywright {
+        padding-right: 0;
+        padding-bottom: calc(var(--pxSize) / 2);
       }
 
-      &__blocks {
-        grid-column: 1/-1;
+      &__sec-links {
         flex-direction: column;
+        gap: calc(var(--pxSize) / 2);
       }
-
-      &__bottom{
-        flex-direction: column;
-
-        &__copywright{
-          padding-right: 0;
-          padding-bottom: calc(var(--pxSize)/2);
-        }
-
-        &__sec-links{
-          flex-direction: column;
-          gap: calc(var(--pxSize)/2);
-        }
-      }
+    }
   }
 }
