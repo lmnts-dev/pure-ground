@@ -6,7 +6,7 @@
  {% endstyle %}
 
 <div id="Content-with-bg-image-{{ section.id }}" class="content-with-bg-image color-{{section.settings.color_scheme}} __align-{{section.settings.alignment}}">
-   {{section.settings}}
+
    {% if section.settings.hero %}
       <h1 class="content-with-bg-image__heading h2">{{ section.settings.heading | escape }}</h1>
       {% if section.settings.subheading %}
@@ -31,7 +31,6 @@
    {%- endif -%}
 
    {%- if section.settings.image != blank -%}
-      hi
       {% render 'next-gen-img', image: section.settings.image %}
    {%- endif -%}
 </div>
@@ -86,7 +85,7 @@
       {
          "type":"radio",
          "id":"alignment",
-         "label":"Select Alignment",
+         "label":"Alignment",
          "options":[
             {
                "value":"left",
