@@ -1,8 +1,10 @@
-{{ 'component-card.css' | asset_url | stylesheet_tag }}
-{{ 'section-collection-list.css' | asset_url | stylesheet_tag }}
+{% style %}
+    #Main-list-collections-{{ section.id }} {
+      --topSpacingRatio: {{section.settings.top_spacing}} / 100;
+      --bottomSpacingRatio: {{section.settings.bottom_spacing}} / 100;
+    }
+ {% endstyle %}
 
-<div class="page-width">
-  <h1 class="title title--primary">{{ section.settings.title | escape }}</h1>
   {%- liquid
     case section.settings.sort
       when 'products_high' or 'products_low'
@@ -15,24 +17,27 @@
       assign collections = collections | reverse
     endif
   -%}
-  <ul class="collection-list grid grid--1-col grid--3-col-tablet" role="list">
-    {%- for collection in collections -%}
-      <li class="collection-list__item grid__item">
-        {% render 'card-collection', card_collection: collection, media_aspect_ratio: section.settings.image_ratio, columns: 3 %}
-      </li>
-    {%- endfor -%}
-  </ul>
+
+
+<div id="Main-list-collections-{{ section.id }}" class="main-list-collections color-{{section.settings.color_scheme}}">
+  {% if section.settings.heading %}
+    <h2 class="main-list-collections__heading h3">{{ section.settings.heading }}</h2>
+  {% endif %}
+
+  {% for collection in collections %}
+    {% render 'collection-card', collection: collection, shape: "square" %}
+  {% endfor %}
 </div>
 
 {% schema %}
 {
   "name": "t:sections.main-list-collections.name",
-  "class": "section",
+  "tag": "section",
   "settings": [
     {
       "type": "text",
-      "id": "title",
-      "label": "t:sections.main-list-collections.settings.title.label",
+      "id": "heading",
+      "label": "Heading",
       "default": "Collections"
     },
     {
@@ -68,25 +73,60 @@
       "label": "t:sections.main-list-collections.settings.sort.label"
     },
     {
-      "type": "select",
-      "id": "image_ratio",
-      "options": [
-        {
-          "value": "adapt",
-          "label": "t:sections.main-list-collections.settings.image_ratio.options__1.label"
-        },
-        {
-          "value": "portrait",
-          "label": "t:sections.main-list-collections.settings.image_ratio.options__2.label"
-        },
-        {
-          "value": "square",
-          "label": "t:sections.main-list-collections.settings.image_ratio.options__3.label"
-        }
+    "type": "select",
+    "id": "color_scheme",
+    "options": [
+      {
+        "value": "cream",
+        "label": "Cream (Default)"
+      },
+      {
+        "value": "dark-cream",
+        "label": "Dark Cream"
+      },
+      {
+        "value": "grass",
+        "label": "Grass"
+      },
+      {
+        "value": "sun",
+        "label": "Sun"
+      },
+      {
+        "value": "ground",
+        "label": "Ground"
+      },
+      {
+        "value": "sky",
+        "label": "Sky"
+      },
+      {
+        "value": "tan",
+        "label": "Tan"
+      }
       ],
-      "default": "adapt",
-      "label": "t:sections.main-list-collections.settings.image_ratio.label",
-      "info": "t:sections.main-list-collections.settings.image_ratio.info"
+      "default": "cream",
+      "label": "Color Scheme"
+    },
+     {
+      "type": "range",
+      "id": "top_spacing",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "%",
+      "label": "Top Spacing",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "bottom_spacing",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "%",
+      "label": "Bottom Spacing",
+      "default": 50
     }
   ]
 }

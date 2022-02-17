@@ -3,11 +3,9 @@
     "main": {
       "type": "main-list-collections",
       "settings": {
-        "image_ratio": "square"
+        "heading": "Categories"
       }
     }
   },
-  "order": [
-    "main"
-  ]
+  "order": ["main"]
 }
