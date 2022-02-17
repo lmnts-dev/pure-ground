@@ -5,43 +5,50 @@
   }
 {% endstyle %}
 
-<div id="Gallery-{{ section.id }}" class="gallery color-{{section.settings.color_scheme}}">
-  {%- for block in section.blocks -%}
-      {% assign imagePlacement = forloop.index | modulo: 6 %}
-      {% if imagePlacement == 2 %}
-        <div>
-          {% render 'next-gen-img', image: block.settings.image, alt: block.settings.alt %}
-          {% if section.blocks[forloop.index] %}
-            {% render 'next-gen-img', image: section.blocks[forloop.index].image, alt: section.blocks[forloop.index].alt %}
+{% if section.blocks.size > 0 %}
+  <div id="Gallery-{{ section.id }}" class="gallery color-{{section.settings.color_scheme}}">
+    <div class="gallery__slider" data-flickity='{ 
+      "pageDots": false, 
+      "wrapAround": true,
+      "autoPlay": 5000,
+      "selectedAttraction": 0.0025,
+      "friction": 1.2,
+      "prevNextButtons": false
+    }'>
+      {% comment %} Output our images twice to avoid seeing a flash when the slider re-places each slide's position {% endcomment %}
+      {% for i in (1..2) %}
+        {%- for block in section.blocks -%}
+          {% assign exteriorIndex = forloop.index0 %}
+          {% assign imagePlacement = forloop.index | modulo: 6 %}
+           
+          {% comment %} Output container with 2 images in it {% endcomment %}
+          {% if imagePlacement == 1 %}
+            <div class="gallery__group-of-2">
+              {% for i in (1..2) %}
+                {% assign indexToCheck = forloop.index0 | plus: exteriorIndex %}
+                <div class="gallery__image">
+                  {% render 'next-gen-img', image: section.blocks[indexToCheck].settings.image, alt: section.blocks[indexToCheck].settings.alt %}
+                </div>
+              {% endfor %}
+            </div>
           {% endif %}
-        </div>
-      {% endif %}
-      {% if imagePlacement == 0 %}
-        <div>
-          {% render 'next-gen-img', image: block.settings.image, alt: block.settings.alt %}
-          {% if section.blocks[forloop.index] %}
-            {% render 'next-gen-img', image: section.blocks[forloop.index].image, alt: section.blocks[forloop.index].alt %}
+
+          {% comment %} Output container with 4 images in it {% endcomment %}
+          {% if imagePlacement == 3 %}
+            <div class="gallery__group-of-4">
+              {% for i in (1..4) %}
+                {% assign indexToCheck = forloop.index0 | plus: exteriorIndex %}
+                <div class="gallery__image">
+                  {% render 'next-gen-img', image: section.blocks[indexToCheck].settings.image, alt: section.blocks[indexToCheck].settings.alt %}
+                </div>
+              {% endfor %}
+            </div>
           {% endif %}
-          {% assign indexToCheck = forloop.index | plus: 1 %}
-          {% if section.blocks[indexToCheck] %}
-            {% render 'next-gen-img', image: section.blocks[indexToCheck].image, alt: section.blocks[indexToCheck].alt %}
-          {% endif %}
-          {% assign indexToCheck = forloop.index | plus: 2 %}
-          {% if section.blocks[indexToCheck] %}
-            {% render 'next-gen-img', image: section.blocks[indexToCheck].image, alt: section.blocks[indexToCheck].alt %}
-          {% endif %}
-          {% assign indexToCheck = forloop.index | plus: 3 %}
-          {% if section.blocks[indexToCheck] %}
-            {% render 'next-gen-img', image: section.blocks[indexToCheck].image, alt: section.blocks[indexToCheck].alt %}
-          {% endif %}
-          {% assign indexToCheck = forloop.index | plus: 4 %}
-          {% if section.blocks[indexToCheck] %}
-            {% render 'next-gen-img', image: section.blocks[indexToCheck].image, alt: section.blocks[indexToCheck].alt %}
-          {% endif %}
-        </div>
-      {% endif %}
-  {%- endfor -%}
-</div>
+        {%- endfor -%}
+      {%- endfor -%}
+    </div>
+  </div>
+{% endif %}
 
 {% schema %}
 {
