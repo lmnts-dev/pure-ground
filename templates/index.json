@@ -5,12 +5,12 @@
       "settings": {
         "heading": "Always Organic",
         "subheading": "That's how we like it",
-        "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor lorem sit amet eros suscipit finibus. Mauris feugiat interdum lobortis.<\/p>",
+        "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor lorem sit amet eros suscipit finibus. Mauris feugiat interdum lobortis.</p>",
         "heading_size": "h2",
         "text_color": "dark",
         "button_label": "Shop All Ingredients",
-        "button_link": "\/",
-        "image": "shopify:\/\/shop_images\/unsplash_IQVFVH0ajag.jpg",
+        "button_link": "/",
+        "image": "shopify://shop_images/unsplash_IQVFVH0ajag.jpg",
         "overlay": 0,
         "hero": true,
         "alignment": "left",
@@ -25,12 +25,12 @@
       "settings": {
         "heading": "Culinary Herbs, Spices, & Vegetables",
         "subheading": "",
-        "text": "<p>For your restaurant or seasonings!<\/p>",
+        "text": "<p>For your restaurant or seasonings!</p>",
         "heading_size": "h3",
         "text_color": "light",
         "button_label": "Shop now",
-        "button_link": "shopify:\/\/collections",
-        "image": "shopify:\/\/shop_images\/unsplash_VVe3zOZM88E.jpg",
+        "button_link": "shopify://collections",
+        "image": "shopify://shop_images/unsplash_VVe3zOZM88E.jpg",
         "overlay": 50,
         "hero": false,
         "alignment": "center",
@@ -45,12 +45,12 @@
       "settings": {
         "heading": "Global Partnerships",
         "subheading": "",
-        "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor lorem sit amet eros suscipit finibus. Mauris feugiat interdum lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.<\/p>",
+        "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor lorem sit amet eros suscipit finibus. Mauris feugiat interdum lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
         "heading_size": "h3",
         "text_color": "light",
         "button_label": "Learn where",
-        "button_link": "shopify:\/\/pages\/european-operations",
-        "image": "shopify:\/\/shop_images\/unsplash_xDwEa2kaeJA.jpg",
+        "button_link": "shopify://pages/european-operations",
+        "image": "shopify://shop_images/unsplash_xDwEa2kaeJA.jpg",
         "overlay": 30,
         "hero": false,
         "alignment": "center",
@@ -94,13 +94,7 @@
           }
         }
       },
-      "block_order": [
-        "herbs",
-        "fair",
-        "rainforest",
-        "teas",
-        "chiles"
-      ],
+      "block_order": ["herbs", "fair", "rainforest", "teas", "chiles"],
       "settings": {
         "heading": "Browse Ingredient Categories",
         "color_scheme": "cream",
@@ -114,42 +108,42 @@
         "ddc6ae4f-850d-4af2-b30f-b2cfa4c27d8b": {
           "type": "icon",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/md.png",
+            "icon": "shopify://shop_images/md.png",
             "alt": "McCormick logo"
           }
         },
         "0a3401c2-cdcb-45c7-a115-863942ecd068": {
           "type": "icon",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/starbucks.png",
+            "icon": "shopify://shop_images/starbucks.png",
             "alt": "Starbucks logo"
           }
         },
         "d2a015f6-ec5e-4279-a122-c75324dad550": {
           "type": "icon",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/simply_organice.png",
+            "icon": "shopify://shop_images/simply_organice.png",
             "alt": "Simply Organic logo"
           }
         },
         "224b3659-8585-4ecd-af3b-1203bae4b59d": {
           "type": "icon",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/md.png",
+            "icon": "shopify://shop_images/md.png",
             "alt": "McCormick Logo"
           }
         },
         "0f186d34-13dd-40c1-ae96-9266b6a353d1": {
           "type": "icon",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/starbucks.png",
+            "icon": "shopify://shop_images/starbucks.png",
             "alt": "Starbucks logo"
           }
         },
         "eeca8ca7-1223-42f4-be66-9d19c9680495": {
           "type": "icon",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/simply_organice.png",
+            "icon": "shopify://shop_images/simply_organice.png",
             "alt": "Simply Organic Logo"
           }
         }
@@ -173,27 +167,27 @@
       "type": "content-slider",
       "blocks": {
         "b02402c1-f3cf-4b34-babb-b5b5a71c5cad": {
-          "type": "text",
+          "type": "slide",
           "settings": {
-            "text": "“Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur “",
+            "text": "“. Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur “",
             "author": "Lorem Ipsum",
-            "image": "shopify:\/\/shop_images\/unsplash_EAt30ojfzOI.jpg"
+            "image": "shopify://shop_images/unsplash_EAt30ojfzOI.jpg"
           }
         },
         "596920b0-a7be-45ab-8351-95b2e717da75": {
-          "type": "text",
+          "type": "slide",
           "settings": {
             "text": "“Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur “",
             "author": "Dolor sit",
-            "image": "shopify:\/\/shop_images\/unsplash_IQVFVH0ajag.jpg"
+            "image": "shopify://shop_images/unsplash_IQVFVH0ajag.jpg"
           }
         },
         "bbb86467-9856-4aa5-a40e-826958f624c9": {
-          "type": "text",
+          "type": "slide",
           "settings": {
             "text": "“Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur “",
             "author": "Amet Consect",
-            "image": "shopify:\/\/shop_images\/unsplash_VVe3zOZM88E.jpg"
+            "image": "shopify://shop_images/unsplash_VVe3zOZM88E.jpg"
           }
         }
       },
@@ -211,7 +205,7 @@
     "164442413892b05956": {
       "type": "featured-page-link",
       "settings": {
-        "image": "shopify:\/\/shop_images\/man_in_field.jpg",
+        "image": "shopify://shop_images/man_in_field.jpg",
         "page_link": "mission",
         "color_scheme": "cream",
         "top_spacing": 0,
@@ -224,24 +218,21 @@
         "art1": {
           "type": "article",
           "settings": {
-            "article": "blog\/testing-2"
+            "article": "blog/testing-2"
           }
         },
         "art2": {
           "type": "article",
           "settings": {
-            "article": "blog\/testing-3"
+            "article": "blog/testing-3"
           }
         }
       },
-      "block_order": [
-        "art1",
-        "art2"
-      ],
+      "block_order": ["art1", "art2"],
       "settings": {
         "heading": "Latest News in Organics",
         "button_label": "View More Resources",
-        "button_link": "\/resources",
+        "button_link": "/resources",
         "color_scheme": "cream",
         "top_spacing": 50,
         "bottom_spacing": 50

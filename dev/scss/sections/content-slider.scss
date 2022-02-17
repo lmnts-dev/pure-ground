@@ -1,11 +1,16 @@
 .content-slider {
-  padding-left: calc(var(--sectionHorizontalSpacing) / 2);
-  padding-right: calc(var(--sectionHorizontalSpacing) / 2);
+  padding-left: calc(var(--btnHeight) / 2);
+  padding-right: calc(var(--btnHeight) / 2);
 
   &__slides {
+    padding-left: calc(var(--btnHeight) * 1.5);
+    padding-right: calc(var(--btnHeight) * 1.5);
+
     &__slide {
       display: flex;
       gap: var(--pxSize);
+      align-items: stretch;
+      min-height: 100%;
     }
   }
 
