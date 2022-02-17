@@ -8,17 +8,22 @@
 <div id="Accordions-{{ section.id }}" class="accordions color-{{section.settings.color_scheme}}"  
 >
    {%- for block in section.blocks -%}
-      {%- case block.type -%}            
-        {%- when 'accordion' -%}
-          {% if block.settings.heading and block.settings.content %}
-            <div class="accordions__accordion">
+        {% if block.settings.heading and block.settings.content %}
+          <div class="accordions__accordion">
+            
+            <input class="accordions__accordion__checkbox" type="checkbox" id="Item-{{section.id}}-{{forloop.index0}}">
+            <label class="accordions__accordion__label" for="Item-{{section.id}}-{{forloop.index0}}">
+              {% render 'svg-plus' %}
               <h3 class="h4">{{block.settings.heading}}</h3>
-              <div class="">{{block.settings.content}}</div>
+            </label>
+            <div class="accordions__accordion__content">
+              {{block.settings.content}}
             </div>
-        {% endif %}
-      {%- endcase -%}
+          </div>
+      {% endif %}
     {%- endfor -%}
 </div>
+
 
 {% schema %}
 {
