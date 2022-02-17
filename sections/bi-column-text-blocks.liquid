@@ -6,32 +6,60 @@
  {% endstyle %}
 
 <div id="Bi-column-text-blocks-{{ section.id }}" class="bi-column-text-blocks color-{{section.settings.color_scheme}}">
-    {% if section.settings.heading %}
-        <h2 class="rich-text__heading">{{ section.settings.heading | escape }}</h2>
-    {% endif %}
-    {% if section.settings.subheading %}
-      <h2 class="split-section__text__heading">{{ section.settings.subheading }}</h1>
-    {% endif %}
-    {% if section.settings.image %}
+
+  {% if section.settings.image %}
+    <div class="bi-column-text-blocks__image">
       {% render 'next-gen-img', image: section.settings.image %}
+    </div>
+  {% endif %}
+
+  <div class="bi-column-text-blocks__text">
+    {% if section.settings.heading or section.settings.subheading %}
+      <div class="bi-column-text-blocks__text__headings">
+        {% if section.settings.heading %}
+          <h2 class="bi-column-text-blocks__text__headings__heading">{{ section.settings.heading | escape }}</h2>
+        {% endif %}
+        {% if section.settings.subheading %}
+          <h3 class="bi-column-text-blocks__text__headings__subheading h5">{{ section.settings.subheading }}</h3>
+        {% endif %}
+      </div>
     {% endif %}
 
-    {%- for block in section.blocks -%}
-    {%- case block.type -%}
-      {%- when 'text' -%}
-        {% if block.settings.heading %}
-          <h3 class="rich-text__text">{{ block.settings.heading }}</h3>
-        {% endif %}
-        {% if block.settings.content %}
-          <p class="rich-text__text">{{ block.settings.content }}</p>
-        {% endif %}
-        {% if block.settings.button_link %}
-          <a {% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} {{ block.shopify_attributes }}>
-            {{ block.settings.button_label | escape }}
-          </a>
-        {% endif %}
-    {%- endcase -%}
-  {%- endfor -%}
+
+    <div class="bi-column-text-blocks__text__blocks">
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {%- when 'text' -%}
+            <div class="bi-column-text-blocks__block">
+              {% if block.settings.heading %}
+                <h3 class="bi-column-text-blocks__block__heading caption">{{ block.settings.heading }}</h3>
+              {% endif %}
+              {% if block.settings.content %}
+                <p class="bi-column-text-blocks__block__text">{{ block.settings.content }}</p>
+              {% endif %}
+              {% if block.settings.button_link and block.settings.button_label %}
+                <a class="bi-column-text-blocks__block__btn btn" {% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} {{ block.shopify_attributes }}>
+                  {{ block.settings.button_label | escape }}
+                </a>
+              {% endif %}
+            </div>
+          {%- endcase -%}
+      {%- endfor -%}
+    </div>
+
+    <div class="bi-column-text-blocks__text__icons">
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {% when 'icon' %}
+            {% if block.settings.image %}
+              <div class="bi-column-text-blocks__icon">
+                {% render 'next-gen-img', image: block.settings.image, alt: block.settings.alt %}
+              </div>
+            {% endif %}
+        {%- endcase -%}
+      {%- endfor -%}
+    </div>
+  </div>
 
 </div>
 
