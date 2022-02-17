@@ -6,18 +6,16 @@
  {% endstyle %}
 
 <div id="Split-text-{{ section.id }}" class="split-text color-{{section.settings.color_scheme}}">
-   <div class="split-section__text">      
-      {% if section.settings.heading %}
-      <h2 class="split-section__text__heading">{{ section.settings.heading }}</h2>
+   {% if section.settings.heading %}
+      <h2 class="split-text__heading h4">{{ section.settings.heading }}</h2>
+   {% endif %}
+   <div class="split-text__content">
+      {% if section.settings.text %}
+         <div class="split-section__content__text">{{ section.settings.text }}</div>
       {% endif %}
-      <div class="split-text__content">
-         {% if section.settings.text %}
-            <div class="split-section__content__text">{{ section.settings.text }}</div>
-         {% endif %}
-         {% if section.settings.button_link and section.settings.button_label %}
-            <a class="btn" href="{{section.settings.button_link}}">{{section.settings.button_label}}</a>
-         {% endif %}
-      </div>
+      {% if section.settings.button_link and section.settings.button_label %}
+         <a class="btn" href="{{section.settings.button_link}}">{{section.settings.button_label}}</a>
+      {% endif %}
    </div>
 </div>
 

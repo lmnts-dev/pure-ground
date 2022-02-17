@@ -1,0 +1,14 @@
+.split-text {
+  display: flex;
+  justify-content: center;
+  gap: var(--pxSize);
+
+  &__heading {
+    flex: 0 1 350px;
+    text-transform: uppercase;
+  }
+
+  &__content {
+    flex: 0 1 570px;
+  }
+}
