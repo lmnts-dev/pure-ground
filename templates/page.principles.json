@@ -62,6 +62,44 @@
       "settings": {
         "heading": "Directly from the source",
         "text": "<p>Aliquam placerat ultrices risus. Vestibulum placerat dui eget nisi vulputate auctor. Etiam interdum neque vitae arcu scelerisque euismod. Aenean a cursus mauris, sed aliquet arcu. Donec a commodo dolor, non ultricies sapien. Etiam ac lectus nec diam convallis mattis at sit amet nulla. Nulla pellentesque consequat nunc, eu dictum purus venenatis quis. Cras quis nulla suscipit, pretium eros eu, lacinia tellus. Vivamus tristique lacus augue, id faucibus massa iaculis vel.<\/p>",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "cream",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
+    },
+    "16454660498f09f65b": {
+      "type": "gallery",
+      "blocks": {
+        "5dbc0155-f3ab-4848-9912-ef90caa893c1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_34.jpg",
+            "alt": "Image alt text"
+          }
+        },
+        "6548aac9-da48-4b66-89bc-da0eef062216": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_37.jpg",
+            "alt": "Image alt text"
+          }
+        },
+        "a4af3397-72b8-4767-bd76-aa1bd12ef432": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_34.jpg",
+            "alt": "Image alt text"
+          }
+        }
+      },
+      "block_order": [
+        "5dbc0155-f3ab-4848-9912-ef90caa893c1",
+        "6548aac9-da48-4b66-89bc-da0eef062216",
+        "a4af3397-72b8-4767-bd76-aa1bd12ef432"
+      ],
+      "settings": {
         "color_scheme": "cream",
         "top_spacing": 50,
         "bottom_spacing": 50
@@ -84,6 +122,7 @@
     "1643818843f333eb74",
     "1644423355dc027cd8",
     "split",
+    "16454660498f09f65b",
     "1644423507dbf32226"
   ]
 }

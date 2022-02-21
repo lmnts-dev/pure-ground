@@ -1,12 +1,68 @@
 {
   "sections": {
+    "1645465766aa7fad07": {
+      "type": "content-with-bg-image",
+      "settings": {
+        "heading": "Directly from the Source",
+        "subheading": "",
+        "text": "",
+        "heading_size": "h2",
+        "text_color": "light",
+        "button_label": "",
+        "button_link": "",
+        "image": "shopify:\/\/shop_images\/2018-08-21_17.54_1.png",
+        "overlay": 20,
+        "hero": true,
+        "alignment": "center",
+        "icon": false,
+        "color_scheme": "cream",
+        "top_spacing": 0,
+        "bottom_spacing": 0
+      }
+    },
     "main": {
       "type": "main-list-collections",
       "settings": {
+        "heading": "Collections",
+        "sort": "alphabetical",
+        "color_scheme": "cream",
+        "top_spacing": 50,
+        "bottom_spacing": 100
+      }
+    },
+    "164546587987b29c3a": {
+      "type": "featured-articles",
+      "blocks": {
+        "b317e977-9bf1-4705-ad51-7160ee9f3a2a": {
+          "type": "article",
+          "settings": {
+            "article": "pure-ground-for-unity\/introducing-stormi-1"
+          }
+        },
+        "8e15064e-db18-4115-b9e8-54b98d939beb": {
+          "type": "article",
+          "settings": {
+            "article": "guides\/introducing-stormi"
+          }
+        }
+      },
+      "block_order": [
+        "b317e977-9bf1-4705-ad51-7160ee9f3a2a",
+        "8e15064e-db18-4115-b9e8-54b98d939beb"
+      ],
+      "settings": {
+        "heading": "Latest News in Organics",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "dark-cream",
+        "top_spacing": 50,
+        "bottom_spacing": 100
       }
     }
   },
   "order": [
-    "main"
+    "1645465766aa7fad07",
+    "main",
+    "164546587987b29c3a"
   ]
 }
