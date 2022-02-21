@@ -15,7 +15,12 @@
   "tag": "section",
   "class": "section",
    "settings":[
-         //Featured Post?
+      {
+         "type":"article",
+         "id":"article",
+         "label":"Featured Article",
+         "info": "Optional. If not included, the featured article will be the most recent article published."
+      },
       {
          "type":"select",
          "id":"color_scheme",
@@ -71,6 +76,20 @@
          "unit":"%",
          "label":"Bottom Spacing",
          "default":50
+      }
+   ],
+   "blocks": [
+      {
+         "type":"blog",
+         "name":"Blog",
+         "settings": [
+            {
+               "type":"blog",
+               "id":"blog",
+               "label": "Blog",
+               "info": "These blog's articles will appear in these listings"
+            }
+         ]
       }
    ],
    "presets":[
