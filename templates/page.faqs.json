@@ -22,14 +22,11 @@
         "1644596818ef38f807-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. <\/p>"
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. </p>"
           }
         }
       },
-      "block_order": [
-        "1644596818ef38f807-0",
-        "1644596818ef38f807-1"
-      ],
+      "block_order": ["1644596818ef38f807-0", "1644596818ef38f807-1"],
       "settings": {
         "color_scheme": "color-cream",
         "hero": true,
@@ -44,28 +41,63 @@
           "type": "accordion",
           "settings": {
             "heading": "What are ingredients?",
-            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. <\/p>"
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. </p>",
+            "category": "General"
           }
         },
         "76ac3bf6-96ef-4cb4-99a8-cecb989f922b": {
           "type": "accordion",
           "settings": {
             "heading": "How many ingredients are there?",
-            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. <\/p>"
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. </p>",
+            "category": "General"
           }
         },
         "bfb177dd-4d38-46fe-b0eb-0a7afb9622c1": {
           "type": "accordion",
           "settings": {
             "heading": "Where do the ingredients come from?",
-            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. <\/p>"
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. </p>"
           }
         },
         "e1d8aa85-411d-43ea-ac15-580cb2c4ddd7": {
           "type": "accordion",
           "settings": {
             "heading": "Why are they good?",
-            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. <\/p>"
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. </p>",
+            "category": "General"
+          }
+        },
+        "processing-1": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Lorem ipsum?",
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. </p>",
+            "category": "Processing"
+          }
+        },
+        "processing-2": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Lorem ipsum?",
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. </p>",
+            "category": "Processing"
+          }
+        },
+        "shipping-1": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Lorem ipsum?",
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. </p>",
+            "category": "Ordering/Shipping"
+          }
+        },
+        "shipping-2": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Lorem ipsum?",
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. </p>",
+            "category": "Ordering/Shipping"
           }
         }
       },
@@ -73,7 +105,11 @@
         "db9e63c1-302a-451b-8b36-d805e639772c",
         "76ac3bf6-96ef-4cb4-99a8-cecb989f922b",
         "bfb177dd-4d38-46fe-b0eb-0a7afb9622c1",
-        "e1d8aa85-411d-43ea-ac15-580cb2c4ddd7"
+        "e1d8aa85-411d-43ea-ac15-580cb2c4ddd7",
+        "processing-1",
+        "processing-2",
+        "shipping-1",
+        "shipping-2"
       ],
       "settings": {
         "color_scheme": "cream",
@@ -82,9 +118,5 @@
       }
     }
   },
-  "order": [
-    "main",
-    "1644596818458e959a",
-    "1644596729a71a0ba5"
-  ]
+  "order": ["main", "1644596818458e959a", "1644596729a71a0ba5"]
 }

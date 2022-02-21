@@ -5,24 +5,131 @@
     }
 {% endstyle %}
 
-<div id="Accordions-{{ section.id }}" class="accordions color-{{section.settings.color_scheme}}"  
->
-   {%- for block in section.blocks -%}
-        {% if block.settings.heading and block.settings.content %}
-          <div class="accordions__accordion">
-            
-            <input class="accordions__accordion__checkbox" type="checkbox" id="Item-{{section.id}}-{{forloop.index0}}">
-            <label class="accordions__accordion__label" for="Item-{{section.id}}-{{forloop.index0}}">
-              {% render 'svg-plus' %}
-              <h3 class="h4">{{block.settings.heading}}</h3>
-            </label>
-            <div class="accordions__accordion__content">
-              {{block.settings.content}}
-            </div>
+
+{% comment %} Make sure user added accordions {% endcomment %}
+{% if section.blocks.size > 0 %}
+
+  {% comment %} Variables needed to gather category nav data {% endcomment %}
+  {% assign default_category = "General" %}
+  {% assign categories = default_category %}
+
+  <div id="Accordions-{{ section.id }}" class="accordions color-{{section.settings.color_scheme}}">
+
+    {% comment %} Loop through accoridions {% endcomment %}
+    {%- for block in section.blocks -%}
+      {% if block.settings.heading and block.settings.content %}
+
+        {% comment %} Assign category variables {% endcomment %}
+        {% assign category = default_category %}
+        {% if block.settings.category %}
+          {% assign category = block.settings.category %}
+        {% endif %}
+        {% assign category_handle = category | handleize %}
+
+        {% comment %} Output accordion {% endcomment %}
+        <div class="accordions__accordion {% if category == default_category %}__active{% endif %}" data-category="{{ category_handle }}">
+          <input class="accordions__accordion__checkbox" type="checkbox" id="Item-{{section.id}}-{{forloop.index0}}">
+          <label class="accordions__accordion__label" for="Item-{{section.id}}-{{forloop.index0}}">
+            <h3 class="h4">{{block.settings.heading}}</h3>
+            {% render 'svg-plus' %}
+          </label>
+          <div class="accordions__accordion__content">
+            {{block.settings.content}}
           </div>
+        </div>
+
+        {% comment %} 
+          Add accordion category to categories string, 
+          which we will split into an array after the loop is completed 
+        {% endcomment %}
+        {% assign categories = categories | append: "$$$" | append: category %}
       {% endif %}
     {%- endfor -%}
-</div>
+
+    {% comment %} Split categories string into an array {% endcomment %}
+    {% assign categories = categories | split: "$$$" | uniq %}
+
+    {% comment %} 
+      Output accordions nav if there's more than 
+      one category to navigate through 
+    {% endcomment %}
+    {% if categories.size > 1 %}
+      <ul class="accordions__nav">
+        {%- for category in categories -%}
+          {% assign category_handle = category | handleize %}
+
+            {% comment %} Each nav item {% endcomment %}
+            <li class="accordions__nav__item">
+              {% comment %} Tag logic below sets listener on {% endcomment %}
+              <accordions-button
+                class="accordions__button caption {% if category == default_category %}__active{% endif %}"
+                data-category="{{ category_handle }}"
+              >
+                {{ category }}
+              </accordions-button>
+            </li>
+        {%- endfor -%}
+      </ul>
+    {% endif %}
+
+    {% if section.settings.text %}
+      <div class="accordions__text">
+        {{ section.settings.text }}
+      </div>
+    {% endif %}
+
+  </div>
+{% endif %}
+
+{% javascript %}
+
+  class AccordionsNavButton extends HTMLElement {
+    constructor() {
+      super();
+
+      this.setupListener();
+    }
+
+    //Add a on click listener to every accordion category nav button
+    setupListener() {
+      this.addEventListener('click', this.updateCategory.bind(this));
+    }
+
+    //on category nav button click, updates what is active
+    updateCategory() {
+
+      //parent element for this section
+      var thisSection = this.parentNode.parentNode.parentNode;
+      //clicked on item's category
+      var category = this.getAttribute('data-category');
+      //all accordions in this section
+      var faqItems = thisSection.querySelectorAll('.accordions__accordion');
+      //all nav buttons
+      var faqNavItems = thisSection.querySelectorAll('.accordions__button');
+
+      //remove or add active class on accordions
+      for ( var i = 0; i < faqItems.length; i++ ){
+        if (faqItems[i].getAttribute('data-category') == category ){
+          faqItems[i].classList.add('__active');
+        }
+        else {
+          faqItems[i].classList.remove('__active');
+        }
+      }
+
+      //remove active class on nav buttons
+      for (var i = 0; i < faqNavItems.length; i++ ) {
+        faqNavItems[i].classList.remove('__active');
+      }
+
+      //add active class on clicked item
+      this.classList.add('__active');
+    }
+  }
+
+  customElements.define('accordions-button', AccordionsNavButton);
+
+{% endjavascript %}
 
 
 {% schema %}
@@ -31,6 +138,12 @@
   "tag": "section",
   "class": "section",
   "settings": [
+    {
+      "type": "richtext",
+      "label": "Additional Information",
+      "id": "text",
+      "info": "Placed below the accordions"
+    },
      {
       "type": "select",
       "id": "color_scheme",
@@ -102,6 +215,13 @@
           "type": "richtext",
           "id": "content",
           "label": "Content"
+        },
+        {
+          "type": "text",
+          "id": "category",
+          "label": "Category",
+          "default": "General",
+          "info": "You can categorize your FAQ into categories like 'General' or 'Shipping'. If no category is written, this question will be cateorized as 'General'. The ability to navigate between categories will only display if there are two or more categories in this section."
         }
       ]
     }
