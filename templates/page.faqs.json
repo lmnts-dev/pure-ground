@@ -75,33 +75,33 @@
         "processing-1": {
           "type": "accordion",
           "settings": {
-            "heading": "Lorem ipsum?",
+            "heading": "Lorem ipsum processing?",
             "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. <\/p>",
-            "category": "General"
+            "category": "Processing"
           }
         },
         "processing-2": {
           "type": "accordion",
           "settings": {
-            "heading": "Lorem ipsum?",
+            "heading": "Lorem ipsum processing?",
             "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. <\/p>",
-            "category": "General"
+            "category": "Processing"
           }
         },
         "shipping-1": {
           "type": "accordion",
           "settings": {
-            "heading": "Lorem ipsum?",
+            "heading": "Lorem ipsum shipping?",
             "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. <\/p>",
-            "category": "General"
+            "category": "Shipping\/Ordering"
           }
         },
         "shipping-2": {
           "type": "accordion",
           "settings": {
-            "heading": "Lorem ipsum?",
+            "heading": "Lorem ipsum ordering?",
             "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. <\/p>",
-            "category": "General"
+            "category": "Shipping\/Ordering"
           }
         }
       },
