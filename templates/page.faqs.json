@@ -116,7 +116,7 @@
         "shipping-2"
       ],
       "settings": {
-        "text": "<p>Have a different question? Contact Us.<\/p>",
+        "text": "<p>Have a different question? <a href=\"\/pages\/contact\" title=\"Contact\">Contact Us<\/a>.<\/p>",
         "color_scheme": "cream",
         "top_spacing": 50,
         "bottom_spacing": 100
