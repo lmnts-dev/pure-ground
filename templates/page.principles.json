@@ -10,7 +10,7 @@
     "1643991355e4feeedb": {
       "type": "image",
       "settings": {
-        "image": "shopify://shop_images/About_Components.jpg",
+        "image": "shopify:\/\/shop_images\/About_Components.jpg",
         "image_style": "fullwidth",
         "color_scheme": "cream",
         "top_spacing": 0,
@@ -32,11 +32,14 @@
         "16438188434dae6d1d-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. Quisque sollicitudin lacus ut nulla viverra, eget fermentum dui imperdiet. Mauris at auctor ligula, eu convallis magna. Sed congue justo eu augue ulum lectus. Fusce quis nulla non enim dictum semper tristique vel eros.</p>"
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. Quisque sollicitudin lacus ut nulla viverra, eget fermentum dui imperdiet. Mauris at auctor ligula, eu convallis magna. Sed congue justo eu augue ulum lectus. Fusce quis nulla non enim dictum semper tristique vel eros.<\/p>"
           }
         }
       },
-      "block_order": ["16438188434dae6d1d-0", "16438188434dae6d1d-1"],
+      "block_order": [
+        "16438188434dae6d1d-0",
+        "16438188434dae6d1d-1"
+      ],
       "settings": {
         "color_scheme": "cream",
         "hero": true,
@@ -47,7 +50,7 @@
     "1644423355dc027cd8": {
       "type": "image",
       "settings": {
-        "image": "shopify://shop_images/About_Components-1.jpg",
+        "image": "shopify:\/\/shop_images\/About_Components-1.jpg",
         "image_style": "fullwidth",
         "color_scheme": "cream",
         "top_spacing": 50,
@@ -58,7 +61,7 @@
       "type": "split-text",
       "settings": {
         "heading": "Directly from the source",
-        "text": "<p>Aliquam placerat ultrices risus. Vestibulum placerat dui eget nisi vulputate auctor. Etiam interdum neque vitae arcu scelerisque euismod. Aenean a cursus mauris, sed aliquet arcu. Donec a commodo dolor, non ultricies sapien. Etiam ac lectus nec diam convallis mattis at sit amet nulla. Nulla pellentesque consequat nunc, eu dictum purus venenatis quis. Cras quis nulla suscipit, pretium eros eu, lacinia tellus. Vivamus tristique lacus augue, id faucibus massa iaculis vel.</p>",
+        "text": "<p>Aliquam placerat ultrices risus. Vestibulum placerat dui eget nisi vulputate auctor. Etiam interdum neque vitae arcu scelerisque euismod. Aenean a cursus mauris, sed aliquet arcu. Donec a commodo dolor, non ultricies sapien. Etiam ac lectus nec diam convallis mattis at sit amet nulla. Nulla pellentesque consequat nunc, eu dictum purus venenatis quis. Cras quis nulla suscipit, pretium eros eu, lacinia tellus. Vivamus tristique lacus augue, id faucibus massa iaculis vel.<\/p>",
         "color_scheme": "cream",
         "top_spacing": 50,
         "bottom_spacing": 50
@@ -67,7 +70,7 @@
     "1644423507dbf32226": {
       "type": "featured-page-link",
       "settings": {
-        "image": "shopify://shop_images/Group_of_people.jpg",
+        "image": "shopify:\/\/shop_images\/Group_of_people.jpg",
         "page_link": "history",
         "color_scheme": "cream",
         "top_spacing": 0,

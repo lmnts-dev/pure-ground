@@ -3,9 +3,10 @@
     "main": {
       "type": "main-list-collections",
       "settings": {
-        "heading": "Categories"
       }
     }
   },
-  "order": ["main"]
+  "order": [
+    "main"
+  ]
 }
