@@ -7,6 +7,33 @@
         "padding_bottom": 28
       }
     },
+    "1645466577d7fad930": {
+      "type": "recent-articles",
+      "blocks": {
+        "b9ef49bb-a21a-4911-b988-76b8703cea55": {
+          "type": "blog",
+          "settings": {
+            "blog": "blog"
+          }
+        },
+        "9a09bbc2-9007-4141-99ee-cc95e8512bee": {
+          "type": "blog",
+          "settings": {
+            "blog": "news"
+          }
+        }
+      },
+      "block_order": [
+        "b9ef49bb-a21a-4911-b988-76b8703cea55",
+        "9a09bbc2-9007-4141-99ee-cc95e8512bee"
+      ],
+      "settings": {
+        "article": "pure-ground-for-unity\/introducing-stormi-1",
+        "color_scheme": "cream",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
+    },
     "16444369586030090c": {
       "type": "blog-listings",
       "settings": {
@@ -50,6 +77,7 @@
   },
   "order": [
     "main",
+    "1645466577d7fad930",
     "16444369586030090c",
     "164443697608885640",
     "164443700536e713e4",
