@@ -136,9 +136,33 @@ p,
 .caption-sm {
   font-size: 0.8125rem;
   text-transform: uppercase;
+  position: relative;
 }
 
 a {
-  text-decoration: none;
   color: var(--color-foreground);
+  text-decoration: none;
+}
+
+a:not(.btn):not(.no-link-styles) {
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background: var(--color-foreground);
+    transform: scaleX(1);
+    will-change: transform;
+    transition: all 0.25s ease;
+  }
+
+  &:hover {
+    &:after {
+      transform: scaleX(1.05);
+    }
+  }
 }

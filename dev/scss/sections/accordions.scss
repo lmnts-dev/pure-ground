@@ -116,6 +116,7 @@
   }
 
   &__text {
+    margin-top: calc(var(--sectionVerticalSpacing) * 0.75);
     max-width: 600px;
   }
 }
