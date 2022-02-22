@@ -11,4 +11,12 @@
   &__content {
     flex: 0 1 570px;
   }
+
+  @media screen and (max-width: 676px) {
+    flex-direction: column;
+
+    &__heading, &__content {
+      flex:1;
+    }
+  }
 }
