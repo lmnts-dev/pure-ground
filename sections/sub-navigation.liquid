@@ -1,0 +1,80 @@
+{%- if section.blocks.size > 0  -%}
+  <div id="sub-navigation-{{ section.id }}" class="sub-navigation __style-{{ section.settings.image_style}} color-{{section.settings.color_scheme}}"  
+  >
+    <nav>
+      <ul>
+        {% for block in section.blocks %}
+          <li><a href="{{ block.settings.link }}">{{ block.settings.link }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Sub-Navigation",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "options": [
+        {
+          "value": "cream",
+          "label": "Cream (Default)"
+        },
+        {
+          "value": "dark-cream",
+          "label": "Dark Cream"
+        },
+        {
+          "value": "grass",
+          "label": "Grass"
+        },
+        {
+          "value": "sun",
+          "label": "Sun"
+        },
+        {
+          "value": "ground",
+          "label": "Ground"
+        },
+        {
+          "value": "sky",
+          "label": "Sky"
+        },
+        {
+          "value": "tan",
+          "label": "Tan"
+        }
+      ],
+      "default": "cream",
+      "label": "Color Scheme"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Link",
+      "type": "link",
+      "settings": [
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Label"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Sub-navigation"
+    }
+  ]
+}
+{% endschema %}
