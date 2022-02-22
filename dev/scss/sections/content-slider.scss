@@ -43,4 +43,23 @@
       object-fit: cover;
     }
   }
+
+  @media screen and (max-width: 676px) {
+    &__slides {
+      padding:0;
+
+      &__slide {
+        flex-direction: column;
+      }
+    }
+
+    &__image{
+      padding-top: calc(9 / 16 * 100%);
+    }
+    
+    .flickity-prev-next-button{
+      top: auto;
+      bottom: -40px;
+    }
+  }
 }
