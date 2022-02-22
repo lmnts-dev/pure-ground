@@ -1,10 +1,14 @@
 {%- if section.blocks.size > 0  -%}
-  <div id="sub-navigation-{{ section.id }}" class="sub-navigation __style-{{ section.settings.image_style}} color-{{section.settings.color_scheme}}"  
+  <div id="sub-navigation-{{ section.id }}" class="sub-navigation color-{{section.settings.color_scheme}}"  
   >
     <nav>
-      <ul>
+      <ul class="sub-navigation__list">
         {% for block in section.blocks %}
-          <li><a href="{{ block.settings.link }}">{{ block.settings.link }}</a></li>
+          <li class="sub-navigation__list__item">
+            <a class="sub-navigation__list__item__link" href="{{ block.settings.link }}">
+              {{ block.settings.label }}
+            </a>
+          </li>
         {% endfor %}
       </ul>
     </nav>
@@ -15,6 +19,7 @@
 {
   "name": "Sub-Navigation",
   "tag": "section",
+  "class": "sub-navigation__parent",
   "settings": [
     {
       "type": "select",

@@ -93,11 +93,9 @@
   //using flex column order here
   &__nav {
     order: -1;
-    list-style: none;
     display: flex;
     gap: var(--pxSize);
-    padding: 0;
-    margin-bottom: calc(var(--sectionVerticalSpacing) * 0.75);
+    margin: 0 0 calc(var(--sectionVerticalSpacing) * 0.75) 0;
 
     &__item {
       > * {

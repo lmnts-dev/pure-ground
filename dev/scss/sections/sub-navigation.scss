@@ -1,4 +1,26 @@
 .sub-navigation {
   padding-top: 0;
   padding-bottom: 0;
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: var(--navHeight);
+
+    &__item {
+      &__link {
+        height: var(--navHeight);
+        line-height: var(--navHeight);
+        font-weight: 700;
+      }
+    }
+  }
+
+  &__parent {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    //  top: var(--navHeight);
+    z-index: 2;
+  }
 }
