@@ -22,16 +22,13 @@
         "1644596818ef38f807-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. <\/p>"
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. </p>"
           }
         }
       },
-      "block_order": [
-        "1644596818ef38f807-0",
-        "1644596818ef38f807-1"
-      ],
+      "block_order": ["1644596818ef38f807-0", "1644596818ef38f807-1"],
       "settings": {
-        "color_scheme": "color-cream",
+        "color_scheme": "cream",
         "hero": true,
         "top_spacing": 80,
         "bottom_spacing": 20
@@ -44,7 +41,7 @@
           "type": "accordion",
           "settings": {
             "heading": "What are ingredients?",
-            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. <\/p>",
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. </p>",
             "category": "General"
           }
         },
@@ -52,7 +49,7 @@
           "type": "accordion",
           "settings": {
             "heading": "How many ingredients are there?",
-            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. <\/p>",
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. </p>",
             "category": "General"
           }
         },
@@ -60,7 +57,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Where do the ingredients come from?",
-            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. <\/p>",
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. </p>",
             "category": "General"
           }
         },
@@ -68,7 +65,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Why are they good?",
-            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. <\/p>",
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. </p>",
             "category": "General"
           }
         },
@@ -76,7 +73,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Lorem ipsum processing?",
-            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. <\/p>",
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. </p>",
             "category": "Processing"
           }
         },
@@ -84,7 +81,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Lorem ipsum processing?",
-            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. <\/p>",
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. </p>",
             "category": "Processing"
           }
         },
@@ -92,16 +89,16 @@
           "type": "accordion",
           "settings": {
             "heading": "Lorem ipsum shipping?",
-            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. <\/p>",
-            "category": "Shipping\/Ordering"
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. </p>",
+            "category": "Shipping/Ordering"
           }
         },
         "shipping-2": {
           "type": "accordion",
           "settings": {
             "heading": "Lorem ipsum ordering?",
-            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. <\/p>",
-            "category": "Shipping\/Ordering"
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. </p>",
+            "category": "Shipping/Ordering"
           }
         }
       },
@@ -116,16 +113,12 @@
         "shipping-2"
       ],
       "settings": {
-        "text": "<p>Have a different question? <a href=\"\/pages\/contact\" title=\"Contact\">Contact Us<\/a>.<\/p>",
+        "text": "<p>Have a different question? <a href=\"/pages/contact\" title=\"Contact\">Contact Us</a>.</p>",
         "color_scheme": "cream",
         "top_spacing": 50,
         "bottom_spacing": 100
       }
     }
   },
-  "order": [
-    "main",
-    "1644596818458e959a",
-    "1644596729a71a0ba5"
-  ]
+  "order": ["main", "1644596818458e959a", "1644596729a71a0ba5"]
 }

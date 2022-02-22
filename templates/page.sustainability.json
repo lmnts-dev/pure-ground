@@ -10,7 +10,7 @@
     "1643991355e4feeedb": {
       "type": "image",
       "settings": {
-        "image": "shopify:\/\/shop_images\/landscape.jpg",
+        "image": "shopify://shop_images/landscape.jpg",
         "image_style": "fullwidth",
         "color_scheme": "cream",
         "top_spacing": 0,
@@ -32,14 +32,11 @@
         "16438188434dae6d1d-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. Quisque sollicitudin lacus ut nulla viverra, eget fermentum dui imperdiet. Mauris at auctor ligula, eu convallis magna. <\/p>"
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. Quisque sollicitudin lacus ut nulla viverra, eget fermentum dui imperdiet. Mauris at auctor ligula, eu convallis magna. </p>"
           }
         }
       },
-      "block_order": [
-        "16438188434dae6d1d-0",
-        "16438188434dae6d1d-1"
-      ],
+      "block_order": ["16438188434dae6d1d-0", "16438188434dae6d1d-1"],
       "settings": {
         "color_scheme": "cream",
         "hero": true,
@@ -53,19 +50,17 @@
         "1644419366881604f5-0": {
           "type": "text",
           "settings": {
-            "text": "<p>Aliquam placerat ultrices risus. Vestibulum placerat dui eget nisi vulputate auctor. Etiam interdum neque vitae arcu scelerisque euismod. Aenean a cursus mauris, sed aliquet arcu. Donec a commodo dolor, non ultricies sapien. Etiam ac lectus nec diam convallis mattis at sit amet nulla. Nulla pellentesque consequat nunc, eu dictum purus venenatis quis. Cras quis nulla suscipit, pretium eros eu, lacinia tellus. Vivamus tristique lacus augue, id faucibus massa iaculis vel.<\/p>"
+            "text": "<p>Aliquam placerat ultrices risus. Vestibulum placerat dui eget nisi vulputate auctor. Etiam interdum neque vitae arcu scelerisque euismod. Aenean a cursus mauris, sed aliquet arcu. Donec a commodo dolor, non ultricies sapien. Etiam ac lectus nec diam convallis mattis at sit amet nulla. Nulla pellentesque consequat nunc, eu dictum purus venenatis quis. Cras quis nulla suscipit, pretium eros eu, lacinia tellus. Vivamus tristique lacus augue, id faucibus massa iaculis vel.</p>"
           }
         }
       },
-      "block_order": [
-        "1644419366881604f5-0"
-      ],
+      "block_order": ["1644419366881604f5-0"],
       "settings": {
         "heading": "",
         "heading_size": "h3",
         "hero": false,
-        "image": "shopify:\/\/shop_images\/2018-08-21_17.54_1.png",
-        "color_scheme": "color-cream",
+        "image": "shopify://shop_images/2018-08-21_17.54_1.png",
+        "color_scheme": "cream",
         "layout": "reversed",
         "image_style": "square",
         "top_spacing": 30,
@@ -75,7 +70,7 @@
     "1644423794f6bb2df4": {
       "type": "image",
       "settings": {
-        "image": "shopify:\/\/shop_images\/About_Components.png",
+        "image": "shopify://shop_images/About_Components.png",
         "image_style": "fullwidth",
         "color_scheme": "cream",
         "top_spacing": 0,
@@ -97,16 +92,13 @@
         "164442384920551cc7-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. Quisque sollicitudin lacus ut nulla viverra, eget fermentum dui imperdiet. Mauris at auctor ligula, eu convallis magna. <\/p>"
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. Quisque sollicitudin lacus ut nulla viverra, eget fermentum dui imperdiet. Mauris at auctor ligula, eu convallis magna. </p>"
           }
         }
       },
-      "block_order": [
-        "164442384920551cc7-0",
-        "164442384920551cc7-1"
-      ],
+      "block_order": ["164442384920551cc7-0", "164442384920551cc7-1"],
       "settings": {
-        "color_scheme": "color-cream",
+        "color_scheme": "cream",
         "hero": false,
         "top_spacing": 100,
         "bottom_spacing": 100

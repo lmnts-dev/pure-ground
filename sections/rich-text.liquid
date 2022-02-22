@@ -5,18 +5,18 @@
     }
  {% endstyle %}
 
-<div id="Rich-text-{{ section.id }}" class="rich-text color-{{section.settings.color_scheme}}">
+<div id="Rich-text-{{ section.id }}" class="rich-text color-{{ section.settings.color_scheme }}">
   {%- for block in section.blocks -%}
     {%- case block.type -%}
 
       {%- when 'heading' -%}
         {% if section.settings.hero %}
-          <h1 class="rich-text__heading __align-{{block.settings.heading_alignment}} {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}</h1>
+          <h1 class="rich-text__heading __align-{{ block.settings.heading_alignment }} {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}</h1>
         {% else %}
-          <h2 class="rich-text__heading __align-{{block.settings.heading_alignment}} {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}</h2>
+          <h2 class="rich-text__heading __align-{{ block.settings.heading_alignment }} {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}</h2>
         {% endif %}
         {% if block.settings.subheading %}
-          <h3 class="rich-text__subheading caption __align-{{block.settings.heading_alignment}}">{{block.settings.subheading}}</h3>
+          <h3 class="rich-text__subheading caption __align-{{ block.settings.heading_alignment }}">{{ block.settings.subheading }}</h3>
         {% endif %}
       {%- when 'text' -%}
         {% if block.settings.text %}
@@ -44,35 +44,35 @@
       "id": "color_scheme",
       "options": [
         {
-          "value": "color-cream",
+          "value": "cream",
           "label": "Cream (Default)"
         },
         {
-          "value": "color-dark-cream",
+          "value": "dark-cream",
           "label": "Dark Cream"
         },
         {
-          "value": "color-grass",
+          "value": "grass",
           "label": "Grass"
         },
         {
-          "value": "color-sun",
+          "value": "sun",
           "label": "Sun"
         },
         {
-          "value": "color-ground",
+          "value": "ground",
           "label": "Ground"
         },
         {
-          "value": "color-sky",
+          "value": "sky",
           "label": "Sky"
         },
         {
-          "value": "color-tan",
+          "value": "tan",
           "label": "Tan"
         }
       ],
-      "default": "color-cream",
+      "default": "cream",
       "label": "Color Scheme"
     },
     {

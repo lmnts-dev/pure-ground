@@ -10,7 +10,7 @@
     "164548993101ad8e3f": {
       "type": "image",
       "settings": {
-        "image": "shopify:\/\/shop_images\/unsplash_8rTwokBwz1w.jpg",
+        "image": "shopify://shop_images/unsplash_8rTwokBwz1w.jpg",
         "image_style": "fullwidth",
         "color_scheme": "cream",
         "top_spacing": 0,
@@ -32,16 +32,13 @@
         "1645491980ac0a062b-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. <\/p>"
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. </p>"
           }
         }
       },
-      "block_order": [
-        "1645491980ac0a062b-0",
-        "1645491980ac0a062b-1"
-      ],
+      "block_order": ["1645491980ac0a062b-0", "1645491980ac0a062b-1"],
       "settings": {
-        "color_scheme": "color-cream",
+        "color_scheme": "cream",
         "hero": false,
         "top_spacing": 50,
         "bottom_spacing": 50
@@ -53,19 +50,17 @@
         "164549205077c59396-0": {
           "type": "text",
           "settings": {
-            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla.  pharetra diam a magna blandit, ac maximus purus fringilla.<\/p>"
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla.  pharetra diam a magna blandit, ac maximus purus fringilla.</p>"
           }
         }
       },
-      "block_order": [
-        "164549205077c59396-0"
-      ],
+      "block_order": ["164549205077c59396-0"],
       "settings": {
         "heading": "Milling",
         "heading_size": "h3",
         "hero": false,
-        "image": "shopify:\/\/shop_images\/unsplash_V0xp-dTS3z0.jpg",
-        "color_scheme": "color-cream",
+        "image": "shopify://shop_images/unsplash_V0xp-dTS3z0.jpg",
+        "color_scheme": "cream",
         "layout": "reversed",
         "image_style": "default",
         "top_spacing": 50,
@@ -78,19 +73,17 @@
         "16454921839ac0a96a-0": {
           "type": "text",
           "settings": {
-            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. <\/p>"
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. </p>"
           }
         }
       },
-      "block_order": [
-        "16454921839ac0a96a-0"
-      ],
+      "block_order": ["16454921839ac0a96a-0"],
       "settings": {
         "heading": "Powdering",
         "heading_size": "h3",
         "hero": false,
-        "image": "shopify:\/\/shop_images\/unsplash_NMF5sEaHUmo.jpg",
-        "color_scheme": "color-cream",
+        "image": "shopify://shop_images/unsplash_NMF5sEaHUmo.jpg",
+        "color_scheme": "cream",
         "layout": "default",
         "image_style": "default",
         "top_spacing": 50,
@@ -103,19 +96,17 @@
         "16454922291efe439e-0": {
           "type": "text",
           "settings": {
-            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. <\/p>"
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. </p>"
           }
         }
       },
-      "block_order": [
-        "16454922291efe439e-0"
-      ],
+      "block_order": ["16454922291efe439e-0"],
       "settings": {
         "heading": "Roasting",
         "heading_size": "h3",
         "hero": false,
-        "image": "shopify:\/\/shop_images\/unsplash_pBwMdofMxtU.jpg",
-        "color_scheme": "color-cream",
+        "image": "shopify://shop_images/unsplash_pBwMdofMxtU.jpg",
+        "color_scheme": "cream",
         "layout": "reversed",
         "image_style": "default",
         "top_spacing": 50,
@@ -128,19 +119,17 @@
         "16454922901e23de1f-0": {
           "type": "text",
           "settings": {
-            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. <\/p>"
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. </p>"
           }
         }
       },
-      "block_order": [
-        "16454922901e23de1f-0"
-      ],
+      "block_order": ["16454922901e23de1f-0"],
       "settings": {
         "heading": "Granulation",
         "heading_size": "h3",
         "hero": false,
-        "image": "shopify:\/\/shop_images\/unsplash_obMdrL5pFWI.jpg",
-        "color_scheme": "color-cream",
+        "image": "shopify://shop_images/unsplash_obMdrL5pFWI.jpg",
+        "color_scheme": "cream",
         "layout": "default",
         "image_style": "default",
         "top_spacing": 50,
@@ -162,18 +151,15 @@
         "16454924153eb6f3be-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. <\/p>"
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. </p>"
           }
         }
       },
-      "block_order": [
-        "16454924153eb6f3be-0",
-        "16454924153eb6f3be-1"
-      ],
+      "block_order": ["16454924153eb6f3be-0", "16454924153eb6f3be-1"],
       "settings": {
-        "color_scheme": "color-ground",
+        "color_scheme": "ground",
         "hero": false,
-        "top_spacing": 50,
+        "top_spacing": 80,
         "bottom_spacing": 50
       }
     },
@@ -184,7 +170,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Product Development",
-            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. <\/p>",
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. </p>",
             "category": "General"
           }
         },
@@ -192,7 +178,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Blending",
-            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. <\/p>",
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. </p>",
             "category": "General"
           }
         },
@@ -200,7 +186,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Private Labeling",
-            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. <\/p>",
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. </p>",
             "category": "General"
           }
         },
@@ -208,7 +194,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Co-Packaging",
-            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. <\/p>",
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. </p>",
             "category": "General"
           }
         }
@@ -232,19 +218,17 @@
         "1645492458878212b5-0": {
           "type": "text",
           "settings": {
-            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. <\/p><p>Micro Reduction<\/p><p>Certified Organic<\/p><p>Metal Detection<\/p><p>Gluten\/Allergen Free<\/p><p>Heavy Metal Report<\/p><p>SQF Certifications<\/p>"
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. </p><p>Micro Reduction</p><p>Certified Organic</p><p>Metal Detection</p><p>Gluten/Allergen Free</p><p>Heavy Metal Report</p><p>SQF Certifications</p>"
           }
         }
       },
-      "block_order": [
-        "1645492458878212b5-0"
-      ],
+      "block_order": ["1645492458878212b5-0"],
       "settings": {
         "heading": "Quality Control",
         "heading_size": "h3",
         "hero": false,
-        "image": "shopify:\/\/shop_images\/unsplash_obMdrL5pFWI.jpg",
-        "color_scheme": "color-cream",
+        "image": "shopify://shop_images/unsplash_obMdrL5pFWI.jpg",
+        "color_scheme": "cream",
         "layout": "reversed",
         "image_style": "default",
         "top_spacing": 100,
