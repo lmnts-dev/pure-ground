@@ -23,4 +23,15 @@
     //  top: var(--navHeight);
     z-index: 2;
   }
+
+  @media screen and (max-width: 676px) {
+    &__list {
+      flex-direction: column;
+      gap: 0;
+
+      &__item {
+        text-align: center;
+      }
+    }
+  }
 }

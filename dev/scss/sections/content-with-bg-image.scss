@@ -6,6 +6,7 @@
     width: 100%;
     padding: var(--sectionVerticalSpacing) var(--sectionHorizontalSpacing);
     color: var(--color-foreground);
+    overflow: hidden;
 
     &:after,
     > img {
