@@ -79,6 +79,7 @@
 
       ~ .accordions__accordion__content {
         max-height: 10000vh;
+        border-bottom: 1px solid var(--color-foreground);
       }
     }
 
