@@ -40,7 +40,8 @@
     }
   }
 
-  &:not(.__style-condensed):not(.__style-horizontal) {
+  //default layout, add new layouts here with :not selector as needed
+  &:not(.__style-condensed):not(.__style-horizontal):not(.__style-teaser) {
     .article-card {
       &__content {
         display: grid;
@@ -83,6 +84,25 @@
     }
   }
 
+  &.__style-teaser {
+    display: flex;
+
+    .article-card {
+      &__content {
+        display: flex;
+        flex-direction: column;
+        padding: 0 calc(var(--pxSize) / 2);
+        justify-content: center;
+        flex: 2;
+      }
+
+      &__image {
+        flex: 1;
+        padding-top: calc(var(--articleCardImageRatio) / 3);
+      }
+    }
+  }
+
   @media screen and (max-width: 676px) {
     &__image {
       flex: 1;
@@ -92,12 +112,12 @@
       }
     }
 
-     &__content {
+    &__content {
       flex: 2;
       display: flex;
       flex-direction: column-reverse;
       justify-content: center;
-      
+
       &__date {
         margin-bottom: calc(var(--pxSize) / 1.25);
       }

@@ -5,9 +5,46 @@
     }
  {% endstyle %}
 
-<div id="Recent-articles-{{ section.id }}" class="recent-articles color-{{section.settings.color_scheme}}">
- 
-</div>
+{% comment %} Make sure user added blogs {% endcomment %}
+{% if section.blocks.size > 0 %}
+
+   {% comment %} Put all blogs' articles in one array {% endcomment %}
+   {% assign all_articles = section.blocks[0].settings.blog.articles %}
+   {% for block in section.blocks %}
+      {% if block.settings.blog and forloop.index0 != 0 %}
+         {% assign all_articles = all_articles | concat: block.settings.blog.articles %}
+      {% endif %}
+   {% endfor %}
+
+   {% comment %} Sort articles by published date {% endcomment %}
+   {% assign all_articles = all_articles | sort: "published_at" | reverse %}
+
+   {% comment %} 
+      Set featured card as most recently published article
+      unless user selected a featured article
+   {% endcomment %}
+   {% assign featured_article = all_articles[0] %}
+   {% if section.settings.article %}
+      {% assign featured_article = section.settings.article %}
+   {% endif %}
+
+
+   <div id="Recent-articles-{{ section.id }}" class="recent-articles color-{{section.settings.color_scheme}}">
+      
+      {% comment %} Featured Article {% endcomment %}
+      {% render 'article-card', article: featured_article %}
+
+      {% comment %} The rest of the articles {% endcomment %}
+      <div class="recent-articles__container">
+         <h1 class="recent-articles__container__heading p">Recent Articles</h1>
+         {% for article in all_articles limit: 6 %}
+            {% if article != featured_article %}
+               {% render 'article-card', article: article, style: "teaser" %}
+            {% endif %}
+         {% endfor %}
+      </div>
+   </div>
+{% endif %}
 
 {% schema %}
 {

@@ -3,7 +3,7 @@
 
     Expects:
     - article: {Object} Article object
-    - condensed: {String} The setting changes the layout and items shown on card, accepts nothing ("default"), "condensed", or "horzontal"
+    - condensed: {String} The setting changes the layout and items shown on card, accepts nothing ("default"), "condensed", "teaser", or "horizontal"
 
     Usage:
     {% render 'article-card' article: article, style: "condensed" %}
@@ -33,13 +33,15 @@
       {% endif %}
     </div>
     <div class="article-card__content">        
-      <h3 class="article-card__content__heading {% if style == "horizontal" %}h5{% else %}h6{% endif %}">
+      <h3 class="article-card__content__heading {% if style == "horizontal" %}h5{% elsif style == "teaser" %}p{% else %}h6{% endif %}">
         {{ article.title | truncate: 50 | escape }}
       </h3>
-      <span class="article-card__content__date caption-sm">{{ article.published_at | date: "%B %Y" }}</span>
-      {% if style != "condensed" %}
-        <p class="article-card__content__text">{{ article.excerpt_or_content | strip_html | truncatewords: 30 }}</p>
-      {% endif %}
+      {% unless style == "teaser" %}
+        <span class="article-card__content__date caption-sm">{{ article.published_at | date: "%B %Y" }}</span>
+        {% if style != "condensed" %}
+          <p class="article-card__content__text">{{ article.excerpt_or_content | strip_html | truncatewords: 30 }}</p>
+        {% endif %}
+      {% endunless %}
     </div>
   </a>
 {%- endif -%}

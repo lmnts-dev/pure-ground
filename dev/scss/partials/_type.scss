@@ -113,6 +113,11 @@ p,
   margin: 0 0 1rem 0;
 }
 
+p,
+.p {
+  font-size: 1.125rem;
+}
+
 .p-sm,
 .p-sm > p {
   font-size: 0.875rem;
@@ -144,25 +149,27 @@ a {
   text-decoration: none;
 }
 
-a:not(.btn):not(.no-link-styles) {
-  position: relative;
+.article-text {
+  a {
+    position: relative;
 
-  &:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 1px;
-    background: var(--color-foreground);
-    transform: scaleX(1);
-    will-change: transform;
-    transition: all 0.25s ease;
-  }
-
-  &:hover {
     &:after {
-      transform: scaleX(1.05);
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 1px;
+      background: var(--color-foreground);
+      transform: scaleX(1);
+      will-change: transform;
+      transition: all 0.25s ease;
+    }
+
+    &:hover {
+      &:after {
+        transform: scaleX(1.05);
+      }
     }
   }
 }

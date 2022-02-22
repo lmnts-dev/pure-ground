@@ -59,7 +59,7 @@
                 <ul class="section-footer__links list-unstyled">
                   {%- for link in block.settings.menu.links -%}
                     <li class="section-footer__links__item">
-                      <a class="section-footer__links__item__link p-sm no-link-styles" href="{{ link.url }}">
+                      <a class="section-footer__links__item__link p-sm" href="{{ link.url }}">
                         {{ link.title }}
                       </a>
                     </li>
@@ -80,7 +80,7 @@
       <ul class="section-footer__bottom__sec-links section-footer__links list-unstyled">
         {%- for link in section.settings.secondary_links.links -%}
           <li class="section-footer__links__item">
-            <a class="section-footer__links__item__link p-sm no-link-styles" href="{{ link.url }}">
+            <a class="section-footer__links__item__link p-sm" href="{{ link.url }}">
               {{ link.title }}
             </a>
           </li>

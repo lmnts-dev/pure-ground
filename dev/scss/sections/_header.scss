@@ -8,12 +8,6 @@ header.header {
     margin-bottom: 0;
   }
 
-  a {
-    &:after {
-      content: none !important;
-    }
-  }
-
   nav.header__inline-menu {
     flex: 1;
 
