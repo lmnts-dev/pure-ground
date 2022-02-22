@@ -7,19 +7,61 @@
         "padding_bottom": 28
       }
     },
+    "1645488674b1f1a56b": {
+      "type": "sub-navigation",
+      "blocks": {
+        "99613ba6-4a93-4210-8756-93cf3484f4c3": {
+          "type": "link",
+          "settings": {
+            "label": "Ingredient Guides",
+            "link": "shopify:\/\/blogs\/guides"
+          }
+        },
+        "1df92e6a-f91d-4489-a472-9acbcd16ca9c": {
+          "type": "link",
+          "settings": {
+            "label": "Press & News",
+            "link": "shopify:\/\/blogs\/news"
+          }
+        },
+        "712af215-42a3-4b7b-8aa3-ebdc09e86249": {
+          "type": "link",
+          "settings": {
+            "label": "Blog",
+            "link": "shopify:\/\/blogs\/blog"
+          }
+        },
+        "f47f388c-e90c-4f6c-bef9-1b68560f1218": {
+          "type": "link",
+          "settings": {
+            "label": "PGU",
+            "link": "shopify:\/\/blogs\/pure-ground-for-unity"
+          }
+        }
+      },
+      "block_order": [
+        "99613ba6-4a93-4210-8756-93cf3484f4c3",
+        "1df92e6a-f91d-4489-a472-9acbcd16ca9c",
+        "712af215-42a3-4b7b-8aa3-ebdc09e86249",
+        "f47f388c-e90c-4f6c-bef9-1b68560f1218"
+      ],
+      "settings": {
+        "color_scheme": "cream"
+      }
+    },
     "1645466577d7fad930": {
       "type": "recent-articles",
       "blocks": {
-        "b9ef49bb-a21a-4911-b988-76b8703cea55": {
-          "type": "blog",
-          "settings": {
-            "blog": "blog"
-          }
-        },
         "9a09bbc2-9007-4141-99ee-cc95e8512bee": {
           "type": "blog",
           "settings": {
             "blog": "news"
+          }
+        },
+        "b9ef49bb-a21a-4911-b988-76b8703cea55": {
+          "type": "blog",
+          "settings": {
+            "blog": "blog"
           }
         }
       },
@@ -28,7 +70,7 @@
         "b9ef49bb-a21a-4911-b988-76b8703cea55"
       ],
       "settings": {
-        "article": "pure-ground-for-unity/introducing-stormi-1",
+        "article": "pure-ground-for-unity\/introducing-stormi-1",
         "color_scheme": "cream",
         "top_spacing": 50,
         "bottom_spacing": 50
@@ -38,7 +80,7 @@
       "type": "blog-listings",
       "settings": {
         "blog": "guides",
-        "image": "shopify://shop_images/ingredients_9e1eb5cc-a0c9-4b7f-a2f9-feeefd322b99.jpg",
+        "image": "shopify:\/\/shop_images\/ingredients_9e1eb5cc-a0c9-4b7f-a2f9-feeefd322b99.jpg",
         "color_scheme": "cream",
         "top_spacing": 50,
         "bottom_spacing": 50
@@ -48,7 +90,7 @@
       "type": "blog-listings",
       "settings": {
         "blog": "news",
-        "image": "shopify://shop_images/unsplash_EAt30ojfzOI.jpg",
+        "image": "shopify:\/\/shop_images\/unsplash_EAt30ojfzOI.jpg",
         "color_scheme": "cream",
         "top_spacing": 50,
         "bottom_spacing": 50
@@ -58,7 +100,7 @@
       "type": "blog-listings",
       "settings": {
         "blog": "blog",
-        "image": "shopify://shop_images/unsplash_4jnzsIB9vbg.jpg",
+        "image": "shopify:\/\/shop_images\/unsplash_4jnzsIB9vbg.jpg",
         "color_scheme": "cream",
         "top_spacing": 50,
         "bottom_spacing": 50
@@ -68,7 +110,7 @@
       "type": "blog-listings",
       "settings": {
         "blog": "pure-ground-for-unity",
-        "image": "shopify://shop_images/unsplash_WmJ5bXJC_Gs.jpg",
+        "image": "shopify:\/\/shop_images\/unsplash_WmJ5bXJC_Gs.jpg",
         "color_scheme": "cream",
         "top_spacing": 50,
         "bottom_spacing": 50
@@ -77,6 +119,7 @@
   },
   "order": [
     "main",
+    "1645488674b1f1a56b",
     "1645466577d7fad930",
     "16444369586030090c",
     "164443697608885640",
