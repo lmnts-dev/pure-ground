@@ -6,9 +6,262 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "164548993101ad8e3f": {
+      "type": "image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/unsplash_8rTwokBwz1w.jpg",
+        "image_style": "fullwidth",
+        "color_scheme": "cream",
+        "top_spacing": 0,
+        "bottom_spacing": 50
+      }
+    },
+    "16454919803061755f": {
+      "type": "rich-text",
+      "blocks": {
+        "1645491980ac0a062b-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Processing",
+            "heading_size": "h2",
+            "heading_alignment": "center",
+            "subheading": ""
+          }
+        },
+        "1645491980ac0a062b-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1645491980ac0a062b-0",
+        "1645491980ac0a062b-1"
+      ],
+      "settings": {
+        "color_scheme": "color-cream",
+        "hero": false,
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
+    },
+    "1645492050031700e7": {
+      "type": "split-section",
+      "blocks": {
+        "164549205077c59396-0": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla.  pharetra diam a magna blandit, ac maximus purus fringilla.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "164549205077c59396-0"
+      ],
+      "settings": {
+        "heading": "Milling",
+        "heading_size": "h3",
+        "hero": false,
+        "image": "shopify:\/\/shop_images\/unsplash_V0xp-dTS3z0.jpg",
+        "color_scheme": "color-cream",
+        "layout": "reversed",
+        "image_style": "default",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
+    },
+    "164549218319534539": {
+      "type": "split-section",
+      "blocks": {
+        "16454921839ac0a96a-0": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16454921839ac0a96a-0"
+      ],
+      "settings": {
+        "heading": "Powdering",
+        "heading_size": "h3",
+        "hero": false,
+        "image": "shopify:\/\/shop_images\/unsplash_NMF5sEaHUmo.jpg",
+        "color_scheme": "color-cream",
+        "layout": "default",
+        "image_style": "default",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
+    },
+    "164549222932f52b1c": {
+      "type": "split-section",
+      "blocks": {
+        "16454922291efe439e-0": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16454922291efe439e-0"
+      ],
+      "settings": {
+        "heading": "Roasting",
+        "heading_size": "h3",
+        "hero": false,
+        "image": "shopify:\/\/shop_images\/unsplash_pBwMdofMxtU.jpg",
+        "color_scheme": "color-cream",
+        "layout": "reversed",
+        "image_style": "default",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
+    },
+    "1645492290c8446e94": {
+      "type": "split-section",
+      "blocks": {
+        "16454922901e23de1f-0": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16454922901e23de1f-0"
+      ],
+      "settings": {
+        "heading": "Granulation",
+        "heading_size": "h3",
+        "hero": false,
+        "image": "shopify:\/\/shop_images\/unsplash_obMdrL5pFWI.jpg",
+        "color_scheme": "color-cream",
+        "layout": "default",
+        "image_style": "default",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
+    },
+    "1645492415cc597dd4": {
+      "type": "rich-text",
+      "blocks": {
+        "16454924153eb6f3be-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Business Solutions",
+            "heading_size": "h3",
+            "heading_alignment": "center",
+            "subheading": ""
+          }
+        },
+        "16454924153eb6f3be-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16454924153eb6f3be-0",
+        "16454924153eb6f3be-1"
+      ],
+      "settings": {
+        "color_scheme": "color-ground",
+        "hero": false,
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
+    },
+    "164549229276eca6c3": {
+      "type": "accordions",
+      "blocks": {
+        "dc710099-2714-4b81-b164-e082cd09053b": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Product Development",
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. <\/p>",
+            "category": "General"
+          }
+        },
+        "bd1d7f67-febf-4cca-8847-6de8a65b0b84": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Blending",
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. <\/p>",
+            "category": "General"
+          }
+        },
+        "d881671f-8e34-4357-a1d2-b9fd749b6576": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Private Labeling",
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. <\/p>",
+            "category": "General"
+          }
+        },
+        "b796a352-cee1-42c6-83c6-69631bc9770c": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Co-Packaging",
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. <\/p>",
+            "category": "General"
+          }
+        }
+      },
+      "block_order": [
+        "dc710099-2714-4b81-b164-e082cd09053b",
+        "bd1d7f67-febf-4cca-8847-6de8a65b0b84",
+        "d881671f-8e34-4357-a1d2-b9fd749b6576",
+        "b796a352-cee1-42c6-83c6-69631bc9770c"
+      ],
+      "settings": {
+        "text": "",
+        "color_scheme": "ground",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
+    },
+    "16454924588595a52c": {
+      "type": "split-section",
+      "blocks": {
+        "1645492458878212b5-0": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. <\/p><p>Micro Reduction<\/p><p>Certified Organic<\/p><p>Metal Detection<\/p><p>Gluten\/Allergen Free<\/p><p>Heavy Metal Report<\/p><p>SQF Certifications<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1645492458878212b5-0"
+      ],
+      "settings": {
+        "heading": "Quality Control",
+        "heading_size": "h3",
+        "hero": false,
+        "image": "shopify:\/\/shop_images\/unsplash_obMdrL5pFWI.jpg",
+        "color_scheme": "color-cream",
+        "layout": "reversed",
+        "image_style": "default",
+        "top_spacing": 100,
+        "bottom_spacing": 100
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "164548993101ad8e3f",
+    "16454919803061755f",
+    "1645492050031700e7",
+    "164549218319534539",
+    "164549222932f52b1c",
+    "1645492290c8446e94",
+    "1645492415cc597dd4",
+    "164549229276eca6c3",
+    "16454924588595a52c"
   ]
 }
