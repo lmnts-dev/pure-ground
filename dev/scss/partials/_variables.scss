@@ -50,8 +50,13 @@
   --color-background: rgba(var(--color-ground));
   --color-background-alt: lighten(var(--color-ground), 10);
   --color-accent: rgba(var(--color-sun));
-  --color-btn: rgba(var(--color-cream));
-  --color-btn-txt: rgba(var(--color-ground));
+  --color-btn: rgba(var(--color-ground));
+  --color-btn-txt: rgba(var(--color-cream));
+}
+
+.__btn-clr-ground{
+  --color-btn: rgba(var(--color-ground));
+  --color-btn-txt: rgba(var(--color-cream));
 }
 
 .color-grass {
