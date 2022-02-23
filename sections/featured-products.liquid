@@ -10,7 +10,7 @@
       <h2 class="split-section__text__heading">{{ section.settings.heading }}</h2>
    {% endif %}
     {% if section.settings.button_link %}
-         <a href={{section.settings.button_link}}>{{section.settings.button_label}}</a>
+         <a href={{section.settings.button_link}} class="__btn-clr-{{section.settings.button_color}}">{{section.settings.button_label}}</a>
     {% endif %}
 </div>
 
@@ -39,6 +39,41 @@
          "type": "url",
          "id": "button_link",
          "label": "Button Link"
+      },
+      {
+         "type": "select",
+         "id": "button_color",
+         "label": "Button Color",
+         "options":[
+            {
+               "value":"cream",
+               "label":"Cream (Default)"
+            },
+            {
+               "value":"dark-cream",
+               "label":"Dark Cream"
+            },
+            {
+               "value":"grass",
+               "label":"Grass"
+            },
+            {
+               "value":"sun",
+               "label":"Sun"
+            },
+            {
+               "value":"ground",
+               "label":"Ground"
+            },
+            {
+               "value":"sky",
+               "label":"Sky"
+            },
+            {
+               "value":"tan",
+               "label":"Tan"
+            }
+         ]
       },
       {
          "type":"select",
