@@ -4,6 +4,7 @@
   display: grid;
   gap: calc(var(--pxSize) / 3);
   grid-template-columns: 1fr 1fr 1fr;
+  display: none;
 
   &__heading {
     grid-column: 1 / -1;
