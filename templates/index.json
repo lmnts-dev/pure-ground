@@ -10,6 +10,7 @@
         "text_color": "dark",
         "button_label": "Shop All Ingredients",
         "button_link": "\/",
+        "button_color": "cream",
         "image": "shopify:\/\/shop_images\/unsplash_IQVFVH0ajag.jpg",
         "overlay": 0,
         "hero": true,
@@ -30,6 +31,7 @@
         "text_color": "light",
         "button_label": "Shop now",
         "button_link": "shopify:\/\/collections",
+        "button_color": "cream",
         "image": "shopify:\/\/shop_images\/unsplash_VVe3zOZM88E.jpg",
         "overlay": 50,
         "hero": false,
@@ -50,6 +52,7 @@
         "text_color": "light",
         "button_label": "Learn where",
         "button_link": "shopify:\/\/pages\/european-operations",
+        "button_color": "cream",
         "image": "shopify:\/\/shop_images\/unsplash_xDwEa2kaeJA.jpg",
         "overlay": 30,
         "hero": false,
@@ -217,7 +220,8 @@
             "heading": "Custom Processing",
             "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor lorem sit amet eros feugiat interdum lobortis.<\/p>",
             "button_label": "Read more",
-            "button_link": "\/"
+            "button_link": "\/",
+            "button_color": "cream"
           }
         },
         "dd5f1e38-6d6d-4dd1-ba06-bb0d29acdfeb": {
@@ -226,7 +230,8 @@
             "heading": "Quality Assurance",
             "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor lorem sit amet eros feugiat interdum lobortis.<\/p>",
             "button_label": "Read More",
-            "button_link": "\/"
+            "button_link": "\/",
+            "button_color": "cream"
           }
         },
         "09dbb847-aae0-44ec-be21-f3c1f92bbe1f": {
@@ -293,9 +298,53 @@
         "heading": "Latest News in Organics",
         "button_label": "View More Resources",
         "button_link": "\/resources",
+        "button_color": "cream",
         "color_scheme": "cream",
         "top_spacing": 50,
         "bottom_spacing": 50
+      }
+    },
+    "16456528885177c37d": {
+      "type": "image-with-text",
+      "blocks": {
+        "1645652887c7d925d9-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "1645652887c7d925d9-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "1645652887c7d925d9-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1645652887c7d925d9-0",
+        "1645652887c7d925d9-1",
+        "1645652887c7d925d9-2"
+      ],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
@@ -308,6 +357,7 @@
     "16450418065fdb6a59",
     "16451151390f67c7d6",
     "164442413892b05956",
-    "articles"
+    "articles",
+    "16456528885177c37d"
   ]
 }
