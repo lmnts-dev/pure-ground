@@ -23,7 +23,7 @@
           <div class="split-section__text__rich-text" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
         {%- when 'button' -%}
           {% if block.settings.button_link %}
-            <a {% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} {{ block.shopify_attributes }}>
+            <a {% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} class=" __btn-clr-{{section.settings.button_color}}" href="{{ block.settings.button_link }}"{% endif %} {{ block.shopify_attributes }}>
               {{ block.settings.button_label | escape }}
             </a>
         {% endif %}
@@ -237,6 +237,41 @@
           "type": "url",
           "id": "button_link",
           "label": "Button Link"
+        },
+        {
+         "type": "select",
+         "id": "button_color",
+         "label": "Button Color",
+         "options":[
+            {
+               "value":"cream",
+               "label":"Cream (Default)"
+            },
+            {
+               "value":"dark-cream",
+               "label":"Dark Cream"
+            },
+            {
+               "value":"grass",
+               "label":"Grass"
+            },
+            {
+               "value":"sun",
+               "label":"Sun"
+            },
+            {
+               "value":"ground",
+               "label":"Ground"
+            },
+            {
+               "value":"sky",
+               "label":"Sky"
+            },
+            {
+               "value":"tan",
+               "label":"Tan"
+            }
+          ]
         }
       ]
     }
