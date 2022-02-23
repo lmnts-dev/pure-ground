@@ -38,7 +38,7 @@
                 <p class="bi-column-text-blocks__block__text">{{ block.settings.content }}</p>
               {% endif %}
               {% if block.settings.button_link and block.settings.button_label %}
-                <a class="bi-column-text-blocks__block__btn btn __btn-clr-{{section.settings.button_color}} {% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} {{ block.shopify_attributes }}>
+                <a class="bi-column-text-blocks__block__btn btn __btn-clr-{{section.settings.button_color}}" {% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} {{ block.shopify_attributes }}>
                   {{ block.settings.button_label | escape }}
                 </a>
               {% endif %}
