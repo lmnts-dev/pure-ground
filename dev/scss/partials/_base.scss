@@ -122,8 +122,8 @@ form {
   height: var(--btnHeight);
   line-height: var(--btnHeight);
   border-radius: 7px;
-  background: var(--color-foreground);
-  color: var(--color-background);
+  background: var(--color-btn);
+  color: var(--color-btn-txt);
   padding: 0 calc(var(--btnHeight) / 2);
   display: inline-block;
   text-align: center;
