@@ -24,8 +24,8 @@
 }
 
 .__btn-clr-cream {
-  --color-btn: rgba(var(--color-ground));
-  --color-btn-txt: rgba(var(--color-cream));
+  --color-btn: rgba(var(--color-cream));
+  --color-btn-txt: rgba(var(--color-ground));
 }
 
 
@@ -35,13 +35,13 @@
   --color-background: rgba(var(--color-dark-cream));
   --color-background-alt: rgba(var(--color-cream));
   --color-accent: rgba(var(--color-ground));
-  --color-btn: rgba(var(--color-ground));
-  --color-btn-txt: rgba(var(--color-dark-cream));
+  --color-btn: rgba(var(--color-dark-cream));
+  --color-btn-txt: rgba(var(--color-ground));
 }
 
 .__btn-clr-cream {
-  --color-btn: rgba(var(--color-ground));
-  --color-btn-txt: rgba(var(--color-dark-cream));
+  --color-btn: rgba(var(--color-dark-cream));
+  --color-btn-txt: rgba(var(--color-ground));
 }
 
 .color-inverse,
@@ -64,8 +64,8 @@
 }
 
 .__btn-clr-grass{
-  --color-btn: rgba(var(--color-cream));
-  --color-btn-txt: rgba(var(--color-grass));
+  --color-btn: rgba(var(--color-grass));
+  --color-btn-txt: rgba(var(--color-cream));
 }
 
 .color-sun {
@@ -73,13 +73,13 @@
   --color-background: rgba(var(--color-sun));
   --color-background-alt: lighten(var(--color-sun), 10);
   --color-accent: rgba(var(--color-ground));
-  --color-btn: rgba(var(--color-ground));
-  --color-btn-txt: rgba(var(--color-sun));
+  --color-btn: rgba(var(--color-sun));
+  --color-btn-txt: rgba(var(--color-ground));
 }
 
 .__btn-clr-sun{
-  --color-btn: rgba(var(--color-ground));
-  --color-btn-txt: rgba(var(--color-sun));
+  --color-btn: rgba(var(--color-sun));
+  --color-btn-txt: rgba(var(--color-ground));
 }
 
 
@@ -88,13 +88,13 @@
   --color-background: rgba(var(--color-sky));
   --color-background-alt: lighten(var(--color-sky), 10);
   --color-accent: rgba(var(--color-ground));
-  --color-btn: rgba(var(--color-ground));
-  --color-btn-txt: rgba(var(--color-sky));
+  --color-btn: rgba(var(--color-sky));
+  --color-btn-txt: rgba(var(--color-ground));
 }
 
 .__btn-clr-sky{
-  --color-btn: rgba(var(--color-ground));
-  --color-btn-txt: rgba(var(--color-sky));
+  --color-btn: rgba(var(--color-sky));
+  --color-btn-txt: rgba(var(--color-ground));
 }
 
 .color-tan {
@@ -102,13 +102,13 @@
   --color-background: rgba(var(--color-tan));
   --color-background-alt: lighten(var(--color-tan), 10);
   --color-accent: rgba(var(--color-ground));
-  --color-btn: rgba(var(--color-ground));
-  --color-btn-txt: rgba(var(--color-tan));
+  --color-btn: rgba(var(--color-tan));
+  --color-btn-txt: rgba(var(--color-ground));
 }
 
 .__btn-clr-tan{
-  --color-btn: rgba(var(--color-ground));
-  --color-btn-txt: rgba(var(--color-tan));
+  --color-btn: rgba(var(--color-tan));
+  --color-btn-txt: rgba(var(--color-ground));
 }
 
 
