@@ -346,6 +346,66 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "16456765256698a8a1": {
+      "type": "gallery",
+      "blocks": {
+        "403d06ed-5d40-4bcf-9b38-45e0f6304323": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_33.jpg",
+            "alt": "Image alt text"
+          }
+        },
+        "a1b88562-ace6-4582-8bf8-2c310f81ddbf": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_37.jpg",
+            "alt": "Image alt text"
+          }
+        },
+        "5d415ef8-88c5-4ec9-ba6c-d08386a1a5e0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_36.jpg",
+            "alt": "Image alt text"
+          }
+        },
+        "227bc46f-48fb-45d4-96d6-33e21f41d1f7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_39.jpg",
+            "alt": "Image alt text"
+          }
+        },
+        "25abdd81-5ebb-484f-b04d-c436d61af193": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_34.jpg",
+            "alt": "Image alt text"
+          }
+        },
+        "f56e3d48-cec6-4bf8-a72a-2cc4cac8fe00": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_38.jpg",
+            "alt": "Image alt text"
+          }
+        }
+      },
+      "block_order": [
+        "403d06ed-5d40-4bcf-9b38-45e0f6304323",
+        "a1b88562-ace6-4582-8bf8-2c310f81ddbf",
+        "5d415ef8-88c5-4ec9-ba6c-d08386a1a5e0",
+        "227bc46f-48fb-45d4-96d6-33e21f41d1f7",
+        "25abdd81-5ebb-484f-b04d-c436d61af193",
+        "f56e3d48-cec6-4bf8-a72a-2cc4cac8fe00"
+      ],
+      "settings": {
+        "color_scheme": "cream",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
     }
   },
   "order": [
@@ -358,6 +418,7 @@
     "16451151390f67c7d6",
     "164442413892b05956",
     "articles",
-    "16456528885177c37d"
+    "16456528885177c37d",
+    "16456765256698a8a1"
   ]
 }
