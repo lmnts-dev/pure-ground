@@ -11,4 +11,10 @@
     gap: calc(var(--pxSize) / 3);
     grid-template-columns: 1fr 1fr 1fr;
   }
+
+  @media screen and (max-width: 676px) {
+    &__container{
+      display: block;
+    }
+  }
 }

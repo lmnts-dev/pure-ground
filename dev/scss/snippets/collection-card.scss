@@ -58,4 +58,21 @@
       }
     }
   }
+
+  @media screen and (max-width: 676px) {
+
+    &__title {
+      text-align: start;
+      padding-left: var(--pxSize);
+      padding-right: var(--pxSize);
+    }
+
+    &.__shape-square{
+      padding: calc(var(--sectionVerticalSpacing)) var(--vwSize);
+    }
+
+    &:not(:last-child) {
+      margin-bottom: calc(var(--sectionHorizontalSpacing) / 2);
+    }
+  }
 }

@@ -68,19 +68,6 @@
     .collections-grid {
       &__container {
         display: block;
-
-        > div {
-          text-align: start;
-
-          &__title {
-            padding-left: var(--pxSize);
-            padding-right: var(--pxSize);
-          }
-
-          &:not(:last-child) {
-            margin-bottom: calc(var(--sectionHorizontalSpacing) / 2);
-          }
-        }
       }
     }
   }
