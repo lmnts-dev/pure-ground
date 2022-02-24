@@ -4,7 +4,7 @@
     <nav>
       <ul class="sub-navigation__list">
         {% for block in section.blocks %}
-          <li class="sub-navigation__list__item">
+          <li class="sub-navigation__list__item hide">
             <a class="sub-navigation__list__item__link" href="{{ block.settings.link }}">
               {{ block.settings.label }}
             </a>
@@ -15,12 +15,28 @@
   </div>
 {%- endif -%}
 
+{% javascript %}
+
+   let subNav = document.querySelectorAll('.sub-navigation__list__item');
+   let subNavCopy = [...subNav];
+   subNavCopy[0].onclick = () =>{
+     subNavCopy.map((navItem)=>{
+       navItem.classList.toggle('hide');
+     })
+   };
+
+{% endjavascript %}
+
 {% schema %}
 {
   "name": "Sub-Navigation",
   "tag": "section",
   "class": "sub-navigation__parent",
   "settings": [
+    {
+      "type": "header",
+      "content": "Settings"
+    },
     {
       "type": "select",
       "id": "color_scheme",

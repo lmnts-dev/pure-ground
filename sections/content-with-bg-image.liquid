@@ -24,7 +24,7 @@
          <div class="content-with-bg-image__text">{{ section.settings.text }}</div>
       {% endif %}
       {% if section.settings.button_link and section.settings.button_label %}
-            <a href="{{section.settings.button_link}}" class="content-with-bg-image__btn btn">{{section.settings.button_label}}</a>
+            <a href="{{section.settings.button_link}}" class="content-with-bg-image__btn btn __btn-clr-{{section.settings.button_color}}">{{section.settings.button_label}}</a>
       {% endif %}
       {%- if section.settings.icon -%}
          <div class="content-with-bg-image__icon">
@@ -114,6 +114,41 @@
          "type": "url",
          "id": "button_link",
          "label": "Button Link"
+      },
+      {
+         "type": "select",
+         "id": "button_color",
+         "label": "Button Color",
+         "options":[
+            {
+               "value":"cream",
+               "label":"Cream (Default)"
+            },
+            {
+               "value":"dark-cream",
+               "label":"Dark Cream"
+            },
+            {
+               "value":"grass",
+               "label":"Grass"
+            },
+            {
+               "value":"sun",
+               "label":"Sun"
+            },
+            {
+               "value":"ground",
+               "label":"Ground"
+            },
+            {
+               "value":"sky",
+               "label":"Sky"
+            },
+            {
+               "value":"tan",
+               "label":"Tan"
+            }
+         ]
       },
       {
          "type": "header",

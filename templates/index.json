@@ -10,6 +10,7 @@
         "text_color": "dark",
         "button_label": "Shop All Ingredients",
         "button_link": "\/",
+        "button_color": "cream",
         "image": "shopify:\/\/shop_images\/unsplash_IQVFVH0ajag.jpg",
         "overlay": 0,
         "hero": true,
@@ -30,6 +31,7 @@
         "text_color": "light",
         "button_label": "Shop now",
         "button_link": "shopify:\/\/collections",
+        "button_color": "cream",
         "image": "shopify:\/\/shop_images\/unsplash_VVe3zOZM88E.jpg",
         "overlay": 50,
         "hero": false,
@@ -50,6 +52,7 @@
         "text_color": "light",
         "button_label": "Learn where",
         "button_link": "shopify:\/\/pages\/european-operations",
+        "button_color": "cream",
         "image": "shopify:\/\/shop_images\/unsplash_xDwEa2kaeJA.jpg",
         "overlay": 30,
         "hero": false,
@@ -217,7 +220,8 @@
             "heading": "Custom Processing",
             "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor lorem sit amet eros feugiat interdum lobortis.<\/p>",
             "button_label": "Read more",
-            "button_link": "\/"
+            "button_link": "\/",
+            "button_color": "cream"
           }
         },
         "dd5f1e38-6d6d-4dd1-ba06-bb0d29acdfeb": {
@@ -226,7 +230,8 @@
             "heading": "Quality Assurance",
             "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor lorem sit amet eros feugiat interdum lobortis.<\/p>",
             "button_label": "Read More",
-            "button_link": "\/"
+            "button_link": "\/",
+            "button_color": "cream"
           }
         },
         "09dbb847-aae0-44ec-be21-f3c1f92bbe1f": {
@@ -293,6 +298,7 @@
         "heading": "Latest News in Organics",
         "button_label": "View More Resources",
         "button_link": "\/resources",
+        "button_color": "cream",
         "color_scheme": "cream",
         "top_spacing": 50,
         "bottom_spacing": 50

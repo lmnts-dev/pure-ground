@@ -74,4 +74,11 @@
       object-fit: cover;
     }
   }
+
+  @media screen and (max-width: 676px) {
+      &__group-of-2,
+      &__group-of-4 {
+        height: calc(var(--vwSize) * 65);
+      }
+  }
 }
