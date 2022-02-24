@@ -13,11 +13,13 @@
       {% if section.settings.text %}
          <div class="split-section__content__text">{{ section.settings.text }}</div>
       {% endif %}
-      {% if section.settings.button_link and section.settings.button_label %}
+      {%- if block.settings.button_label != blank -%}
          <a class="btn" href="{{section.settings.button_link}}">{{section.settings.button_label}}</a>
-      {% endif %}
+      {%- endif -%}
    </div>
 </div>
+
+
 
 {% schema %}
 {
