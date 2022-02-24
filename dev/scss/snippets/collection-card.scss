@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  overflow: hidden;
 
   &__title {
     color: rgba(var(--color-cream), 1);
@@ -25,12 +26,23 @@
   img {
     object-fit: cover;
     z-index: 1;
+    transform: scale(1);
+    will-change: transform;
+    transition: all 0.25s ease;
   }
 
   &:after {
     content: "";
     background: rgba(var(--color-black), 0.5);
     z-index: 2;
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    img {
+      transform: scale(1.05);
+    }
   }
 
   &.__shape-square {

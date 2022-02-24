@@ -1,12 +1,14 @@
 .main-list-collections {
   padding-left: calc(var(--pxSize) / 3);
   padding-right: calc(var(--pxSize) / 3);
-  display: grid;
-  gap: calc(var(--pxSize) / 3);
-  grid-template-columns: 1fr 1fr 1fr;
 
   &__heading {
-    grid-column: 1 / -1;
     text-align: center;
+  }
+
+  &__container {
+    display: grid;
+    gap: calc(var(--pxSize) / 3);
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }

@@ -11,12 +11,37 @@
     <h2 class="collections-grid__heading h4">{{ section.settings.heading }}</h2>
   {% endif %}
 
-  <div class="collections-grid__container">
+  <toggle-modal class="collections-grid__container" data-type="container">
    {% for block in section.blocks %}
       {% render 'collection-card' collection: block.settings.collection %}
    {% endfor %}
-  </div>
+  </toggle-modal>
+
+  {% render 'modal' %}
 </div>
+
+{% javascript %}
+
+  class ToggleModal extends HTMLElement {
+    constructor() {
+      super();
+
+      this.setupListener();
+    }
+
+    setupListener() {
+      this.addEventListener('click', this.toggleModal.bind(this));
+    }
+
+    toggleModal() {
+      var modal = this.getAttribute('data-type') == "modal" ? this : this.nextElementSibling;
+      modal.classList.toggle("__active");
+    }
+  }
+
+  customElements.define('toggle-modal', ToggleModal);
+
+{% endjavascript %}
 
 {% schema %}
 {

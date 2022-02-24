@@ -132,5 +132,81 @@ form {
   margin-top: 1rem;
 }
 
+//Modal styles
+////////////////////////////////////
+
+.cmnc-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(var(--color-black), 0.2);
+  z-index: 999;
+
+  &.__active {
+    display: block;
+  }
+
+  &__exit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: transparent;
+    border: none;
+    padding: calc(var(--pxSize) / 3);
+
+    svg {
+      height: calc(var(--pxSize) / 2);
+      width: auto;
+      transform: rotate(45deg) scale(1);
+      will-change: transform;
+      transition: all 0.25s ease;
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      svg {
+        transform: rotate(45deg) scale(1.1);
+      }
+    }
+  }
+
+  &__plants {
+    position: absolute;
+    display: flex;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    gap: 3%;
+
+    svg {
+      width: calc(91% / 4);
+      height: auto;
+
+      * {
+        fill: var(--color-accent);
+      }
+    }
+  }
+
+  &__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    max-height: 80vh;
+    background: var(--color-background);
+    color: var(--color-text);
+    overflow: auto;
+
+    padding: var(--sectionVerticalSpacing) var(--sectionHorizontalSpacing);
+    box-shadow: 0px calc(var(--pxSize) / 4) calc(var(--pxSize) / 2)
+      rgba(var(--color-black), 0.2);
+  }
+}
 //Article styles
 ////////////////////////////////////

@@ -24,10 +24,37 @@
     <h2 class="main-list-collections__heading h3">{{ section.settings.heading }}</h2>
   {% endif %}
 
-  {% for collection in collections %}
-    {% render 'collection-card', collection: collection, shape: "square" %}
-  {% endfor %}
+  <toggle-modal class="main-list-collections__container" data-type="container">
+    {% for collection in collections %}
+      {% render 'collection-card', collection: collection, shape: "square" %}
+    {% endfor %}
+  </toggle-modal>
+
+  {% render 'modal' %}
 </div>
+
+{% javascript %}
+
+  class ToggleModal extends HTMLElement {
+    constructor() {
+      super();
+
+      this.setupListener();
+    }
+
+    setupListener() {
+      this.addEventListener('click', this.toggleModal.bind(this));
+    }
+
+    toggleModal() {
+      var modal = this.getAttribute('data-type') == "modal" ? this : this.nextElementSibling;
+      modal.classList.toggle("__active");
+    }
+  }
+
+  customElements.define('toggle-modal', ToggleModal);
+
+{% endjavascript %}
 
 {% schema %}
 {
