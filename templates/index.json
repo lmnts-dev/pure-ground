@@ -5,20 +5,20 @@
       "settings": {
         "heading": "Always Organic",
         "subheading": "That's how we like it",
-        "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor lorem sit amet eros suscipit finibus. Mauris feugiat interdum lobortis.<\/p>",
+        "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor lorem sit amet eros suscipit finibus. Mauris feugiat interdum lobortis.</p>",
         "heading_size": "h2",
         "text_color": "dark",
         "button_label": "Shop All Ingredients",
-        "button_link": "\/",
-        "button_color": "cream",
-        "image": "shopify:\/\/shop_images\/unsplash_IQVFVH0ajag.jpg",
+        "button_link": "shopify://collections",
+        "button_color": "default",
+        "image": "shopify://shop_images/unsplash_IQVFVH0ajag.jpg",
         "overlay": 0,
         "hero": true,
         "alignment": "left",
         "icon": true,
         "color_scheme": "cream",
         "top_spacing": 0,
-        "bottom_spacing": 100
+        "bottom_spacing": 0
       }
     },
     "164497174668dcfe61": {
@@ -26,20 +26,20 @@
       "settings": {
         "heading": "Culinary Herbs, Spices, & Vegetables",
         "subheading": "",
-        "text": "<p>For your restaurant or seasonings!<\/p>",
+        "text": "<p>For your restaurant or seasonings!</p>",
         "heading_size": "h3",
         "text_color": "light",
         "button_label": "Shop now",
-        "button_link": "shopify:\/\/collections",
-        "button_color": "cream",
-        "image": "shopify:\/\/shop_images\/unsplash_VVe3zOZM88E.jpg",
+        "button_link": "shopify://collections",
+        "button_color": "default",
+        "image": "shopify://shop_images/unsplash_VVe3zOZM88E.jpg",
         "overlay": 50,
         "hero": false,
         "alignment": "center",
         "icon": false,
         "color_scheme": "cream",
-        "top_spacing": 100,
-        "bottom_spacing": 100
+        "top_spacing": 20,
+        "bottom_spacing": 20
       }
     },
     "16449719193cb6dff5": {
@@ -47,19 +47,19 @@
       "settings": {
         "heading": "Global Partnerships",
         "subheading": "",
-        "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor lorem sit amet eros suscipit finibus. Mauris feugiat interdum lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.<\/p>",
+        "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor lorem sit amet eros suscipit finibus. Mauris feugiat interdum lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
         "heading_size": "h3",
         "text_color": "light",
         "button_label": "Learn where",
-        "button_link": "shopify:\/\/pages\/european-operations",
-        "button_color": "cream",
-        "image": "shopify:\/\/shop_images\/unsplash_xDwEa2kaeJA.jpg",
+        "button_link": "shopify://pages/european-operations",
+        "button_color": "default",
+        "image": "shopify://shop_images/unsplash_xDwEa2kaeJA.jpg",
         "overlay": 30,
         "hero": false,
         "alignment": "center",
         "icon": false,
         "color_scheme": "cream",
-        "top_spacing": 100,
+        "top_spacing": 0,
         "bottom_spacing": 100
       }
     },
@@ -97,13 +97,7 @@
           }
         }
       },
-      "block_order": [
-        "herbs",
-        "fair",
-        "rainforest",
-        "teas",
-        "chiles"
-      ],
+      "block_order": ["herbs", "fair", "rainforest", "teas", "chiles"],
       "settings": {
         "heading": "Browse Ingredient Categories",
         "color_scheme": "cream",
@@ -117,42 +111,42 @@
         "ddc6ae4f-850d-4af2-b30f-b2cfa4c27d8b": {
           "type": "icon",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/md.png",
+            "icon": "shopify://shop_images/md.png",
             "alt": "McCormick logo"
           }
         },
         "0a3401c2-cdcb-45c7-a115-863942ecd068": {
           "type": "icon",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/starbucks.png",
+            "icon": "shopify://shop_images/starbucks.png",
             "alt": "Starbucks logo"
           }
         },
         "d2a015f6-ec5e-4279-a122-c75324dad550": {
           "type": "icon",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/simply_organice.png",
+            "icon": "shopify://shop_images/simply_organice.png",
             "alt": "Simply Organic logo"
           }
         },
         "224b3659-8585-4ecd-af3b-1203bae4b59d": {
           "type": "icon",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/md.png",
+            "icon": "shopify://shop_images/md.png",
             "alt": "McCormick Logo"
           }
         },
         "0f186d34-13dd-40c1-ae96-9266b6a353d1": {
           "type": "icon",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/starbucks.png",
+            "icon": "shopify://shop_images/starbucks.png",
             "alt": "Starbucks logo"
           }
         },
         "eeca8ca7-1223-42f4-be66-9d19c9680495": {
           "type": "icon",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/simply_organice.png",
+            "icon": "shopify://shop_images/simply_organice.png",
             "alt": "Simply Organic Logo"
           }
         }
@@ -180,7 +174,7 @@
           "settings": {
             "text": "“. Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur “",
             "author": "Lorem Ipsum",
-            "image": "shopify:\/\/shop_images\/unsplash_EAt30ojfzOI.jpg"
+            "image": "shopify://shop_images/unsplash_EAt30ojfzOI.jpg"
           }
         },
         "596920b0-a7be-45ab-8351-95b2e717da75": {
@@ -188,7 +182,7 @@
           "settings": {
             "text": "“Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur “",
             "author": "Dolor sit",
-            "image": "shopify:\/\/shop_images\/unsplash_IQVFVH0ajag.jpg"
+            "image": "shopify://shop_images/unsplash_IQVFVH0ajag.jpg"
           }
         },
         "bbb86467-9856-4aa5-a40e-826958f624c9": {
@@ -196,7 +190,7 @@
           "settings": {
             "text": "“Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur “",
             "author": "Amet Consect",
-            "image": "shopify:\/\/shop_images\/unsplash_VVe3zOZM88E.jpg"
+            "image": "shopify://shop_images/unsplash_VVe3zOZM88E.jpg"
           }
         }
       },
@@ -218,33 +212,33 @@
           "type": "text",
           "settings": {
             "heading": "Custom Processing",
-            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor lorem sit amet eros feugiat interdum lobortis.<\/p>",
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor lorem sit amet eros feugiat interdum lobortis.</p>",
             "button_label": "Read more",
-            "button_link": "\/",
-            "button_color": "cream"
+            "button_link": "shopify://pages/services",
+            "button_color": "default"
           }
         },
         "dd5f1e38-6d6d-4dd1-ba06-bb0d29acdfeb": {
           "type": "text",
           "settings": {
             "heading": "Quality Assurance",
-            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor lorem sit amet eros feugiat interdum lobortis.<\/p>",
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor lorem sit amet eros feugiat interdum lobortis.</p>",
             "button_label": "Read More",
-            "button_link": "\/",
-            "button_color": "cream"
+            "button_link": "shopify://pages/services",
+            "button_color": "default"
           }
         },
         "09dbb847-aae0-44ec-be21-f3c1f92bbe1f": {
           "type": "icon",
           "settings": {
-            "image": "shopify:\/\/shop_images\/img-keep-it-real-badge.png",
+            "image": "shopify://shop_images/img-keep-it-real-badge.png",
             "alt": "Badge"
           }
         },
         "8094b18a-6114-4cac-aeb6-a78e2f6dc472": {
           "type": "icon",
           "settings": {
-            "image": "shopify:\/\/shop_images\/img-keep-it-real-badge.png",
+            "image": "shopify://shop_images/img-keep-it-real-badge.png",
             "alt": "Badge"
           }
         }
@@ -258,7 +252,7 @@
       "settings": {
         "heading": "Operational Excellence",
         "subheading": "Ingredients just the way you want them",
-        "image": "shopify:\/\/shop_images\/field.jpg",
+        "image": "shopify://shop_images/field.jpg",
         "color_scheme": "cream",
         "top_spacing": 50,
         "bottom_spacing": 50
@@ -267,7 +261,7 @@
     "164442413892b05956": {
       "type": "featured-page-link",
       "settings": {
-        "image": "shopify:\/\/shop_images\/man_in_field.jpg",
+        "image": "shopify://shop_images/man_in_field.jpg",
         "page_link": "mission",
         "color_scheme": "cream",
         "top_spacing": 0,
@@ -280,25 +274,22 @@
         "art1": {
           "type": "article",
           "settings": {
-            "article": "blog\/testing-2"
+            "article": "blog/testing-2"
           }
         },
         "art2": {
           "type": "article",
           "settings": {
-            "article": "blog\/testing-3"
+            "article": "blog/testing-3"
           }
         }
       },
-      "block_order": [
-        "art1",
-        "art2"
-      ],
+      "block_order": ["art1", "art2"],
       "settings": {
         "heading": "Latest News in Organics",
         "button_label": "View More Resources",
-        "button_link": "\/resources",
-        "button_color": "cream",
+        "button_link": "/resources",
+        "button_color": "default",
         "color_scheme": "cream",
         "top_spacing": 50,
         "bottom_spacing": 50
