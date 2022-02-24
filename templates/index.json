@@ -18,7 +18,7 @@
         "icon": true,
         "color_scheme": "cream",
         "top_spacing": 0,
-        "bottom_spacing": 100
+        "bottom_spacing": 0
       }
     },
     "164497174668dcfe61": {
@@ -38,8 +38,8 @@
         "alignment": "center",
         "icon": false,
         "color_scheme": "cream",
-        "top_spacing": 100,
-        "bottom_spacing": 100
+        "top_spacing": 20,
+        "bottom_spacing": 20
       }
     },
     "16449719193cb6dff5": {
@@ -59,7 +59,7 @@
         "alignment": "center",
         "icon": false,
         "color_scheme": "cream",
-        "top_spacing": 100,
+        "top_spacing": 0,
         "bottom_spacing": 100
       }
     },
