@@ -304,102 +304,59 @@
         "bottom_spacing": 50
       }
     },
-    "16456528885177c37d": {
-      "type": "image-with-text",
-      "blocks": {
-        "1645652887c7d925d9-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image with text",
-            "heading_size": "h1"
-          }
-        },
-        "1645652887c7d925d9-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "text_style": "body"
-          }
-        },
-        "1645652887c7d925d9-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "1645652887c7d925d9-0",
-        "1645652887c7d925d9-1",
-        "1645652887c7d925d9-2"
-      ],
-      "settings": {
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "16456765256698a8a1": {
+    "16456768024c3d5bf1": {
       "type": "gallery",
       "blocks": {
-        "403d06ed-5d40-4bcf-9b38-45e0f6304323": {
+        "39555edf-4261-49e7-908a-b1b1dc46bf6f": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_33.jpg",
+            "image": "shopify:\/\/shop_images\/Rectangle_38.jpg",
             "alt": "Image alt text"
           }
         },
-        "a1b88562-ace6-4582-8bf8-2c310f81ddbf": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_37.jpg",
-            "alt": "Image alt text"
-          }
-        },
-        "5d415ef8-88c5-4ec9-ba6c-d08386a1a5e0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_36.jpg",
-            "alt": "Image alt text"
-          }
-        },
-        "227bc46f-48fb-45d4-96d6-33e21f41d1f7": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_39.jpg",
-            "alt": "Image alt text"
-          }
-        },
-        "25abdd81-5ebb-484f-b04d-c436d61af193": {
+        "3fc7064d-1ce0-451b-b7b4-c6ec57a1314e": {
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Rectangle_34.jpg",
             "alt": "Image alt text"
           }
         },
-        "f56e3d48-cec6-4bf8-a72a-2cc4cac8fe00": {
+        "b424f6d7-8ce5-40d5-aba4-15a87cdf5c55": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_38.jpg",
+            "image": "shopify:\/\/shop_images\/Rectangle_33.jpg",
+            "alt": "Image alt text"
+          }
+        },
+        "a4bffa8f-e71c-4cf5-b9a6-d87e4f1b2351": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_37.jpg",
+            "alt": "Image alt text"
+          }
+        },
+        "691390f7-cd32-46e0-a91d-dd7016649ad4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_36.jpg",
+            "alt": "Image alt text"
+          }
+        },
+        "1723b92f-fa1f-43fa-8a10-ff31109d9d4a": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_39.jpg",
             "alt": "Image alt text"
           }
         }
       },
       "block_order": [
-        "403d06ed-5d40-4bcf-9b38-45e0f6304323",
-        "a1b88562-ace6-4582-8bf8-2c310f81ddbf",
-        "5d415ef8-88c5-4ec9-ba6c-d08386a1a5e0",
-        "227bc46f-48fb-45d4-96d6-33e21f41d1f7",
-        "25abdd81-5ebb-484f-b04d-c436d61af193",
-        "f56e3d48-cec6-4bf8-a72a-2cc4cac8fe00"
+        "39555edf-4261-49e7-908a-b1b1dc46bf6f",
+        "3fc7064d-1ce0-451b-b7b4-c6ec57a1314e",
+        "b424f6d7-8ce5-40d5-aba4-15a87cdf5c55",
+        "a4bffa8f-e71c-4cf5-b9a6-d87e4f1b2351",
+        "691390f7-cd32-46e0-a91d-dd7016649ad4",
+        "1723b92f-fa1f-43fa-8a10-ff31109d9d4a"
       ],
       "settings": {
         "color_scheme": "cream",
@@ -418,7 +375,6 @@
     "16451151390f67c7d6",
     "164442413892b05956",
     "articles",
-    "16456528885177c37d",
-    "16456765256698a8a1"
+    "16456768024c3d5bf1"
   ]
 }
