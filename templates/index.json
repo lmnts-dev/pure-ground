@@ -9,7 +9,7 @@
         "heading_size": "h2",
         "text_color": "dark",
         "button_label": "Shop All Ingredients",
-        "button_link": "\/",
+        "button_link": "shopify:\/\/collections",
         "button_color": "cream",
         "image": "shopify:\/\/shop_images\/unsplash_IQVFVH0ajag.jpg",
         "overlay": 0,
@@ -220,7 +220,7 @@
             "heading": "Custom Processing",
             "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor lorem sit amet eros feugiat interdum lobortis.<\/p>",
             "button_label": "Read more",
-            "button_link": "\/",
+            "button_link": "shopify:\/\/pages\/services",
             "button_color": "cream"
           }
         },
@@ -230,7 +230,7 @@
             "heading": "Quality Assurance",
             "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor lorem sit amet eros feugiat interdum lobortis.<\/p>",
             "button_label": "Read More",
-            "button_link": "\/",
+            "button_link": "shopify:\/\/pages\/services",
             "button_color": "cream"
           }
         },
