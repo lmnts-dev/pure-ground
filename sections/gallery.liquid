@@ -27,11 +27,7 @@
               {% for i in (1..2) %}
                 {% assign indexToCheck = forloop.index0 | plus: exteriorIndex %}
                 <div class="gallery__image">
-                  {%- if section.blocks[indexToCheck].settings.image != blank -%}
-                    {% render 'next-gen-img', image: section.blocks[indexToCheck].settings.image, alt: section.blocks[indexToCheck].settings.alt %}
-                  {%- else -%}
-                    {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
-                  {%- endif -%}
+                  {% render 'next-gen-img', image: section.blocks[indexToCheck].settings.image, alt: section.blocks[indexToCheck].settings.alt %}
                 </div>
               {% endfor %}
             </div>
@@ -42,13 +38,9 @@
             <div class="gallery__group-of-4">
               {% for i in (1..4) %}
                 {% assign indexToCheck = forloop.index0 | plus: exteriorIndex %}
-                  <div class="gallery__image">
-                    {%- if section.blocks[indexToCheck].settings.image != blank -%}
-                      {% render 'next-gen-img', image: section.blocks[indexToCheck].settings.image, alt: section.blocks[indexToCheck].settings.alt %}
-                    {%- else -%}
-                      {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
-                    {%- endif -%}
-                  </div>
+                <div class="gallery__image">
+                  {% render 'next-gen-img', image: section.blocks[indexToCheck].settings.image, alt: section.blocks[indexToCheck].settings.alt %}
+                </div>
               {% endfor %}
             </div>
           {% endif %}
