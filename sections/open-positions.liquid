@@ -8,9 +8,9 @@
 
 {% comment %} Make sure user added positions {% endcomment %}
 
-  {% comment %} Variables needed to gather category nav data {% endcomment %}
-  {% assign default_category = "General" %}
-  {% assign categories = default_category %}
+  {% comment %} Variables needed to gather department nav data {% endcomment %}
+  {% assign default_department = "All" %}
+  {% assign departments = default_department %}
 
   <div id="Open-positions-{{ section.id }}" class="open-positions color-{{section.settings.color_scheme}}">
 
@@ -30,15 +30,15 @@
     {%- for block in section.blocks -%}
       {% if block.settings.heading and block.settings.content %}
 
-        {% comment %} Assign category variables {% endcomment %}
-        {% assign category = default_category %}
-        {% if block.settings.category %}
-          {% assign category = block.settings.category %}
+        {% comment %} Assign department variables {% endcomment %}
+        {% assign department = default_department %}
+        {% if block.settings.department %}
+          {% assign department = block.settings.department %}
         {% endif %}
-        {% assign category_handle = category | handleize %}
+        {% assign department_handle = department | handleize %}
 
         {% comment %} Output position {% endcomment %}
-        <div class="positions__position {% if category == default_category %}__active{% endif %}" data-category="{{ category_handle }}">
+        <div class="positions__position {% if department == default_department %}__active{% endif %}" data-department="{{ department_handle }}">
           <input class="positions__position__checkbox" type="checkbox" id="Item-{{section.id}}-{{forloop.index0}}">
           <label class="positions__position__label" for="Item-{{section.id}}-{{forloop.index0}}">
             <h3 class="h4">{{block.settings.heading}}</h3>
@@ -50,33 +50,33 @@
         </div>
 
         {% comment %} 
-          Add position category to categories string, 
+          Add position department to departments string, 
           which we will split into an array after the loop is completed 
         {% endcomment %}
-        {% assign categories = categories | append: "$$$" | append: category %}
+        {% assign departments = departments | append: "$$$" | append: department %}
       {% endif %}
     {%- endfor -%}
 
-    {% comment %} Split categories string into an array {% endcomment %}
-    {% assign categories = categories | split: "$$$" | uniq %}
+    {% comment %} Split departments string into an array {% endcomment %}
+    {% assign departments = departments | split: "$$$" | uniq %}
 
     {% comment %} 
       Output positions nav if there's more than 
-      one category to navigate through 
+      one department to navigate through 
     {% endcomment %}
-    {% if categories.size > 1 %}
+    {% if departments.size > 1 %}
       <ul class="positions__nav">
-        {%- for category in categories -%}
-          {% assign category_handle = category | handleize %}
+        {%- for department in departments -%}
+          {% assign department_handle = department | handleize %}
 
             {% comment %} Each nav item {% endcomment %}
             <li class="positions__nav__item">
               {% comment %} Tag logic below sets listener on {% endcomment %}
               <positions-button
-                class="positions__button caption {% if category == default_category %}__active{% endif %}"
-                data-category="{{ category_handle }}"
+                class="positions__button caption {% if department == default_department %}__active{% endif %}"
+                data-department="{{ department_handle }}"
               >
-                {{ category }}
+                {{ department }}
               </positions-button>
             </li>
         {%- endfor -%}
@@ -94,18 +94,18 @@
       this.setupListener();
     }
 
-    //Add a on click listener to every position category nav button
+    //Add a on click listener to every position department nav button
     setupListener() {
-      this.addEventListener('click', this.updateCategory.bind(this));
+      this.addEventListener('click', this.updateDepartment.bind(this));
     }
 
-    //on category nav button click, updates what is active
-    updateCategory() {
+    //on department nav button click, updates what is active
+    updateDepartment() {
 
       //parent element for this section
       var thisSection = this.parentNode.parentNode.parentNode;
-      //clicked on item's category
-      var category = this.getAttribute('data-category');
+      //clicked on item's department
+      var department = this.getAttribute('data-department');
       //all positions in this section
       var faqItems = thisSection.querySelectorAll('.positions__position');
       //all nav buttons
@@ -113,7 +113,7 @@
 
       //remove or add active class on positions
       for ( var i = 0; i < faqItems.length; i++ ){
-        if (faqItems[i].getAttribute('data-category') == category ){
+        if (faqItems[i].getAttribute('data-department') == department ){
           faqItems[i].classList.add('__active');
         }
         else {
@@ -295,6 +295,13 @@
                      "label":"Tan"
                   }
                ]
+            },
+            {
+              "type": "text",
+              "id": "department",
+              "label": "Department",
+              "default": "All",
+              "info": "You can categorize your positions into departments like 'Distribution' or 'Marketing'. If no department is written, this question will be cateorized as 'All'. The ability to navigate between departments will only display if there are two or more departments in this section."
             }
          ]
       }
