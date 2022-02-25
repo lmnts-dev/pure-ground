@@ -21,5 +21,31 @@
         width: auto;
       }
     }
+
+    &:after {
+      content: 'flickity';
+      display: none; /* hide :after */
+    }
+  }
+
+  @media screen and (max-width: 676px) {
+    &__icons{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+
+      &__icon{
+        display: flex;
+        justify-content: center;
+
+        img {
+          height: calc(var(--vwSize) * 10);
+          margin: calc(var(--vwSize) * 4);
+        }
+      }
+        /* disable Flickity for small devices */
+      &:after {
+        content: '';
+      }
+    }
   }
 }
