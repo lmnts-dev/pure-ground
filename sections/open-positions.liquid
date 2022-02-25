@@ -21,10 +21,11 @@
          <div class="open-positions__content__text">{{ section.settings.text }}</div>
       {% endif %}
 
-      <div class="open-positions__departments">
-        <p>Departments</p>
-      </div>
+    
     <div class="open-positions__content">
+        <div class="open-positions__departments">
+        <span>Departments</span>
+      </div>
       {%- if section.settings.button_label != blank -%}
          <a class="btn" href="{{section.settings.button_link}}">{{section.settings.button_label}}</a>
       {%- endif -%}
