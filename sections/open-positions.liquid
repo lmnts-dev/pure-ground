@@ -41,14 +41,21 @@
         <div class="positions__position {% if department == default_department %}__active{% endif %}" data-department="{{ department_handle }}">
             <h3 class="h4">{{block.settings.heading}}</h3>
             
-          <div class="positions__position__content">
-            {{block.settings.details}}
-          </div>
+            <p>{{block.settings.details}}</p>
+
+             <toggle-modal class="collections-grid__container" data-type="container">
+              {% for block in section.blocks %}
+                  {% render 'collection-card' collection: block.settings.department %}
+              {% endfor %}
+            </toggle-modal>
+
+            {% render 'modal' %}
+
             {% if block.settings.button_link and block.settings.button_label %}
               <a class="bi-column-text-blocks__block__btn btn __btn-clr-{{block.settings.button_color}}" {% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} {{ block.shopify_attributes }}>
                 {{ block.settings.button_label | escape }}
               </a>
-            {% endif %
+            {% endif %}
         </div>
 
         {% comment %} 
@@ -134,6 +141,25 @@
   }
 
   customElements.define('positions-button', PositionsNavButton);
+
+  class ToggleModal extends HTMLElement {
+    constructor() {
+      super();
+
+      this.setupListener();
+    }
+
+    setupListener() {
+      this.addEventListener('click', this.toggleModal.bind(this));
+    }
+
+    toggleModal() {
+      var modal = this.getAttribute('data-type') == "modal" ? this : this.nextElementSibling;
+      modal.classList.toggle("__active");
+    }
+  }
+
+  customElements.define('toggle-modal', ToggleModal);
 
 {% endjavascript %}
 
