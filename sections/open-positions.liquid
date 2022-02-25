@@ -7,7 +7,14 @@
 
 
 {% comment %} Make sure user added positions {% endcomment %}
- {% if section.settings.heading %}
+
+  {% comment %} Variables needed to gather category nav data {% endcomment %}
+  {% assign default_category = "General" %}
+  {% assign categories = default_category %}
+
+  <div id="Open-positions-{{ section.id }}" class="open-positions color-{{section.settings.color_scheme}}">
+
+    {% if section.settings.heading %}
       <h2 class="open-positions__heading h4">{{ section.settings.heading }}</h2>
     {% endif %}
     <div class="open-positions__content">
@@ -17,13 +24,8 @@
       {%- if section.settings.button_label != blank -%}
          <a class="btn" href="{{section.settings.button_link}}">{{section.settings.button_label}}</a>
       {%- endif -%}
+
 {% if section.blocks.size > 0 %}
-
-  {% comment %} Variables needed to gather category nav data {% endcomment %}
-  {% assign default_category = "General" %}
-  {% assign categories = default_category %}
-
-  <div id="Open-positions-{{ section.id }}" class="open-positions color-{{section.settings.color_scheme}}">
     {% comment %} Loop through positions {% endcomment %}
     {%- for block in section.blocks -%}
       {% if block.settings.heading and block.settings.content %}
@@ -80,9 +82,8 @@
         {%- endfor -%}
       </ul>
     {% endif %}
-
-  </div>
 {% endif %}
+  </div>
 
 {% javascript %}
 
