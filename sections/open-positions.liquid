@@ -28,7 +28,7 @@
 {% if section.blocks.size > 0 %}
     {% comment %} Loop through positions {% endcomment %}
     {%- for block in section.blocks -%}
-      {% if block.settings.heading and block.settings.content %}
+      {% if block.settings.heading %}
 
         {% comment %} Assign department variables {% endcomment %}
         {% assign department = default_department %}
@@ -39,13 +39,10 @@
 
         {% comment %} Output position {% endcomment %}
         <div class="positions__position {% if department == default_department %}__active{% endif %}" data-department="{{ department_handle }}">
-          <input class="positions__position__checkbox" type="checkbox" id="Item-{{section.id}}-{{forloop.index0}}">
-          <label class="positions__position__label" for="Item-{{section.id}}-{{forloop.index0}}">
             <h3 class="h4">{{block.settings.heading}}</h3>
-            {% render 'svg-plus' %}
-          </label>
+            
           <div class="positions__position__content">
-            {{block.settings.content}}
+            {{block.settings.details}}
           </div>
         </div>
 
