@@ -63,6 +63,12 @@
       padding: 0;
       color: var(--color-foreground);
       width: 100%;
+      display: flex;
+
+      &__text{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
 
     // Checked State
