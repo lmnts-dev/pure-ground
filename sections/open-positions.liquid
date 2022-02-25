@@ -1,0 +1,247 @@
+{% style %}
+    #Open-positions-{{ section.id }} {
+      --topSpacingRatio: {{section.settings.top_spacing}} / 100;
+      --bottomSpacingRatio: {{section.settings.bottom_spacing}} / 100;
+    }
+{% endstyle %}
+
+
+{% comment %} Make sure user added positions {% endcomment %}
+{% if section.blocks.size > 0 %}
+
+  {% comment %} Variables needed to gather category nav data {% endcomment %}
+  {% assign default_category = "General" %}
+  {% assign categories = default_category %}
+
+  <div id="Open-positions-{{ section.id }}" class="open-positions color-{{section.settings.color_scheme}}">
+
+    {% comment %} Loop through positions {% endcomment %}
+    {%- for block in section.blocks -%}
+      {% if block.settings.heading and block.settings.content %}
+
+        {% comment %} Assign category variables {% endcomment %}
+        {% assign category = default_category %}
+        {% if block.settings.category %}
+          {% assign category = block.settings.category %}
+        {% endif %}
+        {% assign category_handle = category | handleize %}
+
+        {% comment %} Output position {% endcomment %}
+        <div class="positions__position {% if category == default_category %}__active{% endif %}" data-category="{{ category_handle }}">
+          <input class="positions__position__checkbox" type="checkbox" id="Item-{{section.id}}-{{forloop.index0}}">
+          <label class="positions__position__label" for="Item-{{section.id}}-{{forloop.index0}}">
+            <h3 class="h4">{{block.settings.heading}}</h3>
+            {% render 'svg-plus' %}
+          </label>
+          <div class="positions__position__content">
+            {{block.settings.content}}
+          </div>
+        </div>
+
+        {% comment %} 
+          Add position category to categories string, 
+          which we will split into an array after the loop is completed 
+        {% endcomment %}
+        {% assign categories = categories | append: "$$$" | append: category %}
+      {% endif %}
+    {%- endfor -%}
+
+    {% comment %} Split categories string into an array {% endcomment %}
+    {% assign categories = categories | split: "$$$" | uniq %}
+
+    {% comment %} 
+      Output positions nav if there's more than 
+      one category to navigate through 
+    {% endcomment %}
+    {% if categories.size > 1 %}
+      <ul class="positions__nav">
+        {%- for category in categories -%}
+          {% assign category_handle = category | handleize %}
+
+            {% comment %} Each nav item {% endcomment %}
+            <li class="positions__nav__item">
+              {% comment %} Tag logic below sets listener on {% endcomment %}
+              <positions-button
+                class="positions__button caption {% if category == default_category %}__active{% endif %}"
+                data-category="{{ category_handle }}"
+              >
+                {{ category }}
+              </positions-button>
+            </li>
+        {%- endfor -%}
+      </ul>
+    {% endif %}
+
+    {% if section.settings.text %}
+      <div class="positions__text article-text">
+        {{ section.settings.text }}
+      </div>
+    {% endif %}
+
+  </div>
+{% endif %}
+
+{% javascript %}
+
+  class PositionsNavButton extends HTMLElement {
+    constructor() {
+      super();
+
+      this.setupListener();
+    }
+
+    //Add a on click listener to every position category nav button
+    setupListener() {
+      this.addEventListener('click', this.updateCategory.bind(this));
+    }
+
+    //on category nav button click, updates what is active
+    updateCategory() {
+
+      //parent element for this section
+      var thisSection = this.parentNode.parentNode.parentNode;
+      //clicked on item's category
+      var category = this.getAttribute('data-category');
+      //all positions in this section
+      var faqItems = thisSection.querySelectorAll('.positions__position');
+      //all nav buttons
+      var faqNavItems = thisSection.querySelectorAll('.positions__button');
+
+      //remove or add active class on positions
+      for ( var i = 0; i < faqItems.length; i++ ){
+        if (faqItems[i].getAttribute('data-category') == category ){
+          faqItems[i].classList.add('__active');
+        }
+        else {
+          faqItems[i].classList.remove('__active');
+        }
+      }
+
+      //remove active class on nav buttons
+      for (var i = 0; i < faqNavItems.length; i++ ) {
+        faqNavItems[i].classList.remove('__active');
+      }
+
+      //add active class on clicked item
+      this.classList.add('__active');
+    }
+  }
+
+  customElements.define('positions-button', PositionsNavButton);
+
+{% endjavascript %}
+
+
+{% schema %}
+{
+  "name": "Positions",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Text Content"
+    },
+    {
+      "type": "richtext",
+      "label": "Additional Information",
+      "id": "text",
+      "info": "Placed below the positions"
+    },
+    {
+      "type": "header",
+      "content": "Settings"
+    },
+     {
+      "type": "select",
+      "id": "color_scheme",
+      "options": [
+        {
+          "value": "cream",
+          "label": "Cream (Default)"
+        },
+        {
+          "value": "dark-cream",
+          "label": "Dark Cream"
+        },
+        {
+          "value": "grass",
+          "label": "Grass"
+        },
+        {
+          "value": "sun",
+          "label": "Sun"
+        },
+        {
+          "value": "ground",
+          "label": "Ground"
+        },
+        {
+          "value": "sky",
+          "label": "Sky"
+        },
+        {
+          "value": "tan",
+          "label": "Tan"
+        }
+      ],
+      "default": "cream",
+      "label": "Color Scheme"
+    },
+     {
+      "type": "range",
+      "id": "top_spacing",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "%",
+      "label": "Top Spacing",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "bottom_spacing",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "%",
+      "label": "Bottom Spacing",
+      "default": 50
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Position",
+      "type": "position",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Text Content"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Content"
+        },
+        {
+          "type": "text",
+          "id": "category",
+          "label": "Category",
+          "default": "General",
+          "info": "You can categorize your FAQ into categories like 'General' or 'Shipping'. If no category is written, this question will be cateorized as 'General'. The ability to navigate between categories will only display if there are two or more categories in this section."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Positions"
+    }
+  ]
+}
+{% endschema %}
