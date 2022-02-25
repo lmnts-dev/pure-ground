@@ -43,6 +43,9 @@
             
             <p>{{block.settings.details}}</p>
 
+            {% render 'svg-location' %}
+            <span>{{block.settings.location}}</span>
+
              <toggle-modal class="collections-grid__container" data-type="container">
               {% for block in section.blocks %}
                   {% render 'collection-card' collection: block.settings.department %}
