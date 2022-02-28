@@ -104,37 +104,7 @@
       "settings": {
         "color_scheme": "cream",
         "top_spacing": 50,
-        "bottom_spacing": 50
-      }
-    },
-    "good-food": {
-      "type": "rich-text",
-      "blocks": {
-        "16438188434dae6d1d-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Good Food. Good Community",
-            "heading_size": "h2",
-            "heading_alignment": "left",
-            "subheading": "When farmers thrive, customers thrive."
-          }
-        },
-        "16438188434dae6d1d-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. Quisque sollicitudin lacus ut nulla viverra, eget fermentum dui imperdiet. Mauris at auctor ligula, eu convallis magna. Sed congue justo eu augue sagittis convallis. Phasellus lacinia ac eros vel ultrices. Praesent facilisis lorem ut urna vestibulum tempor. Quisque non vestibulum lectus. Fusce quis nulla non enim dictum semper tristique vel eros.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "16438188434dae6d1d-0",
-        "16438188434dae6d1d-1"
-      ],
-      "settings": {
-        "color_scheme": "background-1",
-        "hero": false,
-        "top_spacing": 50,
-        "bottom_spacing": 100
+        "bottom_spacing": 40
       }
     },
     "16444230281a285739": {
@@ -153,7 +123,6 @@
     "image",
     "1643818843f333eb74",
     "164512802361beb3e6",
-    "good-food",
     "16444230281a285739"
   ]
 }
