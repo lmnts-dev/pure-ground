@@ -175,6 +175,38 @@
         "bottom_spacing": 50
       }
     },
+    "16460680094933e161": {
+      "type": "split-section",
+      "blocks": {
+        "ac2b71c9-7d13-4bec-bbfd-43253c5dfdc7": {
+          "type": "heading",
+          "settings": {
+            "heading": "OUR VISION FOR THE FUTURE"
+          }
+        },
+        "16460680099057fcf0-0": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Overall, our team works every single day to ensure a world in which organic actually means organic—and in which farmers, manufacturers, and consumers come together as one in the name of thriving communities and a happy planet.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "ac2b71c9-7d13-4bec-bbfd-43253c5dfdc7",
+        "16460680099057fcf0-0"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_size": "h3",
+        "hero": false,
+        "image": "shopify:\/\/shop_images\/Rectangle_37.jpg",
+        "color_scheme": "cream",
+        "layout": "reversed",
+        "image_style": "square",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
+    },
     "164442397541aa9134": {
       "type": "featured-page-link",
       "settings": {
@@ -194,6 +226,7 @@
     "1644419517490faa29",
     "16460677599db23d60",
     "1646067890b0945be2",
+    "16460680094933e161",
     "164442397541aa9134"
   ]
 }
