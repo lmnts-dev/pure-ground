@@ -10,7 +10,7 @@
     "1643991355e4feeedb": {
       "type": "image",
       "settings": {
-        "image": "shopify://shop_images/Group_of_people.jpg",
+        "image": "shopify:\/\/shop_images\/Group_of_people.jpg",
         "image_style": "fullwidth",
         "color_scheme": "cream",
         "top_spacing": 0,
@@ -26,17 +26,20 @@
             "heading": "Our History",
             "heading_size": "h2",
             "heading_alignment": "center",
-            "subheading": ""
+            "subheading": "The passion behind the product"
           }
         },
         "16438188434dae6d1d-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. </p>"
+            "text": "<p>Our interest in all-things organic began long before the organic craze hit the States. It didn’t revolve around diet fads or buzzwords or pretty packaging on grocery store shelves, but instead came from one place—our vision of a world where growers, manufacturers, and consumers all came together in the name of better ingredients, sustainable practices, and a happier, healthier planet. <\/p><p>We first founded Pure Ground Ingredients in 2011, but our story starts nearly 20 years prior. Having grown up in a family whose business was fair-trade herbal tea, we always understood the importance of fair-trade—a program that gives products stable prices, ultimately helping farmers and their communities thrive in the face of unpredictable markets. But, what we noticed at the time was a major void in fair-trade ingredients. Fair-trade coffee, tea, and sugar were all readily available...but that was about it. We knew almost immediately that we wanted to help bring a wider range of high-quality, fair-trade, certified-organic ingredients to consumers—and in order to do that, we knew we needed to start at the source: growers around the globe. So, we packed our bags and embarked on the first of many adventures.<\/p>"
           }
         }
       },
-      "block_order": ["16438188434dae6d1d-0", "16438188434dae6d1d-1"],
+      "block_order": [
+        "16438188434dae6d1d-0",
+        "16438188434dae6d1d-1"
+      ],
       "settings": {
         "color_scheme": "cream",
         "hero": true,
@@ -47,19 +50,28 @@
     "16444193660de6d319": {
       "type": "split-section",
       "blocks": {
+        "ea821701-d216-4b36-82ae-880e4da10e66": {
+          "type": "heading",
+          "settings": {
+            "heading": "THE EXPLORATION THAT STARTED IT ALL"
+          }
+        },
         "1644419366881604f5-0": {
           "type": "text",
           "settings": {
-            "text": "<p>Aliquam placerat ultrices risus. Vestibulum placerat dui eget nisi vulputate auctor. Etiam interdum neque vitae arcu scelerisque euismod. Aenean a cursus mauris, sed aliquet arcu. Donec a commodo dolor, non ultricies sapien. Etiam ac lectus nec diam convallis mattis at sit amet nulla. Nulla pellentesque consequat nunc, eu dictum purus venenatis quis. Cras quis nulla suscipit, pretium eros eu, lacinia tellus. Vivamus tristique lacus augue, id faucibus massa iaculis vel.</p>"
+            "text": "<p>Our first stop was South America where we began the research we continue to this day—learning every single thing we could about organic growers, their products, and their practices. We slung backpacks over our shoulders, filled our notebooks with every tidbit our eager hands could jot down, caked dirt in our boots, and made friendships with farmers that we maintain to this day.<\/p><p>From South America we headed to Europe, where the world of organics was far more developed than it was in the United States at the time. Europe was where we first laid eyes on what a thriving organic marketplace looked like—which only served to whet our palette.<\/p><p>We wanted to know more, so we spent the next ten years of our lives traveling, exploring, and building relationships with growers everywhere from Africa to Indonesia—hand-selecting the best of the best to eventually become Pure Ground partners.<\/p>"
           }
         }
       },
-      "block_order": ["1644419366881604f5-0"],
+      "block_order": [
+        "ea821701-d216-4b36-82ae-880e4da10e66",
+        "1644419366881604f5-0"
+      ],
       "settings": {
         "heading": "",
         "heading_size": "h3",
         "hero": false,
-        "image": "shopify://shop_images/2018-08-21_17.54_1-1.jpg",
+        "image": "shopify:\/\/shop_images\/2018-08-21_17.54_1-1.jpg",
         "color_scheme": "cream",
         "layout": "reversed",
         "image_style": "square",
@@ -73,16 +85,18 @@
         "16444195172a1cbbf5-0": {
           "type": "text",
           "settings": {
-            "text": "<p>Aliquam placerat ultrices risus. Vestibulum placerat dui eget nisi vulputate auctor. Etiam interdum neque vitae arcu scelerisque euismod. Aenean a cursus mauris, sed aliquet arcu. Donec a commodo dolor, non ultricies sapien. Etiam ac lectus nec diam convallis mattis at sit amet nulla. Nulla pellentesque consequat nunc, eu dictum purus venenatis quis. Cras quis nulla suscipit, pretium eros eu, lacinia tellus. Vivamus tristique lacus augue, id faucibus massa iaculis vel.</p>"
+            "text": "<p>Aliquam placerat ultrices risus. Vestibulum placerat dui eget nisi vulputate auctor. Etiam interdum neque vitae arcu scelerisque euismod. Aenean a cursus mauris, sed aliquet arcu. Donec a commodo dolor, non ultricies sapien. Etiam ac lectus nec diam convallis mattis at sit amet nulla. Nulla pellentesque consequat nunc, eu dictum purus venenatis quis. Cras quis nulla suscipit, pretium eros eu, lacinia tellus. Vivamus tristique lacus augue, id faucibus massa iaculis vel.<\/p>"
           }
         }
       },
-      "block_order": ["16444195172a1cbbf5-0"],
+      "block_order": [
+        "16444195172a1cbbf5-0"
+      ],
       "settings": {
         "heading": "",
         "heading_size": "h3",
         "hero": false,
-        "image": "shopify://shop_images/2018-08-21_17.54_1.jpg",
+        "image": "shopify:\/\/shop_images\/2018-08-21_17.54_1.jpg",
         "color_scheme": "cream",
         "layout": "default",
         "image_style": "square",
@@ -93,7 +107,7 @@
     "164442397541aa9134": {
       "type": "featured-page-link",
       "settings": {
-        "image": "shopify://shop_images/About_Components.png",
+        "image": "shopify:\/\/shop_images\/About_Components.png",
         "page_link": "sustainability",
         "color_scheme": "cream",
         "top_spacing": 0,
