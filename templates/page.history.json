@@ -143,6 +143,38 @@
         "bottom_spacing": 50
       }
     },
+    "1646067890b0945be2": {
+      "type": "split-section",
+      "blocks": {
+        "ab43ead6-9eb7-41ba-b753-14de0dd45021": {
+          "type": "heading",
+          "settings": {
+            "heading": "OUR COMMITMENT TO QUALITY"
+          }
+        },
+        "1646067890db72c0b4-0": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We learned years ago that nearly 35 percent of items labeled organic in the marketplace aren’t actually organic at all. That’s a statistic that shocked us into action—which is why our commitment to quality and organic integrity drives everything we do. We strive to empower consumers by offering products our manufacturers can rely on—products that will further their brand integrity rather than impair it...products that are actually, truly organic.<\/p><p>We purchase our materials raw and do every bit of processing—from tip to tail—in-house in our facility in Minden, Nevada. We run our ingredients through the most thorough, comprehensive testing on the market—we look for pesticides others don’t, test for the presence of heavy metals and microtoxins, and strive to exceed industry standards across the board.<\/p><p>Our testing and processing goes far beyond what’s federally required—we even perform botanical ID and DNA testing to ensure a product is, indeed, what its label says it is (impersonators beware). In place of traditional sterilization, which strips products of many of their natural benefits, we use infrared light to sterilize our ingredients. In short, we employ a number of practices that ensure we’re providing our manufacturers the absolute best in organic ingredients and a level of quality and consistency they’ll find nowhere else on the planet.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "ab43ead6-9eb7-41ba-b753-14de0dd45021",
+        "1646067890db72c0b4-0"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_size": "h3",
+        "hero": false,
+        "image": "shopify:\/\/shop_images\/unsplash_V0xp-dTS3z0.jpg",
+        "color_scheme": "cream",
+        "layout": "default",
+        "image_style": "square",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
+    },
     "164442397541aa9134": {
       "type": "featured-page-link",
       "settings": {
@@ -161,6 +193,7 @@
     "16444193660de6d319",
     "1644419517490faa29",
     "16460677599db23d60",
+    "1646067890b0945be2",
     "164442397541aa9134"
   ]
 }
