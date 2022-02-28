@@ -82,14 +82,21 @@
     "1644419517490faa29": {
       "type": "split-section",
       "blocks": {
+        "62ae096b-8c03-4a4c-8446-c4803a18de0b": {
+          "type": "heading",
+          "settings": {
+            "heading": "THE GROWTH OF ALL THINGS GOOD"
+          }
+        },
         "16444195172a1cbbf5-0": {
           "type": "text",
           "settings": {
-            "text": "<p>Aliquam placerat ultrices risus. Vestibulum placerat dui eget nisi vulputate auctor. Etiam interdum neque vitae arcu scelerisque euismod. Aenean a cursus mauris, sed aliquet arcu. Donec a commodo dolor, non ultricies sapien. Etiam ac lectus nec diam convallis mattis at sit amet nulla. Nulla pellentesque consequat nunc, eu dictum purus venenatis quis. Cras quis nulla suscipit, pretium eros eu, lacinia tellus. Vivamus tristique lacus augue, id faucibus massa iaculis vel.<\/p>"
+            "text": "<p>Fast-forward 20 years and, while we’ve grown from two to 50 (and counting) employees, many of the growers we use to this day are the same growers we met all those years ago. Relationships are, by far, the most important part of ensuring organic integrity in the ingredients we provide manufacturers, which is why we’re in it for the long-haul with our farmers and their communities. We now source ingredients from over 35 different countries and are on a continuous mission to both improve product quality and ensure economic vitality for our farmers and their communities.<\/p>"
           }
         }
       },
       "block_order": [
+        "62ae096b-8c03-4a4c-8446-c4803a18de0b",
         "16444195172a1cbbf5-0"
       ],
       "settings": {
