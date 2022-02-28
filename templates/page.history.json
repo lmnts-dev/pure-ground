@@ -111,6 +111,38 @@
         "bottom_spacing": 50
       }
     },
+    "16460677599db23d60": {
+      "type": "split-section",
+      "blocks": {
+        "3bace683-18eb-42ab-8cfa-3856140c8447": {
+          "type": "heading",
+          "settings": {
+            "heading": "BRIDGING THE GAP"
+          }
+        },
+        "16460677595b4c6412-0": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We like to think of ourselves as the bridge between farmers of organic ingredients and manufacturers of organic food products—and our most important role is being a friend to both. It didn’t take us long to learn that farmers thrive when manufacturers thrive, and vice-versa—so we work everyday to play a role that adds value to both parties. <\/p><p>Our farmers run small operations and often don’t have the resources they need to get to market on their own...which is where we come in. We work with farmers to bring their product to the manufacturers who are looking for it—ultimately helping to bring greater economic value to farmers’ products and their communities. On the flip side of that, we work with manufacturers to source the highest-quality, certified-organic ingredients for their products—ensuring brand integrity and, ultimately, happy consumers.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "3bace683-18eb-42ab-8cfa-3856140c8447",
+        "16460677595b4c6412-0"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_size": "h3",
+        "hero": false,
+        "image": "shopify:\/\/shop_images\/unsplash_pBwMdofMxtU.jpg",
+        "color_scheme": "cream",
+        "layout": "reversed",
+        "image_style": "square",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
+    },
     "164442397541aa9134": {
       "type": "featured-page-link",
       "settings": {
@@ -128,6 +160,7 @@
     "1643818843f333eb74",
     "16444193660de6d319",
     "1644419517490faa29",
+    "16460677599db23d60",
     "164442397541aa9134"
   ]
 }
