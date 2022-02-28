@@ -8,6 +8,71 @@
       },
       "header": {
         "type": "header",
+        "blocks": {
+          "0dc547ff-b375-4b78-bad8-9ef9fc4a79d2": {
+            "type": "link",
+            "settings": {
+              "label": "Services",
+              "link": "shopify:\/\/pages\/services"
+            }
+          },
+          "d9d4a0f1-92e8-4a6c-964f-c942b3f49c06": {
+            "type": "label",
+            "settings": {
+              "label": "Our Impact",
+              "color": "#d57a20"
+            }
+          },
+          "36944498-7704-47a2-bbc3-bad640b23bbf": {
+            "type": "submenu",
+            "settings": {
+              "menu": ""
+            }
+          },
+          "3286d588-bbb8-4812-b8d3-f52fb87505cc": {
+            "type": "page",
+            "settings": {
+              "page": "sustainability",
+              "image": "shopify:\/\/shop_images\/Rectangle_34.jpg"
+            }
+          },
+          "96ba6c8c-da56-4587-8ac5-8ec2fedc850a": {
+            "type": "label",
+            "settings": {
+              "label": "Resources",
+              "color": "#a3cddd"
+            }
+          },
+          "f869f12f-139b-42fe-bea1-f3f9c414b997": {
+            "type": "submenu",
+            "settings": {
+              "menu": ""
+            }
+          },
+          "636f8503-41ad-4463-b1c0-9301862ad06d": {
+            "type": "submenu",
+            "settings": {
+              "menu": ""
+            }
+          },
+          "16e79199-cc89-4cb0-801b-05b2e0a118ba": {
+            "type": "articles",
+            "settings": {
+              "heading": "Featured Resources",
+              "menu": ""
+            }
+          }
+        },
+        "block_order": [
+          "0dc547ff-b375-4b78-bad8-9ef9fc4a79d2",
+          "d9d4a0f1-92e8-4a6c-964f-c942b3f49c06",
+          "36944498-7704-47a2-bbc3-bad640b23bbf",
+          "3286d588-bbb8-4812-b8d3-f52fb87505cc",
+          "96ba6c8c-da56-4587-8ac5-8ec2fedc850a",
+          "f869f12f-139b-42fe-bea1-f3f9c414b997",
+          "636f8503-41ad-4463-b1c0-9301862ad06d",
+          "16e79199-cc89-4cb0-801b-05b2e0a118ba"
+        ],
         "settings": {
           "menu": "main-menu",
           "enable_sticky_header": true
