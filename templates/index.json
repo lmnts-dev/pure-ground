@@ -297,7 +297,7 @@
       "settings": {
         "heading": "Latest News in Organics",
         "button_label": "View More Resources",
-        "button_link": "\/resources",
+        "button_link": "shopify:\/\/pages\/resources",
         "button_color": "default",
         "color_scheme": "cream",
         "top_spacing": 50,
