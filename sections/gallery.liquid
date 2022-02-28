@@ -44,7 +44,7 @@
                 {% assign indexToCheck = forloop.index0 | plus: exteriorIndex %}
                   <div class="gallery__image">
                     {%- if section.blocks[indexToCheck].settings.image != blank -%}
-                        {% if block.settings.alt == "" %} 
+                        {% if section.blocks[indexToCheck].settings.alt == "" %} 
                           {% render 'next-gen-img', image: section.blocks[indexToCheck].settings.image, alt: 'Pure Ground Ingredients' %}
                         {% else %} 
                           {% render 'next-gen-img', image: section.blocks[indexToCheck].settings.image, alt: section.blocks[indexToCheck].settings.alt %}
