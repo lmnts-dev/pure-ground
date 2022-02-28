@@ -17,10 +17,10 @@
    }'>
       {% for block in section.blocks %}
          <div class="icons-row__icons__icon" {{ block.shopify_attributes }}>
-            {% if block.settings.alt == "" %} 
-               {% render 'next-gen-img', image: block.settings.image, alt: 'Pure Ground Ingredients' %}
+              {% if block.settings.alt == "" %} 
+               {% render 'next-gen-img', image: block.settings.icon, alt: 'Pure Ground Ingredients' %}
             {% else %} 
-               {% render 'next-gen-img', image: block.settings.image, alt: alt: block.settings.alt %}
+               {% render 'next-gen-img', image: block.settings.icon, alt: alt: block.settings.alt %}
             {% endif %}
          </div>
       {% endfor %}
