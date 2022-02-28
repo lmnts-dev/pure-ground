@@ -24,7 +24,7 @@
     sizes="{% if sizes %}{{ sizes }}{% else %}100vw{% endif %}"
     src="{{ image | img_url: 'master' }}"
     loading="lazy"
-    alt="{% if alt %}{{ alt }}{% else %}{{ image.alt | escape }}{% endif %}"
+    alt="{% if alt %}{{ alt }}{% elsif image.alt%}{{ image.alt | escape }}{% else %} {{"Here is alt"}}{% endif %}"
     width="{{ image.width }}"
     height="{{ image.height }}"
   >
