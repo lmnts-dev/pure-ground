@@ -135,6 +135,36 @@
         "bottom_spacing": 50
       }
     },
+    "1646067356b42ab437": {
+      "type": "rich-text",
+      "blocks": {
+        "1646067356adcce6f2-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Our actions speak our truth",
+            "heading_size": "h2",
+            "heading_alignment": "left",
+            "subheading": ""
+          }
+        },
+        "1646067356adcce6f2-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We apply rigorous testing protocols to ensure we are exceeding industry standards in ensuring organic is organic. <\/p><p>We keep in communication, work together to overcome obstacles.<\/p><p>We take care of those who take care of us. We believe in fair wages, fair labor practices and elevating the lives of those around the globe.<\/p><p>We act in service to our customers. We scan the globe to find the ingredients that innovations and trends of the market demand. <\/p><p>We listen and respond. <\/p><p>We believe in self responsibility, showing up each day representing ourselves authenticity, with upmost integrity. <\/p><p>We act using best in class practices and feel good about what we do!<\/p><p>We are conscious citizens and help others as much as we can.<\/p><p>We do not confuse effort with results, we believe in measuring accountability and strive to exceed expectations. <\/p><p>We value a strong work ethic in all team members. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1646067356adcce6f2-0",
+        "1646067356adcce6f2-1"
+      ],
+      "settings": {
+        "color_scheme": "cream",
+        "hero": false,
+        "top_spacing": 50,
+        "bottom_spacing": 100
+      }
+    },
     "1644423507dbf32226": {
       "type": "featured-page-link",
       "settings": {
@@ -154,6 +184,7 @@
     "split",
     "16454660498f09f65b",
     "1646067263a4cd759b",
+    "1646067356b42ab437",
     "1644423507dbf32226"
   ]
 }
