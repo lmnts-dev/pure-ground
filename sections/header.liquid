@@ -585,6 +585,143 @@
       "label": "t:sections.header.settings.enable_sticky_header.label",
       "info": "t:sections.header.settings.enable_sticky_header.info"
     }
+  ],
+  "blocks": [
+    {
+      "type": "link",
+      "name": "Normal Link",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Normal link in navigation",
+          "info": "Navigates to new a new page when clicked on."
+        },
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Label"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        }
+      ]
+    },
+    {
+      "type": "label",
+      "name": "Dropdown Label",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Label in naviation",
+          "info": "Displays a dropdown when clicked on. All items after this up until the next normal link or dropdown label will be included beneath this label's dropdown."
+        },
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Label"
+        },
+        {
+          "type": "color",
+          "id": "color",
+          "label": "Label's associated color",
+          "info": "Applied to the divider when it's dropdown is displayed"
+        }
+      ]
+    },
+    {
+      "type": "submenu",
+      "name": "Submenu in Dropdown",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Collection of links displayed in a dropdown",
+          "info": "Make sure you add a dropdown label at some point before this item in order to know which dropdown this belongs in."
+        },
+        {
+          "type": "link_list",
+          "id": "menu",
+          "label": "Menu",
+          "info": "Displays only top-level menu items. Create this menu under 'Navigation'"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "Text Block in Dropdown",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Text block displayed in a dropdown",
+          "info": "Make sure you add a dropdown label at some point before this item in order to know which dropdown this belongs in."
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "Button Label"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button Link"
+        }
+      ]
+    },
+    {
+      "type": "page",
+      "name": "Featured Page in Dropdown",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Featured page displayed in a dropdown",
+          "info": "Make sure you add a dropdown label at some point before this item in order to know which dropdown this belongs in."
+        },
+        {
+          "type": "page",
+          "id": "page",
+          "label": "Page"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image",
+          "info": "Should represent chosen page"
+        }
+      ]
+    },
+    {
+      "type": "articles",
+      "name": "Articles in Dropdown",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Collection of articles displayed in a dropdown",
+          "info": "Make sure you add a dropdown label at some point before this item in order to know which dropdown this belongs in."
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading"
+        },
+        {
+          "type": "link_list",
+          "id": "menu",
+          "label": "Menu",
+          "info": "Displays only top-level menu items. Create this menu under 'Navigation' and add only article items to it."
+        }
+      ]  
+    }
   ]
 }
 {% endschema %}

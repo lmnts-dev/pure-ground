@@ -28,8 +28,7 @@
   }
 
   &__content {
-    padding: calc(var(--pxSize) / 3) calc(var(--pxSize) / 3) 0
-      calc(var(--pxSize) / 3);
+    padding: calc(var(--pxSize) / 3);
 
     &__heading {
       margin: 0;
@@ -37,6 +36,7 @@
 
     &__text {
       grid-column: 1 / -1;
+      margin-bottom: 0;
     }
   }
 

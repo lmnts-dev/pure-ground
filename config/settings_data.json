@@ -8,6 +8,71 @@
       },
       "header": {
         "type": "header",
+        "blocks": {
+          "0dc547ff-b375-4b78-bad8-9ef9fc4a79d2": {
+            "type": "link",
+            "settings": {
+              "label": "Services",
+              "link": "shopify:\/\/pages\/services"
+            }
+          },
+          "d9d4a0f1-92e8-4a6c-964f-c942b3f49c06": {
+            "type": "label",
+            "settings": {
+              "label": "Our Impact",
+              "color": "#d57a20"
+            }
+          },
+          "c130bfbf-92b2-4a18-a2bc-3401d7cebf82": {
+            "type": "submenu",
+            "settings": {
+              "menu": "our-values"
+            }
+          },
+          "e58fd043-68a5-401e-8b7b-7143691d9a3f": {
+            "type": "page",
+            "settings": {
+              "page": "sustainability",
+              "image": "shopify:\/\/shop_images\/Rectangle_34.jpg"
+            }
+          },
+          "aabd9f5b-6fb3-4cd3-9443-4ea104e820c9": {
+            "type": "label",
+            "settings": {
+              "label": "Resources",
+              "color": "#a3cddd"
+            }
+          },
+          "b2bcdc3e-53b7-4366-9941-db39b4906944": {
+            "type": "submenu",
+            "settings": {
+              "menu": "learn"
+            }
+          },
+          "7f2df142-cc7c-4838-88a4-211f225706f0": {
+            "type": "submenu",
+            "settings": {
+              "menu": "information"
+            }
+          },
+          "f537cb93-a2e6-4b92-b5fe-d43941dc8f9d": {
+            "type": "articles",
+            "settings": {
+              "heading": "Featured Resources",
+              "menu": "featured-resources"
+            }
+          }
+        },
+        "block_order": [
+          "0dc547ff-b375-4b78-bad8-9ef9fc4a79d2",
+          "d9d4a0f1-92e8-4a6c-964f-c942b3f49c06",
+          "c130bfbf-92b2-4a18-a2bc-3401d7cebf82",
+          "e58fd043-68a5-401e-8b7b-7143691d9a3f",
+          "aabd9f5b-6fb3-4cd3-9443-4ea104e820c9",
+          "b2bcdc3e-53b7-4366-9941-db39b4906944",
+          "7f2df142-cc7c-4838-88a4-211f225706f0",
+          "f537cb93-a2e6-4b92-b5fe-d43941dc8f9d"
+        ],
         "settings": {
           "menu": "main-menu",
           "enable_sticky_header": true
