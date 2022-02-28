@@ -105,6 +105,36 @@
         "bottom_spacing": 50
       }
     },
+    "1646067263a4cd759b": {
+      "type": "rich-text",
+      "blocks": {
+        "1646067262a5356a0b-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "We evolve together",
+            "heading_size": "h2",
+            "heading_alignment": "left",
+            "subheading": ""
+          }
+        },
+        "1646067262a5356a0b-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We care for each other. We express our needs and meet them.   <\/p><p>We encourage collaboration, expression and teamwork. <\/p><p>We value inquisitive minds and positive attitudes<\/p><p>We act in commitment to our common goals, valuing each team member and customer equally.<\/p><p>We remain flexible to accommodate customers and employees. We are known for being responsive to the demands of the world.  <\/p><p>We understand that life happens. <\/p><p>We make time for the things that matter most, minimizing distractions from our highest goals <\/p><p>We lead by example.  We do not judge, but work to understand our perceptions. <\/p><p>We focus on educating ourselves, our customers and suppliers and encourage personal and career development. <\/p><p>We treat our partners, employees and customers like family.  Our goal is to thrive together.<\/p><p>We respect our natural resources and use them consciously. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1646067262a5356a0b-0",
+        "1646067262a5356a0b-1"
+      ],
+      "settings": {
+        "color_scheme": "cream",
+        "hero": false,
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
+    },
     "1644423507dbf32226": {
       "type": "featured-page-link",
       "settings": {
@@ -123,6 +153,7 @@
     "1644423355dc027cd8",
     "split",
     "16454660498f09f65b",
+    "1646067263a4cd759b",
     "1644423507dbf32226"
   ]
 }
