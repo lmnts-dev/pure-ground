@@ -12,10 +12,10 @@
       {%- for block in section.blocks -%}
         <div class="content-slider__slides__slide">
           <div class="content-slider__image">
-            {% if section.settings.alt == "" %} 
-              {% render 'next-gen-img', image: section.settings.image, alt: 'Pure Ground Ingredients' %}
+            {% if block.settings.alt == "" %} 
+              {% render 'next-gen-img', image: block.settings.image, alt: 'Pure Ground Ingredients' %}
             {% else %} 
-              {% render 'next-gen-img', image: section.settings.image, alt: section.settings.alt %}
+              {% render 'next-gen-img', image: block.settings.image, alt: block.settings.alt %}
             {% endif %}
           </div>
           <div class="content-slider__text">

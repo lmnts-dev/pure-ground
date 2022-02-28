@@ -33,7 +33,11 @@
       {%- endif -%}
 
       {%- if section.settings.image != blank -%}
-         {% render 'next-gen-img', image: section.settings.image %}
+         {% if section.settings.alt == "" %} 
+            {% render 'next-gen-img', image: section.settings.image, alt: 'Pure Ground Ingredients' %}
+         {% else %} 
+            {% render 'next-gen-img', image: section.settings.image, alt: section.settings.alt %}
+         {% endif %}
       {%- endif -%}
 
    </div>
@@ -163,6 +167,12 @@
          "type": "image_picker",
          "id": "image",
          "label": "Image"
+      },
+      {
+         "type": "text",
+         "id": "alt",
+         "default": "Image alt text",
+         "label": "Alt"
       },
       {
          "type": "range",
