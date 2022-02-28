@@ -24,7 +24,7 @@
         {% endif %}
 
       {%- when 'button' -%}
-        {% if block.settings.button_link %}
+        {% if block.settings.button_link and block.settings.button_label %}
           <a {% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} {{ block.shopify_attributes }}>
             {{ block.settings.button_label | escape }}
           </a>

@@ -19,6 +19,7 @@
    {% comment %} Sort articles by published date {% endcomment %}
    {% assign all_articles = all_articles | sort: "published_at" | reverse %}
 
+
    {% comment %} 
       Set featured card as most recently published article
       unless user selected a featured article
