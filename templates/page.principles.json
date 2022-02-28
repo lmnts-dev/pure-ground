@@ -60,9 +60,9 @@
     "split": {
       "type": "split-text",
       "settings": {
-        "heading": "Directly from the source",
-        "text": "<p>Aliquam placerat ultrices risus. Vestibulum placerat dui eget nisi vulputate auctor. Etiam interdum neque vitae arcu scelerisque euismod. Aenean a cursus mauris, sed aliquet arcu. Donec a commodo dolor, non ultricies sapien. Etiam ac lectus nec diam convallis mattis at sit amet nulla. Nulla pellentesque consequat nunc, eu dictum purus venenatis quis. Cras quis nulla suscipit, pretium eros eu, lacinia tellus. Vivamus tristique lacus augue, id faucibus massa iaculis vel.<\/p>",
-        "button_label": "Button label",
+        "heading": "We believe in using business as a force for good",
+        "text": "<p>We act in accordance of a common ethical ground. <\/p><p>We evaluate decisions based on the considerations of keeping all parties whole <\/p><p>Our communication is direct and upfront <\/p><p>We always do our best to deliver the absolute best quality in organic ingredients. <\/p><p>We strive for endless innovation <\/p><p>We give back to those around us and act in consideration of those in need. <\/p><p>We believe in building our local community and global community through the positive impact of our employees<\/p><p>We want our customers to have confidence in our business ethics and commitment to acting in a way that improves the lives of all stakeholders.<\/p><p>We are accountable in our everyday decisions and the impact they make on the global environment.  <\/p><p>We engage consciously with our suppliers, customers, employees and partners in an effort to build a healthier planet and thriving communities.<\/p><p>We believe the more organic ingredients we sell, the greater the impact on the global food supply, <\/p><p>We want team members who come to work feeling like they are making a difference and recognize they are an essential part of providing healthy healing foods around the globe.<\/p>",
+        "button_label": "",
         "button_link": "",
         "color_scheme": "cream",
         "top_spacing": 50,
