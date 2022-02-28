@@ -24,7 +24,7 @@
       unless user selected a featured article
    {% endcomment %}
    {% assign featured_article = all_articles[0] %}
-   {% if section.settings.article %}
+   {% if section.settings.article and section.settings.article.title %}
       {% assign featured_article = section.settings.article %}
    {% endif %}
 
