@@ -3,8 +3,7 @@
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
-        "settings": {
-        }
+        "settings": {}
       },
       "header": {
         "type": "header",
@@ -13,7 +12,7 @@
             "type": "link",
             "settings": {
               "label": "Services",
-              "link": "shopify:\/\/pages\/services"
+              "link": "shopify://pages/services"
             }
           },
           "d9d4a0f1-92e8-4a6c-964f-c942b3f49c06": {
@@ -24,16 +23,16 @@
             }
           },
           "36944498-7704-47a2-bbc3-bad640b23bbf": {
-            "type": "submenu",
+            "type": "submenu_text",
             "settings": {
               "menu": ""
             }
           },
           "3286d588-bbb8-4812-b8d3-f52fb87505cc": {
-            "type": "page",
+            "type": "page_text",
             "settings": {
               "page": "sustainability",
-              "image": "shopify:\/\/shop_images\/Rectangle_34.jpg"
+              "image": "shopify://shop_images/Rectangle_34.jpg"
             }
           },
           "96ba6c8c-da56-4587-8ac5-8ec2fedc850a": {
@@ -44,19 +43,19 @@
             }
           },
           "f869f12f-139b-42fe-bea1-f3f9c414b997": {
-            "type": "submenu",
+            "type": "submenu_text",
             "settings": {
               "menu": ""
             }
           },
           "636f8503-41ad-4463-b1c0-9301862ad06d": {
-            "type": "submenu",
+            "type": "submenu_text",
             "settings": {
               "menu": ""
             }
           },
           "16e79199-cc89-4cb0-801b-05b2e0a118ba": {
-            "type": "articles",
+            "type": "articles_text",
             "settings": {
               "heading": "Featured Resources",
               "menu": ""
@@ -96,34 +95,27 @@
             }
           }
         },
-        "block_order": [
-          "footer-0",
-          "footer-1"
-        ],
+        "block_order": ["footer-0", "footer-1"],
         "settings": {
           "color_scheme": "ground",
           "newsletter_enable": false,
           "newsletter_heading": "Subscribe to our Newsletter",
           "newsletter_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
           "show_social": true,
-          "address": "<p>2535 Business Parkway<br\/>Minden, NV 89423<\/p><p><a href=\"mailto:info@puregroundingredients.com\" title=\"mailto:info@puregroundingredients.com\">info@puregroundingredients.com<\/a><br\/><a href=\"tel:775-297-4047\" title=\"tel:775-297-4047\">775-297-4047<\/a><\/p>",
+          "address": "<p>2535 Business Parkway<br/>Minden, NV 89423</p><p><a href=\"mailto:info@puregroundingredients.com\" title=\"mailto:info@puregroundingredients.com\">info@puregroundingredients.com</a><br/><a href=\"tel:775-297-4047\" title=\"tel:775-297-4047\">775-297-4047</a></p>",
           "secondary_links": "secondary"
         }
       },
       "main-password-header": {
         "type": "main-password-header",
-        "settings": {
-        }
+        "settings": {}
       },
       "main-password-footer": {
         "type": "main-password-footer",
-        "settings": {
-        }
+        "settings": {}
       }
     },
-    "content_for_index": [
-
-    ]
+    "content_for_index": []
   },
   "presets": {
     "Default": {
@@ -138,24 +130,19 @@
               }
             }
           },
-          "block_order": [
-            "announcement-bar-0"
-          ],
-          "settings": {
-          }
+          "block_order": ["announcement-bar-0"],
+          "settings": {}
         },
         "header": {
           "type": "header",
-          "settings": {
-          }
+          "settings": {}
         },
         "footer": {
           "type": "footer",
           "blocks": {
             "footer-0": {
               "type": "link_list",
-              "settings": {
-              }
+              "settings": {}
             },
             "footer-1": {
               "type": "link_list",
@@ -164,10 +151,7 @@
               }
             }
           },
-          "block_order": [
-            "footer-0",
-            "footer-1"
-          ],
+          "block_order": ["footer-0", "footer-1"],
           "settings": {
             "color_scheme": "ground",
             "show_social": true
@@ -175,13 +159,11 @@
         },
         "main-password-header": {
           "type": "main-password-header",
-          "settings": {
-          }
+          "settings": {}
         },
         "main-password-footer": {
           "type": "main-password-footer",
-          "settings": {
-          }
+          "settings": {}
         }
       }
     }
