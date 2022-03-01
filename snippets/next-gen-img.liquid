@@ -10,15 +10,16 @@
     {% render 'next-gen-img' image: image, alt: alt %}
 {% endcomment %}
 
-{% assign altText = image.alt %}  
+{% assign altText = image.alt %} 
 
-{% if image.alt != blank %} 
-  {% if alt %}
-    {% assign altText = alt%}
-  {% else %} 
-    {% assign altText = shop.name %}
-  {% endif %}
-{% endif %}
+{% if alt != blank %}
+  {% assign altText = alt %} 
+{%else%}
+  {% assign altText = shop.name %} 
+{%endif%}
+
+
+
 
 <img
     srcset="{%- if image.width >= 375 -%}{{ image | img_url: width: 375 }} 375w,{%- endif -%}
