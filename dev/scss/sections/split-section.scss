@@ -1,5 +1,6 @@
 .split-section {
   --splitSectionSpace: var(--sectionHorizontalSpacing);
+  --splitSectionRatio: 37%;
   display: flex;
 
   &__text {
@@ -65,8 +66,16 @@
       &__text,
       &__image {
         min-height: calc(var(--vwSize) * 18);
-        flex: 0 0 50%;
+        flex: 1;
       }
+
+      &__image {
+        flex: 0 0 var(--splitSectionRatio);
+      }
+    }
+
+    &.__image-style-wide {
+      --splitSectionRatio: 50%;
     }
   }
 
@@ -91,14 +100,14 @@
 
     &__image {
       padding-top: 66.66666666666666%;
-      margin: 0 calc(var(--sectionHorizontalSpacing)*-1);
+      margin: 0 calc(var(--sectionHorizontalSpacing) * -1);
 
-      img{
-        width:100%;
+      img {
+        width: 100%;
       }
     }
 
-    &.__image-style-square{
+    &.__image-style-square {
       .split-section {
         &__image {
           width: 100%;
@@ -109,20 +118,20 @@
     }
 
     &:not(.__image-style-square) {
-      .split-section{
-        &__text{
-          padding-right:0;
+      .split-section {
+        &__text {
+          padding-right: 0;
         }
       }
     }
 
-    &.__layout-reversed{
+    &.__layout-reversed {
       flex-direction: column-reverse;
 
-      .split-section{
+      .split-section {
         &__text {
-        padding-left: 0;
-      }
+          padding-left: 0;
+        }
       }
     }
 

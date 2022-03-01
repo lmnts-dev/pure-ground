@@ -5,6 +5,7 @@
   &__image {
     padding-top: var(--articleCardImageRatio);
     position: relative;
+    overflow: hidden;
 
     &__placeholder,
     img {
@@ -14,6 +15,9 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+      transform: scale(1);
+      will-change: transform;
+      transition: all 0.25s ease;
     }
 
     &__placeholder {
@@ -37,6 +41,17 @@
     &__text {
       grid-column: 1 / -1;
       margin-bottom: 0;
+    }
+  }
+
+  &:hover {
+    .article-card {
+      &__image {
+        &__placeholder,
+        img {
+          transform: scale(1.05);
+        }
+      }
     }
   }
 

@@ -20,7 +20,7 @@
           <h3 class="split-section__text__subheading caption" {{ block.shopify_attributes }}>{{ block.settings.heading }}</h3>
 
         {%- when 'text' -%}
-          <div class="split-section__text__rich-text" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+          <div class="split-section__text__rich-text __article-txt" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
         {%- when 'button' -%}
           {% if block.settings.button_link %}
             <a {% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} class="__btn-clr-{{section.settings.button_color}}" href="{{ block.settings.button_link }}"{% endif %} {{ block.shopify_attributes }}>
@@ -162,7 +162,11 @@
       "options": [
         {
           "value": "default",
-          "label": "Wide, Without Space "
+          "label": "Standard, Without Space"
+        },
+        {
+          "value": "wide",
+          "label": "Wide, Without Space"
         },
         {
           "value": "square",

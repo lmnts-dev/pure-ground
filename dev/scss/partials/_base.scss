@@ -130,6 +130,11 @@ form {
   font-size: 0.8625rem;
   font-weight: 500;
   margin-top: 1rem;
+
+  &:hover {
+    background: var(--color-btn-hover);
+    color: var(--color-btn-hover-txt);
+  }
 }
 
 //Modal styles
@@ -208,5 +213,3 @@ form {
       rgba(var(--color-black), 0.2);
   }
 }
-//Article styles
-////////////////////////////////////

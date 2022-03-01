@@ -1,6 +1,10 @@
 .newsletter-row {
   text-align: center;
 
+  &__heading {
+    margin-bottom: 0;
+  }
+
   &__form {
     display: flex;
     justify-content: center;

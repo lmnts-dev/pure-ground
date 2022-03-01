@@ -30,6 +30,16 @@
 
     &__info {
       padding-top: var(--pxSize);
+
+      a {
+        opacity: 1;
+        will-change: opacity;
+        transition: all 0.25s ease;
+
+        &:hover {
+          opacity: 0.5;
+        }
+      }
     }
 
     svg {
@@ -58,8 +68,14 @@
     padding-top: var(--pxSize);
 
     &__copywright,
-    &__sec-links {
+    .section-footer__links__item__link {
       opacity: 0.5;
+    }
+
+    .section-footer__links__item__link {
+      &:hover {
+        opacity: 1;
+      }
     }
 
     &__copywright {
@@ -86,39 +102,46 @@
     &__item {
       &__link {
         color: var(--color-foreground);
+        opacity: 1;
+        will-change: opacity;
+        transition: all 0.25s ease;
+
+        &:hover {
+          opacity: 0.5;
+        }
       }
     }
   }
 
-   @media screen and (max-width: 676px) {
-      grid-template-columns: 1fr;
+  @media screen and (max-width: 676px) {
+    grid-template-columns: 1fr;
 
-      &__branding{
-        grid-column: 1/-1;
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: calc(var(--pxSize)/1.75);
+    &__branding {
+      grid-column: 1/-1;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: calc(var(--pxSize) / 1.75);
 
-        svg {
-          max-width:130px;
-          padding-right:var(--pxSize);
-        }
+      svg {
+        max-width: 130px;
+        padding-right: var(--pxSize);
       }
+    }
 
-      &__blocks {
-        grid-column: 1/-1;
-        flex-direction: column;
-      }
+    &__blocks {
+      grid-column: 1/-1;
+      flex-direction: column;
+    }
 
     &__bottom {
       flex-direction: column;
 
-      &__sec-links{
+      &__sec-links {
         flex-direction: column;
         text-align: center;
-        gap: calc(var(--pxSize)/2);
+        gap: calc(var(--pxSize) / 2);
       }
-      
+
       &__copywright {
         padding-right: 0;
         padding-bottom: calc(var(--pxSize) / 2);
