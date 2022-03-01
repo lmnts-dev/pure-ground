@@ -13,16 +13,13 @@
 {% assign altText = image.alt %} 
 
 
-{% if image.alt == blank %} 
-  {% assign altText = image.alt %} 
-{% else %}
+{% if altText == blank %} 
   {% if alt != blank %}
     {% assign altText = alt %} 
   {%else%}
     {% assign altText = shop.name %} 
   {%endif%}
-{%endif%}
-
+{% endif %}
 
 <img
     srcset="{%- if image.width >= 375 -%}{{ image | img_url: width: 375 }} 375w,{%- endif -%}
