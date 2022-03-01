@@ -12,6 +12,7 @@
         "button_link": "shopify:\/\/collections",
         "button_color": "default",
         "image": "shopify:\/\/shop_images\/unsplash_IQVFVH0ajag.jpg",
+        "alt": "Image alt text",
         "overlay": 0,
         "hero": true,
         "alignment": "left",
@@ -33,6 +34,7 @@
         "button_link": "shopify:\/\/collections",
         "button_color": "default",
         "image": "shopify:\/\/shop_images\/unsplash_VVe3zOZM88E.jpg",
+        "alt": "Image alt text",
         "overlay": 50,
         "hero": false,
         "alignment": "center",
@@ -54,6 +56,7 @@
         "button_link": "shopify:\/\/pages\/european-operations",
         "button_color": "default",
         "image": "shopify:\/\/shop_images\/unsplash_xDwEa2kaeJA.jpg",
+        "alt": "Image alt text",
         "overlay": 30,
         "hero": false,
         "alignment": "center",
@@ -131,29 +134,50 @@
         "d2a015f6-ec5e-4279-a122-c75324dad550": {
           "type": "icon",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/simply_organice.png",
-            "alt": "Simply Organic logo"
+            "icon": "shopify:\/\/shop_images\/pngaaa.com-2880818.png",
+            "alt": "Celestial Seasonings logo"
           }
         },
         "224b3659-8585-4ecd-af3b-1203bae4b59d": {
           "type": "icon",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/md.png",
-            "alt": "McCormick Logo"
+            "icon": "shopify:\/\/shop_images\/amys-logo.png",
+            "alt": "Amy's Kitchen Logo"
           }
         },
         "0f186d34-13dd-40c1-ae96-9266b6a353d1": {
           "type": "icon",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/starbucks.png",
-            "alt": "Starbucks logo"
+            "icon": "shopify:\/\/shop_images\/traditional-medicinals-logo.png",
+            "alt": "Traditional Medicinals logo"
           }
         },
         "eeca8ca7-1223-42f4-be66-9d19c9680495": {
           "type": "icon",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/simply_organice.png",
-            "alt": "Simply Organic Logo"
+            "icon": "shopify:\/\/shop_images\/jr-watkins-logo.png",
+            "alt": "Watkins Logo"
+          }
+        },
+        "19ea3b46-28e6-4cad-bfe4-432bca3e3973": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/pngfind.com-herbs-png-1420548.png",
+            "alt": "Mountain Rose Herbs"
+          }
+        },
+        "578edcf5-29d4-4dee-8e57-7f52376dfd08": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/starwest-logo.png",
+            "alt": "Starwest Botanicals"
+          }
+        },
+        "66b74de8-3615-45a3-8d9b-351ef30333a9": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/vitality-works-logo.png",
+            "alt": "Vitality Works"
           }
         }
       },
@@ -163,7 +187,10 @@
         "d2a015f6-ec5e-4279-a122-c75324dad550",
         "224b3659-8585-4ecd-af3b-1203bae4b59d",
         "0f186d34-13dd-40c1-ae96-9266b6a353d1",
-        "eeca8ca7-1223-42f4-be66-9d19c9680495"
+        "eeca8ca7-1223-42f4-be66-9d19c9680495",
+        "19ea3b46-28e6-4cad-bfe4-432bca3e3973",
+        "578edcf5-29d4-4dee-8e57-7f52376dfd08",
+        "66b74de8-3615-45a3-8d9b-351ef30333a9"
       ],
       "settings": {
         "heading": "Used by",
@@ -180,7 +207,8 @@
           "settings": {
             "text": "“. Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur “",
             "author": "Lorem Ipsum",
-            "image": "shopify:\/\/shop_images\/unsplash_EAt30ojfzOI.jpg"
+            "image": "shopify:\/\/shop_images\/unsplash_EAt30ojfzOI.jpg",
+            "alt": ""
           }
         },
         "596920b0-a7be-45ab-8351-95b2e717da75": {
@@ -188,7 +216,8 @@
           "settings": {
             "text": "“Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur “",
             "author": "Dolor sit",
-            "image": "shopify:\/\/shop_images\/unsplash_IQVFVH0ajag.jpg"
+            "image": "shopify:\/\/shop_images\/unsplash_IQVFVH0ajag.jpg",
+            "alt": ""
           }
         },
         "bbb86467-9856-4aa5-a40e-826958f624c9": {
@@ -196,7 +225,8 @@
           "settings": {
             "text": "“Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur “",
             "author": "Amet Consect",
-            "image": "shopify:\/\/shop_images\/unsplash_VVe3zOZM88E.jpg"
+            "image": "shopify:\/\/shop_images\/unsplash_VVe3zOZM88E.jpg",
+            "alt": ""
           }
         }
       },
@@ -259,6 +289,7 @@
         "heading": "Operational Excellence",
         "subheading": "Ingredients just the way you want them",
         "image": "shopify:\/\/shop_images\/field.jpg",
+        "alt": "",
         "color_scheme": "cream",
         "top_spacing": 50,
         "bottom_spacing": 50
@@ -268,6 +299,7 @@
       "type": "featured-page-link",
       "settings": {
         "image": "shopify:\/\/shop_images\/man_in_field.jpg",
+        "alt": "Image alt text",
         "page_link": "mission",
         "color_scheme": "cream",
         "top_spacing": 0,
