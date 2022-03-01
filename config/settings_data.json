@@ -1,8 +1,10 @@
 {
   "current": {
-    "pop_up_image": "shopify:\/\/shop_images\/unsplash_1RrszXCTq5U.jpg",
-    "pop_up_heading": "Our shopping experience is coming soon",
-    "pop_up_text": "<p>Sorry for any inconvenience. Sign up for our newsletter and we'll let you know when to come on back and shop.<\/p>",
+    "modal_image": "shopify:\/\/shop_images\/unsplash_1RrszXCTq5U.jpg",
+    "modal_heading": "Our shopping experience is coming soon",
+    "modal_text": "<p>Sorry for any inconvenience. Sign up for our newsletter and we'll let you know when to come on back and shop.<\/p>",
+    "modal_newsletter": true,
+    "resources_page": "resources",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",

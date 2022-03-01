@@ -1,15 +1,34 @@
-<toggle-modal class="cmnc-modal __theme-cream" data-type="modal">
+
+
+<toggle-modal class="cmnc-modal color-cream" data-type="modal">
   <div class="cmnc-modal__content">
     <button class="cmnc-modal__exit">
       {% render 'svg-plus' %}
     </button>
-    <h2 class="h3">Our shopping experience is coming soon!</h2>
-    <p>We can't wait to offer the finest online shopping experience for you. We're working hard at this and apologize for any inconvenience. Please check back soon.</p>
-    <div class="cmnc-modal__plants">
-      {% render 'svg-plants' %}
-      {% render 'svg-plants' %}
-      {% render 'svg-plants' %}
-      {% render 'svg-plants' %}
+    {% if settings.modal_image %}
+      <div class="cmnc-modal__content__image">
+        {% render 'next-gen-img' image: settings.modal_image, alt: settings.modal_heading %}
+      </div>
+    {% endif %}
+    <div class="cmnc-modal__content__text">
+      {% if settings.modal_heading %}
+        <h2 class="h4">{{ settings.modal_heading }}</h2>
+      {% endif %}
+      {% if settings.modal_text %}
+        <p>{{ settings.modal_text }}</p>
+      {% endif %}
+      {% if settings.modal_newsletter %}
+        {% form 'customer', class: "cmnc-modal__form __form-styles" %}
+          <input type="email" placeholder="Email" name="contact[email]" />
+          <input type="submit" value="Sign Up" />
+        {% endform %}
+      {% endif %}
+
+      <div class="cmnc-modal__plants">
+        {% render 'svg-plants' %}
+        {% render 'svg-plants' %}
+      </div>
     </div>
+
   </div>
 </toggle-modal>

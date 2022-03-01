@@ -75,6 +75,10 @@
   --color-btn-txt: rgba(var(--color-grass));
 }
 
+.accent-grass {
+  --color-accent: rgba(var(--color-grass));
+}
+
 .__btn-clr-grass {
   --color-btn: rgba(var(--color-grass));
   --color-btn-txt: rgba(var(--color-cream));
