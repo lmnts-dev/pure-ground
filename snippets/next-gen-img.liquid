@@ -19,6 +19,8 @@
   {%else%}
     {% assign altText = shop.name %} 
   {%endif%}
+{% else %} 
+  {% assign altText = image.alt %} 
 {% endif %}
 
 <img
