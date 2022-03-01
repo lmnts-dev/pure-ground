@@ -19,8 +19,7 @@
   &__parent {
     position: -webkit-sticky;
     position: sticky;
-    top: 0;
-    //  top: var(--navHeight);
+    top: var(--navHeight);
     z-index: 2;
   }
 
@@ -32,10 +31,10 @@
       &__item {
         text-align: center;
 
-        &:first-child{
+        &:first-child {
           position: relative;
-          &:after{
-            content: ""; 
+          &:after {
+            content: "";
             display: inline-block;
             border: solid black;
             border-width: 0 1px 1px 0;
@@ -49,7 +48,7 @@
           }
         }
 
-        &:not(:first-of-type).hide{
+        &:not(:first-of-type).hide {
           display: none;
         }
       }

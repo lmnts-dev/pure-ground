@@ -47,28 +47,29 @@
   &__block {
     flex: calc(50% - calc(var(--pxSize) / 4));
   }
-  
+
   @media screen and (max-width: 676px) {
     flex-direction: column;
 
     &__text {
-        &__blocks{
-          flex-direction: column;
-        }
+      &__blocks {
+        flex-direction: column;
+      }
     }
+
     &__image {
       padding-top: calc(9 / 16 * 100%);
 
-      img{
-        width:100vw;
-        margin-right: calc( var(--sectionHorizontalSpacing) * -1);
+      img {
+        width: 100vw;
+        margin-right: calc(var(--sectionHorizontalSpacing) * -1);
       }
     }
 
-      &__block {
-        &:not(:last-child){
-          margin-bottom: var(--sectionVerticalSpacing); 
-        }
+    &__block {
+      &:not(:last-child) {
+        margin-bottom: var(--sectionVerticalSpacing);
       }
+    }
   }
 }

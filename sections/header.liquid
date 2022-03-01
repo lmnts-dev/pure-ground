@@ -1,80 +1,130 @@
 
-{% comment %}
+
 <header class="site-header">
-  {% for block in section.blocks %}
-    {% case block.type %}
-      {% when 'link' %}
-        {% if block.settings.label and block.settings.link %}
-          <a href="{{ block.settings.link }}">{{ block.settings.label }}</a>
-        {% endif %}
-      {% when 'label' %}
-        {% if block.settings.label %}
-          {% assign labelIndex = forloop.index0 %}
 
-          <div class="site-header__dropdown-item">
-          <span class="site-header__dropdown-item__label">{{ block.settings.label }}</span>
-            <div class="site-header__dropdown-item__dropdown">
-              {% for block in section.blocks %}
-                {% if forloop.index0 > labelIndex %}
-                  {% case block.type %}
-                    {% when 'link' %}
-                      {% break %}
-                    {% when 'label' %}
-                      {% break %}
-                    {% when 'submenu' %}
-                      {% if block.settings.menu %}
-                      <div class="site-header__dropdown-item >
-                        <span>{{ block.settings.menu.title }}</span>
-                          <ul>
-                            {% for link in block.settings.menu.links %}
-                              <li>{{ link.title }}</li>
-                            {% endfor %}
-                          </ul>
-                        </span>
-                      </div>
-                      {% endif %}
-                    {% when 'text' %}
-                      {% if block.settings.heading or block.settings.text or block.settings.button_label or block.settings.button_text %}
-                        <div>
-                          <span></span>
-                          <p class="__article-txt"></p>
-                          <a></a>
-                        </div>
-                      {% endif %}
-                    {% when 'page' %}
-                      {% if block.settings.page and block.settings.image %}
-                        <div>
-                          <div>
-                            {% render 'next-gen-img' image: block.settings.image, alt: block.settings.page.title %}
-                          </div>
-                          {{ block.settings.page.title }}
-                        </div>
-                      {% endif %}
-                    {% when 'articles' %}
-                      {% if block.settings.link_list %}
-                        <div>
-                          <span>{{block.settings.link_list.title }}</span>
-                          <ul>
-                            {% for link in block.settings.link_list.links %}
-                              <li>{{ link.title }}</li>
-                            {% endfor %}
-                          </ul>
-                        </div>
-                      {% endif %}
-                      articles
-                  {% endcase %}
-                {% endif %}
-              {% endfor %}
-            </div>
+  <a class="site-header__logo" href="/">{% render 'svg-logo' %}</a>
+
+  <div class="site-header__main-links">
+    {% for block in section.blocks %}
+      {% case block.type %}
+        {% when 'link' %}
+          {% if block.settings.label and block.settings.link %}
+            <a class="site-header__plain-link p-sm" href="{{ block.settings.link }}" class="p-sm">{{ block.settings.label }}</a>
           {% endif %}
-        </div>
+        {% when 'label' %}
+          {% if block.settings.label %}
+            {% assign labelIndex = forloop.index0 %}
 
-    {% endcase %}
-  {% endfor %}
+            <div class="site-header__dropdown">
+            <dropdown-button class="site-header__dropdown__label p-sm">{{ block.settings.label }}</dropdown-button>
+              <div class="site-header__dropdown__container">
+                <div class="site-header__dropdown__divider">{% render 'svg-divider' %}{% render 'svg-divider' %}</div>
+                {% for block in section.blocks %}
+                  {% if forloop.index0 > labelIndex %}
+                    {% case block.type %}
+                      {% when 'link' %}
+                        {% break %}
+                      {% when 'label' %}
+                        {% break %}
+                      {% when 'submenu' %}
+                        {% if block.settings.menu %}
+                        <div class="site-header__dropdown__block __submenu">
+                          <span class="p-lg">{{ block.settings.menu.title }}</span>
+                            <ul class="site-header__submenu-list">
+                              {% for link in block.settings.menu.links %}
+                                <li><a href="{{ link.url }}" class="p-sm">{{ link.title }}</a></li>
+                              {% endfor %}
+                            </ul>
+                          </span>
+                        </div>
+                        {% endif %}
+                      {% when 'text' %}
+                        {% if block.settings.heading or block.settings.text or block.settings.button_label and block.settings.button_link %}
+                          <div class="site-header__dropdown__block __text-block">
+                            {% if block.settings.heading %} <span>{{ block.settings.heading }}</span>{% endif %}
+                            {% if block.settings.button_label %}<p class="__article-txt">{{ block.settings.button_label }}</p>{% endif %}
+                            {% if block.settings.button_label and block.settings.button_link %}<a href="{{ block.settings.button_link }}" class="btn">{{ block.settings.button_label }}</a>{% endif %}
+                          </div>
+                        {% endif %}
+                      {% when 'page' %}
+                        {% if block.settings.page and block.settings.image %}
+                          <a href="{{ block.settings.page.url }}" class="site-header__dropdown__block __featured-page">
+                            <div class="site-header__image">
+                              {% render 'next-gen-img' image: block.settings.image, alt: block.settings.page.title %}
+                            </div>
+                            <span class="site-header__label p-sm">{{ block.settings.page.title }}</span>
+                          </a>
+                        {% endif %}
+                      {% when 'articles' %}
+                        {% if block.settings.menu %}
+                          <div class="site-header__dropdown__block __articles">
+                            <span class="site-header__label p-lg">{{block.settings.menu.title }}</span>
+                            <ul class="site-header__articles-list">
+                              {% for item in block.settings.menu.links %}
+                                <li>
+                                  {% render 'article-card', article: item.object, style: "teaser" %}
+                                </li>
+                              {% endfor %}
+                            </ul>
+                          </div>
+                        {% endif %}
+                    {% endcase %}
+                  {% endif %}
+                {% endfor %}
+              </div>
+            {% endif %}
+          </div>
+
+      {% endcase %}
+    {% endfor %}
+  </div>
+
+  <div class="site-header__icons">
+
+  </div>
 </header>
 
+{% javascript %}
 
-{% endcomment %}
+  class DropdownButton extends HTMLElement {
+    constructor() {
+      super();
+
+      this.setupListener();
+    }
+
+    //Add a on click listener to every dropdown button
+    setupListener() {
+      this.addEventListener('click', this.updateCategory.bind(this));
+    }
+
+    //on dropdown button click, updates what is active
+    updateCategory() {
+
+      //parent element for this section
+      var thisSection = this.parentNode.parentNode;
+      //all dropdowns in this section
+      var dropdowns = thisSection.querySelectorAll('.site-header__dropdown__label');
+
+      //remove active class on nav buttons
+      for (var i = 0; i < dropdowns.length; i++ ) {
+        if (dropdowns[i] != this ) {
+          dropdowns[i].classList.remove('__active');
+        }
+      }
+
+      //add active class on clicked item
+      this.classList.toggle('__active');
+    }
+  }
+
+  customElements.define('dropdown-button', DropdownButton);
+
+{% endjavascript %}
+
+
+{% comment %}
+
 
 
 <link rel="stylesheet" href="{{ 'component-list-menu.css' | asset_url }}" media="print" onload="this.media='all'">
@@ -160,11 +210,11 @@
 <script src="{{ 'cart-notification.js' | asset_url }}" defer="defer"></script>
 
 <svg xmlns="http://www.w3.org/2000/svg" class="hidden">
-  {% comment %}
+  {% commen %}
     <symbol id="icon-search" viewbox="0 0 18 19" fill="none">
       <path fill-rule="evenodd" clip-rule="evenodd" d="M11.03 11.68A5.784 5.784 0 112.85 3.5a5.784 5.784 0 018.18 8.18zm.26 1.12a6.78 6.78 0 11.72-.7l5.4 5.4a.5.5 0 11-.71.7l-5.41-5.4z" fill="currentColor"/>
     </symbol>
-  {% endcomment %}
+  {% endcommen %}
 
   <symbol id="icon-close" class="icon icon-close" fill="none" viewBox="0 0 18 17">
     <path d="M.865 15.978a.5.5 0 00.707.707l7.433-7.431 7.579 7.282a.501.501 0 00.846-.37.5.5 0 00-.153-.351L9.712 8.546l7.417-7.416a.5.5 0 10-.707-.708L8.991 7.853 1.413.573a.5.5 0 10-.693.72l7.563 7.268-7.418 7.417z" fill="currentColor">
@@ -518,7 +568,7 @@
 
 
 
-{% javascript %}
+{% javascrip %}
   class StickyHeader extends HTMLElement {
     constructor() {
       super();
@@ -608,9 +658,9 @@
   }
 
   customElements.define('sticky-header', StickyHeader);
-{% endjavascript %}
+{% endjavascrip %}
 
-
+{% endcomment %}
 
 <script type="application/ld+json">
   {
