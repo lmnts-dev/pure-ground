@@ -15,9 +15,9 @@
 {% if altText != blank %} 
   {% if alt %}
     {% assign altText = alt%}
-  {% endif %}
-{% else %} 
-  {% assign altText = shop.name %}
+  {% else %} 
+    {% assign altText = shop.name %}
+    {% endif %}
 {% endif %}
 
 <img
@@ -34,7 +34,7 @@
     sizes="{% if sizes %}{{ sizes }}{% else %}100vw{% endif %}"
     src="{{ image | img_url: 'master' }}"
     loading="lazy"
-    alt="{% if alt %}{{ alt }}{% else %}{{ image.alt | escape }}{% endif %}"
+    alt="{{ altText }}"
     width="{{ image.width }}"
     height="{{ image.height }}"
   >
