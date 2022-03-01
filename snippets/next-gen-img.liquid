@@ -13,13 +13,13 @@
 {% assign altText = image.alt %} 
 
 {% if alt == blank %}
- {% assign altText = 'Test1'%} 
+ {% assign altText = alt%} 
 {%elsif alt == ""%}
   {% assign altText = 'Test2'%} 
 {% elsif alt == false%}
    {% assign altText = 'Test3'%} 
   {%else%}
-     {% assign altText = 'Test4'%} 
+     {% assign altText = shop.name %} 
 {%endif%}
 
 
