@@ -10,6 +10,19 @@
     {% render 'next-gen-img' image: image, alt: alt %}
 {% endcomment %}
 
+{% assign altText = image.alt %}  
+
+
+  {% if altText != "" %}
+    {% if alt %}
+      {% assign altText = "test 1" %}
+    {% else %} 
+      {% assign altText = "test 2" %}
+    {% endif %}
+  {% else %} 
+    {% assign altText = "test 3" %}
+  {% endif %}
+
 <img
     srcset="{%- if image.width >= 375 -%}{{ image | img_url: width: 375 }} 375w,{%- endif -%}
       {%- if image.width >= 550 -%}{{ image | img_url: width: 550 }} 550w,{%- endif -%}
@@ -24,7 +37,7 @@
     sizes="{% if sizes %}{{ sizes }}{% else %}100vw{% endif %}"
     src="{{ image | img_url: 'master' }}"
     loading="lazy"
-    alt="{% if alt %}{{ alt }}{% else %}{{ image.alt | escape }}{% endif %}"
+    alt="{{ altText }}"
     width="{{ image.width }}"
     height="{{ image.height }}"
   >
