@@ -7,6 +7,7 @@
     <meta name="theme-color" content="">
     <link rel="canonical" href="{{ canonical_url }}">
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+    <link rel="stylesheet" href="https://use.typekit.net/lxx8fgf.css">
 
     {%- if settings.favicon != blank -%}
       <link rel="icon" type="image/png" href="{{ settings.favicon | img_url: '32x32' }}">
@@ -14,7 +15,6 @@
 
     {%- unless settings.type_header_font.system? and settings.type_body_font.system? -%}
       {% comment %} <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>{% endcomment %}
-      <link rel="stylesheet" href="https://use.typekit.net/lxx8fgf.css">
     {%- endunless -%}
 
     <title>
