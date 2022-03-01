@@ -13,7 +13,7 @@
 {% assign altText = image.alt %} 
 
 
-{% if image.alt != blank %} 
+{% if image.alt == blank %} 
   {% assign altText = image.alt %} 
 {% else %}
   {% if alt != blank %}
