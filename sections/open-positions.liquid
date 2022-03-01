@@ -46,16 +46,12 @@
         <div class="positions__position {% if department == default_department %}__active{% endif %}" data-department="{{ department_handle }}">
             <h3 class="h4">{{block.settings.heading}}</h3>
             
-            <p>{{block.settings.details}}</p>
-
+              <toggle-modal class="collections-grid__container" data-type="container">
+                  <p>{{block.settings.details}}</p>
+            </toggle-modal>
+            
             {% render 'svg-location' %}
             <span>{{block.settings.location}}</span>
-
-             <toggle-modal class="collections-grid__container" data-type="container">
-              {% for block in section.blocks %}
-                  {% render 'collection-card' collection: block.settings.department %}
-              {% endfor %}
-            </toggle-modal>
 
             {% render 'modal' %}
 
