@@ -65,6 +65,13 @@
             "settings": {
               "menu": "featured-resources"
             }
+          },
+          "ba2b2709-6262-4ab8-aa9e-350415bb8808": {
+            "type": "link",
+            "settings": {
+              "label": "Contact",
+              "link": "shopify:\/\/pages\/contact"
+            }
           }
         },
         "block_order": [
@@ -75,7 +82,8 @@
           "aabd9f5b-6fb3-4cd3-9443-4ea104e820c9",
           "b2bcdc3e-53b7-4366-9941-db39b4906944",
           "7f2df142-cc7c-4838-88a4-211f225706f0",
-          "f537cb93-a2e6-4b92-b5fe-d43941dc8f9d"
+          "f537cb93-a2e6-4b92-b5fe-d43941dc8f9d",
+          "ba2b2709-6262-4ab8-aa9e-350415bb8808"
         ],
         "settings": {
           "menu": "main-menu",

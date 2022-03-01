@@ -10,8 +10,10 @@
   {%- endfor -%}
 
   <div class="main-article__breadcrumb">
-    <a href="/pages/resources" class="caption-sm">Resources</a>{% comment %} pull this data from theme settings {% endcomment %}
-    {% render 'svg-arrow' %}
+    {% if settings.resources_page and settings.resources_page.title %}
+      <a href="{{ settings.resources_page.url }}" class="caption-sm">{{ settings.resources_page.title }}</a>
+      {% render 'svg-arrow' %}
+    {% endif %}
     <a href="{{ blog.url }}" class="main-article__breadcrumb__link caption-sm">
       {{ blog.title }}
     </a>
