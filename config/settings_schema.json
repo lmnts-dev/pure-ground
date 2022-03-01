@@ -33,6 +33,17 @@
     ]
   },
   {
+    "name": "Resources Settings",
+    "settings": [
+      {
+        "type": "page",
+        "id": "resources_page",
+        "label": "Resources page",
+        "info": "Which page did you designate as your 'All Resources' page, where all your blogs are listed?"
+      }
+    ]
+  },
+  {
     "name": "t:settings_schema.colors.name",
     "settings": [
       {
