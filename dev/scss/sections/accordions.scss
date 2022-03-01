@@ -124,10 +124,10 @@
       overflow: auto;
     }
 
-      &__accordion {
-        &__label{
-          padding-right: calc(var(--pxSize) / 1.5);
-        }
+    &__accordion {
+      &__label {
+        padding-right: calc(var(--pxSize) / 1.5);
       }
+    }
   }
 }

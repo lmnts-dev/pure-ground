@@ -1,7 +1,11 @@
 .main-article {
   padding: var(--sectionVerticalSpacing) var(--sectionHorizontalSpacing);
-  max-width: calc(var(--sectionHorizontalSpacing) * 7);
-  margin: 0 auto;
+  background: var(--color-background);
+
+  > * {
+    max-width: calc(var(--sectionHorizontalSpacing) * 5);
+    margin: 0 auto;
+  }
 
   &__breadcrumb {
     display: flex;
