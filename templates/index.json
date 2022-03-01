@@ -138,11 +138,11 @@
             "alt": "Celestial Seasonings logo"
           }
         },
-        "224b3659-8585-4ecd-af3b-1203bae4b59d": {
+        "c08a2a5b-6ebe-4cc0-95b3-7691599bfe20": {
           "type": "icon",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/amys-logo.png",
-            "alt": "Amy's Kitchen Logo"
+            "icon": "shopify:\/\/shop_images\/yogi-tea-logo.png",
+            "alt": "Yogi Logo"
           }
         },
         "0f186d34-13dd-40c1-ae96-9266b6a353d1": {
@@ -152,11 +152,18 @@
             "alt": "Traditional Medicinals logo"
           }
         },
-        "eeca8ca7-1223-42f4-be66-9d19c9680495": {
+        "66b74de8-3615-45a3-8d9b-351ef30333a9": {
           "type": "icon",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/jr-watkins-logo.png",
-            "alt": "Watkins Logo"
+            "icon": "shopify:\/\/shop_images\/vitality-works-logo.png",
+            "alt": "Vitality Works"
+          }
+        },
+        "224b3659-8585-4ecd-af3b-1203bae4b59d": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/amys-logo.png",
+            "alt": "Amy's Kitchen Logo"
           }
         },
         "19ea3b46-28e6-4cad-bfe4-432bca3e3973": {
@@ -173,13 +180,6 @@
             "alt": "Starwest Botanicals"
           }
         },
-        "66b74de8-3615-45a3-8d9b-351ef30333a9": {
-          "type": "icon",
-          "settings": {
-            "icon": "shopify:\/\/shop_images\/vitality-works-logo.png",
-            "alt": "Vitality Works"
-          }
-        },
         "c1745d10-1a4a-4570-9a1d-c5496b0280c1": {
           "type": "icon",
           "settings": {
@@ -187,11 +187,11 @@
             "alt": "Frontier Co-Op Logo"
           }
         },
-        "c08a2a5b-6ebe-4cc0-95b3-7691599bfe20": {
+        "eeca8ca7-1223-42f4-be66-9d19c9680495": {
           "type": "icon",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/yogi-tea-logo.png",
-            "alt": "Yogi Logo"
+            "icon": "shopify:\/\/shop_images\/jr-watkins-logo.png",
+            "alt": "Watkins Logo"
           }
         }
       },
@@ -199,14 +199,14 @@
         "ddc6ae4f-850d-4af2-b30f-b2cfa4c27d8b",
         "0a3401c2-cdcb-45c7-a115-863942ecd068",
         "d2a015f6-ec5e-4279-a122-c75324dad550",
-        "224b3659-8585-4ecd-af3b-1203bae4b59d",
+        "c08a2a5b-6ebe-4cc0-95b3-7691599bfe20",
         "0f186d34-13dd-40c1-ae96-9266b6a353d1",
-        "eeca8ca7-1223-42f4-be66-9d19c9680495",
+        "66b74de8-3615-45a3-8d9b-351ef30333a9",
+        "224b3659-8585-4ecd-af3b-1203bae4b59d",
         "19ea3b46-28e6-4cad-bfe4-432bca3e3973",
         "578edcf5-29d4-4dee-8e57-7f52376dfd08",
-        "66b74de8-3615-45a3-8d9b-351ef30333a9",
         "c1745d10-1a4a-4570-9a1d-c5496b0280c1",
-        "c08a2a5b-6ebe-4cc0-95b3-7691599bfe20"
+        "eeca8ca7-1223-42f4-be66-9d19c9680495"
       ],
       "settings": {
         "heading": "Used by",
