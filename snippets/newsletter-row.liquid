@@ -10,10 +10,17 @@
   {% render 'newsletter-row' %}
 {% endcomment %}
 
+{% style %}
+  .newsletter-row {
+    --topSpacingRatio: 60 / 100;
+    --bottomSpacingRatio: 50 / 100;
+  }
+{% endstyle %}
+
 <section class="newsletter-row color-sun">
 
   {% if section.settings.newsletter_heading %}
-    <h2 class="h3">{{ section.settings.newsletter_heading }}</h2>
+    <h2 class="newsletter-row__heading h5">{{ section.settings.newsletter_heading }}</h2>
   {% endif %}
 
   {% if section.settings.newsletter_description %}

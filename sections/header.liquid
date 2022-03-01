@@ -1,3 +1,82 @@
+
+{% comment %}
+<header class="site-header">
+  {% for block in section.blocks %}
+    {% case block.type %}
+      {% when 'link' %}
+        {% if block.settings.label and block.settings.link %}
+          <a href="{{ block.settings.link }}">{{ block.settings.label }}</a>
+        {% endif %}
+      {% when 'label' %}
+        {% if block.settings.label %}
+          {% assign labelIndex = forloop.index0 %}
+
+          <div class="site-header__dropdown-item">
+          <span class="site-header__dropdown-item__label">{{ block.settings.label }}</span>
+            <div class="site-header__dropdown-item__dropdown">
+              {% for block in section.blocks %}
+                {% if forloop.index0 > labelIndex %}
+                  {% case block.type %}
+                    {% when 'link' %}
+                      {% break %}
+                    {% when 'label' %}
+                      {% break %}
+                    {% when 'submenu' %}
+                      {% if block.settings.menu %}
+                      <div class="site-header__dropdown-item >
+                        <span>{{ block.settings.menu.title }}</span>
+                          <ul>
+                            {% for link in block.settings.menu.links %}
+                              <li>{{ link.title }}</li>
+                            {% endfor %}
+                          </ul>
+                        </span>
+                      </div>
+                      {% endif %}
+                    {% when 'text' %}
+                      {% if block.settings.heading or block.settings.text or block.settings.button_label or block.settings.button_text %}
+                        <div>
+                          <span></span>
+                          <p></p>
+                          <a></a>
+                        </div>
+                      {% endif %}
+                    {% when 'page' %}
+                      {% if block.settings.page and block.settings.image %}
+                        <div>
+                          <div>
+                            {% render 'next-gen-img' image: block.settings.image, alt: block.settings.page.title %}
+                          </div>
+                          {{ block.settings.page.title }}
+                        </div>
+                      {% endif %}
+                    {% when 'articles' %}
+                      {% if block.settings.link_list %}
+                        <div>
+                          <span>{{block.settings.link_list.title }}</span>
+                          <ul>
+                            {% for link in block.settings.link_list.links %}
+                              <li>{{ link.title }}</li>
+                            {% endfor %}
+                          </ul>
+                        </div>
+                      {% endif %}
+                      articles
+                  {% endcase %}
+                {% endif %}
+              {% endfor %}
+            </div>
+          {% endif %}
+        </div>
+
+    {% endcase %}
+  {% endfor %}
+</header>
+
+
+{% endcomment %}
+
+
 <link rel="stylesheet" href="{{ 'component-list-menu.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-search.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-menu-drawer.css' | asset_url }}" media="print" onload="this.media='all'">
@@ -437,6 +516,8 @@
 
 {%- render 'cart-notification', color_scheme: "cream" -%}
 
+
+
 {% javascript %}
   class StickyHeader extends HTMLElement {
     constructor() {
@@ -529,6 +610,8 @@
   customElements.define('sticky-header', StickyHeader);
 {% endjavascript %}
 
+
+
 <script type="application/ld+json">
   {
     "@context": "http://schema.org",
@@ -548,6 +631,7 @@
     "url": {{ shop.url | append: page.url | json }}
   }
 </script>
+
 
 {%- if request.page_type == 'index' -%}
   {% assign potential_action_target = shop.url | append: routes.search_url | append: "?q={search_term_string}" %}
@@ -708,11 +792,6 @@
           "type": "header",
           "content": "Collection of articles displayed in a dropdown",
           "info": "Make sure you add a dropdown label at some point before this item in order to know which dropdown this belongs in."
-        },
-        {
-          "type": "text",
-          "id": "heading",
-          "label": "Heading"
         },
         {
           "type": "link_list",

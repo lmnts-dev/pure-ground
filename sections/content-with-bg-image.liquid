@@ -2,6 +2,8 @@
     #Content-with-bg-image-{{ section.id }} {
       --topSpacingRatio: {{section.settings.top_spacing}} / 100;
       --bottomSpacingRatio: {{section.settings.bottom_spacing}} / 100;
+      --topInternalSpacingRatio: {{section.settings.top_internal_spacing}} / 100;
+      --bottomInternalSpacingRatio: {{section.settings.bottom_internal_spacing}} / 100;
       --overlayOpacity: calc({{section.settings.overlay}} / 100);
     }
  {% endstyle %}
@@ -248,6 +250,10 @@
          "label":"Color Scheme"
       },
       {
+         "type": "header",
+         "content": "Inernal Spacing"
+      },
+      {
          "type":"range",
          "id":"top_spacing",
          "min":0,
@@ -266,6 +272,30 @@
          "unit":"%",
          "label":"Bottom Spacing",
          "default":0
+      },
+      {
+         "type": "header",
+         "content": "External Spacing"
+      },
+      {
+         "type":"range",
+         "id":"top_internal_spacing",
+         "min":0,
+         "max":100,
+         "step":10,
+         "unit":"%",
+         "label":"Top Spacing",
+         "default":100
+      },
+      {
+         "type":"range",
+         "id":"bottom_internal_spacing",
+         "min":0,
+         "max":100,
+         "step":10,
+         "unit":"%",
+         "label":"Bottom Spacing",
+         "default":100
       }
    ],
    "presets":[

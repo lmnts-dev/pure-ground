@@ -20,3 +20,18 @@ header.header {
     padding-right: var(--pxSize);
   }
 }
+
+.site-header {
+  display: flex;
+  gap: var(--pxSize);
+
+  &__dropdown-item {
+    &__label {
+      font-weight: bold;
+    }
+
+    &__dropdown {
+      display: flex;
+    }
+  }
+}

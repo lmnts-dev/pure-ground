@@ -4,7 +4,8 @@
   &__inner {
     position: relative;
     width: 100%;
-    padding: var(--sectionVerticalSpacing) var(--sectionHorizontalSpacing);
+    padding: var(--topInternalSpacingRatio) var(--sectionHorizontalSpacing)
+      var(--bottomInternalSpacingRatio) var(--sectionHorizontalSpacing);
     color: var(--color-foreground);
     overflow: hidden;
 
@@ -117,6 +118,8 @@
         --color-background: rgba(var(--color-black));
         --color-btn: rgba(var(--color-cream));
         --color-btn-txt: rgba(var(--color-black));
+        --color-btn-hover: rgba(var(--color-ground));
+        --color-btn-hover-txt: rgba(var(--color-cream));
       }
     }
   }
@@ -128,6 +131,8 @@
         --color-background: rgba(var(--color-cream));
         --color-btn: rgba(var(--color-ground));
         --color-btn-txt: rgba(var(--color-cream));
+        --color-btn-hover: rgba(var(--color-cream));
+        --color-btn-hover-txt: rgba(var(--color-ground));
       }
     }
   }
