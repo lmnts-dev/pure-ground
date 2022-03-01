@@ -4,8 +4,28 @@
     "theme_name": "Morning",
     "theme_version": "3.0.0",
     "theme_author": "Commence",
-    "theme_documentation_url": "https:\/\/help.shopify.com\/en\/manual\/online-store\/themes",
-    "theme_support_url": "https:\/\/commence.studio\/contact"
+    "theme_documentation_url": "https://help.shopify.com/en/manual/online-store/themes",
+    "theme_support_url": "https://commence.studio/contact"
+  },
+  {
+    "name": "Coming Soon Pop Up Details",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "pop_up_image",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "pop_up_heading",
+        "label": "Heading"
+      },
+      {
+        "type": "richtext",
+        "id": "pop_up_text",
+        "label": "Text"
+      }
+    ]
   },
   {
     "name": "t:settings_schema.colors.name",
