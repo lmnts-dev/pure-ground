@@ -195,19 +195,24 @@ form {
   &__plants {
     position: absolute;
     display: flex;
-    left: 0;
+    right: 0;
     bottom: 0;
     width: 100%;
-    gap: 3%;
+    gap: 6%;
 
     svg {
-      width: calc(91% / 4);
+      width: calc(88% / 2);
       height: auto;
 
       * {
         fill: var(--color-accent);
       }
     }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
   }
 
   &__content {
@@ -220,9 +225,41 @@ form {
     background: var(--color-background);
     color: var(--color-text);
     overflow: auto;
+    display: flex;
 
-    padding: var(--sectionVerticalSpacing) var(--sectionHorizontalSpacing);
     box-shadow: 0px calc(var(--pxSize) / 4) calc(var(--pxSize) / 2)
       rgba(var(--color-black), 0.2);
+
+    &__text,
+    &__image {
+      flex: 50%;
+    }
+
+    &__image {
+      position: relative;
+
+      img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &__text {
+      position: relative;
+      padding: var(--sectionVerticalSpacing) var(--pxSize);
+    }
+  }
+
+  @media screen and (max-width: 676px) {
+    &__content {
+      flex-direction: column;
+
+      &__image {
+        min-height: 20vh;
+      }
+    }
   }
 }

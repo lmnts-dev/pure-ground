@@ -4,26 +4,31 @@
     "theme_name": "Morning",
     "theme_version": "3.0.0",
     "theme_author": "Commence",
-    "theme_documentation_url": "https:\/\/help.shopify.com\/en\/manual\/online-store\/themes",
-    "theme_support_url": "https:\/\/commence.studio\/contact"
+    "theme_documentation_url": "https://help.shopify.com/en/manual/online-store/themes",
+    "theme_support_url": "https://commence.studio/contact"
   },
   {
-    "name": "Coming Soon Pop Up Details",
+    "name": "Coming Soon Modal Details",
     "settings": [
       {
         "type": "image_picker",
-        "id": "pop_up_image",
+        "id": "modal_image",
         "label": "Image"
       },
       {
         "type": "text",
-        "id": "pop_up_heading",
+        "id": "modal_heading",
         "label": "Heading"
       },
       {
         "type": "richtext",
-        "id": "pop_up_text",
+        "id": "modal_text",
         "label": "Text"
+      },
+      {
+        "type": "checkbox",
+        "id": "modal_newsletter",
+        "label": "Include newsletter form?"
       }
     ]
   },
