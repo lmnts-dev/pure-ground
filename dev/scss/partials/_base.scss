@@ -9,6 +9,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   min-height: 100%;
+  background: var(--color-background);
+  color: var(--color-foreground);
+
+  main {
+    > *:not(.section-image__wrapper):not(.content-with-bg-image__wrapper) {
+      margin-top: var(--navHeight);
+    }
+  }
 }
 
 //Sections' space and color defaults

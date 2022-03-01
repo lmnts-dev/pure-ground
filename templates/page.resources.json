@@ -10,6 +10,13 @@
     "1645488674b1f1a56b": {
       "type": "sub-navigation",
       "blocks": {
+        "6306711e-e412-4cfc-8c26-439da8c25027": {
+          "type": "link",
+          "settings": {
+            "label": "All Resources",
+            "link": "shopify:\/\/pages\/resources"
+          }
+        },
         "99613ba6-4a93-4210-8756-93cf3484f4c3": {
           "type": "link",
           "settings": {
@@ -26,6 +33,7 @@
         }
       },
       "block_order": [
+        "6306711e-e412-4cfc-8c26-439da8c25027",
         "99613ba6-4a93-4210-8756-93cf3484f4c3",
         "1df92e6a-f91d-4489-a472-9acbcd16ca9c"
       ],

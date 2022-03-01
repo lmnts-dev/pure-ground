@@ -1,88 +1,93 @@
 
+{% for i in (1..2) %}
+  {% assign style = "on-scroll" %}
+  {% if forloop.index0 == 1 %}
+    {% assign style = "relative" %}
+  {% endif %}
 
-<header class="site-header">
+  <{% if style == "on-scroll" %}sticky-header{% else %}header{% endif %} class="site-header __style-{{ style }}">
+    <a class="site-header__logo" href="/">{% render 'svg-logo' %}</a>
 
-  <a class="site-header__logo" href="/">{% render 'svg-logo' %}</a>
-
-  <div class="site-header__main-links">
-    {% for block in section.blocks %}
-      {% case block.type %}
-        {% when 'link' %}
-          {% if block.settings.label and block.settings.link %}
-            <a class="site-header__plain-link p-sm" href="{{ block.settings.link }}" class="p-sm">{{ block.settings.label }}</a>
-          {% endif %}
-        {% when 'label' %}
-          {% if block.settings.label %}
-            {% assign labelIndex = forloop.index0 %}
-
-            <div class="site-header__dropdown">
-            <dropdown-button class="site-header__dropdown__label p-sm">{{ block.settings.label }}</dropdown-button>
-              <div class="site-header__dropdown__container">
-                <div class="site-header__dropdown__divider">{% render 'svg-divider' %}{% render 'svg-divider' %}</div>
-                {% for block in section.blocks %}
-                  {% if forloop.index0 > labelIndex %}
-                    {% case block.type %}
-                      {% when 'link' %}
-                        {% break %}
-                      {% when 'label' %}
-                        {% break %}
-                      {% when 'submenu' %}
-                        {% if block.settings.menu %}
-                        <div class="site-header__dropdown__block __submenu">
-                          <span class="p-lg">{{ block.settings.menu.title }}</span>
-                            <ul class="site-header__submenu-list">
-                              {% for link in block.settings.menu.links %}
-                                <li><a href="{{ link.url }}" class="p-sm">{{ link.title }}</a></li>
-                              {% endfor %}
-                            </ul>
-                          </span>
-                        </div>
-                        {% endif %}
-                      {% when 'text' %}
-                        {% if block.settings.heading or block.settings.text or block.settings.button_label and block.settings.button_link %}
-                          <div class="site-header__dropdown__block __text-block">
-                            {% if block.settings.heading %} <span>{{ block.settings.heading }}</span>{% endif %}
-                            {% if block.settings.button_label %}<p class="__article-txt">{{ block.settings.button_label }}</p>{% endif %}
-                            {% if block.settings.button_label and block.settings.button_link %}<a href="{{ block.settings.button_link }}" class="btn">{{ block.settings.button_label }}</a>{% endif %}
-                          </div>
-                        {% endif %}
-                      {% when 'page' %}
-                        {% if block.settings.page and block.settings.image %}
-                          <a href="{{ block.settings.page.url }}" class="site-header__dropdown__block __featured-page">
-                            <div class="site-header__image">
-                              {% render 'next-gen-img' image: block.settings.image, alt: block.settings.page.title %}
-                            </div>
-                            <span class="site-header__label p-sm">{{ block.settings.page.title }}</span>
-                          </a>
-                        {% endif %}
-                      {% when 'articles' %}
-                        {% if block.settings.menu %}
-                          <div class="site-header__dropdown__block __articles">
-                            <span class="site-header__label p-lg">{{block.settings.menu.title }}</span>
-                            <ul class="site-header__articles-list">
-                              {% for item in block.settings.menu.links %}
-                                <li>
-                                  {% render 'article-card', article: item.object, style: "teaser" %}
-                                </li>
-                              {% endfor %}
-                            </ul>
-                          </div>
-                        {% endif %}
-                    {% endcase %}
-                  {% endif %}
-                {% endfor %}
-              </div>
+    <div class="site-header__main-links">
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when 'link' %}
+            {% if block.settings.label and block.settings.link %}
+              <a class="site-header__plain-link p-sm" href="{{ block.settings.link }}" class="p-sm">{{ block.settings.label }}</a>
             {% endif %}
-          </div>
+          {% when 'label' %}
+            {% if block.settings.label %}
+              {% assign labelIndex = forloop.index0 %}
 
-      {% endcase %}
-    {% endfor %}
-  </div>
+              <div class="site-header__dropdown">
+              <dropdown-button class="site-header__dropdown__label p-sm">{{ block.settings.label }}</dropdown-button>
+                <div class="site-header__dropdown__container">
+                  <div class="site-header__dropdown__divider">{% render 'svg-divider' color: block.settings.color %}{% render 'svg-divider' color: block.settings.color %}</div>
+                  {% for block in section.blocks %}
+                    {% if forloop.index0 > labelIndex %}
+                      {% case block.type %}
+                        {% when 'link' %}
+                          {% break %}
+                        {% when 'label' %}
+                          {% break %}
+                        {% when 'submenu' %}
+                          {% if block.settings.menu %}
+                          <div class="site-header__dropdown__block __submenu">
+                            <span class="p-lg">{{ block.settings.menu.title }}</span>
+                              <ul class="site-header__submenu-list">
+                                {% for link in block.settings.menu.links %}
+                                  <li><a href="{{ link.url }}" class="p-sm">{{ link.title }}</a></li>
+                                {% endfor %}
+                              </ul>
+                            </span>
+                          </div>
+                          {% endif %}
+                        {% when 'text' %}
+                          {% if block.settings.heading or block.settings.text or block.settings.button_label and block.settings.button_link %}
+                            <div class="site-header__dropdown__block __text-block">
+                              {% if block.settings.heading %} <span>{{ block.settings.heading }}</span>{% endif %}
+                              {% if block.settings.button_label %}<p class="__article-txt">{{ block.settings.button_label }}</p>{% endif %}
+                              {% if block.settings.button_label and block.settings.button_link %}<a href="{{ block.settings.button_link }}" class="btn">{{ block.settings.button_label }}</a>{% endif %}
+                            </div>
+                          {% endif %}
+                        {% when 'page' %}
+                          {% if block.settings.page and block.settings.image %}
+                            <a href="{{ block.settings.page.url }}" class="site-header__dropdown__block __featured-page">
+                              <div class="site-header__image">
+                                {% render 'next-gen-img' image: block.settings.image, alt: block.settings.page.title %}
+                              </div>
+                              <span class="site-header__label p-sm">{{ block.settings.page.title }}</span>
+                            </a>
+                          {% endif %}
+                        {% when 'articles' %}
+                          {% if block.settings.menu %}
+                            <div class="site-header__dropdown__block __articles">
+                              <span class="site-header__label p-lg">{{block.settings.menu.title }}</span>
+                              <ul class="site-header__articles-list">
+                                {% for item in block.settings.menu.links %}
+                                  <li>
+                                    {% render 'article-card', article: item.object, style: "teaser" %}
+                                  </li>
+                                {% endfor %}
+                              </ul>
+                            </div>
+                          {% endif %}
+                      {% endcase %}
+                    {% endif %}
+                  {% endfor %}
+                </div>
+              {% endif %}
+            </div>
 
-  <div class="site-header__icons">
+        {% endcase %}
+      {% endfor %}
+    </div>
 
-  </div>
-</header>
+    <div class="site-header__icons">
+
+    </div>
+  </{% if style == "on-scroll" %}sticky-header{% else %}header{% endif %}>
+{% endfor %}
 
 {% javascript %}
 
@@ -95,14 +100,14 @@
 
     //Add a on click listener to every dropdown button
     setupListener() {
-      this.addEventListener('click', this.updateCategory.bind(this));
+      this.addEventListener('click', this.updateActiveDropdown.bind(this));
     }
 
     //on dropdown button click, updates what is active
-    updateCategory() {
+    updateActiveDropdown() {
 
       //parent element for this section
-      var thisSection = this.parentNode.parentNode;
+      var thisSection = this.parentNode.parentNode.parentNode;
       //all dropdowns in this section
       var dropdowns = thisSection.querySelectorAll('.site-header__dropdown__label');
 
@@ -115,10 +120,52 @@
 
       //add active class on clicked item
       this.classList.toggle('__active');
+
+      if ( this.classList.contains('__active') ){
+        thisSection.classList.add("__dropdown-open");
+      }
+      else {
+        thisSection.classList.remove("__dropdown-open");
+      }
     }
   }
 
   customElements.define('dropdown-button', DropdownButton);
+
+  class StickyHeader extends HTMLElement {
+    constructor() {
+      super();
+
+       document.addEventListener('scroll', this.updateClass.bind(this), false);
+       document.lastScollPosition = 0;
+    }
+
+    updateClass(e) {
+      //all dropdowns in header
+      var dropdowns = document.querySelectorAll('.site-header__dropdown__label');
+
+      for (var i = 0; i < dropdowns.length; i++ ){
+        dropdowns[i].classList.remove('__active');
+      }
+      
+      let scrollPosition = window.pageYOffset;
+      let lastScollPosition = e.currentTarget.lastScollPosition;
+      let scrollingDown = false;
+      if ( lastScollPosition < scrollPosition ) {
+        scrollingDown = true;
+      }
+
+      if ( !scrollingDown && scrollPosition > 200 ) {
+        this.classList.add('__visible');
+      } else {
+        this.classList.remove('__visible');
+      }
+
+      document.lastScollPosition = scrollPosition;
+    }
+  }
+
+  customElements.define('sticky-header', StickyHeader);
 
 {% endjavascript %}
 

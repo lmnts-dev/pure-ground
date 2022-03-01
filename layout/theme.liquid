@@ -7,6 +7,7 @@
     <meta name="theme-color" content="">
     <link rel="canonical" href="{{ canonical_url }}">
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+    <link rel="stylesheet" href="https://use.typekit.net/lxx8fgf.css">
 
     {%- if settings.favicon != blank -%}
       <link rel="icon" type="image/png" href="{{ settings.favicon | img_url: '32x32' }}">
@@ -14,7 +15,6 @@
 
     {%- unless settings.type_header_font.system? and settings.type_body_font.system? -%}
       {% comment %} <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>{% endcomment %}
-      <link rel="stylesheet" href="https://use.typekit.net/lxx8fgf.css">
     {%- endunless -%}
 
     <title>
@@ -48,11 +48,11 @@
       {{ settings.type_header_font | font_face: font_display: 'swap' }}
 
       :root {
-        --font-body-family: "Filson Pro"; /*{{ settings.type_body_font.family }}, {{ settings.type_body_font.fallback_families }};*/
+        --font-body-family: "filson-pro"; /*{{ settings.type_body_font.family }}, {{ settings.type_body_font.fallback_families }};*/
         --font-body-style: normal; /*{{ settings.type_body_font.style }};*/
         --font-body-weight: 350; /*{{ settings.type_body_font.weight }};*/
 
-        --font-heading-family: "Filson Pro"; /*{{ settings.type_header_font.family }}, {{ settings.type_header_font.fallback_families }};*/
+        --font-heading-family: "filson-pro"; /*{{ settings.type_header_font.family }}, {{ settings.type_header_font.fallback_families }};*/
         --font-heading-style: normal; /*{{ settings.type_header_font.style }};*/
         --font-heading-weight: 900; /*{{ settings.type_header_font.weight }};*/
 
@@ -213,7 +213,7 @@
     
   </head>
 
-  <body class="gradient">
+  <body>
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ "accessibility.skip_to_text" | t }}
     </a>

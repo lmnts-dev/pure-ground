@@ -28,10 +28,29 @@ header.header {
   justify-content: space-between;
   align-items: center;
   padding: 0 calc(var(--pxSize) * 1.5);
-  background: var(--color-background);
   position: fixed;
   inset: 0px 0px auto 0px;
   width: 100%;
+  z-index: 999;
+
+  &.__style-on-scroll {
+    transform: translateY(-100%);
+    background: var(--color-background);
+    will-change: transform;
+    transition: all 0.25s ease;
+
+    &.__visible {
+      transform: translateY(0);
+    }
+  }
+
+  &.__style-relative {
+    position: absolute;
+
+    &.__dropdown-open {
+      background: var(--color-background);
+    }
+  }
 
   &__plain-link,
   &__dropdown__label {
@@ -106,6 +125,16 @@ header.header {
       width: 100%;
       background: var(--color-background);
       padding: var(--pxSize) calc(var(--pxSize) * 1.5);
+
+      &:before {
+        content: "";
+        position: absolute;
+        inset: 100% 0 auto 0;
+        width: 100%;
+        height: 100vh;
+        background: var(--color-foreground);
+        opacity: 0.5;
+      }
     }
 
     &__block {
