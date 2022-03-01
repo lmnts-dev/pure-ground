@@ -12,14 +12,14 @@
 
 {% assign altText = image.alt %}  
 
-{% if altText != blank %} 
-  {% if alt %}
+{% if alt %}
+  {% if altText != blank %} 
     {% assign altText = alt%}
   {% else %} 
     {% assign altText = shop.name %}
   {% endif %}
 {% else %} 
-      {% assign altText = alt%}
+  {% assign altText = shop.name %}
 {% endif %}
 
 <img
