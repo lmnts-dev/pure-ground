@@ -99,6 +99,26 @@
         "top_spacing": 50,
         "bottom_spacing": 50
       }
+    },
+    "1646145575bcc15287": {
+      "type": "gallery",
+      "blocks": {
+        "4079ecda-58cd-4eb6-9e18-00a5559422fb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/yogi-tea-vector-logo-2.png",
+            "alt": "Image alt text"
+          }
+        }
+      },
+      "block_order": [
+        "4079ecda-58cd-4eb6-9e18-00a5559422fb"
+      ],
+      "settings": {
+        "color_scheme": "cream",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
     }
   },
   "order": [
@@ -108,6 +128,7 @@
     "16444369586030090c",
     "164443697608885640",
     "164443700536e713e4",
-    "1644437039a00500a9"
+    "1644437039a00500a9",
+    "1646145575bcc15287"
   ]
 }
