@@ -39,7 +39,7 @@
                 <h3 class="bi-column-text-blocks__block__heading caption">{{ block.settings.heading }}</h3>
               {% endif %}
               {% if block.settings.content %}
-                <p class="bi-column-text-blocks__block__text">{{ block.settings.content }}</p>
+                <p class="bi-column-text-blocks__block__text __article-txt">{{ block.settings.content }}</p>
               {% endif %}
               {% if block.settings.button_link and block.settings.button_label %}
                 <a class="bi-column-text-blocks__block__btn btn __btn-clr-{{block.settings.button_color}}" {% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} {{ block.shopify_attributes }}>

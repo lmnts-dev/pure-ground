@@ -62,7 +62,7 @@
         "image": "shopify://shop_images/ingredients.jpg",
         "color_scheme": "cream",
         "layout": "default",
-        "image_style": "default",
+        "image_style": "wide",
         "top_spacing": 50,
         "bottom_spacing": 50
       }

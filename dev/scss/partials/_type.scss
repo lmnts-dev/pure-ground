@@ -156,9 +156,13 @@ li {
   margin: 0;
 }
 
-.article-text {
+.article-txt {
   a {
     position: relative;
+    color: var(--color-accent);
+    opacity: 1;
+    will-change: opacity;
+    transition: all 0.25s ease;
 
     &:after {
       content: "";
@@ -167,15 +171,17 @@ li {
       right: 0;
       bottom: 0;
       height: 1px;
-      background: var(--color-foreground);
-      transform: scaleX(1);
+      background: var(--color-accent);
+      transform: scale(1);
       will-change: transform;
       transition: all 0.25s ease;
     }
 
     &:hover {
+      opacity: 0.8;
+
       &:after {
-        transform: scaleX(1.05);
+        transform: scale(1.1, 1.5);
       }
     }
   }

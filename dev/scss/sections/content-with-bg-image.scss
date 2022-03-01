@@ -99,10 +99,7 @@
     }
   }
 
-  &.__as-hero {
-    padding-left: 0;
-    padding-right: 0;
-
+  &.__accent-color {
     .content-with-bg-image {
       &__heading {
         color: var(--color-accent);
@@ -110,7 +107,12 @@
     }
   }
 
-  &:not(.__as-hero) {
+  &.__fullwidth {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &:not(.__fullwidth) {
     padding-left: var(--contentWithBgImageGap);
     padding-right: var(--contentWithBgImageGap);
   }

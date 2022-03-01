@@ -33,7 +33,7 @@
             <h3 class="h4">{{block.settings.heading}}</h3>
             {% render 'svg-plus' %}
           </label>
-          <div class="accordions__accordion__content">
+          <div class="accordions__accordion__content __article-txt">
             {{block.settings.content}}
           </div>
         </div>
@@ -73,7 +73,7 @@
     {% endif %}
 
     {% if section.settings.text %}
-      <div class="accordions__text article-text">
+      <div class="accordions__text article-txt">
         {{ section.settings.text }}
       </div>
     {% endif %}
