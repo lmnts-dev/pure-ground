@@ -14,12 +14,14 @@
 
   {% if alt %} 
     {% assign altText = alt%}
-  {% else %} 
+  {% elsif %} 
     {% if altText != blank %} 
       {% assign altText = "Alt here" %}
     {% else %} 
       {% assign altText = shop.name %}
     {% endif %}
+  {% else %}
+    {% assign altText = shop.name %}
   {% endif %}
 
 
