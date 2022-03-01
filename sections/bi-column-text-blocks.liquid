@@ -9,7 +9,11 @@
 
   {% if section.settings.image %}
     <div class="bi-column-text-blocks__image">
-      {% render 'next-gen-img', image: section.settings.image %}
+      {% if section.settings.alt == "" %} 
+        {% render 'next-gen-img', image: section.settings.image, alt: 'Pure Ground Ingredients' %}
+      {% else %} 
+        {% render 'next-gen-img', image: section.settings.image, alt: section.settings.alt %}
+      {% endif %}
     </div>
   {% endif %}
 
@@ -74,7 +78,7 @@
       "id": "heading",
       "label": "Heading"
     },
-      {
+    {
       "type": "text",
       "id": "subheading",
       "label": "Subheading"
@@ -84,6 +88,11 @@
       "id": "image",
       "label": "Image",
       "info": "Image displayed on left side of entire section"
+    },
+    {
+      "type": "text",
+      "id": "alt",
+      "label": "Image Alt Text"
     },
     {
     "type": "select",
