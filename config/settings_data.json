@@ -1,13 +1,15 @@
 {
   "current": {
-    "modal_image": "shopify://shop_images/unsplash_1RrszXCTq5U.jpg",
+    "modal_image": "shopify:\/\/shop_images\/unsplash_1RrszXCTq5U.jpg",
     "modal_heading": "Our shopping experience is coming soon",
-    "modal_text": "<p>Sorry for any inconvenience. Sign up for our newsletter and we'll let you know when to come on back and shop.</p>",
+    "modal_text": "<p>Sorry for any inconvenience. Sign up for our newsletter and we'll let you know when to come on back and shop.<\/p>",
     "modal_newsletter": true,
+    "resources_page": "resources",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
-        "settings": {}
+        "settings": {
+        }
       },
       "header": {
         "type": "header",
@@ -16,7 +18,7 @@
             "type": "link",
             "settings": {
               "label": "Services",
-              "link": "shopify://pages/services"
+              "link": "shopify:\/\/pages\/services"
             }
           },
           "d9d4a0f1-92e8-4a6c-964f-c942b3f49c06": {
@@ -36,7 +38,7 @@
             "type": "page",
             "settings": {
               "page": "sustainability",
-              "image": "shopify://shop_images/Rectangle_34.jpg"
+              "image": "shopify:\/\/shop_images\/Rectangle_34.jpg"
             }
           },
           "aabd9f5b-6fb3-4cd3-9443-4ea104e820c9": {
@@ -98,27 +100,34 @@
             }
           }
         },
-        "block_order": ["footer-0", "footer-1"],
+        "block_order": [
+          "footer-0",
+          "footer-1"
+        ],
         "settings": {
           "color_scheme": "ground",
           "newsletter_enable": false,
           "newsletter_heading": "Subscribe to our Newsletter",
           "newsletter_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
           "show_social": true,
-          "address": "<p>2535 Business Parkway<br/>Minden, NV 89423</p><p><a href=\"mailto:info@puregroundingredients.com\" title=\"mailto:info@puregroundingredients.com\">info@puregroundingredients.com</a><br/><a href=\"tel:775-297-4047\" title=\"tel:775-297-4047\">775-297-4047</a></p>",
+          "address": "<p>2535 Business Parkway<br\/>Minden, NV 89423<\/p><p><a href=\"mailto:info@puregroundingredients.com\" title=\"mailto:info@puregroundingredients.com\">info@puregroundingredients.com<\/a><br\/><a href=\"tel:775-297-4047\" title=\"tel:775-297-4047\">775-297-4047<\/a><\/p>",
           "secondary_links": "secondary"
         }
       },
       "main-password-header": {
         "type": "main-password-header",
-        "settings": {}
+        "settings": {
+        }
       },
       "main-password-footer": {
         "type": "main-password-footer",
-        "settings": {}
+        "settings": {
+        }
       }
     },
-    "content_for_index": []
+    "content_for_index": [
+
+    ]
   },
   "presets": {
     "Default": {
@@ -133,19 +142,24 @@
               }
             }
           },
-          "block_order": ["announcement-bar-0"],
-          "settings": {}
+          "block_order": [
+            "announcement-bar-0"
+          ],
+          "settings": {
+          }
         },
         "header": {
           "type": "header",
-          "settings": {}
+          "settings": {
+          }
         },
         "footer": {
           "type": "footer",
           "blocks": {
             "footer-0": {
               "type": "link_list",
-              "settings": {}
+              "settings": {
+              }
             },
             "footer-1": {
               "type": "link_list",
@@ -154,7 +168,10 @@
               }
             }
           },
-          "block_order": ["footer-0", "footer-1"],
+          "block_order": [
+            "footer-0",
+            "footer-1"
+          ],
           "settings": {
             "color_scheme": "ground",
             "show_social": true
@@ -162,11 +179,13 @@
         },
         "main-password-header": {
           "type": "main-password-header",
-          "settings": {}
+          "settings": {
+          }
         },
         "main-password-footer": {
           "type": "main-password-footer",
-          "settings": {}
+          "settings": {
+          }
         }
       }
     }
