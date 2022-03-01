@@ -146,6 +146,8 @@
   --inputHeight: 48px;
   --btnHeight: 48px;
 
+  --stickyElementTransition: transformY(0);
+
   @media (max-width: 1024px) {
     --pxSize: 40px;
     --vwSize: 1.6vw;

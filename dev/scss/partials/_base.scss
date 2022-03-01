@@ -13,7 +13,7 @@ body {
   color: var(--color-foreground);
 
   main {
-    > *:not(.section-image__wrapper):not(.content-with-bg-image__wrapper) {
+    > *:first-child:not(.section-image__wrapper):not(.content-with-bg-image__wrapper) {
       margin-top: var(--navHeight);
     }
   }
@@ -42,6 +42,11 @@ body > div > footer {
     background: var(--color-background);
     z-index: -1;
   }
+}
+
+//How the nav position effects sticky elements
+.__visible-nav + main {
+  --stickyElementTransition: translateY(var(--navHeight));
 }
 
 //Form styles

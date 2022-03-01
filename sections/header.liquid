@@ -157,8 +157,10 @@
 
       if ( !scrollingDown && scrollPosition > 200 ) {
         this.classList.add('__visible');
+        this.parentNode.classList.add('__visible-nav');
       } else {
         this.classList.remove('__visible');
+        this.parentNode.classList.remove('__visible-nav');
       }
 
       document.lastScollPosition = scrollPosition;

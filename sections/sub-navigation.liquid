@@ -5,7 +5,7 @@
       <ul class="sub-navigation__list">
         {% for block in section.blocks %}
           <li class="sub-navigation__list__item hide">
-            <a class="sub-navigation__list__item__link" href="{{ block.settings.link }}">
+            <a class="sub-navigation__list__item__link {% if block.settings.link == page.url or block.settings.link == blog.url or block.settings.link == article.url or block.settings.link == product.url or block.settings.link == collection.url %}__active{% endif %}" href="{{ block.settings.link }}">
               {{ block.settings.label }}
             </a>
           </li>
@@ -31,7 +31,7 @@
 {
   "name": "Sub-Navigation",
   "tag": "section",
-  "class": "sub-navigation__parent",
+  "class": "sub-navigation__wrapper",
   "settings": [
     {
       "type": "header",
