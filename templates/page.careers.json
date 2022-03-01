@@ -6,9 +6,37 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "164617166466b4b1ef": {
+      "type": "open-positions",
+      "blocks": {
+        "277f0779-6824-4b72-a2bc-1356120ba8b9": {
+          "type": "position",
+          "settings": {
+            "heading": "Position",
+            "location": "Position",
+            "details": "",
+            "button_label": "Button label",
+            "button_link": "",
+            "button_color": "default",
+            "department": "All"
+          }
+        }
+      },
+      "block_order": [
+        "277f0779-6824-4b72-a2bc-1356120ba8b9"
+      ],
+      "settings": {
+        "heading": "",
+        "text": "",
+        "color_scheme": "cream",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "164617166466b4b1ef"
   ]
 }
