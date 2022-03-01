@@ -13,11 +13,7 @@
       {% render 'svg-arrow' %}
     </a>
     {%- if section.settings.image != blank -%}
-      {% if section.settings.alt == "" %} 
-        {% render 'next-gen-img', image: section.settings.image, alt: 'Pure Ground Ingredients' %}
-      {% else %} 
-        {% render 'next-gen-img', image: section.settings.image, alt: section.settings.alt %}
-      {% endif %}
+      {% render 'next-gen-img', image: section.settings.image, alt: section.settings.alt %}
     {%- elsif section.settings.image_2 == blank -%}
       {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
     {%- endif -%}
