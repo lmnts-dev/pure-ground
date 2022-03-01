@@ -4,8 +4,12 @@
   &__inner {
     position: relative;
     width: 100%;
-    padding: var(--topInternalSpacingRatio) var(--sectionHorizontalSpacing)
-      var(--bottomInternalSpacingRatio) var(--sectionHorizontalSpacing);
+    padding: calc(
+        var(--sectionVerticalSpacing) * var(--topInternalSpacingRatio)
+      )
+      var(--sectionHorizontalSpacing)
+      calc(var(--sectionVerticalSpacing) * var(--bottomInternalSpacingRatio))
+      var(--sectionHorizontalSpacing);
     color: var(--color-foreground);
     overflow: hidden;
 
