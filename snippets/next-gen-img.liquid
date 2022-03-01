@@ -20,8 +20,6 @@
   {% endif%}
 {% endif %}
 
-
-
 <img
     srcset="{%- if image.width >= 375 -%}{{ image | img_url: width: 375 }} 375w,{%- endif -%}
       {%- if image.width >= 550 -%}{{ image | img_url: width: 550 }} 550w,{%- endif -%}
@@ -36,7 +34,7 @@
     sizes="{% if sizes %}{{ sizes }}{% else %}100vw{% endif %}"
     src="{{ image | img_url: 'master' }}"
     loading="lazy"
-    alt="{{altText}}"
+    alt="{% if alt %}{{ alt }}{% else %}{{ image.alt | escape }}{% endif %}"
     width="{{ image.width }}"
     height="{{ image.height }}"
   >
