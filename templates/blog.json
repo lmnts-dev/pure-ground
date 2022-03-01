@@ -1,10 +1,50 @@
 {
   "sections": {
+    "1646172411638785bf": {
+      "type": "sub-navigation",
+      "blocks": {
+        "a2d03d6d-6c11-4297-ab51-6643a48cb3ba": {
+          "type": "link",
+          "settings": {
+            "label": "All Resources",
+            "link": "shopify:\/\/pages\/resources"
+          }
+        },
+        "3534994c-a512-4db7-bc8b-4fd11c47a9f4": {
+          "type": "link",
+          "settings": {
+            "label": "Ingredient Guides",
+            "link": "shopify:\/\/blogs\/guides"
+          }
+        },
+        "db670779-627f-4765-a765-a01925ad520a": {
+          "type": "link",
+          "settings": {
+            "label": "Press & News",
+            "link": "shopify:\/\/blogs\/news"
+          }
+        }
+      },
+      "block_order": [
+        "a2d03d6d-6c11-4297-ab51-6643a48cb3ba",
+        "3534994c-a512-4db7-bc8b-4fd11c47a9f4",
+        "db670779-627f-4765-a765-a01925ad520a"
+      ],
+      "settings": {
+        "color_scheme": "sky"
+      }
+    },
     "main": {
-      "type": "main-blog"
+      "type": "main-blog",
+      "settings": {
+        "color_scheme": "cream",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
     }
   },
   "order": [
+    "1646172411638785bf",
     "main"
   ]
 }
