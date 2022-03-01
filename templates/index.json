@@ -179,6 +179,13 @@
             "icon": "shopify:\/\/shop_images\/vitality-works-logo.png",
             "alt": "Vitality Works"
           }
+        },
+        "c1745d10-1a4a-4570-9a1d-c5496b0280c1": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/frontier-co-op-vector-logo.png",
+            "alt": "Frontier Co-Op Logo"
+          }
         }
       },
       "block_order": [
@@ -190,7 +197,8 @@
         "eeca8ca7-1223-42f4-be66-9d19c9680495",
         "19ea3b46-28e6-4cad-bfe4-432bca3e3973",
         "578edcf5-29d4-4dee-8e57-7f52376dfd08",
-        "66b74de8-3615-45a3-8d9b-351ef30333a9"
+        "66b74de8-3615-45a3-8d9b-351ef30333a9",
+        "c1745d10-1a4a-4570-9a1d-c5496b0280c1"
       ],
       "settings": {
         "heading": "Used by",
