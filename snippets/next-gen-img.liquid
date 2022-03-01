@@ -16,8 +16,10 @@
  {% assign altText = 'Test1'%} 
 {%elsif altText == ""%}
   {% assign altText = 'Test2'%} 
-{% elseif altText == false%}
+{% elsif altText == false%}
    {% assign altText = 'Test3'%} 
+  {%else%}
+     {% assign altText = 'Test4'%} 
 {%endif%}
 
 
