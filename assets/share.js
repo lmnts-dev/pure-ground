@@ -2,13 +2,13 @@ if (!customElements.get('share-button')) {
   customElements.define('share-button', class ShareButton extends DetailsDisclosure {
     constructor() {
       super();
-
+      
       this.elements = {
         shareButton: this.querySelector('button'),
         shareSummary: this.querySelector('summary'),
         closeButton: this.querySelector('.share-button__close'),
         successMessage: this.querySelector('[id^="ShareMessage"]'),
-        urlInput: this.querySelector('input')
+        urlInput: this.querySelector('input'),
       }
       this.urlToShare = this.elements.urlInput ? this.elements.urlInput.value : document.location.href;
 

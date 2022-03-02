@@ -1,6 +1,6 @@
   <div class="article-template__social-sharing page-width page-width--narrow" {{ block.shopify_attributes }}>
     <share-button class="share-button" {{ block.shopify_attributes }}>
-      <button class="share-button__button hidden">
+      <button onclick="console.log('red');" class="share-button__button hidden">
         {% render 'icon-share' %}
         {{ block.settings.share_label | escape }}
       </button>
@@ -8,6 +8,7 @@
         <summary class="share-button__button">
           {% render 'icon-share' %}
           {{ block.settings.share_label | escape }}
+          <span class="share-button__text">Share</span>
         </summary>
         <div id="Article-share-{{ section.id }}" class="share-button__fallback motion-reduce">
           <div class="field">

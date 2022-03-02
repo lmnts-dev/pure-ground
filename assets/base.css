@@ -1283,13 +1283,13 @@ button.shopify-payment-button__button--unbranded {
   padding-left: 0;
 }
 
-details[open] > .share-button__fallback {
-  animation: animateMenuOpen var(--duration-default) ease;
+.share-button__text{
+  text-transform: uppercase;
+  margin-left: .75rem;
 }
 
-.share-button__button:hover {
-  text-decoration: underline;
-  text-underline-offset: 0.3rem;
+details[open] > .share-button__fallback {
+  animation: animateMenuOpen var(--duration-default) ease;
 }
 
 .share-button__button,
