@@ -50,6 +50,7 @@ https://flickity.metafizzy.co
   border: none;
   background: transparent;
   color: var(--color-foreground);
+  z-index: 1;
 }
 
 .flickity-button:hover {
@@ -86,6 +87,7 @@ https://flickity.metafizzy.co
 
 .flickity-button-icon {
   fill: currentColor;
+  z-index: 10;
 }
 
 /* ---- previous/next buttons ---- */
