@@ -57,5 +57,18 @@
     &__container {
       display: block;
     }
+      &__button {
+        padding: var(--sectionVerticalSpacing) var(--vwSize);
+
+        span{
+          display: flex;
+          align-items: center;
+
+          svg{
+            margin-left: calc(var(--pxSize) / 1.5);;
+            width: 2.5rem;
+          }
+        }
+      }
   }
 }
