@@ -57,6 +57,8 @@ form {
   textarea {
     font-family: var(--font-body-family);
     letter-spacing: 0.04rem;
+    -webkit-appearance: none;
+    margin: 0;
   }
 
   button,
