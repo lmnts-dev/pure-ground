@@ -236,4 +236,10 @@ header.header {
       }
     }
   }
+
+  @media screen and (max-width: 676px) {
+    &__main-links {
+      display: none;
+    }
+  }
 }
