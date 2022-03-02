@@ -5,10 +5,11 @@ if (!customElements.get('share-button')) {
 
       this.elements = {
         shareButton: this.querySelector('button'),
+        shareText: this.querySelector('.share-button__text'),
         shareSummary: this.querySelector('summary'),
         closeButton: this.querySelector('.share-button__close'),
         successMessage: this.querySelector('[id^="ShareMessage"]'),
-        urlInput: this.querySelector('input')
+        urlInput: this.querySelector('input'),
       }
       this.urlToShare = this.elements.urlInput ? this.elements.urlInput.value : document.location.href;
 
@@ -28,6 +29,7 @@ if (!customElements.get('share-button')) {
         this.elements.successMessage.classList.add('hidden');
         this.elements.successMessage.textContent = '';
         this.elements.closeButton.classList.add('hidden');
+        this.elements.shareText.classList.add('hidden');
         this.elements.shareSummary.focus();
       }
     }

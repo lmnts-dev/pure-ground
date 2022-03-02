@@ -20,7 +20,7 @@
 
       {%- if section.settings.blog.articles.size > 4  -%}
         <a class="blog-listings__button h4" href="{{section.settings.blog.url}}">
-          <span>View More</span>
+          <span>View More {% render 'icon-arrow' %}</span>
           {% if section.settings.image %}
             <img
               srcset="{%- if section.settings.image.src.width >= 165 -%}{{ section.settings.image.src | img_url: '165x' }} 165w,{%- endif -%}

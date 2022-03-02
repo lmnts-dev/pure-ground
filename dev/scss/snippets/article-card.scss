@@ -87,8 +87,8 @@
         flex-direction: column;
         padding: var(--pxSize);
 
-        &__date {
-          flex: 1;
+        &__text{
+          margin-top: calc(var(--pxSize)/ 3);
         }
       }
 
@@ -139,6 +139,16 @@
 
       &__heading {
         grid-column: 1/-1;
+      }
+    }
+
+    &.__style-horizontal {
+      flex-direction: column;
+
+      .article-card{
+        &__image{
+          padding-top: var(--articleCardImageRatio);
+        }
       }
     }
 
