@@ -9,6 +9,7 @@
 
   &__breadcrumb {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin-bottom: calc(var(--pxSize));
 
@@ -24,6 +25,10 @@
 
     &__current {
       font-weight: 500;
+    }
+
+    &__link {
+      white-space: nowrap;
     }
   }
 
@@ -68,10 +73,11 @@
   }
 
   @media screen and (max-width: 1024px) {
-    max-width: calc(var(--sectionHorizontalSpacing) * 15);
+    > * {
+      max-width: none;
+    }
   }
 
   @media screen and (max-width: 676px) {
-    max-width: none;
   }
 }

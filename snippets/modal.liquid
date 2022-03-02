@@ -19,6 +19,13 @@
       {% endif %}
       {% if settings.modal_newsletter %}
         {% form 'customer', class: "cmnc-modal__form __form-styles" %}
+
+          {% if form.posted_successfully? %}
+              Submitted successfully!
+          {% else %}
+              {{ form.errors | default_errors }}
+          {% endif %}
+
           <input type="email" placeholder="Email" name="contact[email]" />
           <input type="submit" value="Sign Up" />
         {% endform %}

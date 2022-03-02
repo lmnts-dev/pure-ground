@@ -6,20 +6,48 @@
 {% endstyle %}
 
 <div id="Contact-form-{{ section.id }}" class="contact-form color-{{ section.settings.color_scheme }}">
-    <h2 class="contact-form__header h3">{{ section.settings.heading | escape }}</h2>
-
     {% if section.blocks %}
-      {%- form 'contact', id: 'ContactForm', class: 'contact-form__form __form-styles' -%}
+      {%- form 'contact', class: 'contact-form__form __form-styles' -%}
+        <h2 class="contact-form__header h3">{{ section.settings.heading | escape }}</h2>
+
+        {% assign requiredEmailUsed = false %}
+        {% assign requiredBodyUsed = false %}
+       
+        {% if form.posted_successfully? %}
+            Submitted successfully!
+        {% else %}
+            {{ form.errors | default_errors }}
+        {% endif %}
 
         {% for block in section.blocks %}
           {%- case block.type -%}
             {%- when 'row' -%}
               <div class="contact-form__form__row">
-                <input type="{{block.settings.type-1}}" placeholder="{{block.settings.placeholder-1}}" />
-                <input type="{{block.settings.type-2}}" placeholder="{{block.settings.placeholder-2}}" />
+
+                {% comment %} Gather name attribute for fields {% endcomment %}
+                {% assign name1 = block.settings.placeholder-1 %}
+                {% assign name2 = block.settings.placeholder-2 %}
+                {% if block.settings.type-1 == "email" and requiredEmailUsed == false %}
+                  {% assign name1 = "email" %}
+                  {% assign requiredEmailUsed = true %}
+                {% endif %}
+                {% if block.settings.type-2 == "email" and requiredEmailUsed == false %}
+                  {% assign name2 = "email" %}
+                  {% assign requiredEmailUsed = true %}
+                {% endif %}
+
+                {% comment %} The fields {% endcomment %}
+                <input type="{{block.settings.type-1}}" name="contact[{{ name1 }}]" placeholder="{{block.settings.placeholder-1}}" />
+                <input type="{{block.settings.type-2}}" name="contact[{{ name2 }}]" placeholder="{{block.settings.placeholder-2}}" />
               </div>
             {%- when 'textarea' -%}
-              <textarea placeholder="{{block.settings.placeholder}}" rows="8"></textarea>
+                {% comment %} Gather name attribute for field {% endcomment %}
+                {% assign name = block.settings.placeholder %}
+                {% if requiredBodyUsed == false %}
+                  {% assign name = "body" %}
+                  {% assign requiredBodyUsed = true %}
+                {% endif %}
+              <textarea placeholder="{{block.settings.placeholder}}" name="contact[{{ name }}]" rows="8"></textarea>
           {% endcase %}
         {% endfor %}
         <input type="submit" value="Submit" />
@@ -108,7 +136,8 @@
   "settings": [
     {
       "type": "header",
-      "content": "Text Content"
+      "content": "Contact Form",
+      "info": "You must add atleast one textarea row and one field of type 'email' in order for the contact form to subit successfully."
     },
     {
       "type": "text",
