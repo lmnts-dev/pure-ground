@@ -1322,7 +1322,6 @@ details[open] > .share-button__fallback {
   min-width: max-content;
   border-radius: var(--inputs-radius);
   border: 0;
-  overflow: hidden;
 }
 
 .share-button__fallback:after {
@@ -1412,8 +1411,9 @@ details[open] > .share-button__fallback {
 }
 
 @media screen and (max-width: 676px) {
-  .share-button__fallback .field {
-    overflow: auto;
+  .share-button__fallback{
+    min-width: auto;
+    max-width: 100%;
   }
 }
 
