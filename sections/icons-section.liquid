@@ -22,6 +22,7 @@
       {%- for block in section.blocks -%}
          {%- case block.type -%}
             {%- when 'image' -%}
+            {%- if block.settings.icon != blank -%}
               <img
                srcset="{%- if block.settings.icon.width >= 375 -%}{{ block.settings.icon | image_url: width: 375 }} 375w,{%- endif -%}
                {%- if block.settings.icon.width >= 550 -%}{{ block.settings.icon | image_url: width: 550 }} 550w,{%- endif -%}
@@ -40,6 +41,9 @@
                width="{{ block.settings.icon.width }}"
                height="{{ block.settings.icon.height }}"
             >
+            {%- else -%}
+               {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+            {%- endif -%}
                <p>{{block.settings.text }}</p>
          {%- endcase -%}
       {%- endfor -%}
@@ -55,17 +59,20 @@
        {
          "type":"text",
          "id":"caption",
-         "label":"Caption"
+         "label":"Caption",
+         "default": "Caption Here"
       },
       {
          "type":"text",
          "id":"heading",
-         "label":"Heading"
+         "label":"Heading",
+         "default": "Heading Here"
       },
-       {
+      {
          "type":"textarea",
          "id":"text",
-         "label":"Text Content"
+         "label":"Text Content",
+         "default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ullamcorper, tortor ut viverra pulvinar, orci tellus elementum odio, et malesuada neque diam vel sem. Curabitur lacus sem, commodo sed lacus id, vulputate tincidunt sapien. Integer nisi libero, venenatis a sapien id, ornare congue diam. Donec mollis justo quis suscipit vulputate. Suspendisse sit amet lobortis felis. Curabitur condimentum justo ac urna mattis, quis elementum magna ullamcorper.</p>"
       },
       {
          "type":"select",
