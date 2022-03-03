@@ -223,12 +223,21 @@ li {
       position: relative;
 
       &::before{
-        content: "\0022";
+        content: '"';
         position: absolute;
         width: 15%;
         height: 1px;
-        bottom: 30px;
-        left: 42%;
+        bottom: 25px;
+        left: 15px;
+      }
+
+      &::after{
+        content: '"';
+        position: absolute;
+        width: 15%;
+        height: 1px;
+        bottom: 25px;
+        right: 15px;
       }
     }
   }
