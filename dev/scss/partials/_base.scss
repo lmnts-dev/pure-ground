@@ -57,6 +57,8 @@ form {
   textarea {
     font-family: var(--font-body-family);
     letter-spacing: 0.04rem;
+    -webkit-appearance: none;
+    margin: 0;
   }
 
   button,
@@ -147,7 +149,8 @@ form {
   text-align: center;
   font-size: 0.8625rem;
   font-weight: 500;
-  margin-top: 1rem;
+  margin: 1rem 0 0 0;
+  -webkit-appearance: none;
 
   &:hover {
     background: var(--color-btn-hover);

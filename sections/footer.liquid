@@ -28,15 +28,13 @@
 
 <footer class="section-footer color-{{ section.settings.color_scheme }}">
   <div class="section-footer__plant-decor">
-    {% render 'svg-plants' %}  
-    {% render 'svg-plants' %}  
-    {% render 'svg-plants' %}  
-    {% render 'svg-plants' %}  
-    {% render 'svg-plants' %}  
+    {% for i in (1..5) %}
+      {% render 'svg-plants' %}
+    {% endfor %}
   </div>
 
   <div class="section-footer__branding">
-    {% render 'svg-logo-stacked' %}
+    <div class="section-footer__branding__logo">{% render 'svg-logo-stacked' %}</div>
 
     {%- if section.settings.address -%}
       <div class="section-footer__branding__info p-sm">
