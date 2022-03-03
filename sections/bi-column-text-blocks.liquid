@@ -9,7 +9,7 @@
 
   {% if section.settings.image %}
     <div class="bi-column-text-blocks__image">
-      {%- if section.settings.image -%}
+      {%- if section.settings.image != blank -%}
         {% render 'next-gen-img', image: section.settings.image, alt: section.settings.alt %}
       {%- else -%}
         {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
@@ -55,7 +55,7 @@
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {% when 'icon' %}
-            {% if block.settings.image %}
+            {% if block.settings.image != blank %}
               <div class="bi-column-text-blocks__icon">
                 {%- if block.settings.image -%}
                   {% render 'next-gen-img', image: block.settings.image, alt: block.settings.alt %}
