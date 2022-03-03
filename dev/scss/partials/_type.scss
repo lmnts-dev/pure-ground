@@ -228,6 +228,17 @@ li {
 
     li{
       font-size: .9rem;
+    }
+  }
+
+  ul{
+    li {
+      list-style: inside;
+    }
+  }
+
+  ol{
+    li{
       list-style: initial;
     }
   }
