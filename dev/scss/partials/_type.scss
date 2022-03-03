@@ -220,6 +220,16 @@ li {
       font-style: italic;
       font-size: 1rem;
       font-weight: 600;
+      position: relative;
+
+      &::before{
+        content: "\0022";
+        position: absolute;
+        width: 15%;
+        height: 1px;
+        bottom: 30px;
+        left: 42%;
+      }
     }
   }
 
@@ -238,9 +248,10 @@ li {
   }
 
   ol{
+    padding-inline-start: 15px;
+
     li{
       list-style: revert;
-      padding-inline-start: 15px;
     }
   }
 }
