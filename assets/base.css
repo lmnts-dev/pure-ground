@@ -1410,6 +1410,13 @@ details[open] > .share-button__fallback {
   transition: none;
 }
 
+@media screen and (max-width: 676px) {
+  .share-button__fallback{
+    min-width: auto;
+    max-width: 100%;
+  }
+}
+
 .share-button__fallback .field__input:focus,
 .share-button__fallback .field__input:-webkit-autofill {
   outline: 0.2rem solid rgba(var(--color-foreground), 0.5);

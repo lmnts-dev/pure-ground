@@ -186,6 +186,7 @@ form {
     background: transparent;
     border: none;
     padding: calc(var(--pxSize) / 3);
+    z-index: 10;
 
     svg {
       height: calc(var(--pxSize) / 2);
@@ -266,6 +267,12 @@ form {
   }
 
   @media screen and (max-width: 676px) {
+    &__exit {
+      svg{
+        fill: rgba(var(--color-cream), 1);
+      }
+    }
+
     &__content {
       flex-direction: column;
 
