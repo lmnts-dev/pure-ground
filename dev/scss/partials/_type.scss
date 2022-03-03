@@ -158,14 +158,28 @@ li {
 
 .__article-txt {
 
-  h1, h2{
-    font-weight: var(--font-heading-weight);
+  h1{
     font-size: 2.25rem;
   }
 
-  h3,h4,h5,h6{
-    font-size: 2.25rem;
-    font-weight: bold;
+  h2{
+    font-size: 1.75rem;
+  }
+
+  h3{
+    font-size: 1.31rem;
+  }
+
+  h4{
+    font-size: 1.125rem;
+  }
+
+  h5{
+    font-size: 1rem;
+  }
+
+  h6{
+    font-size: .9rem;
   }
   
   a {
