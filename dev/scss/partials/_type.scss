@@ -216,12 +216,17 @@ li {
   }
 
   blockquote{
-    font-style: italic;
-    font-size: 1rem;
-    font-weight: 600;
+    p{
+      font-style: italic;
+      font-size: 1rem;
+      font-weight: 600;
+    }
   }
 
   ul, ol{
+    line-height: 28px;
+    list-style: inside;
+    
      li {
       font-size: .9rem;
     }
