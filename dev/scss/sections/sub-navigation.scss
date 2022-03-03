@@ -11,18 +11,18 @@
     gap: var(--navHeight);
 
     &__item {
-      &__link {
-        height: var(--navHeight);
-        line-height: var(--navHeight);
-        font-weight: 700;
-
-        &:not(.__active) {
-          opacity: 0.7;
-        }
+      &:not(.__active) {
+        opacity: 0.7;
 
         &:hover {
           opacity: 1;
         }
+      }
+
+      &__link {
+        height: var(--navHeight);
+        line-height: var(--navHeight);
+        font-weight: 700;
       }
     }
   }
@@ -44,6 +44,7 @@
 
         &:first-child {
           position: relative;
+
           &:after {
             content: "";
             display: inline-block;

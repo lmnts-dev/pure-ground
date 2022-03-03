@@ -4,8 +4,8 @@
     <nav>
       <ul class="sub-navigation__list">
         {% for block in section.blocks %}
-          <li class="sub-navigation__list__item hide">
-            <a class="sub-navigation__list__item__link {% if block.settings.link == page.url or block.settings.link == blog.url or block.settings.link == article.url or block.settings.link == product.url or block.settings.link == collection.url %}__active{% endif %}" href="{{ block.settings.link }}">
+          <li class="sub-navigation__list__item hide {% if block.settings.link == page.url or block.settings.link == blog.url or block.settings.link == article.url or block.settings.link == product.url or block.settings.link == collection.url %}__active{% endif %}">
+            <a class="sub-navigation__list__item__link" href="{{ block.settings.link }}">
               {{ block.settings.label }}
             </a>
           </li>
