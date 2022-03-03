@@ -363,34 +363,6 @@
         "top_spacing": 50,
         "bottom_spacing": 50
       }
-    },
-    "16463477178deb33bd": {
-      "type": "icons-row",
-      "blocks": {
-        "f7512301-8ee3-486e-9ce1-80b53cd0b8b5": {
-          "type": "icon",
-          "settings": {
-            "icon": "shopify:\/\/shop_images\/yogi-tea-vector-logo-2.png",
-            "alt": ""
-          }
-        },
-        "1683239d-dfa6-40ba-99cb-8d51521c246b": {
-          "type": "icon",
-          "settings": {
-            "alt": ""
-          }
-        }
-      },
-      "block_order": [
-        "f7512301-8ee3-486e-9ce1-80b53cd0b8b5",
-        "1683239d-dfa6-40ba-99cb-8d51521c246b"
-      ],
-      "settings": {
-        "heading": "Heading Here",
-        "color_scheme": "cream",
-        "top_spacing": 50,
-        "bottom_spacing": 50
-      }
     }
   },
   "order": [
@@ -402,7 +374,6 @@
     "16450418065fdb6a59",
     "16451151390f67c7d6",
     "164442413892b05956",
-    "articles",
-    "16463477178deb33bd"
+    "articles"
   ]
 }
