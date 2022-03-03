@@ -57,7 +57,7 @@
           {% when 'icon' %}
             {% if block.settings.image != blank %}
               <div class="bi-column-text-blocks__icon">
-                {%- if block.settings.image -%}
+                {%- if block.settings.image != blank -%}
                   {% render 'next-gen-img', image: block.settings.image, alt: block.settings.alt %}
                 {%- else -%}
                   {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
