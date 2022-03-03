@@ -5,13 +5,13 @@
       "settings": {
         "heading": "Always Organic",
         "subheading": "That's how we like it",
-        "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor lorem sit amet eros suscipit finibus. Mauris feugiat interdum lobortis.</p>",
+        "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor lorem sit amet eros suscipit finibus. Mauris feugiat interdum lobortis.<\/p>",
         "heading_size": "h2",
         "text_color": "dark",
         "button_label": "Shop All Ingredients",
-        "button_link": "shopify://collections",
+        "button_link": "shopify:\/\/collections",
         "button_color": "default",
-        "image": "shopify://shop_images/unsplash_IQVFVH0ajag.jpg",
+        "image": "shopify:\/\/shop_images\/unsplash_IQVFVH0ajag.jpg",
         "alt": "Image alt text",
         "overlay": 0,
         "hero": true,
@@ -31,13 +31,13 @@
       "settings": {
         "heading": "Culinary Herbs, Spices, & Vegetables",
         "subheading": "",
-        "text": "<p>For your restaurant or seasonings!</p>",
+        "text": "<p>For your restaurant or seasonings!<\/p>",
         "heading_size": "h3",
         "text_color": "light",
         "button_label": "Shop now",
-        "button_link": "shopify://collections",
+        "button_link": "shopify:\/\/collections",
         "button_color": "default",
-        "image": "shopify://shop_images/unsplash_VVe3zOZM88E.jpg",
+        "image": "shopify:\/\/shop_images\/unsplash_VVe3zOZM88E.jpg",
         "alt": "Image alt text",
         "overlay": 50,
         "hero": false,
@@ -57,13 +57,13 @@
       "settings": {
         "heading": "Global Partnerships",
         "subheading": "",
-        "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor lorem sit amet eros suscipit finibus. Mauris feugiat interdum lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
+        "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor lorem sit amet eros suscipit finibus. Mauris feugiat interdum lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.<\/p>",
         "heading_size": "h3",
         "text_color": "light",
         "button_label": "Learn where",
-        "button_link": "shopify://pages/european-operations",
+        "button_link": "shopify:\/\/pages\/european-operations",
         "button_color": "default",
-        "image": "shopify://shop_images/unsplash_xDwEa2kaeJA.jpg",
+        "image": "shopify:\/\/shop_images\/unsplash_xDwEa2kaeJA.jpg",
         "alt": "Image alt text",
         "overlay": 30,
         "hero": false,
@@ -112,7 +112,13 @@
           }
         }
       },
-      "block_order": ["herbs", "fair", "rainforest", "teas", "chiles"],
+      "block_order": [
+        "herbs",
+        "fair",
+        "rainforest",
+        "teas",
+        "chiles"
+      ],
       "settings": {
         "heading": "Browse Ingredient Categories",
         "color_scheme": "cream",
@@ -126,77 +132,77 @@
         "ddc6ae4f-850d-4af2-b30f-b2cfa4c27d8b": {
           "type": "icon",
           "settings": {
-            "icon": "shopify://shop_images/md.png",
+            "icon": "shopify:\/\/shop_images\/md.png",
             "alt": "McCormick logo"
           }
         },
         "0a3401c2-cdcb-45c7-a115-863942ecd068": {
           "type": "icon",
           "settings": {
-            "icon": "shopify://shop_images/starbucks.png",
+            "icon": "shopify:\/\/shop_images\/starbucks.png",
             "alt": "Starbucks logo"
           }
         },
         "d2a015f6-ec5e-4279-a122-c75324dad550": {
           "type": "icon",
           "settings": {
-            "icon": "shopify://shop_images/pngaaa.com-2880818.png",
+            "icon": "shopify:\/\/shop_images\/pngaaa.com-2880818.png",
             "alt": "Celestial Seasonings logo"
           }
         },
         "c08a2a5b-6ebe-4cc0-95b3-7691599bfe20": {
           "type": "icon",
           "settings": {
-            "icon": "shopify://shop_images/yogi-tea-vector-logo-2.png",
+            "icon": "shopify:\/\/shop_images\/yogi-tea-vector-logo-2.png",
             "alt": "Yogi Logo"
           }
         },
         "0f186d34-13dd-40c1-ae96-9266b6a353d1": {
           "type": "icon",
           "settings": {
-            "icon": "shopify://shop_images/traditional-medicinals-logo.png",
+            "icon": "shopify:\/\/shop_images\/traditional-medicinals-logo.png",
             "alt": "Traditional Medicinals logo"
           }
         },
         "66b74de8-3615-45a3-8d9b-351ef30333a9": {
           "type": "icon",
           "settings": {
-            "icon": "shopify://shop_images/vitality-works-logo_458c2e5e-4a96-4948-bbe1-5fb9496226ac.png",
+            "icon": "shopify:\/\/shop_images\/vitality-works-logo_458c2e5e-4a96-4948-bbe1-5fb9496226ac.png",
             "alt": "Vitality Works"
           }
         },
         "224b3659-8585-4ecd-af3b-1203bae4b59d": {
           "type": "icon",
           "settings": {
-            "icon": "shopify://shop_images/amys-logo.png",
+            "icon": "shopify:\/\/shop_images\/amys-logo.png",
             "alt": "Amy's Kitchen Logo"
           }
         },
         "19ea3b46-28e6-4cad-bfe4-432bca3e3973": {
           "type": "icon",
           "settings": {
-            "icon": "shopify://shop_images/pngfind.com-herbs-png-1420548.png",
+            "icon": "shopify:\/\/shop_images\/pngfind.com-herbs-png-1420548.png",
             "alt": "Mountain Rose Herbs"
           }
         },
         "578edcf5-29d4-4dee-8e57-7f52376dfd08": {
           "type": "icon",
           "settings": {
-            "icon": "shopify://shop_images/starwest-botanicals-logo.png",
+            "icon": "shopify:\/\/shop_images\/starwest-botanicals-logo.png",
             "alt": "Starwest Botanicals"
           }
         },
         "c1745d10-1a4a-4570-9a1d-c5496b0280c1": {
           "type": "icon",
           "settings": {
-            "icon": "shopify://shop_images/frontier-logo_1.png",
+            "icon": "shopify:\/\/shop_images\/frontier-logo_1.png",
             "alt": "Frontier Co-Op Logo"
           }
         },
         "eeca8ca7-1223-42f4-be66-9d19c9680495": {
           "type": "icon",
           "settings": {
-            "icon": "shopify://shop_images/jr-watkins-logo.png",
+            "icon": "shopify:\/\/shop_images\/jr-watkins-logo.png",
             "alt": "Watkins Logo"
           }
         }
@@ -229,7 +235,7 @@
           "settings": {
             "text": "“. Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur “",
             "author": "Lorem Ipsum",
-            "image": "shopify://shop_images/unsplash_EAt30ojfzOI.jpg",
+            "image": "shopify:\/\/shop_images\/unsplash_EAt30ojfzOI.jpg",
             "alt": ""
           }
         },
@@ -238,7 +244,7 @@
           "settings": {
             "text": "“Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur “",
             "author": "Dolor sit",
-            "image": "shopify://shop_images/unsplash_IQVFVH0ajag.jpg",
+            "image": "shopify:\/\/shop_images\/unsplash_IQVFVH0ajag.jpg",
             "alt": ""
           }
         },
@@ -247,7 +253,7 @@
           "settings": {
             "text": "“Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur “",
             "author": "Amet Consect",
-            "image": "shopify://shop_images/unsplash_VVe3zOZM88E.jpg",
+            "image": "shopify:\/\/shop_images\/unsplash_VVe3zOZM88E.jpg",
             "alt": ""
           }
         }
@@ -270,9 +276,9 @@
           "type": "text",
           "settings": {
             "heading": "Custom Processing",
-            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor lorem sit amet eros feugiat interdum lobortis.</p>",
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor lorem sit amet eros feugiat interdum lobortis.<\/p>",
             "button_label": "Read more",
-            "button_link": "shopify://pages/services",
+            "button_link": "shopify:\/\/pages\/services",
             "button_color": "default"
           }
         },
@@ -280,23 +286,23 @@
           "type": "text",
           "settings": {
             "heading": "Quality Assurance",
-            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor lorem sit amet eros feugiat interdum lobortis.</p>",
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor lorem sit amet eros feugiat interdum lobortis.<\/p>",
             "button_label": "Read More",
-            "button_link": "shopify://pages/services",
+            "button_link": "shopify:\/\/pages\/services",
             "button_color": "default"
           }
         },
         "09dbb847-aae0-44ec-be21-f3c1f92bbe1f": {
           "type": "icon",
           "settings": {
-            "image": "shopify://shop_images/img-keep-it-real-badge.png",
+            "image": "shopify:\/\/shop_images\/img-keep-it-real-badge.png",
             "alt": "Badge"
           }
         },
         "8094b18a-6114-4cac-aeb6-a78e2f6dc472": {
           "type": "icon",
           "settings": {
-            "image": "shopify://shop_images/img-keep-it-real-badge.png",
+            "image": "shopify:\/\/shop_images\/img-keep-it-real-badge.png",
             "alt": "Badge"
           }
         }
@@ -310,7 +316,7 @@
       "settings": {
         "heading": "Operational Excellence",
         "subheading": "Ingredients just the way you want them",
-        "image": "shopify://shop_images/field.jpg",
+        "image": "shopify:\/\/shop_images\/field.jpg",
         "alt": "",
         "color_scheme": "cream",
         "top_spacing": 50,
@@ -321,7 +327,7 @@
       "type": "featured-page-link",
       "settings": {
         "page_link": "mission",
-        "image": "shopify://shop_images/man_in_field.jpg",
+        "image": "shopify:\/\/shop_images\/man_in_field.jpg",
         "alt": "Image alt text",
         "color_scheme": "cream",
         "top_spacing": 0,
@@ -334,22 +340,53 @@
         "art1": {
           "type": "article",
           "settings": {
-            "article": "news/2019-pioneer-award-winners"
+            "article": "news\/2019-pioneer-award-winners"
           }
         },
         "art2": {
           "type": "article",
           "settings": {
-            "article": "news/2019-nevada-sba-small-business-week-award"
+            "article": "news\/2019-nevada-sba-small-business-week-award"
           }
         }
       },
-      "block_order": ["art1", "art2"],
+      "block_order": [
+        "art1",
+        "art2"
+      ],
       "settings": {
         "heading": "Latest News in Organics",
         "button_label": "View More Resources",
-        "button_link": "shopify://pages/resources",
+        "button_link": "shopify:\/\/pages\/resources",
         "button_color": "default",
+        "color_scheme": "cream",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
+    },
+    "16463477178deb33bd": {
+      "type": "icons-row",
+      "blocks": {
+        "f7512301-8ee3-486e-9ce1-80b53cd0b8b5": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/yogi-tea-vector-logo-2.png",
+            "alt": ""
+          }
+        },
+        "1683239d-dfa6-40ba-99cb-8d51521c246b": {
+          "type": "icon",
+          "settings": {
+            "alt": ""
+          }
+        }
+      },
+      "block_order": [
+        "f7512301-8ee3-486e-9ce1-80b53cd0b8b5",
+        "1683239d-dfa6-40ba-99cb-8d51521c246b"
+      ],
+      "settings": {
+        "heading": "Heading Here",
         "color_scheme": "cream",
         "top_spacing": 50,
         "bottom_spacing": 50
@@ -365,6 +402,7 @@
     "16450418065fdb6a59",
     "16451151390f67c7d6",
     "164442413892b05956",
-    "articles"
+    "articles",
+    "16463477178deb33bd"
   ]
 }
