@@ -248,7 +248,7 @@ li {
 
   ul, ol{
     line-height: 28px;
-    margin-left: var(--pxSize);
+    margin-left: calc(var(--pxSize)/4);
 
     li{
       font-size: .9rem;
