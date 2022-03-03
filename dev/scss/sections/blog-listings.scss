@@ -54,21 +54,27 @@
   }
 
   @media screen and (max-width: 676px) {
+    padding-left: var(--sectionHorizontalSpacing);
+    padding-right: var(--sectionHorizontalSpacing);
+
     &__container {
-      display: block;
+      display: flex;
+      flex-direction: column;
+      gap: calc(var(--pxSize) / 3);
     }
-      &__button {
-        padding: var(--sectionVerticalSpacing) var(--vwSize);
 
-        span{
-          display: flex;
-          align-items: center;
+    &__button {
+      padding: var(--sectionVerticalSpacing) var(--vwSize);
 
-          svg{
-            margin-left: calc(var(--pxSize) / 1.5);;
-            width: 2.5rem;
-          }
+      span {
+        display: flex;
+        align-items: center;
+
+        svg {
+          margin-left: calc(var(--pxSize) / 1.5);
+          width: 2.5rem;
         }
       }
+    }
   }
 }

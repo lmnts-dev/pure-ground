@@ -91,8 +91,18 @@
 
     //toggle overlay nav
     updateOverlayNav(){
+      //parent element for this section
+      var thisSection = this.parentNode;
+
       this.classList.toggle("__active");
       document.body.classList.toggle('__mobile-overflow-none');
+
+      if ( this.classList.contains('__active') ){
+        thisSection.classList.add("__overlay-open");
+      }
+      else {
+        thisSection.classList.remove("__overlay-open");
+      }
     }
   }
 
@@ -114,7 +124,7 @@
     updateActiveDropdown() {
 
       //parent element for this section
-      var thisSection = this.parentNode.parentNode.parentNode;
+      var thisSection = this.parentNode.parentNode;
       //all dropdowns in this section
       var dropdowns = thisSection.querySelectorAll('.site-header__label');
 

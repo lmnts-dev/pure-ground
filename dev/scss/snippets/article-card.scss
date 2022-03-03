@@ -87,8 +87,8 @@
         flex-direction: column;
         padding: var(--pxSize);
 
-        &__text{
-          margin-top: calc(var(--pxSize)/ 3);
+        &__text {
+          margin-top: calc(var(--pxSize) / 3);
         }
       }
 
@@ -119,34 +119,33 @@
   }
 
   @media screen and (max-width: 676px) {
-    &__image {
-      flex: 1;
+    background: var(--color-background-alt);
 
-      &__placeholder {
-        max-height: 100px;
-      }
-    }
+    //default layout, add new layouts here with :not selector as needed
+    &:not(.__style-condensed):not(.__style-teaser) {
+      .article-card {
+        &__content {
+          padding: calc(var(--pxSize));
+          display: flex !important;
+          flex-direction: column;
 
-    &__content {
-      flex: 2;
-      display: flex;
-      flex-direction: column-reverse;
-      justify-content: center;
+          &__date {
+            order: -1;
+          }
 
-      &__date {
-        margin-bottom: calc(var(--pxSize) / 1.25);
-      }
-
-      &__heading {
-        grid-column: 1/-1;
+          &__heading {
+            order: 0;
+            font-weight: 600;
+          }
+        }
       }
     }
 
     &.__style-horizontal {
       flex-direction: column;
 
-      .article-card{
-        &__image{
+      .article-card {
+        &__image {
           padding-top: var(--articleCardImageRatio);
         }
       }
@@ -154,19 +153,23 @@
 
     &.__style-condensed {
       display: flex;
-      max-height: 100px;
-      margin-bottom: calc(var(--pxSize) / 1.25);
 
-      img {
-        max-height: 100px;
-      }
-    }
+      .article-card {
+        &__image {
+          flex: 1;
+          padding-top: calc(var(--articleCardImageRatio) / 3);
+        }
 
-    &:not(.__style-condensed) {
-      .article-card__content {
-        display: flex !important;
-        flex-direction: column;
-        padding: calc(var(--pxSize) / 2) var(--pxSize);
+        &__content {
+          flex: 2;
+          display: flex;
+          flex-direction: column-reverse;
+          justify-content: center;
+
+          &__date {
+            margin-bottom: calc(var(--pxSize) / 3);
+          }
+        }
       }
     }
   }
