@@ -21,6 +21,16 @@
     &__icon {
       margin: 0 calc(var(--vwSize) * 2);
 
+      svg {
+        height: calc(var(--vwSize) * 4);
+        width: auto;
+
+        @media screen and (max-width: 676px) {
+          max-width: 130px;
+          height: auto;
+        }
+      }
+
       img {
         height: calc(var(--vwSize) * 4);
         width: auto;
