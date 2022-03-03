@@ -363,37 +363,6 @@
         "top_spacing": 50,
         "bottom_spacing": 50
       }
-    },
-    "1646285111f3e5d356": {
-      "type": "icons-section",
-      "blocks": {
-        "1991eadb-9979-4d22-ad09-c0a880c82a04": {
-          "type": "image",
-          "settings": {
-            "icon": "shopify:\/\/shop_images\/yogi-tea-vector-logo-2.png",
-            "text": ""
-          }
-        },
-        "677b13ba-fb9c-4834-975f-f5d1bcea6594": {
-          "type": "image",
-          "settings": {
-            "icon": "shopify:\/\/shop_images\/vitality-works-logo.png",
-            "text": ""
-          }
-        }
-      },
-      "block_order": [
-        "1991eadb-9979-4d22-ad09-c0a880c82a04",
-        "677b13ba-fb9c-4834-975f-f5d1bcea6594"
-      ],
-      "settings": {
-        "caption": "Caption Here",
-        "heading": "Heading Here",
-        "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ullamcorper, tortor ut viverra pulvinar, orci tellus elementum odio, et malesuada neque diam vel sem. Curabitur lacus sem, commodo sed lacus id, vulputate tincidunt sapien. Integer nisi libero, venenatis a sapien id, ornare congue diam. Donec mollis justo quis suscipit vulputate. Suspendisse sit amet lobortis felis. Curabitur condimentum justo ac urna mattis, quis elementum magna ullamcorper.<\/p>",
-        "color_scheme": "cream",
-        "top_spacing": 50,
-        "bottom_spacing": 50
-      }
     }
   },
   "order": [
@@ -405,7 +374,6 @@
     "16450418065fdb6a59",
     "16451151390f67c7d6",
     "164442413892b05956",
-    "articles",
-    "1646285111f3e5d356"
+    "articles"
   ]
 }
