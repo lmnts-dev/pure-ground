@@ -18,8 +18,9 @@
   }
 
   @media screen and (max-width: 676px) {
-    &__container{
+    &__container {
       grid-template-columns: 1fr;
+      gap: var(--sectionHorizontalSpacing);
     }
   }
 }

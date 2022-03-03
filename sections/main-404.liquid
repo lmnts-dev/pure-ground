@@ -1,35 +1,21 @@
 <style type="text/css">
 
-  .template-404{
-    min-height: 650px;
+  .template-404 {
+    min-height: calc(100vh - var(--navHeight));
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
-
-  .btn{
-    width: fit-content;
-    align-self: center;
-  }
-
-  .template-404 .title + * {
-    margin-top: 1rem;
-  }
-
-  @media screen and (max-width: 750px) {
-    .template-404{
-      min-height:450px;
-    }
+    align-items: center;
   }
 
 </style>
 
-<div class="template-404 page-width page-margin center">
+<div class="template-404">
   <h1>
     404
   </h1>
   <p>That page doesn't exist.</p>
-  <a href="{{ routes.all_products_collection_url }}" class="btn __btn-clr-default">
-    {{ 'general.continue_shopping' | t }}
+  <a href="/" class="btn">
+    Go home
   </a>
 </div>

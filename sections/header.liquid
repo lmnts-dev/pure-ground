@@ -1,29 +1,47 @@
 
+
+{% assign className = "site-header" %}
+
+{% comment %} Output navigation twice, one to display on scroll up and one that always exists at the top of the page content {% endcomment %}
 {% for i in (1..2) %}
   {% assign style = "on-scroll" %}
   {% if forloop.index0 == 1 %}
     {% assign style = "relative" %}
   {% endif %}
 
-  <{% if style == "on-scroll" %}sticky-header{% else %}header{% endif %} class="site-header __style-{{ style }}">
-    <a class="site-header__logo" href="/">{% render 'svg-logo' %}</a>
+  <{% if style == "on-scroll" %}sticky-header{% else %}header{% endif %} class="{{ className }} __style-{{ style }}">
 
-    <div class="site-header__main-links">
+    {% comment %} Logo {% endcomment %}
+    <a class="{{ className }}__logo" href="/">{% render 'svg-logo' %}</a>
+
+    {% comment %} Mobile hamburger button and divider {% endcomment %}
+    <hamburger-button class="{{ className }}__hamburger"><span></span></hamburger-button>
+    <div class="{{ className }}__mobile-divider">{% render 'svg-divider' %}</div>
+
+
+    {% comment %} All the links {% endcomment %}
+    <div class="{{ className }}__main-links">
+
       {% for block in section.blocks %}
         {% case block.type %}
+
+          {% comment %} Regular link (no nested links) {% endcomment %}
           {% when 'link' %}
             {% if block.settings.label and block.settings.link %}
-              <a class="site-header__plain-link p-sm" href="{{ block.settings.link }}" class="p-sm">{{ block.settings.label }}</a>
+              <a class="{{ className }}__plain-link p-sm" href="{{ block.settings.link }}" class="p-sm">{{ block.settings.label }}</a>
             {% endif %}
+
+          {% comment %} Link with nested links (dropdown) {% endcomment %}
           {% when 'label' %}
             {% if block.settings.label %}
               {% assign labelIndex = forloop.index0 %}
 
-              <div class="site-header__dropdown">
-              <dropdown-button class="site-header__dropdown__label p-sm">{{ block.settings.label }}</dropdown-button>
-                <div class="site-header__dropdown__container">
-                  <div class="site-header__dropdown__divider">{% render 'svg-divider' color: block.settings.color %}{% render 'svg-divider' color: block.settings.color %}</div>
+                <dropdown-button class="{{ className }}__label p-sm">{{ block.settings.label }}</dropdown-button>
+                <div class="{{ className }}__dropdown">
+                  <div class="{{ className }}__dropdown__divider">{% render 'svg-divider' color: block.settings.color %}{% render 'svg-divider' color: block.settings.color %}</div>
                   {% for block in section.blocks %}
+                    {% assign blockClassName = className | append: "__dropdown__block" %}
+
                     {% if forloop.index0 > labelIndex %}
                       {% case block.type %}
                         {% when 'link' %}
@@ -31,51 +49,16 @@
                         {% when 'label' %}
                           {% break %}
                         {% when 'submenu' %}
-                          {% if block.settings.menu %}
-                          <div class="site-header__dropdown__block __submenu">
-                            <span class="p-lg">{{ block.settings.menu.title }}</span>
-                              <ul class="site-header__submenu-list">
-                                {% for link in block.settings.menu.links %}
-                                  <li><a href="{{ link.url }}" class="p-sm">{{ link.title }}</a></li>
-                                {% endfor %}
-                              </ul>
-                            </span>
-                          </div>
-                          {% endif %}
+                          {% render 'nav-dropdown-submenu' menu: block.settings.menu, className: blockClassName %}
                         {% when 'text' %}
-                          {% if block.settings.heading or block.settings.text or block.settings.button_label and block.settings.button_link %}
-                            <div class="site-header__dropdown__block __text-block">
-                              {% if block.settings.heading %} <span>{{ block.settings.heading }}</span>{% endif %}
-                              {% if block.settings.button_label %}<p class="__article-txt">{{ block.settings.button_label }}</p>{% endif %}
-                              {% if block.settings.button_label and block.settings.button_link %}<a href="{{ block.settings.button_link }}" class="btn">{{ block.settings.button_label }}</a>{% endif %}
-                            </div>
-                          {% endif %}
+                          {% render 'nav-dropdown-text-block' heading: block.settings.heading, text: block.settings.text, button_label: block.settings.button_label, button_link: block.settings.button_link, className: blockClassName %}
                         {% when 'page' %}
-                          {% if block.settings.page and block.settings.image %}
-                            <a href="{{ block.settings.page.url }}" class="site-header__dropdown__block __featured-page">
-                              <div class="site-header__image">
-                                {% render 'next-gen-img' image: block.settings.image, alt: block.settings.page.title %}
-                              </div>
-                              <span class="site-header__label p-sm">{{ block.settings.page.title }}</span>
-                            </a>
-                          {% endif %}
+                          {% render 'nav-dropdown-page' page: block.settings.page, image: block.settings.image, className: blockClassName %}
                         {% when 'articles' %}
-                          {% if block.settings.menu %}
-                            <div class="site-header__dropdown__block __articles">
-                              <span class="site-header__label p-lg">{{block.settings.menu.title }}</span>
-                              <ul class="site-header__articles-list">
-                                {% for item in block.settings.menu.links %}
-                                  <li>
-                                    {% render 'article-card', article: item.object, style: "teaser" %}
-                                  </li>
-                                {% endfor %}
-                              </ul>
-                            </div>
-                          {% endif %}
+                          {% render 'nav-dropdown-articles' menu: block.settings.menu, className: blockClassName %}
                       {% endcase %}
                     {% endif %}
                   {% endfor %}
-                </div>
               {% endif %}
             </div>
 
@@ -83,13 +66,37 @@
       {% endfor %}
     </div>
 
-    <div class="site-header__icons">
+    {% comment %} All the icons/tools 
+    <div class="{{ className }}__icons">
 
     </div>
+    {% endcomment %}
+
   </{% if style == "on-scroll" %}sticky-header{% else %}header{% endif %}>
 {% endfor %}
 
 {% javascript %}
+
+  class HamburgerButton extends HTMLElement {
+    constructor() {
+      super();
+
+      this.setupListener();
+    }
+
+    //Add a on click listener to every hamburger button
+    setupListener() {
+      this.addEventListener('click', this.updateOverlayNav.bind(this));
+    }
+
+    //toggle overlay nav
+    updateOverlayNav(){
+      this.classList.toggle("__active");
+      document.body.classList.toggle('__mobile-overflow-none');
+    }
+  }
+
+  customElements.define('hamburger-button', HamburgerButton);
 
   class DropdownButton extends HTMLElement {
     constructor() {
@@ -109,7 +116,7 @@
       //parent element for this section
       var thisSection = this.parentNode.parentNode.parentNode;
       //all dropdowns in this section
-      var dropdowns = thisSection.querySelectorAll('.site-header__dropdown__label');
+      var dropdowns = thisSection.querySelectorAll('.site-header__label');
 
       //remove active class on nav buttons
       for (var i = 0; i < dropdowns.length; i++ ) {
@@ -142,7 +149,7 @@
 
     updateClass(e) {
       //all dropdowns in header
-      var dropdowns = document.querySelectorAll('.site-header__dropdown__label');
+      var dropdowns = document.querySelectorAll('.site-header__label');
 
       for (var i = 0; i < dropdowns.length; i++ ){
         dropdowns[i].classList.remove('__active');
