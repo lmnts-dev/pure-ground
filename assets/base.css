@@ -1322,6 +1322,7 @@ details[open] > .share-button__fallback {
   min-width: max-content;
   border-radius: var(--inputs-radius);
   border: 0;
+  overflow: hidden;
 }
 
 .share-button__fallback:after {
