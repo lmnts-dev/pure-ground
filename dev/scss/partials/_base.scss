@@ -12,6 +12,10 @@ body {
   background: var(--color-background);
   color: var(--color-foreground);
 
+  &.__mobile-overflow-none {
+    overflow: hidden;
+  }
+
   main {
     > *:first-child:not(.section-image__wrapper):not(.content-with-bg-image__wrapper) {
       margin-top: var(--navHeight);
