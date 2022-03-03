@@ -9,7 +9,7 @@
   {% if section.settings.heading %}
       <h2 class="split-section__text__heading">{{ section.settings.heading }}</h2>
    {% endif %}
-    {% if section.settings.button_link %}
+   {%- if section.settings.button_label and section.settings.button_link -%}
          <a href={{section.settings.button_link}} class="__btn-clr-{{section.settings.button_color}}">{{section.settings.button_label}}</a>
     {% endif %}
 </div>
@@ -23,7 +23,8 @@
       {
          "type":"text",
          "id":"heading",
-         "label":"Section Heading"
+         "label":"Section Heading",
+         "default": "Heading Here"
       },
       {
          "type": "header",

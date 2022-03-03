@@ -17,8 +17,12 @@
       "autoPlay": true
    }'>
       {% for block in section.blocks %}
-         <div class="icons-row__icons__icon" {{ block.shopify_attributes }}>
+         <div class="icons-row__icons__icon" {{ block.shopify_attributes }}>               
+         {%- if block.settings.icon != blank -%}
             {% render 'next-gen-img', image: block.settings.icon, alt: block.settings.alt %}
+         {%- else -%}
+            {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+         {%- endif -%}
          </div>
       {% endfor %}
    </div>   
@@ -38,7 +42,8 @@
       {
          "type": "text",
          "id": "heading",
-         "label":"Heading"
+         "label":"Heading",
+         "default": "Heading Here"
       },
       {
          "type": "header",
