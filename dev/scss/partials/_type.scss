@@ -216,11 +216,12 @@ li {
   }
 
   blockquote{
+    position: relative;
+    
     p{
       font-style: italic;
       font-size: 1rem;
       font-weight: 600;
-      position: relative;
 
       &::before{
         content: '"';
