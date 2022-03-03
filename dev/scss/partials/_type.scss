@@ -156,7 +156,18 @@ li {
   margin: 0;
 }
 
-.article-txt {
+.__article-txt {
+
+  h1, h2{
+    font-weight: var(--font-heading-weight);
+    font-size: 2.25rem;
+  }
+
+  h3,h4,h5,h6{
+    font-size: 2.25rem;
+    font-weight: bold;
+  }
+  
   a {
     position: relative;
     color: var(--color-accent);
@@ -186,8 +197,19 @@ li {
     }
   }
 
-  ul,
-  li {
-    //add styles here
+  p{
+    font-size: .9rem;
+  }
+
+  blockquote{
+    font-style: italic;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  ul, ol{
+     li {
+      font-size: .9rem;
+    }
   }
 }
