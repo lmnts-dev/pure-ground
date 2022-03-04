@@ -4,6 +4,7 @@
 
   &__departments{
     border-right: 1px solid black;
+    flex: 1;
   }
 
   &__content{
@@ -11,8 +12,11 @@
   }
 
   &__position {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     width: 100%;
     display: none;
+    flex: 3;
 
     svg {
       * {

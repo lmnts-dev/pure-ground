@@ -50,8 +50,10 @@
                   <p>{{block.settings.details}}</p>
             </toggle-modal>
             
-            {% render 'svg-location' %}
-            <span>{{block.settings.location}}</span>
+            <div>
+               {% render 'svg-location' %}
+               <span>{{block.settings.location}}</span>
+            </div>
 
             {% render 'modal' %}
 
