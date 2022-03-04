@@ -121,8 +121,8 @@
     }
 
     &__departments{
-      border-bottom: 1px solid black;
-      border-right: 0;
+      border: 1px solid var(--color-foreground);
+      padding: calc(var(--pxSize) / 2.5);
     }
 
     &__position {
