@@ -20,7 +20,7 @@
     grid-template-columns: repeat(2,1fr);
     width: 100%;
     display: none;
-    padding: 0px calc(var(--sectionVerticalSpacing) / 1.5) calc(var(--sectionVerticalSpacing) / 3) alc(var(--sectionVerticalSpacing) / 1.5);
+    padding: 0px calc(var(--sectionVerticalSpacing) / 1.5) calc(var(--sectionVerticalSpacing) / 3) calc(var(--sectionVerticalSpacing) / 1.5);
 
     svg {
       * {
@@ -104,10 +104,6 @@
         max-height: 10000vh;
         border-bottom: 1px solid var(--color-foreground);
       }
-    }
-
-    &.__active {
-      display: block;
     }
   }
 
