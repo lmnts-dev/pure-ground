@@ -363,6 +363,31 @@
         "top_spacing": 50,
         "bottom_spacing": 50
       }
+    },
+    "16463543240513745c": {
+      "type": "content-with-bg-image",
+      "settings": {
+        "heading": "Heading",
+        "subheading": "Subheading",
+        "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ullamcorper, tortor ut viverra pulvinar, orci tellus elementum odio, et malesuada neque diam vel sem. Curabitur lacus sem, commodo sed lacus id, vulputate tincidunt sapien.<\/p>",
+        "heading_size": "h2",
+        "text_color": "light",
+        "button_label": "Button label",
+        "button_link": "",
+        "button_color": "default",
+        "alt": "Image alt text",
+        "overlay": 50,
+        "hero": false,
+        "fullwidth": false,
+        "accent_color": false,
+        "alignment": "left",
+        "icon": false,
+        "color_scheme": "cream",
+        "top_spacing": 0,
+        "bottom_spacing": 0,
+        "top_internal_spacing": 100,
+        "bottom_internal_spacing": 100
+      }
     }
   },
   "order": [
@@ -374,6 +399,7 @@
     "16450418065fdb6a59",
     "16451151390f67c7d6",
     "164442413892b05956",
-    "articles"
+    "articles",
+    "16463543240513745c"
   ]
 }
