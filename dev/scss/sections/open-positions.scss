@@ -21,11 +21,12 @@
   }
 
   &__position {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    align-items: center;
-    width: 100%;
     padding: 0px calc(var(--sectionVerticalSpacing) / 1.5) calc(var(--sectionVerticalSpacing) / 2) calc(var(--sectionVerticalSpacing) / 1.5);
+
+    &--top, &--bottom{
+      display: flex;
+      justify-content: space-between;
+    }
 
     h3, p {
       margin-bottom: 0;
