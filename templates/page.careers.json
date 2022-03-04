@@ -13,12 +13,12 @@
         "277f0779-6824-4b72-a2bc-1356120ba8b9": {
           "type": "position",
           "settings": {
-            "heading": "Position",
+            "heading": "Customer Service Representative",
             "location": "Position",
             "details": "",
             "button_label": "Button label",
-            "button_link": "",
-            "button_color": "default",
+            "button_link": "shopify:\/\/pages\/privacy-policy",
+            "button_color": "grass",
             "department": "All"
           }
         },
@@ -27,10 +27,10 @@
           "settings": {
             "heading": "Position",
             "location": "asdfsdf",
-            "details": "<p>asdfsfsdf<\/p>",
+            "details": "<p>Here is a longer description<\/p>",
             "button_label": "Button label",
             "button_link": "shopify:\/\/pages\/history",
-            "button_color": "default",
+            "button_color": "grass",
             "department": "All"
           }
         }
