@@ -17,6 +17,7 @@
     {% if section.settings.heading %}
       <h2 class="open-positions__heading h4">{{ section.settings.heading }}</h2>
     {% endif %}
+    
       {% if section.settings.text %}
          <div class="open-positions__content__text __article-txt">{{ section.settings.text }}</div>
       {% endif %}
@@ -26,9 +27,6 @@
         <div class="open-positions__departments">
         <span>Departments</span>
       </div>
-      {%- if section.settings.button_label != blank -%}
-         <a class="btn" href="{{section.settings.button_link}}">{{section.settings.button_label}}</a>
-      {%- endif -%}
 
 {% if section.blocks.size > 0 %}
     {% comment %} Loop through positions {% endcomment %}
@@ -43,7 +41,7 @@
         {% assign department_handle = department | handleize %}
 
         {% comment %} Output position {% endcomment %}
-        <div class="positions__position {% if department == default_department %}__active{% endif %}" data-department="{{ department_handle }}">
+        <div class="open-positions__position {% if department == default_department %}__active{% endif %}" data-department="{{ department_handle }}">
             <h3 class="h4">{{block.settings.heading}}</h3>
             
               <toggle-modal class="collections-grid__container" data-type="container">
@@ -55,13 +53,13 @@
                <span>{{block.settings.location}}</span>
             </div>
 
-            {% render 'modal' %}
-
             {% if block.settings.button_link and block.settings.button_label %}
-              <a class="bi-column-text-blocks__block__btn btn __btn-clr-{{block.settings.button_color}}" {% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} {{ block.shopify_attributes }}>
-                {{ block.settings.button_label | escape }}
-              </a>
+               <a class="bi-column-text-blocks__block__btn btn __btn-clr-{{block.settings.button_color}}" {% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} {{ block.shopify_attributes }}>
+                  {{ block.settings.button_label | escape }}
+               </a>
             {% endif %}
+
+            {% render 'modal' %}
         </div>
 
         {% comment %} 
