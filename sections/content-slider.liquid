@@ -12,7 +12,11 @@
       {%- for block in section.blocks -%}
         <div class="content-slider__slides__slide">
           <div class="content-slider__image">
-            {% render 'next-gen-img', image: block.settings.image, alt: block.settings.alt %}
+             {%- if block.settings.image != blank -%}
+                {% render 'next-gen-img', image: block.settings.image, alt: block.settings.alt %}
+              {%- else -%}
+                {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+              {%- endif -%}
           </div>
           <div class="content-slider__text">
             <p class="content-slider__text__body">{{block.settings.text}}</p>
