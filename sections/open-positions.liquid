@@ -16,7 +16,7 @@
 
    <div class="open-positions__headline-content">
     {% if section.settings.heading %}
-      <h2 class="open-positions__heading h4">{{ section.settings.heading }}</h2>
+      <h2 class="open-positions__heading h5">{{ section.settings.heading }}</h2>
     {% endif %}
     
       {% if section.settings.text %}
@@ -52,18 +52,15 @@
                         {{ block.settings.button_label | escape }}
                      </a>
                   {% endif %}
-                  
-                  <toggle-modal class="collections-grid__container" data-type="container">
-                     <p>{{block.settings.details}}</p>
-                  </toggle-modal>
-                  
+
                   <div>
                      {% render 'svg-location' %}
                      <span>{{block.settings.location}}</span>
                   </div>
-
-
-                  {% render 'modal' %}
+                  
+                  <toggle-modal class="collections-grid__container" data-type="container">
+                     <p>{{block.settings.details}}</p>
+                  </toggle-modal>{% render 'modal' %}
                </div>
 
             {% comment %} 
