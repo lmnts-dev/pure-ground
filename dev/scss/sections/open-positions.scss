@@ -23,11 +23,13 @@
   &__position {
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    align-items: center;
     width: 100%;
     padding: 0px calc(var(--sectionVerticalSpacing) / 1.5) calc(var(--sectionVerticalSpacing) / 2) calc(var(--sectionVerticalSpacing) / 1.5);
 
     &__btn{
       width: fit-content;
+      margin-top: 0;
     }
 
     svg {

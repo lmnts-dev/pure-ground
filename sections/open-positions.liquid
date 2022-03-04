@@ -45,7 +45,7 @@
 
             {% comment %} Output position {% endcomment %}
                <div class="open-positions__position {% if department == default_department %}__active{% endif %}" data-department="{{ department_handle }}">
-                  <h3 class="h4">{{block.settings.heading}}</h3>
+                  <h3 class="h5">{{block.settings.heading}}</h3>
 
                   {% if block.settings.button_link and block.settings.button_label %}
                      <a class="open-positions__position__btn btn __btn-clr-{{block.settings.button_color}}" {% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} {{ block.shopify_attributes }}>
@@ -57,7 +57,7 @@
                      {% render 'svg-location' %}
                      <span>{{block.settings.location}}</span>
                   </div>
-                  
+
                   <toggle-modal class="collections-grid__container" data-type="container">
                      <p>{{block.settings.details}}</p>
                   </toggle-modal>{% render 'modal' %}
