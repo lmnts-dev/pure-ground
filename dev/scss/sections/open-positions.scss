@@ -11,21 +11,20 @@
     display: flex;
   }
 
+  &__container{
+    flex: 3;
+  }
+
   &__position {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     width: 100%;
     display: none;
-    flex: 3;
 
     svg {
       * {
         fill: var(--color-foreground);
       }
-    }
-
-    &:first-of-type {
-      border-top: 1px solid var(--color-foreground);
     }
 
     &__checkbox {
