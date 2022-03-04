@@ -46,9 +46,15 @@
             {% comment %} Output position {% endcomment %}
                <div class="open-positions__position {% if department == default_department %}__active{% endif %}" data-department="{{ department_handle }}">
                   <h3 class="h4">{{block.settings.heading}}</h3>
+
+                  {% if block.settings.button_link and block.settings.button_label %}
+                     <a class="open-positions__position__btn btn __btn-clr-{{block.settings.button_color}}" {% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} {{ block.shopify_attributes }}>
+                        {{ block.settings.button_label | escape }}
+                     </a>
+                  {% endif %}
                   
-                     <toggle-modal class="collections-grid__container" data-type="container">
-                        <p>{{block.settings.details}}</p>
+                  <toggle-modal class="collections-grid__container" data-type="container">
+                     <p>{{block.settings.details}}</p>
                   </toggle-modal>
                   
                   <div>
@@ -56,11 +62,6 @@
                      <span>{{block.settings.location}}</span>
                   </div>
 
-                  {% if block.settings.button_link and block.settings.button_label %}
-                     <a class="open-positions__position__btn btn __btn-clr-{{block.settings.button_color}}" {% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} {{ block.shopify_attributes }}>
-                        {{ block.settings.button_label | escape }}
-                     </a>
-                  {% endif %}
 
                   {% render 'modal' %}
                </div>

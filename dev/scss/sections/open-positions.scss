@@ -9,6 +9,7 @@
 
   &__content{
     display: flex;
+    margin-top: 2rem;
   }
 
   &__container{
@@ -94,50 +95,6 @@
         grid-template-columns: repeat(2, 1fr);
       }
     }
-
-    // Checked State
-    &__checkbox:checked {
-      + .positions__position__label {
-        transform: scale(1.015);
-        opacity: 0.9;
-        border-bottom: none;
-
-        svg {
-          transform: translateY(-50%) rotate(45deg);
-        }
-      }
-
-      ~ .positions__position__content {
-        max-height: 10000vh;
-        border-bottom: 1px solid var(--color-foreground);
-      }
-    }
-  }
-
-  //visually this must appear above the positions, but logically
-  //it must occur after the positions because inside the positions
-  //loop is where we gather the category nav data. This is why we're
-  //using flex column order here
-  &__nav {
-    order: -1;
-    display: flex;
-    gap: var(--pxSize);
-    margin: 0 0 calc(var(--sectionVerticalSpacing) * 0.75) 0;
-
-    &__item {
-      > * {
-        cursor: pointer;
-        opacity: 0.7;
-
-        &:hover {
-          opacity: 0.9;
-        }
-
-        &.__active {
-          opacity: 1;
-        }
-      }
-    }
   }
 
   &__text {
@@ -146,14 +103,18 @@
   }
 
   @media screen and (max-width: 676px) {
-    &__nav {
-      overflow: auto;
+    &__content{
+      flex-direction: column;
     }
 
-      &__position {
-        &__label{
-          padding-right: calc(var(--pxSize) / 1.5);
-        }
+    &__departments{
+      border-bottom: 1px solid black;
+    }
+
+    &__position {
+      &__label{
+        padding-right: calc(var(--pxSize) / 1.5);
       }
+    }
   }
 }
