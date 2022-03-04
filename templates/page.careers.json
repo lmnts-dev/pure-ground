@@ -21,10 +21,23 @@
             "button_color": "default",
             "department": "All"
           }
+        },
+        "807e88ff-dab1-41ec-baa3-39db101410d2": {
+          "type": "position",
+          "settings": {
+            "heading": "Position",
+            "location": "asdfsdf",
+            "details": "<p>asdfsfsdf<\/p>",
+            "button_label": "Button label",
+            "button_link": "shopify:\/\/pages\/history",
+            "button_color": "default",
+            "department": "All"
+          }
         }
       },
       "block_order": [
-        "277f0779-6824-4b72-a2bc-1356120ba8b9"
+        "277f0779-6824-4b72-a2bc-1356120ba8b9",
+        "807e88ff-dab1-41ec-baa3-39db101410d2"
       ],
       "settings": {
         "heading": "",
