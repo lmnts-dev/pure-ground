@@ -14,6 +14,7 @@
 
   <div id="Open-positions-{{ section.id }}" class="open-positions color-{{section.settings.color_scheme}}">
 
+   <div class="open-positions__headline-content">
     {% if section.settings.heading %}
       <h2 class="open-positions__heading h4">{{ section.settings.heading }}</h2>
     {% endif %}
@@ -21,6 +22,7 @@
       {% if section.settings.text %}
          <div class="open-positions__content__text __article-txt">{{ section.settings.text }}</div>
       {% endif %}
+   </div>
 
     
     <div class="open-positions__content">
@@ -55,7 +57,7 @@
                   </div>
 
                   {% if block.settings.button_link and block.settings.button_label %}
-                     <a class="bi-column-text-blocks__block__btn btn __btn-clr-{{block.settings.button_color}}" {% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} {{ block.shopify_attributes }}>
+                     <a class="open-positions__position__btn btn __btn-clr-{{block.settings.button_color}}" {% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} {{ block.shopify_attributes }}>
                         {{ block.settings.button_label | escape }}
                      </a>
                   {% endif %}
@@ -183,12 +185,14 @@
       {
          "type":"text",
          "label":"Heading",
-         "id":"heading"
+         "id":"heading",
+         "default": "Open Positions"
       },
       {
          "type":"richtext",
          "label":"Text Content",
-         "id":"text"
+         "id":"text",
+         "default": "<p>We’re looking for people to join the team who are as excited as we are to build positive global impact of supporting of customers, suppliers and network of growers and partners around the world. </p>"
       },
       {
          "type":"header",
