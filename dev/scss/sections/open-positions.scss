@@ -116,6 +116,13 @@
     &__position {
       padding: 0;
       margin-top: 1.25rem;
+
+      &--top{
+        h3{
+          font-size: 18px;
+        }
+      }
+
       &__label{
         padding-right: calc(var(--pxSize) / 1.5);
       }
