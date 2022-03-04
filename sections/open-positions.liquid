@@ -45,23 +45,27 @@
 
             {% comment %} Output position {% endcomment %}
                <div class="open-positions__position {% if department == default_department %}__active{% endif %}" data-department="{{ department_handle }}">
-                  <h3 class="h5">{{block.settings.heading}}</h3>
+                  <div class="open-positions__position--top">
+                     <h3 class="h5">{{block.settings.heading}}</h3>
 
-                  {% if block.settings.button_link and block.settings.button_label %}
-                     <a class="open-positions__position__btn btn __btn-clr-{{block.settings.button_color}}" {% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} {{ block.shopify_attributes }}>
-                        {{ block.settings.button_label | escape }}
-                     </a>
-                  {% endif %}
-
-                  <div>
-                     {% render 'svg-location' %}
-                     <span>{{block.settings.location}}</span>
+                     {% if block.settings.button_link and block.settings.button_label %}
+                        <a class="open-positions__position__btn btn __btn-clr-{{block.settings.button_color}}" {% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} {{ block.shopify_attributes }}>
+                           {{ block.settings.button_label | escape }}
+                        </a>
+                     {% endif %}
                   </div>
+                  <div class="open-positions__position--bottom">
+                     <div>
+                        {% render 'svg-location' %}
+                        <span>{{block.settings.location}}</span>
+                     </div>
 
-                  <toggle-modal class="collections-grid__container" data-type="container">
-                     <p>{{block.settings.details}}</p>
-                  </toggle-modal>{% render 'modal' %}
+                     <toggle-modal class="collections-grid__container" data-type="container">
+                        <p>{{block.settings.details}}</p>
+                     </toggle-modal>{% render 'modal' %}
+                  </div>
                </div>
+
 
             {% comment %} 
                Add position department to departments string, 
