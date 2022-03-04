@@ -20,6 +20,7 @@
     grid-template-columns: repeat(2,1fr);
     width: 100%;
     display: none;
+    padding: 0px calc(var(--sectionVerticalSpacing) / 1.5) calc(var(--sectionVerticalSpacing) / 3) alc(var(--sectionVerticalSpacing) / 1.5);
 
     svg {
       * {
