@@ -22,10 +22,7 @@
 
   &__modal{
     padding: 0 calc(var(--btnHeight)/ 6);
-
-    p:last-of-type{
-      text-align: end;
-    }
+    text-align: end;
   }
 
   &__position {
