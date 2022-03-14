@@ -61,8 +61,8 @@
                      </div>
 
                      <toggle-modal class="open-positions__modal" data-type="container">
-                        <p>{{block.settings.details}}</p>
-                     </toggle-modal>{% render 'modal' %}
+                        <p>Details</p>
+                     </toggle-modal>{% render 'position-modal', block.settings.position: block.settings.position %}
                   </div>
                </div>
 

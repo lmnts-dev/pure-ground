@@ -1,0 +1,35 @@
+{% comment %}
+    Renders a modal containing details for open positions. Used in the open positions section.
+
+    Expects:
+    - position: {Object} Position object
+
+    Usage:
+    {% render 'position-modal', block.settings.position: block.settings.position %}
+{% endcomment %}
+
+<toggle-modal class="cmnc-modal color-cream" data-type="modal">
+  <div class="cmnc-modal__content">
+    <button class="cmnc-modal__exit">
+      {% render 'svg-plus' %}
+    </button>
+    {% if settings.modal_image %}
+      <div class="cmnc-modal__content__image">
+        {% render 'next-gen-img' image: settings.modal_image, alt: settings.modal_heading %}
+      </div>
+    {% endif %}
+    <div class="cmnc-modal__content__text">
+      {% if settings.modal_heading %}
+        <h2 class="h4">{{ position.heading }}</h2>
+      {% endif %}
+      {% if position.details %}
+        <p>{{ position.details }}</p>
+      {% endif %}
+      <div class="cmnc-modal__plants">
+        {% render 'svg-plants' %}
+        {% render 'svg-plants' %}
+      </div>
+    </div>
+
+  </div>
+</toggle-modal>
