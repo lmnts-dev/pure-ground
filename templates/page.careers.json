@@ -15,7 +15,7 @@
           "settings": {
             "heading": "Customer Service Representative",
             "location": "Position",
-            "details": "",
+            "details": "<p>Testing details here<\/p>",
             "button_label": "Button label",
             "button_link": "shopify:\/\/pages\/privacy-policy",
             "button_color": "grass",
