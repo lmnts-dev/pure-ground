@@ -19,8 +19,8 @@
       </div>
     {% endif %}
     <div class="cmnc-modal__content__text">
-      {% if settings.modal_heading %}
-        <h2 class="h4">{{ position.heading }}</h2>
+      {% if block.settings.heading %}
+        <h2 class="h4">{{ block.settings.heading }}</h2>
       {% endif %}
       {% if block.settings.details %}
         <p>{{ block.settings.details }}</p>
