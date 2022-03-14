@@ -5,7 +5,7 @@
     - position: {Object} Position object
 
     Usage:
-    {% render 'position-modal', block.settings.position: block.settings.position %}
+    {% render 'position-modal', block.settings: block.settings %}
 {% endcomment %}
 
 <toggle-modal class="cmnc-modal color-cream" data-type="modal">
@@ -22,8 +22,8 @@
       {% if settings.modal_heading %}
         <h2 class="h4">{{ position.heading }}</h2>
       {% endif %}
-      {% if position.details %}
-        <p>{{ position.details }}</p>
+      {% if block.settings.details %}
+        <p>{{ block.settings.details }}</p>
       {% endif %}
       <div class="cmnc-modal__plants">
         {% render 'svg-plants' %}
