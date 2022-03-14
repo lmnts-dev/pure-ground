@@ -19,11 +19,11 @@
       </div>
     {% endif %}
     <div class="cmnc-modal__content__text">
-      {% if block.settings.heading %}
-        <h2 class="h4">{{ block.settings.heading }}</h2>
+      {% if position_heading %}
+        <h2 class="h4">{{ position_heading }}</h2>
       {% endif %}
-      {% if block.settings.details %}
-        <p>{{ block.settings.details }}</p>
+      {% if position_details %}
+        <p>{{ position_details }}</p>
       {% endif %}
       <div class="cmnc-modal__plants">
         {% render 'svg-plants' %}
