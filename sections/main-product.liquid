@@ -258,6 +258,14 @@
                 {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
                   <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" disabled>
                   <div class="product-form__buttons">
+                    <input class="quantity__input"
+                      type="number"
+                      name="quantity"
+                      id="Quantity-{{ section.id }}"
+                      min="1"
+                      value="1"
+                      form="{{ product_form_id }}"
+                    >
                     <button
                       type="submit"
                       name="add"
