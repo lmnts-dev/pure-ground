@@ -50,6 +50,12 @@
             <h1 class="product__title" {{ block.shopify_attributes }}>
               {{ product.title | escape }}
             </h1>
+          {%- when 'description' -%}
+            {%- if product.description != blank -%}
+              <div class="product__description rte">
+                {{ product.description }}
+              </div>
+            {%- endif -%}
           {%- when 'price' -%}
             <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
               {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
@@ -70,12 +76,6 @@
                 {{ form | payment_terms }}
               {%- endform -%}
             </div>
-          {%- when 'description' -%}
-            {%- if product.description != blank -%}
-              <div class="product__description rte">
-                {{ product.description }}
-              </div>
-            {%- endif -%}
           {%- when 'custom_liquid' -%}
             {{ block.settings.custom_liquid }}
            
@@ -304,7 +304,7 @@
               </pickup-availability>
             </div>
 
-            <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
+          <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
           {%- when 'rating' -%}
             {%- if product.metafields.reviews.rating.value != blank -%}
               {% liquid
