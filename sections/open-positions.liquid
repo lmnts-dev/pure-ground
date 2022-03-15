@@ -28,31 +28,6 @@
     <div class="open-positions__content">
         <div class="open-positions__departments">
         <span>Departments</span>
-             {% comment %} Split departments string into an array {% endcomment %}
-         {% assign departments = departments | split: "$$$" | uniq %}
-
-         {% comment %} 
-         Output positions nav if there's more than 
-         one department to navigate through 
-         {% endcomment %}
-         {% if departments.size > 1 %}
-         <ul class="positions__nav">
-            {%- for department in departments -%}
-               {% assign department_handle = department | handleize %}
-
-               {% comment %} Each nav item {% endcomment %}
-               <li class="positions__nav__item">
-                  {% comment %} Tag logic below sets listener on {% endcomment %}
-                  <positions-button
-                     class="positions__button caption {% if department == default_department %}__active{% endif %}"
-                     data-department="{{ department_handle }}"
-                  >
-                     {{ department }}
-                  </positions-button>
-               </li>
-            {%- endfor -%}
-         </ul>
-         {% endif %}
       </div>
 
       <div class="open-positions__container">
@@ -99,6 +74,32 @@
             {% assign departments = departments | append: "$$$" | append: department %}
          {% endif %}
          {%- endfor -%}
+
+         {% comment %} Split departments string into an array {% endcomment %}
+         {% assign departments = departments | split: "$$$" | uniq %}
+
+         {% comment %} 
+         Output positions nav if there's more than 
+         one department to navigate through 
+         {% endcomment %}
+         {% if departments.size > 1 %}
+         <ul class="positions__nav">
+            {%- for department in departments -%}
+               {% assign department_handle = department | handleize %}
+
+               {% comment %} Each nav item {% endcomment %}
+               <li class="positions__nav__item">
+                  {% comment %} Tag logic below sets listener on {% endcomment %}
+                  <positions-button
+                     class="positions__button caption {% if department == default_department %}__active{% endif %}"
+                     data-department="{{ department_handle }}"
+                  >
+                     {{ department }}
+                  </positions-button>
+               </li>
+            {%- endfor -%}
+         </ul>
+         {% endif %}
       {% endif %}
    </div>
   </div>
