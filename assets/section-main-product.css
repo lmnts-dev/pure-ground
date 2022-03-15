@@ -47,9 +47,6 @@
     display: none;
   }
 
-  .buy_buttons{
-    display: flex;
-  }
 }
 
 @media screen and (min-width: 990px) {
@@ -437,6 +434,7 @@ a.product__text {
 
 .product-form__buttons {
   max-width: 44rem;
+  display: flex;
 }
 
 .product--no-media .product__info-container > modal-opener {
