@@ -27,7 +27,7 @@
    {% if section.blocks.size > 0 %}
     <div class="open-positions__content">
         <div class="open-positions__departments">
-        <span>Departments</span>
+        <span class="p-sm">Departments</span>
         {% if departments.size > 1 %}
          <ul class="positions__nav">
             {%- for department in departments -%}
@@ -68,6 +68,7 @@
                      {% if block.settings.button_link and block.settings.button_label %}
                         <a class="open-positions__position__btn btn __btn-clr-{{block.settings.button_color}}" {% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} {{ block.shopify_attributes }}>
                            {{ block.settings.button_label | escape }}
+                            {% render 'svg-arrow' %}
                         </a>
                      {% endif %}
                   </div>
