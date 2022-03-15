@@ -24,14 +24,31 @@
       {% endif %}
    </div>
 
-    
+   {% if section.blocks.size > 0 %}
     <div class="open-positions__content">
         <div class="open-positions__departments">
         <span>Departments</span>
+        {% if departments.size > 1 %}
+         <ul class="positions__nav">
+            {%- for department in departments -%}
+               {% assign department_handle = department | handleize %}
+
+               {% comment %} Each nav item {% endcomment %}
+               <li class="positions__nav__item">
+                  {% comment %} Tag logic below sets listener on {% endcomment %}
+                  <positions-button
+                     class="positions__button caption {% if department == default_department %}__active{% endif %}"
+                     data-department="{{ department_handle }}"
+                  >
+                     {{ department }}
+                  </positions-button>
+               </li>
+            {%- endfor -%}
+         </ul>
+         {% endif %}
       </div>
 
       <div class="open-positions__container">
-      {% if section.blocks.size > 0 %}
          {% comment %} Loop through positions {% endcomment %}
          {%- for block in section.blocks -%}
          {% if block.settings.heading %}
@@ -82,24 +99,7 @@
          Output positions nav if there's more than 
          one department to navigate through 
          {% endcomment %}
-         {% if departments.size > 1 %}
-         <ul class="positions__nav">
-            {%- for department in departments -%}
-               {% assign department_handle = department | handleize %}
-
-               {% comment %} Each nav item {% endcomment %}
-               <li class="positions__nav__item">
-                  {% comment %} Tag logic below sets listener on {% endcomment %}
-                  <positions-button
-                     class="positions__button caption {% if department == default_department %}__active{% endif %}"
-                     data-department="{{ department_handle }}"
-                  >
-                     {{ department }}
-                  </positions-button>
-               </li>
-            {%- endfor -%}
-         </ul>
-         {% endif %}
+         
       {% endif %}
    </div>
   </div>
