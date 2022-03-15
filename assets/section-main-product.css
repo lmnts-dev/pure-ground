@@ -436,6 +436,7 @@ a.product__text {
   max-width: 44rem;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .product--no-media .product__info-container > modal-opener {
