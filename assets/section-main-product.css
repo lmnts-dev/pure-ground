@@ -435,6 +435,7 @@ a.product__text {
 .product-form__buttons {
   max-width: 44rem;
   display: flex;
+  align-items: center;
 }
 
 .product--no-media .product__info-container > modal-opener {
