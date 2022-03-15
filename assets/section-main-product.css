@@ -213,10 +213,11 @@ fieldset.product-form__input .form__label {
 
 .product-form__input input[type='radio'] + label:hover {
   border-color: rgb(var(--color-foreground));
+  background-color: rgba(var(--color-grass));
 }
 
 .product-form__input input[type='radio']:checked + label {
-  background-color: rgb(var(--color-foreground));
+  background-color: rgba(var(--color-grass));
   color: rgb(var(--color-background));
 }
 
