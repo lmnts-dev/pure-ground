@@ -6,11 +6,102 @@
     }
  {% endstyle %}
 
-<div id="Spec-sheet-{{ section.id }}" class="spec-sheet color-{{section.settings.color_scheme}}">
-   {% if section.settings.label %}
-      <p class="split-section__text__label">{{ section.settings.label }}</h2>
-   {% endif %}
-</div>
+
+{% comment %} Make sure user added items {% endcomment %}
+{% if section.blocks.size > 0 %}
+
+  {% comment %} Variables needed to gather category nav data {% endcomment %}
+  {% assign default_category = "General" %}
+  {% assign categories = default_category %}
+
+   <div id="Spec-sheet-{{ section.id }}" class="spec-sheet color-{{section.settings.color_scheme}}">
+
+   {% comment %} Table header {% endcomment %}
+   <div class="spec-sheet__item __header">
+      <div class="spec-sheet__item__label">
+         <p>{{section.settings.common_name_label}}</p>
+         <p>{{section.settings.botanical_name_label}}</p>
+         <p>{{section.settings.organic_label}}</p>
+         <p>{{section.settings.fair_trade_label}}</p>
+      </label>
+   </div> 
+
+    {% comment %} Loop through items {% endcomment %}
+    {%- for block in section.blocks -%}
+      {% if block.settings.heading and block.settings.content %}
+
+        {% comment %} Assign category variables {% endcomment %}
+        {% assign category = default_category %}
+        {% if block.settings.category %}
+          {% assign category = block.settings.category %}
+        {% endif %}
+        {% assign category_handle = category | handleize %}
+
+        {% comment %} Output item {% endcomment %}
+        <div class="spec-sheet__item {% if category == default_category %}__active{% endif %}" data-category="{{ category_handle }}">
+          <input class="spec-sheet__item__checkbox" type="checkbox" id="Item-{{section.id}}-{{forloop.index0}}">
+          <label class="spec-sheet__item__label" for="Item-{{section.id}}-{{forloop.index0}}">
+            <p>{{block.settings.common_name}}</p>
+            <p>{{block.settings.botanical_name}}</p>
+            <div 
+               class="spec-sheet__item__dot {% if block.settings.organic %}__dot-filled{% endif %}" 
+               aria-label="{% if block.settings.organic == false %}Not {% endif %}{{section.settings.organic_label}}"
+            ></div>
+            <div 
+               class="spec-sheet__item__dot {% if block.settings.fair_trade == "yes" %}__dot-filled{% elsif block.settings.fair_trade == "on_request"%}__dot-bordered{% endif %}" 
+               aria-label="{% if block.settings.fair_trade == "no" %}Not {{section.settings.fair_trade_label}}{% elsif block.settings.fair_trade == "on_request" %}{{ section.settings.fair_trade_on_request_disclaimer }}{% else %}{{section.settings.fair_trade_label}}{% endif %}"
+            ></div>
+          </label>
+          <div class="spec-sheet__item__content __article-txt">
+            {{block.settings.description}}
+          </div>
+        </div>
+
+        {% comment %} 
+          Add aitem category to categories string, 
+          which we will split into an array after the loop is completed 
+        {% endcomment %}
+        {% assign categories = categories | append: "$$$" | append: category %}
+      {% endif %}
+    {%- endfor -%}
+
+    <p>{{ section.settings.fair_trade_on_request_disclaimer }}</div>
+
+    {% comment %} Split categories string into an array {% endcomment %}
+    {% assign categories = categories | split: "$$$" | uniq %}
+
+    {% comment %} 
+      Output nav if there's more than 
+      one category to navigate through 
+    {% endcomment %}
+    {% if categories.size > 1 %}
+      <ul class="spec-sheet__nav">
+        {%- for category in categories -%}
+          {% assign category_handle = category | handleize %}
+
+            {% comment %} Each nav item {% endcomment %}
+            <li class="spec-sheet__nav__item">
+              {% comment %} Tag logic below sets listener on {% endcomment %}
+              <accordions-button
+                class="spec-sheet__button caption {% if category == default_category %}__active{% endif %}"
+                data-category="{{ category_handle }}"
+              >
+                {{ category }}
+              </accordions-button>
+            </li>
+        {%- endfor -%}
+      </ul>
+    {% endif %}
+
+    {% if section.settings.text %}
+      <div class="accordions__text article-txt">
+        {{ section.settings.text }}
+      </div>
+    {% endif %}
+
+  </div>
+{% endif %}
+
 
 {% schema %}
 {
@@ -18,10 +109,35 @@
   "tag": "section",
   "class": "section",
   "settings": [
-    {
+      {
         "type":"text",
-        "id":"label",
-        "label": "All Categories Label"
+        "id":"common_name_label",
+        "label": "Common Name Label",
+        "default": "Common Name"
+      },
+            {
+        "type":"text",
+        "id":"botanical_name_label",
+        "label": "Botanical Name Label",
+        "default": "Botanical Name"
+      },
+      {
+        "type":"text",
+        "id":"organic_label",
+        "label": "Organic Label",
+        "default": "Organic"
+      },
+      {
+        "type":"text",
+        "id":"fair_trade_label",
+        "label": "Fair Trade Label",
+        "default": "Fair Trade"
+      },
+      {
+        "type":"text",
+        "id":"fair_trade_on_request_disclaimer",
+        "label": "Fair Trade on Request Disclaimer",
+        "default": "Fair Trade On Request"
       },
       {
          "type":"select",
@@ -79,6 +195,61 @@
          "label":"Bottom Spacing",
          "default":50
       }
+  ],
+   "blocks": [
+    {
+      "name": "Item",
+      "type": "item",
+      "settings": [
+         {
+            "type": "text",
+            "id": "common_name",
+            "label": "Common Name"
+         },
+         {
+            "type": "richtext",
+            "id": "botanical_name",
+            "label": "Botanical Name"
+         },
+         {
+            "type": "checkbox",
+            "id": "organic",
+            "label": "Organic?"
+         },
+         {
+            "type":"select",
+            "id":"fair_trade",
+            "options": [
+               {
+                  "value":"no",
+                  "label":"No"
+               },
+               {
+                  "value":"yes",
+                  "label":"Yes"
+               },
+               {
+                  "value":"on_request",
+                  "label":"On Request"
+               }
+            ],
+            "default":"no",
+            "label":"Fair Trade?"
+         },
+         {
+            "type": "richtext",
+            "id": "description",
+            "label": "Description"
+         },
+         {
+            "type": "text",
+            "id": "category",
+            "label": "Category",
+            "default": "General",
+            "info": "You can categorize your items into categories like 'General' or 'Spicy'. If no category is written, this item will be categorized as 'General'. The ability to navigate between categories will only display if there are two or more categories in this section."
+         }
+      ]
+    }
   ],
   "presets": [
     {
