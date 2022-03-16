@@ -6,9 +6,51 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "1647470795ab7a1dc6": {
+      "type": "spec-sheet",
+      "blocks": {
+        "4a049a02-f5eb-4c33-85b9-2b697b05ef78": {
+          "type": "item",
+          "settings": {
+            "common_name": "Alfalfa Leaf",
+            "botanical_name": "<p>Medicago sativa<\/p>",
+            "organic": true,
+            "fair_trade": "no",
+            "description": "<p>Organic Alfalfa Leaf: This nutrient-dense herb, known for its strengthening properties, is a great addition to tinctures, tea blends, and smoothies.<\/p>",
+            "category": "General"
+          }
+        },
+        "23cbf211-ccb4-443c-b178-3e2489966f4f": {
+          "type": "item",
+          "settings": {
+            "common_name": "Organic Allspice",
+            "botanical_name": "<p>Pimenta dioica<\/p>",
+            "organic": true,
+            "fair_trade": "yes",
+            "description": "<p>Organic Allspice: With its strong and fragrant aroma this spice adds a sweet kick to any dessert or spice rub<\/p>",
+            "category": "Spicy"
+          }
+        }
+      },
+      "block_order": [
+        "4a049a02-f5eb-4c33-85b9-2b697b05ef78",
+        "23cbf211-ccb4-443c-b178-3e2489966f4f"
+      ],
+      "settings": {
+        "common_name_label": "Common Name",
+        "botanical_name_label": "Botanical Name",
+        "organic_label": "Organic",
+        "fair_trade_label": "Fair Trade",
+        "fair_trade_on_request_disclaimer": "Fair Trade On Request",
+        "color_scheme": "cream",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "1647470795ab7a1dc6"
   ]
 }
