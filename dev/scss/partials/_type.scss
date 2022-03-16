@@ -215,40 +215,28 @@ li {
     font-size: .9rem;
   }
 
-  blockquote{
+  blockquote, blockquote p{
     padding-left:0;
+    font-style: italic;
+    font-size: 1rem;
+    font-weight: 600;
+    padding-left: 1.5rem;
+    position: relative;
+    width: fit-content;
 
-    p{
-      font-style: italic;
-      font-size: 1rem;
-      font-weight: 600;
-      padding-left: 1.5rem;
-      position: relative;
-      width: fit-content;
+    &::before{
+      content: '"';
+    }
 
-      &::before{
-        content: '"';
-        position: absolute;
-        width: 15%;
-        height: 0;
-        bottom: 25px;
-        left: 15px;
-      }
-
-      &::after{
-        content: '"';
-        position: absolute;
-        width: 0;
-        height: 0;
-        bottom: 25px;
-        right: 0;
-      }
+    &::after{
+      content: '"';
     }
   }
 
   ul, ol{
     line-height: 28px;
     margin-left: calc(var(--pxSize)/4);
+    margin-bottom: 1rem;
 
     li{
       font-size: .9rem;
