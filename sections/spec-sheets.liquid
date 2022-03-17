@@ -1,6 +1,6 @@
 
 {% style %}
-    #Spec-sheet-{{ section.id }} {
+    #Spec-sheets-{{ section.id }} {
       --topSpacingRatio: {{section.settings.top_spacing}} / 100;
       --bottomSpacingRatio: {{section.settings.bottom_spacing}} / 100;
     }
@@ -17,12 +17,12 @@
    <div id="Spec-sheets-{{ section.id }}" class="spec-sheets color-{{section.settings.color_scheme}}">
 
       {% comment %} Table header {% endcomment %}
-      <div class="spec-sheets__item __header">
-         <div class="spec-sheets__item__label">
-            <p>{{section.settings.common_name_label}}</p>
-            <p>{{section.settings.botanical_name_label}}</p>
-            <p>{{section.settings.organic_label}}</p>
-            <p>{{section.settings.fair_trade_label}}</p>
+      <div class="spec-sheets__header color-{{ section.settings.table_color }}">
+         <div class="spec-sheets__header__inner">
+            <p class="caption-sm">{{section.settings.common_name_label}}</p>
+            <p class="caption-sm">{{section.settings.botanical_name_label}}</p>
+            <p class="caption-sm">{{section.settings.organic_label}}</p>
+            <p class="caption-sm">{{section.settings.fair_trade_label}}</p>
          </div>
       </div> 
 
@@ -38,22 +38,24 @@
          {% assign category_handle = category | handleize %}
 
          {% comment %} Output item {% endcomment %}
-         <div class="spec-sheets__item {% if category == default_category %}__active{% endif %}" data-category="{{ category_handle }}">
-            <input class="spec-sheets__item__checkbox" type="checkbox" id="Item-{{section.id}}-{{forloop.index0}}">
-            <label class="spec-sheets__item__label" for="Item-{{section.id}}-{{forloop.index0}}">
-               <p>{{block.settings.common_name}}</p>
-               <p>{{block.settings.botanical_name}}</p>
+         <div class="spec-sheets__item __active" data-category="{{ category_handle }}">
+            <input class="spec-sheets__item__checkbox" type="checkbox" id="Item-{{ section.id }}-{{ forloop.index0 }}">
+            <label class="spec-sheets__item__label" for="Item-{{ section.id }}-{{ forloop.index0 }}">
+               <p class="p-sm">{{ block.settings.common_name }}</p>
+               <p class="p-sm">{{ block.settings.botanical_name }}</p>
                <div 
                   class="spec-sheets__item__dot {% if block.settings.organic %}__dot-filled{% endif %}" 
-                  aria-label="{% if block.settings.organic == false %}Not {% endif %}{{section.settings.organic_label}}"
+                  aria-label="{% if block.settings.organic == false %}Not {% endif %}{{ section.settings.organic_label }}"
                ></div>
                <div 
                   class="spec-sheets__item__dot {% if block.settings.fair_trade == "yes" %}__dot-filled{% elsif block.settings.fair_trade == "on_request"%}__dot-bordered{% endif %}" 
-                  aria-label="{% if block.settings.fair_trade == "no" %}Not {{section.settings.fair_trade_label}}{% elsif block.settings.fair_trade == "on_request" %}{{ section.settings.fair_trade_on_request_disclaimer }}{% else %}{{section.settings.fair_trade_label}}{% endif %}"
+                  aria-label="{% if block.settings.fair_trade == "no" %}Not {{ section.settings.fair_trade_label }}{% elsif block.settings.fair_trade == "on_request" %}{{ section.settings.fair_trade_on_request_disclaimer }}{% else %}{{section.settings.fair_trade_label}}{% endif %}"
                ></div>
             </label>
             <div class="spec-sheets__item__content __article-txt">
-               {{block.settings.description}}
+               <div class="spec-sheets__item__content__inner">
+                  {{ block.settings.description }}
+               </div>
             </div>
          </div>
 
@@ -65,7 +67,7 @@
          {% endif %}
       {%- endfor -%}
 
-      <p>{{ section.settings.fair_trade_on_request_disclaimer }}</p>
+      <p class="spec-sheets__key p-sm __dot-bordered">{{ section.settings.fair_trade_on_request_disclaimer }}</p>
 
       {% comment %} Split categories string into an array {% endcomment %}
       {% assign categories = categories | split: "$$$" | uniq %}
@@ -76,6 +78,14 @@
       {% endcomment %}
       {% if categories.size > 1 %}
          <ul class="spec-sheets__nav">
+            <li class="spec-sheets__nav__item">
+               <accordions-button
+                  class="spec-sheets__button caption __active"
+                  data-category="all"
+               >
+                  {{ section.settings.all_ingredients_label }}
+               </accordions-button>
+            </li>
          {%- for category in categories -%}
             {% assign category_handle = category | handleize %}
 
@@ -83,7 +93,7 @@
                <li class="spec-sheets__nav__item">
                {% comment %} Tag logic below sets listener on {% endcomment %}
                <accordions-button
-                  class="spec-sheets__button caption {% if category == default_category %}__active{% endif %}"
+                  class="spec-sheets__button caption"
                   data-category="{{ category_handle }}"
                >
                   {{ category }}
@@ -92,15 +102,6 @@
          {%- endfor -%}
          </ul>
       {% endif %}
-
-      {%comment %} TODO
-      {% if section.settings.text %}
-         <div class="spec-sheets__text article-txt">
-         {{ section.settings.text }}
-         </div>
-      {% endif %}
-      {% endcomment %}
-
    </div>
 {% endif %}
 
@@ -133,7 +134,7 @@
 
       //remove or add active class on items
       for ( var i = 0; i < faqItems.length; i++ ){
-        if (faqItems[i].getAttribute('data-category') == category ){
+        if (faqItems[i].getAttribute('data-category') == category || category == "all"){
           faqItems[i].classList.add('__active');
         }
         else {
@@ -158,7 +159,7 @@
 
 {% schema %}
 {
-  "name": "Spec Sheet",
+  "name": "Spec Sheets",
   "tag": "section",
   "class": "section",
   "settings": [
@@ -185,6 +186,12 @@
         "id":"fair_trade_label",
         "label": "Fair Trade Label",
         "default": "Fair Trade"
+      },
+      {
+        "type":"text",
+        "id":"all_ingredients_label",
+        "label": "All Ingredients Label",
+        "default": "All Ingredients"
       },
       {
         "type":"text",
@@ -229,6 +236,46 @@
          "label":"Color Scheme"
       },
       {
+         "type":"select",
+         "id":"table_color",
+         "options":[
+            {
+               "value":"default",
+               "label":"Default"
+            },
+            {
+               "value":"cream",
+               "label":"Cream (Default)"
+            },
+            {
+               "value":"dark-cream",
+               "label":"Dark Cream"
+            },
+            {
+               "value":"grass",
+               "label":"Grass"
+            },
+            {
+               "value":"sun",
+               "label":"Sun"
+            },
+            {
+               "value":"ground",
+               "label":"Ground"
+            },
+            {
+               "value":"sky",
+               "label":"Sky"
+            },
+            {
+               "value":"tan",
+               "label":"Tan"
+            }
+         ],
+         "default":"sky",
+         "label":"Table Header Color"
+      },
+      {
          "type":"range",
          "id":"top_spacing",
          "min":0,
@@ -260,7 +307,7 @@
             "label": "Common Name"
          },
          {
-            "type": "richtext",
+            "type": "text",
             "id": "botanical_name",
             "label": "Botanical Name"
          },
@@ -306,7 +353,7 @@
   ],
   "presets": [
     {
-      "name": "Spec Sheet"
+      "name": "Spec Sheets"
     }
   ]
 }

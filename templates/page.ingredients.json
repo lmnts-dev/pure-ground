@@ -7,17 +7,38 @@
         "padding_bottom": 28
       }
     },
+    "hero": {
+      "type": "rich-text",
+      "blocks": {
+        "1644596818ef38f807-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Ingredients",
+            "heading_size": "h3",
+            "heading_alignment": "center",
+            "subheading": ""
+          }
+        }
+      },
+      "block_order": ["1644596818ef38f807-0"],
+      "settings": {
+        "color_scheme": "cream",
+        "hero": true,
+        "top_spacing": 80,
+        "bottom_spacing": 20
+      }
+    },
     "1647470795ab7a1dc6": {
-      "type": "spec-sheet",
+      "type": "spec-sheets",
       "blocks": {
         "4a049a02-f5eb-4c33-85b9-2b697b05ef78": {
           "type": "item",
           "settings": {
             "common_name": "Alfalfa Leaf",
-            "botanical_name": "<p>Medicago sativa<\/p>",
+            "botanical_name": "Medicago sativa",
             "organic": true,
             "fair_trade": "no",
-            "description": "<p>Organic Alfalfa Leaf: This nutrient-dense herb, known for its strengthening properties, is a great addition to tinctures, tea blends, and smoothies.<\/p>",
+            "description": "<p>Organic Alfalfa Leaf: This nutrient-dense herb, known for its strengthening properties, is a great addition to tinctures, tea blends, and smoothies.</p>",
             "category": "General"
           }
         },
@@ -25,10 +46,10 @@
           "type": "item",
           "settings": {
             "common_name": "Organic Allspice",
-            "botanical_name": "<p>Pimenta dioica<\/p>",
+            "botanical_name": "Pimenta dioica",
             "organic": true,
             "fair_trade": "yes",
-            "description": "<p>Organic Allspice: With its strong and fragrant aroma this spice adds a sweet kick to any dessert or spice rub<\/p>",
+            "description": "<p>Organic Allspice: With its strong and fragrant aroma this spice adds a sweet kick to any dessert or spice rub</p>",
             "category": "Spicy"
           }
         }
@@ -42,15 +63,14 @@
         "botanical_name_label": "Botanical Name",
         "organic_label": "Organic",
         "fair_trade_label": "Fair Trade",
+        "all_ingredients_label": "All Ingredients",
         "fair_trade_on_request_disclaimer": "Fair Trade On Request",
         "color_scheme": "cream",
+        "table_color": "sky",
         "top_spacing": 50,
         "bottom_spacing": 50
       }
     }
   },
-  "order": [
-    "main",
-    "1647470795ab7a1dc6"
-  ]
+  "order": ["main", "hero", "1647470795ab7a1dc6"]
 }
