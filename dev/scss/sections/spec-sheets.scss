@@ -1,19 +1,58 @@
 .spec-sheets {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: car(--pxSize);
 
-  &__item {
-    width: 100%;
-    display: none;
+  //table header specific styles
+  &__header {
+    background: var(--color-background);
+    padding: calc(var(--pxSize) / 2);
+    margin-bottom: calc(var(--pxSize) / 4);
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    will-change: transform;
+    transition: all 0.25s ease;
+    transform: var(--stickyElementTransition);
+    z-index: 2;
 
-    &.__header {
-      display: block;
-      background: var(--color-accent);
+    p {
+      font-weight: 600;
+      color: var(--color-foreground);
     }
+  }
+
+  //table header AND row styles
+  &__item,
+  &__header {
+    width: 100%;
+    grid-column: 2 / 3;
 
     p {
       margin-bottom: 0;
     }
+
+    &__label,
+    &__inner {
+      display: flex;
+      align-items: center;
+
+      > * {
+        flex: 1;
+        text-align: center;
+
+        &:first-child,
+        &:nth-child(2) {
+          flex: 2;
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  //table row specific styles
+  &__item {
+    display: none;
 
     &__checkbox {
       position: absolute;
@@ -24,12 +63,9 @@
     }
 
     &__label {
-      display: flex;
-      justify-content: space-between;
-      padding: calc(var(--pxSize) / 1.5) 0 calc(var(--pxSize) / 1.5) 0;
       cursor: pointer;
       position: relative;
-      align-items: center;
+      padding: calc(var(--pxSize) / 4) calc(var(--pxSize) / 2);
       transform: scale(1);
       will-change: transform, opacity;
       transition: all 0.25s ease;
@@ -42,20 +78,24 @@
 
     &__content {
       max-height: 0;
+      max-width: 600px;
       overflow: hidden;
-      padding: 0;
       color: var(--color-foreground);
       width: 100%;
+
+      &__inner {
+        padding: 0 calc(var(--pxSize) / 2) var(--pxSize) calc(var(--pxSize) / 2);
+      }
     }
 
     // Checked State
     &__checkbox:checked {
-      + .accordions__accordion__label {
+      + .spec-sheets__item__label {
         transform: scale(1.015);
         opacity: 0.9;
       }
 
-      ~ .accordions__accordion__content {
+      ~ .spec-sheets__item__content {
         max-height: 10000vh;
       }
     }
@@ -65,18 +105,15 @@
     }
   }
 
-  //visually this must appear above the items, but logically
-  //it must occur after the items because inside the items
-  //loop is where we gather the category nav data. This is why we're
-  //using flex column order here
+  //categories nav
   &__nav {
-    order: -1;
-    display: flex;
-    gap: var(--pxSize);
-    margin: 0 0 calc(var(--sectionVerticalSpacing) * 0.75) 0;
+    grid-row: 1 / 1000;
+    grid-column: 1 / 2;
 
     &__item {
       > * {
+        display: block;
+        padding: calc(var(--pxSize) / 4) 0;
         cursor: pointer;
         opacity: 0.7;
 
@@ -91,20 +128,48 @@
     }
   }
 
-  &__text {
-    margin-top: calc(var(--sectionVerticalSpacing) * 0.75);
-    max-width: 600px;
+  //dot styles used within table rows and in the table key
+  &__key,
+  &__item__dot {
+    font-style: italic;
+    position: relative;
+
+    //dot
+    &:before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      height: calc(var(--pxSize) / 4);
+      width: calc(var(--pxSize) / 4);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+    }
+
+    &.__dot-filled:before {
+      background: var(--color-foreground);
+    }
+
+    &.__dot-bordered:before {
+      border: 2px solid var(--color-foreground);
+    }
+  }
+
+  //table key styles
+  &__key {
+    justify-self: end;
+    display: flex;
+    align-items: center;
+    margin: var(--pxSize) 0 0 0;
+    gap: calc(var(--pxSize) / 6);
+
+    &:before {
+      position: static;
+      transform: none;
+    }
   }
 
   @media screen and (max-width: 676px) {
-    &__nav {
-      overflow: auto;
-    }
-
-    &__item {
-      &__label {
-        padding-right: calc(var(--pxSize) / 1.5);
-      }
-    }
   }
 }

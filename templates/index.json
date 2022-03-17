@@ -363,6 +363,15 @@
         "top_spacing": 50,
         "bottom_spacing": 50
       }
+    },
+    "16475360118f921751": {
+      "type": "accordions",
+      "settings": {
+        "text": "<p>Add any additional information here<\/p>",
+        "color_scheme": "cream",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
     }
   },
   "order": [
@@ -374,6 +383,7 @@
     "16450418065fdb6a59",
     "16451151390f67c7d6",
     "164442413892b05956",
-    "articles"
+    "articles",
+    "16475360118f921751"
   ]
 }
