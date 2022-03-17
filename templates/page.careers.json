@@ -45,12 +45,25 @@
             "button_color": "grass",
             "department": "General"
           }
+        },
+        "d1a8345b-710d-44e5-a206-df753df54d70": {
+          "type": "position",
+          "settings": {
+            "heading": "New Position",
+            "location": "New Orleans",
+            "details": "<p>Details<\/p>",
+            "button_label": "Apply Now",
+            "button_link": "shopify:\/\/pages\/our-principles",
+            "button_color": "grass",
+            "department": "HR"
+          }
         }
       },
       "block_order": [
         "277f0779-6824-4b72-a2bc-1356120ba8b9",
         "807e88ff-dab1-41ec-baa3-39db101410d2",
-        "2dabc222-5a76-45c9-83a5-95ce60c05efc"
+        "2dabc222-5a76-45c9-83a5-95ce60c05efc",
+        "d1a8345b-710d-44e5-a206-df753df54d70"
       ],
       "settings": {
         "heading": "Open Positions",
