@@ -20,7 +20,9 @@
           }
         }
       },
-      "block_order": ["1644596818ef38f807-0"],
+      "block_order": [
+        "1644596818ef38f807-0"
+      ],
       "settings": {
         "color_scheme": "cream",
         "hero": true,
@@ -38,7 +40,7 @@
             "botanical_name": "Medicago sativa",
             "organic": true,
             "fair_trade": "no",
-            "description": "<p>Organic Alfalfa Leaf: This nutrient-dense herb, known for its strengthening properties, is a great addition to tinctures, tea blends, and smoothies.</p>",
+            "description": "<p>Organic Alfalfa Leaf: This nutrient-dense herb, known for its strengthening properties, is a great addition to tinctures, tea blends, and smoothies.<\/p>",
             "category": "General"
           }
         },
@@ -49,7 +51,7 @@
             "botanical_name": "Pimenta dioica",
             "organic": true,
             "fair_trade": "yes",
-            "description": "<p>Organic Allspice: With its strong and fragrant aroma this spice adds a sweet kick to any dessert or spice rub</p>",
+            "description": "<p>Organic Allspice: With its strong and fragrant aroma this spice adds a sweet kick to any dessert or spice rub<\/p>",
             "category": "Spicy"
           }
         }
@@ -72,5 +74,9 @@
       }
     }
   },
-  "order": ["main", "hero", "1647470795ab7a1dc6"]
+  "order": [
+    "main",
+    "hero",
+    "1647470795ab7a1dc6"
+  ]
 }
