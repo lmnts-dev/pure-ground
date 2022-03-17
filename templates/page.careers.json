@@ -16,7 +16,7 @@
             "heading": "Customer Service Representative",
             "location": "Position",
             "details": "<p>Testing details here<\/p>",
-            "button_label": "Button label",
+            "button_label": "Apply Now",
             "button_link": "shopify:\/\/pages\/privacy-policy",
             "button_color": "grass",
             "department": "HR"
@@ -27,8 +27,8 @@
           "settings": {
             "heading": "Order Selector\/Inventory Specialist",
             "location": "asdfsdf",
-            "details": "<p>Apply Here<\/p>",
-            "button_label": "Button label",
+            "details": "<p>Details Here<\/p>",
+            "button_label": "Apply Now",
             "button_link": "shopify:\/\/pages\/history",
             "button_color": "grass",
             "department": "HR"
