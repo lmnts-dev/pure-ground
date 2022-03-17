@@ -46,33 +46,10 @@
         "top_spacing": 50,
         "bottom_spacing": 50
       }
-    },
-    "16474861827dcb1f69": {
-      "type": "accordions",
-      "blocks": {
-        "985f81a9-b554-4f2d-8f34-9723b7726cb9": {
-          "type": "accordion",
-          "settings": {
-            "heading": "sdfsdf",
-            "content": "<p>sfsafasdf<\/p>",
-            "category": "sdfmk"
-          }
-        }
-      },
-      "block_order": [
-        "985f81a9-b554-4f2d-8f34-9723b7726cb9"
-      ],
-      "settings": {
-        "text": "<p>Add any additional information here<\/p>",
-        "color_scheme": "cream",
-        "top_spacing": 50,
-        "bottom_spacing": 50
-      }
     }
   },
   "order": [
     "main",
-    "164617166466b4b1ef",
-    "16474861827dcb1f69"
+    "164617166466b4b1ef"
   ]
 }
