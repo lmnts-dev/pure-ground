@@ -5,6 +5,14 @@
   &__departments{
     border-right: 1px solid var(--color-foreground);;
     flex: 1;
+
+    .positions__nav{
+      margin-top: 2.5rem;
+    }
+
+    .hide{
+      display: none;
+    }
   }
 
   &__content{
@@ -22,7 +30,8 @@
 
   &__modal{
     padding: 0 calc(var(--btnHeight)/ 6);
-    text-align: end;
+    text-align: center;
+    min-width: 175px;
   }
 
   &__position {
@@ -35,15 +44,10 @@
     }
 
     &--top{
-      margin-bottom: 1.25rem;
-
-      h3{
-        flex: 5;
-      }
+      margin-bottom: 1rem;
       
       a{
-        flex: 1;
-        padding: 0;
+        padding: 0 calc(var(--btnHeight) / 2);
       }
     }
 
@@ -54,6 +58,20 @@
     &__btn{
       width: fit-content;
       margin-top: 0;
+      border-radius: 2px;
+      font-size: 1.1rem;
+
+      svg{
+        stroke: var(--color-btn-txt);
+        width: 1.25rem;
+        margin-left: 1rem;
+      }
+
+      &:hover{
+        svg{
+          stroke: var(--color-foreground);
+        }
+      }
     }
 
     svg {
@@ -103,6 +121,26 @@
     &__departments{
       border: 1px solid var(--color-foreground);
       padding: calc(var(--pxSize) / 2.5);
+
+      p{
+        position: relative;
+        margin-bottom:0;
+        display: flex;
+        align-items: center;
+
+        &:after{
+          content: "";
+          display: inline-block;
+          border: solid var(--color-foreground);
+          border-width: 0 1px 1px 0;
+          transform: rotate(45deg);
+          -webkit-transform: rotate(45deg);
+          padding: 3.5px;
+          margin-right: var(--sectionHorizontalSpacing);
+          position: absolute;
+          right: 0;
+        }
+      }
     }
 
     &__headline-content{

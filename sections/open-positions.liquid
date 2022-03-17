@@ -27,9 +27,9 @@
    {% if section.blocks.size > 0 %}
     <div class="open-positions__content">
         <div class="open-positions__departments">
-        <span class="p-sm">Departments</span>
+        <p class="p-sm">Departments</p>
         {% if departments.size > 1 %}
-         <ul class="positions__nav">
+         <ul class="positions__nav hide">
             {%- for department in departments -%}
                {% assign department_handle = department | handleize %}
 
@@ -68,7 +68,7 @@
                      {% if block.settings.button_link and block.settings.button_label %}
                         <a class="open-positions__position__btn btn __btn-clr-{{block.settings.button_color}}" {% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} {{ block.shopify_attributes }}>
                            {{ block.settings.button_label | escape }}
-                            {% render 'svg-arrow' %}
+                              {% render 'icon-arrow' %}
                         </a>
                      {% endif %}
                   </div>
@@ -171,6 +171,15 @@
   }
 
   customElements.define('toggle-modal', ToggleModal);
+
+
+   let subNav = document.querySelector('.open-positions__content');
+   let navItems = document.querySelector('.positions__nav');
+   
+   subNav.onclick = () =>{
+      navItems.classList.toggle('hide');
+   };
+
 
 {% endjavascript %}
 
@@ -290,7 +299,7 @@
                "type":"text",
                "id":"button_label",
                "default":"Apply Now",
-               "label":"Button Label"
+               "label":"Apply Now"
             },
             {
                "type":"url",
