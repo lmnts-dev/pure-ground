@@ -25,31 +25,9 @@
    </div>
 
    {% if section.blocks.size > 0 %}
-    <div class="open-positions__content">
-        <div class="open-positions__departments">
-        <p class="p-sm">Departments</p>
-        {% if departments.size > 1 %}
-         <ul class="positions__nav hide">
-            {%- for department in departments -%}
-               {% assign department_handle = department | handleize %}
-
-               {% comment %} Each nav item {% endcomment %}
-               <li class="positions__nav__item">
-                  {% comment %} Tag logic below sets listener on {% endcomment %}
-                  <positions-button
-                     class="positions__button caption {% if department == default_department %}__active{% endif %}"
-                     data-department="{{ department_handle }}"
-                  >
-                     {{ department }}
-                  </positions-button>
-               </li>
-            {%- endfor -%}
-         </ul>
-         {% endif %}
-      </div>
-
       <div class="open-positions__container">
          {% comment %} Loop through positions {% endcomment %}
+         <div class="open-positions__positions">
          {%- for block in section.blocks -%}
          {% if block.settings.heading %}
 
@@ -92,15 +70,43 @@
             {% assign departments = departments | append: "$$$" | append: department %}
          {% endif %}
          {%- endfor -%}
-
+      </div>
          {% comment %} Split departments string into an array {% endcomment %}
          {% assign departments = departments | split: "$$$" | uniq %}
-
          {% comment %} 
          Output positions nav if there's more than 
          one department to navigate through 
          {% endcomment %}
-         
+          <div class="open-positions__content">
+        <div class="open-positions__departments">
+        <p class="p-sm">Departments</p>
+        {% if departments.size > 1 %}
+         <ul class="positions__nav hide">
+            <li class="positions__nav__item">
+               <accordions-button
+                  class="positions__button caption __active"
+                  data-category="all"
+               >
+                  All ({{ departments.size }})
+               </accordions-button>
+            </li>
+            {%- for department in departments -%}
+               {% assign department_handle = department | handleize %}
+
+               {% comment %} Each nav item {% endcomment %}
+               <li class="positions__nav__item">
+                  {% comment %} Tag logic below sets listener on {% endcomment %}
+                  <positions-button
+                     class="positions__button caption {% if department == default_department %}__active{% endif %}"
+                     data-department="{{ department_handle }}"
+                  >
+                     {{ department }} ({{ department.size }})
+                  </positions-button>
+               </li>
+            {%- endfor -%}
+         </ul>
+         {% endif %}
+      </div>
       {% endif %}
    </div>
   </div>
@@ -123,27 +129,29 @@
     updateDepartment() {
 
       //parent element for this section
-      var thisSection = this.parentNode.parentNode.parentNode;
+      var thisSection = this.parentNode.parentNode.parentNode.parentNode.parentNode;
+      console.log(thisSection,'this section');
       //clicked on item's department
-      var department = this.getAttribute('data-department');
+      var cateogry = this.getAttribute('data-department');
       //all positions in this section
-      var faqItems = thisSection.querySelectorAll('.positions__position');
+      var categoryItems = thisSection.querySelectorAll('.open-positions__position');
+      console.log(categoryItems,'categoryItems');
       //all nav buttons
-      var faqNavItems = thisSection.querySelectorAll('.positions__button');
+      var categoryNavItems = thisSection.querySelectorAll('.positions__button');
 
       //remove or add active class on positions
-      for ( var i = 0; i < faqItems.length; i++ ){
-        if (faqItems[i].getAttribute('data-department') == department ){
-          faqItems[i].classList.add('__active');
+      for ( var i = 0; i < categoryItems.length; i++ ){
+        if (categoryItems[i].getAttribute('data-department') == cateogry || cateogry == "all"){
+          categoryItems[i].classList.add('__active');
         }
         else {
-          faqItems[i].classList.remove('__active');
+          categoryItems[i].classList.remove('__active');
         }
       }
 
       //remove active class on nav buttons
-      for (var i = 0; i < faqNavItems.length; i++ ) {
-        faqNavItems[i].classList.remove('__active');
+      for (var i = 0; i < categoryNavItems.length; i++ ) {
+        categoryNavItems[i].classList.remove('__active');
       }
 
       //add active class on clicked item
