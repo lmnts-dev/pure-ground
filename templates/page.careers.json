@@ -57,13 +57,26 @@
             "button_color": "grass",
             "department": "HR"
           }
+        },
+        "93ae3ef6-e6db-4323-8e29-45c82f8a9afa": {
+          "type": "position",
+          "settings": {
+            "heading": "New",
+            "location": "New York",
+            "details": "<p>sfdsf<\/p>",
+            "button_label": "Apply Now",
+            "button_link": "shopify:\/\/blogs\/news",
+            "button_color": "grass",
+            "department": "Tech"
+          }
         }
       },
       "block_order": [
         "277f0779-6824-4b72-a2bc-1356120ba8b9",
         "807e88ff-dab1-41ec-baa3-39db101410d2",
         "2dabc222-5a76-45c9-83a5-95ce60c05efc",
-        "d1a8345b-710d-44e5-a206-df753df54d70"
+        "d1a8345b-710d-44e5-a206-df753df54d70",
+        "93ae3ef6-e6db-4323-8e29-45c82f8a9afa"
       ],
       "settings": {
         "heading": "Open Positions",
