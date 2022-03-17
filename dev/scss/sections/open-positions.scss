@@ -32,6 +32,14 @@
     padding: 0 calc(var(--btnHeight)/ 6);
     text-align: center;
     min-width: 175px;
+
+    p{
+      color: var(--color-grass);
+    }
+
+    &:hover{
+      cursor: pointer;
+    }
   }
 
   &__position {
@@ -154,6 +162,10 @@
     &__position {
       padding: 0;
       margin-top: 1.25rem;
+
+      &__btn{
+        font-size: .9rem;
+      }
 
       &--top{
         h3{

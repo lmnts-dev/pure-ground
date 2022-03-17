@@ -9,7 +9,7 @@
 {% comment %} Make sure user added positions {% endcomment %}
 
   {% comment %} Variables needed to gather department nav data {% endcomment %}
-  {% assign default_department = "All" %}
+  {% assign default_department = "General" %}
   {% assign departments = default_department %}
 
   <div id="Open-positions-{{ section.id }}" class="open-positions color-{{section.settings.color_scheme}}">
@@ -350,7 +350,7 @@
               "type": "text",
               "id": "department",
               "label": "Department",
-              "default": "All",
+              "default": "General",
               "info": "You can categorize your positions into departments like 'Distribution' or 'Marketing'. If no department is written, this question will be cateorized as 'All'. The ability to navigate between departments will only display if there are two or more departments in this section."
             }
          ]
