@@ -47,18 +47,186 @@
         "23cbf211-ccb4-443c-b178-3e2489966f4f": {
           "type": "item",
           "settings": {
-            "common_name": "Organic Allspice",
+            "common_name": "Allspice",
             "botanical_name": "Pimenta dioica",
             "organic": true,
             "fair_trade": "yes",
             "description": "<p>Organic Allspice: With its strong and fragrant aroma this spice adds a sweet kick to any dessert or spice rub<\/p>",
             "category": "Spicy"
           }
+        },
+        "f5374a09-c5c8-41d7-a728-5ae77045bc6d": {
+          "type": "item",
+          "settings": {
+            "common_name": "Anaheim",
+            "botanical_name": "Capsicum",
+            "organic": true,
+            "fair_trade": "no",
+            "description": "<p>Organic Anaheim: This sweeter species of pepper ranges from a mild spice to a more intense heat<\/p>",
+            "category": "General"
+          }
+        },
+        "1b11e11f-4911-4ad8-9a2d-fa0105d7f7fd": {
+          "type": "item",
+          "settings": {
+            "common_name": "Ancho",
+            "botanical_name": "Capsicum",
+            "organic": true,
+            "fair_trade": "no",
+            "description": "<p>Organic Ancho: This ripe and dried version of the poblano pepper gives an earthy and smokey flavor and aroma to any dish<\/p>",
+            "category": "General"
+          }
+        },
+        "829378f0-42dc-404b-abfa-cc4dbcdc9538": {
+          "type": "item",
+          "settings": {
+            "common_name": "Anise Seed",
+            "botanical_name": "Pimpinella anisum",
+            "organic": true,
+            "fair_trade": "yes",
+            "description": "<p>Organic Anise Seed: Somewhere between fennel and licorice, this seed adds complexity to sauces, pastries, and bread.<\/p>",
+            "category": "General"
+          }
+        },
+        "c54a5fa6-863c-472e-9bfb-c301195543b6": {
+          "type": "item",
+          "settings": {
+            "common_name": "Ashwagandha",
+            "botanical_name": "Withania somnifera",
+            "organic": true,
+            "fair_trade": "no",
+            "description": "<p>Organic Ashwagandha: This restorative herb, used heavily in Ayurvedic medicine, is a great addition to any recipe in need of an earthy note.<\/p>",
+            "category": "General"
+          }
+        },
+        "e2482830-0951-4af7-8421-c60dd7ef187f": {
+          "type": "item",
+          "settings": {
+            "common_name": "Assam",
+            "botanical_name": "Camellia sinensis",
+            "organic": true,
+            "fair_trade": "no",
+            "description": "<p>Organic Assam: Known for a bold earthy cup of tea with a rich slightly sweet aroma.<\/p>",
+            "category": "General"
+          }
+        },
+        "9c32bf72-d270-4dff-b299-108cb5f9bff0": {
+          "type": "item",
+          "settings": {
+            "common_name": "Astragalus Root",
+            "botanical_name": "Astragulus membranaceus",
+            "organic": true,
+            "fair_trade": "no",
+            "description": "<p>Organic Astragalus Root: This sun-dried sweet yellow root has long been used in ancient Chinese medicine to support a healthy immune system.<\/p>",
+            "category": "General"
+          }
+        },
+        "756e56de-41fe-4ef1-a35c-d27d8f67b929": {
+          "type": "item",
+          "settings": {
+            "common_name": "Basil",
+            "botanical_name": "Ocimum basilicum",
+            "organic": true,
+            "fair_trade": "yes",
+            "description": "<p>Organic Basil: With a sweet and slightly peppery flavor, this herb pairs<\/p>",
+            "category": "General"
+          }
+        },
+        "57823745-7e9f-41d9-8547-e13b89bafa8c": {
+          "type": "item",
+          "settings": {
+            "common_name": "Bay Leaves",
+            "botanical_name": "Laurus nobilis",
+            "organic": true,
+            "fair_trade": "no",
+            "description": "<p>Organic Bay Leaves: Similar to oregano and thyme, this slightly floral yet bitter herb is great in soups, stews, and sauces.<\/p>",
+            "category": "General"
+          }
+        },
+        "031ed847-ef7d-4956-a7fa-a0cc768849ed": {
+          "type": "item",
+          "settings": {
+            "common_name": "Beet",
+            "botanical_name": "Beta vulgaris",
+            "organic": true,
+            "fair_trade": "no",
+            "description": "<p>Organic Beet: Sweet, earthy, and richly colored, Beets pair well with basil, ginger, allspice, and tarragon.<\/p>",
+            "category": "General"
+          }
+        },
+        "1a751972-1c39-4ab6-9c27-05ea047b4852": {
+          "type": "item",
+          "settings": {
+            "common_name": "Bell Peppers (Red + Green)",
+            "botanical_name": "Capsicum annuum",
+            "organic": true,
+            "fair_trade": "no",
+            "description": "<p>Organic Bell Peppers (Red + Green): With flavors ranging from bitter to sweet, bell peppers add dimension to dips, soups, and salads.<\/p>",
+            "category": "General"
+          }
+        },
+        "70002da0-d4b4-4192-9c8e-f31d8a0fe981": {
+          "type": "item",
+          "settings": {
+            "common_name": "Bilberry Leaf",
+            "botanical_name": "Vaccinium myrtullus",
+            "organic": true,
+            "fair_trade": "no",
+            "description": "<p>Organic Bilberry Leaf: More intense than blueberries, this sweet yet tart berry makes a great addition to any dessert or cocktail.<\/p>",
+            "category": "General"
+          }
+        },
+        "151a68ea-4360-4096-912e-87347aa3a929": {
+          "type": "item",
+          "settings": {
+            "common_name": "Birch Leaf",
+            "botanical_name": "Betula pendula",
+            "organic": true,
+            "fair_trade": "no",
+            "description": "<p>Organic Birch Leaf: The leaves of the birch tree make a light earthy tea or tincture used in various folk healing remedies.<\/p>",
+            "category": "General"
+          }
+        },
+        "9c945944-c658-4832-bef5-fb37cf9d4afc": {
+          "type": "item",
+          "settings": {
+            "common_name": "Birds Eye",
+            "botanical_name": "Capsicum",
+            "organic": true,
+            "fair_trade": "no",
+            "description": "<p>Organic Birds Eye: Not quite as hot as a spicy habanero, this small chili brings an intense earthy note to a dish.<\/p>",
+            "category": "General"
+          }
+        },
+        "bee48060-8a2e-40e9-a6fe-a0130eb2c278": {
+          "type": "item",
+          "settings": {
+            "common_name": "Black Cohosh",
+            "botanical_name": "Cimicifuga racemosa",
+            "organic": true,
+            "fair_trade": "no",
+            "description": "<p>Organic Black Cohosh: This broad spectrum healing root can be used to make a medicinal tea or tincture.<\/p>",
+            "category": "General"
+          }
         }
       },
       "block_order": [
         "4a049a02-f5eb-4c33-85b9-2b697b05ef78",
-        "23cbf211-ccb4-443c-b178-3e2489966f4f"
+        "23cbf211-ccb4-443c-b178-3e2489966f4f",
+        "f5374a09-c5c8-41d7-a728-5ae77045bc6d",
+        "1b11e11f-4911-4ad8-9a2d-fa0105d7f7fd",
+        "829378f0-42dc-404b-abfa-cc4dbcdc9538",
+        "c54a5fa6-863c-472e-9bfb-c301195543b6",
+        "e2482830-0951-4af7-8421-c60dd7ef187f",
+        "9c32bf72-d270-4dff-b299-108cb5f9bff0",
+        "756e56de-41fe-4ef1-a35c-d27d8f67b929",
+        "57823745-7e9f-41d9-8547-e13b89bafa8c",
+        "031ed847-ef7d-4956-a7fa-a0cc768849ed",
+        "1a751972-1c39-4ab6-9c27-05ea047b4852",
+        "70002da0-d4b4-4192-9c8e-f31d8a0fe981",
+        "151a68ea-4360-4096-912e-87347aa3a929",
+        "9c945944-c658-4832-bef5-fb37cf9d4afc",
+        "bee48060-8a2e-40e9-a6fe-a0130eb2c278"
       ],
       "settings": {
         "common_name_label": "Common Name",
