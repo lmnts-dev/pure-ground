@@ -363,6 +363,28 @@
         "top_spacing": 50,
         "bottom_spacing": 50
       }
+    },
+    "16475360118f921751": {
+      "type": "accordions",
+      "blocks": {
+        "84255f36-0e7f-4f19-92e6-e55711448996": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Test",
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ullamcorper, tortor ut viverra pulvinar, orci tellus elementum odio, et malesuada neque diam vel sem. Curabitur lacus sem, commodo sed lacus id, vulputate tincidunt sapien. Integer nisi libero, venenatis a sapien id, ornare congue diam. Donec mollis justo quis suscipit vulputate. Suspendisse sit amet lobortis felis. Curabitur condimentum justo ac urna mattis, quis elementum magna ullamcorper.<\/p>",
+            "category": "sdfsdf"
+          }
+        }
+      },
+      "block_order": [
+        "84255f36-0e7f-4f19-92e6-e55711448996"
+      ],
+      "settings": {
+        "text": "<p>Add any additional information here<\/p>",
+        "color_scheme": "cream",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
     }
   },
   "order": [
@@ -374,6 +396,7 @@
     "16450418065fdb6a59",
     "16451151390f67c7d6",
     "164442413892b05956",
-    "articles"
+    "articles",
+    "16475360118f921751"
   ]
 }
