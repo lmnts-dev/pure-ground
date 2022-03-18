@@ -1,7 +1,7 @@
 {% style %}
     #Open-positions-{{ section.id }} {
-      --topSpacingRatio: {{section.settings.top_spacing}} / 100;
-      --bottomSpacingRatio: {{section.settings.bottom_spacing}} / 100;
+      --topSpacingRatio: {{ section.settings.top_spacing }} / 100;
+      --bottomSpacingRatio: {{ section.settings.bottom_spacing }} / 100;
     }
 {% endstyle %}
 
@@ -10,14 +10,12 @@
 
   {% comment %} Variables needed to gather department nav data {% endcomment %}
   {% assign default_department = "General" %}
-  {% assign departments = default_department %}
 
   <div id="Open-positions-{{ section.id }}" class="open-positions color-{{section.settings.color_scheme}}">
-
    <div class="open-positions__headline-content">
-    {% if section.settings.heading %}
-      <h2 class="open-positions__heading h5">{{ section.settings.heading }}</h2>
-    {% endif %}
+      {% if section.settings.heading %}
+         <h2 class="open-positions__heading h5">{{ section.settings.heading }}</h2>
+      {% endif %}
     
       {% if section.settings.text %}
          <div class="open-positions__content__text __article-txt">{{ section.settings.text }}</div>
@@ -29,20 +27,18 @@
          {% comment %} Loop through positions {% endcomment %}
          <div class="open-positions__positions">
          {%- for block in section.blocks -%}
-         {% if block.settings.heading %}
-
+            {% if block.settings.heading %}
             {% comment %} Assign department variables {% endcomment %}
             {% assign department = default_department %}
-            {% if block.settings.department %}
-               {% assign department = block.settings.department %}
-            {% endif %}
+               {% if block.settings.department %}
+                  {% assign department = block.settings.department %}
+               {% endif %}
             {% assign department_handle = department | handleize %}
 
             {% comment %} Output position {% endcomment %}
-               <div class="open-positions__position {% if department == default_department %}__active{% endif %}" data-department="{{ department_handle }}">
+               <div class="open-positions__position __active" data-department="{{ department_handle }}">
                   <div class="open-positions__position--top">
-                     <h3 class="h5">{{block.settings.heading}}</h3>
-
+                     <h3 class="h5">{{ block.settings.heading }}</h3>
                      {% if block.settings.button_link and block.settings.button_label %}
                         <a class="open-positions__position__btn btn __btn-clr-{{block.settings.button_color}}" {% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} {{ block.shopify_attributes }}>
                            {{ block.settings.button_label | escape }}
@@ -53,7 +49,7 @@
                   <div class="open-positions__position--bottom">
                      <div>
                         {% render 'svg-location' %}
-                        <span>{{block.settings.location}}</span>
+                        <span>{{ block.settings.location }}</span>
                      </div>
 
                      <toggle-modal class="open-positions__modal" data-type="container">
@@ -62,53 +58,64 @@
                   </div>
                </div>
 
+                  {% comment %} 
+                     Add position department to departments string, 
+                     which we will split into an array after the loop is completed 
+                  {% endcomment %}
+                  {% if departments == nil %}
+                     {% assign departments = departments | append: department %}
+                  {% else %}
+                     {% assign departments = departments | append: "$$$" | append: department %}
+                  {% endif %}
+                  {% endif %}
+                  {%- endfor -%}
+               </div>
+                  {% comment %} Split departments string into an array {% endcomment %}
+                  {% assign departments = departments | split: "$$$" %}
+                  {% assign unique_departments = departments | uniq %}
 
-            {% comment %} 
-               Add position department to departments string, 
-               which we will split into an array after the loop is completed 
-            {% endcomment %}
-            {% assign departments = departments | append: "$$$" | append: department %}
-         {% endif %}
-         {%- endfor -%}
-      </div>
-         {% comment %} Split departments string into an array {% endcomment %}
-         {% assign departments = departments | split: "$$$" | uniq %}
-         {% comment %} 
-         Output positions nav if there's more than 
-         one department to navigate through 
-         {% endcomment %}
-          <div class="open-positions__content">
-        <div class="open-positions__departments">
-        <p class="p-sm">Departments</p>
-        {% if departments.size > 1 %}
-         <ul class="positions__nav hide">
-            <li class="positions__nav__item">
-               <accordions-button
-                  class="positions__button caption __active"
-                  data-category="all"
-               >
-                  All ({{ departments.size }})
-               </accordions-button>
-            </li>
-            {%- for department in departments -%}
-               {% assign department_handle = department | handleize %}
-
-               {% comment %} Each nav item {% endcomment %}
-               <li class="positions__nav__item">
-                  {% comment %} Tag logic below sets listener on {% endcomment %}
-                  <positions-button
-                     class="positions__button caption {% if department == default_department %}__active{% endif %}"
-                     data-department="{{ department_handle }}"
-                  >
-                     {{ department }} ({{ department.size }})
-                  </positions-button>
-               </li>
-            {%- endfor -%}
-         </ul>
+                  {% comment %} 
+                  Output positions nav if there's more than 
+                  one department to navigate through 
+                  {% endcomment %}
+                  <div class="open-positions__content">
+               <div class="open-positions__departments">
+                  <p class="p-sm">Departments</p>
+                  {% if departments.size > 1 %}
+                     <ul class="positions__nav">
+                        <li class="positions__nav__item">
+                           <positions-button
+                              class="open-positions__button caption __active"
+                              data-department="all"
+                           >
+                              All ({{ section.blocks.size }})
+                           </positions-button>
+                        </li>
+                     {%- for uniqueDepartment in unique_departments -%}
+                     {% comment %} Get Unique Categories {% endcomment %}
+                  {% assign count = 0 %}
+                    {%- for department in departments -%}
+                        {% if department == uniqueDepartment %}
+                           {% assign count = count | plus: 1 %}
+                        {% endif %}
+                     {% endfor %}
+                        {% assign department_handle = uniqueDepartment | handleize %}
+                        {% comment %} Each nav item {% endcomment %}
+                        <li class="positions__nav__item">
+                           {% comment %} Tag logic below sets listener on {% endcomment %}
+                           <positions-button
+                              class="open-positions__button caption"
+                              data-department="{{ department_handle }}"
+                           >
+                              {{ uniqueDepartment }} ({{ count }})
+                           </positions-button>
+                        </li>
+                     {%- endfor -%}
+                  </ul>
+               {% endif %}
+            </div>
          {% endif %}
       </div>
-      {% endif %}
-   </div>
   </div>
 
 {% javascript %}
@@ -130,18 +137,17 @@
 
       //parent element for this section
       var thisSection = this.parentNode.parentNode.parentNode.parentNode.parentNode;
-      console.log(thisSection,'this section');
       //clicked on item's department
-      var cateogry = this.getAttribute('data-department');
+      var category = this.getAttribute('data-department');
+      console.log(category,'category');
       //all positions in this section
       var categoryItems = thisSection.querySelectorAll('.open-positions__position');
-      console.log(categoryItems,'categoryItems');
       //all nav buttons
-      var categoryNavItems = thisSection.querySelectorAll('.positions__button');
+      var categoryNavItems = thisSection.querySelectorAll('.open-positions__button');
 
       //remove or add active class on positions
       for ( var i = 0; i < categoryItems.length; i++ ){
-        if (categoryItems[i].getAttribute('data-department') == cateogry || cateogry == "all"){
+        if (categoryItems[i].getAttribute('data-department') == category || category == "all"){
           categoryItems[i].classList.add('__active');
         }
         else {
@@ -181,14 +187,12 @@
   customElements.define('toggle-modal', ToggleModal);
 
 
-   let subNav = document.querySelector('.open-positions__content');
+   let subNav = document.querySelector('.open-positions__content .p-sm');
    let navItems = document.querySelector('.positions__nav');
    
    subNav.onclick = () =>{
       navItems.classList.toggle('hide');
    };
-
-
 {% endjavascript %}
 
 

@@ -17,12 +17,11 @@
   }
 
   &__positions{
-    flex:3;
+    flex:4;
   }
 
   &__content{
     display: flex;
-    margin-top: 2rem;
     flex:1;
   }
 
@@ -35,6 +34,7 @@
   &__container{
     display: flex;
     flex-direction: row-reverse;
+    margin-top: 2rem;
   }
 
   &__headline-content{
