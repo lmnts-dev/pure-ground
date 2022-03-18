@@ -17,14 +17,16 @@
    <div id="Spec-sheets-{{ section.id }}" class="spec-sheets color-{{section.settings.color_scheme}}">
 
       {% comment %} Table header {% endcomment %}
-      <div class="spec-sheets__header color-{{ section.settings.table_color }}">
-         <div class="spec-sheets__header__inner">
-            <p class="caption-sm">{{section.settings.common_name_label}}</p>
-            <p class="caption-sm">{{section.settings.botanical_name_label}}</p>
-            <p class="caption-sm">{{section.settings.organic_label}}</p>
-            <p class="caption-sm">{{section.settings.fair_trade_label}}</p>
-         </div>
-      </div> 
+      {% if section.settings.hide_header == false %}
+         <div class="spec-sheets__header color-{{ section.settings.table_color }}">
+            <div class="spec-sheets__header__inner">
+               <p class="caption-sm">{{section.settings.common_name_label}}</p>
+               <p class="caption-sm">{{section.settings.botanical_name_label}}</p>
+               <p class="caption-sm">{{section.settings.organic_label}}</p>
+               <p class="caption-sm">{{section.settings.fair_trade_label}}</p>
+            </div>
+         </div> 
+   {% endif %}
 
       {% comment %} Loop through items {% endcomment %}
       {%- for block in section.blocks -%}
@@ -67,7 +69,9 @@
          {% endif %}
       {%- endfor -%}
 
-      <p class="spec-sheets__key p-sm __dot-bordered">{{ section.settings.fair_trade_on_request_disclaimer }}</p>
+      {% if section.settings.fair_trade_on_request_disclaimer != "" %}
+         <p class="spec-sheets__key p-sm __dot-bordered">{{ section.settings.fair_trade_on_request_disclaimer }}</p>
+      {% endif %}
 
       {% comment %} Split categories string into an array {% endcomment %}
       {% assign categories = categories | split: "$$$" | uniq %}
@@ -83,7 +87,11 @@
                   class="spec-sheets__button caption __active"
                   data-category="all"
                >
-                  {{ section.settings.all_ingredients_label }}
+                  {% if section.settings.all_ingredients_label %}
+                     {{ section.settings.all_ingredients_label }}
+                  {% else %}
+                     all
+                  {% endif %}
                </accordions-button>
             </li>
          {%- for category in categories -%}
@@ -167,7 +175,7 @@
         "type":"text",
         "id":"common_name_label",
         "label": "Common Name Label",
-        "default": "Common Name"
+         "default": "Common Name"
       },
             {
         "type":"text",
@@ -179,25 +187,30 @@
         "type":"text",
         "id":"organic_label",
         "label": "Organic Label",
-        "default": "Organic"
+         "default": "Organic"
       },
       {
         "type":"text",
         "id":"fair_trade_label",
         "label": "Fair Trade Label",
-        "default": "Fair Trade"
+         "default": "Fair Trade"
       },
       {
         "type":"text",
         "id":"all_ingredients_label",
         "label": "All Ingredients Label",
-        "default": "All Ingredients"
+         "default": "All Ingredients"
       },
       {
         "type":"text",
         "id":"fair_trade_on_request_disclaimer",
         "label": "Fair Trade on Request Disclaimer",
-        "default": "Fair Trade On Request"
+         "default": "Fair Trade on Request"
+      },
+      {
+         "type": "checkbox",
+         "id": "hide_header",
+         "label": "Hide table header?"
       },
       {
          "type":"select",

@@ -1,0 +1,168 @@
+{% style %}
+    #Temp-product-{{ section.id }} {
+      --topSpacingRatio: {{section.settings.top_spacing}} / 100;
+      --bottomSpacingRatio: {{section.settings.bottom_spacing}} / 100;
+    }
+{% endstyle %}
+
+{% assign images = "https://cdn.shopify.com/s/files/1/0562/9486/6967/articles/unsplash_pBwMdofMxtU_350x.jpg?v=1646062936,https://cdn.shopify.com/s/files/1/0562/9486/6967/articles/unsplash_pBwMdofMxtU_350x.jpg?v=1646062936,https://cdn.shopify.com/s/files/1/0562/9486/6967/articles/unsplash_pBwMdofMxtU_350x.jpg?v=1646062936,https://cdn.shopify.com/s/files/1/0562/9486/6967/articles/unsplash_pBwMdofMxtU_350x.jpg?v=1646062936" | split: "," %}
+
+{% comment %} Please remember all the global styles we already have to achieve many of these styles such as .btn and .caption and .caption-sm {% endcomment %}
+
+<div id="Temp-product-{{ section.id }}" class="temp-product color-{{section.settings.color_scheme}}"  
+>
+  {% comment %} Please match same styles on article pages, maybe we should be making breadcrumb styles a global class instead of c&p here {% endcomment %}
+  <ul class="temp-product__breadcrumb"> 
+    <li><a href="/">All Ingredients</a></li>
+    <li><a href="/">Culinary Herbs, Spices, & vegetables</a></li>
+  </ul>
+
+  <div>
+    <div>Baso</div>
+    <h1>Basil</h1>
+    <div>Organic</div>
+  </div>
+
+  <div>
+    <div>$19.99</div>
+    <a href="/">LOG IN FOR WHOLESALE PRICING</a>
+  </div>
+
+  <p>With a sweet and slightly peppery flavor, this herb pairs well with balsamic vinegar, blackberry, and lemon.</p>
+
+  <table>
+    <tr><td>Product ID</td><td>BASO</td></tr>
+    <tr><td>Product ID</td><td>BASO</td></tr>
+    <tr><td>Product ID</td><td>BASO</td></tr>
+    <tr><td>Product ID</td><td>BASO</td></tr>
+    <tr><td>Product ID</td><td>BASO</td></tr>
+  </table>
+
+  <p>Fair Trade Available on request</p>
+
+  <form>
+    <label>Case Size</label>
+    <select>
+      <option>1 lb Bag</option>
+      <option>1 lb Bag</option>
+      <option>1 lb Bag</option>
+      <option>1 lb Bag</option>
+    </select>
+
+    <label>Type</label>
+    <select>
+      <option>Powder</option>
+      <option>Powder</option>
+      <option>Powder</option>
+      <option>Powder</option>
+      <option>Powder</option>
+      <option>Powder</option>
+    </select>
+
+    <div>
+      <input type="number" value="1" />
+      <input href="/" type="submit" value="Add to cart">
+      <a href="/">Request C of A Results</a>
+    </div>
+    <a href="/">Request a sample</a>
+  </form>
+
+  <div class="temp-product__slider">
+    {% for image in images %}
+      {% render 'next-gen-img' image: image %}
+    {% endfor %}
+    {% comment %} add whatever structure is required for asNavFor {% endcomment %}
+  </div>
+
+  <nav class="temp-product__tabs-nav">
+    <ul>
+      <li><button data-tab="description">Description</button></li>
+      <li><button data-tab="best-uses">Best Uses</button></li>
+      <li><button data-tab="related-articles">Related Articles</button></li>
+      <li><button data-tab="spec-sheet">Spec Sheet</button></li>
+    </ul>
+  </nav>
+
+  <div class="temp-product__tabs">
+    <div data-tab="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim a, curabitur interdum sed nullam nunc. Sit sem vestibulum est cursus cursus lectus egestas. Ut nisl a, non dictum auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim a, curabitur interdum sed nullam nunc. Sit sem vestibulum est cursus cursus lectus egestas. Ut nisl a, non dictum auctor.</div>
+    <div data-tab="best-uses">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim a, curabitur interdum sed nullam nunc. Sit sem vestibulum est cursus cursus lectus egestas. Ut nisl a, non dictum auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim a, curabitur interdum sed nullam nunc. Sit sem vestibulum est cursus cursus lectus egestas. Ut nisl a, non dictum auctor.</div>
+    <div data-tab="related-articles">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim a, curabitur interdum sed nullam nunc. Sit sem vestibulum est cursus cursus lectus egestas. Ut nisl a, non dictum auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim a, curabitur interdum sed nullam nunc. Sit sem vestibulum est cursus cursus lectus egestas. Ut nisl a, non dictum auctor.</div>
+    <div data-tab="spec-sheet">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim a, curabitur interdum sed nullam nunc. Sit sem vestibulum est cursus cursus lectus egestas. Ut nisl a, non dictum auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim a, curabitur interdum sed nullam nunc. Sit sem vestibulum est cursus cursus lectus egestas. Ut nisl a, non dictum auctor.</div>        
+  </div>
+
+</div>
+
+{% schema %}
+{
+  "name": "Temp Product",
+  "tag": "section",
+  "class": "temp-product__wrapper",
+  "settings": [
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "options": [
+        {
+          "value": "cream",
+          "label": "Cream (Default)"
+        },
+        {
+          "value": "dark-cream",
+          "label": "Dark Cream"
+        },
+        {
+          "value": "grass",
+          "label": "Grass"
+        },
+        {
+          "value": "sun",
+          "label": "Sun"
+        },
+        {
+          "value": "ground",
+          "label": "Ground"
+        },
+        {
+          "value": "sky",
+          "label": "Sky"
+        },
+        {
+          "value": "tan",
+          "label": "Tan"
+        }
+      ],
+      "default": "cream",
+      "label": "Color Scheme"
+    },
+    {
+      "type": "header",
+      "content": "Section Spacing"
+    },
+    {
+      "type": "range",
+      "id": "top_spacing",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "%",
+      "label": "Top Spacing",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "bottom_spacing",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "%",
+      "label": "Bottom Spacing",
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "Temp Product"
+    }
+  ]
+}
+{% endschema %}

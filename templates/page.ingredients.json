@@ -10,7 +10,7 @@
             "botanical_name": "Medicago sativa",
             "organic": true,
             "fair_trade": "no",
-            "description": "<p>Organic Alfalfa Leaf: This nutrient-dense herb, known for its strengthening properties, is a great addition to tinctures, tea blends, and smoothies.<\/p>",
+            "description": "<p>Organic Alfalfa Leaf: This nutrient-dense herb, known for its strengthening properties, is a great addition to tinctures, tea blends, and smoothies<\/p>",
             "category": "General"
           }
         },
@@ -204,11 +204,12 @@
         "organic_label": "Organic",
         "fair_trade_label": "Fair Trade",
         "all_ingredients_label": "All Ingredients",
-        "fair_trade_on_request_disclaimer": "Fair Trade On Request",
+        "fair_trade_on_request_disclaimer": "",
+        "hide_header": false,
         "color_scheme": "cream",
         "table_color": "sky",
         "top_spacing": 50,
-        "bottom_spacing": 50
+        "bottom_spacing": 0
       }
     },
     "1647550055d229b4ef": {
@@ -410,16 +411,17 @@
         "d049cd88-a12a-442a-b44b-42c5ccba6a14"
       ],
       "settings": {
-        "common_name_label": "Common Name",
-        "botanical_name_label": "Botanical Name",
-        "organic_label": "Organic",
-        "fair_trade_label": "Fair Trade",
-        "all_ingredients_label": "All Ingredients",
-        "fair_trade_on_request_disclaimer": "Fair Trade On Request",
+        "common_name_label": "",
+        "botanical_name_label": "",
+        "organic_label": "",
+        "fair_trade_label": "",
+        "all_ingredients_label": "",
+        "fair_trade_on_request_disclaimer": "",
+        "hide_header": true,
         "color_scheme": "cream",
         "table_color": "sky",
-        "top_spacing": 50,
-        "bottom_spacing": 50
+        "top_spacing": 0,
+        "bottom_spacing": 0
       }
     },
     "16475507071b89b3ee": {
@@ -621,16 +623,17 @@
         "fd444baf-b56b-4970-9c2a-0c24d9f57870"
       ],
       "settings": {
-        "common_name_label": "Common Name",
-        "botanical_name_label": "Botanical Name",
-        "organic_label": "Organic",
-        "fair_trade_label": "Fair Trade",
-        "all_ingredients_label": "All Ingredients",
-        "fair_trade_on_request_disclaimer": "Fair Trade On Request",
+        "common_name_label": "",
+        "botanical_name_label": "",
+        "organic_label": "",
+        "fair_trade_label": "",
+        "all_ingredients_label": "",
+        "fair_trade_on_request_disclaimer": "",
+        "hide_header": true,
         "color_scheme": "cream",
         "table_color": "sky",
-        "top_spacing": 50,
-        "bottom_spacing": 50
+        "top_spacing": 0,
+        "bottom_spacing": 0
       }
     },
     "1647551375a7aa30c6": {
@@ -832,16 +835,17 @@
         "3a0f5956-723d-4172-bb4b-7f49ed0cb74b"
       ],
       "settings": {
-        "common_name_label": "Common Name",
-        "botanical_name_label": "Botanical Name",
-        "organic_label": "Organic",
-        "fair_trade_label": "Fair Trade",
-        "all_ingredients_label": "All Ingredients",
-        "fair_trade_on_request_disclaimer": "Fair Trade On Request",
+        "common_name_label": "",
+        "botanical_name_label": "",
+        "organic_label": "",
+        "fair_trade_label": "",
+        "all_ingredients_label": "",
+        "fair_trade_on_request_disclaimer": "",
+        "hide_header": true,
         "color_scheme": "cream",
         "table_color": "sky",
-        "top_spacing": 50,
-        "bottom_spacing": 50
+        "top_spacing": 0,
+        "bottom_spacing": 0
       }
     },
     "164755203664628538": {
@@ -1043,16 +1047,17 @@
         "4e08eb2e-55b3-4771-a5ba-42bf7d3edbfb"
       ],
       "settings": {
-        "common_name_label": "Common Name",
-        "botanical_name_label": "Botanical Name",
-        "organic_label": "Organic",
-        "fair_trade_label": "Fair Trade",
-        "all_ingredients_label": "All Ingredients",
-        "fair_trade_on_request_disclaimer": "Fair Trade On Request",
+        "common_name_label": "",
+        "botanical_name_label": "",
+        "organic_label": "",
+        "fair_trade_label": "",
+        "all_ingredients_label": "",
+        "fair_trade_on_request_disclaimer": "",
+        "hide_header": true,
         "color_scheme": "cream",
         "table_color": "sky",
-        "top_spacing": 50,
-        "bottom_spacing": 50
+        "top_spacing": 0,
+        "bottom_spacing": 0
       }
     },
     "164755273769f0e65d": {
@@ -1254,16 +1259,17 @@
         "871c4e2c-e8fc-4033-a0f6-ac47616a3107"
       ],
       "settings": {
-        "common_name_label": "Common Name",
-        "botanical_name_label": "Botanical Name",
-        "organic_label": "Organic",
-        "fair_trade_label": "Fair Trade",
-        "all_ingredients_label": "All Ingredients",
-        "fair_trade_on_request_disclaimer": "Fair Trade On Request",
+        "common_name_label": "",
+        "botanical_name_label": "",
+        "organic_label": "",
+        "fair_trade_label": "",
+        "all_ingredients_label": "",
+        "fair_trade_on_request_disclaimer": "",
+        "hide_header": true,
         "color_scheme": "cream",
         "table_color": "sky",
-        "top_spacing": 50,
-        "bottom_spacing": 50
+        "top_spacing": 0,
+        "bottom_spacing": 0
       }
     },
     "1647553322f76b62bd": {
@@ -1465,16 +1471,17 @@
         "b0aa1d1a-a982-4488-ba18-274332743b3d"
       ],
       "settings": {
-        "common_name_label": "Common Name",
-        "botanical_name_label": "Botanical Name",
-        "organic_label": "Organic",
-        "fair_trade_label": "Fair Trade",
-        "all_ingredients_label": "All Ingredients",
-        "fair_trade_on_request_disclaimer": "Fair Trade On Request",
+        "common_name_label": "",
+        "botanical_name_label": "",
+        "organic_label": "",
+        "fair_trade_label": "",
+        "all_ingredients_label": "",
+        "fair_trade_on_request_disclaimer": "",
+        "hide_header": true,
         "color_scheme": "cream",
         "table_color": "sky",
-        "top_spacing": 50,
-        "bottom_spacing": 50
+        "top_spacing": 0,
+        "bottom_spacing": 0
       }
     },
     "1647554424dfd90706": {
@@ -1676,16 +1683,17 @@
         "58e6486f-b28e-4287-8aab-906534b14794"
       ],
       "settings": {
-        "common_name_label": "Common Name",
-        "botanical_name_label": "Botanical Name",
-        "organic_label": "Organic",
-        "fair_trade_label": "Fair Trade",
-        "all_ingredients_label": "All Ingredients",
-        "fair_trade_on_request_disclaimer": "Fair Trade On Request",
+        "common_name_label": "",
+        "botanical_name_label": "",
+        "organic_label": "",
+        "fair_trade_label": "",
+        "all_ingredients_label": "",
+        "fair_trade_on_request_disclaimer": "",
+        "hide_header": true,
         "color_scheme": "cream",
         "table_color": "sky",
-        "top_spacing": 50,
-        "bottom_spacing": 50
+        "top_spacing": 0,
+        "bottom_spacing": 0
       }
     },
     "1647555438d2e0df81": {
@@ -1755,16 +1763,17 @@
         "8a7a798e-a22f-4515-be60-60c0865b8d5f"
       ],
       "settings": {
-        "common_name_label": "Common Name",
-        "botanical_name_label": "Botanical Name",
-        "organic_label": "Organic",
-        "fair_trade_label": "Fair Trade",
-        "all_ingredients_label": "All Ingredients",
+        "common_name_label": "",
+        "botanical_name_label": "",
+        "organic_label": "",
+        "fair_trade_label": "",
+        "all_ingredients_label": "",
         "fair_trade_on_request_disclaimer": "Fair Trade On Request",
+        "hide_header": true,
         "color_scheme": "cream",
         "table_color": "sky",
-        "top_spacing": 50,
-        "bottom_spacing": 50
+        "top_spacing": 0,
+        "bottom_spacing": 100
       }
     },
     "main": {
@@ -1799,6 +1808,7 @@
     }
   },
   "order": [
+    "hero",
     "1647470795ab7a1dc6",
     "1647550055d229b4ef",
     "16475507071b89b3ee",
@@ -1808,7 +1818,6 @@
     "1647553322f76b62bd",
     "1647554424dfd90706",
     "1647555438d2e0df81",
-    "main",
-    "hero"
+    "main"
   ]
 }
