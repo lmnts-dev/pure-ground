@@ -176,5 +176,22 @@
   }
 
   @media screen and (max-width: 676px) {
+    &__header {
+      grid-column: 1/-1;
+    
+      &__inner{
+        p:first-of-type, p:nth-child(3){
+          padding-right: calc(var(--pxSize) / 2);
+        }
+      }
+    }
+
+    &__item{
+      &__label{
+        p:first-of-type{
+          padding-right: calc(var(--pxSize) / 2);
+        }
+      }
+    }
   }
 }
