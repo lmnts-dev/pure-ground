@@ -9,15 +9,10 @@
 {% endcomment %}
 
 <toggle-modal class="cmnc-modal color-cream" data-type="modal">
-  <div class="cmnc-modal__content">
+  <div class="cmnc-modal__content --position">
     <button class="cmnc-modal__exit">
       {% render 'svg-plus' %}
     </button>
-    {% if settings.modal_image %}
-      <div class="cmnc-modal__content__image">
-        {% render 'next-gen-img' image: settings.modal_image, alt: settings.modal_heading %}
-      </div>
-    {% endif %}
     <div class="cmnc-modal__content__text">
       {% if position_heading %}
         <h2 class="h4">{{ position_heading }}</h2>
@@ -25,10 +20,6 @@
       {% if position_details %}
         <p>{{ position_details }}</p>
       {% endif %}
-      <div class="cmnc-modal__plants">
-        {% render 'svg-plants' %}
-        {% render 'svg-plants' %}
-      </div>
     </div>
 
   </div>

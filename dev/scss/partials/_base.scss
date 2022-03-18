@@ -240,6 +240,10 @@ form {
     overflow: auto;
     display: flex;
 
+    &.--position{
+      max-width:50vw;
+    }
+
     box-shadow: 0px calc(var(--pxSize) / 4) calc(var(--pxSize) / 2)
       rgba(var(--color-black), 0.2);
 

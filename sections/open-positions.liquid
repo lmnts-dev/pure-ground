@@ -86,7 +86,7 @@
                <div class="open-positions__departments">
                   <p class="p-sm">Departments</p>
                   {% if departments.size > 1 %}
-                     <ul class="positions__nav">
+                     <ul class="positions__nav hide">
                         <li class="positions__nav__item">
                            <positions-button
                               class="open-positions__button caption __active"
@@ -192,10 +192,10 @@
 
 
    let subNav = document.querySelector('.open-positions__content .p-sm');
-   let navItems = document.querySelector('.positions__nav');
-   
+   let subNavItems = document.querySelector('.positions__nav');
+
    subNav.onclick = () =>{
-      navItems.classList.toggle('hide');
+       subNavItems.classList.toggle('hide');
    };
 {% endjavascript %}
 
