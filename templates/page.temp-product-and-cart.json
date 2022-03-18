@@ -6,9 +6,27 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "1647618658eba2139e": {
+      "type": "temp-product",
+      "settings": {
+        "color_scheme": "cream",
+        "top_spacing": 0,
+        "bottom_spacing": 0
+      }
+    },
+    "164761867161c8a6f8": {
+      "type": "temp-cart",
+      "settings": {
+        "color_scheme": "cream",
+        "top_spacing": 0,
+        "bottom_spacing": 0
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "1647618658eba2139e",
+    "164761867161c8a6f8"
   ]
 }
