@@ -22,11 +22,23 @@
         "top_spacing": 0,
         "bottom_spacing": 0
       }
+    },
+    "1647877608a4c6c57b": {
+      "type": "bi-column-text-blocks",
+      "settings": {
+        "heading": "Heading",
+        "subheading": "Subheading",
+        "alt": "",
+        "color_scheme": "cream",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
     }
   },
   "order": [
     "main",
     "1647618658eba2139e",
-    "164761867161c8a6f8"
+    "164761867161c8a6f8",
+    "1647877608a4c6c57b"
   ]
 }
