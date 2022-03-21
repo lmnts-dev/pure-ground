@@ -286,7 +286,7 @@
           "type": "text",
           "settings": {
             "heading": "Custom Processing",
-            "content": "<p>Conditions and resources at origin are not ideal to meet the United States food safety regulations.  We are fully equipped to import from origin and get product ready to eat (RTE) in our SQF certified facility. We have a fully validated micro reduction system and metal check all goods upon arrival. We provide an array of milling, blending, roasting, cleaning and metal check <\/p><p>Your needs and specifications  are met by our state of the art facility. We offer an array of milling, sifting and other treatment options to process organic ingredients just right for you.<\/p>",
+            "content": "<p>Conditions and resources at origin are not ideal to meet the United States food safety regulations.  We are fully equipped to import from origin and get product ready to eat (RTE) in our SQF certified facility. We have a fully validated micro reduction system and metal check all goods upon arrival. We provide an array of milling, blending, roasting, cleaning and metal check <\/p>",
             "button_label": "Read more",
             "button_link": "shopify:\/\/pages\/services",
             "button_color": "default"
