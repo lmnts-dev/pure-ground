@@ -23,7 +23,7 @@
         "164549205077c59396-0": {
           "type": "text",
           "settings": {
-            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla.  pharetra diam a magna blandit, ac maximus purus fringilla.<\/p>"
+            "text": "<p>With a variety of mills suitable for different materials, we are able to cut your organic ingredient into standard or custom cut-sizes.<\/p>"
           }
         }
       },
@@ -48,7 +48,7 @@
         "16454921839ac0a96a-0": {
           "type": "text",
           "settings": {
-            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. <\/p>"
+            "text": "<p>Our powerful machinery is able to produce powder of any materials you need to be fine ground. For food ingredients or nutraceuticals, we can offer the right powder for you<\/p>"
           }
         }
       },
@@ -73,7 +73,7 @@
         "16454922291efe439e-0": {
           "type": "text",
           "settings": {
-            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. <\/p>"
+            "text": "<p>Like your Garlic roasted? Our in house, smokeless roasting technology allows us to create different flavors. Roasted items include Chicory, Marshmallow and Dandelion, Chiles and Paprikas, Carob and Garlic. <\/p>"
           }
         }
       },
@@ -98,7 +98,7 @@
         "16454922901e23de1f-0": {
           "type": "text",
           "settings": {
-            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. <\/p>"
+            "text": "<p>Should your application require granulated ingredients, we are able to create a wide variety of granules for you:<\/p><p>Botanicals for Tea applications or Onion and Garlic for your recipes, we can offer the granules you need.<\/p>"
           }
         }
       },
@@ -170,7 +170,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Product Development",
-            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. <\/p>",
+            "content": "<p>Our team represents decades of experience in the organic tea and spice field and can assist you with your product development. Our specialists can help you create or re-create common and exotic spice blends as well as balanced, taste or purpose driven tea formulations.<\/p>",
             "category": "General"
           }
         },
@@ -178,7 +178,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Blending",
-            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. <\/p>",
+            "content": "<p>We are ready to blend your best-selling formulas.<\/p><p>With our complete organic Botanical, Spice and Herb portfolio at hand, we can create the right blend you need. Your recipe can be readily blended to your specifications and will be ready out of the box into your process.<\/p>",
             "category": "General"
           }
         },
@@ -186,7 +186,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Private Labeling",
-            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. <\/p>",
+            "content": "<p>When you need to let your company shine, ask us to package with your own labels.<\/p><p>Our quality organic ingredients can arrive at your warehouse with your own labeling and ready to be sold under your name.<\/p><p>White labeling also available upon request.<\/p>",
             "category": "General"
           }
         },
