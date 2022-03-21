@@ -5,7 +5,7 @@
       "settings": {
         "heading": "Always Organic",
         "subheading": "That's how we like it",
-        "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor lorem sit amet eros suscipit finibus. Mauris feugiat interdum lobortis.<\/p>",
+        "text": "<p>Pure Ground is the industry leader in pesticide testing to ensure organic integrity<\/p>",
         "heading_size": "h2",
         "text_color": "dark",
         "button_label": "Shop All Ingredients",
@@ -57,7 +57,7 @@
       "settings": {
         "heading": "Global Partnerships",
         "subheading": "",
-        "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor lorem sit amet eros suscipit finibus. Mauris feugiat interdum lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.<\/p>",
+        "text": "<p>We have a global network of growers, co-ops, customers, logistics providers and partners at origin. We are united in our purpose to build a healthier planet, thriving communities and happy customers.  <\/p>",
         "heading_size": "h3",
         "text_color": "light",
         "button_label": "Learn where",
@@ -233,35 +233,45 @@
         "b02402c1-f3cf-4b34-babb-b5b5a71c5cad": {
           "type": "slide",
           "settings": {
-            "text": "“. Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur “",
-            "author": "Lorem Ipsum",
+            "text": "\"You guys are the best and I appreciate the heck out of you.  The Pure Ground Ingredients team is fast, friendly and an overall pleasure to work with. Samples arrive within days of a request and the quality is excellent. I’m grateful to have them as a resource.\"",
+            "author": "",
             "image": "shopify:\/\/shop_images\/unsplash_EAt30ojfzOI.jpg",
-            "alt": ""
+            "alt": "Rolling hills landscape"
           }
         },
         "596920b0-a7be-45ab-8351-95b2e717da75": {
           "type": "slide",
           "settings": {
-            "text": "“Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur “",
-            "author": "Dolor sit",
+            "text": "\"We are very thankful to be working with PGI for over 7 years and hope to continue to do so long into the future.  We take comfort in working with a company that shares our same values and integrity when supplying only the best quality products in the world.  Working with PGI has been such a great experience that we like to think of PGI not only as our clients but our friends as well and wish them great success in the future to come.\"",
+            "author": "",
             "image": "shopify:\/\/shop_images\/unsplash_IQVFVH0ajag.jpg",
-            "alt": ""
+            "alt": "Rows of produce in field"
           }
         },
         "bbb86467-9856-4aa5-a40e-826958f624c9": {
           "type": "slide",
           "settings": {
-            "text": "“Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur Lorem Ipsum dolor sit amet consectetur “",
-            "author": "Amet Consect",
+            "text": "\"I am over delighted to inform whole world that past many years PGI has given us over-helming tremendous support to our company which infact has helped many marginal farmers in INDIA. PGI  transformed many livehoods in INDIA with their constant support on pricing and continuous intake of goods . When all other competitors of PGI takes advantage of poor suppliers in India, PGI has always helped us even though there were issues and their support was to the highest level. I really wish and pray that PGI will be the Number 1 Organic Company in the world very soon and we keep supplying to them with our heart.\"",
+            "author": "",
             "image": "shopify:\/\/shop_images\/unsplash_VVe3zOZM88E.jpg",
-            "alt": ""
+            "alt": "Piles of different spices"
+          }
+        },
+        "46e8aee6-c855-431e-8386-356dca1e1314": {
+          "type": "slide",
+          "settings": {
+            "text": "\"I do like Pure Ground entrepreneurial spirit. It is a company that has innovation, quality, safety and sustainability at the center of its growth agenda\"",
+            "author": "",
+            "image": "shopify:\/\/shop_images\/unsplash_NMF5sEaHUmo.jpg",
+            "alt": "Jars of spices"
           }
         }
       },
       "block_order": [
         "b02402c1-f3cf-4b34-babb-b5b5a71c5cad",
         "596920b0-a7be-45ab-8351-95b2e717da75",
-        "bbb86467-9856-4aa5-a40e-826958f624c9"
+        "bbb86467-9856-4aa5-a40e-826958f624c9",
+        "46e8aee6-c855-431e-8386-356dca1e1314"
       ],
       "settings": {
         "color_scheme": "cream",

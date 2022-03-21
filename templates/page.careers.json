@@ -15,9 +15,9 @@
           "settings": {
             "heading": "Customer Service Representative",
             "location": "Position",
-            "details": "<p>Testing details here</p>",
+            "details": "<p>Testing details here<\/p>",
             "button_label": "Apply Now",
-            "button_link": "shopify://pages/privacy-policy",
+            "button_link": "shopify:\/\/pages\/privacy-policy",
             "button_color": "grass",
             "department": "HR"
           }
@@ -25,11 +25,11 @@
         "807e88ff-dab1-41ec-baa3-39db101410d2": {
           "type": "position",
           "settings": {
-            "heading": "Order Selector/Inventory Specialist",
+            "heading": "Order Selector\/Inventory Specialist",
             "location": "asdfsdf",
-            "details": "<p>Details Here</p>",
+            "details": "<p>Details Here<\/p>",
             "button_label": "Apply Now",
-            "button_link": "shopify://pages/history",
+            "button_link": "shopify:\/\/pages\/history",
             "button_color": "grass",
             "department": "HR"
           }
@@ -39,9 +39,9 @@
           "settings": {
             "heading": "Title Here",
             "location": "Sparks, NV",
-            "details": "<p>Testing Details</p>",
+            "details": "<p>Testing Details<\/p>",
             "button_label": "Apply Now",
-            "button_link": "shopify://pages/resources",
+            "button_link": "shopify:\/\/pages\/resources",
             "button_color": "grass",
             "department": "General"
           }
@@ -51,9 +51,9 @@
           "settings": {
             "heading": "New Position",
             "location": "New Orleans",
-            "details": "<p>Details</p>",
+            "details": "<p>Details<\/p>",
             "button_label": "Apply Now",
-            "button_link": "shopify://pages/our-principles",
+            "button_link": "shopify:\/\/pages\/our-principles",
             "button_color": "grass",
             "department": "HR"
           }
@@ -63,9 +63,9 @@
           "settings": {
             "heading": "New",
             "location": "New York",
-            "details": "<p>sfdsf</p>",
+            "details": "<p>sfdsf<\/p>",
             "button_label": "Apply Now",
-            "button_link": "shopify://blogs/news",
+            "button_link": "shopify:\/\/blogs\/news",
             "button_color": "grass",
             "department": "Tech"
           }
@@ -80,12 +80,15 @@
       ],
       "settings": {
         "heading": "Open Positions",
-        "text": "<p>We’re looking for people to join the team who are as excited as we are to build positive global impact of supporting of customers, suppliers and network of growers and partners around the world. </p>",
+        "text": "<p>We’re looking for people to join the team who are as excited as we are to build positive global impact of supporting of customers, suppliers and network of growers and partners around the world. <\/p>",
         "color_scheme": "cream",
         "top_spacing": 50,
         "bottom_spacing": 50
       }
     }
   },
-  "order": ["main", "164617166466b4b1ef"]
+  "order": [
+    "main",
+    "164617166466b4b1ef"
+  ]
 }
