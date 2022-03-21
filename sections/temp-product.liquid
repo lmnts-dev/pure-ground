@@ -11,86 +11,154 @@
 
 <div id="Temp-product-{{ section.id }}" class="temp-product color-{{section.settings.color_scheme}}"  
 >
-  {% comment %} Please match same styles on article pages, maybe we should be making breadcrumb styles a global class instead of c&p here {% endcomment %}
-  <ul class="temp-product__breadcrumb"> 
-    <li><a href="/">All Ingredients</a></li>
-    <li><a href="/">Culinary Herbs, Spices, & vegetables</a></li>
-  </ul>
+  <div class="temp-product__container">
+    <div class="temp-product__content">
+    {% comment %} Please match same styles on article pages, maybe we should be making breadcrumb styles a global class instead of c&p here {% endcomment %}
+      <ul class="temp-product__breadcrumb"> 
+        <li><a href="/">All Ingredients</a></li>
+        {% render 'svg-arrow' %}
+        <li><a href="/">Culinary Herbs, Spices, & vegetables</a></li>
+      </ul>
 
-  <div>
-    <div>Baso</div>
-    <h1>Basil</h1>
-    <div>Organic</div>
-  </div>
+      <div class="temp-product__headline">
+        <div>
+          <div class="temp-product__text caption-with-letter-spacing">Baso</div>
+          <h1 class="temp-product__title">Basil</h1>
+        </div>
+        <img src="https://cdn.shopify.com/s/files/1/0562/9486/6967/files/Commence_x_Pure_Ground_-_Organic_Badge_-_Green_1.png?v=1647765751" loading="lazy" height="84" width="141"/>
+      </div>
 
-  <div>
-    <div>$19.99</div>
-    <a href="/">LOG IN FOR WHOLESALE PRICING</a>
-  </div>
+      <div class="temp-product__price">
+        <p class="h4">$19.99</p>
+        <a href="/">LOG IN FOR WHOLESALE PRICING</a>
+      </div>
 
-  <p>With a sweet and slightly peppery flavor, this herb pairs well with balsamic vinegar, blackberry, and lemon.</p>
+      <p class="temp-product__description">With a sweet and slightly peppery flavor, this herb pairs well with balsamic vinegar, blackberry, and lemon.</p>
 
-  <table>
-    <tr><td>Product ID</td><td>BASO</td></tr>
-    <tr><td>Product ID</td><td>BASO</td></tr>
-    <tr><td>Product ID</td><td>BASO</td></tr>
-    <tr><td>Product ID</td><td>BASO</td></tr>
-    <tr><td>Product ID</td><td>BASO</td></tr>
-  </table>
+      <table class="temp-product__info p-sm">
+        <tr><td>Product ID</td><td class="temp-product__info__dots">.............</td><td>BASO</td></tr>
+        <tr><td>Product ID</td><td class="temp-product__info__dots">.............</td><td>BASO</td></tr>
+        <tr><td>Product ID</td><td class="temp-product__info__dots">.............</td><td>BASO</td></tr>
+        <tr><td>Product ID</td><td class="temp-product__info__dots">.............</td><td>BASO</td></tr>
+        <tr><td>Product ID</td><td class="temp-product__info__dots">.............</td><td>BASO</td></tr>
+      </table>
 
-  <p>Fair Trade Available on request</p>
+      <p class="temp-product__fair-trade">Fair Trade Available on request</p>
 
-  <form>
-    <label>Case Size</label>
-    <select>
-      <option>1 lb Bag</option>
-      <option>1 lb Bag</option>
-      <option>1 lb Bag</option>
-      <option>1 lb Bag</option>
-    </select>
+      <form>
+        <div class="temp-product__case">
+          <label>Case Size</label>
+          <select>
+            <option>1 lb Bag</option>
+            <option>1 lb Bag</option>
+            <option>1 lb Bag</option>
+            <option>1 lb Bag</option>
+          </select>
+      </div>
+      
 
-    <label>Type</label>
-    <select>
-      <option>Powder</option>
-      <option>Powder</option>
-      <option>Powder</option>
-      <option>Powder</option>
-      <option>Powder</option>
-      <option>Powder</option>
-    </select>
+      <div class="temp-product__type">
+        <label>Type</label>
+        <select>
+          <option>Powder</option>
+          <option>Powder</option>
+          <option>Powder</option>
+          <option>Powder</option>
+          <option>Powder</option>
+          <option>Powder</option>
+        </select>
+      </div>
 
-    <div>
-      <input type="number" value="1" />
-      <input href="/" type="submit" value="Add to cart">
-      <a href="/">Request C of A Results</a>
+        <div class="temp-product__add-to-cart">
+          <input class="temp-product__quantity-input" type="number" value="1" />
+          <input class="btn" href="/" type="submit" value="Add to cart">
+          <a class="btn __btn-clr-default" href="/">Request C of A Results</a>
+        </div>
+        <a href="/">Request a sample</a>
+      </form>
     </div>
-    <a href="/">Request a sample</a>
-  </form>
 
-  <div class="temp-product__slider">
-    {% for image in images %}
-      {% render 'next-gen-img' image: image %}
-    {% endfor %}
-    {% comment %} add whatever structure is required for asNavFor {% endcomment %}
+    <div class="temp-product__slider" data-flickity='{ 
+      "wrapAround": true }'
+    >
+      {% for image in images %}
+        {% render 'next-gen-img' image: image %}
+      {% endfor %}
+      {% comment %} add whatever structure is required for asNavFor {% endcomment %}
+    </div>
   </div>
 
+  <div>
   <nav class="temp-product__tabs-nav">
     <ul>
-      <li><button data-tab="description">Description</button></li>
-      <li><button data-tab="best-uses">Best Uses</button></li>
-      <li><button data-tab="related-articles">Related Articles</button></li>
-      <li><button data-tab="spec-sheet">Spec Sheet</button></li>
+      <li><info-button class="info-button __active" data-tab="description">Description</info-button></li>
+      <li><info-button class="info-button" data-tab="best-uses">Best Uses</info-button></li>
+      <li><info-button class="info-button" data-tab="related-articles">Related Articles</info-button></li>
+      <li><info-button class="info-button" data-tab="spec-sheet">Spec Sheet</info-button></li>
     </ul>
   </nav>
 
   <div class="temp-product__tabs">
-    <div data-tab="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim a, curabitur interdum sed nullam nunc. Sit sem vestibulum est cursus cursus lectus egestas. Ut nisl a, non dictum auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim a, curabitur interdum sed nullam nunc. Sit sem vestibulum est cursus cursus lectus egestas. Ut nisl a, non dictum auctor.</div>
-    <div data-tab="best-uses">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim a, curabitur interdum sed nullam nunc. Sit sem vestibulum est cursus cursus lectus egestas. Ut nisl a, non dictum auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim a, curabitur interdum sed nullam nunc. Sit sem vestibulum est cursus cursus lectus egestas. Ut nisl a, non dictum auctor.</div>
-    <div data-tab="related-articles">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim a, curabitur interdum sed nullam nunc. Sit sem vestibulum est cursus cursus lectus egestas. Ut nisl a, non dictum auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim a, curabitur interdum sed nullam nunc. Sit sem vestibulum est cursus cursus lectus egestas. Ut nisl a, non dictum auctor.</div>
-    <div data-tab="spec-sheet">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim a, curabitur interdum sed nullam nunc. Sit sem vestibulum est cursus cursus lectus egestas. Ut nisl a, non dictum auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim a, curabitur interdum sed nullam nunc. Sit sem vestibulum est cursus cursus lectus egestas. Ut nisl a, non dictum auctor.</div>        
+    <div class="tab-content __active" data-tab="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim a, curabitur interdum sed nullam nunc. Sit sem vestibulum est cursus cursus lectus egestas. Ut nisl a, non dictum auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim a, curabitur interdum sed nullam nunc. Sit sem vestibulum est cursus cursus lectus egestas. Ut nisl a, non dictum auctor.</div>
+    <div class="tab-content" data-tab="best-uses">Quisque condimentum, arcu congue vulputate bibendum, libero ligula congue ante, a fermentum nulla ex vel lacus. Morbi nec cursus dui. Sed quis euismod leo. Suspendisse rutrum urna in enim cursus, ac posuere arcu suscipit. In porttitor magna sollicitudin, gravida dui quis, aliquam lorem. Donec at tempus lacus. Nunc et tellus iaculis, tempor nisl faucibus, sodales orci. Integer interdum placerat pulvinar.</div>
+    <div class="tab-content" data-tab="related-articles">Aenean sed maximus nibh. Praesent scelerisque, nunc non ultrices ornare, diam leo fringilla ipsum, sed finibus libero elit vel ipsum. Donec mollis sollicitudin tortor, eu scelerisque urna rhoncus ut. Nulla facilisi. Sed egestas est nec est consectetur cursus.</div>
+    <div class="tab-content" data-tab="spec-sheet">Mauris at euismod nisl. Praesent justo nisi, accumsan id tortor at, malesuada volutpat mauris. Morbi semper cursus leo. Vestibulum feugiat molestie tellus non auctor. Aenean a orci porttitor, tincidunt urna non, pretium urna. Vestibulum eget tristique mi. Pellentesque feugiat venenatis dui, venenatis bibendum sapien eleifend nec. </div>        
   </div>
-
+  </div>
 </div>
+
+{% javascript %}
+
+  class InfoNavButton extends HTMLElement {
+    constructor() {
+      super();
+
+      this.setupListener();
+    }
+
+    //Add a on click listener to every button for product info
+    setupListener() {
+      this.addEventListener('click', this.updateInfo.bind(this));
+    }
+
+    //on tab nav button click, updates what is active
+    updateInfo() {
+
+      //parent element for this section
+      var thisSection = this.parentNode.parentNode.parentNode.parentNode;
+      console.log(thisSection,'this section');
+      //clicked on item's tab
+      var tab = this.getAttribute('data-tab');
+      //all tabs in this section
+      var infoItems = thisSection.querySelectorAll('.tab-content');
+            console.log(infoItems, 'infoItems');
+      //all nav buttons
+      var infoNavItems = thisSection.querySelectorAll('.info-button');
+      console.log(infoNavItems, 'info nav items');
+
+      //remove or add active class on buttons
+      for ( var i = 0; i < infoItems.length; i++ ){
+        if (infoItems[i].getAttribute('data-tab') == tab ){
+          infoItems[i].classList.add('__active');
+        }
+        else {
+          infoItems[i].classList.remove('__active');
+        }
+      }
+
+      //remove active class on nav buttons
+      for (var i = 0; i < infoNavItems.length; i++ ) {
+        infoNavItems[i].classList.remove('__active');
+      }
+
+      //add active class on clicked item
+      this.classList.add('__active');
+    }
+  }
+
+  customElements.define('info-button', InfoNavButton);
+
+{% endjavascript %}
 
 {% schema %}
 {
