@@ -7,6 +7,46 @@
         "padding_bottom": 28
       }
     },
+    "1647888127ec3582d3": {
+      "type": "rich-text",
+      "blocks": {
+        "1647888127708a88e2-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Join  our team",
+            "heading_size": "h2",
+            "heading_alignment": "left",
+            "subheading": ""
+          }
+        },
+        "1647888127708a88e2-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our team works every single day to ensure a world in which organic actually means organic—and in which farmers, manufacturers, and consumers come together as one in the name of thriving communities and a happy planet.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1647888127708a88e2-0",
+        "1647888127708a88e2-1"
+      ],
+      "settings": {
+        "color_scheme": "cream",
+        "hero": false,
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
+    },
+    "16478881949eb1c92b": {
+      "type": "image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/unsplash_3D43SBDDkAc.jpg",
+        "image_style": "fullwidth",
+        "color_scheme": "cream",
+        "top_spacing": 0,
+        "bottom_spacing": 0
+      }
+    },
     "164617166466b4b1ef": {
       "type": "career-listings",
       "blocks": {
@@ -85,10 +125,70 @@
         "top_spacing": 50,
         "bottom_spacing": 50
       }
+    },
+    "164788827637c67184": {
+      "type": "icons-section",
+      "blocks": {
+        "316ee8ce-2225-496c-84b0-718633c4bc58": {
+          "type": "image",
+          "settings": {
+            "text": "Paid company holidays and Paid Time Off"
+          }
+        },
+        "99102a26-6e8a-4299-9424-fb60527cb671": {
+          "type": "image",
+          "settings": {
+            "text": "Dental and Vision"
+          }
+        },
+        "bc7dcbf7-5ac6-4789-9ffc-6963ead871fe": {
+          "type": "image",
+          "settings": {
+            "text": "Competitive hourly wage"
+          }
+        },
+        "cf7f733f-4e3b-4e4d-9d2a-2fd2c4784098": {
+          "type": "image",
+          "settings": {
+            "text": "401(k) plan with match"
+          }
+        },
+        "a2492840-6bf3-4623-bd10-43d1c2164221": {
+          "type": "image",
+          "settings": {
+            "text": "Growth-oriented"
+          }
+        },
+        "0bb6dd77-e9c4-4d4d-b6e5-5df7ed8769c2": {
+          "type": "image",
+          "settings": {
+            "text": "Health insurance with company contribution"
+          }
+        }
+      },
+      "block_order": [
+        "316ee8ce-2225-496c-84b0-718633c4bc58",
+        "99102a26-6e8a-4299-9424-fb60527cb671",
+        "bc7dcbf7-5ac6-4789-9ffc-6963ead871fe",
+        "cf7f733f-4e3b-4e4d-9d2a-2fd2c4784098",
+        "a2492840-6bf3-4623-bd10-43d1c2164221",
+        "0bb6dd77-e9c4-4d4d-b6e5-5df7ed8769c2"
+      ],
+      "settings": {
+        "caption": "Perks & Benefits",
+        "heading": "Live your best life",
+        "text": "There’s life at work and life outside of work. We want everyone to be healthy and have the resources and support they need.",
+        "color_scheme": "cream",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
     }
   },
   "order": [
     "main",
-    "164617166466b4b1ef"
+    "1647888127ec3582d3",
+    "16478881949eb1c92b",
+    "164617166466b4b1ef",
+    "164788827637c67184"
   ]
 }
