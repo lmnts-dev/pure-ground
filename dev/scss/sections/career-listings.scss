@@ -1,101 +1,104 @@
-.open-positions {
+.career-listings {
   display: flex;
   flex-direction: column;
 
-  &__departments{
-    border-right: 1px solid var(--color-foreground);;
+  &__departments {
+    border-right: 1px solid var(--color-foreground);
     flex: 1;
 
-    .positions__nav{
+    .career-listings__nav {
       margin-top: 2.5rem;
 
-      &__item{
+      &__item {
         cursor: pointer;
         margin-bottom: 1.25rem;
       }
     }
   }
 
-
-  &__positions{
-    flex:4;
+  &__positions {
+    flex: 4;
   }
 
-  &__content{
+  &__content {
     display: flex;
-    flex:1;
+    flex: 1;
   }
 
-  &__button{
-    &.__active{
+  &__button {
+    &.__active {
       font-weight: bold;
     }
   }
 
-  &__container{
+  &__container {
     display: flex;
     flex-direction: row-reverse;
     margin-top: 2rem;
   }
 
-  &__headline-content{
+  &__headline-content {
     max-width: 70%;
   }
 
-  &__modal{
-    padding: 0 calc(var(--btnHeight)/ 6);
+  &__modal {
+    padding: 0 calc(var(--btnHeight) / 6);
     text-align: center;
     min-width: 175px;
 
-    p{
+    p {
       color: var(--color-grass);
     }
 
-    &:hover{
+    &:hover {
       cursor: pointer;
     }
   }
 
   &__position {
-    padding: 0px calc(var(--sectionVerticalSpacing) / 1.5) calc(var(--sectionVerticalSpacing) / 2) calc(var(--sectionVerticalSpacing) / 1.5);
+    padding: 0px calc(var(--sectionVerticalSpacing) / 1.5)
+      calc(var(--sectionVerticalSpacing) / 2)
+      calc(var(--sectionVerticalSpacing) / 1.5);
     display: none;
 
-    &.__active{
+    &.__active {
       display: block;
     }
 
-    &--top, &--bottom{
+    &--top,
+    &--bottom {
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
 
-    &--top{
+    &--top {
       margin-bottom: 1rem;
-      
-      a{
+
+      a {
         padding: 0 calc(var(--btnHeight) / 2);
       }
     }
 
-    h3, p {
+    h3,
+    p {
       margin-bottom: 0;
     }
 
-    &__btn{
+    &__btn {
       width: fit-content;
       margin-top: 0;
       border-radius: 2px;
       font-size: 1.1rem;
 
-      svg{
+      svg {
         stroke: var(--color-btn-txt);
         width: 1.25rem;
         margin-left: 1rem;
       }
 
-      &:hover{
-        svg{
+      &:hover {
+        svg {
           stroke: var(--color-foreground);
         }
       }
@@ -123,13 +126,13 @@
       width: 100%;
       display: flex;
 
-      .positions__position{
+      .career-listings__position {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
       }
 
-      &__text{
-        display:grid;
+      &__text {
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
       }
     }
@@ -141,30 +144,29 @@
   }
 
   @media screen and (max-width: 676px) {
-
-    &__container{
+    &__container {
       flex-direction: column-reverse;
     }
-    
-    &__content{
+
+    &__content {
       flex-direction: column;
     }
 
-    &__departments{
+    &__departments {
       border: 1px solid var(--color-foreground);
       padding: calc(var(--pxSize) / 2.5);
 
-    .hide{
-      display: none;
-    }
+      .hide {
+        display: none;
+      }
 
-      p{
+      p {
         position: relative;
-        margin-bottom:0;
+        margin-bottom: 0;
         display: flex;
         align-items: center;
 
-        &:after{
+        &:after {
           content: "";
           display: inline-block;
           border: solid var(--color-foreground);
@@ -179,10 +181,10 @@
       }
     }
 
-    &__headline-content{
+    &__headline-content {
       max-width: 100%;
 
-      h2{
+      h2 {
         text-align: center;
       }
     }
@@ -191,18 +193,18 @@
       padding: 0;
       margin-top: 1.25rem;
 
-      &__btn{
-        font-size: .9rem;
+      &__btn {
+        font-size: 0.9rem;
       }
 
-      &--top{
-        h3{
+      &--top {
+        h3 {
           font-size: 18px;
           flex: 2;
         }
       }
 
-      &__label{
+      &__label {
         padding-right: calc(var(--pxSize) / 1.5);
       }
     }

@@ -9,12 +9,12 @@
    {% if section.settings.heading %}
       <h2 class="split-text__heading h4">{{ section.settings.heading }}</h2>
    {% endif %}
-   <div class="split-text__content __article-txt">
+   <div class="split-text__content">
       {% if section.settings.text %}
-         <div class="split-section__content__text">{{ section.settings.text }}</div>
+         <div class="split-section__content__text __article-txt">{{ section.settings.text }}</div>
       {% endif %}
       {%- if section.settings.button_label and section.settings.button_link -%}
-         <a class="btn __btn-clr-{{section.settings.button_color}}" href="{{section.settings.button_link}}">{{section.settings.button_label}}</a>
+         <a class="btn __btn-clr-{{ section.settings.button_color }}" href="{{ section.settings.button_link }}">{{ section.settings.button_label }}</a>
       {%- endif -%}
    </div>
 </div>
