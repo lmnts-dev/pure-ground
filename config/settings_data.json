@@ -41,6 +41,12 @@
               "menu": "our-values"
             }
           },
+          "a83cacca-e365-4ed9-8167-64aa7b3da381": {
+            "type": "submenu",
+            "settings": {
+              "menu": "ethical-sourcing"
+            }
+          },
           "c3437a35-11cd-4be2-833c-b85c386e965a": {
             "type": "submenu",
             "settings": {
@@ -92,6 +98,7 @@
           "0dc547ff-b375-4b78-bad8-9ef9fc4a79d2",
           "d9d4a0f1-92e8-4a6c-964f-c942b3f49c06",
           "c130bfbf-92b2-4a18-a2bc-3401d7cebf82",
+          "a83cacca-e365-4ed9-8167-64aa7b3da381",
           "c3437a35-11cd-4be2-833c-b85c386e965a",
           "e58fd043-68a5-401e-8b7b-7143691d9a3f",
           "aabd9f5b-6fb3-4cd3-9443-4ea104e820c9",
