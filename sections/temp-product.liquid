@@ -7,22 +7,19 @@
 
 {% assign images = "https://cdn.shopify.com/s/files/1/0562/9486/6967/articles/unsplash_pBwMdofMxtU_350x.jpg?v=1646062936,https://cdn.shopify.com/s/files/1/0562/9486/6967/articles/unsplash_pBwMdofMxtU_350x.jpg?v=1646062936,https://cdn.shopify.com/s/files/1/0562/9486/6967/articles/unsplash_pBwMdofMxtU_350x.jpg?v=1646062936,https://cdn.shopify.com/s/files/1/0562/9486/6967/articles/unsplash_pBwMdofMxtU_350x.jpg?v=1646062936" | split: "," %}
 
-{% comment %} Please remember all the global styles we already have to achieve many of these styles such as .btn and .caption and .caption-sm {% endcomment %}
 
 <div id="Temp-product-{{ section.id }}" class="temp-product color-{{section.settings.color_scheme}}"  
 >
+  <ul class="breadcrumb"> 
+    <li><a href="/">All Ingredients</a></li>
+      {% render 'svg-caret' %}
+    <li><a href="/">Culinary Herbs, Spices, & vegetables</a></li>
+</ul>
   <div class="temp-product__container">
     <div class="temp-product__content">
-    {% comment %} Please match same styles on article pages, maybe we should be making breadcrumb styles a global class instead of c&p here {% endcomment %}
-      <ul class="temp-product__breadcrumb"> 
-        <li><a href="/">All Ingredients</a></li>
-        {% render 'svg-arrow' %}
-        <li><a href="/">Culinary Herbs, Spices, & vegetables</a></li>
-      </ul>
-
       <div class="temp-product__headline">
         <div>
-          <div class="temp-product__text caption-with-letter-spacing">Baso</div>
+          <div class="temp-product__text p-xs caption-with-letter-spacing">Baso</div>
           <h1 class="temp-product__title">Basil</h1>
         </div>
         <img src="https://cdn.shopify.com/s/files/1/0562/9486/6967/files/Commence_x_Pure_Ground_-_Organic_Badge_-_Green_1.png?v=1647765751" loading="lazy" height="84" width="141"/>
@@ -30,12 +27,12 @@
 
       <div class="temp-product__price">
         <p class="h4">$19.99</p>
-        <a href="/">LOG IN FOR WHOLESALE PRICING</a>
+        <a href="/" class="caption-sm">LOG IN FOR WHOLESALE PRICING</a>
       </div>
 
       <p class="temp-product__description">With a sweet and slightly peppery flavor, this herb pairs well with balsamic vinegar, blackberry, and lemon.</p>
 
-      <table class="temp-product__info p-sm">
+      <table class="temp-product__info p-xs">
         <tr><td>Product ID</td><td class="temp-product__info__dots">.............</td><td>BASO</td></tr>
         <tr><td>Product ID</td><td class="temp-product__info__dots">.............</td><td>BASO</td></tr>
         <tr><td>Product ID</td><td class="temp-product__info__dots">.............</td><td>BASO</td></tr>
@@ -43,7 +40,7 @@
         <tr><td>Product ID</td><td class="temp-product__info__dots">.............</td><td>BASO</td></tr>
       </table>
 
-      <p class="temp-product__fair-trade">Fair Trade Available on request</p>
+      <p class="temp-product__fair-trade p-xs">Fair Trade Available on request</p>
 
       <form>
         <div class="temp-product__case">
@@ -72,7 +69,7 @@
       </div>
 
         <div class="temp-product__add-to-cart">
-          <input class="temp-product__quantity-input" type="number" value="1" />
+          <input class="temp-product__quantity-input caption-sm" type="number" value="1" />
           <input class="btn" href="/" type="submit" value="Add to cart">
           <a class="btn __btn-clr-default" href="/">Request C of A Results</a>
         </div>
@@ -105,10 +102,10 @@
   <div>
   <nav class="temp-product__tabs-nav">
     <ul>
-      <li><info-button class="info-button __active" data-tab="description">Description</info-button></li>
-      <li><info-button class="info-button" data-tab="best-uses">Best Uses</info-button></li>
-      <li><info-button class="info-button" data-tab="related-articles">Related Articles</info-button></li>
-      <li><info-button class="info-button" data-tab="spec-sheet">Spec Sheet</info-button></li>
+      <li><info-button class="info-button caption __active" data-tab="description">Description</info-button></li>
+      <li><info-button class="info-button caption" data-tab="best-uses">Best Uses</info-button></li>
+      <li><info-button class="info-button caption" data-tab="related-articles">Related Articles</info-button></li>
+      <li><info-button class="info-button caption" data-tab="spec-sheet">Spec Sheet</info-button></li>
     </ul>
   </nav>
 

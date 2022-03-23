@@ -2,6 +2,14 @@
   --splitSectionSpace: var(--sectionHorizontalSpacing);
   --color-accent: rgba(var(--color-grass), 1);
 
+  .breadcrumb{
+    justify-content: start;
+    
+    svg{
+      width: calc(var(--pxSize)/ 8);
+    }
+  }
+
   &__container {
     display: flex;
     justify-content: space-between;
@@ -24,40 +32,11 @@
 
   &__info {
     text-transform: uppercase;
-    font-size: 0.75rem;
 
     &__dots {
       font-size: 1.5rem;
       letter-spacing: 12px;
     }
-  }
-
-  &__breadcrumb {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: calc(var(--pxSize));
-
-    svg {
-      width: calc(var(--pxSize) / 3);
-      margin: 0 calc(var(--pxSize) / 5);
-      height: auto;
-
-      * {
-        fill: var(--color-foreground);
-      }
-    }
-
-    &__current {
-      font-weight: 500;
-    }
-
-    &__link {
-      white-space: nowrap;
-    }
-  }
-
-  &__text {
-    font-size: 0.75rem;
   }
 
   &__tabs-nav {
@@ -73,7 +52,6 @@
         .info-button {
           background: none;
           border: none;
-          font-size: 1.25rem;
           padding: 0;
 
           &.__active {
@@ -177,10 +155,6 @@
       margin-right: calc(var(--sectionHorizontalSpacing) / 9);
       margin-bottom: 0;
     }
-
-    a {
-      font-size: 0.75rem;
-    }
   }
 
   &__add-to-cart {
@@ -198,13 +172,11 @@
   }
 
   &__fair-trade {
-    font-size: 0.6rem;
     text-transform: uppercase;
     margin-bottom: calc(var(--pxSize) / 2);
   }
 
   &__quantity-input {
-    font-size: 0.9rem;
     font-weight: 500;
     text-align: center;
     background-color: transparent;

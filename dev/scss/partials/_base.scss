@@ -162,6 +162,35 @@ form {
   }
 }
 
+//Breadcrumb styles
+////////////////////////////////////
+.breadcrumb{
+   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: calc(var(--pxSize));
+
+  svg {
+    width: calc(var(--pxSize) / 3);
+    margin: 0 calc(var(--pxSize) / 5);
+    height: auto;
+
+    * {
+      fill: var(--color-foreground);
+    }
+  }
+
+  &__current {
+    font-weight: 500;
+  }
+
+  &__link {
+    white-space: nowrap;
+  }
+}
+
+
+
 //Modal styles
 ////////////////////////////////////
 

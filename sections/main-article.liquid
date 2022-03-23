@@ -9,7 +9,7 @@
     {%- endcase -%}
   {%- endfor -%}
 
-  <div class="main-article__breadcrumb">
+  <div class="breadcrumb">
     {% if settings.resources_page and settings.resources_page.title %}
       <a href="{{ settings.resources_page.url }}" class="caption-sm">{{ settings.resources_page.title }}</a>
       {% render 'svg-arrow' %}
