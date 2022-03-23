@@ -39,16 +39,18 @@
     &__label,
     &__inner {
       display: flex;
-      align-items: center;
+      gap: calc(var(--pxSize) / 4);
 
       > * {
-        flex: 1;
-        text-align: center;
+        &:nth-child(4),
+        &:nth-child(3) {
+          flex: 1;
+          text-align: center;
+        }
 
         &:first-child,
         &:nth-child(2) {
           flex: 2;
-          text-align: left;
         }
       }
     }
@@ -178,20 +180,6 @@
   @media screen and (max-width: 676px) {
     &__header {
       grid-column: 1/-1;
-    
-      &__inner{
-        p:first-of-type, p:nth-child(3){
-          padding-right: calc(var(--pxSize) / 2);
-        }
-      }
-    }
-
-    &__item{
-      &__label{
-        p:first-of-type{
-          padding-right: calc(var(--pxSize) / 2);
-        }
-      }
     }
   }
 }

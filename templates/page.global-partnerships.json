@@ -1,0 +1,56 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "1643991355e4feeedb": {
+      "type": "image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/landscape_of_trees.jpg",
+        "image_style": "blob-1",
+        "color_scheme": "cream",
+        "top_spacing": 50,
+        "bottom_spacing": 30
+      }
+    },
+    "1643818843f333eb74": {
+      "type": "rich-text",
+      "blocks": {
+        "16438188434dae6d1d-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Global Partnerships",
+            "heading_size": "h2",
+            "heading_alignment": "center",
+            "subheading": ""
+          }
+        },
+        "16438188434dae6d1d-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Since our founding, Pure Ground Ingredients has embarked on a number of worldwide sustainability projects to bring greater value to the communities and farmers we work with, while bringing higher-quality ingredients to the marketplace back home. <\/p><p>From establishing new, economically-viable crops for an organic fair-trade growers co-op comprised of 674 families in Nicaragua, to partnering with one of our manufacturers to build a bridge between communities that flooded in Honduras, to establishing sustainable farming education and training in Sri Lanka, we’re constantly on the hunt for opportunities to help our growers and their communities thrive in the face of adversity...which ultimately helps our manufacturers thrive. <\/p><p>We replenish land, invest in communities, develop educational programs, and do everything we can to support sustainable practices, a healthy planet, and happy people. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16438188434dae6d1d-0",
+        "16438188434dae6d1d-1"
+      ],
+      "settings": {
+        "color_scheme": "cream",
+        "hero": true,
+        "top_spacing": 0,
+        "bottom_spacing": 100
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1643991355e4feeedb",
+    "1643818843f333eb74"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "1643991355e4feeedb": {
+      "type": "image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/landscape_of_trees.jpg",
+        "image_style": "blob-1",
+        "color_scheme": "cream",
+        "top_spacing": 50,
+        "bottom_spacing": 30
+      }
+    },
+    "1643818843f333eb74": {
+      "type": "rich-text",
+      "blocks": {
+        "16438188434dae6d1d-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "B-Corp",
+            "heading_size": "h2",
+            "heading_alignment": "center",
+            "subheading": "Leaders build communities, not just profits"
+          }
+        },
+        "16438188434dae6d1d-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Certified B Corporations (B Corps for short) are leaders of a global movement of people using business as a force for good. B Corps are certified by the nonprofit B Lab to meet rigorous standards of social and environmental performance, accountability, and transparency. B Corp certification is to business what Fair Trade certification is to coffee or USDA Organic certification is to milk. As a part of the intenrational B-Corp network we support transforming the global economy to benefit all people, communities, and the planet. Leading economic systems change to support our collective vision of an inclusive, equitable, and regenerative economy. Today, there is a growing community of more than 1,700 Certified B Corps from 42 countries and over 130 industries working together toward 1 unifying goal: to redefine success in business.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16438188434dae6d1d-0",
+        "16438188434dae6d1d-1"
+      ],
+      "settings": {
+        "color_scheme": "cream",
+        "hero": true,
+        "top_spacing": 0,
+        "bottom_spacing": 100
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1643991355e4feeedb",
+    "1643818843f333eb74"
+  ]
+}
