@@ -123,6 +123,12 @@ p,
   font-size: 0.875rem;
 }
 
+.p-xs, 
+.p-xs > p
+{
+  font-size: 0.65rem;
+}
+
 .p-lg,
 .p-lg > p,
 .caption {
