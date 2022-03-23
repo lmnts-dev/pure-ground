@@ -186,10 +186,19 @@
   &__add-to-cart {
     margin-top: calc(var(--pxSize) / 1.25);
     margin-bottom: calc(var(--pxSize) / 2);
+
+    .btn{
+      padding: 0 calc(var(--btnHeight)/ 1);
+      color: rgba(var(--color-cream), 1);
+
+      &:hover{
+        color: var(--color-foreground);
+      }
+    }
   }
 
   &__fair-trade {
-    font-size: 0.9rem;
+    font-size: 0.6rem;
     text-transform: uppercase;
     margin-bottom: calc(var(--pxSize) / 2);
   }
