@@ -62,7 +62,8 @@
           margin: calc(var(--vwSize) * 4);
         }
       }
-        /* disable Flickity for small devices */
+      
+      /* disable Flickity for small devices */
       &:after {
         content: '';
       }

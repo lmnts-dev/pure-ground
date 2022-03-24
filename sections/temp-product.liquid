@@ -5,7 +5,7 @@
     }
 {% endstyle %}
 
-{% assign images = "https://cdn.shopify.com/s/files/1/0562/9486/6967/articles/unsplash_pBwMdofMxtU_350x.jpg?v=1646062936,https://cdn.shopify.com/s/files/1/0562/9486/6967/articles/unsplash_pBwMdofMxtU_350x.jpg?v=1646062936,https://cdn.shopify.com/s/files/1/0562/9486/6967/articles/unsplash_pBwMdofMxtU_350x.jpg?v=1646062936,https://cdn.shopify.com/s/files/1/0562/9486/6967/articles/unsplash_pBwMdofMxtU_350x.jpg?v=1646062936" | split: "," %}
+{% assign images = "https://d1jyxxz9imt9yb.cloudfront.net/project/242/meta_image/mobile/Nania-whisty-projectpage.jpg, https://cdn.shopify.com/s/files/1/0562/9486/6967/articles/unsplash_pBwMdofMxtU_350x.jpg?v=1646062936,https://cdn.shopify.com/s/files/1/0562/9486/6967/articles/unsplash_pBwMdofMxtU_350x.jpg?v=1646062936,https://cdn.shopify.com/s/files/1/0562/9486/6967/articles/unsplash_pBwMdofMxtU_350x.jpg?v=1646062936" | split: "," %}
 
 
 <div id="Temp-product-{{ section.id }}" class="temp-product color-{{section.settings.color_scheme}}"  
@@ -20,7 +20,7 @@
       <div class="temp-product__headline">
         <div>
           <div class="temp-product__text p-xs caption-with-letter-spacing">Baso</div>
-          <h1 class="temp-product__title">Basil</h1>
+          <h1 class="temp-product__title h2">Basil</h1>
         </div>
         <img src="https://cdn.shopify.com/s/files/1/0562/9486/6967/files/Commence_x_Pure_Ground_-_Organic_Badge_-_Green_1.png?v=1647765751" loading="lazy" height="84" width="141"/>
       </div>
@@ -33,11 +33,11 @@
       <p class="temp-product__description">With a sweet and slightly peppery flavor, this herb pairs well with balsamic vinegar, blackberry, and lemon.</p>
 
       <table class="temp-product__info p-xs">
-        <tr><td>Product ID</td><td class="temp-product__info__dots">.............</td><td>BASO</td></tr>
-        <tr><td>Product ID</td><td class="temp-product__info__dots">.............</td><td>BASO</td></tr>
-        <tr><td>Product ID</td><td class="temp-product__info__dots">.............</td><td>BASO</td></tr>
-        <tr><td>Product ID</td><td class="temp-product__info__dots">.............</td><td>BASO</td></tr>
-        <tr><td>Product ID</td><td class="temp-product__info__dots">.............</td><td>BASO</td></tr>
+        <tr><td class="product-id">Product ID</td><td>Ocimum basilicum</td></tr>
+        <tr><td class="product-id">Product ID</td><td>BASO</td></tr>
+        <tr><td class="product-id">Product ID</td><td>BASO</td></tr>
+        <tr><td class="product-id">Product ID</td><td>BASO</td></tr>
+        <tr><td class="product-id">Product ID</td><td>BASO</td></tr>
       </table>
 
       <p class="temp-product__fair-trade p-xs">Fair Trade Available on request</p>
@@ -73,26 +73,24 @@
           <input class="btn" href="/" type="submit" value="Add to cart">
           <a class="btn __btn-clr-default" href="/">Request C of A Results</a>
         </div>
-        <a href="/">Request a sample</a>
+        <a href="/" class="sample">Request a sample</a>
       </form>
     </div>
 
     <div class="temp-product__sliders">
-    <div class="temp-product__slider" data-flickity='{ 
-      "wrapAround": true,  "pageDots": false, "prevNextButtons": false }'
-    >
-      {% for image in images %}
-        {% render 'next-gen-img' image: image %}
-      {% endfor %}
-      {% comment %} add whatever structure is required for asNavFor {% endcomment %}
-    </div>
+      <div class="temp-product__slider" data-flickity='{ 
+        "wrapAround": true, "prevNextButtons": true, "pageDots": false }'
+      >
+        {% for image in images %}
+          {% render 'next-gen-img' image: image %}
+        {% endfor %}
+      </div>
 
-      <div class="temp-product__slider-nav" data-flickity='{"asNavFor": ".temp-product__slider", "contain": true, "pageDots": false}'
+    <div class="temp-product__slider-nav" data-flickity='{"asNavFor": ".temp-product__slider", "contain": true, "pageDots": false}'
     >
       {% for image in images %}
         {% render 'next-gen-img' image: image %}
       {% endfor %}
-      {% comment %} add whatever structure is required for asNavFor {% endcomment %}
     </div>
   </div>
     

@@ -1,0 +1,49 @@
+{% comment %}
+    Renders an product card for a given blog with settings to show a condensed version or not.
+
+    Expects:
+    - product: {Object} product object
+    - condensed: {String} The setting changes the layout and items shown on card, accepts nothing ("default"), "condensed", "teaser", or "horizontal"
+
+    Usage:
+    {% render 'product-card' product: product, style: "condensed" %}
+{% endcomment %}
+
+
+{% assign image = "https://cdn.shopify.com/s/files/1/0562/9486/6967/products/unsplash_pBwMdofMxtU_350x.jpg?v=1646062936" %}
+
+  <a href="{{ product.url }}" class="product-card __style-{% if style %}{{style}}{% else %}default{% endif %}">
+    <div class="product-card__image">
+      {% if image %}
+        <img
+          srcset="{%- if image.src.width >= 165 -%}{{ image.src | img_url: '165x' }} 165w,{%- endif -%}
+            {%- if image.src.width >= 360 -%}{{ image.src | img_url: '360x' }} 360w,{%- endif -%}
+            {%- if image.src.width >= 533 -%}{{ image.src | img_url: '533x' }} 533w,{%- endif -%}
+            {%- if image.src.width >= 720 -%}{{ image.src | img_url: '720x' }} 720w,{%- endif -%}
+            {%- if image.src.width >= 1000 -%}{{ image.src | img_url: '1000x' }} 1000w,{%- endif -%}
+            {%- if image.src.width >= 1500 -%}{{ image.src | img_url: '1500x' }} 1500w,{%- endif -%}
+            {{ image.src | img_url: 'master' }} {{ image.src.width }}w"
+          src="{{ image.src | img_url: '533x' }}"
+          sizes="100vw"
+          alt="{{ image.src.alt | escape }}"
+          loading="lazy"
+          width="{{ image.width }}"
+          height="{{ image.height }}"
+        >
+      {% else %}
+          <div class="product-card__image__placeholder"></div>
+      {% endif %}
+    </div>
+    <div class="product-card__content">        
+      <h3 class="product-card__content__heading h5">
+        Organic Basil
+      </h3>
+      <p class="product-card__price p-sm">From $7.99</p>
+      <div class="product-card__stars">
+        {% render 'svg-star' %}
+        {% render 'svg-star' %}
+        {% render 'svg-star' %}
+        <span class="p-xs">12 Reviews<span>
+      </div>
+    </div>
+  </a>
