@@ -70,7 +70,7 @@
 
         <div class="temp-product__add-to-cart">
           <input class="temp-product__quantity-input caption-sm" type="number" value="1" />
-          <input class="btn" href="/" type="submit" value="Add to cart">
+          <input class="btn add-btn" href="/" type="submit" value="Add to cart">
           <a class="btn __btn-clr-default" href="/">Request C of A Results</a>
         </div>
         <a href="/" class="sample">Request a sample</a>
@@ -79,7 +79,7 @@
 
     <div class="temp-product__sliders">
       <div class="temp-product__slider" data-flickity='{ 
-        "wrapAround": true, "prevNextButtons": true, "pageDots": false }'
+        "wrapAround": true, "prevNextButtons": false, "pageDots": false }'
       >
         {% for image in images %}
           {% render 'next-gen-img' image: image %}
@@ -223,7 +223,7 @@
       "step": 10,
       "unit": "%",
       "label": "Top Spacing",
-      "default": 0
+      "default": 50
     },
     {
       "type": "range",
@@ -233,7 +233,7 @@
       "step": 10,
       "unit": "%",
       "label": "Bottom Spacing",
-      "default": 0
+      "default": 50
     }
   ],
   "presets": [

@@ -1,7 +1,7 @@
 {% style %}
     #Temp-cart-{{ section.id }} {
-      --topSpacingRatio: {{section.settings.top_spacing}} / 100;
-      --bottomSpacingRatio: {{section.settings.bottom_spacing}} / 100;
+      --topSpacingRatio: 50 / 100;
+      --bottomSpacingRatio: 50 / 100;
     }
 {% endstyle %}
 
@@ -35,7 +35,7 @@
                   </path>
                 </svg>
               </button>
-              <input class="quantity__input" type="number" name="quantity" id="Quantity-template--14424039030807__main" min="1" value="1" form="product-form-template--14424039030807__main">
+              <input class="quantity__input p-sm" type="number" name="quantity" id="Quantity-template--14424039030807__main" min="1" value="1" form="product-form-template--14424039030807__main">
               <button class="quantity__button no-js-hidden" name="plus" type="button">
                 <span class="visually-hidden">Increase quantity for Example Product</span>
                 <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" role="presentation" class="icon icon-plus" fill="none" viewBox="0 0 10 10">
@@ -133,7 +133,7 @@
       "step": 10,
       "unit": "%",
       "label": "Top Spacing",
-      "default": 0
+      "default": 50
     },
     {
       "type": "range",
@@ -143,7 +143,7 @@
       "step": 10,
       "unit": "%",
       "label": "Bottom Spacing",
-      "default": 0
+      "default": 50
     }
   ],
   "presets": [

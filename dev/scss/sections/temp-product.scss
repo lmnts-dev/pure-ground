@@ -32,11 +32,17 @@
   &__info {
     text-transform: uppercase;
 
+   td{
+      vertical-align: bottom;
+    }
+
     .product-id {
       &:after{
         content: "............";
+        padding-left: calc(var(--splitSectionSpace) / 16);
         font-size: 1.25rem;
         letter-spacing: 12px;
+        line-height: 1;
       }
     }
   }
@@ -47,7 +53,7 @@
     ul {
       display: flex;
       justify-content: space-between;
-      border-bottom: 2px solid rgba(var(--color-grass), 1);
+      border-bottom: 2px solid rgba(var(--color-grass), .5);
       padding-bottom: calc(var(--pxSize) / 2);
 
       li {
@@ -163,6 +169,10 @@
     margin-top: calc(var(--pxSize) / 1.25);
     margin-bottom: calc(var(--pxSize) / 2);
 
+    input:not(:first-of-type){
+      margin-right: calc(var(--sectionHorizontalSpacing) / 20);
+    }
+
     .btn{
       padding: 0 calc(var(--btnHeight)/ 1);
       color: rgba(var(--color-cream), 1);
@@ -175,7 +185,7 @@
 
   &__fair-trade {
     text-transform: uppercase;
-    margin-bottom: calc(var(--pxSize) / 2);
+    margin: calc(var(--pxSize) / 2) 0;
   }
 
   &__quantity-input {
@@ -204,6 +214,10 @@
   .flickity-button {
     top: auto;
     bottom: -150%;
+
+    &:hover{
+      opacity: .7;
+    }
 
     svg {
       display: none;
@@ -271,7 +285,7 @@
     }
 
     &__price {
-      justify-content: end;
+      justify-content: flex-end;
 
       a{
         display: none;
