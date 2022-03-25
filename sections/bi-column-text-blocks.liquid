@@ -7,15 +7,13 @@
 
 <div id="Bi-column-text-blocks-{{ section.id }}" class="bi-column-text-blocks color-{{section.settings.color_scheme}}">
 
-  {% if section.settings.image %}
     <div class="bi-column-text-blocks__image">
       {%- if section.settings.image != blank -%}
         {% render 'next-gen-img', image: section.settings.image, alt: section.settings.alt %}
       {%- else -%}
-        {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+         {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
       {%- endif -%}
     </div>
-  {% endif %}
 
   <div class="bi-column-text-blocks__text">
     {% if section.settings.heading or section.settings.subheading %}
@@ -273,11 +271,9 @@
          "blocks":[
             {
                "type": "text",
-               "type": "icon"
             },
             {
                "type": "text",
-               "type": "icon"
             }
          ]
       }
