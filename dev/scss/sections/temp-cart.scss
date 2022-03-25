@@ -76,6 +76,7 @@
         text-transform: uppercase;
         text-align: center;
         padding-top: calc(var(--sectionHorizontalSpacing) / 20);
+        opacity: .5;
       }
 
       h4{
@@ -277,6 +278,10 @@
           margin-bottom: 1rem;
         }
       }
+    }
+
+    .product-in-cart, .price{
+      margin-top: calc(var(--sectionHorizontalSpacing) / 2);
     }
 
     &__total{

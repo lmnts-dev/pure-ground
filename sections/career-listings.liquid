@@ -37,29 +37,26 @@
 
             {% comment %} Output position {% endcomment %}
                <div class="career-listings__position __active" data-department="{{ department_handle }}">
-                  <div class="career-listings__position--top">
-                     <h3 class="h5">{{ block.settings.heading }}</h3>
-                     {% if block.settings.button_link and block.settings.button_label %}
-                        <a class="career-listings__position__btn btn __btn-clr-{{block.settings.button_color}}" {% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} {{ block.shopify_attributes }}>
-                           {{ block.settings.button_label | escape }}
-                              {% render 'icon-arrow' %}
-                        </a>
-                     {% endif %}
-                  </div>
-                  <div class="career-listings__position--bottom">
-                     {% if block.settings.location %}
-                        <div>
-                           {% render 'svg-location' %}
-                           <span>{{ block.settings.location }}</span>
-                        </div>
-                     {% endif %}
+                  <h3 class="h5">{{ block.settings.heading }}</h3>
+                  {% if block.settings.button_link and block.settings.button_label %}
+                     <a class="career-listings__position__btn btn __btn-clr-{{block.settings.button_color}}" {% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} {{ block.shopify_attributes }}>
+                        {{ block.settings.button_label | escape }}
+                           {% render 'icon-arrow' %}
+                     </a>
+                  {% endif %}
 
-                     {% if block.settings.details %}
-                        <toggle-modal class="career-listings__modal" data-type="container">
-                           <p>Details</p>
-                        </toggle-modal>{% render 'position-modal', position_heading: block.settings.heading, position_details: block.settings.details %}
-                     {% endif %}
-                  </div>
+                  {% if block.settings.location %}
+                     <div>
+                        {% render 'svg-location' %}
+                        <span>{{ block.settings.location }}</span>
+                     </div>
+                  {% endif %}
+
+                  {% if block.settings.details %}
+                     <toggle-modal class="career-listings__modal" data-type="container">
+                        <p>Details</p>
+                     </toggle-modal>{% render 'position-modal', position_heading: block.settings.heading, position_details: block.settings.details %}
+                  {% endif %}
                </div>
 
                   {% comment %} 
