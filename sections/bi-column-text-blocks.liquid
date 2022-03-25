@@ -53,7 +53,6 @@
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {% when 'icon' %}
-            {% if block.settings.image != blank %}
               <div class="bi-column-text-blocks__icon">
                 {%- if block.settings.image != blank -%}
                   {% render 'next-gen-img', image: block.settings.image, alt: block.settings.alt %}
@@ -61,7 +60,6 @@
                   {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
                 {%- endif -%}
               </div>
-            {% endif %}
         {%- endcase -%}
       {%- endfor -%}
     </div>
@@ -279,8 +277,8 @@
                "type": "text"
             },
             {
-               "type": "text"
-            }
+               "type": "icon"
+            },
          ]
       }
    ]
