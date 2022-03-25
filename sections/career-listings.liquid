@@ -14,7 +14,7 @@
   <div id="Career-listings-{{ section.id }}" class="career-listings color-{{section.settings.color_scheme}}">
    <div class="career-listings__headline-content">
       {% if section.settings.heading %}
-         <h2 class="career-listings__heading h5">{{ section.settings.heading }}</h2>
+         <h2 class="career-listings__heading h2">{{ section.settings.heading }}</h2>
       {% endif %}
     
       {% if section.settings.text %}
@@ -39,14 +39,14 @@
                <div class="career-listings__position __active" data-department="{{ department_handle }}">
                   <h3 class="h5">{{ block.settings.heading }}</h3>
                   {% if block.settings.button_link and block.settings.button_label %}
-                     <a class="career-listings__position__btn btn __btn-clr-{{block.settings.button_color}}" {% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} {{ block.shopify_attributes }}>
+                     <a class="career-listings__position__btn btn_with_border btn caption" {% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} {{ block.shopify_attributes }}>
                         {{ block.settings.button_label | escape }}
                            {% render 'icon-arrow' %}
                      </a>
                   {% endif %}
 
                   {% if block.settings.location %}
-                     <div>
+                     <div class="career-listings__location">
                         {% render 'svg-location' %}
                         <span>{{ block.settings.location }}</span>
                      </div>
@@ -81,7 +81,7 @@
                   {% endcomment %}
                   <div class="career-listings__content">
                <div class="career-listings__departments">
-                  <p class="p-sm">Departments</p>
+                  <p class="p-sm career-listings__departments__headline">Departments</p>
                   {% if departments.size > 1 %}
                      <ul class="career-listings__nav hide">
                         <li class="career-listings__nav__item">

@@ -162,6 +162,32 @@ form {
   }
 }
 
+.btn_with_border{
+  background: none;
+  border: 2px solid  var(--color-accent);
+  color: var(--color-accent);
+  width: fit-content;
+  margin-top: 0;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+
+  &:hover{
+    background: var(--color-accent);
+    color: var(--color-btn-txt);
+
+    svg{
+      stroke: var(--color-btn-txt);
+    }
+  }
+
+  svg{
+    stroke: var(--color-accent);
+    width: 1.25rem;
+    margin-left: 1rem;
+  }
+}
+
 //Breadcrumb styles
 ////////////////////////////////////
 .breadcrumb{
