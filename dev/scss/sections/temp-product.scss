@@ -1,5 +1,5 @@
 .temp-product {
-  --splitSectionSpace: var(--sectionHorizontalSpacing);
+  --tempProductSpace: var(--sectionHorizontalSpacing);
   --color-accent: rgba(var(--color-grass), 1);
 
   .breadcrumb{
@@ -7,6 +7,32 @@
     
     svg{
       width: calc(var(--pxSize)/ 8);
+    }
+  }
+
+  &__organic{
+    text-transform: uppercase;
+    transform: rotate(-15deg);
+    margin-left: calc(var(--sectionHorizontalSpacing)/ 2.5);
+    color: var(--color-accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span{
+      position: relative;
+    }
+
+    &::before{
+      content: '';
+      display: inline-block;
+      width: 100px;
+      height: 90px;
+      border-radius: 50%;
+      background-color: rgb(255,232, 188);
+      position: absolute;
+      top:0;
+      z-index: -1;
     }
   }
 
@@ -18,28 +44,27 @@
   &__title {
     text-transform: capitalize;
     font-weight: 900;
+    color: var(--color-accent);
   }
 
   &__content {
     flex: 1;
-    padding-right: var(--splitSectionSpace);
+    padding-right: calc(var(--tempProductSpace)/2);
   }
 
   &__description {
-    padding-right: calc(var(--splitSectionSpace) / 2);
+    padding-right: calc(var(--tempProductSpace) / 2);
   }
 
   &__info {
-    text-transform: uppercase;
-
    td{
       vertical-align: bottom;
     }
 
     .product-id {
       &:after{
-        content: "............";
-        padding-left: calc(var(--splitSectionSpace) / 16);
+        content: "...";
+        padding-left: calc(var(--tempProductSpace) / 16);
         font-size: 1.25rem;
         letter-spacing: 12px;
         line-height: 1;
@@ -95,7 +120,7 @@
 
       img {
         max-width: 100px;
-        padding-right: calc(var(--splitSectionSpace) / 10);
+        padding-right: calc(var(--tempProductSpace) / 10);
       }
     }
 
@@ -112,7 +137,6 @@
     gap: calc(var(--pxSize) / 5) 0;
 
     label {
-      text-transform: uppercase; //TODO: Use the caption or caption-sm class on this element in the html, which will take care of most of these styles
       margin-bottom: 0;
     }
 
@@ -153,7 +177,7 @@
 
   &__headline {
     display: flex;
-    justify-content: space-between;
+    color: var(--color-accent);
   }
 
   &__price {
@@ -164,29 +188,18 @@
     p {
       margin-right: calc(var(--sectionHorizontalSpacing) / 9);
       margin-bottom: 0;
+      color: var(--color-accent);
     }
   }
 
   &__add-to-cart {
-    margin-top: calc(var(--pxSize) / 1.25);
+    display: flex;
+    gap: calc(var(--sectionHorizontalSpacing) / 20);
+    align-items: center;
     margin-bottom: calc(var(--pxSize) / 2);
-
-    input:not(:first-of-type){
-      margin-right: calc(var(--sectionHorizontalSpacing) / 20);
-    }
-
-    .btn{
-      padding: 0 calc(var(--btnHeight)/ 1);
-      color: rgba(var(--color-cream), 1);
-
-      &:hover{
-        color: var(--color-foreground);
-      }
-    }
   }
 
   &__fair-trade {
-    text-transform: uppercase;
     margin: calc(var(--pxSize) / 2) 0;
   }
 
@@ -198,12 +211,13 @@
     padding: 0 0.5rem;
     -webkit-appearance: none;
     appearance: none;
-    border: 1px solid rgba(var(--color-grass), 1);
+    border: 1px solid var(--color-accent);
     border-radius: 7px;
     width: 53px;
     height: 48px;
     margin-right: calc(var(--sectionHorizontalSpacing) / 10);
-    color: rgba(var(--color-grass), 1);
+    color: var(--color-accent);
+    margin-top: 1rem;
   }
 
   .quantity-input{
@@ -241,14 +255,14 @@
       width: 100%;
       transform: translate(0, -50%);
       height: 2px;
-      background: rgba(var(--color-grass), 1);
+      background: var(--color-accent);
     }
 
     &:after {
       width: 20%;
       height: 20%;
-      border-top: 2px solid rgba(var(--color-grass), 1);
-      border-right: 2px solid rgba(var(--color-grass), 1);
+      border-top: 2px solid var(--color-accent);
+      border-right: 2px solid var(--color-accent);
       transform: rotate(45deg) translateY(-50%);
       transform-origin: top center;
     }
@@ -285,6 +299,10 @@
     .breadcrumb{
       justify-content: center;
       text-align: center;
+    }
+
+    &__organic{
+      display: none;
     }
 
     &__container {
@@ -348,12 +366,12 @@
       transition: border var(--duration-short) ease;
       cursor: pointer;
       position: relative;
-      border: 1px solid rgba(var(--color-grass),1);
+      border: 1px solid var(--color-accent);
       width: 90%;
       margin: 0 auto;
 
       svg{
-        color: rgba(var(--color-grass), 1);
+        color: var(--color-accent);
         width: 0.75rem;
       }
 
@@ -389,7 +407,7 @@
 
       .product-id {
         &:after{
-          content: "........";
+          content: "...";
         }
       }
     }

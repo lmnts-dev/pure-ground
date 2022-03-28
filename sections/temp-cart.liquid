@@ -14,19 +14,19 @@
 
   <form class="temp-cart__container">
     <div class="temp-cart__products">
-      <div class="temp-cart__product">
-        <div class="temp-cart__product__selection">
+      <div class="temp-cart__products__product">
+        <div class="temp-cart__products__product__selection">
             <h4 class="h5">Product</h4>
             <h4 class="h5">Quantity</h4>
             <h4 class="h5">Price</h4>
-             <div class="temp-cart__title">
+             <div class="temp-cart__products__product__title">
             {% render 'next-gen-img', image: image %}
-            <div class="product-in-cart">
+            <div class="temp-cart__products__product-in-cart">
               <p class="h5">Organic Basil</p>
               <span class="p-sm">5 lb, Dried</span>
             </div>
           </div>
-          <div class="quantity">
+          <div class="temp-cart__products__product__quantity">
             <div class="quantity-input">
               <button class="quantity__button no-js-hidden" name="minus" type="button">
                 <span class="visually-hidden">Decrease quantity for Example Product</span>
@@ -35,7 +35,7 @@
                   </path>
                 </svg>
               </button>
-              <input class="quantity__input p-sm" type="number" name="quantity" id="Quantity-template--14424039030807__main" min="1" value="1" form="product-form-template--14424039030807__main">
+              <input class="temp-product__quantity__input p-sm" type="number" name="quantity" id="Quantity-template--14424039030807__main" min="1" value="1" form="product-form-template--14424039030807__main">
               <button class="quantity__button no-js-hidden" name="plus" type="button">
                 <span class="visually-hidden">Increase quantity for Example Product</span>
                 <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" role="presentation" class="icon icon-plus" fill="none" viewBox="0 0 10 10">
@@ -46,11 +46,11 @@
             </div>
             <a class="p-xs remove" href="/">Remove</a>
           </div>
-            <div class="h5 price">
+            <div class="h5 temp-cart__products__price">
               $19.99
             </div>
       </div>
-      <div class="temp-cart__total">
+      <div class="temp-cart__products__product__total">
       <div>
         <p class="h5">SUBTOTAL</p>
         <p class="p-sm">ESTIMATED SHIPPING</p>
@@ -74,7 +74,7 @@
       {% for i in (1..10) %}
         {% render 'product-card' %} 
       {% endfor %}
-      <a class="product__btn btn __btn-clr-grass" href="/">View More</a>
+      <a class="temp-cart__related-products__product-btn btn __btn-clr-grass" href="/">View More</a>
     </div>
   </div>
 </div>
