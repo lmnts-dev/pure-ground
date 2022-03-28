@@ -1,7 +1,4 @@
 .blog-listings {
-  padding-left: calc(var(--pxSize) / 3);
-  padding-right: calc(var(--pxSize) / 3);
-
   &__container {
     display: grid;
     gap: calc(var(--pxSize) / 3);

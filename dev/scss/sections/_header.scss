@@ -339,15 +339,7 @@
     }
 
     &__label {
-      &:before {
-        content: "";
-        order: 2;
-        flex: 1;
-        align-self: stretch;
-        border-right: 1px solid var(--color-foreground);
-        opacity: 0.3;
-        margin-right: calc(var(--navHeight) / 4);
-      }
+      justify-content: space-between;
 
       &:after {
         order: 3;
@@ -373,8 +365,9 @@
         display: none;
       }
 
+      // Used to dull out other links that aren't part of the active dropdown
       &:after {
-        content: "";
+        // content: "";
         position: absolute;
         z-index: 0;
         inset: 0;
@@ -387,15 +380,10 @@
         position: relative;
         z-index: 1;
 
-        &__label {
+        &__label.p-lg {
           opacity: 0.5;
           font-size: 0.8rem;
           text-transform: uppercase;
-        }
-
-        &__image {
-          flex: 1;
-          padding-top: 25%;
         }
 
         &__submenu-list {
@@ -408,19 +396,7 @@
         }
 
         &.__featured-page {
-          display: flex;
-          align-items: center;
-          background: var(--color-background-alt);
-
-          .p-sm {
-            opacity: 1;
-            flex: 2;
-            padding: calc(var(--pxSize) / 2);
-            text-transform: none;
-            font-size: 1rem;
-            font-weight: 400;
-            margin: 0;
-          }
+          max-width: 250px;
         }
 
         &.__articles {

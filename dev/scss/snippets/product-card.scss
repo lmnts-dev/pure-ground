@@ -1,14 +1,14 @@
 .product-card {
-  --articleCardImageRatio: 75%;
+  --articleCardImageRatio: 65%;
   display: block;
-  padding-right: calc(var(--sectionHorizontalSpacing)/10);
+  padding-right: calc(var(--sectionHorizontalSpacing) / 10);
 
-  &__stars{
+  &__stars {
     display: flex;
     align-items: center;
 
-    span{
-      margin-left: calc(var(--sectionHorizontalSpacing)/18);
+    span {
+      margin-left: calc(var(--sectionHorizontalSpacing) / 18);
     }
   }
 
@@ -54,10 +54,10 @@
     }
   }
 
-  &__price{
+  &__price {
     text-transform: uppercase;
-    margin-bottom: .7rem;
-    margin-top: .6 rem;
+    margin-bottom: 0.7rem;
+    margin-top: 0.6 rem;
   }
 
   &:hover {
@@ -72,8 +72,8 @@
   }
 
   @media screen and (max-width: 676px) {
-   &__stars{
-     justify-content: space-between;
-   }
+    &__stars {
+      justify-content: space-between;
+    }
   }
 }
