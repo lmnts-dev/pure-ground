@@ -70,7 +70,8 @@
   <div class="temp-cart__related">
     <h4 class="temp-cart__related-products__headline">You might also like:</h4>
     <div class="temp-cart__related-products" data-flickity='{ 
-          "pageDots": false, "cellAlign": "left", "watchCSS": true}'>
+          "pageDots": false, "cellAlign": "left", "watchCSS": true}'
+    >
       {% for i in (1..10) %}
         {% render 'product-card' %} 
       {% endfor %}

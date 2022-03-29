@@ -12,7 +12,7 @@
 
 {% assign image = "https://cdn.shopify.com/s/files/1/0562/9486/6967/products/unsplash_pBwMdofMxtU_350x.jpg?v=1646062936" %}
 
-  <a href="{{ product.url }}" class="product-card __style-{% if style %}{{style}}{% else %}default{% endif %}">
+  <a href="{{ product.url }}" class="product-card also-like __style-{% if style %}{{style}}{% else %}default{% endif %}">
     <div class="product-card__image">
       {% if image %}
         <img
@@ -38,12 +38,15 @@
       <h3 class="product-card__content__heading h5">
         Organic Basil
       </h3>
+      <p class="product-card__content__code p-sm">PGI-0R84</p>
       <p class="product-card__price p-sm">From $7.99</p>
       <div class="product-card__stars">
         {% render 'svg-star' %}
         {% render 'svg-star' %}
         {% render 'svg-star' %}
-        <span class="p-xs">12 Reviews<span>
+        <span class="product-card__reviews p-xs">12 Reviews</span>
+        <span class="product-card__reviews-number p-xs">(12)</span>
       </div>
+      <button type="button" class="">Add to Cart</button>
     </div>
   </a>

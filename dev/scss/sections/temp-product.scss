@@ -57,17 +57,29 @@
   }
 
   &__info {
-   td{
-      vertical-align: bottom;
+
+    tr{
+      line-height: 2.5;
+
+      td:last-of-type{
+        padding-left: 7px;
+      }
+    }
+
+    td{
+      overflow: hidden;
+      position: relative;
     }
 
     .product-id {
+      width: 70%;
       &:after{
-        content: "...";
-        padding-left: calc(var(--tempProductSpace) / 16);
-        font-size: 1.25rem;
-        letter-spacing: 12px;
+        content: " ....................................................................................................................... ";
+        position: absolute;
+        padding-left: 7px;
         line-height: 1;
+        font-size: 1.25rem;
+        letter-spacing: 10px;
       }
     }
   }
@@ -406,9 +418,7 @@
       }
 
       .product-id {
-        &:after{
-          content: "...";
-        }
+        width: 50%;
       }
     }
 
