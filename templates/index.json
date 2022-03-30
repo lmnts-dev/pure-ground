@@ -373,6 +373,60 @@
         "top_spacing": 50,
         "bottom_spacing": 50
       }
+    },
+    "1648612629493b1bb6": {
+      "type": "icons-row",
+      "settings": {
+        "heading": "Heading Here",
+        "color_scheme": "cream",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
+    },
+    "16486126894289d651": {
+      "type": "blog-listings",
+      "settings": {
+        "blog": "",
+        "image": "shopify:\/\/shop_images\/unsplash_3D43SBDDkAc.jpg",
+        "color_scheme": "cream",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
+    },
+    "1648612792f6fa7270": {
+      "type": "career-listings",
+      "settings": {
+        "heading": "Career Listings",
+        "text": "<p>We’re looking for people to join the team who are as excited as we are to build positive global impact of supporting of customers, suppliers and network of growers and partners around the world. <\/p>",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
+    },
+    "16486129336ba31750": {
+      "type": "featured-page-link",
+      "settings": {
+        "page_link": "careers",
+        "alt": "",
+        "color_scheme": "cream",
+        "top_spacing": 0,
+        "bottom_spacing": 0
+      }
+    },
+    "1648613019ca8e10ae": {
+      "type": "spec-sheets",
+      "settings": {
+        "common_name_label": "Common Name",
+        "botanical_name_label": "Botanical Name",
+        "organic_label": "Organic",
+        "fair_trade_label": "Fair Trade",
+        "all_ingredients_label": "All Ingredients",
+        "fair_trade_on_request_disclaimer": "Fair Trade on Request",
+        "hide_header": false,
+        "color_scheme": "cream",
+        "table_color": "sky",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
     }
   },
   "order": [
@@ -384,6 +438,11 @@
     "16450418065fdb6a59",
     "16451151390f67c7d6",
     "164442413892b05956",
-    "articles"
+    "articles",
+    "1648612629493b1bb6",
+    "16486126894289d651",
+    "1648612792f6fa7270",
+    "16486129336ba31750",
+    "1648613019ca8e10ae"
   ]
 }
