@@ -373,69 +373,6 @@
         "top_spacing": 50,
         "bottom_spacing": 50
       }
-    },
-    "1648613320a900889a": {
-      "type": "blog-listings",
-      "settings": {
-        "blog": "",
-        "color_scheme": "cream",
-        "top_spacing": 50,
-        "bottom_spacing": 50
-      }
-    },
-    "1648613346af6b9acf": {
-      "type": "career-listings",
-      "blocks": {
-        "16486133462351e3c5-0": {
-          "type": "position",
-          "settings": {
-            "heading": "Title",
-            "location": "Location",
-            "details": "",
-            "button_label": "Apply Now",
-            "button_link": "",
-            "department": "General"
-          }
-        }
-      },
-      "block_order": [
-        "16486133462351e3c5-0"
-      ],
-      "settings": {
-        "heading": "Career Listings",
-        "text": "<p>We’re looking for people to join the team who are as excited as we are to build positive global impact of supporting of customers, suppliers and network of growers and partners around the world. <\/p>",
-        "top_spacing": 50,
-        "bottom_spacing": 50
-      }
-    },
-    "164861343078ab0c92": {
-      "type": "featured-page-link",
-      "settings": {
-        "page_link": "",
-        "alt": "",
-        "color_scheme": "cream",
-        "top_spacing": 0,
-        "bottom_spacing": 0
-      }
-    },
-    "16486134496c882ece": {
-      "type": "gallery",
-      "blocks": {
-        "1648613449ac695417-0": {
-          "type": "image",
-          "settings": {
-            "alt": ""
-          }
-        }
-      },
-      "block_order": [
-        "1648613449ac695417-0"
-      ],
-      "settings": {
-        "color_scheme": "cream",
-        "top_spacing": 50,
-        "bottom_spacing": 50
-      }
     }
   },
   "order": [
@@ -447,10 +384,6 @@
     "16450418065fdb6a59",
     "16451151390f67c7d6",
     "164442413892b05956",
-    "articles",
-    "1648613320a900889a",
-    "1648613346af6b9acf",
-    "164861343078ab0c92",
-    "16486134496c882ece"
+    "articles"
   ]
 }
