@@ -320,6 +320,14 @@
         margin-top: calc(var(--sectionHorizontalSpacing) / 1.5);
       }
 
+      &.also-like{
+        grid-template-columns: 1fr;
+
+        .product-card__content__heading{
+          padding-right: calc(var(--pxSize)/2);
+        }
+      }
+
       /* disable Flickity for small devices */
       &:after {
          content: '';

@@ -134,7 +134,7 @@
         }
 
         button{
-          grid-column: 1 / -1;
+          display: none;
         }
 
         > *{
@@ -147,6 +147,13 @@
   @media screen and (max-width: 676px) {
     &__stars {
       justify-content: space-between;
+    }
+
+    &__content{
+      button{
+        grid-column: 1 / -1;
+        color: var(--color-btn-txt);
+      }
     }
   }
 }

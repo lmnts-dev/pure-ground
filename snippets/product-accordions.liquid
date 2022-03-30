@@ -1,0 +1,102 @@
+{% comment %}
+  Returns section of accordions for main product
+
+  Expects: N/A
+
+  Requirements: 
+    - to be used inside 'main-product.liquid' only
+
+  Usage:
+  {% render 'product-accordions' %}
+{% endcomment %}
+
+{% style %}
+  .product-accordions{
+    --topSpacingRatio: {{section.settings.top_spacing}} / 100;
+    --bottomSpacingRatio: {{section.settings.bottom_spacing}} / 100;
+  }
+{% endstyle %}
+
+{% assign currentProduct = all_products.example-product %}
+{% assign default_category = "General" %}
+
+
+<div class="product-accordions color-{{section.settings.color_scheme}}">
+
+    {% comment %} Assign category variables {% endcomment %}
+    {% assign category = default_category %}
+    {% if block.settings.category %}
+      {% assign category = block.settings.category %}
+    {% endif %}
+    {% assign category_handle = category | handleize %}
+
+    {% comment %} Output accordion {% endcomment %}
+    <div class="accordions__accordion {% if category == default_category %}__active{% endif %}" data-category="{{ category_handle }}">
+      <input class="accordions__accordion__checkbox" type="checkbox" id="Item-1">
+      <label class="accordions__accordion__label" for="Item-1">
+        <h3 class="h4">Description</h3>
+        {% render 'svg-plus' %}
+      </label>
+      <div class="accordions__accordion__content __article-txt">
+        <div class="tab-content__description">
+          {{ currentProduct.metafields.my_fields.product_description }}   
+        </div>    
+        <div class="tab-content__benefits">
+          <h5>Benefits</h5>
+          <p>{{ currentProduct.metafields.my_fields.benefits }}</p>
+        </div>
+      </div>
+    </div>
+
+
+    {% comment %} Output accordion {% endcomment %}
+    <div class="accordions__accordion {% if category == default_category %}__active{% endif %}" data-category="{{ category_handle }}">
+      <input class="accordions__accordion__checkbox" type="checkbox" id="Item-2">
+      <label class="accordions__accordion__label" for="Item-2">
+        <h3 class="h4">Best Uses</h3>
+        {% render 'svg-plus' %}
+      </label>
+      <div class="accordions__accordion__content __article-txt">
+        {{ currentProduct.metafields.my_fields.best_uses }}
+      </div>
+    </div>
+
+    {% comment %} Output accordion {% endcomment %}
+    <div class="accordions__accordion {% if category == default_category %}__active{% endif %}" data-category="{{ category_handle }}">
+      <input class="accordions__accordion__checkbox" type="checkbox" id="Item-3">
+      <label class="accordions__accordion__label" for="Item-3">
+        <h3 class="h4">Related Articles</h3>
+        {% render 'svg-plus' %}
+      </label>
+      <div class="accordions__accordion__content __article-txt">
+        Add related articles
+      </div>
+    </div>
+
+        {% comment %} Output accordion {% endcomment %}
+    <div class="accordions__accordion {% if category == default_category %}__active{% endif %}" data-category="{{ category_handle }}">
+      <input class="accordions__accordion__checkbox" type="checkbox" id="Item-4">
+      <label class="accordions__accordion__label" for="Item-4">
+        <h3 class="h4">Ingredient Guides</h3>
+        {% render 'svg-plus' %}
+      </label>
+      <div class="accordions__accordion__content __article-txt">
+        Add Ingredient Guides
+      </div>
+    </div>
+
+    {% comment %} Output accordion {% endcomment %}
+    <div class="accordions__accordion {% if category == default_category %}__active{% endif %}" data-category="{{ category_handle }}">
+      <input class="accordions__accordion__checkbox" type="checkbox" id="Item-5">
+      <label class="accordions__accordion__label" for="Item-5">
+        <h3 class="h4">Spec Sheet</h3>
+        {% render 'svg-plus' %}
+      </label>
+      <div class="accordions__accordion__content __article-txt">
+        {{ currentProduct.metafields.my_fields.spec_sheet }}
+      </div>
+    </div>
+
+
+  
+
