@@ -15,6 +15,7 @@
       {% render 'svg-caret' %}
     <li><a href="/">Culinary Herbs, Spices, & vegetables</a></li>
 </ul>
+  <span class="temp-product__organic mobile h4">Organic</span>
   <div class="temp-product__container">
     <div class="temp-product__content">
       <div class="temp-product__headline">
@@ -96,7 +97,7 @@
 
     <div class="temp-product__sliders">
       <div class="temp-product__slider" data-flickity='{ 
-        "wrapAround": true, "prevNextButtons": false, "pageDots": false }'
+        "wrapAround": true, "pageDots": false }'
       >
         {% for image in images %}
           {% render 'next-gen-img' image: image %}

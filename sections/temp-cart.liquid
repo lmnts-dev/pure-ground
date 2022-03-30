@@ -20,11 +20,13 @@
             <h4 class="h5">Quantity</h4>
             <h4 class="h5">Price</h4>
              <div class="temp-cart__products__product__title">
-            {% render 'next-gen-img', image: image %}
-            <div class="temp-cart__products__product-in-cart">
-              <p class="h5">Organic Basil</p>
-              <span class="p-sm">5 lb, Dried</span>
-            </div>
+              <div class="temp-cart__products__product__image">
+                {% render 'next-gen-img', image: image %}
+              </div>
+              <div class="temp-cart__products__product-in-cart">
+                <p class="h5">Organic Basil</p>
+                <span class="caption-xs">5 lb, Dried</span>
+              </div>
           </div>
           <div class="temp-cart__products__product__quantity">
             <div class="quantity-input">
@@ -46,7 +48,7 @@
             </div>
             <a class="p-xs remove" href="/">Remove</a>
           </div>
-            <div class="h5 temp-cart__products__price">
+            <div class="h5 temp-cart__products__product__price">
               $19.99
             </div>
       </div>

@@ -13,7 +13,7 @@
 
   &__organic{
     text-transform: uppercase;
-    transform: rotate(-15deg);
+    transform: rotate(-25deg);
     margin-left: calc(var(--sectionHorizontalSpacing)/ 2.5);
     color: var(--color-accent);
     display: flex;
@@ -34,6 +34,10 @@
       position: absolute;
       top:0;
       z-index: -1;
+    }
+
+    &.mobile{
+      display: none;
     }
   }
 
@@ -264,69 +268,72 @@
   }
 
   /*FLICKITY*/
-  .flickity-button {
-    top: auto;
-    bottom: -150%;
+    &__slider, &__slider-nav{
+      .flickity-button {
+      top: auto;
+      bottom: -150%;
 
-    &:hover{
-      opacity: .7;
-    }
+      &:hover{
+        opacity: .7;
+      }
 
-    svg {
-      display: none;
-    }
+      svg {
+        display: none;
+      }
 
-    &:before,
-    &:after {
-      content: "";
-      position: absolute;
-      right: 0;
-      top: 50%;
-    }
+      &:before,
+      &:after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 50%;
+      }
 
-    &:before {
-      width: 100%;
-      transform: translate(0, -50%);
-      height: 2px;
-      background: var(--color-accent);
-    }
+      &:before {
+        width: 100%;
+        transform: translate(0, -50%);
+        height: 2px;
+        background: var(--color-accent);
+      }
 
-    &:after {
-      width: 20%;
-      height: 20%;
-      border-top: 2px solid var(--color-accent);
-      border-right: 2px solid var(--color-accent);
-      transform: rotate(45deg) translateY(-50%);
-      transform-origin: top center;
-    }
+      &:after {
+        width: 20%;
+        height: 20%;
+        border-top: 2px solid var(--color-accent);
+        border-right: 2px solid var(--color-accent);
+        transform: rotate(45deg) translateY(-50%);
+        transform-origin: top center;
+      }
 
-    &.previous {
-      left: 40%;
+      &.previous {
+        left: 40%;
 
-      &::after {
-        transform: rotate(220deg) translateY(-50%);
-        left: 0;
-        right: auto;
+        &::after {
+          transform: rotate(220deg) translateY(-50%);
+          left: 0;
+          right: auto;
+        }
+
+        &:hover:after {
+          left: 0;
+          right: initial;
+        }
+      }
+
+      &.next {
+        right: 40%;
       }
 
       &:hover:after {
-        left: 0;
-        right: initial;
+        left: initial;
+        right: 0;
+        border-radius: initial;
+        background-color: initial;
+        opacity: 1;
       }
     }
-
-    &.next {
-      right: 40%;
-    }
-
-    &:hover:after {
-      left: initial;
-      right: 0;
-      border-radius: initial;
-      background-color: initial;
-      opacity: 1;
-    }
   }
+  
 
   @media screen and (max-width: 676px) {
     .breadcrumb{
@@ -336,6 +343,20 @@
 
     &__organic{
       display: none;
+
+      &.mobile{
+        display: flex;
+        z-index:10;
+        position: absolute;
+        right: var(--sectionHorizontalSpacing);
+        top: 7%;
+        
+        &:before{
+          top: auto;
+          width: 65px;
+          height: 60px;
+        }
+      }
     }
 
     &__container {
@@ -481,7 +502,7 @@
     /*FLICKITY*/
 
     .flickity-button{
-      bottom: 0;
+      bottom: -18%;
 
       &.next {
         right: 30%;
@@ -496,10 +517,7 @@
       margin-bottom: calc(var(--pxSize) * 3.5);
 
       &-nav{
-        .flickity-viewport{
-          display: none;
-          margin-bottom: calc(var(--pxSize) * 3.5);
-        }
+        display: none;
 
         button{
           bottom: auto;
