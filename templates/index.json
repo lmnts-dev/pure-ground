@@ -373,32 +373,6 @@
         "top_spacing": 50,
         "bottom_spacing": 50
       }
-    },
-    "16486129336ba31750": {
-      "type": "featured-page-link",
-      "settings": {
-        "page_link": "careers",
-        "alt": "",
-        "color_scheme": "cream",
-        "top_spacing": 0,
-        "bottom_spacing": 0
-      }
-    },
-    "1648613019ca8e10ae": {
-      "type": "spec-sheets",
-      "settings": {
-        "common_name_label": "Common Name",
-        "botanical_name_label": "Botanical Name",
-        "organic_label": "Organic",
-        "fair_trade_label": "Fair Trade",
-        "all_ingredients_label": "All Ingredients",
-        "fair_trade_on_request_disclaimer": "Fair Trade on Request",
-        "hide_header": false,
-        "color_scheme": "cream",
-        "table_color": "sky",
-        "top_spacing": 50,
-        "bottom_spacing": 50
-      }
     }
   },
   "order": [
@@ -410,8 +384,6 @@
     "16450418065fdb6a59",
     "16451151390f67c7d6",
     "164442413892b05956",
-    "articles",
-    "16486129336ba31750",
-    "1648613019ca8e10ae"
+    "articles"
   ]
 }
