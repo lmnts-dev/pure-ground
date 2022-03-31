@@ -9,7 +9,6 @@
   <div id="Blog-listings-{{ section.id }}" class="blog-listings __style-{{ section.settings.image_style}} color-{{section.settings.color_scheme}}"  
   >
     <h2 class="blog-listings__heading h3">{{section.settings.blog.title}}</h2>
-    {%- if section.settings.blog != blank -%}
     <div class="blog-listings__container">
       {% for article in section.settings.blog.articles limit: 4 %}
         {% assign style = "default" %}
@@ -42,12 +41,14 @@
         </a>
     {%- endif -%}
     </div>
-    {% else %}
-      <div class="blog-listings__container">
-        <p>Add a blog</p>
-      </div>
-    {% endif %}
   </div>
+  {%- else -%}
+        <div class="blog-listings__container">
+        {% render 'article-card', article: article, style: style %}
+        {% render 'article-card', article: article, style: style %}
+        {% render 'article-card', article: article, style: style %}
+        {% render 'article-card', article: article, style: style %}
+      </div>
 {%- endif -%}
 
 {% schema %}
