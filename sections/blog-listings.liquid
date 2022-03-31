@@ -7,7 +7,13 @@
 
   <div id="Blog-listings-{{ section.id }}" class="blog-listings __style-{{ section.settings.image_style}} color-{{section.settings.color_scheme}}"  
   >
-    <h2 class="blog-listings__heading h3">{{section.settings.blog.title}}</h2>
+    
+    {%- if section.settings.blog.articles.size > 0  -%}
+      <h2 class="blog-listings__heading h3">{{section.settings.blog.title}}</h2>
+    {%- else %}
+      <h2 class="blog-listings__heading h3">Blog Title</h2>
+    {% endif %}
+
     <div class="blog-listings__container">
       {%- if section.settings.blog.articles.size > 0  -%}
         {% for article in section.settings.blog.articles limit: 4 %}
