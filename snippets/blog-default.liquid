@@ -1,0 +1,18 @@
+{% comment %}
+    Renders a dummy blog post to be used for defaults in blog-listings
+    
+    Usage:
+    {% render 'blog-default' %}
+{% endcomment %}
+
+  <div>
+    <div>
+      {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
+    </div>
+    <div>
+      <h3 class="h6">Blog Title</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+    </div>
+  </div>
