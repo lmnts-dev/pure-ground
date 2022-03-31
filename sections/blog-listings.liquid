@@ -45,14 +45,14 @@
               >
             {% endif %}
           </a>
-        {%- endif -%}
-        {%- else -%}
-          <div class="blog-listings__container">
-              {% render 'blog-default' %}
-              {% render 'blog-default' %}
-              {% render 'blog-default' %}
-              {% render 'blog-default' %}
-          </div>
+        {% endif %}
+      {%- else -%}
+        <div class="blog-listings__container">
+          {% render 'blog-default' %}
+          {% render 'blog-default' %}
+          {% render 'blog-default' %}
+          {% render 'blog-default' %}
+        </div>
       {%- endif -%}
       </div>
   </div>
