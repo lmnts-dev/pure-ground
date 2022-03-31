@@ -134,7 +134,7 @@
           display: grid;
           grid-template-columns: repeat(2,auto);
           grid-row-gap: calc(var(--pxSize)/5);
-          grid-column-gap: calc(var(--pxSize) * 2);
+          column-gap: calc(var(--pxSize) * 2);
 
           > *{
             white-space: nowrap;
@@ -189,7 +189,7 @@
             }
             
             &__info{
-              grid-column-gap: 0;
+              column-gap: 0;
 
               > *{
                 white-space:normal;

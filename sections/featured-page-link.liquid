@@ -8,10 +8,17 @@
 <div id="Featured-page-link-{{ section.id }}" class="featured-page-link color-{{section.settings.color_scheme}}"  
 >
   <div class="featured-page-link__inner">
-    <a href="{{section.settings.page_link.url}}" class="featured-page-link__link h2">
-      <span>{{section.settings.page_link.title}}</span>
-      {% render 'svg-arrow' %}
-    </a>
+    {%- if section.settings.image != blank -%}
+      <a href="{{section.settings.page_link.url}}" class="featured-page-link__link h2">
+        <span>{{section.settings.page_link.title}}</span>
+        {% render 'svg-arrow' %}
+      </a>
+    {%- else -%}
+      <a href="/" class="featured-page-link__link h2">
+        <span>Link Here</span>
+        {% render 'svg-arrow' %}
+      </a>
+    {%- endif -%}
     {%- if section.settings.image != blank -%}
       {% render 'next-gen-img', image: section.settings.image, alt: section.settings.alt %}
     {%- elsif section.settings.image_2 == blank -%}

@@ -7,11 +7,14 @@
 
 <div id="Featured-products-{{ section.id }}" class="featured-products color-{{section.settings.color_scheme}}">
   {% if section.settings.heading %}
-      <h2 class="split-section__text__heading">{{ section.settings.heading }}</h2>
+      <h2 class="featured-products__heading h4">{{ section.settings.heading }}</h2>
    {% endif %}
-   {%- if section.settings.button_label and section.settings.button_link -%}
-         <a href={{section.settings.button_link}} class="__btn-clr-{{section.settings.button_color}}">{{section.settings.button_label}}</a>
-    {% endif %}
+   <div class="temp-cart__related-products also-like">
+            {% for i in (1..4) %}
+        {% render 'product-card' %} 
+      {% endfor %}
+   </div>
+   <a class="btn __btn-clr-grass" href="/">{{ section.settings.button_label }}</a>
 </div>
 
 {% schema %}
@@ -33,13 +36,12 @@
       {
          "type":"text",
          "id":"button_label",
-         "label": "Button Label",
-         "default":"Button label"
+         "label": "Button Label"
       },
       {
          "type":"url",
          "id":"button_link",
-         "label":"Button Link"
+         "label":"Button Link"      
       },
       {
          "type":"select",

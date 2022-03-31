@@ -163,6 +163,10 @@
     &-products{
       position: relative;
 
+      &__product-btn{
+        display: none;
+      }
+
       .product__btn{
         display: none;
       }
