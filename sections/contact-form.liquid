@@ -37,8 +37,8 @@
                 {% endif %}
 
                 {% comment %} The fields {% endcomment %}
-                <input type="{{block.settings.type-1}}" name="contact[{{ name1 }}]" placeholder="{{block.settings.placeholder-1}}" value="{{ form.value }}" />
-                <input type="{{block.settings.type-2}}" name="contact[{{ name2 }}]" placeholder="{{block.settings.placeholder-2}}" value="{{ form.name2.value }}"  />
+                <input type="{{block.settings.type-1}}" name="contact[{{ name1 }}]" placeholder="{{block.settings.placeholder-1}}" value="{{ form.name1 }}" />
+                <input type="{{block.settings.type-2}}" name="contact[{{ name2 }}]" placeholder="{{block.settings.placeholder-2}}" value="{{ form.name2 }}"  />
               </div>
             {%- when 'textarea' -%}
                 {% comment %} Gather name attribute for field {% endcomment %}
