@@ -7,7 +7,7 @@
 
 <div id="Contact-form-{{ section.id }}" class="contact-form color-{{ section.settings.color_scheme }}">
     {% if section.blocks %}
-      {%- form 'contact', class: 'contact-form__form __form-styles' -%}
+      <form action="https://formspree.io/f/moqrnkbr"  method="POST">
         <h2 class="contact-form__header h3">{{ section.settings.heading | escape }}</h2>
 
         {% assign requiredEmailUsed = false %}
@@ -124,7 +124,7 @@
         </div>
         {% endcomment %}
 
-      {%- endform -%}
+      </form>
     {% endif %}
   </div>
 </div>
