@@ -10,6 +10,7 @@
 
       .product-card{
         flex-direction: column;
+        flex: 1;
 
         &__price{
           grid-column: 1 / -1;
@@ -20,8 +21,14 @@
         }
 
         &__content{
+          padding: 0;
+
           .btn{
             display: none;
+          }
+
+          &__info > *{
+            white-space: normal!important;
           }
         }
 
@@ -57,6 +64,10 @@
       &__related-products{
         flex-direction: column;
       }
+    }
+    
+    .btn{
+      margin-top: var(--sectionHorizontalSpacing);
     }
   }
 }
