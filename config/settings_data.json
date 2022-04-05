@@ -135,8 +135,8 @@
         "settings": {
           "color_scheme": "ground",
           "newsletter_enable": false,
-          "newsletter_heading": "Subscribe to our Newsletter",
-          "newsletter_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "newsletter_heading": "Join Our Mailing List",
+          "newsletter_description": "Be part of the Pure Ground family.",
           "show_social": true,
           "address": "<p>2535 Business Parkway<br\/>Minden, NV 89423<\/p><p><a href=\"mailto:info@puregroundingredients.com\" title=\"mailto:info@puregroundingredients.com\">info@puregroundingredients.com<\/a><br\/><a href=\"tel:775-297-4047\" title=\"tel:775-297-4047\">775-297-4047<\/a><\/p>",
           "secondary_links": "secondary"
