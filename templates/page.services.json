@@ -23,7 +23,7 @@
         "164549205077c59396-0": {
           "type": "text",
           "settings": {
-            "text": "<p>With a variety of mills suitable for different materials, we are able to cut your organic ingredient into standard or custom cut-sizes.<\/p>"
+            "text": "<p>Our powerful machinery is able to produce powder of any materials you need to be fine ground. For food ingredients or nutraceuticals, we can offer the right powder for you.<\/p>"
           }
         }
       },
@@ -31,37 +31,12 @@
         "164549205077c59396-0"
       ],
       "settings": {
-        "heading": "Milling",
+        "heading": "Milling & Powdering",
         "heading_size": "h3",
         "image": "shopify:\/\/shop_images\/unsplash_V0xp-dTS3z0.jpg",
         "hero": false,
         "color_scheme": "cream",
         "layout": "reversed",
-        "image_style": "default",
-        "top_spacing": 50,
-        "bottom_spacing": 50
-      }
-    },
-    "164549218319534539": {
-      "type": "split-section",
-      "blocks": {
-        "16454921839ac0a96a-0": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Our powerful machinery is able to produce powder of any materials you need to be fine ground. For food ingredients or nutraceuticals, we can offer the right powder for you<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "16454921839ac0a96a-0"
-      ],
-      "settings": {
-        "heading": "Powdering",
-        "heading_size": "h3",
-        "image": "shopify:\/\/shop_images\/unsplash_NMF5sEaHUmo.jpg",
-        "hero": false,
-        "color_scheme": "cream",
-        "layout": "default",
         "image_style": "default",
         "top_spacing": 50,
         "bottom_spacing": 50
@@ -86,7 +61,7 @@
         "image": "shopify:\/\/shop_images\/unsplash_pBwMdofMxtU.jpg",
         "hero": false,
         "color_scheme": "cream",
-        "layout": "reversed",
+        "layout": "default",
         "image_style": "default",
         "top_spacing": 50,
         "bottom_spacing": 50
@@ -111,7 +86,7 @@
         "image": "shopify:\/\/shop_images\/unsplash_obMdrL5pFWI.jpg",
         "hero": false,
         "color_scheme": "cream",
-        "layout": "default",
+        "layout": "reversed",
         "image_style": "default",
         "top_spacing": 50,
         "bottom_spacing": 50
@@ -254,7 +229,6 @@
     "main",
     "164548993101ad8e3f",
     "1645492050031700e7",
-    "164549218319534539",
     "164549222932f52b1c",
     "1645492290c8446e94",
     "1645492415cc597dd4",
