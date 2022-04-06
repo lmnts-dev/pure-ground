@@ -11,10 +11,17 @@
             "heading_alignment": "center",
             "subheading": ""
           }
+        },
+        "48570e99-406c-4968-bd13-96aa95ec96aa": {
+          "type": "text",
+          "settings": {
+            "text": "<p>All ingredients are available in multiple cut sizes for wholesale purchase.  To request a sample, spec sheet or pricing please contact us at <a href=\"mailto:info@puregroundingredients.com\">info@puregroundingredients.com<\/a><\/p>"
+          }
         }
       },
       "block_order": [
-        "1644596818ef38f807-0"
+        "1644596818ef38f807-0",
+        "48570e99-406c-4968-bd13-96aa95ec96aa"
       ],
       "settings": {
         "color_scheme": "cream",

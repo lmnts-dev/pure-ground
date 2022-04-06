@@ -120,7 +120,7 @@
         "chiles"
       ],
       "settings": {
-        "heading": "Browse Ingredient Categories",
+        "heading": "Browse Organic Ingredient Categories",
         "color_scheme": "cream",
         "top_spacing": 50,
         "bottom_spacing": 80
@@ -227,6 +227,29 @@
         "bottom_spacing": 50
       }
     },
+    "1649267126cc71bac9": {
+      "type": "rich-text",
+      "blocks": {
+        "16492671264f0bd1cd-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "We believe in Brotherhood, Integrity, Dedication & Loyalty.",
+            "heading_size": "h3",
+            "heading_alignment": "center",
+            "subheading": ""
+          }
+        }
+      },
+      "block_order": [
+        "16492671264f0bd1cd-0"
+      ],
+      "settings": {
+        "color_scheme": "cream",
+        "hero": false,
+        "top_spacing": 90,
+        "bottom_spacing": 0
+      }
+    },
     "16450418065fdb6a59": {
       "type": "content-slider",
       "blocks": {
@@ -316,7 +339,7 @@
         "09dbb847-aae0-44ec-be21-f3c1f92bbe1f"
       ],
       "settings": {
-        "heading": "Operational Excellence",
+        "heading": "Commitment to Excellence",
         "subheading": "Ingredients just the way you want them",
         "image": "shopify:\/\/shop_images\/field.jpg",
         "alt": "",
@@ -373,6 +396,7 @@
     "16449719193cb6dff5",
     "collections-grid",
     "16450306926c068d86",
+    "1649267126cc71bac9",
     "16450418065fdb6a59",
     "16451151390f67c7d6",
     "164442413892b05956",
