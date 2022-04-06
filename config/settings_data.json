@@ -1,9 +1,9 @@
 {
   "current": {
     "modal_image": "shopify:\/\/shop_images\/unsplash_1RrszXCTq5U.jpg",
-    "modal_heading": "Get in touch with us to learn more",
-    "modal_text": "<p>Sorry for any inconvenience. Sign up for our newsletter and we'll let you know when to come on back and shop.<\/p>",
-    "modal_newsletter": true,
+    "modal_heading": "Get in touch.",
+    "modal_text": "<p>If you'd like to request more information you can reach us at:<\/p><p>info@puregroundingredients.com<\/p>",
+    "modal_newsletter": false,
     "resources_page": "resources",
     "sections": {
       "announcement-bar": {
