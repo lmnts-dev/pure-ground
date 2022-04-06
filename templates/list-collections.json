@@ -10,14 +10,20 @@
         "text_color": "light",
         "button_label": "",
         "button_link": "",
-        "image": "shopify:\/\/shop_images\/2018-08-21_17.54_1.png",
+        "button_color": "default",
+        "image": "shopify:\/\/shop_images\/women-harvesting.jpg",
+        "alt": "",
         "overlay": 20,
         "hero": true,
+        "fullwidth": false,
+        "accent_color": false,
         "alignment": "center",
         "icon": false,
         "color_scheme": "cream",
         "top_spacing": 0,
-        "bottom_spacing": 0
+        "bottom_spacing": 0,
+        "top_internal_spacing": 100,
+        "bottom_internal_spacing": 100
       }
     },
     "main": {
@@ -54,6 +60,7 @@
         "heading": "Latest News in Organics",
         "button_label": "",
         "button_link": "",
+        "button_color": "default",
         "color_scheme": "dark-cream",
         "top_spacing": 50,
         "bottom_spacing": 100
