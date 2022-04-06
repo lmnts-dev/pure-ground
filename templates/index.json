@@ -305,14 +305,7 @@
         "09dbb847-aae0-44ec-be21-f3c1f92bbe1f": {
           "type": "icon",
           "settings": {
-            "image": "shopify:\/\/shop_images\/img-keep-it-real-badge.png",
-            "alt": "Badge"
-          }
-        },
-        "8094b18a-6114-4cac-aeb6-a78e2f6dc472": {
-          "type": "icon",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/img-keep-it-real-badge.png",
+            "image": "shopify:\/\/shop_images\/SQF-Logo.png",
             "alt": "Badge"
           }
         }
@@ -320,8 +313,7 @@
       "block_order": [
         "6f8ee666-7630-4fca-ad06-fb233c61bb05",
         "dd5f1e38-6d6d-4dd1-ba06-bb0d29acdfeb",
-        "09dbb847-aae0-44ec-be21-f3c1f92bbe1f",
-        "8094b18a-6114-4cac-aeb6-a78e2f6dc472"
+        "09dbb847-aae0-44ec-be21-f3c1f92bbe1f"
       ],
       "settings": {
         "heading": "Operational Excellence",
