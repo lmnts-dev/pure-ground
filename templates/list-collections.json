@@ -35,41 +35,10 @@
         "top_spacing": 50,
         "bottom_spacing": 100
       }
-    },
-    "164546587987b29c3a": {
-      "type": "featured-articles",
-      "blocks": {
-        "b317e977-9bf1-4705-ad51-7160ee9f3a2a": {
-          "type": "article",
-          "settings": {
-            "article": "pure-ground-for-unity\/introducing-stormi-1"
-          }
-        },
-        "8e15064e-db18-4115-b9e8-54b98d939beb": {
-          "type": "article",
-          "settings": {
-            "article": "guides\/introducing-stormi"
-          }
-        }
-      },
-      "block_order": [
-        "b317e977-9bf1-4705-ad51-7160ee9f3a2a",
-        "8e15064e-db18-4115-b9e8-54b98d939beb"
-      ],
-      "settings": {
-        "heading": "Latest News in Organics",
-        "button_label": "",
-        "button_link": "",
-        "button_color": "default",
-        "color_scheme": "dark-cream",
-        "top_spacing": 50,
-        "bottom_spacing": 100
-      }
     }
   },
   "order": [
     "1645465766aa7fad07",
-    "main",
-    "164546587987b29c3a"
+    "main"
   ]
 }
