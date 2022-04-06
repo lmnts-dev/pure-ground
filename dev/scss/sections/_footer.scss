@@ -61,6 +61,17 @@
     }
   }
 
+  &__badges{
+    svg{
+      width: 100px;
+      stroke: var(--color-foreground);
+
+      *{
+        fill: var(--color-foreground);
+      }
+    }
+  }
+
   &__blocks {
     grid-column: 2 / -1;
     display: flex;
