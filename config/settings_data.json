@@ -35,6 +35,12 @@
               "color": "#d57a20"
             }
           },
+          "c3437a35-11cd-4be2-833c-b85c386e965a": {
+            "type": "submenu",
+            "settings": {
+              "menu": "about-us"
+            }
+          },
           "c130bfbf-92b2-4a18-a2bc-3401d7cebf82": {
             "type": "submenu",
             "settings": {
@@ -45,12 +51,6 @@
             "type": "submenu",
             "settings": {
               "menu": "ethical-sourcing"
-            }
-          },
-          "c3437a35-11cd-4be2-833c-b85c386e965a": {
-            "type": "submenu",
-            "settings": {
-              "menu": "about-us"
             }
           },
           "e58fd043-68a5-401e-8b7b-7143691d9a3f": {
