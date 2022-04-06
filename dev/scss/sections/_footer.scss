@@ -62,12 +62,16 @@
   }
 
   &__badges{
-    svg{
-      width: 100px;
-      stroke: var(--color-foreground);
+    grid-column: 1/2;
 
-      *{
+    svg{
+      width: 120px;
+      stroke: var(--color-foreground);
+      height: 100%;
+
+      *, path{
         fill: var(--color-foreground);
+        stroke: var(--color-foreground);
       }
     }
   }

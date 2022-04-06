@@ -42,6 +42,11 @@
     {%- endif -%}
   </div>
 
+  <div class="section-footer__badges">
+      {% render 'svg-b-certified' %}
+      {% render 'svg-organic' %}
+  </div>
+
   {%- if section.blocks.size > 0 -%}
     <div class="section-footer__blocks">
       {%- for block in section.blocks -%}
