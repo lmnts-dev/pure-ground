@@ -135,6 +135,18 @@
     }
   }
 
+  //Search Box
+
+  &__search{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: calc(var(--pxSize) / 4);
+
+    *{
+      padding-right:calc(var(--pxSize) / 2);
+    }
+  }
+
   //dot styles used within table rows and in the table key
   &__key,
   &__item__dot {
@@ -175,6 +187,10 @@
       position: static;
       transform: none;
     }
+  }
+
+  .hide{
+    display: none;
   }
 
   @media screen and (max-width: 676px) {

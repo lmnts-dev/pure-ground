@@ -16,12 +16,17 @@
 
    <div id="Spec-sheets-{{ section.id }}" class="spec-sheets color-{{section.settings.color_scheme}}">
 
+   <div class="spec-sheets__search">
+      <label for="search">Search:</label>
+      <input class="spec-sheets__search__input" type="text" id="search" name="search">
+   </div>
+
       {% comment %} Table header {% endcomment %}
       {% if section.settings.hide_header == false %}
          <div class="spec-sheets__header color-{{ section.settings.table_color }}">
             <div class="spec-sheets__header__inner">
-               <p class="caption-sm">{{section.settings.common_name_label}}</p>
-               <p class="caption-sm">{{section.settings.botanical_name_label}}</p>
+               <p class="caption-sm common-name">{{section.settings.common_name_label}}</p>
+               <p class="caption-sm botanical-name">{{section.settings.botanical_name_label}}</p>
                <p class="caption-sm">{{section.settings.organic_label}}</p>
                <p class="caption-sm">{{section.settings.fair_trade_label}}</p>
             </div>
@@ -43,8 +48,8 @@
          <div class="spec-sheets__item __active" data-category="{{ category_handle }}">
             <input class="spec-sheets__item__checkbox" type="checkbox" id="Item-{{ section.id }}-{{ forloop.index0 }}">
             <label class="spec-sheets__item__label" for="Item-{{ section.id }}-{{ forloop.index0 }}">
-               <p class="p-sm">{{ block.settings.common_name }}</p>
-               <p class="p-sm">{{ block.settings.botanical_name }}</p>
+               <p class="p-sm common-name">{{ block.settings.common_name }}</p>
+               <p class="p-sm botanical-name">{{ block.settings.botanical_name }}</p>
                <div 
                   class="spec-sheets__item__dot {% if block.settings.organic %}__dot-filled{% endif %}" 
                   aria-label="{% if block.settings.organic == false %}Not {% endif %}{{ section.settings.organic_label }}"
@@ -139,6 +144,7 @@
       var faqItems = thisSection.querySelectorAll('.spec-sheets__item');
       //all nav buttons
       var faqNavItems = thisSection.querySelectorAll('.spec-sheets__button');
+      
 
       //remove or add active class on items
       for ( var i = 0; i < faqItems.length; i++ ){
@@ -161,6 +167,26 @@
   }
 
   customElements.define('accordions-button', AccordionsNavButton);
+
+ //Ingredients Filter
+
+ let searchField = document.querySelector('.spec-sheets__search__input');
+ let filterValue = '';
+
+  searchField.addEventListener("input", function() {
+    filterValue=searchField.value;
+     allItems.map((name)=>{
+      if(name.innerHTML.includes(filterValue)){
+         name.classList.remove('hide');
+      }
+      else{
+            name.classList.add('hide');
+      }
+    })
+  });
+
+  let allItems = document.querySelectorAll('.spec-sheets__item');
+  allItems = [...allItems];
 
 {% endjavascript %}
 
