@@ -63,13 +63,15 @@
 
   &__badges{
     grid-column: 1/2;
+    padding-top: calc(var(--pxSize) / 3);
 
     svg{
-      width: 120px;
+      width: 60px;
       stroke: var(--color-foreground);
       height: 100%;
+      margin-right: calc(var(--pxSize) / 3);
 
-      *, path{
+      *{
         fill: var(--color-foreground);
         stroke: var(--color-foreground);
       }
@@ -80,7 +82,7 @@
     grid-column: 2 / -1;
     display: flex;
     gap: var(--pxSize);
-    justify-content: flex-end;
+    justify-content: flex-start;
   }
 
   &__bottom {
@@ -164,6 +166,13 @@
       grid-column: 1/-1;
       flex-direction: column;
     }
+
+      &__badges{
+        margin-top: calc(var(--pxSize) / 1.75);
+        svg{
+          width:45px;
+        }
+      }
 
     &__bottom {
       flex-direction: column;

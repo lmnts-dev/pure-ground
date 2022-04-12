@@ -11,7 +11,8 @@
       calc(var(--sectionVerticalSpacing) * var(--bottomInternalSpacingRatio))
       var(--sectionHorizontalSpacing);
     color: var(--color-foreground);
-    overflow: hidden;
+    overflow-y: visible;
+
 
     &:after,
     > img {
@@ -70,6 +71,7 @@
     right: 0;
     top: 15%;
     pointer-events: none;
+    overflow-x: hidden;
 
     svg {
       height: 100%;
