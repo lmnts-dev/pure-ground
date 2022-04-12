@@ -20,7 +20,7 @@
         "button_color": "default",
         "image": "shopify:\/\/shop_images\/unsplash_8rTwokBwz1w.jpg",
         "alt": "",
-        "overlay": 10,
+        "overlay": 20,
         "hero": true,
         "fullwidth": true,
         "accent_color": false,
