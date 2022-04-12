@@ -7,14 +7,30 @@
         "padding_bottom": 28
       }
     },
-    "164548993101ad8e3f": {
-      "type": "image",
+    "1649727335500c9694": {
+      "type": "content-with-bg-image",
       "settings": {
+        "heading": "Services & Processing",
+        "subheading": "",
+        "text": "",
+        "heading_size": "h1",
+        "text_color": "light",
+        "button_label": "Button label",
+        "button_link": "",
+        "button_color": "default",
         "image": "shopify:\/\/shop_images\/unsplash_8rTwokBwz1w.jpg",
-        "image_style": "fullwidth",
+        "alt": "",
+        "overlay": 10,
+        "hero": true,
+        "fullwidth": true,
+        "accent_color": false,
+        "alignment": "center",
+        "icon": false,
         "color_scheme": "cream",
         "top_spacing": 0,
-        "bottom_spacing": 50
+        "bottom_spacing": 0,
+        "top_internal_spacing": 100,
+        "bottom_internal_spacing": 100
       }
     },
     "1645492050031700e7": {
@@ -227,7 +243,7 @@
   },
   "order": [
     "main",
-    "164548993101ad8e3f",
+    "1649727335500c9694",
     "1645492050031700e7",
     "164549222932f52b1c",
     "1645492290c8446e94",
