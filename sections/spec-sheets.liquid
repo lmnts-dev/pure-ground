@@ -176,7 +176,7 @@
   searchField.addEventListener("input", function() {
     filterValue=searchField.value;
      allItems.map((name)=>{
-      if(name.innerHTML.includes(filterValue)){
+      if(name.innerHTML.toLowerCase().includes(filterValue.toLowerCase())){
          name.classList.remove('hide');
       }
       else{
