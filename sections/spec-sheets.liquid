@@ -174,9 +174,10 @@
  let filterValue = '';
 
   searchField.addEventListener("input", function() {
-    filterValue=searchField.value;
+    filterValue=searchField.value.toLowerCase();
+    console.log(filterValue,'filtervalue here');
      allItems.map((name)=>{
-      if(name.innerHTML.toLowerCase().includes(filterValue.toLowerCase())){
+      if(name.innerHTML.toLowerCase().includes(filterValue)){
          name.classList.remove('hide');
       }
       else{
