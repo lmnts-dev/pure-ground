@@ -27,7 +27,7 @@
     <p>{{ section.settings.newsletter_description }}<p>
   {% endif %}
 
-  {% form 'customer', class: "newsletter-row__form" %}
+  {% form 'customer', class: "newsletter-row__form", action: "https://formspree.io/f/xbjwzbdd" %}
     {% if form.posted_successfully? %}
         Submitted successfully!
     {% else %}

@@ -27,7 +27,7 @@
           <div class="newsletter__subheading rte __article-txt" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
         {%- when 'email_form' -%}
           <div {{ block.shopify_attributes }}>
-            <form class="newsletter-form" action="https://formspree.io/f/mqkndgle" method="POST">
+            <form class="newsletter-form" method="POST">
               <input type="hidden" name="contact[tags]" value="newsletter">
               <div class="newsletter-form__field-wrapper">
                 <div class="field">
