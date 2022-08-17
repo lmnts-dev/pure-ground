@@ -55,36 +55,46 @@
     },
     "164497174668dcfe61": {
       "type": "content-with-bg-image",
+      "blocks": {
+        "48cabedc-65b7-4986-9a9f-c3a20a4444bb": {
+          "type": "heading",
+          "settings": {
+            "heading": "We're in Business for the Betterment of All",
+            "heading_size": "h3"
+          }
+        },
+        "f12a8383-821b-470a-a571-86338584969b": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We have a global network of growers, co-ops, customers, logistics providers and partners at origin. We are united in our purpose to build a healthier planet, thriving communities and happy customers. <\/p>"
+          }
+        },
+        "90418634-e0d9-4c30-9b91-def2eab9b743": {
+          "type": "button",
+          "settings": {
+            "button_label": "Our Values",
+            "button_link": "shopify:\/\/pages\/our-principles",
+            "button_color": "default"
+          }
+        }
+      },
+      "block_order": [
+        "48cabedc-65b7-4986-9a9f-c3a20a4444bb",
+        "f12a8383-821b-470a-a571-86338584969b",
+        "90418634-e0d9-4c30-9b91-def2eab9b743"
+      ],
       "settings": {
         "text_color": "light",
-        "image": "shopify:\/\/shop_images\/unsplash_VVe3zOZM88E.jpg",
-        "alt": "Image alt text",
-        "overlay": 50,
+        "image": "shopify:\/\/shop_images\/Boys_working_in_field.jpg",
+        "alt": "Boys working in field",
+        "overlay": 20,
         "hero": false,
-        "fullwidth": false,
+        "fullwidth": true,
         "accent_color": false,
         "alignment": "center",
         "color_scheme": "cream",
         "top_spacing": 20,
         "bottom_spacing": 20,
-        "top_internal_spacing": 100,
-        "bottom_internal_spacing": 100
-      }
-    },
-    "16449719193cb6dff5": {
-      "type": "content-with-bg-image",
-      "settings": {
-        "text_color": "light",
-        "image": "shopify:\/\/shop_images\/unsplash_xDwEa2kaeJA.jpg",
-        "alt": "Image alt text",
-        "overlay": 30,
-        "hero": false,
-        "fullwidth": false,
-        "accent_color": false,
-        "alignment": "center",
-        "color_scheme": "cream",
-        "top_spacing": 0,
-        "bottom_spacing": 100,
         "top_internal_spacing": 100,
         "bottom_internal_spacing": 100
       }
@@ -404,7 +414,6 @@
   "order": [
     "content-with-bg-image",
     "164497174668dcfe61",
-    "16449719193cb6dff5",
     "collections-grid",
     "16450306926c068d86",
     "1649267126cc71bac9",
