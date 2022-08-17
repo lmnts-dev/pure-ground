@@ -14,10 +14,22 @@
         {% render 'product-card' %} 
       {% endfor %}
    </div>
-   <a class="btn __btn-clr-grass" href="/">{{ section.settings.button_label }}</a>
+
+   {% render 'button', button_label: section.settings.button_label, button_url: section.settings.button_url %}
+
+   {% comment %} <a class="btn __btn-clr-grass" href="/">{{ section.settings.button_label }}</a> {% endcomment %}
 </div>
 
+{% comment %}
+   TODO hide button until shop label and match it to content with bg altogether
+Fix previews
+Organize fields
+
+{% endcomment %}
+
 {% schema %}
+
+
 {
    "name":"Featured Products",
    "tag":"section",

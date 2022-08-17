@@ -35,9 +35,7 @@
                <div class="content-with-bg-image__text __article-txt">{{ block.settings.text }}</div>
 
             {%- when 'button' -%}
-            {% if block.settings.button_link and block.settings.button_label %}
-                  <a href="{{block.settings.button_link}}" class="content-with-bg-image__btn btn __btn-clr-{{block.settings.button_color}}">{{block.settings.button_label}}</a>
-            {% endif %}
+                 {% render 'button', button_label: block.settings.button_label, button_url: block.settings.button_url, button_url: block.settings.button_color %}
          {%- endcase -%}
       {%- endfor -%}
 

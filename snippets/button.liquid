@@ -1,0 +1,15 @@
+{% comment %}
+  Renders a button
+
+  Accepts:
+  - button_label: {String}
+  - button_link: {Url}
+  - button_color: {String}
+
+  Usage:
+  {% render 'button', button_label: section.settings.button_label, button_url: section.settings.button_url %}
+{% endcomment %}
+
+{% if button_link and button_label %}
+  <a href="{{ button_link }}" class="content-with-bg-image__btn btn __btn-clr-{{ button_color }}">{{ button_label }}</a>
+{% endif %}
