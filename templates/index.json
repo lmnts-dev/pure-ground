@@ -109,7 +109,7 @@
         "fair": {
           "type": "collection",
           "settings": {
-            "collection": "fair-trade-ingredients"
+            "collection": "sustainably-sourced-organic-ingredients"
           }
         },
         "teas": {
