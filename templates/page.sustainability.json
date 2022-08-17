@@ -62,7 +62,68 @@
       ],
       "settings": {
         "color_scheme": "cream",
-        "hero": true,
+        "hero": false,
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
+    },
+    "164442384962d45464": {
+      "type": "rich-text",
+      "blocks": {
+        "164442384920551cc7-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "We envision a world in which farmers, manufacturers and consumers come together in the name of a healthier planet and thriving communities.",
+            "heading_size": "h3",
+            "heading_alignment": "center",
+            "subheading": ""
+          }
+        }
+      },
+      "block_order": [
+        "164442384920551cc7-0"
+      ],
+      "settings": {
+        "color_scheme": "cream",
+        "hero": false,
+        "top_spacing": 100,
+        "bottom_spacing": 100
+      }
+    },
+    "1660746979c48fd613": {
+      "type": "rich-text",
+      "blocks": {
+        "16607469781a0891f6-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Sustainably Sourced",
+            "heading_size": "h3",
+            "heading_alignment": "center",
+            "subheading": ""
+          }
+        },
+        "16607469781a0891f6-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our ingredients are more than they seem. They are the sum of all therelationships, creativity, labor and life that made them possible. We carefully select our suppliers, auditing and inspecting to ensure each is meeting standards for quality, food safety, positive environmental impact and ethical working conditions. We have been working for over 25 years todevelop our supply chain and offer a wide range of sustainably sourced materials.<\/p>"
+          }
+        },
+        "16607469781a0891f6-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16607469781a0891f6-0",
+        "16607469781a0891f6-1",
+        "16607469781a0891f6-2"
+      ],
+      "settings": {
+        "color_scheme": "cream",
+        "hero": false,
         "top_spacing": 50,
         "bottom_spacing": 50
       }
@@ -73,17 +134,26 @@
         "1644419366881604f5-0": {
           "type": "text",
           "settings": {
-            "text": "<p>Aliquam placerat ultrices risus. Vestibulum placerat dui eget nisi vulputate auctor. Etiam interdum neque vitae arcu scelerisque euismod. Aenean a cursus mauris, sed aliquet arcu. Donec a commodo dolor, non ultricies sapien. Etiam ac lectus nec diam convallis mattis at sit amet nulla. Nulla pellentesque consequat nunc, eu dictum purus venenatis quis. Cras quis nulla suscipit, pretium eros eu, lacinia tellus. Vivamus tristique lacus augue, id faucibus massa iaculis vel.<\/p>"
+            "text": "<p><strong>Globally Standardized Certifications <br\/><\/strong>Such as Fair Trade, Fair Wilde, Fair for Life and Rainforest Alliance.  <\/p><p><strong>Environmentally Impactful <\/strong><br\/>Ingredients that come from Regenerative Farming Practices & Agroforestry Projects <\/p><p><strong> Socially Impactful <br\/><\/strong>Ingredients that come from sources which are dedicated topromoting social equality, education and living wages. Women’s Co-ops, Co-ops dedicated to education + development and those who promote equality and women’s empowerment.<\/p>"
+          }
+        },
+        "47338247-06fe-401f-8439-2fdbee1aac55": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Sustainable Sourced Ingredients",
+            "button_link": "shopify:\/\/collections",
+            "button_color": "default"
           }
         }
       },
       "block_order": [
-        "1644419366881604f5-0"
+        "1644419366881604f5-0",
+        "47338247-06fe-401f-8439-2fdbee1aac55"
       ],
       "settings": {
-        "heading": "",
-        "heading_size": "h3",
-        "image": "shopify:\/\/shop_images\/2018-08-21_17.54_1.png",
+        "heading": "Our Sustainably Sourced offering includes ingredients that fall into three tiers:",
+        "heading_size": "h4",
+        "image": "shopify:\/\/shop_images\/2018-08-21_17.54_1_763acc0d-6c05-4663-ba6d-c96a06c29191.jpg",
         "hero": false,
         "color_scheme": "cream",
         "layout": "reversed",
@@ -92,44 +162,15 @@
         "bottom_spacing": 50
       }
     },
-    "1644423794f6bb2df4": {
-      "type": "image",
+    "16607471819bf121f0": {
+      "type": "featured-page-link",
       "settings": {
-        "image": "shopify:\/\/shop_images\/About_Components.png",
-        "image_style": "fullwidth",
+        "page_link": "our-values",
+        "image": "shopify:\/\/shop_images\/unsplash_8rTwokBwz1w_c9e99f30-b9ba-43c5-a624-1ddfbd6b771d.jpg",
+        "alt": "Men working on mountainside",
         "color_scheme": "cream",
         "top_spacing": 0,
         "bottom_spacing": 0
-      }
-    },
-    "164442384962d45464": {
-      "type": "rich-text",
-      "blocks": {
-        "164442384920551cc7-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Sustainability",
-            "heading_size": "h2",
-            "heading_alignment": "center",
-            "subheading": ""
-          }
-        },
-        "164442384920551cc7-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. Quisque sollicitudin lacus ut nulla viverra, eget fermentum dui imperdiet. Mauris at auctor ligula, eu convallis magna. <\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "164442384920551cc7-0",
-        "164442384920551cc7-1"
-      ],
-      "settings": {
-        "color_scheme": "cream",
-        "hero": false,
-        "top_spacing": 100,
-        "bottom_spacing": 100
       }
     }
   },
@@ -137,8 +178,9 @@
     "main",
     "166074672815a86e9b",
     "1643818843f333eb74",
+    "164442384962d45464",
+    "1660746979c48fd613",
     "16444193660de6d319",
-    "1644423794f6bb2df4",
-    "164442384962d45464"
+    "16607471819bf121f0"
   ]
 }
