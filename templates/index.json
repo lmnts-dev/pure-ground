@@ -19,14 +19,14 @@
         "c03f8710-4d17-4f09-abe7-9c38351b138f": {
           "type": "text",
           "settings": {
-            "text": "<p>Pure Ground Ingredients sets the tone in sustainable sourcing & impact driven ingredients<\/p>"
+            "text": "<p>Pure Ground Ingredients sets the tone in sustainable sourcing & impact driven ingredients</p>"
           }
         },
         "98e4e98c-6256-4af7-8682-879282cdcf70": {
           "type": "button",
           "settings": {
             "button_label": "Shop All Ingredients",
-            "button_link": "shopify:\/\/collections",
+            "button_link": "shopify://collections",
             "button_color": "cream"
           }
         }
@@ -39,7 +39,7 @@
       ],
       "settings": {
         "text_color": "dark",
-        "image": "shopify:\/\/shop_images\/Hero.jpg",
+        "image": "shopify://shop_images/Hero.jpg",
         "alt": "Landscape image with field",
         "overlay": 0,
         "hero": true,
@@ -66,14 +66,14 @@
         "f12a8383-821b-470a-a571-86338584969b": {
           "type": "text",
           "settings": {
-            "text": "<p>We have a global network of growers, co-ops, customers, logistics providers and partners at origin. We are united in our purpose to build a healthier planet, thriving communities and happy customers. <\/p>"
+            "text": "<p>We have a global network of growers, co-ops, customers, logistics providers and partners at origin. We are united in our purpose to build a healthier planet, thriving communities and happy customers. </p>"
           }
         },
         "90418634-e0d9-4c30-9b91-def2eab9b743": {
           "type": "button",
           "settings": {
             "button_label": "Our Values",
-            "button_link": "shopify:\/\/pages\/our-principles",
+            "button_link": "shopify://pages/our-principles",
             "button_color": "default"
           }
         }
@@ -85,7 +85,7 @@
       ],
       "settings": {
         "text_color": "light",
-        "image": "shopify:\/\/shop_images\/Boys_working_in_field.jpg",
+        "image": "shopify://shop_images/Boys_working_in_field.jpg",
         "alt": "Boys working in field",
         "overlay": 20,
         "hero": false,
@@ -114,12 +114,6 @@
             "collection": "fair-trade-ingredients"
           }
         },
-        "rainforest": {
-          "type": "collection",
-          "settings": {
-            "collection": "rainforest-alliance-certified"
-          }
-        },
         "teas": {
           "type": "collection",
           "settings": {
@@ -133,13 +127,7 @@
           }
         }
       },
-      "block_order": [
-        "herbs",
-        "fair",
-        "rainforest",
-        "teas",
-        "chiles"
-      ],
+      "block_order": ["herbs", "fair", "teas", "chiles"],
       "settings": {
         "heading": "Browse Organic Ingredient Categories",
         "color_scheme": "cream",
@@ -153,77 +141,77 @@
         "ddc6ae4f-850d-4af2-b30f-b2cfa4c27d8b": {
           "type": "icon",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/md.png",
+            "icon": "shopify://shop_images/md.png",
             "alt": "McCormick logo"
           }
         },
         "0a3401c2-cdcb-45c7-a115-863942ecd068": {
           "type": "icon",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/starbucks.png",
+            "icon": "shopify://shop_images/starbucks.png",
             "alt": "Starbucks logo"
           }
         },
         "d2a015f6-ec5e-4279-a122-c75324dad550": {
           "type": "icon",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/pngaaa.com-2880818.png",
+            "icon": "shopify://shop_images/pngaaa.com-2880818.png",
             "alt": "Celestial Seasonings logo"
           }
         },
         "c08a2a5b-6ebe-4cc0-95b3-7691599bfe20": {
           "type": "icon",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/yogi-tea-vector-logo-2.png",
+            "icon": "shopify://shop_images/yogi-tea-vector-logo-2.png",
             "alt": "Yogi Logo"
           }
         },
         "0f186d34-13dd-40c1-ae96-9266b6a353d1": {
           "type": "icon",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/traditional-medicinals-logo.png",
+            "icon": "shopify://shop_images/traditional-medicinals-logo.png",
             "alt": "Traditional Medicinals logo"
           }
         },
         "66b74de8-3615-45a3-8d9b-351ef30333a9": {
           "type": "icon",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/vitality-works-logo_458c2e5e-4a96-4948-bbe1-5fb9496226ac.png",
+            "icon": "shopify://shop_images/vitality-works-logo_458c2e5e-4a96-4948-bbe1-5fb9496226ac.png",
             "alt": "Vitality Works"
           }
         },
         "224b3659-8585-4ecd-af3b-1203bae4b59d": {
           "type": "icon",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/amys-logo.png",
+            "icon": "shopify://shop_images/amys-logo.png",
             "alt": "Amy's Kitchen Logo"
           }
         },
         "19ea3b46-28e6-4cad-bfe4-432bca3e3973": {
           "type": "icon",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/pngfind.com-herbs-png-1420548.png",
+            "icon": "shopify://shop_images/pngfind.com-herbs-png-1420548.png",
             "alt": "Mountain Rose Herbs"
           }
         },
         "578edcf5-29d4-4dee-8e57-7f52376dfd08": {
           "type": "icon",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/starwest-botanicals-logo.png",
+            "icon": "shopify://shop_images/starwest-botanicals-logo.png",
             "alt": "Starwest Botanicals"
           }
         },
         "c1745d10-1a4a-4570-9a1d-c5496b0280c1": {
           "type": "icon",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/frontier-logo_1.png",
+            "icon": "shopify://shop_images/frontier-logo_1.png",
             "alt": "Frontier Co-Op Logo"
           }
         },
         "eeca8ca7-1223-42f4-be66-9d19c9680495": {
           "type": "icon",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/jr-watkins-logo.png",
+            "icon": "shopify://shop_images/jr-watkins-logo.png",
             "alt": "Watkins Logo"
           }
         }
@@ -261,9 +249,7 @@
           }
         }
       },
-      "block_order": [
-        "16492671264f0bd1cd-0"
-      ],
+      "block_order": ["16492671264f0bd1cd-0"],
       "settings": {
         "color_scheme": "cream",
         "hero": false,
@@ -279,7 +265,7 @@
           "settings": {
             "text": "\"You guys are the best and I appreciate the heck out of you.  The Pure Ground Ingredients team is fast, friendly and an overall pleasure to work with. Samples arrive within days of a request and the quality is excellent. I’m grateful to have them as a resource.\"",
             "author": "",
-            "image": "shopify:\/\/shop_images\/unsplash_EAt30ojfzOI.jpg",
+            "image": "shopify://shop_images/unsplash_EAt30ojfzOI.jpg",
             "alt": "Rolling hills landscape"
           }
         },
@@ -288,7 +274,7 @@
           "settings": {
             "text": "\"We are very thankful to be working with PGI for over 7 years and hope to continue to do so long into the future.  We take comfort in working with a company that shares our same values and integrity when supplying only the best quality products in the world.  Working with PGI has been such a great experience that we like to think of PGI not only as our clients but our friends as well and wish them great success in the future to come.\"",
             "author": "",
-            "image": "shopify:\/\/shop_images\/unsplash_IQVFVH0ajag.jpg",
+            "image": "shopify://shop_images/unsplash_IQVFVH0ajag.jpg",
             "alt": "Rows of produce in field"
           }
         },
@@ -297,7 +283,7 @@
           "settings": {
             "text": "\"I am over delighted to inform whole world that past many years PGI has given us over-helming tremendous support to our company which infact has helped many marginal farmers in INDIA. PGI  transformed many livehoods in INDIA with their constant support on pricing and continuous intake of goods . When all other competitors of PGI takes advantage of poor suppliers in India, PGI has always helped us even though there were issues and their support was to the highest level. I really wish and pray that PGI will be the Number 1 Organic Company in the world very soon and we keep supplying to them with our heart.\"",
             "author": "",
-            "image": "shopify:\/\/shop_images\/unsplash_VVe3zOZM88E.jpg",
+            "image": "shopify://shop_images/unsplash_VVe3zOZM88E.jpg",
             "alt": "Piles of different spices"
           }
         },
@@ -306,7 +292,7 @@
           "settings": {
             "text": "\"I do like Pure Ground entrepreneurial spirit. It is a company that has innovation, quality, safety and sustainability at the center of its growth agenda\"",
             "author": "",
-            "image": "shopify:\/\/shop_images\/unsplash_NMF5sEaHUmo.jpg",
+            "image": "shopify://shop_images/unsplash_NMF5sEaHUmo.jpg",
             "alt": "Jars of spices"
           }
         }
@@ -330,9 +316,9 @@
           "type": "text",
           "settings": {
             "heading": "Custom Processing",
-            "content": "<p>Conditions and resources at origin are not ideal to meet the United States food safety regulations.  We are fully equipped to import from origin and get product ready to eat (RTE) in our SQF certified facility. We have a fully validated micro reduction system and metal check all goods upon arrival. We provide an array of milling, blending, roasting, cleaning and metal check <\/p>",
+            "content": "<p>Conditions and resources at origin are not ideal to meet the United States food safety regulations.  We are fully equipped to import from origin and get product ready to eat (RTE) in our SQF certified facility. We have a fully validated micro reduction system and metal check all goods upon arrival. We provide an array of milling, blending, roasting, cleaning and metal check </p>",
             "button_label": "Read more",
-            "button_link": "shopify:\/\/pages\/services",
+            "button_link": "shopify://pages/services",
             "button_color": "default"
           }
         },
@@ -340,16 +326,16 @@
           "type": "text",
           "settings": {
             "heading": "Quality Assurance",
-            "content": "<p>Our dedicated Quality team is with you on every step of the way. Insuring organic compliance and product quality. Analysis are performed on all incoming goods and we offer all required documentation and certification including a Certificate of Analysis for every lot you purchase.<\/p>",
+            "content": "<p>Our dedicated Quality team is with you on every step of the way. Insuring organic compliance and product quality. Analysis are performed on all incoming goods and we offer all required documentation and certification including a Certificate of Analysis for every lot you purchase.</p>",
             "button_label": "Read More",
-            "button_link": "shopify:\/\/pages\/services",
+            "button_link": "shopify://pages/services",
             "button_color": "default"
           }
         },
         "09dbb847-aae0-44ec-be21-f3c1f92bbe1f": {
           "type": "icon",
           "settings": {
-            "image": "shopify:\/\/shop_images\/sqf-logo-lvl-2.png",
+            "image": "shopify://shop_images/sqf-logo-lvl-2.png",
             "alt": "SQF Certification"
           }
         }
@@ -362,7 +348,7 @@
       "settings": {
         "heading": "Commitment to Excellence",
         "subheading": "Ingredients just the way you want them",
-        "image": "shopify:\/\/shop_images\/field.jpg",
+        "image": "shopify://shop_images/field.jpg",
         "alt": "",
         "color_scheme": "cream",
         "top_spacing": 50,
@@ -373,7 +359,7 @@
       "type": "featured-page-link",
       "settings": {
         "page_link": "mission",
-        "image": "shopify:\/\/shop_images\/man_in_field.jpg",
+        "image": "shopify://shop_images/man_in_field.jpg",
         "alt": "Image alt text",
         "color_scheme": "cream",
         "top_spacing": 0,
@@ -386,24 +372,21 @@
         "art1": {
           "type": "article",
           "settings": {
-            "article": "news\/2019-pioneer-award-winners"
+            "article": "news/2019-pioneer-award-winners"
           }
         },
         "art2": {
           "type": "article",
           "settings": {
-            "article": "news\/2019-nevada-sba-small-business-week-award"
+            "article": "news/2019-nevada-sba-small-business-week-award"
           }
         }
       },
-      "block_order": [
-        "art1",
-        "art2"
-      ],
+      "block_order": ["art1", "art2"],
       "settings": {
         "heading": "Latest News in Organics",
         "button_label": "View More Resources",
-        "button_link": "shopify:\/\/pages\/resources",
+        "button_link": "shopify://pages/resources",
         "button_color": "default",
         "color_scheme": "cream",
         "top_spacing": 50,
