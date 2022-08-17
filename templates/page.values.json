@@ -146,12 +146,43 @@
         "top_spacing": 0,
         "bottom_spacing": 0
       }
+    },
+    "1660762995e5e236a9": {
+      "type": "rich-text",
+      "blocks": {
+        "166076299566652366-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "B Corp",
+            "heading_size": "h3",
+            "heading_alignment": "center",
+            "subheading": "Our vision and principles"
+          }
+        },
+        "166076299566652366-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our innate nature is to take care of each other.  We attract and work with those with the same mentality. <\/p><p>Our team works every single day with a mentality of inclusivity, equality andempowerment. We are dedicated to environmental, economic & social sustainability; improving farmer livelihoods, providing safe & healthy products and building resilient communities. <\/p><p>We believe in using business as a force for good. We are conscious citizens and are proud to be an essential part of providing healthy, healing foods to communities around the globe. <\/p><p> We evolve together: We treat our partners, employees and customers like family. Our goal is to thrive together through practicing ethical business.  <\/p><p>Our actions speak our truth: We respect our natural resources and use them consciously. We exceed industry standards in ensuring organic is organic. Our processing facility is designed for low waste production and conscious energy consumption.  <\/p><p>We listen and respond: We act in service to our customers, traveling the globe to find the best in organic, sustainably sourced ingredients and leading the trends in market demands. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "166076299566652366-0",
+        "166076299566652366-1"
+      ],
+      "settings": {
+        "color_scheme": "cream",
+        "hero": false,
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
     }
   },
   "order": [
     "1660762522a095a17b",
     "1643818843f333eb74",
     "164512802361beb3e6",
-    "16444230281a285739"
+    "16444230281a285739",
+    "1660762995e5e236a9"
   ]
 }
