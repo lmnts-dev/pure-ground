@@ -65,19 +65,19 @@
         "89ef7ddd-5bc4-4148-abd2-6676e87a9288": {
           "type": "product",
           "settings": {
-            "product": "example-product"
+            "product": "black-pepper"
           }
         },
         "5dd74829-5dc1-433a-8f51-1caa66be2f07": {
           "type": "product",
           "settings": {
-            "product": "example-product"
+            "product": "beet"
           }
         },
         "cda3e555-5ff3-4cb6-b6fd-5819cff49872": {
           "type": "product",
           "settings": {
-            "product": "example-product"
+            "product": "cinnamon"
           }
         }
       },
