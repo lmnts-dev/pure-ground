@@ -197,6 +197,13 @@
     "1660751375c6d45d9c": {
       "type": "split-section",
       "blocks": {
+        "8fbe44e1-d213-4349-87e4-ecb4dd2dd0d9": {
+          "type": "heading",
+          "settings": {
+            "heading": "Certificate of Analysis & Heavy Metal Report",
+            "heading_size": "h4"
+          }
+        },
         "1660751375f91befb1-0": {
           "type": "text",
           "settings": {
@@ -205,6 +212,7 @@
         }
       },
       "block_order": [
+        "8fbe44e1-d213-4349-87e4-ecb4dd2dd0d9",
         "1660751375f91befb1-0"
       ],
       "settings": {
