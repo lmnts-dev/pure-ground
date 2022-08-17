@@ -10,7 +10,7 @@
     color: rgba(var(--color-cream), 1);
     position: relative;
     z-index: 3;
-    padding: calc(var(--sectionVerticalSpacing)) var(--vwSize);
+    padding: calc(var(--sectionVerticalSpacing)) calc(var(--vwSize) * 2);
     margin: 0;
   }
 
@@ -33,7 +33,7 @@
 
   &:after {
     content: "";
-    background: rgba(var(--color-black), 0.5);
+    background: rgba(var(--color-black), 0.2);
     z-index: 2;
     will-change: background;
     transition: all 0.25s ease;
