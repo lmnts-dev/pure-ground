@@ -188,6 +188,40 @@
         "bottom_spacing": 50
       }
     },
+    "1660751375c6d45d9c": {
+      "type": "split-section",
+      "blocks": {
+        "1660751375f91befb1-0": {
+          "type": "text",
+          "settings": {
+            "text": "<p>For every lot you purchase, you will receive a Certificate of Analysis – COA – stating your ingredient’s plant name, part + origin, cut size, manufacture + expiration dates as well as microbiological, Heavy Metal and Pesticide analytical results.   All lots are tested for presence of any heavy metals and confirmed to be within safe and legal limits. Our team will match any additional testing you require. <\/p>"
+          }
+        },
+        "1660751375f91befb1-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_color": "default"
+          }
+        }
+      },
+      "block_order": [
+        "1660751375f91befb1-0",
+        "1660751375f91befb1-1"
+      ],
+      "settings": {
+        "heading": "Certificate of Analysis & Heavy Metal Report",
+        "heading_size": "h3",
+        "image": "shopify:\/\/shop_images\/2018-08-21_17.54_1_17300c10-0caa-40d8-8766-36b80ce0dbc7.jpg",
+        "hero": false,
+        "color_scheme": "cream",
+        "layout": "reversed",
+        "image_style": "square",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
+    },
     "1660746979c48fd613": {
       "type": "rich-text",
       "blocks": {
@@ -243,6 +277,7 @@
     "16444193660de6d319",
     "164442384962d45464",
     "1660751203d847bc7d",
+    "1660751375c6d45d9c",
     "1660746979c48fd613",
     "16607471819bf121f0"
   ]
