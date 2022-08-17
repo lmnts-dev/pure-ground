@@ -60,7 +60,7 @@
         "color_scheme": "cream",
         "layout": "default",
         "image_style": "square",
-        "top_spacing": 30,
+        "top_spacing": 100,
         "bottom_spacing": 100
       }
     },
@@ -70,21 +70,122 @@
         "164442384920551cc7-0": {
           "type": "heading",
           "settings": {
-            "heading": "We envision a world in which farmers, manufacturers and consumers come together in the name of a healthier planet and thriving communities.",
-            "heading_size": "h3",
+            "heading": "Your Full Service Importing, Processing & Packaging Partner",
+            "heading_size": "h2",
             "heading_alignment": "center",
             "subheading": ""
+          }
+        },
+        "1fa509c0-88d9-4f15-ab93-3b487a4304ea": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Your needs and specifications are met by our state of the art facility. We offer and array of milling, sifting and other treatment options to process organic ingredients just right for your business.<\/p>"
           }
         }
       },
       "block_order": [
-        "164442384920551cc7-0"
+        "164442384920551cc7-0",
+        "1fa509c0-88d9-4f15-ab93-3b487a4304ea"
       ],
       "settings": {
         "color_scheme": "cream",
         "hero": false,
         "top_spacing": 100,
         "bottom_spacing": 100
+      }
+    },
+    "1660751203d847bc7d": {
+      "type": "accordions",
+      "blocks": {
+        "1660751203e184b074-0": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Product Development",
+            "content": "<p>Launching a new line? From ingredient sourcing to custom packaging we have you covered. <\/p>",
+            "category": "General"
+          }
+        },
+        "9aea83c9-d139-46ac-bb67-8ce8c43f17f8": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Blending",
+            "content": "<p>We've been in this business a while and so have our blendmasters. Send us your blend and we will be happy to match it.  Looking to develop a new flavor profile? Our team is legendary on the development of  flavorful, nicely textured & colored culinary, tea & herbal blends. <\/p>",
+            "category": "General"
+          }
+        },
+        "8b22737e-b861-4a28-85a2-9915de85d4e6": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Ingredient Cleaning",
+            "content": "<p>In order to deliver clean goods, we designed our production lines with separation capabilities that insure removal of impurities and foreign objects. Your product will be sifted multiple times and pass numerous safety steps before final packaging.<\/p>",
+            "category": "General"
+          }
+        },
+        "f0d2c31f-2efb-4ab7-8ef7-87f6cbf0425c": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Roasting",
+            "content": "<p>Like your Garlic roasted? Our in house, smokeless roasting technology allows us to create different flavors. Roasted items include Chicory, Marshmallow and Dandelion, Chiles and Paprikas, Carob and Garlic.<\/p>",
+            "category": "General"
+          }
+        },
+        "ff023314-bcb8-4b1a-83f3-bb2f02f7d581": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Private Labeling",
+            "content": "<p>When you need to let your company shine, ask us to package with your own labels. Our quality organic ingredients can arrive at your warehouse with your own labeling and ready to be sold under your name.  White labeling also available upon request.<\/p>",
+            "category": "General"
+          }
+        },
+        "05ff9a47-838b-448a-88dc-ec5d00ce703d": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Co-Packaging",
+            "content": "<p>We offer private label services, servicing a variety of industries various packaging options.  Whether you are looking to pack single organic ingredients or blends we are happy to be growing this aspect of our service offering. <\/p>",
+            "category": "General"
+          }
+        },
+        "1f5efa8c-4a06-4bce-bbb9-b950af04a3ab": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Ingredient Sourcing",
+            "content": "<p>The backbone of our company are the decades of experience in the global organic market. We pride ourselves in our vast network of approved producers for all organic ingredients. Furthering both the organic and sustainability concepts, we have fostered long term relationships with producers and have often pioneered new products in new territories to incentivize diversity and security. We know our producers and how to get the quality you need at a competitive price. If there’s an ingredient you need that isn’t on our list, don’t hesitate to ask. <\/p>",
+            "category": "General"
+          }
+        },
+        "692bceb5-4fd0-4fd6-81db-45c5512d0424": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Micro Reduction",
+            "content": "<p>Verified clean products only. All our organic ingredients are treated and tested to ensure food safety. We offer multiple treatment options including a modern Infra-Red and water treatment that is proven to be gentle on the precious ingredients. Our treatment in 3rd party verified for every lot.<\/p>",
+            "category": "General"
+          }
+        },
+        "1d07681c-9e3a-46e2-9f00-1d1670bec431": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Metal Detection",
+            "content": "<p>All goods go through a NIST certified and FDA approved Gravity detector. Additionally all mills and processing machinery are fitted with industrial strength magnets. Sifting at multiple production steps further insures absolute purity of your ingredients.<\/p>",
+            "category": "General"
+          }
+        }
+      },
+      "block_order": [
+        "1660751203e184b074-0",
+        "9aea83c9-d139-46ac-bb67-8ce8c43f17f8",
+        "8b22737e-b861-4a28-85a2-9915de85d4e6",
+        "f0d2c31f-2efb-4ab7-8ef7-87f6cbf0425c",
+        "ff023314-bcb8-4b1a-83f3-bb2f02f7d581",
+        "05ff9a47-838b-448a-88dc-ec5d00ce703d",
+        "1f5efa8c-4a06-4bce-bbb9-b950af04a3ab",
+        "692bceb5-4fd0-4fd6-81db-45c5512d0424",
+        "1d07681c-9e3a-46e2-9f00-1d1670bec431"
+      ],
+      "settings": {
+        "text": "",
+        "color_scheme": "cream",
+        "top_spacing": 50,
+        "bottom_spacing": 50
       }
     },
     "1660746979c48fd613": {
@@ -141,6 +242,7 @@
     "166074672815a86e9b",
     "16444193660de6d319",
     "164442384962d45464",
+    "1660751203d847bc7d",
     "1660746979c48fd613",
     "16607471819bf121f0"
   ]
