@@ -172,6 +172,36 @@
         "top_spacing": 0,
         "bottom_spacing": 0
       }
+    },
+    "1660747290beaaaf5d": {
+      "type": "featured-articles",
+      "blocks": {
+        "20254c1e-c139-4b1c-a067-1d245ee149cc": {
+          "type": "article",
+          "settings": {
+            "article": "news\/2019-pioneer-award-winners"
+          }
+        },
+        "d5f9af9e-3a53-4979-81da-209d197de4ad": {
+          "type": "article",
+          "settings": {
+            "article": "news\/2019-pioneer-award-winners"
+          }
+        }
+      },
+      "block_order": [
+        "20254c1e-c139-4b1c-a067-1d245ee149cc",
+        "d5f9af9e-3a53-4979-81da-209d197de4ad"
+      ],
+      "settings": {
+        "heading": "Sustainability Stories",
+        "button_label": "Button label",
+        "button_link": "",
+        "button_color": "default",
+        "color_scheme": "cream",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
     }
   },
   "order": [
@@ -181,6 +211,7 @@
     "164442384962d45464",
     "1660746979c48fd613",
     "16444193660de6d319",
-    "16607471819bf121f0"
+    "16607471819bf121f0",
+    "1660747290beaaaf5d"
   ]
 }
