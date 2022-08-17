@@ -115,7 +115,7 @@
         "teas": {
           "type": "collection",
           "settings": {
-            "collection": "organic-teas-leaves"
+            "collection": "teas-leaves"
           }
         },
         "chiles": {
