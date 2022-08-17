@@ -1,12 +1,5 @@
 {
   "sections": {
-    "main": {
-      "type": "main-page",
-      "settings": {
-        "padding_top": 28,
-        "padding_bottom": 28
-      }
-    },
     "1649727335500c9694": {
       "type": "content-with-bg-image",
       "settings": {
@@ -18,7 +11,7 @@
         "button_label": "",
         "button_link": "",
         "button_color": "default",
-        "image": "shopify:\/\/shop_images\/unsplash_8rTwokBwz1w.jpg",
+        "image": "shopify://shop_images/unsplash_8rTwokBwz1w.jpg",
         "alt": "",
         "overlay": 20,
         "hero": true,
@@ -39,17 +32,15 @@
         "164549205077c59396-0": {
           "type": "text",
           "settings": {
-            "text": "<p>Our powerful machinery is able to produce powder of any materials you need to be fine ground. For food ingredients or nutraceuticals, we can offer the right powder for you.<\/p>"
+            "text": "<p>Our powerful machinery is able to produce powder of any materials you need to be fine ground. For food ingredients or nutraceuticals, we can offer the right powder for you.</p>"
           }
         }
       },
-      "block_order": [
-        "164549205077c59396-0"
-      ],
+      "block_order": ["164549205077c59396-0"],
       "settings": {
         "heading": "Milling & Powdering",
         "heading_size": "h3",
-        "image": "shopify:\/\/shop_images\/unsplash_V0xp-dTS3z0.jpg",
+        "image": "shopify://shop_images/unsplash_V0xp-dTS3z0.jpg",
         "hero": false,
         "color_scheme": "cream",
         "layout": "reversed",
@@ -64,17 +55,15 @@
         "16454922291efe439e-0": {
           "type": "text",
           "settings": {
-            "text": "<p>Like your Garlic roasted? Our in house, smokeless roasting technology allows us to create different flavors. Roasted items include Chicory, Marshmallow and Dandelion, Chiles and Paprikas, Carob and Garlic. <\/p>"
+            "text": "<p>Like your Garlic roasted? Our in house, smokeless roasting technology allows us to create different flavors. Roasted items include Chicory, Marshmallow and Dandelion, Chiles and Paprikas, Carob and Garlic. </p>"
           }
         }
       },
-      "block_order": [
-        "16454922291efe439e-0"
-      ],
+      "block_order": ["16454922291efe439e-0"],
       "settings": {
         "heading": "Roasting",
         "heading_size": "h3",
-        "image": "shopify:\/\/shop_images\/unsplash_pBwMdofMxtU.jpg",
+        "image": "shopify://shop_images/unsplash_pBwMdofMxtU.jpg",
         "hero": false,
         "color_scheme": "cream",
         "layout": "default",
@@ -89,17 +78,15 @@
         "16454922901e23de1f-0": {
           "type": "text",
           "settings": {
-            "text": "<p>Should your application require granulated ingredients, we are able to create a wide variety of granules for you:<\/p><p>Botanicals for Tea applications or Onion and Garlic for your recipes, we can offer the granules you need.<\/p>"
+            "text": "<p>Should your application require granulated ingredients, we are able to create a wide variety of granules for you:</p><p>Botanicals for Tea applications or Onion and Garlic for your recipes, we can offer the granules you need.</p>"
           }
         }
       },
-      "block_order": [
-        "16454922901e23de1f-0"
-      ],
+      "block_order": ["16454922901e23de1f-0"],
       "settings": {
         "heading": "Granulation",
         "heading_size": "h3",
-        "image": "shopify:\/\/shop_images\/unsplash_obMdrL5pFWI.jpg",
+        "image": "shopify://shop_images/unsplash_obMdrL5pFWI.jpg",
         "hero": false,
         "color_scheme": "cream",
         "layout": "reversed",
@@ -123,14 +110,11 @@
         "16454924153eb6f3be-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. <\/p>"
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. </p>"
           }
         }
       },
-      "block_order": [
-        "16454924153eb6f3be-0",
-        "16454924153eb6f3be-1"
-      ],
+      "block_order": ["16454924153eb6f3be-0", "16454924153eb6f3be-1"],
       "settings": {
         "color_scheme": "ground",
         "hero": false,
@@ -145,7 +129,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Quality Assurance and Organic Integrity",
-            "content": "<p><strong>Quality Assurance<\/strong><br\/><br\/>Our dedicated Quality team is with you on every step of the way. Insuring organic compliance and product quality. Analysis are performed on all incoming goods and we offer all required documentation and certification including a Certificate of Analysis for every lot you purchase.<br\/><br\/><strong>Micro Reduction<br\/><\/strong>Verified, clean product only!<\/p><p>All products are treated and tested to ensure that every organic ingredient is safe and ready to eat.<\/p><p>We offer multiple treatment options including a modern Infra-Red\/water treatment that is proven to be gentle on your precious ingredients.<\/p><p>(Our treatment is 3rd party verified for every lot)<br\/><br\/><strong>Certified Organic<br\/><\/strong>You can’t go wrong! - We handle exclusively organic materials at Pure Ground Ingredients.<\/p><p>Certified organic since founding in 2013, we continue to offer strictly organic ingredients from around the world. <\/p><p>All goods are NOP certified with EU\/UK, JAS, Taiwan + Canada equivalents.<\/p><p>All items you purchase are tested for pesticide residues and additional parameters were applicable.<br\/><br\/><strong>Metal Detection<br\/><\/strong>All goods go through a NIST certified and FDA approved Gravity detector. Additionally all mills and processing machinery are fitted with industrial strength magnets. Sifting at multiple production steps further insures absolute purity of your ingredients.<br\/><br\/><strong>Gluten\/Allergen Free<br\/><\/strong>All products handled at Pure Ground Ingredients are verified gluten free. Absence of any accidental gluten is confirmed by frequent analysis.Allergens in our warehouse are strictly segregated, marked and handled separately so that non-allergen products remain allergen free<br\/><br\/><strong>Heavy Metal Report<br\/><\/strong>All lots are tested for presence of any Heavy Metals and confirmed to be within safe and legal limits. Any traces are listed in the Certificate of Analysis of your lot.<br\/><br\/><strong>SQF Certifications<br\/><\/strong>Pure Ground is committed to food safety and Good Manufacturing Practices are central to our operation. Our manufacturing facilities are certified by NSF\/SQF. Food safety and continuous excellence is insured by frequent audits and inspections.<\/p>",
+            "content": "<p><strong>Quality Assurance</strong><br/><br/>Our dedicated Quality team is with you on every step of the way. Insuring organic compliance and product quality. Analysis are performed on all incoming goods and we offer all required documentation and certification including a Certificate of Analysis for every lot you purchase.<br/><br/><strong>Micro Reduction<br/></strong>Verified, clean product only!</p><p>All products are treated and tested to ensure that every organic ingredient is safe and ready to eat.</p><p>We offer multiple treatment options including a modern Infra-Red/water treatment that is proven to be gentle on your precious ingredients.</p><p>(Our treatment is 3rd party verified for every lot)<br/><br/><strong>Certified Organic<br/></strong>You can’t go wrong! - We handle exclusively organic materials at Pure Ground Ingredients.</p><p>Certified organic since founding in 2013, we continue to offer strictly organic ingredients from around the world. </p><p>All goods are NOP certified with EU/UK, JAS, Taiwan + Canada equivalents.</p><p>All items you purchase are tested for pesticide residues and additional parameters were applicable.<br/><br/><strong>Metal Detection<br/></strong>All goods go through a NIST certified and FDA approved Gravity detector. Additionally all mills and processing machinery are fitted with industrial strength magnets. Sifting at multiple production steps further insures absolute purity of your ingredients.<br/><br/><strong>Gluten/Allergen Free<br/></strong>All products handled at Pure Ground Ingredients are verified gluten free. Absence of any accidental gluten is confirmed by frequent analysis.Allergens in our warehouse are strictly segregated, marked and handled separately so that non-allergen products remain allergen free<br/><br/><strong>Heavy Metal Report<br/></strong>All lots are tested for presence of any Heavy Metals and confirmed to be within safe and legal limits. Any traces are listed in the Certificate of Analysis of your lot.<br/><br/><strong>SQF Certifications<br/></strong>Pure Ground is committed to food safety and Good Manufacturing Practices are central to our operation. Our manufacturing facilities are certified by NSF/SQF. Food safety and continuous excellence is insured by frequent audits and inspections.</p>",
             "category": "General"
           }
         },
@@ -153,7 +137,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Processing",
-            "content": "<p>Conditions and resources at origin are not ideal to meet the United States food safety regulations.  We are fully equipped to import from origin and get product ready to eat (RTE) in our SQF certified facility. We have a fully validated micro reduction system and metal check all goods upon arrival. We provide an array of milling, blending, roasting, cleaning and metal check <\/p><p>Your needs and specifications  are met by our state of the art facility. We offer an array of milling, sifting and other treatment options to process organic ingredients just right for you.<\/p>",
+            "content": "<p>Conditions and resources at origin are not ideal to meet the United States food safety regulations.  We are fully equipped to import from origin and get product ready to eat (RTE) in our SQF certified facility. We have a fully validated micro reduction system and metal check all goods upon arrival. We provide an array of milling, blending, roasting, cleaning and metal check </p><p>Your needs and specifications  are met by our state of the art facility. We offer an array of milling, sifting and other treatment options to process organic ingredients just right for you.</p>",
             "category": "General"
           }
         },
@@ -161,7 +145,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Product Development",
-            "content": "<p>Our team represents decades of experience in the organic tea and spice field and can assist you with your product development. Our specialists can help you create or re-create common and exotic spice blends as well as balanced, taste or purpose driven tea formulations.<\/p>",
+            "content": "<p>Our team represents decades of experience in the organic tea and spice field and can assist you with your product development. Our specialists can help you create or re-create common and exotic spice blends as well as balanced, taste or purpose driven tea formulations.</p>",
             "category": "General"
           }
         },
@@ -169,7 +153,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Blending",
-            "content": "<p>We are ready to blend your best-selling formulas.<\/p><p>With our complete organic Botanical, Spice and Herb portfolio at hand, we can create the right blend you need. Your recipe can be readily blended to your specifications and will be ready out of the box into your process.<\/p>",
+            "content": "<p>We are ready to blend your best-selling formulas.</p><p>With our complete organic Botanical, Spice and Herb portfolio at hand, we can create the right blend you need. Your recipe can be readily blended to your specifications and will be ready out of the box into your process.</p>",
             "category": "General"
           }
         },
@@ -177,7 +161,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Private Labeling",
-            "content": "<p>When you need to let your company shine, ask us to package with your own labels.<\/p><p>Our quality organic ingredients can arrive at your warehouse with your own labeling and ready to be sold under your name.<\/p><p>White labeling also available upon request.<\/p>",
+            "content": "<p>When you need to let your company shine, ask us to package with your own labels.</p><p>Our quality organic ingredients can arrive at your warehouse with your own labeling and ready to be sold under your name.</p><p>White labeling also available upon request.</p>",
             "category": "General"
           }
         },
@@ -185,7 +169,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Co-Packaging",
-            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. <\/p>",
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. </p>",
             "category": "General"
           }
         },
@@ -193,7 +177,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Importing",
-            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ullamcorper, tortor ut viverra pulvinar, orci tellus elementum odio, et malesuada neque diam vel sem. Curabitur lacus sem, commodo sed lacus id, vulputate tincidunt sapien. Integer nisi libero, venenatis a sapien id, ornare congue diam. Donec mollis justo quis suscipit vulputate. Suspendisse sit amet lobortis felis. Curabitur condimentum justo ac urna mattis, quis elementum magna ullamcorper.<\/p>",
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ullamcorper, tortor ut viverra pulvinar, orci tellus elementum odio, et malesuada neque diam vel sem. Curabitur lacus sem, commodo sed lacus id, vulputate tincidunt sapien. Integer nisi libero, venenatis a sapien id, ornare congue diam. Donec mollis justo quis suscipit vulputate. Suspendisse sit amet lobortis felis. Curabitur condimentum justo ac urna mattis, quis elementum magna ullamcorper.</p>",
             "category": "General"
           }
         }
@@ -221,17 +205,15 @@
         "1645492458878212b5-0": {
           "type": "text",
           "settings": {
-            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. <\/p><p>Micro Reduction<\/p><p>Certified Organic<\/p><p>Metal Detection<\/p><p>Gluten\/Allergen Free<\/p><p>Heavy Metal Report<\/p><p>SQF Certifications<\/p>"
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. </p><p>Micro Reduction</p><p>Certified Organic</p><p>Metal Detection</p><p>Gluten/Allergen Free</p><p>Heavy Metal Report</p><p>SQF Certifications</p>"
           }
         }
       },
-      "block_order": [
-        "1645492458878212b5-0"
-      ],
+      "block_order": ["1645492458878212b5-0"],
       "settings": {
         "heading": "Quality Control",
         "heading_size": "h3",
-        "image": "shopify:\/\/shop_images\/unsplash_obMdrL5pFWI.jpg",
+        "image": "shopify://shop_images/unsplash_obMdrL5pFWI.jpg",
         "hero": false,
         "color_scheme": "cream",
         "layout": "reversed",
@@ -242,7 +224,6 @@
     }
   },
   "order": [
-    "main",
     "1649727335500c9694",
     "1645492050031700e7",
     "164549222932f52b1c",

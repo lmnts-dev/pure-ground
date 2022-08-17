@@ -1,16 +1,9 @@
 {
   "sections": {
-    "main": {
-      "type": "main-page",
-      "settings": {
-        "padding_top": 100,
-        "padding_bottom": 100
-      }
-    },
     "1643991355e4feeedb": {
       "type": "image",
       "settings": {
-        "image": "shopify:\/\/shop_images\/About_Components.jpg",
+        "image": "shopify://shop_images/About_Components.jpg",
         "image_style": "fullwidth",
         "color_scheme": "cream",
         "top_spacing": 0,
@@ -32,14 +25,11 @@
         "16438188434dae6d1d-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Our innate nature is to take care of each other.  We attract and work with those with the same mentality.  <\/p><p>Our team works every single day to ensure a world in which organic actually means organic—and in which farmers, manufacturers, and consumers come together as one in the name of thriving communities and a happy planet.<\/p>"
+            "text": "<p>Our innate nature is to take care of each other.  We attract and work with those with the same mentality.  </p><p>Our team works every single day to ensure a world in which organic actually means organic—and in which farmers, manufacturers, and consumers come together as one in the name of thriving communities and a happy planet.</p>"
           }
         }
       },
-      "block_order": [
-        "16438188434dae6d1d-0",
-        "16438188434dae6d1d-1"
-      ],
+      "block_order": ["16438188434dae6d1d-0", "16438188434dae6d1d-1"],
       "settings": {
         "color_scheme": "cream",
         "hero": true,
@@ -50,7 +40,7 @@
     "1644423355dc027cd8": {
       "type": "image",
       "settings": {
-        "image": "shopify:\/\/shop_images\/About_Components-1.jpg",
+        "image": "shopify://shop_images/About_Components-1.jpg",
         "image_style": "fullwidth",
         "color_scheme": "cream",
         "top_spacing": 50,
@@ -61,7 +51,7 @@
       "type": "split-text",
       "settings": {
         "heading": "We believe in using business as a force for good",
-        "text": "<p>We act in accordance of a common ethical ground. <\/p><p>We evaluate decisions based on the considerations of keeping all parties whole <\/p><p>Our communication is direct and upfront <\/p><p>We always do our best to deliver the absolute best quality in organic ingredients. <\/p><p>We strive for endless innovation <\/p><p>We give back to those around us and act in consideration of those in need. <\/p><p>We believe in building our local community and global community through the positive impact of our employees<\/p><p>We want our customers to have confidence in our business ethics and commitment to acting in a way that improves the lives of all stakeholders.<\/p><p>We are accountable in our everyday decisions and the impact they make on the global environment.  <\/p><p>We engage consciously with our suppliers, customers, employees and partners in an effort to build a healthier planet and thriving communities.<\/p><p>We believe the more organic ingredients we sell, the greater the impact on the global food supply, <\/p><p>We want team members who come to work feeling like they are making a difference and recognize they are an essential part of providing healthy healing foods around the globe.<\/p>",
+        "text": "<p>We act in accordance of a common ethical ground. </p><p>We evaluate decisions based on the considerations of keeping all parties whole </p><p>Our communication is direct and upfront </p><p>We always do our best to deliver the absolute best quality in organic ingredients. </p><p>We strive for endless innovation </p><p>We give back to those around us and act in consideration of those in need. </p><p>We believe in building our local community and global community through the positive impact of our employees</p><p>We want our customers to have confidence in our business ethics and commitment to acting in a way that improves the lives of all stakeholders.</p><p>We are accountable in our everyday decisions and the impact they make on the global environment.  </p><p>We engage consciously with our suppliers, customers, employees and partners in an effort to build a healthier planet and thriving communities.</p><p>We believe the more organic ingredients we sell, the greater the impact on the global food supply, </p><p>We want team members who come to work feeling like they are making a difference and recognize they are an essential part of providing healthy healing foods around the globe.</p>",
         "button_label": "",
         "button_link": "",
         "color_scheme": "cream",
@@ -75,21 +65,21 @@
         "5dbc0155-f3ab-4848-9912-ef90caa893c1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_34.jpg",
+            "image": "shopify://shop_images/Rectangle_34.jpg",
             "alt": "Image alt text"
           }
         },
         "6548aac9-da48-4b66-89bc-da0eef062216": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_37.jpg",
+            "image": "shopify://shop_images/Rectangle_37.jpg",
             "alt": "Image alt text"
           }
         },
         "a4af3397-72b8-4767-bd76-aa1bd12ef432": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_34.jpg",
+            "image": "shopify://shop_images/Rectangle_34.jpg",
             "alt": "Image alt text"
           }
         }
@@ -120,14 +110,11 @@
         "1646067262a5356a0b-1": {
           "type": "text",
           "settings": {
-            "text": "<p>We care for each other. We express our needs and meet them.   <\/p><p>We encourage collaboration, expression and teamwork. <\/p><p>We value inquisitive minds and positive attitudes<\/p><p>We act in commitment to our common goals, valuing each team member and customer equally.<\/p><p>We remain flexible to accommodate customers and employees. We are known for being responsive to the demands of the world.  <\/p><p>We understand that life happens. <\/p><p>We make time for the things that matter most, minimizing distractions from our highest goals <\/p><p>We lead by example.  We do not judge, but work to understand our perceptions. <\/p><p>We focus on educating ourselves, our customers and suppliers and encourage personal and career development. <\/p><p>We treat our partners, employees and customers like family.  Our goal is to thrive together.<\/p><p>We respect our natural resources and use them consciously. <\/p>"
+            "text": "<p>We care for each other. We express our needs and meet them.   </p><p>We encourage collaboration, expression and teamwork. </p><p>We value inquisitive minds and positive attitudes</p><p>We act in commitment to our common goals, valuing each team member and customer equally.</p><p>We remain flexible to accommodate customers and employees. We are known for being responsive to the demands of the world.  </p><p>We understand that life happens. </p><p>We make time for the things that matter most, minimizing distractions from our highest goals </p><p>We lead by example.  We do not judge, but work to understand our perceptions. </p><p>We focus on educating ourselves, our customers and suppliers and encourage personal and career development. </p><p>We treat our partners, employees and customers like family.  Our goal is to thrive together.</p><p>We respect our natural resources and use them consciously. </p>"
           }
         }
       },
-      "block_order": [
-        "1646067262a5356a0b-0",
-        "1646067262a5356a0b-1"
-      ],
+      "block_order": ["1646067262a5356a0b-0", "1646067262a5356a0b-1"],
       "settings": {
         "color_scheme": "cream",
         "hero": false,
@@ -150,14 +137,11 @@
         "1646067356adcce6f2-1": {
           "type": "text",
           "settings": {
-            "text": "<p>We apply rigorous testing protocols to ensure we are exceeding industry standards in ensuring organic is organic. <\/p><p>We keep in communication, work together to overcome obstacles.<\/p><p>We take care of those who take care of us. We believe in fair wages, fair labor practices and elevating the lives of those around the globe.<\/p><p>We act in service to our customers. We scan the globe to find the ingredients that innovations and trends of the market demand. <\/p><p>We listen and respond. <\/p><p>We believe in self responsibility, showing up each day representing ourselves authenticity, with upmost integrity. <\/p><p>We act using best in class practices and feel good about what we do!<\/p><p>We are conscious citizens and help others as much as we can.<\/p><p>We do not confuse effort with results, we believe in measuring accountability and strive to exceed expectations. <\/p><p>We value a strong work ethic in all team members. <\/p>"
+            "text": "<p>We apply rigorous testing protocols to ensure we are exceeding industry standards in ensuring organic is organic. </p><p>We keep in communication, work together to overcome obstacles.</p><p>We take care of those who take care of us. We believe in fair wages, fair labor practices and elevating the lives of those around the globe.</p><p>We act in service to our customers. We scan the globe to find the ingredients that innovations and trends of the market demand. </p><p>We listen and respond. </p><p>We believe in self responsibility, showing up each day representing ourselves authenticity, with upmost integrity. </p><p>We act using best in class practices and feel good about what we do!</p><p>We are conscious citizens and help others as much as we can.</p><p>We do not confuse effort with results, we believe in measuring accountability and strive to exceed expectations. </p><p>We value a strong work ethic in all team members. </p>"
           }
         }
       },
-      "block_order": [
-        "1646067356adcce6f2-0",
-        "1646067356adcce6f2-1"
-      ],
+      "block_order": ["1646067356adcce6f2-0", "1646067356adcce6f2-1"],
       "settings": {
         "color_scheme": "cream",
         "hero": false,
@@ -168,7 +152,7 @@
     "1644423507dbf32226": {
       "type": "featured-page-link",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Group_of_people.jpg",
+        "image": "shopify://shop_images/Group_of_people.jpg",
         "page_link": "history",
         "color_scheme": "cream",
         "top_spacing": 0,
@@ -177,7 +161,6 @@
     }
   },
   "order": [
-    "main",
     "1643991355e4feeedb",
     "1643818843f333eb74",
     "1644423355dc027cd8",

@@ -1,16 +1,9 @@
 {
   "sections": {
-    "main": {
-      "type": "main-page",
-      "settings": {
-        "padding_top": 28,
-        "padding_bottom": 28
-      }
-    },
     "image": {
       "type": "image",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Working_in_field.jpg",
+        "image": "shopify://shop_images/Working_in_field.jpg",
         "image_style": "blob-2",
         "color_scheme": "cream",
         "top_spacing": 50,
@@ -32,14 +25,11 @@
         "16438188434dae6d1d-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Pure Ground Ingredients provides manufacturers the best in organic ingredients—all while empowering farmers and communities around the world. <\/p><p>Through ethical sourcing, social partnership building, and the most thorough in-house testing on the market, Pure Ground Ingredients provides manufacturers the best in organic ingredients—while empowering farmers and communities around the world.<\/p>"
+            "text": "<p>Pure Ground Ingredients provides manufacturers the best in organic ingredients—all while empowering farmers and communities around the world. </p><p>Through ethical sourcing, social partnership building, and the most thorough in-house testing on the market, Pure Ground Ingredients provides manufacturers the best in organic ingredients—while empowering farmers and communities around the world.</p>"
           }
         }
       },
-      "block_order": [
-        "16438188434dae6d1d-0",
-        "16438188434dae6d1d-1"
-      ],
+      "block_order": ["16438188434dae6d1d-0", "16438188434dae6d1d-1"],
       "settings": {
         "color_scheme": "background-1",
         "hero": false,
@@ -53,42 +43,42 @@
         "3af7757f-cd1c-46d8-8f6c-4d27068f7f38": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_38.jpg",
+            "image": "shopify://shop_images/Rectangle_38.jpg",
             "alt": "Working in agriculture"
           }
         },
         "dd313d9b-410f-4d64-b834-7b395de32cd1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_34.jpg",
+            "image": "shopify://shop_images/Rectangle_34.jpg",
             "alt": "Working in agriculture"
           }
         },
         "1687b58f-a5cc-446d-a1c0-afb2a1083e42": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_37.jpg",
+            "image": "shopify://shop_images/Rectangle_37.jpg",
             "alt": "Working in agriculture"
           }
         },
         "e8180f0a-b172-45b8-9522-b3951ae36b48": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_33.jpg",
+            "image": "shopify://shop_images/Rectangle_33.jpg",
             "alt": "Working in agriculture"
           }
         },
         "e0d006d9-c5b4-4b8f-8ae2-c855bb2c3788": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_39.jpg",
+            "image": "shopify://shop_images/Rectangle_39.jpg",
             "alt": "Working in agriculture"
           }
         },
         "c2160c49-cb73-4472-ba8b-bedbe1b4d3cd": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_36.jpg",
+            "image": "shopify://shop_images/Rectangle_36.jpg",
             "alt": "Working in agriculture"
           }
         }
@@ -110,7 +100,7 @@
     "16444230281a285739": {
       "type": "featured-page-link",
       "settings": {
-        "image": "shopify:\/\/shop_images\/About_Components.jpg",
+        "image": "shopify://shop_images/About_Components.jpg",
         "page_link": "our-principles",
         "color_scheme": "cream",
         "top_spacing": 0,
@@ -119,7 +109,6 @@
     }
   },
   "order": [
-    "main",
     "image",
     "1643818843f333eb74",
     "164512802361beb3e6",

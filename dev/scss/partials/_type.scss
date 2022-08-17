@@ -23,7 +23,6 @@ h6,
 h1,
 .h1 {
   font-size: 3rem;
-  text-transform: uppercase;
 
   @media (max-width: 1024px) {
     font-size: 2rem;
@@ -123,9 +122,8 @@ p,
   font-size: 0.875rem;
 }
 
-.p-xs, 
-.p-xs > p
-{
+.p-xs,
+.p-xs > p {
   font-size: 0.65rem;
 }
 
@@ -169,31 +167,30 @@ li {
 }
 
 .__article-txt {
-
-  h1{
+  h1 {
     font-size: 2.25rem;
   }
 
-  h2{
+  h2 {
     font-size: 1.75rem;
   }
 
-  h3{
+  h3 {
     font-size: 1.31rem;
   }
 
-  h4{
+  h4 {
     font-size: 1.125rem;
   }
 
-  h5{
+  h5 {
     font-size: 1rem;
   }
 
-  h6{
-    font-size: .9rem;
+  h6 {
+    font-size: 0.9rem;
   }
-  
+
   a {
     position: relative;
     color: var(--color-accent);
@@ -223,12 +220,13 @@ li {
     }
   }
 
-  p{
-    font-size: .9rem;
+  p {
+    font-size: 0.9rem;
   }
 
-  blockquote, blockquote p{
-    padding-left:0;
+  blockquote,
+  blockquote p {
+    padding-left: 0;
     font-style: italic;
     font-size: 1rem;
     font-weight: 600;
@@ -236,35 +234,36 @@ li {
     position: relative;
     width: fit-content;
 
-    &::before{
+    &::before {
       content: '"';
     }
 
-    &::after{
+    &::after {
       content: '"';
     }
   }
 
-  ul, ol{
+  ul,
+  ol {
     line-height: 28px;
-    margin-left: calc(var(--pxSize)/4);
+    margin-left: calc(var(--pxSize) / 4);
     margin-bottom: 1rem;
 
-    li{
-      font-size: .9rem;
+    li {
+      font-size: 0.9rem;
     }
   }
 
-  ul{
+  ul {
     li {
       list-style: inside;
     }
   }
 
-  ol{
+  ol {
     padding-inline-start: 15px;
 
-    li{
+    li {
       list-style: revert;
     }
   }

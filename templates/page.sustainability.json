@@ -1,12 +1,5 @@
 {
   "sections": {
-    "main": {
-      "type": "main-page",
-      "settings": {
-        "padding_top": 100,
-        "padding_bottom": 100
-      }
-    },
     "166074672815a86e9b": {
       "type": "content-with-bg-image",
       "blocks": {
@@ -18,12 +11,10 @@
           }
         }
       },
-      "block_order": [
-        "926015a7-2052-4797-9221-7ef8e3b87cd4"
-      ],
+      "block_order": ["926015a7-2052-4797-9221-7ef8e3b87cd4"],
       "settings": {
         "text_color": "light",
-        "image": "shopify:\/\/shop_images\/unsplash_8rTwokBwz1w_40d48515-02db-4d2b-8a84-dc1ea84963dd.jpg",
+        "image": "shopify://shop_images/unsplash_8rTwokBwz1w_40d48515-02db-4d2b-8a84-dc1ea84963dd.jpg",
         "alt": "Happy women in field",
         "overlay": 20,
         "hero": true,
@@ -52,14 +43,11 @@
         "16438188434dae6d1d-1": {
           "type": "text",
           "settings": {
-            "text": "<p>At Pure Ground Ingredients, we like to think of ourselves as the bridge between farmers  and our customers – and our most important role is being a friend to both. We strive to act in  a conscious manner that yields a positive impact  – to the environment,  grower communities, as well as our own. <\/p>"
+            "text": "<p>At Pure Ground Ingredients, we like to think of ourselves as the bridge between farmers  and our customers – and our most important role is being a friend to both. We strive to act in  a conscious manner that yields a positive impact  – to the environment,  grower communities, as well as our own. </p>"
           }
         }
       },
-      "block_order": [
-        "16438188434dae6d1d-0",
-        "16438188434dae6d1d-1"
-      ],
+      "block_order": ["16438188434dae6d1d-0", "16438188434dae6d1d-1"],
       "settings": {
         "color_scheme": "cream",
         "hero": false,
@@ -80,9 +68,7 @@
           }
         }
       },
-      "block_order": [
-        "164442384920551cc7-0"
-      ],
+      "block_order": ["164442384920551cc7-0"],
       "settings": {
         "color_scheme": "cream",
         "hero": false,
@@ -105,7 +91,7 @@
         "16607469781a0891f6-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Our ingredients are more than they seem. They are the sum of all therelationships, creativity, labor and life that made them possible. We carefully select our suppliers, auditing and inspecting to ensure each is meeting standards for quality, food safety, positive environmental impact and ethical working conditions. We have been working for over 25 years todevelop our supply chain and offer a wide range of sustainably sourced materials.<\/p>"
+            "text": "<p>Our ingredients are more than they seem. They are the sum of all therelationships, creativity, labor and life that made them possible. We carefully select our suppliers, auditing and inspecting to ensure each is meeting standards for quality, food safety, positive environmental impact and ethical working conditions. We have been working for over 25 years todevelop our supply chain and offer a wide range of sustainably sourced materials.</p>"
           }
         },
         "16607469781a0891f6-2": {
@@ -134,14 +120,14 @@
         "1644419366881604f5-0": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Globally Standardized Certifications <br\/><\/strong>Such as Fair Trade, Fair Wilde, Fair for Life and Rainforest Alliance.  <\/p><p><strong>Environmentally Impactful <\/strong><br\/>Ingredients that come from Regenerative Farming Practices & Agroforestry Projects <\/p><p><strong> Socially Impactful <br\/><\/strong>Ingredients that come from sources which are dedicated topromoting social equality, education and living wages. Women’s Co-ops, Co-ops dedicated to education + development and those who promote equality and women’s empowerment.<\/p>"
+            "text": "<p><strong>Globally Standardized Certifications <br/></strong>Such as Fair Trade, Fair Wilde, Fair for Life and Rainforest Alliance.  </p><p><strong>Environmentally Impactful </strong><br/>Ingredients that come from Regenerative Farming Practices & Agroforestry Projects </p><p><strong> Socially Impactful <br/></strong>Ingredients that come from sources which are dedicated topromoting social equality, education and living wages. Women’s Co-ops, Co-ops dedicated to education + development and those who promote equality and women’s empowerment.</p>"
           }
         },
         "47338247-06fe-401f-8439-2fdbee1aac55": {
           "type": "button",
           "settings": {
             "button_label": "Shop Sustainable Sourced Ingredients",
-            "button_link": "shopify:\/\/collections",
+            "button_link": "shopify://collections",
             "button_color": "default"
           }
         }
@@ -153,7 +139,7 @@
       "settings": {
         "heading": "Our Sustainably Sourced offering includes ingredients that fall into three tiers:",
         "heading_size": "h4",
-        "image": "shopify:\/\/shop_images\/2018-08-21_17.54_1_763acc0d-6c05-4663-ba6d-c96a06c29191.jpg",
+        "image": "shopify://shop_images/2018-08-21_17.54_1_763acc0d-6c05-4663-ba6d-c96a06c29191.jpg",
         "hero": false,
         "color_scheme": "cream",
         "layout": "reversed",
@@ -166,7 +152,7 @@
       "type": "featured-page-link",
       "settings": {
         "page_link": "our-values",
-        "image": "shopify:\/\/shop_images\/unsplash_8rTwokBwz1w_c9e99f30-b9ba-43c5-a624-1ddfbd6b771d.jpg",
+        "image": "shopify://shop_images/unsplash_8rTwokBwz1w_c9e99f30-b9ba-43c5-a624-1ddfbd6b771d.jpg",
         "alt": "Men working on mountainside",
         "color_scheme": "cream",
         "top_spacing": 0,
@@ -179,19 +165,26 @@
         "20254c1e-c139-4b1c-a067-1d245ee149cc": {
           "type": "article",
           "settings": {
-            "article": "news\/2019-pioneer-award-winners"
+            "article": "news/2019-pioneer-award-winners"
           }
         },
         "d5f9af9e-3a53-4979-81da-209d197de4ad": {
           "type": "article",
           "settings": {
-            "article": "news\/2019-pioneer-award-winners"
+            "article": "news/2019-pioneer-award-winners"
+          }
+        },
+        "d5f9af9e-3a53-4979-81da-209d197de4ag": {
+          "type": "article",
+          "settings": {
+            "article": "news/2019-pioneer-award-winners"
           }
         }
       },
       "block_order": [
         "20254c1e-c139-4b1c-a067-1d245ee149cc",
-        "d5f9af9e-3a53-4979-81da-209d197de4ad"
+        "d5f9af9e-3a53-4979-81da-209d197de4ad",
+        "d5f9af9e-3a53-4979-81da-209d197de4ag"
       ],
       "settings": {
         "heading": "Sustainability Stories",
@@ -205,7 +198,6 @@
     }
   },
   "order": [
-    "main",
     "166074672815a86e9b",
     "1643818843f333eb74",
     "164442384962d45464",
