@@ -26,7 +26,9 @@
           }
         }
       },
-      "block_order": ["cb5c02c6-6c63-44d7-983a-ff404bf6a612"],
+      "block_order": [
+        "cb5c02c6-6c63-44d7-983a-ff404bf6a612"
+      ],
       "settings": {
         "heading": "Heading Here",
         "button_label": "Button label",
@@ -38,5 +40,9 @@
       }
     }
   },
-  "order": ["1647618658eba2139e", "164761867161c8a6f8", "164867431380ac7c25"]
+  "order": [
+    "1647618658eba2139e",
+    "164761867161c8a6f8",
+    "164867431380ac7c25"
+  ]
 }

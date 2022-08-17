@@ -3,7 +3,7 @@
     "1643991355e4feeedb": {
       "type": "image",
       "settings": {
-        "image": "shopify://shop_images/landscape_of_trees.jpg",
+        "image": "shopify:\/\/shop_images\/landscape_of_trees.jpg",
         "image_style": "blob-1",
         "color_scheme": "cream",
         "top_spacing": 50,
@@ -25,11 +25,14 @@
         "16438188434dae6d1d-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Since inception in 2013 Pure Ground Ingredients is solely focused on organic ingredients. </p><p>The commitment to offer exclusively organic ingredients to is a reflection of our commitment to the highest standards of healthy products as well as their social and ecological impact.</p><p>We value our network of trusted producers worldwide were many hands, from farmers in co-ops to larger companies work together to further the benefits of organic agriculture and lifestyle.</p><p>The organic integrity is central to our products. In addition to local and regional control and certification, we perform multi spectrum pesticide residue testing on all materials we purchase.</p><p>All ingredients are certified NOP organic by CCOP with additional endorsements for EU/UK, JAS, Taiwan + US/Canada equivalents.</p><p>In addition to 100% Organic, all of our ingredients are also Kosher and Halal certified.</p>"
+            "text": "<p>Since inception in 2013 Pure Ground Ingredients is solely focused on organic ingredients. <\/p><p>The commitment to offer exclusively organic ingredients to is a reflection of our commitment to the highest standards of healthy products as well as their social and ecological impact.<\/p><p>We value our network of trusted producers worldwide were many hands, from farmers in co-ops to larger companies work together to further the benefits of organic agriculture and lifestyle.<\/p><p>The organic integrity is central to our products. In addition to local and regional control and certification, we perform multi spectrum pesticide residue testing on all materials we purchase.<\/p><p>All ingredients are certified NOP organic by CCOP with additional endorsements for EU\/UK, JAS, Taiwan + US\/Canada equivalents.<\/p><p>In addition to 100% Organic, all of our ingredients are also Kosher and Halal certified.<\/p>"
           }
         }
       },
-      "block_order": ["16438188434dae6d1d-0", "16438188434dae6d1d-1"],
+      "block_order": [
+        "16438188434dae6d1d-0",
+        "16438188434dae6d1d-1"
+      ],
       "settings": {
         "color_scheme": "cream",
         "hero": true,
@@ -43,15 +46,17 @@
         "16478885442366e047-0": {
           "type": "text",
           "settings": {
-            "text": "<p>For every lot you purchase, you will receive a Certificate of Analysis – COA – stating your ingredient’s plant name, part + origin; cut size; manufacture + expiration dates as well as microbiological, Heavy Metal and Pesticide analytical results.  Our team will match any additional testing you require. </p>"
+            "text": "<p>For every lot you purchase, you will receive a Certificate of Analysis – COA – stating your ingredient’s plant name, part + origin; cut size; manufacture + expiration dates as well as microbiological, Heavy Metal and Pesticide analytical results.  Our team will match any additional testing you require. <\/p>"
           }
         }
       },
-      "block_order": ["16478885442366e047-0"],
+      "block_order": [
+        "16478885442366e047-0"
+      ],
       "settings": {
         "heading": "Certificate of Analysis",
         "heading_size": "h3",
-        "image": "shopify://shop_images/unsplash_8rTwokBwz1w.jpg",
+        "image": "shopify:\/\/shop_images\/unsplash_8rTwokBwz1w.jpg",
         "hero": false,
         "color_scheme": "cream",
         "layout": "default",
@@ -61,5 +66,9 @@
       }
     }
   },
-  "order": ["1643991355e4feeedb", "1643818843f333eb74", "16478885443573ef31"]
+  "order": [
+    "1643991355e4feeedb",
+    "1643818843f333eb74",
+    "16478885443573ef31"
+  ]
 }

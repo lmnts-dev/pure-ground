@@ -15,11 +15,14 @@
         "16438188434dae6d1d-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Lorem ipsum</p>"
+            "text": "<p>Lorem ipsum<\/p>"
           }
         }
       },
-      "block_order": ["16438188434dae6d1d-0", "16438188434dae6d1d-1"],
+      "block_order": [
+        "16438188434dae6d1d-0",
+        "16438188434dae6d1d-1"
+      ],
       "settings": {
         "color_scheme": "cream",
         "hero": true,
@@ -28,5 +31,7 @@
       }
     }
   },
-  "order": ["1643818843f333eb74"]
+  "order": [
+    "1643818843f333eb74"
+  ]
 }
