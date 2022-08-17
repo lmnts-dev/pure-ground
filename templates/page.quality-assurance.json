@@ -262,6 +262,71 @@
         "top_spacing": 0,
         "bottom_spacing": 0
       }
+    },
+    "16607514865516138c": {
+      "type": "icons-section",
+      "blocks": {
+        "f3ecbf11-b5f3-484c-82b7-293477ee0863": {
+          "type": "image",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Group_253.png",
+            "text": "Certified USDA Organic"
+          }
+        },
+        "9238b523-e68f-4b6c-92de-965b6ae45bff": {
+          "type": "image",
+          "settings": {
+            "text": ""
+          }
+        },
+        "54ddda7b-032d-493e-a06b-e955b5e533ef": {
+          "type": "image",
+          "settings": {
+            "text": ""
+          }
+        },
+        "b5ed4ab9-114a-46e0-a632-e0ac53372802": {
+          "type": "image",
+          "settings": {
+            "text": ""
+          }
+        },
+        "09c7b188-05b6-4b3c-a90b-d6faa5cdf10b": {
+          "type": "image",
+          "settings": {
+            "text": ""
+          }
+        },
+        "d259bf74-17d9-4ad6-8a1e-484e8c7a768a": {
+          "type": "image",
+          "settings": {
+            "text": ""
+          }
+        },
+        "1d53f10a-72fd-44cb-9f47-ccd9a6c5c112": {
+          "type": "image",
+          "settings": {
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "f3ecbf11-b5f3-484c-82b7-293477ee0863",
+        "9238b523-e68f-4b6c-92de-965b6ae45bff",
+        "54ddda7b-032d-493e-a06b-e955b5e533ef",
+        "b5ed4ab9-114a-46e0-a632-e0ac53372802",
+        "09c7b188-05b6-4b3c-a90b-d6faa5cdf10b",
+        "d259bf74-17d9-4ad6-8a1e-484e8c7a768a",
+        "1d53f10a-72fd-44cb-9f47-ccd9a6c5c112"
+      ],
+      "settings": {
+        "caption": "Caption Here",
+        "heading": "Heading Here",
+        "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ullamcorper, tortor ut viverra pulvinar, orci tellus elementum odio, et malesuada neque diam vel sem. Curabitur lacus sem, commodo sed lacus id, vulputate tincidunt sapien. Integer nisi libero, venenatis a sapien id, ornare congue diam. Donec mollis justo quis suscipit vulputate. Suspendisse sit amet lobortis felis. Curabitur condimentum justo ac urna mattis, quis elementum magna ullamcorper.<\/p>",
+        "color_scheme": "cream",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
     }
   },
   "order": [
@@ -271,6 +336,7 @@
     "1660751203d847bc7d",
     "1660751375c6d45d9c",
     "1660746979c48fd613",
-    "16607471819bf121f0"
+    "16607471819bf121f0",
+    "16607514865516138c"
   ]
 }
