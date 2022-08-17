@@ -2,23 +2,50 @@
   "sections": {
     "content-with-bg-image": {
       "type": "content-with-bg-image",
+      "blocks": {
+        "8525053b-34a8-433a-b8e7-aabefaa2c3f0": {
+          "type": "heading",
+          "settings": {
+            "heading": "ALWAYS ORGANIC",
+            "heading_size": "h3"
+          }
+        },
+        "de4c2414-51ee-47ec-aabb-c24c7165f16f": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Delivered with purpose & responsibility"
+          }
+        },
+        "c03f8710-4d17-4f09-abe7-9c38351b138f": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pure Ground Ingredients sets the tone in sustainable sourcing & impact driven ingredients<\/p>"
+          }
+        },
+        "98e4e98c-6256-4af7-8682-879282cdcf70": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop All Ingredients",
+            "button_link": "shopify:\/\/collections",
+            "button_color": "cream"
+          }
+        }
+      },
+      "block_order": [
+        "8525053b-34a8-433a-b8e7-aabefaa2c3f0",
+        "de4c2414-51ee-47ec-aabb-c24c7165f16f",
+        "c03f8710-4d17-4f09-abe7-9c38351b138f",
+        "98e4e98c-6256-4af7-8682-879282cdcf70"
+      ],
       "settings": {
-        "heading": "Always Organic",
-        "subheading": "That's how we like it",
-        "text": "<p>Pure Ground is the industry leader in pesticide testing to ensure organic integrity<\/p>",
-        "heading_size": "h2",
         "text_color": "dark",
-        "button_label": "Shop All Ingredients",
-        "button_link": "shopify:\/\/collections",
-        "button_color": "default",
-        "image": "shopify:\/\/shop_images\/unsplash_IQVFVH0ajag.jpg",
-        "alt": "Image alt text",
+        "image": "shopify:\/\/shop_images\/Hero.jpg",
+        "alt": "Landscape image with field",
         "overlay": 0,
         "hero": true,
         "fullwidth": true,
         "accent_color": true,
         "alignment": "left",
-        "icon": true,
         "color_scheme": "cream",
         "top_spacing": 0,
         "bottom_spacing": 0,
@@ -29,14 +56,7 @@
     "164497174668dcfe61": {
       "type": "content-with-bg-image",
       "settings": {
-        "heading": "Culinary Herbs, Spices, & Vegetables",
-        "subheading": "",
-        "text": "<p>For your restaurant or seasonings!<\/p>",
-        "heading_size": "h3",
         "text_color": "light",
-        "button_label": "Shop now",
-        "button_link": "shopify:\/\/collections",
-        "button_color": "default",
         "image": "shopify:\/\/shop_images\/unsplash_VVe3zOZM88E.jpg",
         "alt": "Image alt text",
         "overlay": 50,
@@ -44,7 +64,6 @@
         "fullwidth": false,
         "accent_color": false,
         "alignment": "center",
-        "icon": false,
         "color_scheme": "cream",
         "top_spacing": 20,
         "bottom_spacing": 20,
@@ -55,14 +74,7 @@
     "16449719193cb6dff5": {
       "type": "content-with-bg-image",
       "settings": {
-        "heading": "We're for the Humans",
-        "subheading": "",
-        "text": "<p>We have a global network of growers, co-ops, customers, logistics providers and partners at origin. We are united in our purpose to build a healthier planet, thriving communities and happy customers.  <\/p>",
-        "heading_size": "h3",
         "text_color": "light",
-        "button_label": "Learn where",
-        "button_link": "shopify:\/\/pages\/european-operations",
-        "button_color": "default",
         "image": "shopify:\/\/shop_images\/unsplash_xDwEa2kaeJA.jpg",
         "alt": "Image alt text",
         "overlay": 30,
@@ -70,7 +82,6 @@
         "fullwidth": false,
         "accent_color": false,
         "alignment": "center",
-        "icon": false,
         "color_scheme": "cream",
         "top_spacing": 0,
         "bottom_spacing": 100,
