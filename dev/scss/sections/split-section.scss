@@ -1,5 +1,5 @@
 .split-section {
-  --splitSectionSpace: calc(var(--sectionHorizontalSpacing) / 2);
+  --splitSectionSpace: calc(var(--sectionHorizontalSpacing) / 1.5);
   --splitSectionRatio: 37%;
   display: flex;
 
