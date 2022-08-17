@@ -102,7 +102,8 @@
       ],
       "settings": {
         "text_color": "light",
-        "alt": "",
+        "image": "shopify:\/\/shop_images\/unsplash_V0xp-dTS3z0_8c9c5b04-3137-48ca-a33f-c698c986b244.jpg",
+        "alt": "Ground herbs",
         "overlay": 50,
         "hero": false,
         "fullwidth": true,
