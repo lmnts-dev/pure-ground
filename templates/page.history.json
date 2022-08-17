@@ -271,18 +271,18 @@
             "alt": "Black and white photo of two kids"
           }
         },
-        "16607611409a888436-0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-05-06_at_4.09_1.jpg",
-            "alt": "Original image taken on trip"
-          }
-        },
         "87fd8ce7-763d-4d11-83e8-b61fbcc55ca4": {
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Screen_Shot_2022-05-06_at_4.13_1.jpg",
             "alt": "Two men with mountains in background"
+          }
+        },
+        "16607611409a888436-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-05-06_at_4.09_1.jpg",
+            "alt": "Original image taken on trip"
           }
         }
       },
@@ -293,8 +293,8 @@
         "9a40b987-ceab-4911-8f2b-c24ac822dcf1",
         "d239892f-c15d-4345-9deb-ddb4a4214abd",
         "f835b275-72f6-484d-8cee-015213bab2d4",
-        "16607611409a888436-0",
-        "87fd8ce7-763d-4d11-83e8-b61fbcc55ca4"
+        "87fd8ce7-763d-4d11-83e8-b61fbcc55ca4",
+        "16607611409a888436-0"
       ],
       "settings": {
         "color_scheme": "cream",
