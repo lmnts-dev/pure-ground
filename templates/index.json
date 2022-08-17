@@ -97,6 +97,47 @@
         "bottom_spacing": 50
       }
     },
+    "collections-grid": {
+      "type": "collections-grid",
+      "blocks": {
+        "herbs": {
+          "type": "collection",
+          "settings": {
+            "collection": "botanicals-and-roots"
+          }
+        },
+        "fair": {
+          "type": "collection",
+          "settings": {
+            "collection": "fair-trade-ingredients"
+          }
+        },
+        "teas": {
+          "type": "collection",
+          "settings": {
+            "collection": "organic-teas-leaves"
+          }
+        },
+        "chiles": {
+          "type": "collection",
+          "settings": {
+            "collection": "organic-dried-chiles"
+          }
+        }
+      },
+      "block_order": [
+        "herbs",
+        "fair",
+        "teas",
+        "chiles"
+      ],
+      "settings": {
+        "heading": "The Best in Organic Ingredients",
+        "color_scheme": "cream",
+        "top_spacing": 50,
+        "bottom_spacing": 80
+      }
+    },
     "164497174668dcfe61": {
       "type": "content-with-bg-image",
       "blocks": {
@@ -141,47 +182,6 @@
         "bottom_spacing": 20,
         "top_internal_spacing": 100,
         "bottom_internal_spacing": 100
-      }
-    },
-    "collections-grid": {
-      "type": "collections-grid",
-      "blocks": {
-        "herbs": {
-          "type": "collection",
-          "settings": {
-            "collection": "botanicals-and-roots"
-          }
-        },
-        "fair": {
-          "type": "collection",
-          "settings": {
-            "collection": "fair-trade-ingredients"
-          }
-        },
-        "teas": {
-          "type": "collection",
-          "settings": {
-            "collection": "organic-teas-leaves"
-          }
-        },
-        "chiles": {
-          "type": "collection",
-          "settings": {
-            "collection": "organic-dried-chiles"
-          }
-        }
-      },
-      "block_order": [
-        "herbs",
-        "fair",
-        "teas",
-        "chiles"
-      ],
-      "settings": {
-        "heading": "Browse Organic Ingredient Categories",
-        "color_scheme": "cream",
-        "top_spacing": 50,
-        "bottom_spacing": 80
       }
     },
     "16450306926c068d86": {
@@ -451,8 +451,8 @@
   "order": [
     "content-with-bg-image",
     "16607057366a572f05",
-    "164497174668dcfe61",
     "collections-grid",
+    "164497174668dcfe61",
     "16450306926c068d86",
     "1649267126cc71bac9",
     "16450418065fdb6a59",
