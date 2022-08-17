@@ -66,7 +66,8 @@
         "ea821701-d216-4b36-82ae-880e4da10e66": {
           "type": "heading",
           "settings": {
-            "heading": "THE EXPLORATION THAT STARTED IT ALL"
+            "heading": "THE EXPLORATION THAT STARTED IT ALL",
+            "heading_size": "h5"
           }
         },
         "1644419366881604f5-0": {
@@ -81,8 +82,6 @@
         "1644419366881604f5-0"
       ],
       "settings": {
-        "heading": "",
-        "heading_size": "h3",
         "image": "shopify:\/\/shop_images\/Screen_Shot_2022-05-06_at_4.09_1.jpg",
         "hero": false,
         "color_scheme": "cream",
@@ -98,7 +97,8 @@
         "62ae096b-8c03-4a4c-8446-c4803a18de0b": {
           "type": "heading",
           "settings": {
-            "heading": "THE GROWTH OF ALL THINGS GOOD"
+            "heading": "THE GROWTH OF ALL THINGS GOOD",
+            "heading_size": "h5"
           }
         },
         "16444195172a1cbbf5-0": {
@@ -113,8 +113,6 @@
         "16444195172a1cbbf5-0"
       ],
       "settings": {
-        "heading": "",
-        "heading_size": "h3",
         "image": "shopify:\/\/shop_images\/Screen_Shot_2022-05-06_at_4.11_1.jpg",
         "hero": false,
         "color_scheme": "cream",
@@ -130,7 +128,8 @@
         "3bace683-18eb-42ab-8cfa-3856140c8447": {
           "type": "heading",
           "settings": {
-            "heading": "BRIDGING THE GAP"
+            "heading": "BRIDGING THE GAP",
+            "heading_size": "h5"
           }
         },
         "16460677595b4c6412-0": {
@@ -145,8 +144,6 @@
         "16460677595b4c6412-0"
       ],
       "settings": {
-        "heading": "",
-        "heading_size": "h3",
         "image": "shopify:\/\/shop_images\/2018-08-21_17.54_1_0e4f3b9e-7a69-4022-bc9a-dda171bbb6e2.jpg",
         "hero": false,
         "color_scheme": "cream",
@@ -162,7 +159,8 @@
         "ab43ead6-9eb7-41ba-b753-14de0dd45021": {
           "type": "heading",
           "settings": {
-            "heading": "OUR COMMITMENT TO QUALITY"
+            "heading": "OUR COMMITMENT TO QUALITY",
+            "heading_size": "h5"
           }
         },
         "1646067890db72c0b4-0": {
@@ -177,8 +175,6 @@
         "1646067890db72c0b4-0"
       ],
       "settings": {
-        "heading": "",
-        "heading_size": "h3",
         "image": "shopify:\/\/shop_images\/unsplash_V0xp-dTS3z0.jpg",
         "hero": false,
         "color_scheme": "cream",
@@ -194,7 +190,8 @@
         "ac2b71c9-7d13-4bec-bbfd-43253c5dfdc7": {
           "type": "heading",
           "settings": {
-            "heading": "OUR VISION FOR THE FUTURE"
+            "heading": "OUR VISION FOR THE FUTURE",
+            "heading_size": "h5"
           }
         },
         "16460680099057fcf0-0": {
@@ -209,8 +206,6 @@
         "16460680099057fcf0-0"
       ],
       "settings": {
-        "heading": "",
-        "heading_size": "h3",
         "image": "shopify:\/\/shop_images\/Rectangle_37.jpg",
         "hero": false,
         "color_scheme": "cream",

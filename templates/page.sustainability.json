@@ -124,6 +124,13 @@
     "16444193660de6d319": {
       "type": "split-section",
       "blocks": {
+        "b3f439d2-ba5b-40d3-89be-671c35dc40b2": {
+          "type": "heading",
+          "settings": {
+            "heading": "Our Sustainably Sourced offering includes ingredients that fall into three tiers:",
+            "heading_size": "caption"
+          }
+        },
         "1644419366881604f5-0": {
           "type": "text",
           "settings": {
@@ -140,12 +147,11 @@
         }
       },
       "block_order": [
+        "b3f439d2-ba5b-40d3-89be-671c35dc40b2",
         "1644419366881604f5-0",
         "47338247-06fe-401f-8439-2fdbee1aac55"
       ],
       "settings": {
-        "heading": "Our Sustainably Sourced offering includes ingredients that fall into three tiers:",
-        "heading_size": "caption",
         "image": "shopify:\/\/shop_images\/2018-08-21_17.54_1_763acc0d-6c05-4663-ba6d-c96a06c29191.jpg",
         "hero": false,
         "color_scheme": "cream",
