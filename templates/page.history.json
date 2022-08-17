@@ -56,7 +56,7 @@
       "settings": {
         "color_scheme": "cream",
         "hero": false,
-        "top_spacing": 50,
+        "top_spacing": 100,
         "bottom_spacing": 50
       }
     },
@@ -72,7 +72,7 @@
         "1644419366881604f5-0": {
           "type": "text",
           "settings": {
-            "text": "<p>Our first stop was South America where we began the research we continue to this day—learning every single thing we could about organic growers, their products, and their practices. We slung backpacks over our shoulders, filled our notebooks with every tidbit our eager hands could jot down, caked dirt in our boots, and made friendships with farmers that we maintain to this day.<\/p><p>From South America we headed to Europe, where the world of organics was far more developed than it was in the United States at the time. Europe was where we first laid eyes on what a thriving organic marketplace looked like—which only served to whet our palette.<\/p><p>We wanted to know more, so we spent the next ten years of our lives traveling, exploring, and building relationships with growers everywhere from Africa to Indonesia—hand-selecting the best of the best to eventually become Pure Ground partners.<\/p>"
+            "text": "<p>Our first stop was South America where we began the research that we continue to this day—learning every single thing we could about organic growers, their products, and their practices. We slung backpacks over our shoulders, filled our notebooks with every tidbit our eager hands could jot down, caked dirt in our boots, and made friendships with farmers that we maintain to this day. <\/p><p>From South America we headed to Europe, where the world of organics was far more developed than it was in the United States at the time. Europe was where we first laid eyeson what a thriving organic marketplace looked like—which only served to whet our palette. <\/p><p>We wanted to know more, so we spent the next ten years of our lives traveling, exploring, and building relationships with growers everywhere from Africa to Indonesia—hand-selecting the best of the best to eventually become Pure Ground partners.<\/p>"
           }
         }
       },
@@ -83,7 +83,7 @@
       "settings": {
         "heading": "",
         "heading_size": "h3",
-        "image": "shopify:\/\/shop_images\/2018-08-21_17.54_1-1.jpg",
+        "image": "shopify:\/\/shop_images\/Screen_Shot_2022-05-06_at_4.09_1.jpg",
         "hero": false,
         "color_scheme": "cream",
         "layout": "reversed",
@@ -104,7 +104,7 @@
         "16444195172a1cbbf5-0": {
           "type": "text",
           "settings": {
-            "text": "<p>Fast-forward 20 years and, while we’ve grown from two to 50 (and counting) employees, many of the growers we use to this day are the same growers we met all those years ago. Relationships are, by far, the most important part of ensuring organic integrity in the ingredients we provide manufacturers, which is why we’re in it for the long-haul with our farmers and their communities. We now source ingredients from over 35 different countries and are on a continuous mission to both improve product quality and ensure economic vitality for our farmers and their communities.<\/p>"
+            "text": "<p>Fast-forward 20 years and, while we’ve grown from two to 50 (and counting) employees, many of the growers we use to this day are the same growers we met all those years ago. Relationships are, by far, the most important part of ensuring organic integrity in the ingredients we provide to manufacturers. This is why we’re in it for the long-haul - with our farmers and their communities. We now source ingredients from over 35 different countries and are on a continuous mission to both improve product quality and ensure economic vitality for our farmers and their communities.<\/p>"
           }
         }
       },
@@ -115,7 +115,7 @@
       "settings": {
         "heading": "",
         "heading_size": "h3",
-        "image": "shopify:\/\/shop_images\/2018-08-21_17.54_1.jpg",
+        "image": "shopify:\/\/shop_images\/Screen_Shot_2022-05-06_at_4.11_1.jpg",
         "hero": false,
         "color_scheme": "cream",
         "layout": "default",
