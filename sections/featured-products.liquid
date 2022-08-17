@@ -9,7 +9,7 @@
   {% if section.settings.heading %}
       <h2 class="featured-products__heading h4">{{ section.settings.heading }}</h2>
    {% endif %}
-   <div class="featured-products__container">
+   <toggle-modal class="featured-products__container" data-type="container">
       {% if section.blocks.size > 0 %}
          {%- for block in section.blocks -%}
             {%- case block.type -%}
@@ -23,16 +23,14 @@
             {% render 'product-card', product: "default", style: "stacked" %} 
          {% endfor %}
       {% endif %}
-   </div>
+   </toggle-modal>
+
+   {% render 'modal' %}
 
    {% render 'button', class: "featured-products", button_label: section.settings.button_label, button_link: section.settings.button_link %}
 
 </div>
-
-{% comment %}
-Fix previews
-
-{% endcomment %}
+  
 
 {% schema %}
 

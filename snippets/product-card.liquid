@@ -21,7 +21,8 @@
   {% assign price_max = product.price_max %}
 {% endif %}
 
-  <a href="{{ url }}" class="product-card also-like __style-{% if style %}{{style}}{% else %}default{% endif %}">
+{% comment %} TODO change this to <a> tag for phase 2 {% endcomment %}
+  <span href="{{ url }}" class="product-card also-like __style-{% if style %}{{style}}{% else %}default{% endif %}">
     <div class="product-card__image">
       {% if product.featured_image %}
         <img
@@ -76,4 +77,4 @@
         <button class="btn" type="button" class="">Add to Cart</button>
       {% endif %}
     </div>
-  </a>
+  </span>
