@@ -1,0 +1,256 @@
+{
+  "sections": {
+    "1660762522a095a17b": {
+      "type": "content-with-bg-image",
+      "blocks": {
+        "01bf5adc-1791-4417-8d70-8ae07b13829e": {
+          "type": "heading",
+          "settings": {
+            "heading": "Values",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "01bf5adc-1791-4417-8d70-8ae07b13829e"
+      ],
+      "settings": {
+        "text_color": "light",
+        "image": "shopify:\/\/shop_images\/unsplash_8rTwokBwz1w_0049480e-5067-46a3-9545-7c7be191aad8.jpg",
+        "alt": "Guys on hillside with picked greens",
+        "overlay": 20,
+        "hero": true,
+        "fullwidth": true,
+        "accent_color": false,
+        "alignment": "center",
+        "color_scheme": "cream",
+        "top_spacing": 0,
+        "bottom_spacing": 0,
+        "top_internal_spacing": 250,
+        "bottom_internal_spacing": 30
+      }
+    },
+    "1643818843f333eb74": {
+      "type": "rich-text",
+      "blocks": {
+        "16438188434dae6d1d-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Our Mission",
+            "heading_size": "h3",
+            "heading_alignment": "center",
+            "subheading": ""
+          }
+        },
+        "16438188434dae6d1d-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pure Ground Ingredients leads the industry as the top provider of organic, sustainably sourced ingredients – all while empowering farmers and communities around the world.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16438188434dae6d1d-0",
+        "16438188434dae6d1d-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "hero": false,
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
+    },
+    "164512802361beb3e6": {
+      "type": "gallery",
+      "blocks": {
+        "dd313d9b-410f-4d64-b834-7b395de32cd1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_34.jpg",
+            "alt": "Working in agriculture"
+          }
+        },
+        "e4dd4055-4f45-442d-bef5-4dcf4da1bf08": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_35_f5ced321-e512-4c5f-8521-b2df5e57e4f5.jpg",
+            "alt": "Group photo of four people sitting"
+          }
+        },
+        "1687b58f-a5cc-446d-a1c0-afb2a1083e42": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_37.jpg",
+            "alt": "Working in agriculture"
+          }
+        },
+        "c7ac2828-9bf5-4456-b5c7-6d9539487607": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_40_5be62817-6d34-4f97-8a1e-06350b8efba1.jpg",
+            "alt": "Guy holding handful of greens"
+          }
+        },
+        "3af7757f-cd1c-46d8-8f6c-4d27068f7f38": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_38.jpg",
+            "alt": "Working in agriculture"
+          }
+        },
+        "e0d006d9-c5b4-4b8f-8ae2-c855bb2c3788": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_39.jpg",
+            "alt": "Working in agriculture"
+          }
+        },
+        "c2160c49-cb73-4472-ba8b-bedbe1b4d3cd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_36.jpg",
+            "alt": "Working in agriculture"
+          }
+        },
+        "e8180f0a-b172-45b8-9522-b3951ae36b48": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_33.jpg",
+            "alt": "Working in agriculture"
+          }
+        }
+      },
+      "block_order": [
+        "dd313d9b-410f-4d64-b834-7b395de32cd1",
+        "e4dd4055-4f45-442d-bef5-4dcf4da1bf08",
+        "1687b58f-a5cc-446d-a1c0-afb2a1083e42",
+        "c7ac2828-9bf5-4456-b5c7-6d9539487607",
+        "3af7757f-cd1c-46d8-8f6c-4d27068f7f38",
+        "e0d006d9-c5b4-4b8f-8ae2-c855bb2c3788",
+        "c2160c49-cb73-4472-ba8b-bedbe1b4d3cd",
+        "e8180f0a-b172-45b8-9522-b3951ae36b48"
+      ],
+      "settings": {
+        "color_scheme": "cream",
+        "top_spacing": 50,
+        "bottom_spacing": 40
+      }
+    },
+    "16444230281a285739": {
+      "type": "featured-page-link",
+      "settings": {
+        "page_link": "our-principles",
+        "image": "shopify:\/\/shop_images\/About_Components.jpg",
+        "alt": "",
+        "color_scheme": "cream",
+        "top_spacing": 0,
+        "bottom_spacing": 0
+      }
+    },
+    "1660763108b06b283c": {
+      "type": "rich-text",
+      "blocks": {
+        "166076310846034c62-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "B Corp",
+            "heading_size": "h3",
+            "heading_alignment": "center",
+            "subheading": ""
+          }
+        },
+        "166076310846034c62-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pure Ground Ingredients has been a B-Corp since 2019 and was the second B-Corp in the state of Nevada.  In our continued commitment to use our business for doing good, we fully transitioned to becoming a public benefit corporation in 2022.  Certified B Corporations are leaders in the global movement for an inclusive, equitable, and regenerative economy. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "166076310846034c62-0",
+        "166076310846034c62-1"
+      ],
+      "settings": {
+        "color_scheme": "cream",
+        "hero": false,
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
+    },
+    "1660762995e5e236a9": {
+      "type": "rich-text",
+      "blocks": {
+        "166076299566652366-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "We believe in impact",
+            "heading_size": "h3",
+            "heading_alignment": "center",
+            "subheading": "Our vision and principles"
+          }
+        },
+        "166076299566652366-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our innate nature is to take care of each other.  We attract and work with those with the same mentality. <\/p><p>Our team works every single day with a mentality of inclusivity, equality andempowerment. We are dedicated to environmental, economic & social sustainability; improving farmer livelihoods, providing safe & healthy products and building resilient communities. <\/p><p>We believe in using business as a force for good. We are conscious citizens and are proud to be an essential part of providing healthy, healing foods to communities around the globe. <\/p><p> We evolve together: We treat our partners, employees and customers like family. Our goal is to thrive together through practicing ethical business.  <\/p><p>Our actions speak our truth: We respect our natural resources and use them consciously. We exceed industry standards in ensuring organic is organic. Our processing facility is designed for low waste production and conscious energy consumption.  <\/p><p>We listen and respond: We act in service to our customers, traveling the globe to find the best in organic, sustainably sourced ingredients and leading the trends in market demands. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "166076299566652366-0",
+        "166076299566652366-1"
+      ],
+      "settings": {
+        "color_scheme": "cream",
+        "hero": false,
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
+    },
+    "1660763165a6343902": {
+      "type": "gallery",
+      "blocks": {
+        "166076316504cd68af-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_40_5be62817-6d34-4f97-8a1e-06350b8efba1.jpg",
+            "alt": ""
+          }
+        },
+        "166076316504cd68af-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_35_f5ced321-e512-4c5f-8521-b2df5e57e4f5.jpg",
+            "alt": ""
+          }
+        },
+        "7ca159d8-a4ba-4e56-b52f-f400e6e1aaaa": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_39_f4848b9f-53d0-426e-b5c1-ee482a9a0ae5.jpg",
+            "alt": ""
+          }
+        }
+      },
+      "block_order": [
+        "166076316504cd68af-0",
+        "166076316504cd68af-1",
+        "7ca159d8-a4ba-4e56-b52f-f400e6e1aaaa"
+      ],
+      "settings": {
+        "color_scheme": "cream",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
+    }
+  },
+  "order": [
+    "1660762522a095a17b",
+    "1643818843f333eb74",
+    "164512802361beb3e6",
+    "16444230281a285739",
+    "1660763108b06b283c",
+    "1660762995e5e236a9",
+    "1660763165a6343902"
+  ]
+}
