@@ -53,13 +53,16 @@
           <p class="product-card__code p-sm">{{ product.metafields.my_fields.scientific_name }}</p>
         {% endif %}
 
-        <p class="product-card__price p-sm">
-          {% if price_max == price_min %}
-            {{ price_max | money }}
-          {% else %}
-            {{ price_min | money }} - {{price_max | money }}
-          {% endif %}
-        </p>
+        {% comment %}
+          TODO: Uncomment for phase 2
+          <p class="product-card__price p-sm">
+            {% if price_max == price_min %}
+              {{ price_max | money }}
+            {% else %}
+              {{ price_min | money }} - {{price_max | money }}
+            {% endif %}
+          </p>
+        {% endcomment %}
 
         {% comment %}
         <div class="product-card__stars">

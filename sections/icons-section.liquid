@@ -23,24 +23,21 @@
          {%- case block.type -%}
             {%- when 'image' -%}
                {%- if block.settings.icon != blank -%}
-               <img
-                  srcset="{%- if block.settings.icon.width >= 375 -%}{{ block.settings.icon | image_url: width: 375 }} 375w,{%- endif -%}
-                  {%- if block.settings.icon.width >= 550 -%}{{ block.settings.icon | image_url: width: 550 }} 550w,{%- endif -%}
-                  {%- if block.settings.icon.width >= 750 -%}{{ block.settings.icon | image_url: width: 750 }} 750w,{%- endif -%}
-                  {%- if block.settings.icon.width >= 1100 -%}{{ block.settings.icon | image_url: width: 1100 }} 1100w,{%- endif -%}
-                  {%- if block.settings.icon.width >= 1500 -%}{{ block.settings.icon | image_url: width: 1500 }} 1500w,{%- endif -%}
-                  {%- if block.settings.icon.width >= 1780 -%}{{ block.settings.icon | image_url: width: 1780 }} 1780w,{%- endif -%}
-                  {%- if block.settings.icon.width >= 2000 -%}{{ block.settings.icon | image_url: width: 2000 }} 2000w,{%- endif -%}
-                  {%- if block.settings.icon.width >= 3000 -%}{{ block.settings.icon | image_url: width: 3000 }} 3000w,{%- endif -%}
-                  {%- if block.settings.icon.width >= 3840 -%}{{ block.settings.icon | image_url: width: 3840 }} 3840w,{%- endif -%}
-                  ç {{ block.settings.icon.width }}w"
-                  sizes="100vw"
-                  src="{{ block.settings.icon | image_url: width: 1500 }}"
-                  loading="lazy"
+                  <img
+                  srcset="{%- if block.settings.icon.width >= 165 -%}{{ block.settings.icon | img_url: '165x' }} 165w,{%- endif -%}
+                     {%- if block.settings.icon.width >= 360 -%}{{ block.settings.icon | img_url: '360x' }} 360w,{%- endif -%}
+                     {%- if block.settings.icon.width >= 535 -%}{{ block.settings.icon | img_url: '535x' }} 535w,{%- endif -%}
+                     {%- if block.settings.icon.width >= 750 -%}{{ block.settings.icon | img_url: '750x' }} 750w,{%- endif -%}
+                     {%- if block.settings.icon.width >= 1070 -%}{{ block.settings.icon | img_url: '1070x' }} 1070w,{%- endif -%}
+                     {%- if block.settings.icon.width >= 1500 -%}{{ block.settings.icon | img_url: '1500x' }} 1500w,{%- endif -%}
+                     {{ block.settings.icon | img_url: 'master' }} {{ block.settings.icon.width }}w"
+                  src="{{ block.settings.icon | img_url: '1500x' }}"
+                  sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
                   alt="{{ block.settings.icon.alt | escape }}"
+                  loading="lazy"
                   width="{{ block.settings.icon.width }}"
                   height="{{ block.settings.icon.height }}"
-               >
+                  >
                {%- else -%}
                   {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
                {%- endif -%}
@@ -56,23 +53,103 @@
   "tag": "section",
   "class": "section",
    "settings":[
-       {
-         "type":"text",
-         "id":"caption",
-         "label":"Caption",
-         "default": "Caption Here"
+   {
+      "type": "header",
+      "content": "Text Content"
+   },
+   {
+      "type": "text",
+      "id": "caption",
+      "default": "Lorem ipsum",
+      "label": "Caption"
+   },
+   {
+      "type": "text",
+      "id": "heading",
+      "default": "Lorem ipsum dolor sit",
+      "label": "Heading"
+   },
+   {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+         {
+            "value": "h2",
+            "label": "Large"
+         },
+         {
+            "value": "h3",
+            "label": "Medium"
+         }
+         ],
+         "default": "h3",
+         "label": "Heading Size"
       },
       {
-         "type":"text",
-         "id":"heading",
-         "label":"Heading",
-         "default": "Heading Here"
+         "type": "richtext",
+         "id": "text",
+         "default": "<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>",
+         "label": "Description"
       },
       {
-         "type":"textarea",
-         "id":"text",
-         "label":"Text Content",
-         "default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ullamcorper, tortor ut viverra pulvinar, orci tellus elementum odio, et malesuada neque diam vel sem. Curabitur lacus sem, commodo sed lacus id, vulputate tincidunt sapien. Integer nisi libero, venenatis a sapien id, ornare congue diam. Donec mollis justo quis suscipit vulputate. Suspendisse sit amet lobortis felis. Curabitur condimentum justo ac urna mattis, quis elementum magna ullamcorper.</p>"
+         "type": "text",
+         "id": "button_label",
+         "default": "Button label",
+         "label": "Button Label"
+      },
+      {
+         "type": "url",
+         "id": "button_link",
+         "label": "Button Link"
+      },
+      {
+         "type": "header",
+         "content": "Image Content"
+      },  
+      {
+         "type": "image_picker",
+         "id": "image",
+         "label": "Image",
+         "info": "Optional. Placed on the left."
+      },
+      {
+         "type": "text",
+         "id": "alt",
+         "label": "Alt"
+      },
+      {
+         "type": "header",
+         "content": "Settings"
+      },
+      {
+         "type": "select",
+         "id": "layout",
+         "options": [
+            {
+               "value":"three-col",
+               "label":"Three Columns (Default)"
+            },
+            {
+               "value":"row",
+               "label":"Row(s)"
+            },
+            {
+               "value":"two-col",
+               "label":"Two Columns"
+            }
+         ],
+         "default":"row",
+         "label":"Layout"
+      },
+      {
+         "type":"range",
+         "id":"icon_width",
+         "min":50,
+         "max":250,
+         "step":10,
+         "unit":"px",
+         "label":"Icon Height",
+         "default":100
       },
       {
          "type":"select",
