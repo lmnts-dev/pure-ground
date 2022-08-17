@@ -61,14 +61,35 @@
           "settings": {
             "product": "example-product"
           }
+        },
+        "89ef7ddd-5bc4-4148-abd2-6676e87a9288": {
+          "type": "product",
+          "settings": {
+            "product": "example-product"
+          }
+        },
+        "5dd74829-5dc1-433a-8f51-1caa66be2f07": {
+          "type": "product",
+          "settings": {
+            "product": "example-product"
+          }
+        },
+        "cda3e555-5ff3-4cb6-b6fd-5819cff49872": {
+          "type": "product",
+          "settings": {
+            "product": "example-product"
+          }
         }
       },
       "block_order": [
-        "9af9a09f-58ec-436b-aaaa-fa7e7a93dc09"
+        "9af9a09f-58ec-436b-aaaa-fa7e7a93dc09",
+        "89ef7ddd-5bc4-4148-abd2-6676e87a9288",
+        "5dd74829-5dc1-433a-8f51-1caa66be2f07",
+        "cda3e555-5ff3-4cb6-b6fd-5819cff49872"
       ],
       "settings": {
-        "heading": "Heading Here",
-        "button_label": "",
+        "heading": "Featured Organic Ingredients",
+        "button_label": "Shop All Ingredients",
         "button_link": "",
         "button_color": "default",
         "color_scheme": "cream",
