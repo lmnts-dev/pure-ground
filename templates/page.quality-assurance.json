@@ -217,7 +217,7 @@
         "hero": false,
         "color_scheme": "cream",
         "layout": "reversed",
-        "image_style": "square",
+        "image_style": "default",
         "top_spacing": 50,
         "bottom_spacing": 50
       }
