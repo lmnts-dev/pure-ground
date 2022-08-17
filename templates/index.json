@@ -103,7 +103,7 @@
         "herbs": {
           "type": "collection",
           "settings": {
-            "collection": "herbs-roots-and-flowers"
+            "collection": "organic-herbs-roots-and-flowers"
           }
         },
         "chiles": {
