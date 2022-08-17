@@ -90,7 +90,7 @@
       "settings": {
         "heading": "Featured Organic Ingredients",
         "button_label": "Shop All Ingredients",
-        "button_link": "",
+        "button_link": "shopify:\/\/collections",
         "button_color": "default",
         "color_scheme": "cream",
         "top_spacing": 50,
