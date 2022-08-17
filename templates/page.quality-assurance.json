@@ -6,7 +6,7 @@
         "926015a7-2052-4797-9221-7ef8e3b87cd4": {
           "type": "heading",
           "settings": {
-            "heading": "Sustainability, Social & Environmental Impact",
+            "heading": "Quality Assurance & Organic Integrity",
             "heading_size": "h2"
           }
         }
@@ -16,7 +16,7 @@
       ],
       "settings": {
         "text_color": "light",
-        "image": "shopify:\/\/shop_images\/unsplash_8rTwokBwz1w_40d48515-02db-4d2b-8a84-dc1ea84963dd.jpg",
+        "image": "shopify:\/\/shop_images\/unsplash_8rTwokBwz1w_a51066fc-0135-4c05-a084-e5bf04c7bdd5.jpg",
         "alt": "Happy women in field",
         "overlay": 20,
         "hero": true,
@@ -26,38 +26,42 @@
         "color_scheme": "cream",
         "top_spacing": 0,
         "bottom_spacing": 0,
-        "top_internal_spacing": 200,
+        "top_internal_spacing": 250,
         "bottom_internal_spacing": 30
       }
     },
-    "1643818843f333eb74": {
-      "type": "rich-text",
+    "16444193660de6d319": {
+      "type": "split-section",
       "blocks": {
-        "16438188434dae6d1d-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Our commitments, actions, and innovations for people and the planet",
-            "heading_size": "h2",
-            "heading_alignment": "center",
-            "subheading": ""
-          }
-        },
-        "16438188434dae6d1d-1": {
+        "1644419366881604f5-0": {
           "type": "text",
           "settings": {
-            "text": "<p>At Pure Ground Ingredients, we like to think of ourselves as the bridge between farmers  and our customers – and our most important role is being a friend to both. We strive to act in  a conscious manner that yields a positive impact  – to the environment,  grower communities, as well as our own. <\/p>"
+            "text": "<p>We purchase our materials raw and do every bit of processing in our facility in the foothills of the Sierra Nevada. We run our ingredients through the most thorough and comprehensive testing on the market - we test all ingredients for pesticides that others don’t. We control any presence of heavy metals and micro toxins and strive to exceed industry standards across the board. Going far beyond what’s federally required, ourtesting and processing even includes botanical ID and DNA testing, if necessary, to ensure a product is indeed what is you expect. We employ a number of practices that ensure we are providing our customers the absolute best in organic ingredients and a level of quality and consistency that is unsurpassed. We are proud to be a part of a global supply web that is increasing the public awareness of the health benefits of using organic herbs and spices.<\/p>"
+          }
+        },
+        "47338247-06fe-401f-8439-2fdbee1aac55": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Organic Ingredients",
+            "button_link": "shopify:\/\/collections",
+            "button_color": "default"
           }
         }
       },
       "block_order": [
-        "16438188434dae6d1d-0",
-        "16438188434dae6d1d-1"
+        "1644419366881604f5-0",
+        "47338247-06fe-401f-8439-2fdbee1aac55"
       ],
       "settings": {
-        "color_scheme": "cream",
+        "heading": "We stand behind organic for healthier communities",
+        "heading_size": "h4",
+        "image": "shopify:\/\/shop_images\/unsplash_pBwMdofMxtU_928eb7d0-5768-4a73-98fc-3ddd5481da44.jpg",
         "hero": false,
-        "top_spacing": 50,
-        "bottom_spacing": 50
+        "color_scheme": "cream",
+        "layout": "default",
+        "image_style": "square",
+        "top_spacing": 30,
+        "bottom_spacing": 100
       }
     },
     "164442384962d45464": {
@@ -121,77 +125,6 @@
         "bottom_spacing": 50
       }
     },
-    "16444193660de6d319": {
-      "type": "split-section",
-      "blocks": {
-        "1644419366881604f5-0": {
-          "type": "text",
-          "settings": {
-            "text": "<p><strong>Globally Standardized Certifications <br\/><\/strong>Such as Fair Trade, Fair Wilde, Fair for Life and Rainforest Alliance.  <\/p><p><strong>Environmentally Impactful <\/strong><br\/>Ingredients that come from Regenerative Farming Practices & Agroforestry Projects <\/p><p><strong> Socially Impactful <br\/><\/strong>Ingredients that come from sources which are dedicated topromoting social equality, education and living wages. Women’s Co-ops, Co-ops dedicated to education + development and those who promote equality and women’s empowerment.<\/p>"
-          }
-        },
-        "47338247-06fe-401f-8439-2fdbee1aac55": {
-          "type": "button",
-          "settings": {
-            "button_label": "Shop Sustainable Sourced Ingredients",
-            "button_link": "shopify:\/\/collections",
-            "button_color": "default"
-          }
-        }
-      },
-      "block_order": [
-        "1644419366881604f5-0",
-        "47338247-06fe-401f-8439-2fdbee1aac55"
-      ],
-      "settings": {
-        "heading": "Our Sustainably Sourced offering includes ingredients that fall into three tiers:",
-        "heading_size": "h4",
-        "image": "shopify:\/\/shop_images\/2018-08-21_17.54_1_763acc0d-6c05-4663-ba6d-c96a06c29191.jpg",
-        "hero": false,
-        "color_scheme": "cream",
-        "layout": "reversed",
-        "image_style": "square",
-        "top_spacing": 30,
-        "bottom_spacing": 100
-      }
-    },
-    "1660747290beaaaf5d": {
-      "type": "featured-articles",
-      "blocks": {
-        "20254c1e-c139-4b1c-a067-1d245ee149cc": {
-          "type": "article",
-          "settings": {
-            "article": "news\/2019-pioneer-award-winners"
-          }
-        },
-        "d5f9af9e-3a53-4979-81da-209d197de4ad": {
-          "type": "article",
-          "settings": {
-            "article": "news\/2019-pioneer-award-winners"
-          }
-        },
-        "d5f9af9e-3a53-4979-81da-209d197de4ag": {
-          "type": "article",
-          "settings": {
-            "article": "news\/2019-pioneer-award-winners"
-          }
-        }
-      },
-      "block_order": [
-        "20254c1e-c139-4b1c-a067-1d245ee149cc",
-        "d5f9af9e-3a53-4979-81da-209d197de4ad",
-        "d5f9af9e-3a53-4979-81da-209d197de4ag"
-      ],
-      "settings": {
-        "heading": "Sustainability Stories",
-        "button_label": "Button label",
-        "button_link": "",
-        "button_color": "default",
-        "color_scheme": "dark-cream",
-        "top_spacing": 70,
-        "bottom_spacing": 100
-      }
-    },
     "16607471819bf121f0": {
       "type": "featured-page-link",
       "settings": {
@@ -206,11 +139,9 @@
   },
   "order": [
     "166074672815a86e9b",
-    "1643818843f333eb74",
+    "16444193660de6d319",
     "164442384962d45464",
     "1660746979c48fd613",
-    "16444193660de6d319",
-    "1660747290beaaaf5d",
     "16607471819bf121f0"
   ]
 }
