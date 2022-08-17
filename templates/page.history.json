@@ -1,13 +1,33 @@
 {
   "sections": {
-    "1643991355e4feeedb": {
-      "type": "image",
+    "16607598452556c86a": {
+      "type": "content-with-bg-image",
+      "blocks": {
+        "116f642d-f99e-4141-91ed-747acdee3431": {
+          "type": "heading",
+          "settings": {
+            "heading": "Our Story",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "116f642d-f99e-4141-91ed-747acdee3431"
+      ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Group_of_people.jpg",
-        "image_style": "fullwidth",
+        "text_color": "light",
+        "image": "shopify:\/\/shop_images\/unsplash_8rTwokBwz1w_98970e54-267d-478c-a458-2c6754c1763c.jpg",
+        "alt": "Man in sunglasses and hat",
+        "overlay": 0,
+        "hero": true,
+        "fullwidth": true,
+        "accent_color": false,
+        "alignment": "center",
         "color_scheme": "cream",
         "top_spacing": 0,
-        "bottom_spacing": 50
+        "bottom_spacing": 0,
+        "top_internal_spacing": 250,
+        "bottom_internal_spacing": 30
       }
     },
     "1643818843f333eb74": {
@@ -16,10 +36,10 @@
         "16438188434dae6d1d-0": {
           "type": "heading",
           "settings": {
-            "heading": "Our History",
-            "heading_size": "h2",
+            "heading": "How it all began",
+            "heading_size": "h3",
             "heading_alignment": "center",
-            "subheading": "The passion behind the product"
+            "subheading": ""
           }
         },
         "16438188434dae6d1d-1": {
@@ -35,7 +55,7 @@
       ],
       "settings": {
         "color_scheme": "cream",
-        "hero": true,
+        "hero": false,
         "top_spacing": 50,
         "bottom_spacing": 50
       }
@@ -205,6 +225,7 @@
       "settings": {
         "page_link": "sustainability",
         "image": "shopify:\/\/shop_images\/About_Components.png",
+        "alt": "",
         "color_scheme": "cream",
         "top_spacing": 0,
         "bottom_spacing": 0
@@ -212,7 +233,7 @@
     }
   },
   "order": [
-    "1643991355e4feeedb",
+    "16607598452556c86a",
     "1643818843f333eb74",
     "16444193660de6d319",
     "1644419517490faa29",
