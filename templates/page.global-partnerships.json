@@ -1,13 +1,33 @@
 {
   "sections": {
-    "1643991355e4feeedb": {
-      "type": "image",
+    "1660761679c3d72883": {
+      "type": "content-with-bg-image",
+      "blocks": {
+        "05c14c51-95c7-41a0-a647-0b3f0829ebb4": {
+          "type": "heading",
+          "settings": {
+            "heading": "Global Partnerships",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "05c14c51-95c7-41a0-a647-0b3f0829ebb4"
+      ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/landscape_of_trees.jpg",
-        "image_style": "blob-1",
+        "text_color": "light",
+        "image": "shopify:\/\/shop_images\/unsplash_8rTwokBwz1w_dd3c133c-6583-404c-8832-a909b425c9d9.jpg",
+        "alt": "Guys exploring through forrest",
+        "overlay": 20,
+        "hero": true,
+        "fullwidth": true,
+        "accent_color": false,
+        "alignment": "center",
         "color_scheme": "cream",
-        "top_spacing": 50,
-        "bottom_spacing": 30
+        "top_spacing": 0,
+        "bottom_spacing": 0,
+        "top_internal_spacing": 250,
+        "bottom_internal_spacing": 30
       }
     },
     "1643818843f333eb74": {
@@ -17,7 +37,7 @@
           "type": "heading",
           "settings": {
             "heading": "Global Partnerships",
-            "heading_size": "h2",
+            "heading_size": "h3",
             "heading_alignment": "center",
             "subheading": ""
           }
@@ -25,7 +45,7 @@
         "16438188434dae6d1d-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Since our founding, Pure Ground Ingredients has embarked on a number of worldwide sustainability projects to bring greater value to the communities and farmers we work with, while bringing higher-quality ingredients to the marketplace back home. <\/p><p>From establishing new, economically-viable crops for an organic fair-trade growers co-op comprised of 674 families in Nicaragua, to partnering with one of our manufacturers to build a bridge between communities that flooded in Honduras, to establishing sustainable farming education and training in Sri Lanka, we’re constantly on the hunt for opportunities to help our growers and their communities thrive in the face of adversity...which ultimately helps our manufacturers thrive. <\/p><p>We replenish land, invest in communities, develop educational programs, and do everything we can to support sustainable practices, a healthy planet, and happy people. <\/p>"
+            "text": "<p>Since our founding, Pure Ground Ingredients has embarked on a number of worldwidesustainability projects. We bring greater value to the communities and farmers we work with andhigher-quality ingredients to the marketplace back home. From establishing new, economically viable, crops for an organic fair-trade growers co-op comprised of 674 families in Nicaragua, to partnering with one of our manufacturers to build a bridge between communities that flooded in Honduras, to establishing sustainable farming education and training in Sri Lanka, we’re constantly on the hunt for opportunities to help our growers and their communities thrive in the face of adversity...which ultimately helps our manufacturers thrive. We replenish land, invest in communities, develop educational programs, and do everything we can to support sustainable practices, a healthy planet, and happy people.<\/p>"
           }
         }
       },
@@ -36,13 +56,70 @@
       "settings": {
         "color_scheme": "cream",
         "hero": true,
-        "top_spacing": 0,
+        "top_spacing": 100,
         "bottom_spacing": 100
+      }
+    },
+    "1643991355e4feeedb": {
+      "type": "image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/map.png",
+        "image_style": "fullwidth",
+        "color_scheme": "cream",
+        "top_spacing": 50,
+        "bottom_spacing": 30
+      }
+    },
+    "16607619309d5aee3c": {
+      "type": "content-with-bg-image",
+      "blocks": {
+        "51503432-36ac-4f30-93e0-6552ee474e4a": {
+          "type": "caption",
+          "settings": {
+            "caption": "Pure Ground Ingredients"
+          }
+        },
+        "43d5b8d8-7d02-411f-86b5-673557fde7a0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Our organic spices, herbs, vegatables and chiles",
+            "heading_size": "h3"
+          }
+        },
+        "91eee5ba-a49e-4c13-bc4d-9c1c78bb4f0d": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Ingredients",
+            "button_link": "shopify:\/\/collections",
+            "button_color": "default"
+          }
+        }
+      },
+      "block_order": [
+        "51503432-36ac-4f30-93e0-6552ee474e4a",
+        "43d5b8d8-7d02-411f-86b5-673557fde7a0",
+        "91eee5ba-a49e-4c13-bc4d-9c1c78bb4f0d"
+      ],
+      "settings": {
+        "text_color": "light",
+        "alt": "",
+        "overlay": 50,
+        "hero": false,
+        "fullwidth": true,
+        "accent_color": false,
+        "alignment": "center",
+        "color_scheme": "cream",
+        "top_spacing": 0,
+        "bottom_spacing": 0,
+        "top_internal_spacing": 100,
+        "bottom_internal_spacing": 100
       }
     }
   },
   "order": [
+    "1660761679c3d72883",
+    "1643818843f333eb74",
     "1643991355e4feeedb",
-    "1643818843f333eb74"
+    "16607619309d5aee3c"
   ]
 }
