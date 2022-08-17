@@ -159,18 +159,7 @@
         "layout": "reversed",
         "image_style": "square",
         "top_spacing": 30,
-        "bottom_spacing": 50
-      }
-    },
-    "16607471819bf121f0": {
-      "type": "featured-page-link",
-      "settings": {
-        "page_link": "our-values",
-        "image": "shopify:\/\/shop_images\/unsplash_8rTwokBwz1w_c9e99f30-b9ba-43c5-a624-1ddfbd6b771d.jpg",
-        "alt": "Men working on mountainside",
-        "color_scheme": "cream",
-        "top_spacing": 0,
-        "bottom_spacing": 0
+        "bottom_spacing": 100
       }
     },
     "1660747290beaaaf5d": {
@@ -198,9 +187,20 @@
         "button_label": "Button label",
         "button_link": "",
         "button_color": "default",
+        "color_scheme": "dark-cream",
+        "top_spacing": 70,
+        "bottom_spacing": 100
+      }
+    },
+    "16607471819bf121f0": {
+      "type": "featured-page-link",
+      "settings": {
+        "page_link": "our-values",
+        "image": "shopify:\/\/shop_images\/unsplash_8rTwokBwz1w_c9e99f30-b9ba-43c5-a624-1ddfbd6b771d.jpg",
+        "alt": "Men working on mountainside",
         "color_scheme": "cream",
-        "top_spacing": 50,
-        "bottom_spacing": 50
+        "top_spacing": 0,
+        "bottom_spacing": 0
       }
     }
   },
@@ -211,7 +211,7 @@
     "164442384962d45464",
     "1660746979c48fd613",
     "16444193660de6d319",
-    "16607471819bf121f0",
-    "1660747290beaaaf5d"
+    "1660747290beaaaf5d",
+    "16607471819bf121f0"
   ]
 }
