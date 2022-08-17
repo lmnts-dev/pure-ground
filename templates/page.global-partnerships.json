@@ -70,6 +70,82 @@
         "bottom_spacing": 30
       }
     },
+    "16607621197a568045": {
+      "type": "gallery",
+      "blocks": {
+        "16607621196b9dffd3-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_34_2d8a3537-714e-4c44-867b-3ba87fa36b3b.jpg",
+            "alt": "Guy kneeling by crops"
+          }
+        },
+        "16607621196b9dffd3-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_35_f2cf9c0b-c3a3-4c56-92bd-4f8b30c822b6.jpg",
+            "alt": "Road sign in front of landscape with mountains"
+          }
+        },
+        "298fc799-d32f-446b-8569-e410b9036dda": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_37_b90df059-f987-4506-936c-1716c03e4ee7.jpg",
+            "alt": "Group photo"
+          }
+        },
+        "7b26b67a-fde7-436d-8116-1cc1103782f2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_40_1fd604d3-01d5-4ca1-9279-8f76d15cfa80.jpg",
+            "alt": "Young sprouts"
+          }
+        },
+        "2680e191-f3b8-4ec9-ab34-e811c425453b": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_38_5471a066-f608-4f89-b950-37bf6eaf17e5.jpg",
+            "alt": "Women holding bucket of picked greenery"
+          }
+        },
+        "960f77ee-19fd-4f3c-97c1-669742204ba0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_39_f4848b9f-53d0-426e-b5c1-ee482a9a0ae5.jpg",
+            "alt": "Young students posing next to guy"
+          }
+        },
+        "407eea4a-e952-4010-bfc7-2946e1be2b4d": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_36_870935ce-cee7-414f-92fd-67829764bcda.jpg",
+            "alt": "Guy in cowboy hat in front of white car"
+          }
+        },
+        "53334b53-c663-43d1-9a35-3a297f3150b4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_33_7cd34400-d0aa-4d21-aef1-772363d08c0e.jpg",
+            "alt": "Cardamomo sign in front of crops"
+          }
+        }
+      },
+      "block_order": [
+        "16607621196b9dffd3-0",
+        "16607621196b9dffd3-1",
+        "298fc799-d32f-446b-8569-e410b9036dda",
+        "7b26b67a-fde7-436d-8116-1cc1103782f2",
+        "2680e191-f3b8-4ec9-ab34-e811c425453b",
+        "960f77ee-19fd-4f3c-97c1-669742204ba0",
+        "407eea4a-e952-4010-bfc7-2946e1be2b4d",
+        "53334b53-c663-43d1-9a35-3a297f3150b4"
+      ],
+      "settings": {
+        "color_scheme": "cream",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
+    },
     "16607619309d5aee3c": {
       "type": "content-with-bg-image",
       "blocks": {
@@ -121,6 +197,7 @@
     "1660761679c3d72883",
     "1643818843f333eb74",
     "1643991355e4feeedb",
+    "16607621197a568045",
     "16607619309d5aee3c"
   ]
 }
