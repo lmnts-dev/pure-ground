@@ -33,6 +33,13 @@
     "16444193660de6d319": {
       "type": "split-section",
       "blocks": {
+        "85ec64ad-882c-45dd-a692-7c3e7e101116": {
+          "type": "heading",
+          "settings": {
+            "heading": "We stand behind organic for healthier communities",
+            "heading_size": "h4"
+          }
+        },
         "1644419366881604f5-0": {
           "type": "text",
           "settings": {
@@ -49,12 +56,11 @@
         }
       },
       "block_order": [
+        "85ec64ad-882c-45dd-a692-7c3e7e101116",
         "1644419366881604f5-0",
         "47338247-06fe-401f-8439-2fdbee1aac55"
       ],
       "settings": {
-        "heading": "We stand behind organic for healthier communities",
-        "heading_size": "h4",
         "image": "shopify:\/\/shop_images\/unsplash_pBwMdofMxtU_928eb7d0-5768-4a73-98fc-3ddd5481da44.jpg",
         "hero": false,
         "color_scheme": "cream",
@@ -202,8 +208,6 @@
         "1660751375f91befb1-0"
       ],
       "settings": {
-        "heading": "Certificate of Analysis & Heavy Metal Report",
-        "heading_size": "h4",
         "image": "shopify:\/\/shop_images\/2018-08-21_17.54_1_17300c10-0caa-40d8-8766-36b80ce0dbc7.jpg",
         "hero": false,
         "color_scheme": "cream",
