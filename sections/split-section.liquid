@@ -180,20 +180,28 @@
         {
           "type": "text",
           "id": "heading",
-          "default": "Talk about your brand",
+          "default": "Lorem ipsum",
           "label": "Heading"
         },
         {
-          "value": "h4",
-          "label": "Large"
-        },
-        {
-          "value": "h5",
-          "label": "Medium"
-        },
-        {
-          "value": "caption",
-          "label": "Small"
+          "type": "select",
+          "id": "heading_size",
+          "options": [
+            {
+              "value": "h4",
+              "label": "Large"
+            },
+            {
+              "value": "h5",
+              "label": "Medium"
+            },
+            {
+              "value": "caption",
+              "label": "Small"
+            }
+          ],
+          "default": "h5",
+          "label": "Heading Size"
         }
       ]
     },
