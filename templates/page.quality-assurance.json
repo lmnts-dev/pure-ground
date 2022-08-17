@@ -59,7 +59,7 @@
         "hero": false,
         "color_scheme": "cream",
         "layout": "default",
-        "image_style": "square",
+        "image_style": "default",
         "top_spacing": 100,
         "bottom_spacing": 100
       }
