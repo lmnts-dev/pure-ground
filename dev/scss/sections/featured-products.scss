@@ -1,73 +1,65 @@
 .featured-products {
-  &__heading{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__heading {
     text-align: center;
     margin-bottom: calc(var(--sectionHorizontalSpacing) / 6);
   }
 
-  .temp-cart{
-    &__related-products{
-      display: flex;
+  &__container {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    gap: calc(var(--pxSize) / 2);
 
-      .product-card{
-        flex-direction: column;
-        flex: 1;
+    /* TODO, Jose should have put this in product-card file, this looks like it was supposed to be the stacked styles
+    .product-card {
+      flex-direction: column;
+      flex: 1;
 
-        &__price{
-          grid-column: 1 / -1;
+      &__price {
+        grid-column: 1 / -1;
+      }
+
+      &__stars {
+        justify-content: flex-start !important;
+      }
+
+      &__content {
+        padding: 0;
+
+        .btn {
+          display: none;
         }
 
-        &__stars{
-          justify-content: flex-start!important;
-        }
-
-        &__content{
-          padding: 0;
-
-          .btn{
-            display: none;
-          }
-
-          &__info > *{
-            white-space: normal!important;
-          }
-        }
-
-        &__image{
-          display: flex;
-          justify-content: center;
-          overflow: visible;
-          padding-top:0;
-
-          img{
-            position: relative;
-            width: 100%;
-          }
+        &__info > * {
+          white-space: normal !important;
         }
       }
-    }
+
+      &__image {
+        display: flex;
+        justify-content: center;
+        overflow: visible;
+        padding-top: 0;
+
+        img {
+          position: relative;
+          width: 100%;
+        }
+      }
+    } */
   }
 
-  .btn{
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    max-width: 180px;
+  &__btn {
     margin-top: calc(var(--sectionHorizontalSpacing) / 6);
   }
 
   @media screen and (max-width: 676px) {
-    &__heading{
-      margin-bottom: var(--sectionHorizontalSpacing);
-    }
-
-    .temp-cart{
-      &__related-products{
-        flex-direction: column;
-      }
-    }
-    
-    .btn{
-      margin-top: var(--sectionHorizontalSpacing);
+    &__container {
+      flex-direction: column;
     }
   }
 }

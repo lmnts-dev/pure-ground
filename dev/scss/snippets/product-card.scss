@@ -1,17 +1,7 @@
 .product-card {
   --productCardImageRatio: 30%;
-  display: block;
-  padding-right: calc(var(--sectionHorizontalSpacing) / 10);
-  --color-btn: rgba(var(--color-grass));
-
-  &__stars {
-    display: flex;
-    align-items: center;
-
-    span {
-      margin-left: calc(var(--sectionHorizontalSpacing) / 18);
-    }
-  }
+  display: grid;
+  flex: 1;
 
   &__image {
     padding-top: var(--productCardImageRatio);
@@ -43,8 +33,60 @@
     }
   }
 
-  &__reviews{
-    &-number{
+  &__content {
+    &__info {
+      display: grid;
+      gap: 0 calc(var(--pxSize) / 4);
+      grid-template-columns: auto auto;
+
+      > * {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__heading {
+    grid-column: 1 / 2;
+  }
+
+  &__code {
+    grid-column: 2 / 3;
+    text-align: right;
+    opacity: 0.7;
+  }
+
+  &__price {
+    grid-column: 1 / 3;
+  }
+
+  &.__style {
+    &-stacked {
+      --productCardImageRatio: 100%;
+
+      .product-card {
+        &__image {
+          margin-bottom: calc(var(--pxSize) / 3);
+        }
+      }
+    }
+  }
+
+  /*
+  TODO: include Jose's code below, it was th initial styles for the non-stacked version
+
+  &__stars {
+    display: flex;
+    align-items: center;
+
+    span {
+      margin-left: calc(var(--sectionHorizontalSpacing) / 18);
+    }
+  }
+
+
+
+  &__reviews {
+    &-number {
       display: none;
     }
   }
@@ -52,11 +94,11 @@
   &__content {
     padding: calc(var(--pxSize) / 3);
 
-    button{
+    button {
       display: none;
     }
 
-    &__code{
+    &__code {
       display: none;
     }
 
@@ -87,82 +129,80 @@
     }
   }
 
-
-  &.also-like{
+  &.also-like {
     --articleCardImageRatio: 30%;
     display: flex;
-    padding-right: calc(var(--sectionHorizontalSpacing)/4);
+    padding-right: calc(var(--sectionHorizontalSpacing) / 4);
 
-    .product-card{
-      
-      &__image{
+    .product-card {
+      &__image {
         flex: 1;
         min-width: 100px;
       }
 
-      &__reviews{
+      &__reviews {
         display: none;
 
-        &-number{
+        &-number {
           display: block;
           color: var(color-background-alt);
           margin-left: 2px;
         }
       }
 
-      &__stars{
+      &__stars {
         justify-content: flex-end;
-        svg{
+        svg {
           width: 13px;
         }
       }
 
-      &__content{
+      &__content {
         flex: 2;
-        padding-left:0;
+        padding-left: 0;
 
-        &__info{
+        &__info {
           padding: calc(var(--pxSize) / 5);
         }
 
-        button{
+        button {
           width: 100%;
-          margin-top:0;
+          margin-top: 0;
         }
 
-        &__info{
+        &__info {
           display: grid;
-          grid-template-columns: repeat(2,auto);
-          grid-row-gap: calc(var(--pxSize)/5);
+          grid-template-columns: repeat(2, auto);
+          grid-row-gap: calc(var(--pxSize) / 5);
           column-gap: calc(var(--pxSize) * 2);
 
-          > *{
+          > * {
             white-space: nowrap;
           }
         }
 
-        &__heading{
+        &__heading {
           text-transform: uppercase;
           font-size: 1.15rem;
         }
 
-        &__code{
+        &__code {
           display: block;
-          opacity: .5;
+          opacity: 0.5;
           text-align: end;
         }
 
-        p{
+        p {
           margin-bottom: 0;
         }
 
-        button{
+        button {
           display: block;
           grid-column: 1 / -1;
           border-radius: 0;
         }
 
-        > *{
+        > * {
           align-self: center;
         }
       }
@@ -174,29 +214,30 @@
       justify-content: space-between;
     }
 
-    &__content{
-      button{
+    &__content {
+      button {
         grid-column: 1 / -1;
         color: var(--color-btn-txt);
       }
     }
 
-      &.also-like{
-        .product-card{
-          &__content{
-            &__heading{
-              font-size: 1rem;
-            }
-            
-            &__info{
-              column-gap: 0;
+    &.also-like {
+      .product-card {
+        &__content {
+          &__heading {
+            font-size: 1rem;
+          }
 
-              > *{
-                white-space:normal;
-              }
+          &__info {
+            column-gap: 0;
+
+            > * {
+              white-space: normal;
             }
           }
         }
       }
+    }
   }
+  */
 }

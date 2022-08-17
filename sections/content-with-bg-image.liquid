@@ -35,7 +35,7 @@
                <div class="content-with-bg-image__text __article-txt">{{ block.settings.text }}</div>
 
             {%- when 'button' -%}
-                 {% render 'button', button_label: block.settings.button_label, button_url: block.settings.button_url, button_url: block.settings.button_color %}
+                 {% render 'button', class: "content-with-bg-image", button_label: block.settings.button_label, button_link: block.settings.button_link, button_link: block.settings.button_color %}
          {%- endcase -%}
       {%- endfor -%}
 
@@ -245,7 +245,7 @@
         {
           "type": "text",
           "id": "heading",
-          "default": "Talk about your brand",
+          "default": "Lorem ipsum dolor sit",
           "label": "Heading"
         },
         {

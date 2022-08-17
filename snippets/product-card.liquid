@@ -1,34 +1,43 @@
 {% comment %}
-    Renders an product card for a given blog with settings to show a condensed version or not.
+    Renders an product card
 
     Expects:
-    - product: {Object} product object
-    - condensed: {String} The setting changes the layout and items shown on card, accepts nothing ("default"), "condensed", "teaser", or "horizontal"
+    - product: {Object or "default"} product object. When "default", use fake content
+    - style: {String} The setting changes the layout of the card, accepts nothing ("default"), and "stacked"
 
     Usage:
-    {% render 'product-card' product: product, style: "condensed" %}
+    {% render 'product-card' product: product, style: "stacked" %}
 {% endcomment %}
 
-{% assign currentProduct = all_products.example-product %}
-{% assign image = "https://cdn.shopify.com/s/files/1/0562/9486/6967/products/unsplash_pBwMdofMxtU_350x.jpg?v=1646062936" %}
+{% if product == "default" or product.title == undefined %}
+  {% assign url = "/" %}
+  {% assign title = "Product" %}
+  {% assign price_min = "500" %}
+  {% assign price_max = "1000" %}
+{% else %}
+  {% assign url = product.url %}
+  {% assign title = product.title %}
+  {% assign price_min = product.price_min %}
+  {% assign price_max = product.price_max %}
+{% endif %}
 
-  <a href="{{ product.url }}" class="product-card also-like __style-{% if style %}{{style}}{% else %}default{% endif %}">
+  <a href="{{ url }}" class="product-card also-like __style-{% if style %}{{style}}{% else %}default{% endif %}">
     <div class="product-card__image">
-      {% if image %}
+      {% if product.featured_image %}
         <img
-          srcset="{%- if image.src.width >= 165 -%}{{ image.src | img_url: '165x' }} 165w,{%- endif -%}
-            {%- if image.src.width >= 360 -%}{{ image.src | img_url: '360x' }} 360w,{%- endif -%}
-            {%- if image.src.width >= 533 -%}{{ image.src | img_url: '533x' }} 533w,{%- endif -%}
-            {%- if image.src.width >= 720 -%}{{ image.src | img_url: '720x' }} 720w,{%- endif -%}
-            {%- if image.src.width >= 1000 -%}{{ image.src | img_url: '1000x' }} 1000w,{%- endif -%}
-            {%- if image.src.width >= 1500 -%}{{ image.src | img_url: '1500x' }} 1500w,{%- endif -%}
-            {{ image.src | img_url: 'master' }} {{ image.src.width }}w"
-          src="{{ image.src | img_url: '533x' }}"
-          sizes="100vw"
-          alt="{{ image.src.alt | escape }}"
+          srcset="{%- if product.featured_image.src.width >= 165 -%}{{ product.featured_image.src | img_url: '165x' }} 165w,{%- endif -%}
+            {%- if product.featured_image.src.width >= 360 -%}{{ product.featured_image.src | img_url: '360x' }} 360w,{%- endif -%}
+            {%- if product.featured_image.src.width >= 533 -%}{{ product.featured_image.src | img_url: '533x' }} 533w,{%- endif -%}
+            {%- if product.featured_image.src.width >= 720 -%}{{ product.featured_image.src | img_url: '720x' }} 720w,{%- endif -%}
+            {%- if product.featured_image.src.width >= 1000 -%}{{ product.featured_image.src | img_url: '1000x' }} 1000w,{%- endif -%}
+            {%- if product.featured_image.src.width >= 1500 -%}{{ product.featured_image.src | img_url: '1500x' }} 1500w,{%- endif -%}
+            {{ product.featured_image.src | img_url: 'master' }} {{ product.featured_image.src.width }}w"
+          src="{{ product.featured_image.src | img_url: '533x' }}"
+          sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+          alt="{{ product.featured_image.src.alt | escape }}"
           loading="lazy"
-          width="{{ image.width }}"
-          height="{{ image.height }}"
+          width="{{ product.featured_image.width }}"
+          height="{{ product.featured_image.height }}"
         >
       {% else %}
           <div class="product-card__image__placeholder"></div>
@@ -36,11 +45,22 @@
     </div>
     <div class="product-card__content">     
       <div class="product-card__content__info">   
-        <h3 class="product-card__content__heading h5">
-            {{ currentProduct.title }}   
+        <h3 class="product-card__heading caption">
+            {{ title }}   
         </h3>
-        <p class="product-card__content__code p-sm">{{ currentProduct.metafields.my_fields.scientific_name }}</p>
-        <p class="product-card__price p-sm">From $7.99</p>
+        {% if product.metafields.my_fields.scientific_name %}
+          <p class="product-card__code p-sm">{{ product.metafields.my_fields.scientific_name }}</p>
+        {% endif %}
+
+        <p class="product-card__price p-sm">
+          {% if price_max == price_min %}
+            {{ price_max | money }}
+          {% else %}
+            {{ price_min | money }} - {{price_max | money }}
+          {% endif %}
+        </p>
+
+        {% comment %}
         <div class="product-card__stars">
           {% render 'svg-star' %}
           {% render 'svg-star' %}
@@ -48,7 +68,12 @@
           <span class="product-card__reviews p-xs">12 Reviews</span>
           <span class="product-card__reviews-number p-xs">(12)</span>
         </div>
+      {% endcomment %}
       </div>
-      <button class="btn" type="button" class="">Add to Cart</button>
+
+      {% if style != "stacked" %}
+        {% comment %} TODO {% endcomment %}
+        <button class="btn" type="button" class="">Add to Cart</button>
+      {% endif %}
     </div>
   </a>
