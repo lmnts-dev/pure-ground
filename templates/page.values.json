@@ -63,18 +63,18 @@
     "164512802361beb3e6": {
       "type": "gallery",
       "blocks": {
-        "3af7757f-cd1c-46d8-8f6c-4d27068f7f38": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_38.jpg",
-            "alt": "Working in agriculture"
-          }
-        },
         "dd313d9b-410f-4d64-b834-7b395de32cd1": {
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Rectangle_34.jpg",
             "alt": "Working in agriculture"
+          }
+        },
+        "e4dd4055-4f45-442d-bef5-4dcf4da1bf08": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_35_f5ced321-e512-4c5f-8521-b2df5e57e4f5.jpg",
+            "alt": "Group photo of four people sitting"
           }
         },
         "1687b58f-a5cc-446d-a1c0-afb2a1083e42": {
@@ -91,10 +91,10 @@
             "alt": "Guy holding handful of greens"
           }
         },
-        "e8180f0a-b172-45b8-9522-b3951ae36b48": {
+        "3af7757f-cd1c-46d8-8f6c-4d27068f7f38": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_33.jpg",
+            "image": "shopify:\/\/shop_images\/Rectangle_38.jpg",
             "alt": "Working in agriculture"
           }
         },
@@ -112,23 +112,23 @@
             "alt": "Working in agriculture"
           }
         },
-        "e4dd4055-4f45-442d-bef5-4dcf4da1bf08": {
+        "e8180f0a-b172-45b8-9522-b3951ae36b48": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_35_f5ced321-e512-4c5f-8521-b2df5e57e4f5.jpg",
-            "alt": "Group photo of four people sitting"
+            "image": "shopify:\/\/shop_images\/Rectangle_33.jpg",
+            "alt": "Working in agriculture"
           }
         }
       },
       "block_order": [
-        "3af7757f-cd1c-46d8-8f6c-4d27068f7f38",
         "dd313d9b-410f-4d64-b834-7b395de32cd1",
+        "e4dd4055-4f45-442d-bef5-4dcf4da1bf08",
         "1687b58f-a5cc-446d-a1c0-afb2a1083e42",
         "c7ac2828-9bf5-4456-b5c7-6d9539487607",
-        "e8180f0a-b172-45b8-9522-b3951ae36b48",
+        "3af7757f-cd1c-46d8-8f6c-4d27068f7f38",
         "e0d006d9-c5b4-4b8f-8ae2-c855bb2c3788",
         "c2160c49-cb73-4472-ba8b-bedbe1b4d3cd",
-        "e4dd4055-4f45-442d-bef5-4dcf4da1bf08"
+        "e8180f0a-b172-45b8-9522-b3951ae36b48"
       ],
       "settings": {
         "color_scheme": "cream",
