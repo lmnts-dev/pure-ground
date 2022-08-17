@@ -228,7 +228,7 @@
         "16607469781a0891f6-0": {
           "type": "heading",
           "settings": {
-            "heading": "Sustainably Sourced",
+            "heading": "Food Safety, SQF & Our Certifications",
             "heading_size": "h3",
             "heading_alignment": "center",
             "subheading": ""
@@ -237,21 +237,13 @@
         "16607469781a0891f6-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Our ingredients are more than they seem. They are the sum of all therelationships, creativity, labor and life that made them possible. We carefully select our suppliers, auditing and inspecting to ensure each is meeting standards for quality, food safety, positive environmental impact and ethical working conditions. We have been working for over 25 years todevelop our supply chain and offer a wide range of sustainably sourced materials.<\/p>"
-          }
-        },
-        "16607469781a0891f6-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": ""
+            "text": "<p>Pure Ground is committed to food safety and Good Manufacturing Practices are central to our operation. Our manufacturing facilities are certified by NSF\/SQF. Food safety and continuous excellence is insured by frequent audits and inspections.  Per HACCP, All goods go through a NIST certified and FDA approved Gravity detector. Additionally all mills and processing machinery are fitted with industrial strength magnets. Sifting at multiple production steps further insures absolute purity of your ingredients.  All products handled at Pure Ground Ingredients are verified gluten free. Absence of any accidental gluten is confirmed by frequent analysis. Allergens in our warehouse are strictly segregated, marked and handled separately so that non-allergen products remain allergen free.<\/p>"
           }
         }
       },
       "block_order": [
         "16607469781a0891f6-0",
-        "16607469781a0891f6-1",
-        "16607469781a0891f6-2"
+        "16607469781a0891f6-1"
       ],
       "settings": {
         "color_scheme": "cream",
