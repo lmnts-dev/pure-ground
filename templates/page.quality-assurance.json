@@ -421,6 +421,42 @@
         "top_spacing": 50,
         "bottom_spacing": 50
       }
+    },
+    "16608420888c4acfb0": {
+      "type": "bi-column-text-blocks",
+      "blocks": {
+        "16608420885eb16592-0": {
+          "type": "text",
+          "settings": {
+            "heading": "Heading",
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ullamcorper, tortor ut viverra pulvinar, orci tellus elementum odio, et malesuada neque diam vel sem. Curabitur lacus sem, commodo sed lacus id, vulputate tincidunt sapien.<\/p>",
+            "button_label": "Lable",
+            "button_link": "shopify:\/\/pages\/history",
+            "button_color": "dark-cream"
+          }
+        },
+        "16608420885eb16592-1": {
+          "type": "text",
+          "settings": {
+            "heading": "Heading",
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ullamcorper, tortor ut viverra pulvinar, orci tellus elementum odio, et malesuada neque diam vel sem. Curabitur lacus sem, commodo sed lacus id, vulputate tincidunt sapien.<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "button_color": "default"
+          }
+        }
+      },
+      "block_order": [
+        "16608420885eb16592-0",
+        "16608420885eb16592-1"
+      ],
+      "settings": {
+        "heading": "Heading",
+        "subheading": "Subhead",
+        "color_scheme": "cream",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
     }
   },
   "order": [
@@ -432,6 +468,7 @@
     "1660746979c48fd613",
     "16607471819bf121f0",
     "16607514865516138c",
-    "16608418622ecf558a"
+    "16608418622ecf558a",
+    "16608420888c4acfb0"
   ]
 }
