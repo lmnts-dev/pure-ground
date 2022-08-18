@@ -2,46 +2,67 @@
     #Icons-section-{{ section.id }} {
       --topSpacingRatio: {{section.settings.top_spacing}} / 100;
       --bottomSpacingRatio: {{section.settings.bottom_spacing}} / 100;
+      --iconHeight: {{section.settings.icon_height}}px;
     }
  {% endstyle %}
 
-<div id="Icons-section-{{ section.id }}" class="icons-section color-{{section.settings.color_scheme}}"  
+<div id="Icons-section-{{ section.id }}" class="icons-section color-{{section.settings.color_scheme}} {% if section.settings.image != blank %}__has-image{% endif %}"  
 >
-   <div class="icons-section__text">
-      {% if section.settings.caption %}
-         <span class="icons-section__text__caption">{{ section.settings.caption }}</span>
-      {% endif %}
-      {% if section.settings.heading %}
-         <h2 class="icons-section__text__heading">{{ section.settings.heading }}</h2>
-      {% endif %}
-      {% if section.settings.text %}
-         <p class="icons-section__text__text">{{ section.settings.text }}</p>
-      {% endif %}
-   </div>
-   <div>
+   {%- if section.settings.image != blank -%}
+      <div class="icons-section__image">
+         {% render 'next-gen-img', image: section.settings.image, alt: section.settings.alt %}
+      </div>
+   {%- endif -%}
+   
+
+   {% if section.settings.button_link and section.settings.button_label or section.settings.caption or section.settings.heading or section.settings.subheading or section.settings.text %}
+      <div class="icons-section__text">
+         {% if section.settings.caption %}
+            <span class="icons-section__text__caption">{{ section.settings.caption }}</span>
+         {% endif %}
+         {% if section.settings.heading %}
+            <h2 class="icons-section__text__heading">{{ section.settings.heading }}</h2>
+         {% endif %}
+         {% if section.settings.subheading %}
+            <h3 class="icons-section__text__subheading h5">{{ section.settings.subheading }}</h3>
+         {% endif %}
+         {% if section.settings.text %}
+            <p class="icons-section__text__text">{{ section.settings.text }}</p>
+         {% endif %}
+
+         {% render 'button', class: "icons-section", button_label: section.settings.button_label, button_link: section.settings.button_link %}
+      </div>
+   {% endif %}
+
+   <div class="icons-section__icons __layout-{% if section.settings.layout %}{{ section.settings.layout }}{% else %}default{% endif%}">
       {%- for block in section.blocks -%}
          {%- case block.type -%}
             {%- when 'image' -%}
-               {%- if block.settings.icon != blank -%}
-                  <img
-                  srcset="{%- if block.settings.icon.width >= 165 -%}{{ block.settings.icon | img_url: '165x' }} 165w,{%- endif -%}
-                     {%- if block.settings.icon.width >= 360 -%}{{ block.settings.icon | img_url: '360x' }} 360w,{%- endif -%}
-                     {%- if block.settings.icon.width >= 535 -%}{{ block.settings.icon | img_url: '535x' }} 535w,{%- endif -%}
-                     {%- if block.settings.icon.width >= 750 -%}{{ block.settings.icon | img_url: '750x' }} 750w,{%- endif -%}
-                     {%- if block.settings.icon.width >= 1070 -%}{{ block.settings.icon | img_url: '1070x' }} 1070w,{%- endif -%}
-                     {%- if block.settings.icon.width >= 1500 -%}{{ block.settings.icon | img_url: '1500x' }} 1500w,{%- endif -%}
-                     {{ block.settings.icon | img_url: 'master' }} {{ block.settings.icon.width }}w"
-                  src="{{ block.settings.icon | img_url: '1500x' }}"
-                  sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
-                  alt="{{ block.settings.icon.alt | escape }}"
-                  loading="lazy"
-                  width="{{ block.settings.icon.width }}"
-                  height="{{ block.settings.icon.height }}"
-                  >
-               {%- else -%}
-                  {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
-               {%- endif -%}
-               <p>{{block.settings.text }}</p>
+               <div class="icons-section__icons__icon">
+                  {%- if block.settings.icon != blank -%}
+                     <img
+                     srcset="{%- if block.settings.icon.width >= 165 -%}{{ block.settings.icon | img_url: '165x' }} 165w,{%- endif -%}
+                        {%- if block.settings.icon.width >= 360 -%}{{ block.settings.icon | img_url: '360x' }} 360w,{%- endif -%}
+                        {%- if block.settings.icon.width >= 535 -%}{{ block.settings.icon | img_url: '535x' }} 535w,{%- endif -%}
+                        {%- if block.settings.icon.width >= 750 -%}{{ block.settings.icon | img_url: '750x' }} 750w,{%- endif -%}
+                        {%- if block.settings.icon.width >= 1070 -%}{{ block.settings.icon | img_url: '1070x' }} 1070w,{%- endif -%}
+                        {%- if block.settings.icon.width >= 1500 -%}{{ block.settings.icon | img_url: '1500x' }} 1500w,{%- endif -%}
+                        {{ block.settings.icon | img_url: 'master' }} {{ block.settings.icon.width }}w"
+                     src="{{ block.settings.icon | img_url: '1500x' }}"
+                     sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+                     alt="{{ block.settings.icon.alt | escape }}"
+                     loading="lazy"
+                     width="{{ block.settings.icon.width }}"
+                     height="{{ block.settings.icon.height }}"
+                     >
+                  {%- else -%}
+                     {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                  {%- endif -%}
+
+                  {% if block.settings.text %}
+                     <p class="p-sm">{{block.settings.text }}</p>
+                  {% endif %}
+               </div>         
          {%- endcase -%}
       {%- endfor -%}
    </div>
@@ -60,14 +81,17 @@
    {
       "type": "text",
       "id": "caption",
-      "default": "Lorem ipsum",
       "label": "Caption"
    },
    {
       "type": "text",
       "id": "heading",
-      "default": "Lorem ipsum dolor sit",
       "label": "Heading"
+   },
+   {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading"
    },
    {
       "type": "select",
@@ -88,7 +112,6 @@
       {
          "type": "richtext",
          "id": "text",
-         "default": "<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>",
          "label": "Description"
       },
       {
@@ -143,7 +166,7 @@
       },
       {
          "type":"range",
-         "id":"icon_width",
+         "id":"icon_height",
          "min":50,
          "max":250,
          "step":10,

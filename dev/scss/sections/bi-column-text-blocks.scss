@@ -1,47 +1,19 @@
 .bi-column-text-blocks {
+  padding: calc(var(--sectionVerticalSpacing) / 3) 0;
   display: flex;
+  flex-direction: column;
   gap: var(--pxSize);
 
-  &__image {
-    flex: 1;
-    position: relative;
-
-    img {
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: calc(100% + var(--sectionHorizontalSpacing));
-      height: 100%;
-      object-fit: cover;
+  &__headings {
+    &__heading {
+      color: var(--color-accent);
     }
   }
 
-  &__text {
-    flex: 3;
-    padding: calc(var(--sectionVerticalSpacing) / 3) 0;
+  &__text-blocks {
     display: flex;
-    flex-direction: column;
-    gap: var(--pxSize);
-
-    &__headings {
-      &__heading {
-        color: var(--color-accent);
-      }
-    }
-
-    &__blocks,
-    &__icons {
-      display: flex;
-      gap: calc(var(--pxSize) / 2);
-      flex-wrap: wrap;
-    }
-  }
-
-  &__icon {
-    img {
-      height: calc(var(--pxSize) * 1.5);
-      width: auto;
-    }
+    gap: calc(var(--pxSize) / 2);
+    flex-wrap: wrap;
   }
 
   &__block {
@@ -49,21 +21,8 @@
   }
 
   @media screen and (max-width: 676px) {
-    flex-direction: column;
-
-    &__text {
-      &__blocks {
-        flex-direction: column;
-      }
-    }
-
-    &__image {
-      padding-top: calc(9 / 16 * 100%);
-
-      img {
-        width: 100vw;
-        margin-right: calc(var(--sectionHorizontalSpacing) * -1);
-      }
+    &__text-blocks {
+      flex-direction: column;
     }
 
     &__block {
