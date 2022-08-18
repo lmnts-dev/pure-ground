@@ -45,6 +45,7 @@
         "overlay": 0,
         "hero": true,
         "fullwidth": true,
+        "accent_color": false,
         "alignment": "left",
         "color_scheme": "cream",
         "top_spacing": 0,
@@ -277,6 +278,7 @@
         "overlay": 20,
         "hero": false,
         "fullwidth": true,
+        "accent_color": false,
         "alignment": "center",
         "color_scheme": "cream",
         "top_spacing": 0,
@@ -288,6 +290,15 @@
     "16450418065fdb6a59": {
       "type": "content-slider",
       "blocks": {
+        "b02402c1-f3cf-4b34-babb-b5b5a71c5cad": {
+          "type": "slide",
+          "settings": {
+            "text": "We are very thankful to be working with PGI for over 7 years and hope to continue to do so long into the future.  We take comfort in working with a company that shares our same values and integrity when supplying only the best quality products in the world.  Working with PGI has been such a great experience that we like to think of PGI not only as our clients but our friends as well and wish them great success in the future to come.",
+            "author": "Daniel Peppercorn, Traditionally Medicinals",
+            "image": "shopify:\/\/shop_images\/unsplash_EAt30ojfzOI.jpg",
+            "alt": "Rolling hills landscape"
+          }
+        },
         "596920b0-a7be-45ab-8351-95b2e717da75": {
           "type": "slide",
           "settings": {
@@ -295,15 +306,6 @@
             "author": "",
             "image": "shopify:\/\/shop_images\/unsplash_IQVFVH0ajag.jpg",
             "alt": "Rows of produce in field"
-          }
-        },
-        "b02402c1-f3cf-4b34-babb-b5b5a71c5cad": {
-          "type": "slide",
-          "settings": {
-            "text": "\"You guys are the best and I appreciate the heck out of you.  The Pure Ground Ingredients team is fast, friendly and an overall pleasure to work with. Samples arrive within days of a request and the quality is excellent. I’m grateful to have them as a resource.\"",
-            "author": "Daniel Peppercorn, Traditionally Medicinals",
-            "image": "shopify:\/\/shop_images\/unsplash_EAt30ojfzOI.jpg",
-            "alt": "Rolling hills landscape"
           }
         },
         "bbb86467-9856-4aa5-a40e-826958f624c9": {
@@ -326,8 +328,8 @@
         }
       },
       "block_order": [
-        "596920b0-a7be-45ab-8351-95b2e717da75",
         "b02402c1-f3cf-4b34-babb-b5b5a71c5cad",
+        "596920b0-a7be-45ab-8351-95b2e717da75",
         "bbb86467-9856-4aa5-a40e-826958f624c9",
         "46e8aee6-c855-431e-8386-356dca1e1314"
       ],
