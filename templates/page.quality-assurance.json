@@ -18,6 +18,7 @@
         "alt": "Happy women in field",
         "overlay": 20,
         "hero": true,
+        "nav_color": true,
         "fullwidth": true,
         "accent_color": false,
         "alignment": "center",

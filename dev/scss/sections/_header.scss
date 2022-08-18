@@ -9,6 +9,7 @@
   inset: 0px 0px auto 0px;
   width: 100%;
   z-index: 999;
+  color: var(--color-foreground);
 
   // We have two navigation types, this one displays on scroll up
   &.__style-on-scroll {
