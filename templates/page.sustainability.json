@@ -11,10 +11,12 @@
           }
         }
       },
-      "block_order": ["926015a7-2052-4797-9221-7ef8e3b87cd4"],
+      "block_order": [
+        "926015a7-2052-4797-9221-7ef8e3b87cd4"
+      ],
       "settings": {
         "text_color": "light",
-        "image": "shopify://shop_images/unsplash_8rTwokBwz1w_40d48515-02db-4d2b-8a84-dc1ea84963dd.jpg",
+        "image": "shopify:\/\/shop_images\/unsplash_8rTwokBwz1w_40d48515-02db-4d2b-8a84-dc1ea84963dd.jpg",
         "alt": "Happy women in field",
         "overlay": 20,
         "hero": true,
@@ -43,11 +45,14 @@
         "16438188434dae6d1d-1": {
           "type": "text",
           "settings": {
-            "text": "<p>At Pure Ground Ingredients, we like to think of ourselves as the bridge between farmers  and our customers – and our most important role is being a friend to both. We strive to act in  a conscious manner that yields a positive impact  – to the environment,  grower communities, as well as our own. </p>"
+            "text": "<p>At Pure Ground Ingredients, we like to think of ourselves as the bridge between farmers  and our customers – and our most important role is being a friend to both. We strive to act in  a conscious manner that yields a positive impact  – to the environment,  grower communities, as well as our own. <\/p>"
           }
         }
       },
-      "block_order": ["16438188434dae6d1d-0", "16438188434dae6d1d-1"],
+      "block_order": [
+        "16438188434dae6d1d-0",
+        "16438188434dae6d1d-1"
+      ],
       "settings": {
         "color_scheme": "cream",
         "hero": false,
@@ -68,7 +73,9 @@
           }
         }
       },
-      "block_order": ["164442384920551cc7-0"],
+      "block_order": [
+        "164442384920551cc7-0"
+      ],
       "settings": {
         "color_scheme": "cream",
         "hero": false,
@@ -91,7 +98,7 @@
         "16607469781a0891f6-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Our ingredients are more than they seem. They are the sum of all therelationships, creativity, labor and life that made them possible. We carefully select our suppliers, auditing and inspecting to ensure each is meeting standards for quality, food safety, positive environmental impact and ethical working conditions. We have been working for over 25 years todevelop our supply chain and offer a wide range of sustainably sourced materials.</p>"
+            "text": "<p>Our ingredients are more than they seem. They are the sum of all therelationships, creativity, labor and life that made them possible. We carefully select our suppliers, auditing and inspecting to ensure each is meeting standards for quality, food safety, positive environmental impact and ethical working conditions. We have been working for over 25 years todevelop our supply chain and offer a wide range of sustainably sourced materials.<\/p>"
           }
         },
         "16607469781a0891f6-2": {
@@ -127,14 +134,14 @@
         "1644419366881604f5-0": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Globally Standardized Certifications <br/></strong>Such as Fair Trade, Fair Wilde, Fair for Life and Rainforest Alliance.  </p><p><strong>Environmentally Impactful </strong><br/>Ingredients that come from Regenerative Farming Practices & Agroforestry Projects </p><p><strong> Socially Impactful <br/></strong>Ingredients that come from sources which are dedicated topromoting social equality, education and living wages. Women’s Co-ops, Co-ops dedicated to education + development and those who promote equality and women’s empowerment.</p>"
+            "text": "<p><strong>Globally Standardized Certifications <br\/><\/strong>Such as Fair Trade, Fair Wilde, Fair for Life and Rainforest Alliance.  <\/p><p><strong>Environmentally Impactful <\/strong><br\/>Ingredients that come from Regenerative Farming Practices & Agroforestry Projects <\/p><p><strong> Socially Impactful <br\/><\/strong>Ingredients that come from sources which are dedicated topromoting social equality, education and living wages. Women’s Co-ops, Co-ops dedicated to education + development and those who promote equality and women’s empowerment.<\/p>"
           }
         },
         "47338247-06fe-401f-8439-2fdbee1aac55": {
           "type": "button",
           "settings": {
             "button_label": "Shop Sustainable Sourced Ingredients",
-            "button_link": "shopify://collections",
+            "button_link": "shopify:\/\/collections",
             "button_color": "default"
           }
         }
@@ -145,7 +152,7 @@
         "47338247-06fe-401f-8439-2fdbee1aac55"
       ],
       "settings": {
-        "image": "shopify://shop_images/2018-08-21_17.54_1_763acc0d-6c05-4663-ba6d-c96a06c29191.jpg",
+        "image": "shopify:\/\/shop_images\/2018-08-21_17.54_1_763acc0d-6c05-4663-ba6d-c96a06c29191.jpg",
         "hero": false,
         "color_scheme": "cream",
         "layout": "reversed",
@@ -160,19 +167,19 @@
         "20254c1e-c139-4b1c-a067-1d245ee149cc": {
           "type": "article",
           "settings": {
-            "article": "news/2019-pioneer-award-winners"
+            "article": "news\/2019-pioneer-award-winners"
           }
         },
         "d5f9af9e-3a53-4979-81da-209d197de4ad": {
           "type": "article",
           "settings": {
-            "article": "news/2019-pioneer-award-winners"
+            "article": "news\/2019-pioneer-award-winners"
           }
         },
         "d5f9af9e-3a53-4979-81da-209d197de4ag": {
           "type": "article",
           "settings": {
-            "article": "news/2019-pioneer-award-winners"
+            "article": "news\/2019-pioneer-award-winners"
           }
         }
       },
@@ -195,7 +202,7 @@
       "type": "featured-page-link",
       "settings": {
         "page_link": "our-values",
-        "image": "shopify://shop_images/unsplash_8rTwokBwz1w_c9e99f30-b9ba-43c5-a624-1ddfbd6b771d.jpg",
+        "image": "shopify:\/\/shop_images\/unsplash_8rTwokBwz1w_c9e99f30-b9ba-43c5-a624-1ddfbd6b771d.jpg",
         "alt": "Men working on mountainside",
         "color_scheme": "cream",
         "top_spacing": 0,
@@ -208,49 +215,49 @@
         "b105ffa2-dfb9-4531-a845-32a3385a30ad": {
           "type": "image",
           "settings": {
-            "icon": "shopify://shop_images/Screen_Shot_2022-08-18_at_11.56.02_AM.png",
+            "icon": "shopify:\/\/shop_images\/Screen_Shot_2022-08-18_at_11.56.02_AM.png",
             "text": ""
           }
         },
         "98df735d-1722-4aeb-95d0-f899509d2edf": {
           "type": "image",
           "settings": {
-            "icon": "shopify://shop_images/Screen_Shot_2022-08-18_at_11.56.11_AM.png",
+            "icon": "shopify:\/\/shop_images\/Screen_Shot_2022-08-18_at_11.56.11_AM.png",
             "text": ""
           }
         },
         "c7246dc6-31f7-4d1c-b9b2-1aaa23ba7775": {
           "type": "image",
           "settings": {
-            "icon": "shopify://shop_images/Screen_Shot_2022-08-18_at_11.56.20_AM.png",
+            "icon": "shopify:\/\/shop_images\/Screen_Shot_2022-08-18_at_11.56.20_AM.png",
             "text": ""
           }
         },
         "6d4570e6-ce43-46b5-a796-a1fbf29a6e2a": {
           "type": "image",
           "settings": {
-            "icon": "shopify://shop_images/Screen_Shot_2022-08-18_at_11.56.31_AM.png",
+            "icon": "shopify:\/\/shop_images\/Screen_Shot_2022-08-18_at_11.56.31_AM.png",
             "text": ""
           }
         },
         "88ccab24-e7fb-46cc-b262-4efd3294dea2": {
           "type": "image",
           "settings": {
-            "icon": "shopify://shop_images/Screen_Shot_2022-08-18_at_11.56.42_AM.png",
+            "icon": "shopify:\/\/shop_images\/Screen_Shot_2022-08-18_at_11.56.42_AM.png",
             "text": ""
           }
         },
         "a5e7ffe2-ca8e-49c8-bf10-6cc79e840993": {
           "type": "image",
           "settings": {
-            "icon": "shopify://shop_images/Screen_Shot_2022-08-18_at_11.56.56_AM.png",
+            "icon": "shopify:\/\/shop_images\/Screen_Shot_2022-08-18_at_11.56.56_AM.png",
             "text": ""
           }
         },
         "ba4994aa-3972-4aa2-884e-998ec85c0d93": {
           "type": "image",
           "settings": {
-            "icon": "shopify://shop_images/Screen_Shot_2022-08-18_at_11.57.33_AM.png",
+            "icon": "shopify:\/\/shop_images\/Screen_Shot_2022-08-18_at_11.57.33_AM.png",
             "text": ""
           }
         }
@@ -270,7 +277,7 @@
         "subheading": "",
         "heading_size": "h3",
         "accent_color": false,
-        "text": "<p>We believe in self responsibility and collective action. We are proud to havealigned with the UN’s integral approach and call to action to end poverty, protect the planet, and ensure that by 2030 all people enjoy peace and prosperity. </p><p>We know we can all work together to protect the planet, end poverty and create a happier, healthier world.  </p>",
+        "text": "<p>We believe in self responsibility and collective action. We are proud to havealigned with the UN’s integral approach and call to action to end poverty, protect the planet, and ensure that by 2030 all people enjoy peace and prosperity. <\/p><p>We know we can all work together to protect the planet, end poverty and create a happier, healthier world.  <\/p>",
         "button_label": "Button label",
         "button_link": "",
         "alt": "",
