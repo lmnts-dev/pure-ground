@@ -226,47 +226,6 @@
         "bottom_spacing": 50
       }
     },
-    "1660746979c48fd613": {
-      "type": "rich-text",
-      "blocks": {
-        "16607469781a0891f6-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Food Safety, SQF & Our Certifications",
-            "heading_size": "h3",
-            "heading_alignment": "center",
-            "subheading": ""
-          }
-        },
-        "16607469781a0891f6-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pure Ground is committed to food safety and Good Manufacturing Practices are central to our operation. Our manufacturing facilities are certified by NSF\/SQF. Food safety and continuous excellence is insured by frequent audits and inspections.  Per HACCP, All goods go through a NIST certified and FDA approved Gravity detector. Additionally all mills and processing machinery are fitted with industrial strength magnets. Sifting at multiple production steps further insures absolute purity of your ingredients.  All products handled at Pure Ground Ingredients are verified gluten free. Absence of any accidental gluten is confirmed by frequent analysis. Allergens in our warehouse are strictly segregated, marked and handled separately so that non-allergen products remain allergen free.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "16607469781a0891f6-0",
-        "16607469781a0891f6-1"
-      ],
-      "settings": {
-        "color_scheme": "cream",
-        "hero": false,
-        "top_spacing": 50,
-        "bottom_spacing": 50
-      }
-    },
-    "16607471819bf121f0": {
-      "type": "featured-page-link",
-      "settings": {
-        "page_link": "our-values",
-        "image": "shopify:\/\/shop_images\/unsplash_8rTwokBwz1w_c9e99f30-b9ba-43c5-a624-1ddfbd6b771d.jpg",
-        "alt": "Men working on mountainside",
-        "color_scheme": "cream",
-        "top_spacing": 0,
-        "bottom_spacing": 0
-      }
-    },
     "16607514865516138c": {
       "type": "icons-section",
       "blocks": {
@@ -344,6 +303,17 @@
         "color_scheme": "cream",
         "top_spacing": 50,
         "bottom_spacing": 50
+      }
+    },
+    "16607471819bf121f0": {
+      "type": "featured-page-link",
+      "settings": {
+        "page_link": "our-values",
+        "image": "shopify:\/\/shop_images\/unsplash_8rTwokBwz1w_c9e99f30-b9ba-43c5-a624-1ddfbd6b771d.jpg",
+        "alt": "Men working on mountainside",
+        "color_scheme": "cream",
+        "top_spacing": 0,
+        "bottom_spacing": 0
       }
     },
     "16608418622ecf558a": {
@@ -424,42 +394,6 @@
         "top_spacing": 50,
         "bottom_spacing": 50
       }
-    },
-    "16608420888c4acfb0": {
-      "type": "bi-column-text-blocks",
-      "blocks": {
-        "16608420885eb16592-0": {
-          "type": "text",
-          "settings": {
-            "heading": "Heading",
-            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ullamcorper, tortor ut viverra pulvinar, orci tellus elementum odio, et malesuada neque diam vel sem. Curabitur lacus sem, commodo sed lacus id, vulputate tincidunt sapien.<\/p>",
-            "button_label": "Lable",
-            "button_link": "shopify:\/\/pages\/history",
-            "button_color": "dark-cream"
-          }
-        },
-        "16608420885eb16592-1": {
-          "type": "text",
-          "settings": {
-            "heading": "Heading",
-            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ullamcorper, tortor ut viverra pulvinar, orci tellus elementum odio, et malesuada neque diam vel sem. Curabitur lacus sem, commodo sed lacus id, vulputate tincidunt sapien.<\/p>",
-            "button_label": "",
-            "button_link": "",
-            "button_color": "default"
-          }
-        }
-      },
-      "block_order": [
-        "16608420885eb16592-0",
-        "16608420885eb16592-1"
-      ],
-      "settings": {
-        "heading": "Heading",
-        "subheading": "Subhead",
-        "color_scheme": "cream",
-        "top_spacing": 50,
-        "bottom_spacing": 50
-      }
     }
   },
   "order": [
@@ -468,10 +402,8 @@
     "164442384962d45464",
     "1660751203d847bc7d",
     "1660751375c6d45d9c",
-    "1660746979c48fd613",
-    "16607471819bf121f0",
     "16607514865516138c",
-    "16608418622ecf558a",
-    "16608420888c4acfb0"
+    "16607471819bf121f0",
+    "16608418622ecf558a"
   ]
 }
