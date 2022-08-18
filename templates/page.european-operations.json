@@ -5,6 +5,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/landscape_of_trees.jpg",
         "image_style": "blob-1",
+        "nav_color": false,
         "color_scheme": "cream",
         "top_spacing": 50,
         "bottom_spacing": 30
@@ -16,22 +17,15 @@
         "16438188434dae6d1d-0": {
           "type": "heading",
           "settings": {
-            "heading": "EU\/Signe",
+            "heading": "European Operations",
             "heading_size": "h2",
             "heading_alignment": "center",
-            "subheading": "Global Extension of PGI"
-          }
-        },
-        "16438188434dae6d1d-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Signe BV is the European sister company to Pure Ground Ingredients in the US, offering a full range of certified organic and fair trade botanicals, culinary herbs and spices to our customers from our convenient location in the Netherlands.<\/p>"
+            "subheading": ""
           }
         }
       },
       "block_order": [
-        "16438188434dae6d1d-0",
-        "16438188434dae6d1d-1"
+        "16438188434dae6d1d-0"
       ],
       "settings": {
         "color_scheme": "cream",
@@ -46,16 +40,16 @@
         "1647889083c803a6f3-0": {
           "type": "heading",
           "settings": {
-            "heading": "",
+            "heading": "Signe",
             "heading_size": "h3",
             "heading_alignment": "center",
-            "subheading": "Verification & Testing"
+            "subheading": ""
           }
         },
         "1647889083c803a6f3-1": {
           "type": "text",
           "settings": {
-            "text": "<p>In compliance with organic European and German\/BNN standards, Signe BV provides organic and fair trade ingredient after verification and rigorous testing for pesticides including Glyphosate, micros, heavy metals, PA’s, and other parameters as required. Signe BV is certified organic by Skal.<\/p><p>From Holland we offer all organic ingredients treated and processed to your specs; including steam sterilization, milling & granulation, blending and roasting services as needed.<\/p><p>We also use our European facilities to aggregate shipments to lower our carbon emissions. Signe BV is a manifestation of the international commitment of Pure Ground Ingredients, USA and further establishes us as a global organic innovator.<\/p>"
+            "text": "<p>Signe BV is the European sister company to Pure Ground Ingredients in the US, offering a full range of certified organic and fair trade botanicals, culinary herbs and spices to our European customers from our convenient location in the Netherlands.<\/p>"
           }
         }
       },
@@ -67,13 +61,84 @@
         "color_scheme": "cream",
         "hero": false,
         "top_spacing": 30,
-        "bottom_spacing": 60
+        "bottom_spacing": 10
+      }
+    },
+    "166085793650de6697": {
+      "type": "icons-section",
+      "blocks": {
+        "d1fce771-0b78-4608-8a28-3e1886b91277": {
+          "type": "image",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Group_262_bf59150e-8775-43a3-8ddc-0bb83412bfed.png",
+            "text": "Signe BV"
+          }
+        },
+        "7273911c-0d3d-4ed5-9142-21662a3febf9": {
+          "type": "image",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Group_259.png",
+            "text": "Skal Biocontrole (EOCC) Certified"
+          }
+        }
+      },
+      "block_order": [
+        "d1fce771-0b78-4608-8a28-3e1886b91277",
+        "7273911c-0d3d-4ed5-9142-21662a3febf9"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "",
+        "subheading": "",
+        "heading_size": "h3",
+        "accent_color": false,
+        "text": "",
+        "button_label": "Button label",
+        "button_link": "",
+        "alt": "",
+        "layout": "three-col",
+        "icon_height": 100,
+        "color_scheme": "cream",
+        "top_spacing": 0,
+        "bottom_spacing": 50
+      }
+    },
+    "16608580925f191cc1": {
+      "type": "rich-text",
+      "blocks": {
+        "166085809231b77b18-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Verification & Testing",
+            "heading_size": "h3",
+            "heading_alignment": "center",
+            "subheading": ""
+          }
+        },
+        "166085809231b77b18-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>In compliance with organic European and German\/BNN standards, Signe BV provides every organic and fair trade ingredient after verification and rigorous testing for pesticides including Glyphosate, micros, heavy metals, PA’s, and other parameters as required. Signe BV is certified organic by Skal.<\/p><p>From Holland we offer all organic ingredients treated and processed to your specs; including steam sterilization, milling & granulation, blending and roasting services as needed.<\/p><p>Signe BV is a manifestation of the international commitment of Pure Ground Ingredients, USA and further establishes us as a global organic innovator.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "166085809231b77b18-0",
+        "166085809231b77b18-1"
+      ],
+      "settings": {
+        "color_scheme": "cream",
+        "hero": false,
+        "top_spacing": 0,
+        "bottom_spacing": 100
       }
     }
   },
   "order": [
     "1643991355e4feeedb",
     "1643818843f333eb74",
-    "164788908369f4af3d"
+    "164788908369f4af3d",
+    "166085793650de6697",
+    "16608580925f191cc1"
   ]
 }
