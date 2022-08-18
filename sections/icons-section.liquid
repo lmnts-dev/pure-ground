@@ -15,13 +15,13 @@
    {%- endif -%}
    
 
-   {% if section.settings.button_link and section.settings.button_label or section.settings.caption or section.settings.heading or section.settings.subheading or section.settings.text %}
+   {% if section.settings.caption or section.settings.heading or section.settings.subheading or section.settings.text or section.settings.button_link and section.settings.button_label %}
       <div class="icons-section__text">
          {% if section.settings.caption %}
             <span class="icons-section__text__caption">{{ section.settings.caption }}</span>
          {% endif %}
          {% if section.settings.heading %}
-            <h2 class="icons-section__text__heading">{{ section.settings.heading }}</h2>
+            <h2 class="icons-section__text__heading {% if section.settings.accent_color %}__accent-color{% endif %}">{{ section.settings.heading }}</h2>
          {% endif %}
          {% if section.settings.subheading %}
             <h3 class="icons-section__text__subheading h5">{{ section.settings.subheading }}</h3>
@@ -30,7 +30,7 @@
             <p class="icons-section__text__text">{{ section.settings.text }}</p>
          {% endif %}
 
-         {% render 'button', class: "icons-section", button_label: section.settings.button_label, button_link: section.settings.button_link %}
+         {% render 'button', class: "icons-section", button_label: section.settings.button_label, button_link: section.settings.button_link, button_color: section.settings.button_color %}
       </div>
    {% endif %}
 
@@ -110,6 +110,11 @@
          "label": "Heading Size"
       },
       {
+         "type": "checkbox",
+         "id": "accent_color",
+         "label": "Add accent color?"
+      },
+      {
          "type": "richtext",
          "id": "text",
          "label": "Description"
@@ -161,7 +166,7 @@
                "label":"Two Columns"
             }
          ],
-         "default":"row",
+         "default":"three-col",
          "label":"Layout"
       },
       {
