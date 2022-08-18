@@ -135,7 +135,7 @@
         "heading": "The Best in Organic Ingredients",
         "color_scheme": "cream",
         "top_spacing": 50,
-        "bottom_spacing": 80
+        "bottom_spacing": 20
       }
     },
     "16450306926c068d86": {
@@ -233,7 +233,7 @@
         "eeca8ca7-1223-42f4-be66-9d19c9680495"
       ],
       "settings": {
-        "heading": "Used by",
+        "heading": "Supported By",
         "color_scheme": "dark-cream",
         "top_spacing": 50,
         "bottom_spacing": 50
