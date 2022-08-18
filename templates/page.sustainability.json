@@ -16,6 +16,7 @@
       ],
       "settings": {
         "text_color": "light",
+        "nav_color": true,
         "image": "shopify:\/\/shop_images\/unsplash_8rTwokBwz1w_40d48515-02db-4d2b-8a84-dc1ea84963dd.jpg",
         "alt": "Happy women in field",
         "overlay": 20,
@@ -161,54 +162,6 @@
         "bottom_spacing": 100
       }
     },
-    "1660747290beaaaf5d": {
-      "type": "featured-articles",
-      "blocks": {
-        "20254c1e-c139-4b1c-a067-1d245ee149cc": {
-          "type": "article",
-          "settings": {
-            "article": "news\/2019-pioneer-award-winners"
-          }
-        },
-        "d5f9af9e-3a53-4979-81da-209d197de4ad": {
-          "type": "article",
-          "settings": {
-            "article": "news\/2019-pioneer-award-winners"
-          }
-        },
-        "d5f9af9e-3a53-4979-81da-209d197de4ag": {
-          "type": "article",
-          "settings": {
-            "article": "news\/2019-pioneer-award-winners"
-          }
-        }
-      },
-      "block_order": [
-        "20254c1e-c139-4b1c-a067-1d245ee149cc",
-        "d5f9af9e-3a53-4979-81da-209d197de4ad",
-        "d5f9af9e-3a53-4979-81da-209d197de4ag"
-      ],
-      "settings": {
-        "heading": "Sustainability Stories",
-        "button_label": "Button label",
-        "button_link": "",
-        "button_color": "default",
-        "color_scheme": "dark-cream",
-        "top_spacing": 70,
-        "bottom_spacing": 100
-      }
-    },
-    "16607471819bf121f0": {
-      "type": "featured-page-link",
-      "settings": {
-        "page_link": "our-values",
-        "image": "shopify:\/\/shop_images\/unsplash_8rTwokBwz1w_c9e99f30-b9ba-43c5-a624-1ddfbd6b771d.jpg",
-        "alt": "Men working on mountainside",
-        "color_scheme": "cream",
-        "top_spacing": 0,
-        "bottom_spacing": 0
-      }
-    },
     "16608418622ecf558a": {
       "type": "icons-section",
       "blocks": {
@@ -287,6 +240,84 @@
         "top_spacing": 50,
         "bottom_spacing": 50
       }
+    },
+    "16608572869d1a8858": {
+      "type": "rich-text",
+      "blocks": {
+        "1660857286bad694f8-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "We believe in elevating the lives of those around the globe",
+            "heading_size": "h2",
+            "heading_alignment": "center",
+            "subheading": ""
+          }
+        },
+        "1660857286bad694f8-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We are committed to actively supporting the communities we source from and set aside resources to invest in social projects with our partners.  We have contributed to building schools and enhancing education, supported orphanages, purchased trucks & tractors for working the land.  We have literally built bridges and provided training in agricultural practices. Check out our Sustainability Stories to see what we’ve been up to and how we are honoring our commitments to Sustainable Development.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1660857286bad694f8-0",
+        "1660857286bad694f8-1"
+      ],
+      "settings": {
+        "color_scheme": "cream",
+        "hero": false,
+        "top_spacing": 100,
+        "bottom_spacing": 100
+      }
+    },
+    "1660747290beaaaf5d": {
+      "type": "featured-articles",
+      "blocks": {
+        "20254c1e-c139-4b1c-a067-1d245ee149cc": {
+          "type": "article",
+          "settings": {
+            "article": "news\/2019-pioneer-award-winners"
+          }
+        },
+        "d5f9af9e-3a53-4979-81da-209d197de4ad": {
+          "type": "article",
+          "settings": {
+            "article": "news\/2019-pioneer-award-winners"
+          }
+        },
+        "d5f9af9e-3a53-4979-81da-209d197de4ag": {
+          "type": "article",
+          "settings": {
+            "article": "news\/2019-pioneer-award-winners"
+          }
+        }
+      },
+      "block_order": [
+        "20254c1e-c139-4b1c-a067-1d245ee149cc",
+        "d5f9af9e-3a53-4979-81da-209d197de4ad",
+        "d5f9af9e-3a53-4979-81da-209d197de4ag"
+      ],
+      "settings": {
+        "heading": "Sustainability Stories",
+        "button_label": "Button label",
+        "button_link": "",
+        "button_color": "default",
+        "color_scheme": "dark-cream",
+        "top_spacing": 70,
+        "bottom_spacing": 100
+      }
+    },
+    "16607471819bf121f0": {
+      "type": "featured-page-link",
+      "settings": {
+        "page_link": "our-values",
+        "image": "shopify:\/\/shop_images\/unsplash_8rTwokBwz1w_c9e99f30-b9ba-43c5-a624-1ddfbd6b771d.jpg",
+        "alt": "Men working on mountainside",
+        "color_scheme": "cream",
+        "top_spacing": 0,
+        "bottom_spacing": 0
+      }
     }
   },
   "order": [
@@ -296,6 +327,7 @@
     "1660746979c48fd613",
     "16444193660de6d319",
     "16608418622ecf558a",
+    "16608572869d1a8858",
     "1660747290beaaaf5d",
     "16607471819bf121f0"
   ]
