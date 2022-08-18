@@ -12,14 +12,13 @@
   }
 
   &__text {
-    margin-bottom: var(--sectionVerticalSpacing);
+    margin-bottom: calc(var(--sectionVerticalSpacing) / 1.5);
+    max-width: 890px;
 
     &__heading {
-      color: var(--color-accent);
-    }
-
-    &__text {
-      max-width: 570px;
+      &.__accent-color {
+        color: var(--color-accent);
+      }
     }
   }
 
@@ -83,6 +82,7 @@
 
       &__text {
         margin-top: var(--sectionVerticalSpacing);
+        max-width: 570px;
       }
     }
   }

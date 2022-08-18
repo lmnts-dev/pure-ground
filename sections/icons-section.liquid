@@ -21,13 +21,15 @@
             <span class="icons-section__text__caption">{{ section.settings.caption }}</span>
          {% endif %}
          {% if section.settings.heading %}
-            <h2 class="icons-section__text__heading {% if section.settings.accent_color %}__accent-color{% endif %}">{{ section.settings.heading }}</h2>
+            <h2 class="icons-section__text__heading {% if section.settings.heading_size %}{{section.settings.heading_size}}{% endif %} {% if section.settings.accent_color %}__accent-color{% endif %}">
+               {{ section.settings.heading }}
+            </h2>
          {% endif %}
          {% if section.settings.subheading %}
             <h3 class="icons-section__text__subheading h5">{{ section.settings.subheading }}</h3>
          {% endif %}
          {% if section.settings.text %}
-            <p class="icons-section__text__text">{{ section.settings.text }}</p>
+            <div class="icons-section__text__text">{{ section.settings.text }}</div>
          {% endif %}
 
          {% render 'button', class: "icons-section", button_label: section.settings.button_label, button_link: section.settings.button_link, button_color: section.settings.button_color %}

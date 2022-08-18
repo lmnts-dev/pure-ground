@@ -11,12 +11,10 @@
           }
         }
       },
-      "block_order": [
-        "926015a7-2052-4797-9221-7ef8e3b87cd4"
-      ],
+      "block_order": ["926015a7-2052-4797-9221-7ef8e3b87cd4"],
       "settings": {
         "text_color": "light",
-        "image": "shopify:\/\/shop_images\/unsplash_8rTwokBwz1w_a51066fc-0135-4c05-a084-e5bf04c7bdd5.jpg",
+        "image": "shopify://shop_images/unsplash_8rTwokBwz1w_a51066fc-0135-4c05-a084-e5bf04c7bdd5.jpg",
         "alt": "Happy women in field",
         "overlay": 20,
         "hero": true,
@@ -43,14 +41,14 @@
         "1644419366881604f5-0": {
           "type": "text",
           "settings": {
-            "text": "<p>We purchase our materials raw and do every bit of processing in our facility in the foothills of the Sierra Nevada. We run our ingredients through the most thorough and comprehensive testing on the market - we test all ingredients for pesticides that others don’t. We control any presence of heavy metals and micro toxins and strive to exceed industry standards across the board. <\/p><p>Going far beyond what’s federally required, ourtesting and processing even includes botanical ID and DNA testing, if necessary, to ensure a product is indeed what is you expect. We employ a number of practices that ensure we are providing our customers the absolute best in organic ingredients and a level of quality and consistency that is unsurpassed. We are proud to be a part of a global supply web that is increasing the public awareness of the health benefits of using organic herbs and spices.<\/p>"
+            "text": "<p>We purchase our materials raw and do every bit of processing in our facility in the foothills of the Sierra Nevada. We run our ingredients through the most thorough and comprehensive testing on the market - we test all ingredients for pesticides that others don’t. We control any presence of heavy metals and micro toxins and strive to exceed industry standards across the board. </p><p>Going far beyond what’s federally required, ourtesting and processing even includes botanical ID and DNA testing, if necessary, to ensure a product is indeed what is you expect. We employ a number of practices that ensure we are providing our customers the absolute best in organic ingredients and a level of quality and consistency that is unsurpassed. We are proud to be a part of a global supply web that is increasing the public awareness of the health benefits of using organic herbs and spices.</p>"
           }
         },
         "47338247-06fe-401f-8439-2fdbee1aac55": {
           "type": "button",
           "settings": {
             "button_label": "Shop Organic Ingredients",
-            "button_link": "shopify:\/\/collections",
+            "button_link": "shopify://collections",
             "button_color": "default"
           }
         }
@@ -61,7 +59,7 @@
         "47338247-06fe-401f-8439-2fdbee1aac55"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/unsplash_pBwMdofMxtU_928eb7d0-5768-4a73-98fc-3ddd5481da44.jpg",
+        "image": "shopify://shop_images/unsplash_pBwMdofMxtU_928eb7d0-5768-4a73-98fc-3ddd5481da44.jpg",
         "hero": false,
         "color_scheme": "cream",
         "layout": "default",
@@ -85,7 +83,7 @@
         "1fa509c0-88d9-4f15-ab93-3b487a4304ea": {
           "type": "text",
           "settings": {
-            "text": "<p>Your needs and specifications are met by our state of the art facility. We offer and array of milling, sifting and other treatment options to process organic ingredients just right for your business.<\/p>"
+            "text": "<p>Your needs and specifications are met by our state of the art facility. We offer and array of milling, sifting and other treatment options to process organic ingredients just right for your business.</p>"
           }
         }
       },
@@ -107,7 +105,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Product Development",
-            "content": "<p>Launching a new line? From ingredient sourcing to custom packaging we have you covered. <\/p>",
+            "content": "<p>Launching a new line? From ingredient sourcing to custom packaging we have you covered. </p>",
             "category": "General"
           }
         },
@@ -115,7 +113,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Blending",
-            "content": "<p>We've been in this business a while and so have our blendmasters. Send us your blend and we will be happy to match it.  Looking to develop a new flavor profile? Our team is legendary on the development of  flavorful, nicely textured & colored culinary, tea & herbal blends. <\/p>",
+            "content": "<p>We've been in this business a while and so have our blendmasters. Send us your blend and we will be happy to match it.  Looking to develop a new flavor profile? Our team is legendary on the development of  flavorful, nicely textured & colored culinary, tea & herbal blends. </p>",
             "category": "General"
           }
         },
@@ -123,7 +121,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Ingredient Cleaning",
-            "content": "<p>In order to deliver clean goods, we designed our production lines with separation capabilities that insure removal of impurities and foreign objects. Your product will be sifted multiple times and pass numerous safety steps before final packaging.<\/p>",
+            "content": "<p>In order to deliver clean goods, we designed our production lines with separation capabilities that insure removal of impurities and foreign objects. Your product will be sifted multiple times and pass numerous safety steps before final packaging.</p>",
             "category": "General"
           }
         },
@@ -131,7 +129,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Roasting",
-            "content": "<p>Like your Garlic roasted? Our in house, smokeless roasting technology allows us to create different flavors. Roasted items include Chicory, Marshmallow and Dandelion, Chiles and Paprikas, Carob and Garlic.<\/p>",
+            "content": "<p>Like your Garlic roasted? Our in house, smokeless roasting technology allows us to create different flavors. Roasted items include Chicory, Marshmallow and Dandelion, Chiles and Paprikas, Carob and Garlic.</p>",
             "category": "General"
           }
         },
@@ -139,7 +137,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Private Labeling",
-            "content": "<p>When you need to let your company shine, ask us to package with your own labels. Our quality organic ingredients can arrive at your warehouse with your own labeling and ready to be sold under your name.  White labeling also available upon request.<\/p>",
+            "content": "<p>When you need to let your company shine, ask us to package with your own labels. Our quality organic ingredients can arrive at your warehouse with your own labeling and ready to be sold under your name.  White labeling also available upon request.</p>",
             "category": "General"
           }
         },
@@ -147,7 +145,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Co-Packaging",
-            "content": "<p>We offer private label services, servicing a variety of industries various packaging options.  Whether you are looking to pack single organic ingredients or blends we are happy to be growing this aspect of our service offering. <\/p>",
+            "content": "<p>We offer private label services, servicing a variety of industries various packaging options.  Whether you are looking to pack single organic ingredients or blends we are happy to be growing this aspect of our service offering. </p>",
             "category": "General"
           }
         },
@@ -155,7 +153,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Ingredient Sourcing",
-            "content": "<p>The backbone of our company are the decades of experience in the global organic market. We pride ourselves in our vast network of approved producers for all organic ingredients. Furthering both the organic and sustainability concepts, we have fostered long term relationships with producers and have often pioneered new products in new territories to incentivize diversity and security. We know our producers and how to get the quality you need at a competitive price. If there’s an ingredient you need that isn’t on our list, don’t hesitate to ask. <\/p>",
+            "content": "<p>The backbone of our company are the decades of experience in the global organic market. We pride ourselves in our vast network of approved producers for all organic ingredients. Furthering both the organic and sustainability concepts, we have fostered long term relationships with producers and have often pioneered new products in new territories to incentivize diversity and security. We know our producers and how to get the quality you need at a competitive price. If there’s an ingredient you need that isn’t on our list, don’t hesitate to ask. </p>",
             "category": "General"
           }
         },
@@ -163,7 +161,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Micro Reduction",
-            "content": "<p>Verified clean products only. All our organic ingredients are treated and tested to ensure food safety. We offer multiple treatment options including a modern Infra-Red and water treatment that is proven to be gentle on the precious ingredients. Our treatment in 3rd party verified for every lot.<\/p>",
+            "content": "<p>Verified clean products only. All our organic ingredients are treated and tested to ensure food safety. We offer multiple treatment options including a modern Infra-Red and water treatment that is proven to be gentle on the precious ingredients. Our treatment in 3rd party verified for every lot.</p>",
             "category": "General"
           }
         },
@@ -171,7 +169,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Metal Detection",
-            "content": "<p>All goods go through a NIST certified and FDA approved Gravity detector. Additionally all mills and processing machinery are fitted with industrial strength magnets. Sifting at multiple production steps further insures absolute purity of your ingredients.<\/p>",
+            "content": "<p>All goods go through a NIST certified and FDA approved Gravity detector. Additionally all mills and processing machinery are fitted with industrial strength magnets. Sifting at multiple production steps further insures absolute purity of your ingredients.</p>",
             "category": "General"
           }
         }
@@ -207,7 +205,7 @@
         "1660751375f91befb1-0": {
           "type": "text",
           "settings": {
-            "text": "<p>For every lot you purchase, you will receive a Certificate of Analysis – COA – stating your ingredient’s plant name, part + origin, cut size, manufacture + expiration dates as well as microbiological, Heavy Metal and Pesticide analytical results.   <\/p><p>All lots are tested for presence of any heavy metals and confirmed to be within safe and legal limits. Our team will match any additional testing you require. <\/p>"
+            "text": "<p>For every lot you purchase, you will receive a Certificate of Analysis – COA – stating your ingredient’s plant name, part + origin, cut size, manufacture + expiration dates as well as microbiological, Heavy Metal and Pesticide analytical results.   </p><p>All lots are tested for presence of any heavy metals and confirmed to be within safe and legal limits. Our team will match any additional testing you require. </p>"
           }
         }
       },
@@ -216,7 +214,7 @@
         "1660751375f91befb1-0"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/2018-08-21_17.54_1_17300c10-0caa-40d8-8766-36b80ce0dbc7.jpg",
+        "image": "shopify://shop_images/2018-08-21_17.54_1_17300c10-0caa-40d8-8766-36b80ce0dbc7.jpg",
         "hero": false,
         "color_scheme": "cream",
         "layout": "reversed",
@@ -240,30 +238,16 @@
         "16607469781a0891f6-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Pure Ground is committed to food safety and Good Manufacturing Practices are central to our operation. Our manufacturing facilities are certified by NSF\/SQF. Food safety and continuous excellence is insured by frequent audits and inspections.  Per HACCP, All goods go through a NIST certified and FDA approved Gravity detector. Additionally all mills and processing machinery are fitted with industrial strength magnets. Sifting at multiple production steps further insures absolute purity of your ingredients.  All products handled at Pure Ground Ingredients are verified gluten free. Absence of any accidental gluten is confirmed by frequent analysis. Allergens in our warehouse are strictly segregated, marked and handled separately so that non-allergen products remain allergen free.<\/p>"
+            "text": "<p>Pure Ground is committed to food safety and Good Manufacturing Practices are central to our operation. Our manufacturing facilities are certified by NSF/SQF. Food safety and continuous excellence is insured by frequent audits and inspections.  Per HACCP, All goods go through a NIST certified and FDA approved Gravity detector. Additionally all mills and processing machinery are fitted with industrial strength magnets. Sifting at multiple production steps further insures absolute purity of your ingredients.  All products handled at Pure Ground Ingredients are verified gluten free. Absence of any accidental gluten is confirmed by frequent analysis. Allergens in our warehouse are strictly segregated, marked and handled separately so that non-allergen products remain allergen free.</p>"
           }
         }
       },
-      "block_order": [
-        "16607469781a0891f6-0",
-        "16607469781a0891f6-1"
-      ],
+      "block_order": ["16607469781a0891f6-0", "16607469781a0891f6-1"],
       "settings": {
         "color_scheme": "cream",
         "hero": false,
         "top_spacing": 50,
         "bottom_spacing": 50
-      }
-    },
-    "16607471819bf121f0": {
-      "type": "featured-page-link",
-      "settings": {
-        "page_link": "our-values",
-        "image": "shopify:\/\/shop_images\/unsplash_8rTwokBwz1w_c9e99f30-b9ba-43c5-a624-1ddfbd6b771d.jpg",
-        "alt": "Men working on mountainside",
-        "color_scheme": "cream",
-        "top_spacing": 0,
-        "bottom_spacing": 0
       }
     },
     "16607514865516138c": {
@@ -272,49 +256,49 @@
         "f3ecbf11-b5f3-484c-82b7-293477ee0863": {
           "type": "image",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/Group_253.png",
+            "icon": "shopify://shop_images/Group_253.png",
             "text": "Certified USDA Organic"
           }
         },
         "9238b523-e68f-4b6c-92de-965b6ae45bff": {
           "type": "image",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/Group_254.png",
+            "icon": "shopify://shop_images/Group_254.png",
             "text": "Halal Certified"
           }
         },
         "54ddda7b-032d-493e-a06b-e955b5e533ef": {
           "type": "image",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/Group_255.png",
+            "icon": "shopify://shop_images/Group_255.png",
             "text": "Fair Trade Certified"
           }
         },
         "b5ed4ab9-114a-46e0-a632-e0ac53372802": {
           "type": "image",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/Group_258.png",
+            "icon": "shopify://shop_images/Group_258.png",
             "text": "Certified Kosher"
           }
         },
         "09c7b188-05b6-4b3c-a90b-d6faa5cdf10b": {
           "type": "image",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/Group_257.png",
+            "icon": "shopify://shop_images/Group_257.png",
             "text": "Level 2 SQF Certified"
           }
         },
         "d259bf74-17d9-4ad6-8a1e-484e8c7a768a": {
           "type": "image",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/Group_256.png",
+            "icon": "shopify://shop_images/Group_256.png",
             "text": "Certified B Corporation"
           }
         },
         "1d53f10a-72fd-44cb-9f47-ccd9a6c5c112": {
           "type": "image",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/Group_259.png",
+            "icon": "shopify://shop_images/Group_259.png",
             "text": "Skal Biocontrole (EOCC) Certified"
           }
         }
@@ -334,127 +318,12 @@
         "subheading": "",
         "heading_size": "h3",
         "accent_color": false,
-        "text": "<p>Pure Ground is committed to food safety and Good Manufacturing Practices are central to our operation. Our manufacturing facilities are certified by NSF\/SQF. Food safety and continuous excellence is insured by frequent audits and inspections.  <\/p><p>Per HACCP, All goods go through a NIST certified and FDA approved Gravity detector. Additionally all mills and processing machinery are fitted with industrial strength magnets. Sifting at multiple production steps further insures absolute purity of your ingredients.  <\/p><p>All products handled at Pure Ground Ingredients are verified gluten free. Absence of any accidental gluten is confirmed by frequent analysis. Allergens in our warehouse are strictly segregated, marked and handled separately so that non-allergen products remain allergen free.<\/p>",
+        "text": "<p>Pure Ground is committed to food safety and Good Manufacturing Practices are central to our operation. Our manufacturing facilities are certified by NSF/SQF. Food safety and continuous excellence is insured by frequent audits and inspections.  </p><p>Per HACCP, All goods go through a NIST certified and FDA approved Gravity detector. Additionally all mills and processing machinery are fitted with industrial strength magnets. Sifting at multiple production steps further insures absolute purity of your ingredients.  </p><p>All products handled at Pure Ground Ingredients are verified gluten free. Absence of any accidental gluten is confirmed by frequent analysis. Allergens in our warehouse are strictly segregated, marked and handled separately so that non-allergen products remain allergen free.</p>",
         "button_label": "Button label",
         "button_link": "",
         "alt": "",
         "layout": "three-col",
         "icon_height": 80,
-        "color_scheme": "cream",
-        "top_spacing": 50,
-        "bottom_spacing": 50
-      }
-    },
-    "16608418622ecf558a": {
-      "type": "icons-section",
-      "blocks": {
-        "b105ffa2-dfb9-4531-a845-32a3385a30ad": {
-          "type": "image",
-          "settings": {
-            "icon": "shopify:\/\/shop_images\/Screen_Shot_2022-08-18_at_11.56.02_AM.png",
-            "text": ""
-          }
-        },
-        "98df735d-1722-4aeb-95d0-f899509d2edf": {
-          "type": "image",
-          "settings": {
-            "icon": "shopify:\/\/shop_images\/Screen_Shot_2022-08-18_at_11.56.11_AM.png",
-            "text": ""
-          }
-        },
-        "c7246dc6-31f7-4d1c-b9b2-1aaa23ba7775": {
-          "type": "image",
-          "settings": {
-            "icon": "shopify:\/\/shop_images\/Screen_Shot_2022-08-18_at_11.56.20_AM.png",
-            "text": ""
-          }
-        },
-        "6d4570e6-ce43-46b5-a796-a1fbf29a6e2a": {
-          "type": "image",
-          "settings": {
-            "icon": "shopify:\/\/shop_images\/Screen_Shot_2022-08-18_at_11.56.31_AM.png",
-            "text": ""
-          }
-        },
-        "88ccab24-e7fb-46cc-b262-4efd3294dea2": {
-          "type": "image",
-          "settings": {
-            "icon": "shopify:\/\/shop_images\/Screen_Shot_2022-08-18_at_11.56.42_AM.png",
-            "text": ""
-          }
-        },
-        "a5e7ffe2-ca8e-49c8-bf10-6cc79e840993": {
-          "type": "image",
-          "settings": {
-            "icon": "shopify:\/\/shop_images\/Screen_Shot_2022-08-18_at_11.56.56_AM.png",
-            "text": ""
-          }
-        },
-        "ba4994aa-3972-4aa2-884e-998ec85c0d93": {
-          "type": "image",
-          "settings": {
-            "icon": "shopify:\/\/shop_images\/Screen_Shot_2022-08-18_at_11.57.33_AM.png",
-            "text": ""
-          }
-        }
-      },
-      "block_order": [
-        "b105ffa2-dfb9-4531-a845-32a3385a30ad",
-        "98df735d-1722-4aeb-95d0-f899509d2edf",
-        "c7246dc6-31f7-4d1c-b9b2-1aaa23ba7775",
-        "6d4570e6-ce43-46b5-a796-a1fbf29a6e2a",
-        "88ccab24-e7fb-46cc-b262-4efd3294dea2",
-        "a5e7ffe2-ca8e-49c8-bf10-6cc79e840993",
-        "ba4994aa-3972-4aa2-884e-998ec85c0d93"
-      ],
-      "settings": {
-        "caption": "",
-        "heading": "Our commitment to UN's Sustainable Development Goals",
-        "subheading": "",
-        "heading_size": "h3",
-        "accent_color": false,
-        "text": "<p>We believe in self responsibility and collective action. We are proud to havealigned with the UN’s integral approach and call to action to end poverty, protect the planet, and ensure that by 2030 all people enjoy peace and prosperity. <\/p><p>We know we can all work together to protect the planet, end poverty and create a happier, healthier world.  <\/p>",
-        "button_label": "Button label",
-        "button_link": "",
-        "alt": "",
-        "layout": "row",
-        "icon_height": 210,
-        "color_scheme": "cream",
-        "top_spacing": 50,
-        "bottom_spacing": 50
-      }
-    },
-    "16608420888c4acfb0": {
-      "type": "bi-column-text-blocks",
-      "blocks": {
-        "16608420885eb16592-0": {
-          "type": "text",
-          "settings": {
-            "heading": "Heading",
-            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ullamcorper, tortor ut viverra pulvinar, orci tellus elementum odio, et malesuada neque diam vel sem. Curabitur lacus sem, commodo sed lacus id, vulputate tincidunt sapien.<\/p>",
-            "button_label": "Lable",
-            "button_link": "shopify:\/\/pages\/history",
-            "button_color": "dark-cream"
-          }
-        },
-        "16608420885eb16592-1": {
-          "type": "text",
-          "settings": {
-            "heading": "Heading",
-            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ullamcorper, tortor ut viverra pulvinar, orci tellus elementum odio, et malesuada neque diam vel sem. Curabitur lacus sem, commodo sed lacus id, vulputate tincidunt sapien.<\/p>",
-            "button_label": "",
-            "button_link": "",
-            "button_color": "default"
-          }
-        }
-      },
-      "block_order": [
-        "16608420885eb16592-0",
-        "16608420885eb16592-1"
-      ],
-      "settings": {
-        "heading": "Heading",
-        "subheading": "Subhead",
         "color_scheme": "cream",
         "top_spacing": 50,
         "bottom_spacing": 50
@@ -467,10 +336,6 @@
     "164442384962d45464",
     "1660751203d847bc7d",
     "1660751375c6d45d9c",
-    "1660746979c48fd613",
-    "16607471819bf121f0",
-    "16607514865516138c",
-    "16608418622ecf558a",
-    "16608420888c4acfb0"
+    "16607514865516138c"
   ]
 }
