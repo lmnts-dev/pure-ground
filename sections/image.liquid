@@ -3,26 +3,30 @@
       --topSpacingRatio: {{section.settings.top_spacing}} / 100;
       --bottomSpacingRatio: {{section.settings.bottom_spacing}} / 100;
     }
+
+    {% if section.settings.nav_color == true %}
+      .site-header.__style-relative:not(.__dropdown-open) {
+         {% if section.settings.text_color == 'light' %}
+            --color-foreground: white;
+         {% endif %}
+      }
+    {% endif %}
 {% endstyle %}
 
 <div id="Section-image-{{ section.id }}" class="section-image __style-{{ section.settings.image_style}} color-{{section.settings.color_scheme}}"  
 >
   {%- if section.settings.image != blank -%}
-    {%- if section.settings.image_style == "fullwidth" -%}
-      <div class="section-image__image-container">
-        {% render 'next-gen-img', image: section.settings.image %}
+    <div class="section-image__image-container __style-{{ section.settings.image_style }}">
+      {% render 'next-gen-img', image: section.settings.image %}
+    </div>
 
-      </div>
-    {% else %}
+    {% comment %}
+    Not used in final design, but good to keep
       <div class="section-image__blob">
         <div class="section-image__blob__image" style="background-image: url({{ section.settings.image | image_url: width: 1500 }})"></div>
       </div>
+    {% endcomment %}
       
-    {%- endif -%}
-  {%- elsif section.settings.image_2 == blank -%}
-    <div class="section-image__placeholder">
-      {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
-    </div>
   {%- endif -%}
 </div>
 
@@ -48,19 +52,21 @@
       "options": [
         {
           "value": "fullwidth",
-          "label": "Fullwidth"
+          "label": "Max Height"
         },
         {
-          "value": "blob-1",
-          "label": "Blob Style 1"
-        },
-        {
-          "value": "blob-2",
-          "label": "Blob Style 2"
+          "value": "fullheight",
+          "label": "Full Height"
         }
       ],
       "default": "fullwidth",
       "label": "Image Style"
+    },
+    {
+        "type": "checkbox",
+        "id": "nav_color",
+        "label": "Set the navigation's text color?",
+        "info": "Have main navigation text color be white. Useful to create contrast between the nav and this image, if this is the first section on the page. If this is selected for multiple sections on the same page, only the last section's settings will apply."
     },
     {
       "type": "select",
