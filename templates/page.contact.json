@@ -6,7 +6,15 @@
         "1b1a72b1-22ac-497c-a5e1-70056b16d0d7": {
           "type": "heading",
           "settings": {
-            "heading": "We want your feedback"
+            "heading": "Contact Us",
+            "heading_size": "h4"
+          }
+        },
+        "a747aa9b-76af-4ac5-aaac-816c79b9a36b": {
+          "type": "heading",
+          "settings": {
+            "heading": "We want your feedback",
+            "heading_size": "h5"
           }
         },
         "164435397975ac4950-0": {
@@ -18,7 +26,8 @@
         "a7d76b5b-4b29-40cb-aeb1-19fd4c0e8647": {
           "type": "heading",
           "settings": {
-            "heading": "Address"
+            "heading": "Address",
+            "heading_size": "h5"
           }
         },
         "eba96e60-4b73-4bbf-a5a1-f0df199cd8c1": {
@@ -30,7 +39,8 @@
         "08fd0e00-47d9-49b5-8d75-bda3b9ca13bc": {
           "type": "heading",
           "settings": {
-            "heading": "General Contact"
+            "heading": "General Contact",
+            "heading_size": "h5"
           }
         },
         "7cce6bb7-5dc2-4816-b956-cc78a5d5cb9c": {
@@ -42,6 +52,7 @@
       },
       "block_order": [
         "1b1a72b1-22ac-497c-a5e1-70056b16d0d7",
+        "a747aa9b-76af-4ac5-aaac-816c79b9a36b",
         "164435397975ac4950-0",
         "a7d76b5b-4b29-40cb-aeb1-19fd4c0e8647",
         "eba96e60-4b73-4bbf-a5a1-f0df199cd8c1",
@@ -49,9 +60,7 @@
         "7cce6bb7-5dc2-4816-b956-cc78a5d5cb9c"
       ],
       "settings": {
-        "heading": "Contact Us",
-        "heading_size": "h3",
-        "image": "shopify:\/\/shop_images\/ingredients.jpg",
+        "image": "shopify:\/\/shop_images\/unsplash_uaHShoIDGeo.jpg",
         "hero": true,
         "color_scheme": "cream",
         "layout": "default",
@@ -95,7 +104,9 @@
       ],
       "settings": {
         "heading": "Send Us A Message",
-        "color_scheme": "cream"
+        "color_scheme": "cream",
+        "top_spacing": 50,
+        "bottom_spacing": 50
       }
     }
   },
