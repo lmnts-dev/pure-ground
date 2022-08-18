@@ -1,5 +1,4 @@
 .bi-column-text-blocks {
-  padding: calc(var(--sectionVerticalSpacing) / 3) 0;
   display: flex;
   flex-direction: column;
   gap: var(--pxSize);
@@ -12,12 +11,12 @@
 
   &__text-blocks {
     display: flex;
-    gap: calc(var(--pxSize) / 2);
+    gap: var(--pxSize);
     flex-wrap: wrap;
   }
 
   &__block {
-    flex: calc(50% - calc(var(--pxSize) / 4));
+    flex: calc(50% - calc(var(--pxSize) / 2));
   }
 
   @media screen and (max-width: 676px) {
