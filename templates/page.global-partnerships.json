@@ -16,6 +16,7 @@
       ],
       "settings": {
         "text_color": "light",
+        "nav_color": false,
         "image": "shopify:\/\/shop_images\/unsplash_8rTwokBwz1w_dd3c133c-6583-404c-8832-a909b425c9d9.jpg",
         "alt": "Guys exploring through forrest",
         "overlay": 20,
@@ -58,16 +59,6 @@
         "hero": true,
         "top_spacing": 100,
         "bottom_spacing": 100
-      }
-    },
-    "1643991355e4feeedb": {
-      "type": "image",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/map.png",
-        "image_style": "fullwidth",
-        "color_scheme": "cream",
-        "top_spacing": 50,
-        "bottom_spacing": 30
       }
     },
     "16607621197a568045": {
@@ -146,6 +137,17 @@
         "bottom_spacing": 50
       }
     },
+    "1643991355e4feeedb": {
+      "type": "image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/map.png",
+        "image_style": "fullheight",
+        "nav_color": false,
+        "color_scheme": "cream",
+        "top_spacing": 50,
+        "bottom_spacing": 30
+      }
+    },
     "16607619309d5aee3c": {
       "type": "content-with-bg-image",
       "blocks": {
@@ -178,6 +180,7 @@
       ],
       "settings": {
         "text_color": "light",
+        "nav_color": false,
         "image": "shopify:\/\/shop_images\/unsplash_V0xp-dTS3z0_8c9c5b04-3137-48ca-a33f-c698c986b244.jpg",
         "alt": "Ground herbs",
         "overlay": 50,
@@ -196,8 +199,8 @@
   "order": [
     "1660761679c3d72883",
     "1643818843f333eb74",
-    "1643991355e4feeedb",
     "16607621197a568045",
+    "1643991355e4feeedb",
     "16607619309d5aee3c"
   ]
 }
