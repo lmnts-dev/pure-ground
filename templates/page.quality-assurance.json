@@ -333,6 +333,7 @@
         "heading": "Food Safety, SQF & Our Certifications",
         "subheading": "",
         "heading_size": "h3",
+        "accent_color": false,
         "text": "<p>Pure Ground is committed to food safety and Good Manufacturing Practices are central to our operation. Our manufacturing facilities are certified by NSF\/SQF. Food safety and continuous excellence is insured by frequent audits and inspections.  <\/p><p>Per HACCP, All goods go through a NIST certified and FDA approved Gravity detector. Additionally all mills and processing machinery are fitted with industrial strength magnets. Sifting at multiple production steps further insures absolute purity of your ingredients.  <\/p><p>All products handled at Pure Ground Ingredients are verified gluten free. Absence of any accidental gluten is confirmed by frequent analysis. Allergens in our warehouse are strictly segregated, marked and handled separately so that non-allergen products remain allergen free.<\/p>",
         "button_label": "Button label",
         "button_link": "",
@@ -411,12 +412,13 @@
         "heading": "Our commitment to UN's Sustainable Development Goals",
         "subheading": "",
         "heading_size": "h3",
+        "accent_color": false,
         "text": "<p>We believe in self responsibility and collective action. We are proud to havealigned with the UN’s integral approach and call to action to end poverty, protect the planet, and ensure that by 2030 all people enjoy peace and prosperity. <\/p><p>We know we can all work together to protect the planet, end poverty and create a happier, healthier world.  <\/p>",
         "button_label": "Button label",
         "button_link": "",
         "alt": "",
         "layout": "row",
-        "icon_height": 140,
+        "icon_height": 210,
         "color_scheme": "cream",
         "top_spacing": 50,
         "bottom_spacing": 50
