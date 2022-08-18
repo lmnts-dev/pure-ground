@@ -5,7 +5,6 @@
   &__accordion {
     width: 100%;
     display: none;
-    max-width: 900px;
     margin: 0 auto;
     border-bottom: 1px solid var(--color-foreground);
 
@@ -44,7 +43,6 @@
 
       &:hover {
         transform: scale(1.015);
-        opacity: 0.9;
       }
 
       svg {
@@ -54,8 +52,12 @@
         transform: translateY(-50%) rotate(0deg);
         height: var(--pxSize);
         width: auto;
-        will-change: transform;
-        transition: all 0.25s ease;
+
+        polygon:last-child {
+          will-change: transform;
+          transition: all 0.25s ease;
+          transform-origin: center center;
+        }
       }
     }
 
@@ -66,17 +68,19 @@
       color: var(--color-foreground);
       width: 100%;
       max-width: 700px;
+
+      > *:last-child {
+        margin-bottom: var(--pxSize);
+      }
     }
 
     // Checked State
     &__checkbox:checked {
       + .accordions__accordion__label {
         transform: scale(1.015);
-        opacity: 0.9;
-        border-bottom: none;
 
-        svg {
-          transform: translateY(-50%) rotate(45deg);
+        svg polygon:last-child {
+          transform: rotate(90deg);
         }
       }
 
@@ -90,6 +94,11 @@
     }
   }
 
+  &__accordion,
+  &__nav {
+    max-width: 900px;
+  }
+
   //visually this must appear above the accordions, but logically
   //it must occur after the accordions because inside the accordions
   //loop is where we gather the category nav data. This is why we're
@@ -97,8 +106,9 @@
   &__nav {
     order: -1;
     display: flex;
+    width: 100%;
     gap: var(--pxSize);
-    margin: 0 0 calc(var(--sectionVerticalSpacing) * 0.75) 0;
+    margin: 0 auto calc(var(--sectionVerticalSpacing) * 0.75) auto;
 
     &__item {
       > * {
@@ -127,7 +137,8 @@
     }
 
     &__accordion {
-      &__label, h3 {
+      &__label,
+      h3 {
         padding-right: calc(var(--pxSize) / 1.5);
       }
     }

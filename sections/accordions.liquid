@@ -33,7 +33,7 @@
             <h3 class="h4">{{block.settings.heading}}</h3>
             {% render 'svg-plus' %}
           </label>
-          <div class="accordions__accordion__content __article-txt">
+          <div class="accordions__accordion__content __article-txt-p-lg">
             {{block.settings.content}}
           </div>
         </div>
@@ -62,7 +62,7 @@
             <li class="accordions__nav__item">
               {% comment %} Tag logic below sets listener on {% endcomment %}
               <accordions-button
-                class="accordions__button caption {% if category == default_category %}__active{% endif %}"
+                class="accordions__button caption-sm {% if category == default_category %}__active{% endif %}"
                 data-category="{{ category_handle }}"
               >
                 {{ category }}
