@@ -260,7 +260,7 @@
           "type": "button",
           "settings": {
             "button_label": "Our Values",
-            "button_link": "shopify:\/\/pages\/our-principles",
+            "button_link": "shopify:\/\/pages\/our-values",
             "button_color": "default"
           }
         }
