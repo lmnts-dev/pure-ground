@@ -34,6 +34,37 @@
         "color_scheme": "sky"
       }
     },
+    "1660941634edabbc71": {
+      "type": "rich-text",
+      "blocks": {
+        "16609416342d0014aa-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Pure Ground For Unity",
+            "heading_size": "h2",
+            "heading_alignment": "center",
+            "subheading": ""
+          }
+        },
+        "16609416342d0014aa-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At Pure Ground, we’re all about making positive change, within ourselves, our communities and  for our planet.  See how we’re implementing our value system inside & outside.<\/p>",
+            "text_size": "default"
+          }
+        }
+      },
+      "block_order": [
+        "16609416342d0014aa-0",
+        "16609416342d0014aa-1"
+      ],
+      "settings": {
+        "color_scheme": "cream",
+        "hero": false,
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
+    },
     "1645466577d7fad930": {
       "type": "recent-articles",
       "blocks": {
@@ -84,6 +115,7 @@
   },
   "order": [
     "1645488674b1f1a56b",
+    "1660941634edabbc71",
     "1645466577d7fad930",
     "16444369586030090c",
     "164443697608885640"
