@@ -16,11 +16,11 @@
           <h2 class="rich-text__heading __align-{{ block.settings.heading_alignment }} {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}</h2>
         {% endif %}
         {% if block.settings.subheading %}
-          <h3 class="rich-text__subheading caption __align-{{ block.settings.heading_alignment }}">{{ block.settings.subheading }}</h3>
+          <h3 class="rich-text__subheading h5 __align-{{ block.settings.heading_alignment }}">{{ block.settings.subheading }}</h3>
         {% endif %}
       {%- when 'text' -%}
         {% if block.settings.text %}
-          <div class="rich-text__text __article-txt" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+          <div class="rich-text__text __article-txt {{ block.settings.text_size }}" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
         {% endif %}
 
       {%- when 'button' -%}
@@ -133,6 +133,10 @@
             {
               "value": "h3",
               "label": "Medium"
+            },
+            {
+              "value": "caption-lg",
+              "label": "Small"
             }
           ],
           "default": "h3",
@@ -171,6 +175,22 @@
           "id": "text",
           "default": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
           "label": "Description"
+        },
+        {
+          "type": "select",
+          "id": "text_size",
+          "options": [
+            {
+              "value": "default",
+              "label": "Medium (Default)"
+            },
+            {
+              "value": "p-lg",
+              "label": "Large"
+            }
+          ],
+          "default": "default",
+          "label": "Text Size"
         }
       ]
     },

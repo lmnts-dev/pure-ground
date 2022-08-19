@@ -50,7 +50,7 @@
             {{ title }}   
         </h3>
         {% if product.metafields.my_fields.scientific_name %}
-          <p class="product-card__code p-sm">{{ product.metafields.my_fields.scientific_name }}</p>
+          <p class="product-card__code caption-sm">{{ product.metafields.my_fields.scientific_name }}</p>
         {% endif %}
 
         {% comment %}
@@ -69,8 +69,8 @@
           {% render 'svg-star' %}
           {% render 'svg-star' %}
           {% render 'svg-star' %}
-          <span class="product-card__reviews p-xs">12 Reviews</span>
-          <span class="product-card__reviews-number p-xs">(12)</span>
+          <span class="product-card__reviews p-sm">12 Reviews</span>
+          <span class="product-card__reviews-number p-sm">(12)</span>
         </div>
       {% endcomment %}
       </div>

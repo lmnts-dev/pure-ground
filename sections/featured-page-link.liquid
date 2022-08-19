@@ -9,12 +9,12 @@
 >
   <div class="featured-page-link__inner">
     {%- if section.settings.page_link.url != blank -%}
-      <a href="{{section.settings.page_link.url}}" class="featured-page-link__link h2">
+      <a href="{{section.settings.page_link.url}}" class="featured-page-link__link h1">
         <span>{{section.settings.page_link.title}}</span>
         {% render 'svg-arrow' %}
       </a>
    {% else %}
-      <a href="/" class="featured-page-link__link h2">
+      <a href="/" class="featured-page-link__link h1">
         <span>Link Here</span>
         {% render 'svg-arrow' %}
       </a>

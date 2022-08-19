@@ -38,6 +38,7 @@
       display: grid;
       gap: 0 calc(var(--pxSize) / 4);
       grid-template-columns: auto auto;
+      align-items: center;
 
       > * {
         margin-bottom: 0;

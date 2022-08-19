@@ -19,8 +19,12 @@
               {%- endif -%}
           </div>
           <div class="content-slider__text">
-            <p class="content-slider__text__body">{{block.settings.text}}</p>
-            {% if block.settings.author %}<p class="content-slider__text__author">- {{block.settings.author}}</p>{% endif %}
+            <p class="content-slider__text__body p-sm">{{block.settings.text}}</p>
+            {% if block.settings.author and block.settings.author != "" %}
+              <p class="content-slider__text__author">
+                - {{block.settings.author}}
+              </p>
+            {% endif %}
           </div>
         </div>
       {%- endfor -%}
