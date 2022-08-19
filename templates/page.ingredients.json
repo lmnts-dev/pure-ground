@@ -7,7 +7,7 @@
           "type": "heading",
           "settings": {
             "heading": "Organic Ingredients",
-            "heading_size": "h3",
+            "heading_size": "h2",
             "heading_alignment": "center",
             "subheading": ""
           }
@@ -15,7 +15,8 @@
         "48570e99-406c-4968-bd13-96aa95ec96aa": {
           "type": "text",
           "settings": {
-            "text": "<p>All ingredients are available in multiple cut sizes for wholesale purchase.  To request a sample, spec sheet or pricing please contact us at <a href=\"mailto:info@puregroundingredients.com\">info@puregroundingredients.com<\/a><\/p>"
+            "text": "<p>All ingredients are available in multiple cut sizes for wholesale purchase.  To request a sample, spec sheet or pricing please contact us at <a href=\"mailto:info@puregroundingredients.com\">info@puregroundingredients.com<\/a><\/p>",
+            "text_size": "default"
           }
         }
       },
