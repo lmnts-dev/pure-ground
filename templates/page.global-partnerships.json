@@ -16,7 +16,7 @@
       ],
       "settings": {
         "text_color": "light",
-        "nav_color": false,
+        "nav_color": true,
         "image": "shopify:\/\/shop_images\/unsplash_8rTwokBwz1w_dd3c133c-6583-404c-8832-a909b425c9d9.jpg",
         "alt": "Guys exploring through forrest",
         "overlay": 20,
@@ -46,7 +46,8 @@
         "16438188434dae6d1d-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Since our founding, Pure Ground Ingredients has embarked on a number of worldwidesustainability projects. We bring greater value to the communities and farmers we work with andhigher-quality ingredients to the marketplace back home. From establishing new, economically viable, crops for an organic fair-trade growers co-op comprised of 674 families in Nicaragua, to partnering with one of our manufacturers to build a bridge between communities that flooded in Honduras, to establishing sustainable farming education and training in Sri Lanka, we’re constantly on the hunt for opportunities to help our growers and their communities thrive in the face of adversity...which ultimately helps our manufacturers thrive. We replenish land, invest in communities, develop educational programs, and do everything we can to support sustainable practices, a healthy planet, and happy people.<\/p>"
+            "text": "<p>Since our founding, Pure Ground Ingredients has embarked on a number of worldwidesustainability projects. We bring greater value to the communities and farmers we work with andhigher-quality ingredients to the marketplace back home. From establishing new, economically viable, crops for an organic fair-trade growers co-op comprised of 674 families in Nicaragua, to partnering with one of our manufacturers to build a bridge between communities that flooded in Honduras, to establishing sustainable farming education and training in Sri Lanka, we’re constantly on the hunt for opportunities to help our growers and their communities thrive in the face of adversity...which ultimately helps our manufacturers thrive. We replenish land, invest in communities, develop educational programs, and do everything we can to support sustainable practices, a healthy planet, and happy people.<\/p>",
+            "text_size": "default"
           }
         }
       },
