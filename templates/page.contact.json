@@ -48,6 +48,12 @@
           "settings": {
             "text": "<p>info@puregroundingredients.com<br\/>775-297-4047<\/p>"
           }
+        },
+        "cedd98a5-6f29-4b03-a62b-bb73c8eab2c7": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Commence_x_Pure_Ground_-_Heart_Illustration_1.png"
+          }
         }
       },
       "block_order": [
@@ -57,7 +63,8 @@
         "a7d76b5b-4b29-40cb-aeb1-19fd4c0e8647",
         "eba96e60-4b73-4bbf-a5a1-f0df199cd8c1",
         "08fd0e00-47d9-49b5-8d75-bda3b9ca13bc",
-        "7cce6bb7-5dc2-4816-b956-cc78a5d5cb9c"
+        "7cce6bb7-5dc2-4816-b956-cc78a5d5cb9c",
+        "cedd98a5-6f29-4b03-a62b-bb73c8eab2c7"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/unsplash_uaHShoIDGeo.jpg",
