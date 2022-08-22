@@ -106,6 +106,20 @@
       "footer": {
         "type": "footer",
         "blocks": {
+          "d20260bf-743d-4d2e-93b1-9547071476ce": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Organics",
+              "menu": "footer"
+            }
+          },
+          "footer-1": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Our Impact",
+              "menu": "company"
+            }
+          },
           "footer-0": {
             "type": "link_list",
             "settings": {
@@ -113,25 +127,19 @@
               "menu": "resources"
             }
           },
-          "footer-1": {
+          "96334398-d7a2-4f8a-b264-6b4f7df8aed4": {
             "type": "link_list",
             "settings": {
-              "heading": "Company",
-              "menu": "company"
-            }
-          },
-          "d20260bf-743d-4d2e-93b1-9547071476ce": {
-            "type": "link_list",
-            "settings": {
-              "heading": "Organics",
-              "menu": "footer"
+              "heading": "About Us",
+              "menu": "about-us-footer-submenu"
             }
           }
         },
         "block_order": [
-          "footer-0",
+          "d20260bf-743d-4d2e-93b1-9547071476ce",
           "footer-1",
-          "d20260bf-743d-4d2e-93b1-9547071476ce"
+          "footer-0",
+          "96334398-d7a2-4f8a-b264-6b4f7df8aed4"
         ],
         "settings": {
           "color_scheme": "ground",
