@@ -121,36 +121,42 @@
         "316ee8ce-2225-496c-84b0-718633c4bc58": {
           "type": "image",
           "settings": {
+            "icon": "shopify:\/\/shop_images\/Group_269.png",
             "text": "Paid company holidays and Paid Time Off"
           }
         },
         "99102a26-6e8a-4299-9424-fb60527cb671": {
           "type": "image",
           "settings": {
+            "icon": "shopify:\/\/shop_images\/Group_264.png",
             "text": "Dental and Vision"
           }
         },
         "bc7dcbf7-5ac6-4789-9ffc-6963ead871fe": {
           "type": "image",
           "settings": {
+            "icon": "shopify:\/\/shop_images\/Group_271.png",
             "text": "Competitive hourly wage"
           }
         },
         "cf7f733f-4e3b-4e4d-9d2a-2fd2c4784098": {
           "type": "image",
           "settings": {
+            "icon": "shopify:\/\/shop_images\/Group_268.png",
             "text": "401(k) plan with match"
           }
         },
         "a2492840-6bf3-4623-bd10-43d1c2164221": {
           "type": "image",
           "settings": {
+            "icon": "shopify:\/\/shop_images\/Group_267.png",
             "text": "Growth-oriented"
           }
         },
         "0bb6dd77-e9c4-4d4d-b6e5-5df7ed8769c2": {
           "type": "image",
           "settings": {
+            "icon": "shopify:\/\/shop_images\/Group_270.png",
             "text": "Health insurance with company contribution"
           }
         }
@@ -174,10 +180,57 @@
         "button_link": "",
         "alt": "",
         "layout": "three-col",
-        "icon_height": 100,
+        "icon_height": 60,
         "color_scheme": "cream",
         "top_spacing": 50,
         "bottom_spacing": 50
+      }
+    },
+    "166119675610be88bf": {
+      "type": "content-with-bg-image",
+      "blocks": {
+        "4ababe41-c0e4-4092-820e-044f5524ccb3": {
+          "type": "caption",
+          "settings": {
+            "caption": "Join the team"
+          }
+        },
+        "3f2ced51-a2df-4ea8-b21d-e9f512f4b2c6": {
+          "type": "heading",
+          "settings": {
+            "heading": "Get started with Pure Ground",
+            "heading_size": "h1"
+          }
+        },
+        "efbce4e8-4f69-464c-8776-ba6cd27858aa": {
+          "type": "button",
+          "settings": {
+            "button_label": "Apply Now",
+            "button_link": "https:\/\/apply.workable.com\/pgi-organics\/",
+            "button_color": "default"
+          }
+        }
+      },
+      "block_order": [
+        "4ababe41-c0e4-4092-820e-044f5524ccb3",
+        "3f2ced51-a2df-4ea8-b21d-e9f512f4b2c6",
+        "efbce4e8-4f69-464c-8776-ba6cd27858aa"
+      ],
+      "settings": {
+        "text_color": "light",
+        "nav_color": false,
+        "image": "shopify:\/\/shop_images\/unsplash_V0xp-dTS3z0_88cecadb-633c-4c82-8158-3d123d9a0e4d.jpg",
+        "alt": "Woman working in lab",
+        "overlay": 20,
+        "hero": false,
+        "fullwidth": true,
+        "accent_color": false,
+        "alignment": "center",
+        "color_scheme": "cream",
+        "top_spacing": 0,
+        "bottom_spacing": 0,
+        "top_internal_spacing": 100,
+        "bottom_internal_spacing": 100
       }
     }
   },
@@ -185,6 +238,7 @@
     "1647888127ec3582d3",
     "16478881949eb1c92b",
     "164617166466b4b1ef",
-    "164788827637c67184"
+    "164788827637c67184",
+    "166119675610be88bf"
   ]
 }
