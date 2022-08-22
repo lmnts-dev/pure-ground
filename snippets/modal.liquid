@@ -17,6 +17,9 @@
       {% if settings.modal_text %}
         <div class="__article-txt">{{ settings.modal_text }}</div>
       {% endif %}
+
+      {% render 'button', class: "cmnc-modal__content", button_label: settings.button_label, button_link: settings.button_link %}
+
       {% if settings.modal_newsletter %}
         {% form 'customer', class: "cmnc-modal__form __form-styles" %}
 
