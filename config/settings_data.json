@@ -5,6 +5,8 @@
     "modal_text": "<p>If you'd like to request more information you can reach us at:<\/p><p>info@puregroundingredients.com<\/p><p>775-297-4047<\/p>",
     "modal_newsletter": false,
     "resources_page": "resources",
+    "social_facebook_link": "https:\/\/www.facebook.com\/puregroundingredients\/",
+    "social_instagram_link": "https:\/\/www.instagram.com\/puregroundingredients\/",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
