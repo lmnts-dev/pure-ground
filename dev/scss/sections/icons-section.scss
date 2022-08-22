@@ -88,5 +88,9 @@
   }
 
   @media screen and (max-width: 676px) {
+    &.__has-image {
+      padding-left: var(--sectionHorizontalSpacing);
+      display: block;
+    }
   }
 }

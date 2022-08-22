@@ -10,9 +10,14 @@
 
   &__container {
     display: flex;
+    flex-flow: row wrap;
     width: 100%;
     align-items: flex-start;
     gap: calc(var(--pxSize) / 2);
+
+    > *:not(.btn) {
+      flex: 1;
+    }
 
     /* TODO, Jose should have put this in product-card file, this looks like it was supposed to be the stacked styles
     .product-card {
@@ -59,7 +64,9 @@
 
   @media screen and (max-width: 676px) {
     &__container {
-      flex-direction: column;
+      > *:not(.btn) {
+        flex: 40%;
+      }
     }
   }
 }
