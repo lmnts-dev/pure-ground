@@ -24,14 +24,14 @@
           "0dc547ff-b375-4b78-bad8-9ef9fc4a79d2": {
             "type": "link",
             "settings": {
-              "label": "Services",
-              "link": "shopify:\/\/pages\/services"
+              "label": "Quality Assurance",
+              "link": "shopify:\/\/pages\/quality-assurance-organic-integrity"
             }
           },
           "d9d4a0f1-92e8-4a6c-964f-c942b3f49c06": {
             "type": "label",
             "settings": {
-              "label": "Our Impact",
+              "label": "About Us",
               "color": "#d57a20"
             }
           },
