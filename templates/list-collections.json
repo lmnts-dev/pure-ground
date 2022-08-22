@@ -34,10 +34,10 @@
     "main": {
       "type": "main-list-collections",
       "settings": {
-        "heading": "Collections",
+        "heading": "",
         "sort": "alphabetical",
         "color_scheme": "cream",
-        "top_spacing": 50,
+        "top_spacing": 100,
         "bottom_spacing": 100
       }
     }
