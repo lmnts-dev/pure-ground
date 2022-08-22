@@ -184,7 +184,8 @@
         "166076299566652366-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Our innate nature is to take care of each other.  We attract and work with those with the same mentality. <\/p><p>Our team works every single day with a mentality of inclusivity, equality andempowerment. We are dedicated to environmental, economic & social sustainability; improving farmer livelihoods, providing safe & healthy products and building resilient communities. <\/p><p>We believe in using business as a force for good. We are conscious citizens and are proud to be an essential part of providing healthy, healing foods to communities around the globe. <\/p><p> We evolve together: We treat our partners, employees and customers like family. Our goal is to thrive together through practicing ethical business.  <\/p><p>Our actions speak our truth: We respect our natural resources and use them consciously. We exceed industry standards in ensuring organic is organic. Our processing facility is designed for low waste production and conscious energy consumption.  <\/p><p>We listen and respond: We act in service to our customers, traveling the globe to find the best in organic, sustainably sourced ingredients and leading the trends in market demands. <\/p>"
+            "text": "<p>Our innate nature is to take care of each other.  We attract and work with those with the same mentality. <\/p><p>Our team works every single day with a mentality of inclusivity, equality andempowerment. We are dedicated to environmental, economic & social sustainability; improving farmer livelihoods, providing safe & healthy products and building resilient communities. <\/p><p>We believe in using business as a force for good. We are conscious citizens and are proud to be an essential part of providing healthy, healing foods to communities around the globe. <\/p><p> We evolve together: We treat our partners, employees and customers like family. Our goal is to thrive together through practicing ethical business.  <\/p><p>Our actions speak our truth: We respect our natural resources and use them consciously. We exceed industry standards in ensuring organic is organic. Our processing facility is designed for low waste production and conscious energy consumption.  <\/p><p>We listen and respond: We act in service to our customers, traveling the globe to find the best in organic, sustainably sourced ingredients and leading the trends in market demands. <\/p>",
+            "text_size": "default"
           }
         }
       },
@@ -197,6 +198,43 @@
         "hero": false,
         "top_spacing": 50,
         "bottom_spacing": 100
+      }
+    },
+    "166119931541528774": {
+      "type": "image-grid",
+      "blocks": {
+        "12d67951-a600-4184-9186-b167bd482aa1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2018-08-21_17.54_2.jpg",
+            "image_width": "half"
+          }
+        },
+        "b1ea14c7-1205-4e53-b116-e918cdd74eba": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2018-08-21_17.54_3.jpg",
+            "image_width": "half"
+          }
+        },
+        "efab1027-f6d1-4da2-b17d-e19775c65159": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2018-08-21_17.54_4.jpg",
+            "image_width": "half"
+          }
+        }
+      },
+      "block_order": [
+        "12d67951-a600-4184-9186-b167bd482aa1",
+        "b1ea14c7-1205-4e53-b116-e918cdd74eba",
+        "efab1027-f6d1-4da2-b17d-e19775c65159"
+      ],
+      "settings": {
+        "row_height": 340,
+        "color_scheme": "cream",
+        "top_spacing": 0,
+        "bottom_spacing": 0
       }
     },
     "16444230281a285739": {
@@ -217,6 +255,7 @@
     "164512802361beb3e6",
     "1660763108b06b283c",
     "1660762995e5e236a9",
+    "166119931541528774",
     "16444230281a285739"
   ]
 }
