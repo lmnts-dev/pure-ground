@@ -69,6 +69,15 @@
         "bottom_spacing": 50
       }
     },
+    "16611972534ba504c9": {
+      "type": "divider",
+      "settings": {
+        "style": "dots",
+        "color_scheme": "cream",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
+    },
     "form": {
       "type": "contact-form",
       "blocks": {
@@ -112,6 +121,7 @@
   },
   "order": [
     "164435397998025e9c",
+    "16611972534ba504c9",
     "form"
   ]
 }
