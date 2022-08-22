@@ -11,7 +11,7 @@
     {%- case block.type -%}
       {%- when 'image' -%}
         {%- if block.settings.image != blank -%}
-          <div class="section-image-grid__image __style-{{ block.settings.image_style }}">
+          <div class="section-image-grid__image __style-{{ block.settings.image_width }}">
             {% render 'next-gen-img', image: block.settings.image %}
           </div>    
           
@@ -84,7 +84,7 @@
       "step": 10,
       "unit": "%",
       "label": "Top Spacing",
-      "default": 0
+      "default": 50
     },
     {
       "type": "range",
@@ -94,7 +94,7 @@
       "step": 10,
       "unit": "%",
       "label": "Bottom Spacing",
-      "default": 0
+      "default": 50
     }
   ],
   "blocks": [

@@ -1,0 +1,34 @@
+.section-image-grid {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: calc(var(--pxSize) / 3) 0;
+  margin-left: calc(var(--pxSize) / -6);
+  margin-right: calc(var(--pxSize) / -6);
+  width: calc(100% + calc(var(--pxSize) / 3));
+
+  &__image {
+    position: relative;
+    height: var(--imageGridRowHeight);
+    flex: 0 0 50%;
+    border-left: calc(var(--pxSize) / 6) solid transparent;
+    border-right: calc(var(--pxSize) / 6) solid transparent;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      inset: 0;
+      position: absolute;
+    }
+
+    &.__style-third {
+      flex: 0 0 calc(100% / 3);
+    }
+
+    &.__style-full {
+      flex: 0 0 100%;
+    }
+  }
+}

@@ -11,13 +11,11 @@
           }
         }
       },
-      "block_order": [
-        "01bf5adc-1791-4417-8d70-8ae07b13829e"
-      ],
+      "block_order": ["01bf5adc-1791-4417-8d70-8ae07b13829e"],
       "settings": {
         "text_color": "light",
         "nav_color": false,
-        "image": "shopify:\/\/shop_images\/unsplash_8rTwokBwz1w_0049480e-5067-46a3-9545-7c7be191aad8.jpg",
+        "image": "shopify://shop_images/unsplash_8rTwokBwz1w_0049480e-5067-46a3-9545-7c7be191aad8.jpg",
         "alt": "Guys on hillside with picked greens",
         "overlay": 20,
         "hero": true,
@@ -46,15 +44,12 @@
         "16438188434dae6d1d-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Pure Ground Ingredients leads the industry as the top provider of organic, sustainably sourced ingredients – all while empowering farmers and communities around the world.<\/p>",
+            "text": "<p>Pure Ground Ingredients leads the industry as the top provider of organic, sustainably sourced ingredients – all while empowering farmers and communities around the world.</p>",
             "text_size": "p-lg"
           }
         }
       },
-      "block_order": [
-        "16438188434dae6d1d-0",
-        "16438188434dae6d1d-1"
-      ],
+      "block_order": ["16438188434dae6d1d-0", "16438188434dae6d1d-1"],
       "settings": {
         "color_scheme": "background-1",
         "hero": false,
@@ -68,56 +63,56 @@
         "dd313d9b-410f-4d64-b834-7b395de32cd1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_34.jpg",
+            "image": "shopify://shop_images/Rectangle_34.jpg",
             "alt": "Working in agriculture"
           }
         },
         "e4dd4055-4f45-442d-bef5-4dcf4da1bf08": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_35_f5ced321-e512-4c5f-8521-b2df5e57e4f5.jpg",
+            "image": "shopify://shop_images/Rectangle_35_f5ced321-e512-4c5f-8521-b2df5e57e4f5.jpg",
             "alt": "Group photo of four people sitting"
           }
         },
         "1687b58f-a5cc-446d-a1c0-afb2a1083e42": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_37.jpg",
+            "image": "shopify://shop_images/Rectangle_37.jpg",
             "alt": "Working in agriculture"
           }
         },
         "c7ac2828-9bf5-4456-b5c7-6d9539487607": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_40_5be62817-6d34-4f97-8a1e-06350b8efba1.jpg",
+            "image": "shopify://shop_images/Rectangle_40_5be62817-6d34-4f97-8a1e-06350b8efba1.jpg",
             "alt": "Guy holding handful of greens"
           }
         },
         "3af7757f-cd1c-46d8-8f6c-4d27068f7f38": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_38.jpg",
+            "image": "shopify://shop_images/Rectangle_38.jpg",
             "alt": "Working in agriculture"
           }
         },
         "e0d006d9-c5b4-4b8f-8ae2-c855bb2c3788": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_39.jpg",
+            "image": "shopify://shop_images/Rectangle_39.jpg",
             "alt": "Working in agriculture"
           }
         },
         "c2160c49-cb73-4472-ba8b-bedbe1b4d3cd": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_36.jpg",
+            "image": "shopify://shop_images/Rectangle_36.jpg",
             "alt": "Working in agriculture"
           }
         },
         "e8180f0a-b172-45b8-9522-b3951ae36b48": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_33.jpg",
+            "image": "shopify://shop_images/Rectangle_33.jpg",
             "alt": "Working in agriculture"
           }
         }
@@ -153,15 +148,12 @@
         "166076310846034c62-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Pure Ground Ingredients has been a B-Corp since 2019 and was the second B-Corp in the state of Nevada.  In our continued commitment to use our business for doing good, we fully transitioned to becoming a public benefit corporation in 2022.  Certified B Corporations are leaders in the global movement for an inclusive, equitable, and regenerative economy. <\/p>",
+            "text": "<p>Pure Ground Ingredients has been a B-Corp since 2019 and was the second B-Corp in the state of Nevada.  In our continued commitment to use our business for doing good, we fully transitioned to becoming a public benefit corporation in 2022.  Certified B Corporations are leaders in the global movement for an inclusive, equitable, and regenerative economy. </p>",
             "text_size": "p-lg"
           }
         }
       },
-      "block_order": [
-        "166076310846034c62-0",
-        "166076310846034c62-1"
-      ],
+      "block_order": ["166076310846034c62-0", "166076310846034c62-1"],
       "settings": {
         "color_scheme": "cream",
         "hero": false,
@@ -184,15 +176,12 @@
         "166076299566652366-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Our innate nature is to take care of each other.  We attract and work with those with the same mentality. <\/p><p>Our team works every single day with a mentality of inclusivity, equality andempowerment. We are dedicated to environmental, economic & social sustainability; improving farmer livelihoods, providing safe & healthy products and building resilient communities. <\/p><p>We believe in using business as a force for good. We are conscious citizens and are proud to be an essential part of providing healthy, healing foods to communities around the globe. <\/p><p> We evolve together: We treat our partners, employees and customers like family. Our goal is to thrive together through practicing ethical business.  <\/p><p>Our actions speak our truth: We respect our natural resources and use them consciously. We exceed industry standards in ensuring organic is organic. Our processing facility is designed for low waste production and conscious energy consumption.  <\/p><p>We listen and respond: We act in service to our customers, traveling the globe to find the best in organic, sustainably sourced ingredients and leading the trends in market demands. <\/p>",
+            "text": "<p>Our innate nature is to take care of each other.  We attract and work with those with the same mentality. </p><p>Our team works every single day with a mentality of inclusivity, equality andempowerment. We are dedicated to environmental, economic & social sustainability; improving farmer livelihoods, providing safe & healthy products and building resilient communities. </p><p>We believe in using business as a force for good. We are conscious citizens and are proud to be an essential part of providing healthy, healing foods to communities around the globe. </p><p> We evolve together: We treat our partners, employees and customers like family. Our goal is to thrive together through practicing ethical business.  </p><p>Our actions speak our truth: We respect our natural resources and use them consciously. We exceed industry standards in ensuring organic is organic. Our processing facility is designed for low waste production and conscious energy consumption.  </p><p>We listen and respond: We act in service to our customers, traveling the globe to find the best in organic, sustainably sourced ingredients and leading the trends in market demands. </p>",
             "text_size": "default"
           }
         }
       },
-      "block_order": [
-        "166076299566652366-0",
-        "166076299566652366-1"
-      ],
+      "block_order": ["166076299566652366-0", "166076299566652366-1"],
       "settings": {
         "color_scheme": "cream",
         "hero": false,
@@ -206,22 +195,22 @@
         "12d67951-a600-4184-9186-b167bd482aa1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2018-08-21_17.54_2.jpg",
+            "image": "shopify://shop_images/2018-08-21_17.54_2.jpg",
             "image_width": "half"
           }
         },
         "b1ea14c7-1205-4e53-b116-e918cdd74eba": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2018-08-21_17.54_3.jpg",
+            "image": "shopify://shop_images/2018-08-21_17.54_3.jpg",
             "image_width": "half"
           }
         },
         "efab1027-f6d1-4da2-b17d-e19775c65159": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2018-08-21_17.54_4.jpg",
-            "image_width": "half"
+            "image": "shopify://shop_images/2018-08-21_17.54_4.jpg",
+            "image_width": "full"
           }
         }
       },
@@ -233,15 +222,15 @@
       "settings": {
         "row_height": 340,
         "color_scheme": "cream",
-        "top_spacing": 0,
-        "bottom_spacing": 0
+        "top_spacing": 50,
+        "bottom_spacing": 50
       }
     },
     "16444230281a285739": {
       "type": "featured-page-link",
       "settings": {
         "page_link": "about-us",
-        "image": "shopify:\/\/shop_images\/2018-08-21_17.31_1.jpg",
+        "image": "shopify://shop_images/2018-08-21_17.31_1.jpg",
         "alt": "Two guys standing in field of crops",
         "color_scheme": "cream",
         "top_spacing": 0,
