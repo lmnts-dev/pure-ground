@@ -1,0 +1,139 @@
+{% style %}
+    #Section-image-grid-{{ section.id }} {
+      --topSpacingRatio: {{section.settings.top_spacing}} / 100;
+      --bottomSpacingRatio: {{section.settings.bottom_spacing}} / 100;
+      --imageGridRowHeight: {{section.settings.row_height}}px;
+    }
+{% endstyle %}
+
+<div id="Section-image-grid-{{ section.id }}" class="section-image-grid color-{{section.settings.color_scheme}}">
+  {%- for block in section.blocks -%}
+    {%- case block.type -%}
+      {%- when 'image' -%}
+        {%- if block.settings.image != blank -%}
+          <div class="section-image-grid__image __style-{{ block.settings.image_style }}">
+            {% render 'next-gen-img', image: block.settings.image %}
+          </div>    
+          
+        {%- endif -%}     
+    {%- endcase -%}
+  {%- endfor -%}
+</div>
+
+{% schema %}
+{
+  "name": "Image",
+  "tag": "section",
+  "class": "section-image-grid__wrapper",
+  "settings": [
+    {
+        "type": "header",
+        "content": "Settings"
+    },
+    {
+      "type": "range",
+      "id": "row_height",
+      "min": 140,
+      "max": 500,
+      "step": 20,
+      "default": 350,
+      "unit": "px",
+      "label": "Row Height"
+    },
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "options": [
+        {
+          "value": "cream",
+          "label": "Cream (Default)"
+        },
+        {
+          "value": "dark-cream",
+          "label": "Dark Cream"
+        },
+        {
+          "value": "grass",
+          "label": "Grass"
+        },
+        {
+          "value": "sun",
+          "label": "Sun"
+        },
+        {
+          "value": "ground",
+          "label": "Ground"
+        },
+        {
+          "value": "sky",
+          "label": "Sky"
+        },
+        {
+          "value": "tan",
+          "label": "Tan"
+        }
+      ],
+      "default": "cream",
+      "label": "Color Scheme"
+    },
+    {
+      "type": "range",
+      "id": "top_spacing",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "%",
+      "label": "Top Spacing",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "bottom_spacing",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "%",
+      "label": "Bottom Spacing",
+      "default": 0
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Image",
+      "type": "image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image",
+        },
+        {
+          "type": "select",
+          "id": "image_width",
+          "options": [
+            {
+              "value": "third",
+              "label": "33% (Default)"
+            },
+            {
+              "value": "half",
+              "label": "50% (Default)"
+            },
+            {
+              "value": "full",
+              "label": "100%"
+            }
+          ],
+          "default": "half",
+          "label": "Image Width"
+        },
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image Grid"
+    }
+  ]
+}
+{% endschema %}

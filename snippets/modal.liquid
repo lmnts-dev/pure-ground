@@ -15,7 +15,7 @@
         <h2 class="h4">{{ settings.modal_heading }}</h2>
       {% endif %}
       {% if settings.modal_text %}
-        <p>{{ settings.modal_text }}</p>
+        <div class="__article-txt">{{ settings.modal_text }}</div>
       {% endif %}
       {% if settings.modal_newsletter %}
         {% form 'customer', class: "cmnc-modal__form __form-styles" %}
