@@ -31,15 +31,80 @@
         "bottom_spacing": 50
       }
     },
-    "16478881949eb1c92b": {
-      "type": "image",
+    "166119697609797ea7": {
+      "type": "gallery",
+      "blocks": {
+        "1661196976de61f233-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_34_156649c1-f649-4d61-ab6e-42c2aa31bb39.jpg",
+            "alt": "Four workers in lab"
+          }
+        },
+        "1661196976de61f233-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2018-08-21_17.54_1_ac102e6d-db8e-455f-a14d-4b8bfa316844.jpg",
+            "alt": "Working discussing at a table"
+          }
+        },
+        "b3a22e88-f789-4d14-b292-94aca4170021": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/unsplash_3D43SBDDkAc_ae135df5-6dd9-4c4e-966a-7cf2ff86b9cf.jpg",
+            "alt": "Workers inspecting ingredients in lab"
+          }
+        },
+        "821e7cd8-e8bf-46d7-8fe6-135a60353865": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_40_42e0348e-51db-4ec9-90ec-150ccf08fdd9.jpg",
+            "alt": "Workers having meeting at table"
+          }
+        },
+        "42d6892b-ff60-456d-abf4-76b6d1db35d6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_38_e1c2881a-759c-46e5-b75f-c65d392fadc3.jpg",
+            "alt": "Two workers talking"
+          }
+        },
+        "52cf6ce2-b4d2-459a-a6eb-8395303e1e07": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_39_4590f9f9-8c84-44d6-93f4-b64032d7764c.jpg",
+            "alt": "Group of volunteers"
+          }
+        },
+        "639c105f-5cab-4374-a1f8-2e6a87f452e1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_36_d558afd5-e424-4495-a97d-2c9df48efceb.jpg",
+            "alt": "Worker holding an award"
+          }
+        },
+        "f971be3e-1459-4727-9e42-1cfdf2423378": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_33_2ebb98f6-c1ef-4df5-b905-cf4d965f5cb8.jpg",
+            "alt": "Worker holding bags of ingredients"
+          }
+        }
+      },
+      "block_order": [
+        "1661196976de61f233-0",
+        "1661196976de61f233-1",
+        "b3a22e88-f789-4d14-b292-94aca4170021",
+        "821e7cd8-e8bf-46d7-8fe6-135a60353865",
+        "42d6892b-ff60-456d-abf4-76b6d1db35d6",
+        "52cf6ce2-b4d2-459a-a6eb-8395303e1e07",
+        "639c105f-5cab-4374-a1f8-2e6a87f452e1",
+        "f971be3e-1459-4727-9e42-1cfdf2423378"
+      ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/unsplash_3D43SBDDkAc.jpg",
-        "image_style": "fullwidth",
-        "nav_color": false,
         "color_scheme": "cream",
-        "top_spacing": 0,
-        "bottom_spacing": 0
+        "top_spacing": 50,
+        "bottom_spacing": 50
       }
     },
     "164617166466b4b1ef": {
@@ -236,7 +301,7 @@
   },
   "order": [
     "1647888127ec3582d3",
-    "16478881949eb1c92b",
+    "166119697609797ea7",
     "164617166466b4b1ef",
     "164788827637c67184",
     "166119675610be88bf"
