@@ -136,13 +136,48 @@
               "heading": "About Us",
               "menu": "about-us-footer-submenu"
             }
+          },
+          "af0a88bc-d01b-432f-ac8b-a2653eb0ba1b": {
+            "type": "icon",
+            "settings": {
+              "icon": "shopify:\/\/shop_images\/Artboard_98.png"
+            }
+          },
+          "9b57e61c-0bb7-49b2-8f09-7beff78f127d": {
+            "type": "icon",
+            "settings": {
+              "icon": "shopify:\/\/shop_images\/Artboard_100.png"
+            }
+          },
+          "44610579-d3ab-4f0a-859d-1ac5c84dff68": {
+            "type": "icon",
+            "settings": {
+              "icon": "shopify:\/\/shop_images\/Artboard_99.png"
+            }
+          },
+          "32885bae-e632-4d43-8d21-6bf4cbfa96df": {
+            "type": "icon",
+            "settings": {
+              "icon": "shopify:\/\/shop_images\/Artboard_97.png"
+            }
+          },
+          "c6530dc9-7dc0-400c-84f8-707ed85d5b43": {
+            "type": "icon",
+            "settings": {
+              "icon": "shopify:\/\/shop_images\/Halal_Certified.png"
+            }
           }
         },
         "block_order": [
           "d20260bf-743d-4d2e-93b1-9547071476ce",
           "footer-1",
           "footer-0",
-          "96334398-d7a2-4f8a-b264-6b4f7df8aed4"
+          "96334398-d7a2-4f8a-b264-6b4f7df8aed4",
+          "af0a88bc-d01b-432f-ac8b-a2653eb0ba1b",
+          "9b57e61c-0bb7-49b2-8f09-7beff78f127d",
+          "44610579-d3ab-4f0a-859d-1ac5c84dff68",
+          "32885bae-e632-4d43-8d21-6bf4cbfa96df",
+          "c6530dc9-7dc0-400c-84f8-707ed85d5b43"
         ],
         "settings": {
           "color_scheme": "ground",
