@@ -218,6 +218,11 @@
         padding-left: var(--pxSize);
       }
 
+      &.__featured-page {
+        max-width: 250px;
+        flex: 1;
+      }
+
       // all blocks hover states
       &:hover {
         .site-header__dropdown__block {
@@ -394,10 +399,6 @@
               padding: 0;
             }
           }
-        }
-
-        &.__featured-page {
-          max-width: 250px;
         }
 
         &.__articles {
