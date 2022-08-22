@@ -1,23 +1,33 @@
 {
   "sections": {
-    "1661200067b110275b": {
-      "type": "image-grid",
+    "1661200290169c15f1": {
+      "type": "icons-section",
       "blocks": {
-        "5ceb27bb-37a4-4a88-8bec-f5c84e76f6c2": {
+        "565d6278-2812-461f-a58e-de65d3046605": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Group_236.png",
-            "image_width": "third"
+            "icon": "shopify:\/\/shop_images\/Group_236.png",
+            "text": ""
           }
         }
       },
       "block_order": [
-        "5ceb27bb-37a4-4a88-8bec-f5c84e76f6c2"
+        "565d6278-2812-461f-a58e-de65d3046605"
       ],
       "settings": {
-        "row_height": 460,
+        "caption": "",
+        "heading": "",
+        "subheading": "",
+        "heading_size": "h2",
+        "accent_color": false,
+        "text": "",
+        "button_label": "",
+        "button_link": "",
+        "alt": "",
+        "layout": "three-col",
+        "icon_height": 250,
         "color_scheme": "cream",
-        "top_spacing": 50,
+        "top_spacing": 0,
         "bottom_spacing": 50
       }
     },
@@ -147,7 +157,7 @@
     }
   },
   "order": [
-    "1661200067b110275b",
+    "1661200290169c15f1",
     "1643818843f333eb74",
     "164788908369f4af3d",
     "166085793650de6697",
