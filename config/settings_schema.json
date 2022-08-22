@@ -4,8 +4,8 @@
     "theme_name": "Morning",
     "theme_version": "3.0.0",
     "theme_author": "Commence",
-    "theme_documentation_url": "https:\/\/help.shopify.com\/en\/manual\/online-store\/themes",
-    "theme_support_url": "https:\/\/commence.studio\/contact"
+    "theme_documentation_url": "https://help.shopify.com/en/manual/online-store/themes",
+    "theme_support_url": "https://commence.studio/contact"
   },
   {
     "name": "Coming Soon Modal Details",
@@ -1094,6 +1094,12 @@
         "id": "social_tiktok_link",
         "label": "t:settings_schema.social-media.settings.social_tiktok_link.label",
         "info": "t:settings_schema.social-media.settings.social_tiktok_link.info"
+      },
+      {
+        "type": "text",
+        "id": "social_linkedin_link",
+        "label": "LinkedIn",
+        "info": "https://www.linkedin.com/company/shopify"
       },
       {
         "type": "text",
