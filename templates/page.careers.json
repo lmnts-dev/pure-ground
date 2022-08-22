@@ -15,7 +15,8 @@
         "1647888127708a88e2-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Our team works every single day to ensure a world in which organic actually means organic—and in which farmers, manufacturers, and consumers come together as one in the name of thriving communities and a happy planet.<\/p><p>We believe in impact.  Our innate nature is to take care of each other.  We attract and work with those with the same mentality.<\/p>"
+            "text": "<p>Our team works every single day to ensure a world in which organic actually means organic—and in which farmers, manufacturers, and consumers come together as one in the name of thriving communities and a happy planet.<\/p><p>We believe in impact.  Our innate nature is to take care of each other.  We attract and work with those with the same mentality.<\/p>",
+            "text_size": "default"
           }
         }
       },
@@ -35,6 +36,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/unsplash_3D43SBDDkAc.jpg",
         "image_style": "fullwidth",
+        "nav_color": false,
         "color_scheme": "cream",
         "top_spacing": 0,
         "bottom_spacing": 0
@@ -46,12 +48,12 @@
         "277f0779-6824-4b72-a2bc-1356120ba8b9": {
           "type": "position",
           "settings": {
-            "heading": "Customer Service Representative",
-            "location": "Position",
-            "details": "<p>Testing details here<\/p>",
+            "heading": "Production Planner\/Master Scheduler",
+            "location": "Minden",
+            "details": "<p>JOB TITLE: Production Planner\/Master Scheduler<br\/><\/p><p>REPORTS TO: Operations Manager<br\/><\/p><p>The Planner is responsible for the review and release of individual orders to production, while<br\/>ensuring that customer requirements are clearly and accurately communicated and fall within<br\/>Company capacities and policies. Schedules order workflows for each applicable operation<br\/>according to established process sequences and lead times and integrates multiple orders into a<br\/>master schedule that maximizes production output and minimizes costs to produce goods. The<br\/>Planner collaborates with senior management and sales to ensure that product on hand is<br\/>properly allocated to best fulfill company and customer needs.<br\/><\/p><p>CORE FUNCTIONS:<br\/>• Practice and adhere to standard operating procedures and policies<br\/>• Schedules, amends, or cancels work orders based upon company or customer demands<br\/>• Collects data to evaluate, update and monitor production outputs to improve accuracy of<br\/>order completion forecasts, and to identify opportunities to improve internal processes.<br\/>• Recognizes dependencies of production outputs to customer inputs or approvals and<br\/>develops or amends order completion schedules based on internal capacities & external<br\/>constraints.<br\/>• Promptly prepares documents needed to initiate the production process for customer orders.<br\/>• Internal Relationships: Frequent interaction with virtually all Company Departments, to<br\/>include coordination of production and reporting of production schedules needed to meet<br\/>company targets.<br\/>• Perform other duties as assigned.<br\/><\/p><p>QUALIFICATIONS:<br\/>• 3 years minimum recent experience as a Planner\/Scheduler in a manufacturing plant.<br\/>• Experience in the herb\/spices or food\/beverage industries is a plus.<br\/>• Results driven individual with strong organizational, analytic, and multi-tasking skills<br\/>• Excellent verbal and written communication skills, and regularly informs other Departments<br\/>about production scheduling challenges, possible solutions and scheduling impacts.<br\/>• Shows initiative, a sense of urgency and applies problem solving skills to ensure meeting<br\/>deadlines<br\/>• Interacts with staff & vendors with professionalism, mutual respect, integrity, and a can-do<br\/>spirit.<br\/>• Equally at ease working independently with minimal supervision or in a team setting.<br\/>• Associate Degree required, Bachelor’s Degree in a related field is preferred.<br\/>• Computer literate using Microsoft Office: Excel, Word, and Outlook<br\/>• Ability to learn & use planning software “Smart Sheet” , “Kanban Tool” and “Core” is<br\/>required.<br\/>• Experience using QuickBooks Enterprise and Inventory Management software is a plus.<br\/><\/p><p>COMPENSATION:<br\/>• Paid company holidays.<br\/>• Health Insurance with company contribution, Dental and Vision available<br\/>PURE GROUND INGREDIENTS<br\/>• 401(k) plan with match.<br\/><\/p><p>OTHER:<br\/>• Applicant must be authorized to work in the U.S.<br\/>• Must be able to stoop, bend, stand, or squat as necessary and operate office equipment.<br\/>• Frequently lifts office or production items up to 30 lbs. and occasionally lifts to 45 lbs.<br\/>• Pure Ground Ingredients, Inc is an equal opportunity Employer.<\/p>",
             "button_label": "Apply Now",
-            "button_link": "shopify:\/\/pages\/privacy-policy",
-            "department": "HR"
+            "button_link": "https:\/\/apply.workable.com\/pgi-organics\/",
+            "department": "Operations"
           }
         },
         "807e88ff-dab1-41ec-baa3-39db101410d2": {
@@ -164,7 +166,15 @@
       "settings": {
         "caption": "Perks & Benefits",
         "heading": "Live your best life",
+        "subheading": "",
+        "heading_size": "h2",
+        "accent_color": false,
         "text": "<p>There’s life at work and life outside of work. We want everyone to be healthy and have the resources and support they need.<\/p>",
+        "button_label": "Button label",
+        "button_link": "",
+        "alt": "",
+        "layout": "three-col",
+        "icon_height": 100,
         "color_scheme": "cream",
         "top_spacing": 50,
         "bottom_spacing": 50
