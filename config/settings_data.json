@@ -85,13 +85,6 @@
             "settings": {
               "menu": "featured-resources"
             }
-          },
-          "6862133b-6306-4224-897b-8d5b71379b1c": {
-            "type": "link",
-            "settings": {
-              "label": "EU\/Signe",
-              "link": "shopify:\/\/pages\/european-operations"
-            }
           }
         },
         "block_order": [
@@ -105,8 +98,7 @@
           "aabd9f5b-6fb3-4cd3-9443-4ea104e820c9",
           "b2bcdc3e-53b7-4366-9941-db39b4906944",
           "7f2df142-cc7c-4838-88a4-211f225706f0",
-          "f537cb93-a2e6-4b92-b5fe-d43941dc8f9d",
-          "6862133b-6306-4224-897b-8d5b71379b1c"
+          "f537cb93-a2e6-4b92-b5fe-d43941dc8f9d"
         ],
         "settings": {
         }
