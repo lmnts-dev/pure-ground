@@ -61,7 +61,7 @@
                      {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
                   {%- endif -%}
 
-                  {% if block.settings.text %}
+                  {% if block.settings.text != "" %}
                      <p class="p-sm">{{block.settings.text }}</p>
                   {% endif %}
                </div>         
@@ -183,7 +183,7 @@
          "type":"range",
          "id":"icon_height",
          "min":50,
-         "max":250,
+         "max":500,
          "step":10,
          "unit":"px",
          "label":"Icon Height",
