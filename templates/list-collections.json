@@ -2,28 +2,33 @@
   "sections": {
     "1645465766aa7fad07": {
       "type": "content-with-bg-image",
+      "blocks": {
+        "8d412f7f-e814-4ca3-988e-091eec6811de": {
+          "type": "heading",
+          "settings": {
+            "heading": "ORGANIC INGREDIENT CATEGORIES",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "8d412f7f-e814-4ca3-988e-091eec6811de"
+      ],
       "settings": {
-        "heading": "Directly from the Source",
-        "subheading": "",
-        "text": "",
-        "heading_size": "h2",
         "text_color": "light",
-        "button_label": "",
-        "button_link": "",
-        "button_color": "default",
-        "image": "shopify:\/\/shop_images\/women-harvesting.jpg",
-        "alt": "",
+        "nav_color": true,
+        "image": "shopify:\/\/shop_images\/unsplash_3kVjwHFwin0.jpg",
+        "alt": "Spoonfuls of spices",
         "overlay": 20,
         "hero": true,
-        "fullwidth": false,
+        "fullwidth": true,
         "accent_color": false,
         "alignment": "center",
-        "icon": false,
         "color_scheme": "cream",
         "top_spacing": 0,
         "bottom_spacing": 0,
-        "top_internal_spacing": 100,
-        "bottom_internal_spacing": 100
+        "top_internal_spacing": 250,
+        "bottom_internal_spacing": 30
       }
     },
     "main": {
