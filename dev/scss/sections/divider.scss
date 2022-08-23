@@ -1,9 +1,22 @@
 .divider {
   padding-left: 0;
   padding-right: 0;
+  overflow: hidden;
 
   svg {
     width: 100%;
     height: auto;
+  }
+
+  @media screen and (max-width: 1024px) {
+    svg {
+      width: 120%;
+    }
+  }
+
+  @media screen and (max-width: 676px) {
+    svg {
+      width: 200%;
+    }
   }
 }

@@ -2,6 +2,7 @@
   --splitSectionSpace: calc(var(--sectionHorizontalSpacing) / 1.5);
   --splitSectionRatio: 37%;
   display: flex;
+  gap: var(--splitSectionSpace);
 
   &__text {
     display: flex;
@@ -42,10 +43,6 @@
           left: 0;
         }
       }
-
-      &__text {
-        padding-right: var(--splitSectionSpace);
-      }
     }
   }
 
@@ -57,10 +54,6 @@
         img {
           right: 0;
         }
-      }
-
-      &__text {
-        padding-left: var(--splitSectionSpace);
       }
     }
   }
@@ -100,49 +93,28 @@
   }
 
   @media screen and (max-width: 676px) {
+    --splitSectionSpace: var(--sectionVerticalSpacing);
     flex-direction: column-reverse;
 
     &__image {
-      padding-top: 66.66666666666666%;
-      margin: 0 calc(var(--sectionHorizontalSpacing) * -1);
+      width: 100%;
+      padding-top: calc(100% * 2 / 3);
 
       img {
         width: 100%;
       }
     }
 
-    &.__image-style-square {
-      .split-section {
-        &__image {
-          width: 100%;
-          padding-top: 66.66666666666666%;
-          height: 100%;
-        }
-      }
-    }
-
-    &:not(.__image-style-square) {
-      .split-section {
-        &__text {
-          padding-right: 0;
-        }
-      }
-    }
-
     &.__layout-reversed {
       flex-direction: column-reverse;
-
-      .split-section {
-        &__text {
-          padding-left: 0;
-        }
-      }
     }
 
-    &:not(.__layout-reversed) {
+    &.__image-style-square {
+      --splitSectionSpace: var(--sectionVerticalSpacing);
+
       .split-section {
-        &__text {
-          padding-right: 0;
+        &__image {
+          padding-top: 100%;
         }
       }
     }

@@ -121,11 +121,17 @@
 
   &__links {
     &__item {
+      line-height: 1.2;
+
       &__link {
+        display: block;
         color: var(--color-foreground);
         opacity: 1;
         will-change: opacity;
         transition: all 0.25s ease;
+        line-height: 1.2;
+        margin: 0;
+        padding: calc(var(--pxSize) / 6) 0;
 
         &:hover {
           opacity: 0.5;
