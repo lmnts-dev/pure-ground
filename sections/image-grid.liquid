@@ -4,6 +4,18 @@
       --bottomSpacingRatio: {{section.settings.bottom_spacing}} / 100;
       --imageGridRowHeight: {{section.settings.row_height}}px;
     }
+
+    @media screen and (max-width: 1024px) {
+      #Section-image-grid-{{ section.id }} {
+        --imageGridRowHeight: {{section.settings.row_height | times: 0.75}}px;
+      }
+    }
+
+    @media screen and (max-width: 676px) {
+      #Section-image-grid-{{ section.id }} {
+        --imageGridRowHeight: {{section.settings.row_height | divided_by: 2}}px;
+      }
+    }
 {% endstyle %}
 
 <div id="Section-image-grid-{{ section.id }}" class="section-image-grid color-{{section.settings.color_scheme}}">

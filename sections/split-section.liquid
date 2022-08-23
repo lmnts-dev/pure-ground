@@ -27,21 +27,7 @@
         {%- when 'icon' -%}
           {%- if block.settings.icon != blank -%}
             <div class="split-section__text__icon">
-              <img
-              srcset="{%- if block.settings.icon.width >= 165 -%}{{ block.settings.icon | img_url: '165x' }} 165w,{%- endif -%}
-                  {%- if block.settings.icon.width >= 360 -%}{{ block.settings.icon | img_url: '360x' }} 360w,{%- endif -%}
-                  {%- if block.settings.icon.width >= 535 -%}{{ block.settings.icon | img_url: '535x' }} 535w,{%- endif -%}
-                  {%- if block.settings.icon.width >= 750 -%}{{ block.settings.icon | img_url: '750x' }} 750w,{%- endif -%}
-                  {%- if block.settings.icon.width >= 1070 -%}{{ block.settings.icon | img_url: '1070x' }} 1070w,{%- endif -%}
-                  {%- if block.settings.icon.width >= 1500 -%}{{ block.settings.icon | img_url: '1500x' }} 1500w,{%- endif -%}
-                  {{ block.settings.icon | img_url: 'master' }} {{ block.settings.icon.width }}w"
-              src="{{ block.settings.icon | img_url: '1500x' }}"
-              sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
-              alt="{{ block.settings.icon.alt | escape }}"
-              loading="lazy"
-              width="{{ block.settings.icon.width }}"
-              height="{{ block.settings.icon.height }}"
-              >
+              {% render 'next-gen-img', image: block.settings.icon %}
             </div>
           {%- endif -%}
 
@@ -50,21 +36,7 @@
   </div>
   <div class="split-section__image">
     {%- if section.settings.image != blank -%}
-      <img
-        srcset="{%- if section.settings.image.width >= 165 -%}{{ section.settings.image | img_url: '165x' }} 165w,{%- endif -%}
-          {%- if section.settings.image.width >= 360 -%}{{ section.settings.image | img_url: '360x' }} 360w,{%- endif -%}
-          {%- if section.settings.image.width >= 535 -%}{{ section.settings.image | img_url: '535x' }} 535w,{%- endif -%}
-          {%- if section.settings.image.width >= 750 -%}{{ section.settings.image | img_url: '750x' }} 750w,{%- endif -%}
-          {%- if section.settings.image.width >= 1070 -%}{{ section.settings.image | img_url: '1070x' }} 1070w,{%- endif -%}
-          {%- if section.settings.image.width >= 1500 -%}{{ section.settings.image | img_url: '1500x' }} 1500w,{%- endif -%}
-          {{ section.settings.image | img_url: 'master' }} {{ section.settings.image.width }}w"
-        src="{{ section.settings.image | img_url: '1500x' }}"
-        sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
-        alt="{{ section.settings.image.alt | escape }}"
-        loading="lazy"
-        width="{{ section.settings.image.width }}"
-        height="{{ section.settings.image.height }}"
-      >
+      {% render 'next-gen-img', image: section.settings.image %}
     {%- else -%}
       {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
     {%- endif -%}

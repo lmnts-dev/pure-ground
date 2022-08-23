@@ -128,16 +128,4 @@
       }
     }
   }
-
-  @media screen and (max-width: 676px) {
-    &__inner {
-      position: relative;
-    }
-
-    &.__as-hero {
-      .content-with-bg-image__inner {
-        height: 90vh;
-      }
-    }
-  }
 }

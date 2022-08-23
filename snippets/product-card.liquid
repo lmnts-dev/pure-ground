@@ -25,21 +25,7 @@
   <span href="{{ url }}" class="product-card also-like __style-{% if style %}{{style}}{% else %}default{% endif %}">
     <div class="product-card__image">
       {% if product.featured_image %}
-        <img
-          srcset="{%- if product.featured_image.src.width >= 165 -%}{{ product.featured_image.src | img_url: '165x' }} 165w,{%- endif -%}
-            {%- if product.featured_image.src.width >= 360 -%}{{ product.featured_image.src | img_url: '360x' }} 360w,{%- endif -%}
-            {%- if product.featured_image.src.width >= 533 -%}{{ product.featured_image.src | img_url: '533x' }} 533w,{%- endif -%}
-            {%- if product.featured_image.src.width >= 720 -%}{{ product.featured_image.src | img_url: '720x' }} 720w,{%- endif -%}
-            {%- if product.featured_image.src.width >= 1000 -%}{{ product.featured_image.src | img_url: '1000x' }} 1000w,{%- endif -%}
-            {%- if product.featured_image.src.width >= 1500 -%}{{ product.featured_image.src | img_url: '1500x' }} 1500w,{%- endif -%}
-            {{ product.featured_image.src | img_url: 'master' }} {{ product.featured_image.src.width }}w"
-          src="{{ product.featured_image.src | img_url: '533x' }}"
-          sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
-          alt="{{ product.featured_image.src.alt | escape }}"
-          loading="lazy"
-          width="{{ product.featured_image.width }}"
-          height="{{ product.featured_image.height }}"
-        >
+        {% render 'next-gen-img', image: product.featured_image %}
       {% else %}
           <div class="product-card__image__placeholder"></div>
       {% endif %}

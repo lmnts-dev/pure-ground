@@ -28,6 +28,8 @@
 .__btn-clr-cream {
   --color-btn: rgba(var(--color-cream));
   --color-btn-txt: rgba(var(--color-ground));
+  --color-btn-hover: rgba(var(--color-ground));
+  --color-btn-hover-txt: rgba(var(--color-cream));
 }
 
 .color-background-2,
@@ -45,6 +47,8 @@
 .__btn-clr-dark-cream {
   --color-btn: rgba(var(--color-dark-cream));
   --color-btn-txt: rgba(var(--color-ground));
+  --color-btn-hover: rgba(var(--color-ground));
+  --color-btn-hover-txt: rgba(var(--color-cream));
 }
 
 .color-inverse,
