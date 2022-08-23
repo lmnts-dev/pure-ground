@@ -8,7 +8,7 @@
     }
 
     {% if section.settings.nav_color == true %}
-      .site-header.__style-relative:not(.__dropdown-open) {
+      .site-header.__style-relative:not(.__dropdown-open):not(.__overlay-open) {
          {% if section.settings.text_color == 'light' %}
             --color-foreground: white;
          {% endif %}

@@ -9,7 +9,7 @@
     {% assign style = "relative" %}
   {% endif %}
 
-  <{% if style == "on-scroll" %}sticky-header{% else %}header{% endif %} class="{{ className }} __style-{{ style }}">
+  <{% if style == "on-scroll" %}sticky-header{% else %}header{% endif %} class="{{ className }} __style-{{ style }} {% if section.settings.always_show_nav %}__always-show-nav{% endif %}">
 
     {% comment %} Logo {% endcomment %}
     <a class="{{ className }}__logo" href="/">{% render 'svg-logo' %}</a>
@@ -167,12 +167,13 @@
       
       let scrollPosition = window.pageYOffset;
       let lastScollPosition = e.currentTarget.lastScollPosition;
+      let alwaysShowNav = this.classList.contains("__always-show-nav");
       let scrollingDown = false;
       if ( lastScollPosition < scrollPosition ) {
         scrollingDown = true;
       }
 
-      if ( !scrollingDown && scrollPosition > 200 ) {
+      if ( (!scrollingDown && scrollPosition > 200) || (scrollingDown && scrollPosition > 75)) {
         this.classList.add('__visible');
         this.parentNode.classList.add('__visible-nav');
       } else {
