@@ -4,6 +4,14 @@
       --bottomSpacingRatio: {{section.settings.bottom_spacing}} / 100;
       --iconHeight: {{section.settings.icon_height}}px;
     }
+
+   @media screen and (max-width: 676px) {
+      {% if section.settings.icon_height > 400 %}
+         #Icons-section-{{ section.id }} {
+            --iconHeight: {{ section.settings.icon_height | times: 0.6}}px;
+         }
+      {% endif %}
+   }
  {% endstyle %}
 
 <div id="Icons-section-{{ section.id }}" class="icons-section color-{{section.settings.color_scheme}} {% if section.settings.image != blank %}__has-image{% endif %}"  
@@ -15,7 +23,7 @@
    {%- endif -%}
    
 
-   {% if section.settings.caption or section.settings.heading or section.settings.subheading or section.settings.text or section.settings.button_link and section.settings.button_label %}
+   {% if section.settings.caption != "" or section.settings.heading != "" or section.settings.subheading != "" or section.settings.text != "" or section.settings.button_link != "" and section.settings.button_label != "" %}
       <div class="icons-section__text">
          {% if section.settings.caption %}
             <span class="icons-section__text__caption">{{ section.settings.caption }}</span>

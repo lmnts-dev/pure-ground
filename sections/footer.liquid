@@ -46,28 +46,31 @@
   {%- if section.blocks.size > 0 -%}
     <div class="section-footer__blocks">
       {%- for block in section.blocks -%}
-        <div class="section-footer__blocks__block" {{ block.shopify_attributes }}>
+        
           {%- case block.type -%}
             {%- when 'link_list' -%}
-              {%- if block.settings.heading != blank -%}
-                <p class="section-footer__header caption">{{- block.settings.heading | escape -}}</p>
-              {%- endif -%}
-              {%- if block.settings.menu != blank and block.settings.heading != blank -%}
-                <ul class="section-footer__links list-unstyled">
-                  {%- for link in block.settings.menu.links -%}
-                    <li class="section-footer__links__item">
-                      <a class="section-footer__links__item__link p-sm" href="{{ link.url }}">
-                        {{ link.title }}
-                      </a>
-                    </li>
-                  {%- endfor -%}
-                </ul>
-              {%- endif -%}
+              <div class="section-footer__blocks__block" {{ block.shopify_attributes }}>
+                {%- if block.settings.heading != blank -%}
+                  <p class="section-footer__header caption">{{- block.settings.heading | escape -}}</p>
+                {%- endif -%}
+                {%- if block.settings.menu != blank and block.settings.heading != blank -%}
+                  <ul class="section-footer__links list-unstyled">
+                    {%- for link in block.settings.menu.links -%}
+                      <li class="section-footer__links__item">
+                        <a class="section-footer__links__item__link p-sm" href="{{ link.url }}">
+                          {{ link.title }}
+                        </a>
+                      </li>
+                    {%- endfor -%}
+                  </ul>
+                {%- endif -%}
+              </div>
+              
 
               {%- when 'icon' -%}
                 {% assign icons = true %}
             {%- endcase -%}
-        </div>
+        
       {%- endfor -%}
     </div>
   {%- endif -%}

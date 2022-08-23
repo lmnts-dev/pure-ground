@@ -32,6 +32,13 @@
   @media screen and (max-width: 676px) {
     &__container {
       flex-direction: column;
+
+      &.__slider {
+        .article-card {
+          width: 100%;
+          margin: 0;
+        }
+      }
     }
   }
 }

@@ -117,6 +117,7 @@
 
   &__header {
     color: var(--color-accent);
+    margin-bottom: calc(var(--pxSize) / 4);
   }
 
   &__links {
@@ -131,7 +132,7 @@
         transition: all 0.25s ease;
         line-height: 1.2;
         margin: 0;
-        padding: calc(var(--pxSize) / 6) 0;
+        padding: calc(var(--pxSize) / 4) 0;
 
         &:hover {
           opacity: 0.5;
@@ -140,7 +141,7 @@
     }
   }
 
-  @media screen and (max-width: 676px) {
+  @media screen and (max-width: 850px) {
     grid-template-columns: 1fr;
 
     &__branding {
@@ -166,13 +167,20 @@
 
     &__blocks {
       grid-column: 1/-1;
-      flex-direction: column;
+      flex-wrap: wrap;
+
+      &__block {
+        flex: 0 0 calc(50% - calc(var(--pxSize) / 2));
+      }
     }
 
     &__badges {
-      margin-top: calc(var(--pxSize) / 1.75);
-      svg {
-        width: 45px;
+      gap: calc(var(--pxSize) / 2);
+      margin-top: var(--sectionVerticalSpacing);
+      justify-content: center;
+
+      img {
+        height: calc(var(--pxSize) * 1.5);
       }
     }
 
@@ -188,6 +196,10 @@
       &__copywright {
         padding-right: 0;
         padding-bottom: calc(var(--pxSize) / 2);
+      }
+
+      &__social {
+        padding-left: 0;
       }
     }
   }
