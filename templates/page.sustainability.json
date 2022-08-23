@@ -166,66 +166,6 @@
     },
     "16608418622ecf558a": {
       "type": "icons-section",
-      "blocks": {
-        "b105ffa2-dfb9-4531-a845-32a3385a30ad": {
-          "type": "image",
-          "settings": {
-            "icon": "shopify:\/\/shop_images\/Screen_Shot_2022-08-18_at_11.56.02_AM.png",
-            "text": ""
-          }
-        },
-        "98df735d-1722-4aeb-95d0-f899509d2edf": {
-          "type": "image",
-          "settings": {
-            "icon": "shopify:\/\/shop_images\/Screen_Shot_2022-08-18_at_11.56.11_AM.png",
-            "text": ""
-          }
-        },
-        "c7246dc6-31f7-4d1c-b9b2-1aaa23ba7775": {
-          "type": "image",
-          "settings": {
-            "icon": "shopify:\/\/shop_images\/Screen_Shot_2022-08-18_at_11.56.20_AM.png",
-            "text": ""
-          }
-        },
-        "6d4570e6-ce43-46b5-a796-a1fbf29a6e2a": {
-          "type": "image",
-          "settings": {
-            "icon": "shopify:\/\/shop_images\/Screen_Shot_2022-08-18_at_11.56.31_AM.png",
-            "text": ""
-          }
-        },
-        "88ccab24-e7fb-46cc-b262-4efd3294dea2": {
-          "type": "image",
-          "settings": {
-            "icon": "shopify:\/\/shop_images\/Screen_Shot_2022-08-18_at_11.56.42_AM.png",
-            "text": ""
-          }
-        },
-        "a5e7ffe2-ca8e-49c8-bf10-6cc79e840993": {
-          "type": "image",
-          "settings": {
-            "icon": "shopify:\/\/shop_images\/Screen_Shot_2022-08-18_at_11.56.56_AM.png",
-            "text": ""
-          }
-        },
-        "ba4994aa-3972-4aa2-884e-998ec85c0d93": {
-          "type": "image",
-          "settings": {
-            "icon": "shopify:\/\/shop_images\/Screen_Shot_2022-08-18_at_11.57.33_AM.png",
-            "text": ""
-          }
-        }
-      },
-      "block_order": [
-        "b105ffa2-dfb9-4531-a845-32a3385a30ad",
-        "98df735d-1722-4aeb-95d0-f899509d2edf",
-        "c7246dc6-31f7-4d1c-b9b2-1aaa23ba7775",
-        "6d4570e6-ce43-46b5-a796-a1fbf29a6e2a",
-        "88ccab24-e7fb-46cc-b262-4efd3294dea2",
-        "a5e7ffe2-ca8e-49c8-bf10-6cc79e840993",
-        "ba4994aa-3972-4aa2-884e-998ec85c0d93"
-      ],
       "settings": {
         "caption": "",
         "heading": "Our commitment to UN's Sustainable Development Goals",
@@ -240,7 +180,18 @@
         "icon_height": 210,
         "color_scheme": "cream",
         "top_spacing": 50,
-        "bottom_spacing": 50
+        "bottom_spacing": 0
+      }
+    },
+    "166126617923b76f7f": {
+      "type": "image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/UN_Commitments_1.png",
+        "image_style": "fullheight",
+        "nav_color": false,
+        "color_scheme": "cream",
+        "top_spacing": 0,
+        "bottom_spacing": 0
       }
     },
     "16608572869d1a8858": {
@@ -330,6 +281,7 @@
     "1660746979c48fd613",
     "16444193660de6d319",
     "16608418622ecf558a",
+    "166126617923b76f7f",
     "16608572869d1a8858",
     "1660747290beaaaf5d",
     "16607471819bf121f0"
