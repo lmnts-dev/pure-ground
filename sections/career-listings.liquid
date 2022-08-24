@@ -39,9 +39,9 @@
                <div class="career-listings__position __active" data-department="{{ department_handle }}">
                   <h3 class="h5">{{ block.settings.heading }}</h3>
                   {% if block.settings.button_link and block.settings.button_label %}
-                     <a class="career-listings__position__btn btn_with_border btn caption" {% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} {{ block.shopify_attributes }}>
+                     <a class="career-listings__position__btn __with-border btn caption" {% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} {{ block.shopify_attributes }}>
                         {{ block.settings.button_label | escape }}
-                           {% render 'icon-arrow' %}
+                        {% render 'icon-arrow' %}
                      </a>
                   {% endif %}
 
@@ -55,7 +55,9 @@
                   {% if block.settings.details %}
                      <toggle-modal class="career-listings__modal" data-type="container">
                         <p>Details</p>
-                     </toggle-modal>{% render 'position-modal', position_heading: block.settings.heading, position_details: block.settings.details %}
+                        <div class="career-listings__modal__mobile-btn btn">Details</div>
+                     </toggle-modal>
+                     {% render 'position-modal', position_heading: block.settings.heading, position_details: block.settings.details %}
                   {% endif %}
                </div>
 

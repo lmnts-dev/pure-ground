@@ -1,4 +1,11 @@
-<article class="main-article" itemscope itemtype="http://schema.org/BlogPosting">
+<article class="main-article color-dark-cream" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <div class="main-article__sticky-header">
+    <div class="main-article__sticky-header__title h5">{{article.title}}</div>
+    {% comment %}{% render 'share-article' %}{% endcomment %}
+    <progress-bar class="main-article__sticky-header__progress"></progress-bar>
+  </div>
+
 
   {%- for block in section.blocks -%}
     {%- case block.type -%}
@@ -9,26 +16,6 @@
     {%- endcase -%}
   {%- endfor -%}
 
-  <div class="breadcrumb">
-    {% if settings.resources_page and settings.resources_page.title %}
-      <a href="{{ settings.resources_page.url }}" class="caption-sm">{{ settings.resources_page.title }}</a>
-      {% render 'svg-arrow' %}
-    {% endif %}
-    <a href="{{ blog.url }}" class="main-article__breadcrumb__link caption-sm">
-      {{ blog.title }}
-    </a>
-    {% render 'svg-arrow' %}
-    <span class="main-article__breadcrumb__current caption-sm">{{article.title}}</span>
-  </div>
-
-  <header class="main-article__header" {{ block.shopify_attributes }}>
-    <h1 class="main-article__header__title" itemprop="headline">{{ article.title | escape }}</h1>
-    <span class="main-article__header__author caption" itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <span itemprop="name">{{ article.author }}</span>
-    </span>
-    <span class="main-article__header__date caption" itemprop="dateCreated pubdate datePublished">{{ article.published_at | time_tag: format: 'date' }}</span>
-  </header>
-
   {%- if article.image -%}
     <div class="main-article__image" {{ block.shopify_attributes }} itemprop="image">
       {% render 'next-gen-img', image: article.image %}
@@ -36,12 +23,22 @@
   {%- endif -%}
 
 
+  <header class="main-article__header" {{ block.shopify_attributes }}>
+    <h1 class="main-article__header__title h4" itemprop="headline">{{ article.title | escape }}</h1>
+    <div class="main-article__header__details">
+      <span class="main-article__date caption-sm" itemprop="dateCreated pubdate datePublished">{{ article.published_at | time_tag: format: 'date' }}</span>
+      <span class="main-article__author caption-sm" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">{{ article.author }}</span>
+      </span>
+      <a href="{{ blog.url }}" class="main-article__category caption-sm">
+        {{ blog.title }}
+      </a>
+    </div>
+  </header>
 
-  <div class="main-article__content __article-txt" itemprop="articleBody" {{ block.shopify_attributes }}>
+  <div class="main-article__content __article-txt-p-sm" itemprop="articleBody" {{ block.shopify_attributes }}>
     {{ article.content }}
   </div>
-
-  {% render 'share-article' %}
   
   {% render 'article-comments' %}
 
@@ -90,6 +87,34 @@
     }
   }
   </script>
+
+
+
+{% javascript %}
+
+class ProgressBar extends HTMLElement {
+    constructor() {
+      super();
+       document.addEventListener('scroll', this.updateScale.bind(this), false);
+    }
+
+    updateScale(e) {
+
+      let navHeight = document.querySelector('.site-header').clientHeight;
+      let windowHeight = window.innerHeight;
+
+      let articleHeight = this.parentElement.parentElement.clientHeight + navHeight;
+      let lastScollPosition = e.currentTarget.lastScollPosition;
+
+      let percent = lastScollPosition > (articleHeight - windowHeight) ? 1 : (lastScollPosition / (articleHeight - windowHeight) );
+      this.style.transform = "scaleX(" + percent + ")";
+    }
+  }
+
+  customElements.define('progress-bar', ProgressBar);
+
+{% endjavascript %}
+
 
 
 {% schema %}

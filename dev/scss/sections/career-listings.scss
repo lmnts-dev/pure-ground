@@ -1,18 +1,31 @@
 .career-listings {
-  --color-accent: rgba(var(--color-grass), 1);
-
   display: flex;
   flex-direction: column;
+
+  &.color-cream {
+    --color-accent: rgba(var(--color-grass), 1);
+  }
 
   &__headline-content {
     max-width: 650px;
   }
 
   &__departments {
-    border-right: 1px solid rgba(var(--color-ground), .25);
     flex: 1;
+    position: relative;
 
-    &__headline{
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      opacity: 0.25;
+      border-right: 1px solid var(--color-foreground);
+    }
+
+    &__headline {
       text-transform: uppercase;
     }
 
@@ -26,7 +39,7 @@
     }
   }
 
-  &__button{
+  &__button {
     text-transform: capitalize;
 
     &.__active {
@@ -34,7 +47,7 @@
     }
   }
 
-  &__location{
+  &__location {
     display: flex;
   }
 
@@ -54,11 +67,16 @@
   }
 
   &__modal {
+    color: var(--color-accent);
     padding: 0 calc(var(--btnHeight) / 6);
     text-align: center;
 
-    p {
-      color: var(--color-grass);
+    &__mobile-btn {
+      display: none;
+    }
+
+    .btn {
+      margin: 0;
     }
 
     &:hover {
@@ -70,12 +88,12 @@
     padding: 0px calc(var(--sectionVerticalSpacing) / 1.5)
       calc(var(--sectionVerticalSpacing) / 2)
       calc(var(--sectionVerticalSpacing) / 1.5);
-     display: none;
+    display: none;
+    grid-template-columns: 3fr auto;
+    gap: calc(var(--pxSize) / 3);
 
     &.__active {
       display: grid;
-      grid-template-columns: 3fr auto;
-      row-gap: 1rem;
     }
 
     h3,
@@ -124,6 +142,16 @@
       flex-direction: column;
     }
 
+    &__modal {
+      p {
+        display: none;
+      }
+
+      &__mobile-btn {
+        display: inline-flex;
+      }
+    }
+
     &__departments {
       border: 1px solid var(--color-foreground);
       padding: calc(var(--pxSize) / 2.5);
@@ -163,15 +191,16 @@
 
     &__position {
       padding: 0;
-      margin-top: 1.25rem;
+      margin-top: calc(var(--sectionVerticalSpacing) / 2);
+      grid-template-columns: 3fr 2fr;
 
-      &__btn {
-        padding: 0 calc(var(--btnHeight)/ 6);
-        justify-self: center;
+      h3,
+      .career-listings__location {
+        grid-column: 1 / -1;
+      }
 
-        svg{
-          margin-left: .5rem;
-        }
+      .career-listings__location {
+        grid-row: 2 / 3;
       }
 
       &--top {

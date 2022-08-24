@@ -1283,18 +1283,14 @@ button.shopify-payment-button__button--unbranded {
   padding-left: 0;
 }
 
-.share-button__text{
+.share-button__text {
   text-transform: uppercase;
-  margin-left: .75rem;
+  margin-left: 0.75rem;
   position: absolute;
-  right:0;
+  right: 0;
   top: 0;
   left: 1.5rem;
   top: 10px;
-}
-
-details[open] > .share-button__fallback {
-  animation: animateMenuOpen var(--duration-default) ease;
 }
 
 .share-button__button,
@@ -1311,12 +1307,17 @@ details[open] > .share-button__fallback {
 }
 
 .share-button__fallback {
-  background: rgb(var(--color-background));
+  background: var(--color-background-alt);
+  padding: var(--sectionVerticalSpacing) var(--sectionHorizontalSpacing);
+  box-shadow: 2px 2px 10px 1px var(--color-foreground);
   display: flex;
   align-items: center;
-  position: absolute;
-  top: 3rem;
-  left: 0.1rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 80%;
+  max-height: 80vh;
   z-index: 3;
   width: 100%;
   min-width: max-content;
@@ -1411,7 +1412,7 @@ details[open] > .share-button__fallback {
 }
 
 @media screen and (max-width: 676px) {
-  .share-button__fallback{
+  .share-button__fallback {
     min-width: auto;
     max-width: 100%;
   }
@@ -1435,10 +1436,9 @@ details[open] > .share-button__fallback {
   min-height: auto;
 }
 
-
 @media screen and (max-width: 676px) {
   .share-button__fallback .field__input {
-    padding: 0!important;
+    padding: 0 !important;
   }
 }
 
@@ -1619,10 +1619,9 @@ details[open] > .share-button__fallback {
   transition: box-shadow var(--duration-short) ease;
 }
 
-
 @media screen and (max-width: 676px) {
-  .field__input{
-    margin-top: 1rem!important;
+  .field__input {
+    margin-top: 1rem !important;
   }
 }
 .field__label,
@@ -1653,14 +1652,14 @@ details[open] > .share-button__fallback {
 }
 
 @media screen and (max-width: 676px) {
- .field__input:focus ~ .field__label,
+  .field__input:focus ~ .field__label,
   .field__input:not(:placeholder-shown) ~ .field__label,
   .field__input:-webkit-autofill ~ .field__label,
   .customer .field input:focus ~ label,
   .customer .field input:not(:placeholder-shown) ~ label,
   .customer .field input:-webkit-autofill ~ label {
     left: 0;
-  } 
+  }
 }
 
 .field__input:focus,
@@ -2055,9 +2054,9 @@ input[type="checkbox"] {
   transition: transform 0.15s ease-out;
 }
 
-.shopify-section.section:not(:nth-child(2)) .spec-sheets .spec-sheets__search{
+.shopify-section.section:not(:nth-child(2)) .spec-sheets .spec-sheets__search {
   display: none;
-} 
+}
 
 /* Main Header Layout */
 .header-wrapper {

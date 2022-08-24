@@ -1,0 +1,11 @@
+<div class="breadcrumb">
+  {% if settings.resources_page and settings.resources_page.title %}
+    <a href="{{ settings.resources_page.url }}" class="caption-sm">{{ settings.resources_page.title }}</a>
+    {% render 'svg-arrow' %}
+  {% endif %}
+  <a href="{{ blog.url }}" class="breadcrumb__link caption-sm">
+    {{ blog.title }}
+  </a>
+  {% render 'svg-arrow' %}
+  <span class="breadcrumb__current caption-sm">{{article.title}}</span>
+</div>
