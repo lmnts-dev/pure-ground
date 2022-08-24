@@ -9,6 +9,15 @@
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
     <link rel="stylesheet" href="https://use.typekit.net/lxx8fgf.css">
 
+    {% comment %} Favicon {% endcomment %}
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ "apple-touch-icon.png" | asset_url }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ "favicon-32x32.png" | asset_url }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ "favicon-16x16.png" | asset_url }}">
+    <link rel="manifest" href="{{ "site.webmanifest" | asset_url }}">
+    <link rel="mask-icon" href="{{ "safari-pinned-tab.svg" | asset_url }}" color="#d57a20">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+
     {%- if settings.favicon != blank -%}
       <link rel="icon" type="image/png" href="{{ settings.favicon | img_url: '32x32' }}">
     {%- endif -%}

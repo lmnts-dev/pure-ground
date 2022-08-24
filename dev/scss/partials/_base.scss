@@ -12,6 +12,13 @@ body {
   background: var(--color-background);
   color: var(--color-foreground);
 
+  ::selection {
+    background: var(--color-accent); /* WebKit/Blink Browsers */
+  }
+  ::-moz-selection {
+    background: var(--color-accent); /* Gecko Browsers */
+  }
+
   &.__mobile-overflow-none {
     overflow: hidden;
   }
