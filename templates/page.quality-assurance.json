@@ -42,7 +42,7 @@
         "1644419366881604f5-0": {
           "type": "text",
           "settings": {
-            "text": "<p>We purchase our materials raw and do every bit of processing in our facility in the foothills of the Sierra Nevada. We run our ingredients through the most thorough and comprehensive testing on the market - we test all ingredients for pesticides that others don’t. We control any presence of heavy metals and micro toxins and strive to exceed industry standards across the board.</p><p>Going far beyond what’s federally required, ourtesting and processing even includes botanical ID and DNA testing, if necessary, to ensure a product is indeed what is you expect. We employ a number of practices that ensure we are providing our customers the absolute best in organic ingredients and a level of quality and consistency that is unsurpassed. We are proud to be a part of a global supply web that is increasing the public awareness of the health benefits of using organic herbs and spices.</p>"
+            "text": "<p>We purchase our materials raw and do every bit of processing in our facility in the foothills of the Sierra Nevada. We run our ingredients through the most thorough and comprehensive testing on the market - we test all ingredients for pesticides. We control any presence of heavy metals and micro toxins and strive to exceed industry standards across the board.</p><p>We employ a number of practices that ensure we are providing our customers the absolute best in organic ingredients and a level of quality and consistency that is unsurpassed. We are proud to be a part of a global supply web that is increasing the public awareness of the health benefits of using organic herbs and spices.</p>"
           }
         },
         "47338247-06fe-401f-8439-2fdbee1aac55": {
@@ -69,6 +69,15 @@
         "bottom_spacing": 100
       }
     },
+    "16611972534ba504c9": {
+      "type": "divider",
+      "settings": {
+        "style": "dots",
+        "color_scheme": "cream",
+        "top_spacing": 0,
+        "bottom_spacing": 0
+      }
+    },
     "164442384962d45464": {
       "type": "rich-text",
       "blocks": {
@@ -84,7 +93,7 @@
         "1fa509c0-88d9-4f15-ab93-3b487a4304ea": {
           "type": "text",
           "settings": {
-            "text": "<p>Your needs and specifications are met by our state of the art facility. We offer and array of milling, sifting and other treatment options to process organic ingredients just right for your business.</p>",
+            "text": "<p>Your needs and specifications are met by our state of the art facility. We offer and array of milling, sifting and other treatment options to process organic ingredients that meet your business needs.</p>",
             "text_size": "p-lg"
           }
         }
@@ -115,7 +124,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Blending",
-            "content": "<p>We've been in this business a while and so have our blendmasters. Send us your blend and we will be happy to match it.  Looking to develop a new flavor profile? Our team is legendary on the development of  flavorful, nicely textured & colored culinary, tea & herbal blends. </p>",
+            "content": "<p>We've been in this business a while and so have our blend masters. Send us your blend and we will be happy to match it.  Looking to develop a new flavor profile? Our team is legendary on the development of  flavorful, nicely textured & colored culinary, tea & herbal blends. </p>",
             "category": "General"
           }
         },
@@ -123,7 +132,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Ingredient Cleaning",
-            "content": "<p>In order to deliver clean goods, we designed our production lines with separation capabilities that insure removal of impurities and foreign objects. Your product will be sifted multiple times and pass numerous safety steps before final packaging.</p>",
+            "content": "<p>In order to deliver clean goods, we designed our production lines with separation capabilities that insure removal of impurities and foreign objects. Your product will be sifted multiple times and pass numerous safety steps and metal check before final packaging.</p>",
             "category": "General"
           }
         },
@@ -131,7 +140,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Roasting",
-            "content": "<p>Like your Garlic roasted? Our in house, smokeless roasting technology allows us to create different flavors. Roasted items include Chicory, Marshmallow and Dandelion, Chiles and Paprikas, Carob and Garlic.</p>",
+            "content": "<p>Like your Garlic roasted? Our in house, smokeless roasting technology allows us to create different flavors. Roasted items include Chicory, Marshmallow, Dandelion, Chiles, Paprikas, Carob and Garlic.</p>",
             "category": "General"
           }
         },
@@ -147,7 +156,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Co-Packaging",
-            "content": "<p>We offer private label services, servicing a variety of industries various packaging options.  Whether you are looking to pack single organic ingredients or blends we are happy to be growing this aspect of our service offering. </p>",
+            "content": "<p>We offer private label services, offering a variety of industries multiple packaging options.  Whether you are looking to pack single ingredients or blends we are happy to be growing this aspect of our service offering. </p>",
             "category": "General"
           }
         },
@@ -155,7 +164,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Ingredient Sourcing",
-            "content": "<p>The backbone of our company are the decades of experience in the global organic market. We pride ourselves in our vast network of approved producers for all organic ingredients. Furthering both the organic and sustainability concepts, we have fostered long term relationships with producers and have often pioneered new products in new territories to incentivize diversity and security. We know our producers and how to get the quality you need at a competitive price. If there’s an ingredient you need that isn’t on our list, don’t hesitate to ask. </p>",
+            "content": "<p>We consider our decades of experiencing in global sourcing our expertise. We pride ourselves in our robust network and have fostered long term relationships to deliver multi origin sourced ingredients. We know our producers and how to provide  quality you need at a competitive price. If there's an ingredient that isn't on our list, don't hesitate to ask.</p>",
             "category": "General"
           }
         },
@@ -192,6 +201,15 @@
         "color_scheme": "cream",
         "top_spacing": 50,
         "bottom_spacing": 50
+      }
+    },
+    "16611972534ba504c7": {
+      "type": "divider",
+      "settings": {
+        "style": "grass",
+        "color_scheme": "cream",
+        "top_spacing": 0,
+        "bottom_spacing": 0
       }
     },
     "1660751375c6d45d9c": {
@@ -242,13 +260,6 @@
             "text": "Halal Certified"
           }
         },
-        "54ddda7b-032d-493e-a06b-e955b5e533ef": {
-          "type": "image",
-          "settings": {
-            "icon": "shopify://shop_images/Group_255.png",
-            "text": "Fair Trade Certified"
-          }
-        },
         "b5ed4ab9-114a-46e0-a632-e0ac53372802": {
           "type": "image",
           "settings": {
@@ -293,7 +304,7 @@
         "subheading": "",
         "heading_size": "h4",
         "accent_color": false,
-        "text": "<p>Pure Ground is committed to food safety and Good Manufacturing Practices are central to our operation. Our manufacturing facilities are certified by NSF/SQF. Food safety and continuous excellence is insured by frequent audits and inspections.</p><p>Per HACCP, All goods go through a NIST certified and FDA approved Gravity detector. Additionally all mills and processing machinery are fitted with industrial strength magnets. Sifting at multiple production steps further insures absolute purity of your ingredients.</p><p>All products handled at Pure Ground Ingredients are verified gluten free. Absence of any accidental gluten is confirmed by frequent analysis. Allergens in our warehouse are strictly segregated, marked and handled separately so that non-allergen products remain allergen free.</p>",
+        "text": "<p>Pure Ground is committed to food safety and Good Manufacturing Practices are central to our operation. Our manufacturing facilities are certified by NSF/SQF. Food safety and continuous excellence is insured by frequent audits and inspections.</p><p>Per HACCP, all goods go through a NIST certified and FDA approved Gravity detector. Additionally all mills and processing machinery are fitted with industrial strength magnets. Sifting at multiple production steps further insures absolute purity of your ingredients.</p><p>All products handled at Pure Ground Ingredients are verified gluten free. Absence of any accidental gluten is confirmed by frequent analysis. Allergens in our warehouse are strictly segregated, marked and handled separately so that non-allergen products remain allergen free.</p>",
         "button_label": "Button label",
         "button_link": "",
         "alt": "",
@@ -355,8 +366,10 @@
   "order": [
     "166074672815a86e9b",
     "16444193660de6d319",
+    "16611972534ba504c9",
     "164442384962d45464",
     "1660751203d847bc7d",
+    "16611972534ba504c7",
     "1660751375c6d45d9c",
     "16607514865516138c",
     "16608570942528053e"

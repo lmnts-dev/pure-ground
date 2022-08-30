@@ -36,7 +36,7 @@
           "type": "heading",
           "settings": {
             "heading": "Our commitments, actions, and innovations for people and the planet",
-            "heading_size": "h2",
+            "heading_size": "h4",
             "heading_alignment": "center",
             "subheading": ""
           }
@@ -53,8 +53,8 @@
       "settings": {
         "color_scheme": "cream",
         "hero": false,
-        "top_spacing": 50,
-        "bottom_spacing": 50
+        "top_spacing": 100,
+        "bottom_spacing": 100
       }
     },
     "164442384962d45464": {
@@ -72,7 +72,7 @@
       },
       "block_order": ["164442384920551cc7-0"],
       "settings": {
-        "color_scheme": "cream",
+        "color_scheme": "sky",
         "hero": false,
         "top_spacing": 100,
         "bottom_spacing": 100
@@ -93,7 +93,7 @@
         "16607469781a0891f6-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Our ingredients are more than they seem. They are the sum of all the relationships, creativity, labor and life that made them possible. We carefully select our suppliers, auditing and inspecting to ensure each is meeting standards for quality, food safety, positive environmental impact and ethical working conditions. We have been working for over 25 years to develop our supply chain and offer a wide range of sustainably sourced materials.</p>",
+            "text": "<p>Our ingredients are more than they seem. They are the sum of all the relationships, creativity, labor and life that made them possible. We carefully select our suppliers, auditing and inspecting to ensure each is meeting standards for quality, food safety, organic compliance, positive environmental impact and ethical working conditions. We have been working for over 25 years to develop our supply chain and offer a wide range of sustainably sourced materials.</p>",
             "text_size": "p-lg"
           }
         },
@@ -113,7 +113,7 @@
       "settings": {
         "color_scheme": "cream",
         "hero": false,
-        "top_spacing": 50,
+        "top_spacing": 100,
         "bottom_spacing": 50
       }
     },
@@ -130,7 +130,7 @@
         "1644419366881604f5-0": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Globally Standardized Certifications<br/></strong>Such as Fair Trade, Fair Wilde, Fair for Life and Rainforest Alliance.</p><p><strong>Environmentally Impactful</strong><br/>Ingredients that come from Regenerative Farming Practices & Agroforestry Projects </p><p><strong>Socially Impactful<br/></strong>Ingredients that come from sources which are dedicated to promoting social equality, education and living wages. Women’s Co-ops, Co-ops dedicated to education + development and those who promote equality and women’s empowerment.</p>"
+            "text": "<p><strong>Globally Standardized Certifications<br/></strong>Such as Fair Trade, Fair Wilde, Fair for Life and Rainforest Alliance.</p><p><strong>Environmentally Impactful</strong><br/>Ingredients that come from Regenerative Farming Practices & Agroforestry Projects </p><p><strong>Socially Impactful<br/></strong>Ingredients that come from sources which are dedicated to promoting social equality, education and living wages. Projects  dedicated to women's empowerment, education, equality and improving general livelihood.</p>"
           }
         },
         "47338247-06fe-401f-8439-2fdbee1aac55": {
@@ -157,6 +157,15 @@
         "bottom_spacing": 100
       }
     },
+    "16611972534ba504c9": {
+      "type": "divider",
+      "settings": {
+        "style": "dots",
+        "color_scheme": "cream",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
+    },
     "16608418622ecf558a": {
       "type": "icons-section",
       "settings": {
@@ -165,7 +174,7 @@
         "subheading": "",
         "heading_size": "h4",
         "accent_color": false,
-        "text": "<p>We believe in self responsibility and collective action. We are proud to havealigned with the UN’s integral approach and call to action to end poverty, protect the planet, and ensure that by 2030 all people enjoy peace and prosperity.</p><p>We know we can all work together to protect the planet, end poverty and create a happier, healthier world.  </p>",
+        "text": "<p>We believe in self responsibility and collective action. We are proud to havealigned with the UN’s integral approach and call to action to end poverty, protect the planet, and ensure that by 2030 all people enjoy peace and prosperity.</p><p>We know we can all work together to create a happier, healthier world.</p>",
         "button_label": "Button label",
         "button_link": "",
         "alt": "",
@@ -270,6 +279,7 @@
     "164442384962d45464",
     "1660746979c48fd613",
     "16444193660de6d319",
+    "16611972534ba504c9",
     "16608418622ecf558a",
     "166126617923b76f7f",
     "16608572869d1a8858",
