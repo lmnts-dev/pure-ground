@@ -11,11 +11,13 @@
           }
         }
       },
-      "block_order": ["05c14c51-95c7-41a0-a647-0b3f0829ebb4"],
+      "block_order": [
+        "05c14c51-95c7-41a0-a647-0b3f0829ebb4"
+      ],
       "settings": {
         "text_color": "light",
         "nav_color": true,
-        "image": "shopify://shop_images/unsplash_8rTwokBwz1w_dd3c133c-6583-404c-8832-a909b425c9d9.jpg",
+        "image": "shopify:\/\/shop_images\/unsplash_8rTwokBwz1w_dd3c133c-6583-404c-8832-a909b425c9d9.jpg",
         "alt": "Guys exploring through forrest",
         "overlay": 20,
         "hero": true,
@@ -44,12 +46,15 @@
         "16438188434dae6d1d-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Since our founding, Pure Ground Ingredients has embarked on a number of world wide sustainability projects. We bring greater value to the communities and farmers we work with and higher-quality ingredients to the marketplace back home. From establishing new, economically viable, crops for an organic fair-trade growers co-op comprised of 674 families in Nicaragua, to partnering with one of our manufacturers to build a bridge between communities that flooded in Honduras, to establishing sustainable farming education and training in Sri Lanka, we're constantly seeking opportunities to help our growers and their communities thrive in the face of adversity...which ultimately helps our manufacturers thrive. We replenish land, invest in communities, develop educational programs, and do everything we can to support sustainable practices, a healthy planet, and happy people.</p>",
+            "text": "<p>Since our founding, Pure Ground Ingredients has embarked on a number of world wide sustainability projects. We bring greater value to the communities and farmers we work with and higher-quality ingredients to the marketplace back home. From establishing new, economically viable, crops for an organic fair-trade growers co-op comprised of 674 families in Nicaragua, to partnering with one of our manufacturers to build a bridge between communities that flooded in Honduras, to establishing sustainable farming education and training in Sri Lanka, we're constantly seeking opportunities to help our growers and their communities thrive in the face of adversity...which ultimately helps our manufacturers thrive. We replenish land, invest in communities, develop educational programs, and do everything we can to support sustainable practices, a healthy planet, and happy people.<\/p>",
             "text_size": "default"
           }
         }
       },
-      "block_order": ["16438188434dae6d1d-0", "16438188434dae6d1d-1"],
+      "block_order": [
+        "16438188434dae6d1d-0",
+        "16438188434dae6d1d-1"
+      ],
       "settings": {
         "color_scheme": "cream",
         "hero": true,
@@ -63,56 +68,56 @@
         "16607621196b9dffd3-0": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Rectangle_34_2d8a3537-714e-4c44-867b-3ba87fa36b3b.jpg",
+            "image": "shopify:\/\/shop_images\/Rectangle_34_2d8a3537-714e-4c44-867b-3ba87fa36b3b.jpg",
             "alt": "Guy kneeling by crops"
           }
         },
         "16607621196b9dffd3-1": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Rectangle_35_f2cf9c0b-c3a3-4c56-92bd-4f8b30c822b6.jpg",
+            "image": "shopify:\/\/shop_images\/Rectangle_35_f2cf9c0b-c3a3-4c56-92bd-4f8b30c822b6.jpg",
             "alt": "Road sign in front of landscape with mountains"
           }
         },
         "298fc799-d32f-446b-8569-e410b9036dda": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Rectangle_37_b90df059-f987-4506-936c-1716c03e4ee7.jpg",
+            "image": "shopify:\/\/shop_images\/Rectangle_37_b90df059-f987-4506-936c-1716c03e4ee7.jpg",
             "alt": "Group photo"
           }
         },
         "7b26b67a-fde7-436d-8116-1cc1103782f2": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Rectangle_40_1fd604d3-01d5-4ca1-9279-8f76d15cfa80.jpg",
+            "image": "shopify:\/\/shop_images\/Rectangle_40_1fd604d3-01d5-4ca1-9279-8f76d15cfa80.jpg",
             "alt": "Young sprouts"
           }
         },
         "2680e191-f3b8-4ec9-ab34-e811c425453b": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Rectangle_38_5471a066-f608-4f89-b950-37bf6eaf17e5.jpg",
+            "image": "shopify:\/\/shop_images\/Rectangle_38_5471a066-f608-4f89-b950-37bf6eaf17e5.jpg",
             "alt": "Women holding bucket of picked greenery"
           }
         },
         "960f77ee-19fd-4f3c-97c1-669742204ba0": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Rectangle_39_f4848b9f-53d0-426e-b5c1-ee482a9a0ae5.jpg",
+            "image": "shopify:\/\/shop_images\/Rectangle_39_f4848b9f-53d0-426e-b5c1-ee482a9a0ae5.jpg",
             "alt": "Young students posing next to guy"
           }
         },
         "407eea4a-e952-4010-bfc7-2946e1be2b4d": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Rectangle_36_870935ce-cee7-414f-92fd-67829764bcda.jpg",
+            "image": "shopify:\/\/shop_images\/Rectangle_36_870935ce-cee7-414f-92fd-67829764bcda.jpg",
             "alt": "Guy in cowboy hat in front of white car"
           }
         },
         "53334b53-c663-43d1-9a35-3a297f3150b4": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Rectangle_33_7cd34400-d0aa-4d21-aef1-772363d08c0e.jpg",
+            "image": "shopify:\/\/shop_images\/Rectangle_33_7cd34400-d0aa-4d21-aef1-772363d08c0e.jpg",
             "alt": "Cardamomo sign in front of crops"
           }
         }
@@ -136,7 +141,7 @@
     "1643991355e4feeedb": {
       "type": "image",
       "settings": {
-        "image": "shopify://shop_images/map.png",
+        "image": "shopify:\/\/shop_images\/map.png",
         "image_style": "fullheight",
         "nav_color": false,
         "color_scheme": "cream",
@@ -164,7 +169,7 @@
           "type": "button",
           "settings": {
             "button_label": "Shop Ingredients",
-            "button_link": "shopify://collections",
+            "button_link": "shopify:\/\/collections",
             "button_color": "default"
           }
         }
@@ -177,7 +182,7 @@
       "settings": {
         "text_color": "light",
         "nav_color": false,
-        "image": "shopify://shop_images/unsplash_V0xp-dTS3z0_8c9c5b04-3137-48ca-a33f-c698c986b244.jpg",
+        "image": "shopify:\/\/shop_images\/unsplash_V0xp-dTS3z0_8c9c5b04-3137-48ca-a33f-c698c986b244.jpg",
         "alt": "Ground herbs",
         "overlay": 50,
         "hero": false,
