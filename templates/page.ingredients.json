@@ -1,17 +1,37 @@
 {
   "sections": {
-    "hero": {
-      "type": "rich-text",
+    "166074672815a86e9b": {
+      "type": "content-with-bg-image",
       "blocks": {
-        "1644596818ef38f807-0": {
+        "926015a7-2052-4797-9221-7ef8e3b87cd4": {
           "type": "heading",
           "settings": {
             "heading": "Organic Ingredients",
-            "heading_size": "h2",
-            "heading_alignment": "center",
-            "subheading": ""
+            "heading_size": "h1"
           }
-        },
+        }
+      },
+      "block_order": ["926015a7-2052-4797-9221-7ef8e3b87cd4"],
+      "settings": {
+        "text_color": "light",
+        "nav_color": true,
+        "image": "shopify://shop_images/unsplash_8rTwokBwz1w_40d48515-02db-4d2b-8a84-dc1ea84963dd.jpg",
+        "alt": "Happy women in field",
+        "overlay": 20,
+        "hero": true,
+        "fullwidth": true,
+        "accent_color": false,
+        "alignment": "center",
+        "color_scheme": "cream",
+        "top_spacing": 0,
+        "bottom_spacing": 0,
+        "top_internal_spacing": 200,
+        "bottom_internal_spacing": 30
+      }
+    },
+    "hero": {
+      "type": "rich-text",
+      "blocks": {
         "48570e99-406c-4968-bd13-96aa95ec96aa": {
           "type": "text",
           "settings": {
@@ -1817,6 +1837,7 @@
     }
   },
   "order": [
+    "166074672815a86e9b",
     "hero",
     "1647470795ab7a1dc6",
     "1647550055d229b4ef",
