@@ -2054,7 +2054,7 @@ input[type="checkbox"] {
   transition: transform 0.15s ease-out;
 }
 
-.shopify-section.section:not(:nth-child(2)) .spec-sheets .spec-sheets__search {
+.shopify-section.section:not(:nth-child(3)) .spec-sheets .spec-sheets__search {
   display: none;
 }
 
