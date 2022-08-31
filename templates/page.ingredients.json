@@ -80,7 +80,7 @@
           "settings": {
             "common_name": "Organic Allspice",
             "botanical_name": "Pimenta dioica",
-            "product_code": "ALLO", 
+            "product_code": "ALLO",
             "organic": true,
             "fair_trade": "yes",
             "description": "<p>Organic Allspice: With its strong and fragrant aroma this spice adds a sweet kick to any dessert or spice rub<\/p>",
@@ -103,7 +103,7 @@
           "settings": {
             "common_name": "Organic Ancho",
             "botanical_name": "Capsicum",
-            "product_code": "ANCO", 
+            "product_code": "ANCO",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Ancho: This ripe and dried version of the poblano pepper gives an earthy and smokey flavor and aroma to any dish<\/p>",
@@ -115,7 +115,7 @@
           "settings": {
             "common_name": "Organic Anise Seed",
             "botanical_name": "Pimpinella anisum",
-            "product_code": "ANIO", 
+            "product_code": "ANIO",
             "organic": true,
             "fair_trade": "yes",
             "description": "<p>Organic Anise Seed: Somewhere between fennel and licorice, this seed adds complexity to sauces, pastries, and bread.<\/p>",
@@ -162,7 +162,7 @@
           "settings": {
             "common_name": "Organic Basil",
             "botanical_name": "Ocimum basilicum",
-            "product_code": "BASO", 
+            "product_code": "BASO",
             "organic": true,
             "fair_trade": "yes",
             "description": "<p>Organic Basil: With a sweet and slightly peppery flavor, this herb pairs<\/p>",
@@ -174,7 +174,7 @@
           "settings": {
             "common_name": "Organic Bay Leaves",
             "botanical_name": "Laurus nobilis",
-            "product_code": "BAYO", 
+            "product_code": "BAYO",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Bay Leaves: Similar to oregano and thyme, this slightly floral yet bitter herb is great in soups, stews, and sauces.<\/p>",
@@ -186,7 +186,7 @@
           "settings": {
             "common_name": "Organic Beet",
             "botanical_name": "Beta vulgaris",
-            "product_code": "BEEO", 
+            "product_code": "BEEO",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Beet: Sweet, earthy, and richly colored, Beets pair well with basil, ginger, allspice, and tarragon.<\/p>",
@@ -198,7 +198,7 @@
           "settings": {
             "common_name": "Organic Bell Peppers (Red + Green)",
             "botanical_name": "Capsicum annuum",
-            "product_code": "BERO", 
+            "product_code": "BERO",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Bell Peppers (Red + Green): With flavors ranging from bitter to sweet, bell peppers add dimension to dips, soups, and salads.<\/p>",
@@ -233,7 +233,7 @@
           "settings": {
             "common_name": "Organic Birds Eye",
             "botanical_name": "Capsicum",
-            "product_code": "BIRO", 
+            "product_code": "BIRO",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Birds Eye: Not quite as hot as a spicy habanero, this small chili brings an intense earthy note to a dish.<\/p>",
@@ -293,7 +293,7 @@
           "settings": {
             "common_name": "Organic Black Pepper",
             "botanical_name": "Piper nigrum",
-            "product_code": "BLAO", 
+            "product_code": "BLAO",
             "organic": true,
             "fair_trade": "yes",
             "description": "<p>Organic Black Pepper: Found in most kitchens, this popular dried fruit adds depth and kick to any dish.<\/p>",
@@ -340,7 +340,7 @@
           "settings": {
             "common_name": "Organic Blue Poppy Seed",
             "botanical_name": "Papaver somniferum",
-            "product_code": "BPSO", 
+            "product_code": "BPSO",
             "organic": true,
             "fair_trade": "yes",
             "description": "<p>Organic Blue Poppy Seed: Great in baked goods, these seeds add a nutty flavor and a pop of color.<\/p>",
@@ -364,7 +364,7 @@
           "settings": {
             "common_name": "Organic Calendula",
             "botanical_name": "Calendula officinalis",
-            "product_code": "CALO",           
+            "product_code": "CALO",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Calendula: With various flavor profiles including spicy, tangy, and peppery, this golden flower makes a great tea as well as a natural food dye.<\/p>",
@@ -399,7 +399,7 @@
           "settings": {
             "common_name": "Organic Caraway Seed",
             "botanical_name": "Carum carvi",
-            "product_code": "CARO", 
+            "product_code": "CARO",
             "organic": true,
             "fair_trade": "yes",
             "description": "<p>Organic Caraway Seed: With a spicy earthy taste these seeds pair well with tomato based soups and sauces.<\/p>",
@@ -411,7 +411,7 @@
           "settings": {
             "common_name": "Organic Cardamom Pod",
             "botanical_name": "Elettaria cardamomum",
-            "product_code": "CAPO", 
+            "product_code": "CAPO",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Cardamom Pod: Harvested earlier to preserve flavor and aroma, cardamom pods can be used whole or opened to access the seeds.<\/p>",
@@ -423,7 +423,7 @@
           "settings": {
             "common_name": "Organic Cardamom Seed",
             "botanical_name": "Elettaria cardamomum",
-            "product_code": "CSSO", 
+            "product_code": "CSSO",
             "organic": true,
             "fair_trade": "yes",
             "description": "<p>Organic Cardamom Seed: A complex flavor that has notes of mint, lemon, and smoke, this seed is great with sweet and savory dishes.<\/p>",
@@ -458,7 +458,7 @@
           "settings": {
             "common_name": "Organic Carrot",
             "botanical_name": "Daucus carota",
-            "product_code": "CRTO", 
+            "product_code": "CRTO",
             "organic": true,
             "fair_trade": "no",
             "description": "",
@@ -470,7 +470,7 @@
           "settings": {
             "common_name": "Organic Cayenne",
             "botanical_name": "Capsicum",
-            "product_code": "CAYO", 
+            "product_code": "CAYO",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Cayenne: Noted as being 10x hotter than jalapeños, this pepper pairs great with lime, basil, and ginger.<\/p>",
@@ -565,7 +565,7 @@
           "settings": {
             "common_name": "Organic Chile Peppers (Red)",
             "botanical_name": "Capsicum",
-            "product_code": "CHIO", 
+            "product_code": "CHIO",
             "organic": true,
             "fair_trade": "no",
             "description": "",
@@ -577,7 +577,7 @@
           "settings": {
             "common_name": "Organic Chipotle",
             "botanical_name": "Capsicum",
-            "product_code": "CHPO", 
+            "product_code": "CHPO",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Chipotle: With a distinct smokey flavor these mild chiles add color and heat to any dish.<\/p>",
@@ -600,7 +600,7 @@
           "settings": {
             "common_name": "Organic Cilantro",
             "botanical_name": "Coriandrum sativum",
-            "product_code": "CILO", 
+            "product_code": "CILO",
             "organic": true,
             "fair_trade": "yes",
             "description": "<p>Organic Cilantro: Crisp with a note of citrus, this herb pairs well with chili pepper, carrot, basil, garlic, and ginger.<\/p>",
@@ -612,7 +612,7 @@
           "settings": {
             "common_name": "Organic Cinnamon-Cassia",
             "botanical_name": "Cinnamomum burmannii",
-            "product_code": "CINO", 
+            "product_code": "CINO",
             "organic": true,
             "fair_trade": "yes",
             "description": "<p>Organic Cinnamon-Cassia: Known as Indonesian cinnamon, this spicy sweet ingredient has a smooth taste and mild bite.<\/p>",
@@ -624,7 +624,7 @@
           "settings": {
             "common_name": "Organic Cinnamon-Ceylon",
             "botanical_name": "Cinnamomum verum",
-            "product_code": "CIVO", 
+            "product_code": "CIVO",
             "organic": true,
             "fair_trade": "yes",
             "description": "<p>Organic Cinnamon-Ceylon: Known as Ceylon Cinnamon or True Cinnamon, this spice has a delicate and complex flavor profile.<\/p>",
@@ -648,7 +648,7 @@
           "settings": {
             "common_name": "Organic Cloves",
             "botanical_name": "Szyzgium aromaticum",
-            "product_code": "CLOO", 
+            "product_code": "CLOO",
             "organic": true,
             "fair_trade": "yes",
             "description": "<p>Organic Cloves: With a bit of warmth and a strong and sweet yet bitter taste, this spice brings a bold aroma and flavor to any dish.<\/p>",
@@ -660,7 +660,7 @@
           "settings": {
             "common_name": "Organic Coriander",
             "botanical_name": "Coriandrum sativum",
-            "product_code": "CORO", 
+            "product_code": "CORO",
             "organic": true,
             "fair_trade": "yes",
             "description": "",
@@ -696,7 +696,7 @@
           "settings": {
             "common_name": "Organic Cumin",
             "botanical_name": "Cuminum cyminum",
-            "product_code": "CUMO", 
+            "product_code": "CUMO",
             "organic": true,
             "fair_trade": "yes",
             "description": "<p>Organic Cumin: Earthy and nutty with a bitter bite, this spice adds warmth and hints of lemon to any dish.<\/p>",
@@ -791,7 +791,7 @@
           "settings": {
             "common_name": "Organic Dill Weed",
             "botanical_name": "Anethum graveolens L.",
-            "product_code": "DILO", 
+            "product_code": "DILO",
             "organic": true,
             "fair_trade": "yes",
             "description": "<p>Organic Dill Weed: This herb has a grassy aroma with an anise like taste, it pairs well with potatoes, grains, tomatoes, and lemons.<\/p>",
@@ -803,7 +803,7 @@
           "settings": {
             "common_name": "Organic Echinacea Flower",
             "botanical_name": "Echinacea purpurea (L.) Moenchx",
-            "product_code": "EPHO",           
+            "product_code": "EPHO",
             "organic": false,
             "fair_trade": "no",
             "description": "<p>Organic Echinacea Flower: Often associated with boosting the immune system, this herb has a strong floral taste and is often present in various tea blends.<\/p>",
@@ -815,7 +815,7 @@
           "settings": {
             "common_name": "Organic Echinacea Root",
             "botanical_name": "Echinacea purpurea (L.) Moench",
-            "product_code": "EPHO", 
+            "product_code": "EPHO",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Echinacea Flower: Often associated with boosting the immune system, this herb has a strong floral taste and is often present in various tea blends.<\/p>",
@@ -827,7 +827,7 @@
           "settings": {
             "common_name": "Organic Elder Berries",
             "botanical_name": "Sambucus nigra L.",
-            "product_code": "ELBO", 
+            "product_code": "ELBO",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Elder Berries: These fruits are distinctly tart but pair well with spices such as cinnamon, cloves, and allspice.<\/p>",
@@ -839,7 +839,7 @@
           "settings": {
             "common_name": "Organic Elder Flowers",
             "botanical_name": "Sambucus nigra L.",
-            "product_code": "ELFO", 
+            "product_code": "ELFO",
             "organic": true,
             "fair_trade": "no",
             "description": "",
@@ -851,7 +851,7 @@
           "settings": {
             "common_name": "Organic Eleutherococcus",
             "botanical_name": "Eleutherococcus senticosus",
-            "product_code": "ELEO", 
+            "product_code": "ELEO",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Eleutherococcus: This herb is commonly known in folk medicine from the areas of Eastern Europe and China, to help cope with stress hormones and aid in memory functions.<\/p>",
@@ -863,7 +863,7 @@
           "settings": {
             "common_name": "Organic Fennel Seed",
             "botanical_name": "Foeniculum vulgare",
-            "product_code": "FENO", 
+            "product_code": "FENO",
             "organic": true,
             "fair_trade": "yes",
             "description": "<p>Organic Fennel Seed: Similar to anise with its licorice like taste, this sweet spice pairs well with cucumber salad, curries, and sautéed vegetables.<\/p>",
@@ -875,7 +875,7 @@
           "settings": {
             "common_name": "Organic Fenugreek Seed",
             "botanical_name": "Trigonella foenum",
-            "product_code": "FOEO", 
+            "product_code": "FOEO",
             "organic": true,
             "fair_trade": "yes",
             "description": "<p>Organic Fenugreek Seed: With a nutty yet slightly sweet flavor, this seed pairs best with savory dishes.<\/p>",
@@ -887,7 +887,7 @@
           "settings": {
             "common_name": "Organic Garlic",
             "botanical_name": "Allium sativum",
-            "product_code": "GARO", 
+            "product_code": "GARO",
             "organic": true,
             "fair_trade": "yes",
             "description": "<p>Organic Garlic: Well known around the world, garlic has a pungent spicy sweet flavor.<\/p>",
@@ -899,7 +899,7 @@
           "settings": {
             "common_name": "Organic Ginger Root",
             "botanical_name": "Zingiber officinale",
-            "product_code": "GINO", 
+            "product_code": "GINO",
             "organic": true,
             "fair_trade": "yes",
             "description": "<p>Organic Ginger Root: Known for its bold spiciness and light sweetness, ginger pairs well with both savory and sweet dishes.<\/p>",
@@ -911,7 +911,7 @@
           "settings": {
             "common_name": "Organic Ginkgo Leaves",
             "botanical_name": "Ginkgo biloba",
-            "product_code": "GIKO", 
+            "product_code": "GIKO",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Ginkgo Leaves: With its woodsy aroma and herbaceous taste, this herb has many nutritional benefits and makes for a calm, earthy tea.<\/p>",
@@ -923,7 +923,7 @@
           "settings": {
             "common_name": "Organic Ginseng Root",
             "botanical_name": "Panax ginseng",
-            "product_code": "GNSO", 
+            "product_code": "GNSO",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Ginseng Root: This medicinal herb is known to have a strong bitter taste, but when sweetened or used in soup stocks it produces a light earthy note.<\/p>",
@@ -971,7 +971,7 @@
           "settings": {
             "common_name": "Organic Golden Rod",
             "botanical_name": "Solidago virgaurea",
-            "product_code": "GLDO", 
+            "product_code": "GLDO",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Golden Rod: This beautiful yellow flower has a spicy yet sweet flavor similar to anise. Try it as a tea or as an addition to your favorite sweets.<\/p>",
@@ -983,7 +983,7 @@
           "settings": {
             "common_name": "Organic Gotu Kola",
             "botanical_name": "Centella asiatica",
-            "product_code": "GOTO", 
+            "product_code": "GOTO",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Gotu Kola: Popular in Asian cuisine, this sweet yet bitter plant has many known nutritional benefits.<\/p>",
@@ -995,7 +995,7 @@
           "settings": {
             "common_name": "Organic Grapefruit Peel",
             "botanical_name": "Citrus x paradisi",
-            "product_code": "GRAO", 
+            "product_code": "GRAO",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Grapefruit Peel: With a strong citrusy aroma, this slightly bitter peel makes a soothing tea and a great addition to tea blends.<\/p>",
@@ -1018,7 +1018,7 @@
           "settings": {
             "common_name": "Organic Habanero",
             "botanical_name": "Capsicum",
-            "product_code": "HABO", 
+            "product_code": "HABO",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Habanero: Fruity, sweet, and floral, this unique pepper has a spicy kick to compliment any dish.<\/p>",
@@ -1030,7 +1030,7 @@
           "settings": {
             "common_name": "Organic Hawthorn Leaf",
             "botanical_name": "Crataegus monogyna",
-            "product_code": "HAFO", 
+            "product_code": "HAFO",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Hawthorn Leaf: These rich red berries produce a sweet and fruity flavor, in addition to the berries, the flowers and leaves may also be used to make a full-bodied tea.<\/p>",
@@ -1042,7 +1042,7 @@
           "settings": {
             "common_name": "Organic Helichrysum Flower",
             "botanical_name": "Helichrysum arenarium",
-            "product_code": "HELO", 
+            "product_code": "HELO",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Helichrysum Flower: With a variety of uses and a strong sweet floral scent, this flower has been used in tea to curry dishes.<\/p>",
@@ -1054,7 +1054,7 @@
           "settings": {
             "common_name": "Organic Hibiscus",
             "botanical_name": "Hibiscus sabdariffa",
-            "product_code": "HIBO", 
+            "product_code": "HIBO",
             "organic": true,
             "fair_trade": "yes",
             "description": "<p>Organic Hibiscus: This iconic flower is used in many tropical cultures to add a strong fruity and floral taste to any dish or tea.<\/p>",
@@ -1066,7 +1066,7 @@
           "settings": {
             "common_name": "Organic Holy Basil (Krishna)",
             "botanical_name": "Ocimum tenuiflorum",
-            "product_code": "TUKO", 
+            "product_code": "TUKO",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Holy Basil (Krishna): A type of Tulsi, this species is known for its dark green and purple appearance with a peppery taste.<\/p>",
@@ -1078,7 +1078,7 @@
           "settings": {
             "common_name": "Organic Holy Basil (Rama)",
             "botanical_name": "Ocimum tenuiflorum",
-            "product_code": "TURO", 
+            "product_code": "TURO",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Holy Basil (Rama): A type of Tulsi, this species is known for its green and purplish-white appearance with a calm, light flavor.<\/p>",
@@ -1090,7 +1090,7 @@
           "settings": {
             "common_name": "Organic Holy Basil (Vana)",
             "botanical_name": "Ocimum Sp.",
-            "product_code": "TUVO", 
+            "product_code": "TUVO",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Holy Basil (Vana): A type of Tulsi known as Forest Type, this green and white plant is popular for its fragrance.<\/p>",
@@ -1102,7 +1102,7 @@
           "settings": {
             "common_name": "Organic Horsetail",
             "botanical_name": "Equisetum arvense",
-            "product_code": "HRSO", 
+            "product_code": "HRSO",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Horsetail: Similar to a strong green or black tea, this bright green plant makes a hearty healing tea.<\/p>",
@@ -1114,7 +1114,7 @@
           "settings": {
             "common_name": "Organic Hyssop",
             "botanical_name": "Hyssopus officinalis",
-            "product_code": "HYSO", 
+            "product_code": "HYSO",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Hyssop: This sweet smelling herb surprises you with its bitter flavor that tastes somewhere between licorice and mint.<\/p>",
@@ -1126,7 +1126,7 @@
           "settings": {
             "common_name": "Organic Jalapeño (Red + Green)",
             "botanical_name": "Capsicum",
-            "product_code": "JARO", 
+            "product_code": "JARO",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Jalapeńo (Red + Green): Known as one of the milder peppers, jalapeños range from a grassy to fruity taste.<\/p>",
@@ -1138,7 +1138,7 @@
           "settings": {
             "common_name": "Organic Juniper Berries",
             "botanical_name": "Juniperus communis",
-            "product_code": "JUNO", 
+            "product_code": "JUNO",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Juniper Berries: This small fruit releases a strong piney flavor with a tart taste, though commonly used to make gin, they also can be steeped into a crisp and refreshing tea.<\/p>",
@@ -1150,7 +1150,7 @@
           "settings": {
             "common_name": "Organic Lady's Mantle",
             "botanical_name": "Galium verum",
-            "product_code": "LMMO", 
+            "product_code": "LMMO",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Lady's Mantle: This long known healing herb makes a bitter medicinal tea or tincture.<\/p>",
@@ -1198,7 +1198,7 @@
           "settings": {
             "common_name": "Organic Lavender (Lavandin)",
             "botanical_name": "Lavandula x intermedia",
-            "product_code": "LVBP", 
+            "product_code": "LVBP",
             "organic": true,
             "fair_trade": "yes",
             "description": "<p>Organic Lavender (Lavandin): This lovely purple flower has a floral sweet taste and can be used for a variety of recipes. It goes especially well with lemon, baked goods, and teas.<\/p>",
@@ -1210,7 +1210,7 @@
           "settings": {
             "common_name": "Organic Lavender (Lavandula)",
             "botanical_name": "Lavandula angustifolia",
-            "product_code": "LAVO", 
+            "product_code": "LAVO",
             "organic": true,
             "fair_trade": "no",
             "description": "",
@@ -1222,7 +1222,7 @@
           "settings": {
             "common_name": "Organic Lemon Balm",
             "botanical_name": "Melissa officinalis",
-            "product_code": "LEBO", 
+            "product_code": "LEBO",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Lemon Balm: With its citrusy fragrance, this lemony herb adds a bright crisp aroma and flavor to any tea or spice blend.<\/p>",
@@ -1234,7 +1234,7 @@
           "settings": {
             "common_name": "Organic Lemon Myrtle",
             "botanical_name": "Backhousia citriodora",
-            "product_code": "LMTO", 
+            "product_code": "LMTO",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Lemon Myrtle: Known for its sweet woodsy berries, the leaves of this plant provide a fragrant orange-like aroma and a spicy bitter taste.<\/p>",
@@ -1246,7 +1246,7 @@
           "settings": {
             "common_name": "Organic Lemon Peel",
             "botanical_name": "Citrus limon",
-            "product_code": "LEP", 
+            "product_code": "LEP",
             "organic": true,
             "fair_trade": "yes",
             "description": "<p>Organic Lemon Peel: With a bright citrusy aroma and taste, lemon peel can be used in baked goods, dressings, and savory dishes.<\/p>",
@@ -1258,7 +1258,7 @@
           "settings": {
             "common_name": "Organic Lemon Verbana",
             "botanical_name": "Aloysia triphylla",
-            "product_code": "LEVO", 
+            "product_code": "LEVO",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Lemon Verbana: This lightly fragrant herb has a soft lemon aroma that when added to various cuisines gives a well-rounded lemony flavor.<\/p>",
@@ -1270,7 +1270,7 @@
           "settings": {
             "common_name": "Organic Lemongrass",
             "botanical_name": "Cymbopogon citratus",
-            "product_code": "LEMO", 
+            "product_code": "LEMO",
             "organic": true,
             "fair_trade": "yes",
             "description": "<p>Organic Lemongrass: With its bright, crisp taste this herb has been used in many cuisines for its lemony mint flavor.<\/p>",
@@ -1282,7 +1282,7 @@
           "settings": {
             "common_name": "Organic Licorice Root",
             "botanical_name": "Glycyrrhiza glabra",
-            "product_code": "LICO", 
+            "product_code": "LICO",
             "organic": true,
             "fair_trade": "yes",
             "description": "<p>Organic Licorice Root: This herb has a strong bittersweet taste that has been used as a medicinal tea to delectable candies.<\/p>",
@@ -1294,7 +1294,7 @@
           "settings": {
             "common_name": "Organic Linden Leaf and Flower",
             "botanical_name": "Tilia Sp.",
-            "product_code": "LINO", 
+            "product_code": "LINO",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Linden Leaf and Flower: Used historically for medicinal purposes, this light aromatic herb has a sweet and floral taste.<\/p>",
@@ -1306,7 +1306,7 @@
           "settings": {
             "common_name": "Organic Marjoram",
             "botanical_name": "Origanum majorana",
-            "product_code": "MARO", 
+            "product_code": "MARO",
             "organic": true,
             "fair_trade": "yes",
             "description": "<p>Organic Marjoram: Part of the mint family and thought to be similar, though sweeter than oregano, this herb adds a delicate flavor and aroma.<\/p>",
@@ -1318,7 +1318,7 @@
           "settings": {
             "common_name": "Organic Marshmallow Root",
             "botanical_name": "Althea officinalis",
-            "product_code": "MRSO", 
+            "product_code": "MRSO",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Marshmallow Root: This earthy flavored root, originally used in marshmallow sweets, makes for a unique and healing tea.<\/p>",
@@ -1330,7 +1330,7 @@
           "settings": {
             "common_name": "Organic Milk Thistle Seed",
             "botanical_name": "Silybum marianum",
-            "product_code": "MTSO", 
+            "product_code": "MTSO",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Milk Thistle Seed: Similar in flavor to hemp or flax, this seed can be added to any baked good, smoothie, or dish for added nutritional value.<\/p>",
@@ -1342,7 +1342,7 @@
           "settings": {
             "common_name": "Organic Mugwort",
             "botanical_name": "Artemisia vulgaris",
-            "product_code": "MGWO", 
+            "product_code": "MGWO",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Mugwort: With a slightly bitter taste and an aroma similar to sage, this herb has been used throughout history.<\/p>",
@@ -1354,7 +1354,7 @@
           "settings": {
             "common_name": "Organic Mullein Leaf",
             "botanical_name": "Verbascum thapsus",
-            "product_code": "MULO", 
+            "product_code": "MULO",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Mullein Leaf: With a sweet flower and slightly bitter and astringent leaves, this herb pairs well with spicy dishes and flavors.<\/p>",
@@ -1366,7 +1366,7 @@
           "settings": {
             "common_name": "Organic Nettle Leaf",
             "botanical_name": "Urtica dioica L.",
-            "product_code": "NELO", 
+            "product_code": "NELO",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Nettle Leaf: Producing an earthy taste, this herb makes for a nutrient dense tea with a mellow green flavor.<\/p>",
@@ -1378,7 +1378,7 @@
           "settings": {
             "common_name": "Organic Nutmeg",
             "botanical_name": "Myristica fragrans",
-            "product_code": "NUTO", 
+            "product_code": "NUTO",
             "organic": true,
             "fair_trade": "yes",
             "description": "<p>Organic Nutmeg: With a sweet taste, this spice adds warmth to any savory or sweet dish.<\/p>",
@@ -1426,7 +1426,7 @@
           "settings": {
             "common_name": "Organic Olive Leaves",
             "botanical_name": "Oleo Europaea",
-            "product_code": "OLIO", 
+            "product_code": "OLIO",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Olive Leaves: With a unique yet bitter taste, this leaves can be steeped and paired with lemon, honey, and other herbs.<\/p>",
@@ -1438,7 +1438,7 @@
           "settings": {
             "common_name": "Organic Onion",
             "botanical_name": "Allium cepa",
-            "product_code": "ONIO", 
+            "product_code": "ONIO",
             "organic": true,
             "fair_trade": "yes",
             "description": "<p>Organic Onion: Pungent and sweet on its own, this herb uplifts the flavors in any dish.<\/p>",
@@ -1461,7 +1461,7 @@
           "settings": {
             "common_name": "Organic Orange Peel",
             "botanical_name": "Citrus sinensis",
-            "product_code": "ORAO", 
+            "product_code": "ORAO",
             "organic": true,
             "fair_trade": "yes",
             "description": "<p>Organic Orange Peel: With a crisp, citrusy aroma, orange peel makes a great addition to savory and sweet dishes.<\/p>",
@@ -1473,7 +1473,7 @@
           "settings": {
             "common_name": "Organic Oregano",
             "botanical_name": "Origanum vulgare",
-            "product_code": "OREO", 
+            "product_code": "OREO",
             "organic": true,
             "fair_trade": "yes",
             "description": "<p>Organic Oregano: This pungent and sharp herb pairs well with tomato based dishes, chili, and vegetable dishes.<\/p>",
@@ -1485,7 +1485,7 @@
           "settings": {
             "common_name": "Organic Oregon Grape Root",
             "botanical_name": "Mahonia aquifolium",
-            "product_code": "OGRW", 
+            "product_code": "OGRW",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Oregon Grape Root: This herb makes for a very bitter healing tea that stimulates many digestive functions.<\/p>",
@@ -1497,7 +1497,7 @@
           "settings": {
             "common_name": "Organic Paprika (Smoked)",
             "botanical_name": "Capsicum",
-            "product_code": "CARO", 
+            "product_code": "CARO",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Paprika (Smoked): This smokey sweet spice marries well with caraway , cardamom, saffron, and turmeric.<\/p>",
@@ -1509,7 +1509,7 @@
           "settings": {
             "common_name": "Organic Parsley Leaf",
             "botanical_name": "Petroselinum crispum",
-            "product_code": "PALO", 
+            "product_code": "PALO",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Parsley Leaf: This slightly bitter herb brings balance and brightness to savory dishes.<\/p>",
@@ -1521,7 +1521,7 @@
           "settings": {
             "common_name": "Organic Parsley Root",
             "botanical_name": "Petroselinum crispum",
-            "product_code": "PARO", 
+            "product_code": "PARO",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Parsley Root: With a delicate herbal flavor, this root makes a great addition to hearty vegetables such as sweet potato and grains.<\/p>",
@@ -1533,7 +1533,7 @@
           "settings": {
             "common_name": "Organic Passion Flower",
             "botanical_name": "Passiflora incarnata",
-            "product_code": "PSFO", 
+            "product_code": "PSFO",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Passion Flower: This stunning flower makes for a unique earthy and grassy flavor and pairs well with lemon balm.<\/p>",
@@ -1545,7 +1545,7 @@
           "settings": {
             "common_name": "Organic Peppermint",
             "botanical_name": "Mentha piperita",
-            "product_code": "PEPO", 
+            "product_code": "PEPO",
             "organic": true,
             "fair_trade": "yes",
             "description": "<p>Organic Peppermint: Commonly used in a variety of ways, this herb adds a crisp and bright note to any dish or tea.<\/p>",
@@ -1557,7 +1557,7 @@
           "settings": {
             "common_name": "Organic Raspberry Leaf",
             "botanical_name": "Rubus idaeus",
-            "product_code": "RASO", 
+            "product_code": "RASO",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Raspberry Leaf: Packed with vitamins this earthy tasting herb makes a great tea or addition to soups and warm dishes.<\/p>",
@@ -1569,7 +1569,7 @@
           "settings": {
             "common_name": "Organic Red Clover Herb and Flower",
             "botanical_name": "Trifolium pratense",
-            "product_code": "RCFO", 
+            "product_code": "RCFO",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Red Clover Herb and Flower: Nutrient dense, the leaves and flower combined make for a sweet and earthy flavor.<\/p>",
@@ -1581,7 +1581,7 @@
           "settings": {
             "common_name": "Organic Rhubarb Root",
             "botanical_name": "Rheum officinnale",
-            "product_code": "RHUO", 
+            "product_code": "RHUO",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Rhubarb Root: This stunningly red fruit pairs great with richly sweet ingredients resulting in a perfect balance of its tart flavor.<\/p>",
@@ -1593,7 +1593,7 @@
           "settings": {
             "common_name": "Organic Rooibos",
             "botanical_name": "Aspalathus linearis",
-            "product_code": "ROOO", 
+            "product_code": "ROOO",
             "organic": true,
             "fair_trade": "yes",
             "description": "<p>Organic Rooibos: Commonly known as Red Tea, this sweet and fruity herb has many depths to its flavor profile.<\/p>",
@@ -1605,7 +1605,7 @@
           "settings": {
             "common_name": "Organic Rose",
             "botanical_name": "Rosa damascena",
-            "product_code": "RSBO", 
+            "product_code": "RSBO",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Rose: With a sweet floral flavor, these dried flowers add a fragrant and visually stunning addition to any tea blend or dish.<\/p>",
@@ -1653,7 +1653,7 @@
           "settings": {
             "common_name": "Organic Rosehips",
             "botanical_name": "Rosa canina",
-            "product_code": "RSHO", 
+            "product_code": "RSHO",
             "organic": true,
             "fair_trade": "yes",
             "description": "<p>Organic Rosehips: These floral yet sour fruits are delectable when paired with other fruits, sweets, or added to jams or syrups.<\/p>",
@@ -1665,7 +1665,7 @@
           "settings": {
             "common_name": "Organic Rosemary",
             "botanical_name": "Rosmarinus officinalis",
-            "product_code": "ROSO", 
+            "product_code": "ROSO",
             "organic": true,
             "fair_trade": "yes",
             "description": "<p>Organic Rosemary: With a sharp flavor and piney aroma, this herb pairs well with garlic, olive oil, breads, and fruits.<\/p>",
@@ -1677,7 +1677,7 @@
           "settings": {
             "common_name": "Organic Sage",
             "botanical_name": "Salvia officinalis",
-            "product_code": "SAGO", 
+            "product_code": "SAGO",
             "organic": true,
             "fair_trade": "yes",
             "description": "<p>Organic Sage: This herb has a strong earthy aroma, that pairs well with basil, mint, rosemary, and thyme.<\/p>",
@@ -1689,7 +1689,7 @@
           "settings": {
             "common_name": "Organic Sarsaparilla Root",
             "botanical_name": "Hemidesmus indicus",
-            "product_code": "SARO", 
+            "product_code": "SARO",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Sarsaparilla Root: This root possesses a sharp bite with vague notes of vanilla and licorice.<\/p>",
@@ -1701,7 +1701,7 @@
           "settings": {
             "common_name": "Organic Shatavari",
             "botanical_name": "Asparagus racemosus",
-            "product_code": "SHAO", 
+            "product_code": "SHAO",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Shatavari: Used in Ayurvedic medicine, this sweet and slightly bitter herb makes for a calming tea.<\/p>",
@@ -1713,7 +1713,7 @@
           "settings": {
             "common_name": "Organic Slippery Elm Bark",
             "botanical_name": "Ulmus rubra",
-            "product_code": "SLBO", 
+            "product_code": "SLBO",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Slippery Elm Bark: This medicinal herb has little flavor yet has a plethora of traditional healing usages.<\/p>",
@@ -1725,7 +1725,7 @@
           "settings": {
             "common_name": "Organic Spearmint Leaf",
             "botanical_name": "Mentha spicata",
-            "product_code": "SPEO", 
+            "product_code": "SPEO",
             "organic": true,
             "fair_trade": "yes",
             "description": "<p>Organic Spearmint Leaf: With a strong, minty aroma and a grassy, bitter taste, this herb pairs well in tea, baked goods, and cuisines.<\/p>",
@@ -1737,7 +1737,7 @@
           "settings": {
             "common_name": "Organic Spinach",
             "botanical_name": "Spinacia oleracea",
-            "product_code": "SPIO", 
+            "product_code": "SPIO",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Spinach: This nutritious herb makes a great addition to pasta, bread, or to add some natural color to a dish.<\/p>",
@@ -1749,7 +1749,7 @@
           "settings": {
             "common_name": "Organic St John's Wort",
             "botanical_name": "Hypericum perforatum",
-            "product_code": "STJO", 
+            "product_code": "STJO",
             "organic": false,
             "fair_trade": "no",
             "description": "<p>Organic St John's Wort: The flavor of this herb is earthy yet sweet and is often said to help insomnia and anxiety.<\/p>",
@@ -1761,7 +1761,7 @@
           "settings": {
             "common_name": "Organic Star Anise",
             "botanical_name": "Illicium verum",
-            "product_code": "STAO", 
+            "product_code": "STAO",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Star Anise: Sweet and licorice-like in flavor, this star shaped spice adds brightness to both savory and sweet dishes.<\/p>",
@@ -1773,7 +1773,7 @@
           "settings": {
             "common_name": "Organic Stevia Leaf",
             "botanical_name": "Stevia rebaudiana",
-            "product_code": "STEO", 
+            "product_code": "STEO",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Stevia Leaf: A common substitute for sweeteners, this herb has a strong, sweet and mildly bitter taste.<\/p>",
@@ -1785,7 +1785,7 @@
           "settings": {
             "common_name": "Organic Thyme",
             "botanical_name": "Thymus Vulgaris",
-            "product_code": "THYO", 
+            "product_code": "THYO",
             "organic": true,
             "fair_trade": "yes",
             "description": "<p>Organic Thyme: An earthy taste with notes of lemon and mint, this herb pairs well with other herbs and savory dishes.<\/p>",
@@ -1797,7 +1797,7 @@
           "settings": {
             "common_name": "Organic Tomato",
             "botanical_name": "Solanum lycopersicum",
-            "product_code": "TOMO", 
+            "product_code": "TOMO",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Tomato: This sweet and slightly savory fruit is a great addition to soups, sauces, or in a vegetable juice.<\/p>",
@@ -1821,7 +1821,7 @@
           "settings": {
             "common_name": "Organic Uva Ursi Leaf",
             "botanical_name": "Arctostaphylos uva ursi",
-            "product_code": "UVAO", 
+            "product_code": "UVAO",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Uva Ursi Leaf: This medicinal plant is used in folk medicine as a bitter healing tea.<\/p>",
@@ -1833,7 +1833,7 @@
           "settings": {
             "common_name": "Organic Valerian Root",
             "botanical_name": "Valeriana officinalis",
-            "product_code": "VALO", 
+            "product_code": "VALO",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Valerian Root: With a pungent taste, this root is commonly used in folk medicine to aid with insomnia.<\/p>",
@@ -1892,7 +1892,7 @@
           "settings": {
             "common_name": "Organic White Pepper",
             "botanical_name": "Piper nigrum",
-            "product_code": "WHIO", 
+            "product_code": "WHIO",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic White Pepper: Milder in flavor but greater in heat, this variation of peppercorn makes a spicy addition to any recipe.<\/p>",
@@ -1904,7 +1904,7 @@
           "settings": {
             "common_name": "Organic Wild Cherry Bark",
             "botanical_name": "Prunus serotina",
-            "product_code": "WCBO", 
+            "product_code": "WCBO",
             "organic": false,
             "fair_trade": "no",
             "description": "<p>Organic Wild Cherry Bark: This herb has a strong bitter taste and pairs well with honey and lemon.<\/p>",
@@ -1916,7 +1916,7 @@
           "settings": {
             "common_name": "Organic Yarrow Herbs and Flowers",
             "botanical_name": "Achillea millefolium",
-            "product_code": "YARO", 
+            "product_code": "YARO",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Yarrow Herbs & Flowers: Similar to tarragon, this herb pairs well with parsley and chervil<\/p>",
@@ -1928,7 +1928,7 @@
           "settings": {
             "common_name": "Organic Yellow Dock Root",
             "botanical_name": "Rumex crispus",
-            "product_code": "YELO", 
+            "product_code": "YELO",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Yellow Dock Root: With a slightly bitter taste, this herb makes for a calming, earthy tea.<\/p>",
