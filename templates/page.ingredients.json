@@ -92,6 +92,7 @@
           "settings": {
             "common_name": "Organic Anaheim",
             "botanical_name": "Capsicum",
+            "product_code": "-",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Anaheim: This sweeter species of pepper ranges from a mild spice to a more intense heat<\/p>",
@@ -139,6 +140,7 @@
           "settings": {
             "common_name": "Organic Assam",
             "botanical_name": "Camellia sinensis",
+            "product_code": "-",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Assam: Known for a bold earthy cup of tea with a rich slightly sweet aroma.<\/p>",
@@ -222,6 +224,7 @@
           "settings": {
             "common_name": "Organic Birch Leaf",
             "botanical_name": "Betula pendula",
+            "product_code": "-",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Birch Leaf: The leaves of the birch tree make a light earthy tea or tincture used in various folk healing remedies.<\/p>",
@@ -305,6 +308,7 @@
           "settings": {
             "common_name": "Organic Black Tea",
             "botanical_name": "Camellia sinensis",
+            "product_code": "-",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Black Tea: This type of tea is known for bold earthy tones.<\/p>",
@@ -376,6 +380,7 @@
           "settings": {
             "common_name": "Organic California Birch",
             "botanical_name": "Betula pendula",
+            "product_code": "-",
             "organic": true,
             "fair_trade": "no",
             "description": "",
@@ -447,6 +452,7 @@
           "settings": {
             "common_name": "Organic Carob (Roasted)",
             "botanical_name": "Ceratonia siliqua",
+            "product_code": "CRBO",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Carob (Roasted): This herbal plant produces a sweet yet fruity pod that, once roasted and ground, adds a unique flavor to any dessert or drink.<\/p>",
@@ -554,6 +560,7 @@
           "settings": {
             "common_name": "Organic Chicory Root (Roasted)",
             "botanical_name": "Chicorium intybus",
+            "product_code": "CHCO",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Chicory Root (Roasted): Commonly used as a coffee substitute, its roasted rich taste brings a unique flavor to any recipe.<\/p>",
@@ -589,6 +596,7 @@
           "settings": {
             "common_name": "Organic Chun Mee",
             "botanical_name": "Camellia sinensis",
+            "product_code": "-",
             "organic": true,
             "fair_trade": "no",
             "description": "",
@@ -780,6 +788,7 @@
           "settings": {
             "common_name": "Organic Darjeeling",
             "botanical_name": "Camellia sinensis",
+            "product_code": "-",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Darjeeling: This style of black tea is highly renowned across the world for its musky sweet taste.<\/p>",
@@ -1007,6 +1016,7 @@
           "settings": {
             "common_name": "Organic Green Tea",
             "botanical_name": "Camellia sinensis",
+            "product_code": "-",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Green Tea: This tea brings grassy herbal notes to any cup of tea.<\/p>",
@@ -1450,6 +1460,7 @@
           "settings": {
             "common_name": "Organic Oolong",
             "botanical_name": "Camellia sinensis",
+            "product_code": "-",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Oolong: With a full bodied floral aroma this brings a mellow warming sensation to each cup.<\/p>",
@@ -1881,6 +1892,7 @@
           "settings": {
             "common_name": "Organic White",
             "botanical_name": "Camellia sinensis",
+            "product_code": "-",
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic White: High in antioxidants, this tea is mellow with a light sweetness.<\/p>",

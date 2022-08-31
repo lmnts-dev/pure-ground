@@ -27,9 +27,9 @@
             <div class="spec-sheets__header__inner">
                <p class="caption-sm common-name">{{section.settings.common_name_label}}</p>
                <p class="caption-sm botanical-name">{{section.settings.botanical_name_label}}</p>
+               <p class="caption-sm spec-sheets__header__inner__product-code">{{section.settings.product_code_label}}</p>
                <p class="caption-sm">{{section.settings.organic_label}}</p>
                <p class="caption-sm">{{section.settings.fair_trade_label}}</p>
-               <p class="caption-sm product-code">{{section.settings.product_code_label}}</p>
             </div>
          </div> 
    {% endif %}
@@ -51,6 +51,7 @@
             <label class="spec-sheets__item__label" for="Item-{{ section.id }}-{{ forloop.index0 }}">
                <p class="p-sm common-name">{{ block.settings.common_name }}</p>
                <p class="p-sm botanical-name">{{ block.settings.botanical_name }}</p>
+               <p class="p-sm spec-sheets__item__label__product-code">{{ block.settings.product_code }}</p>
                <div 
                   class="spec-sheets__item__dot {% if block.settings.organic %}__dot-filled{% endif %}" 
                   aria-label="{% if block.settings.organic == false %}Not {% endif %}{{ section.settings.organic_label }}"
@@ -59,7 +60,6 @@
                   class="spec-sheets__item__dot {% if block.settings.fair_trade == "yes" %}__dot-filled{% elsif block.settings.fair_trade == "on_request"%}__dot-bordered{% endif %}" 
                   aria-label="{% if block.settings.fair_trade == "no" %}Not {{ section.settings.fair_trade_label }}{% elsif block.settings.fair_trade == "on_request" %}{{ section.settings.fair_trade_on_request_disclaimer }}{% else %}{{section.settings.fair_trade_label}}{% endif %}"
                ></div>
-               <p class="p-sm product-code">{{ block.settings.product_code }}</p>
             </label>
             <div class="spec-sheets__item__content __article-txt">
                <div class="spec-sheets__item__content__inner">
