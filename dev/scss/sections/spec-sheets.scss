@@ -1,6 +1,7 @@
 .spec-sheets {
   display: grid;
   //grid-template-columns: 1fr 3fr; removing for now
+  overflow-x: auto;
   gap: car(--pxSize);
 
   //table header specific styles
@@ -38,19 +39,18 @@
 
     &__label,
     &__inner {
-      display: flex;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);    
       gap: calc(var(--pxSize) / 4);
+
+      .product-code{
+        text-align: center;
+      }
 
       > * {
         &:nth-child(4),
         &:nth-child(3) {
-          flex: 1;
           text-align: center;
-        }
-
-        &:first-child,
-        &:nth-child(2) {
-          flex: 2;
         }
       }
     }
@@ -75,6 +75,10 @@
       transform: scale(1);
       will-change: transform, opacity;
       transition: all 0.25s ease;
+
+      .product-code{
+        text-align: center;
+      }
 
       &:hover {
         transform: scale(1.015);
@@ -197,5 +201,15 @@
     &__header {
       grid-column: 1/-1;
     }
+
+    //table header AND row styles
+  &__item,
+  &__header {
+    &__label,
+    &__inner {
+      display: grid;
+      grid-template-columns: repeat(5, 120px);    
+    }
+  }
   }
 }

@@ -29,6 +29,7 @@
                <p class="caption-sm botanical-name">{{section.settings.botanical_name_label}}</p>
                <p class="caption-sm">{{section.settings.organic_label}}</p>
                <p class="caption-sm">{{section.settings.fair_trade_label}}</p>
+               <p class="caption-sm product-code">{{section.settings.product_code_label}}</p>
             </div>
          </div> 
    {% endif %}
@@ -58,6 +59,7 @@
                   class="spec-sheets__item__dot {% if block.settings.fair_trade == "yes" %}__dot-filled{% elsif block.settings.fair_trade == "on_request"%}__dot-bordered{% endif %}" 
                   aria-label="{% if block.settings.fair_trade == "no" %}Not {{ section.settings.fair_trade_label }}{% elsif block.settings.fair_trade == "on_request" %}{{ section.settings.fair_trade_on_request_disclaimer }}{% else %}{{section.settings.fair_trade_label}}{% endif %}"
                ></div>
+               <p class="p-sm product-code">{{ block.settings.product_code }}</p>
             </label>
             <div class="spec-sheets__item__content __article-txt">
                <div class="spec-sheets__item__content__inner">
@@ -177,6 +179,7 @@
     filterValue=searchField.value.toLowerCase();
     console.log(filterValue,'filtervalue here');
      allItems.map((name)=>{
+      console.log(allItems, ' all tiems');
       if(name.innerHTML.toLowerCase().includes(filterValue)){
          name.classList.remove('hide');
       }
@@ -204,7 +207,7 @@
         "label": "Common Name Label",
          "default": "Common Name"
       },
-            {
+      {
         "type":"text",
         "id":"botanical_name_label",
         "label": "Botanical Name Label",
@@ -215,6 +218,12 @@
         "id":"organic_label",
         "label": "Organic Label",
          "default": "Organic"
+      },
+      {
+        "type":"text",
+        "id":"product_code_label",
+        "label": "Product Code Label",
+        "default": "Product Code"
       },
       {
         "type":"text",
@@ -350,6 +359,11 @@
             "type": "text",
             "id": "botanical_name",
             "label": "Botanical Name"
+         },
+         {
+            "type": "text",
+            "id": "product_code",
+            "label": "Product Code"
          },
          {
             "type": "checkbox",
