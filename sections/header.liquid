@@ -56,11 +56,21 @@
                           {% render 'nav-dropdown-page' page: block.settings.page, image: block.settings.image, className: blockClassName %}
                         {% when 'articles' %}
                           {% render 'nav-dropdown-articles' menu: block.settings.menu, className: blockClassName %}
+
                       {% endcase %}
                     {% endif %}
                   {% endfor %}
+                </div>
               {% endif %}
-            </div>
+            
+
+            {% comment %} CTA {% endcomment %}
+            {% when 'cta' %}
+              {% assign ctaClassName = className | append: "__cta" %}
+              <div class="{{ ctaClassName }}">
+                {% render 'button', class: ctaClassName, button_label: block.settings.button_label, button_link: block.settings.button_link %}
+              </div>
+
 
         {% endcase %}
       {% endfor %}
@@ -907,6 +917,23 @@
           "id": "menu",
           "label": "Menu",
           "info": "Displays only top-level menu items. Create this menu under 'Navigation' and add only article items to it."
+        }
+      ]  
+    },
+    {
+      "type": "cta",
+      "name": "Call To Action",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "Button Label"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button Link"
         }
       ]  
     }

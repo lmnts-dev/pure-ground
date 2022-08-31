@@ -49,6 +49,20 @@
     }
   }
 
+  //CTA
+  &__cta {
+    flex: 1;
+    height: 100%;
+    text-align: right;
+    margin-right: calc(var(--pxSize) * -1.5);
+
+    &__btn {
+      margin-top: 0;
+      height: 100%;
+      border-radius: 0;
+    }
+  }
+
   // All the links container
   &__main-links {
     display: flex;
@@ -314,11 +328,22 @@
     }
   }
 
-  @media screen and (max-width: 676px) {
+  @media screen and (max-width: 1000px) {
     padding: 0 var(--sectionHorizontalSpacing);
 
     &__logo {
       flex: 1;
+    }
+
+    &__cta {
+      height: auto;
+      text-align: left;
+      margin-right: 0;
+
+      &__btn {
+        width: 100%;
+        justify-content: center;
+      }
     }
 
     &__main-links {
@@ -338,10 +363,17 @@
 
     // All the links text (dropdown labels and plain links)
     &__plain-link,
-    &__label {
+    &__label,
+    &__cta,
+    &__cta__btn {
       font-size: 2rem;
       font-weight: 600;
       padding: calc(var(--pxSize) / 3) 0;
+
+      &__btn {
+        --btnHeight: 5rem;
+        padding: 0 calc(var(--btnHeight) / 2);
+      }
     }
 
     &__label {
