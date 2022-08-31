@@ -43,7 +43,7 @@
       grid-template-columns: repeat(5, 1fr);    
       gap: calc(var(--pxSize) / 4);
 
-      .product-code{
+      &__product-code{
         text-align: center;
       }
 
@@ -76,7 +76,7 @@
       will-change: transform, opacity;
       transition: all 0.25s ease;
 
-      .product-code{
+      &__product-code{
         text-align: center;
       }
 
@@ -202,14 +202,19 @@
       grid-column: 1/-1;
     }
 
-    //table header AND row styles
-  &__item,
-  &__header {
-    &__label,
-    &__inner {
-      display: grid;
-      grid-template-columns: repeat(5, 120px);    
+
+    &__item{
+      border-bottom: 1px solid var(--color-foreground);
     }
-  }
+
+      //table header AND row styles
+    &__item,
+    &__header {
+      &__label,
+      &__inner {
+        display: grid;
+        grid-template-columns: repeat(5, 120px);    
+      }
+    }
   }
 }
