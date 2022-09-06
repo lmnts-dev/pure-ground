@@ -289,6 +289,7 @@
     },
     "16450418065fdb6a59": {
       "type": "content-slider",
+      "disabled": true,
       "blocks": {
         "b02402c1-f3cf-4b34-babb-b5b5a71c5cad": {
           "type": "slide",
