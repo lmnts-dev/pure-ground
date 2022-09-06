@@ -137,7 +137,19 @@
         "1644419366881604f5-0": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Globally Standardized Certifications<br\/><\/strong>Such as Fair Trade, Fair Wilde, Fair for Life and Rainforest Alliance.<\/p><p><strong>Environmentally Impactful<\/strong><br\/>Ingredients that come from Regenerative Farming Practices & Agroforestry Projects <\/p><p><strong>Socially Impactful<br\/><\/strong>Ingredients that come from sources which are dedicated to promoting social equality, education and living wages. Projects  dedicated to women's empowerment, education, equality and improving general livelihood.<\/p>"
+            "text": "<p><strong>Globally Standardized Certifications<\/strong><\/p>"
+          }
+        },
+        "c4fcc757-e664-49d9-9e64-caade07693c4": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/1053088_orig_copy_45261a34-2a91-44e1-84a8-63f78852ef1d.png"
+          }
+        },
+        "e7ac9b5d-d622-4dfb-822e-0a0bfb93ee5c": {
+          "type": "text",
+          "settings": {
+            "text": "<p><\/p><p><strong>Environmentally Impactful<\/strong><br\/>Ingredients that come from Regenerative Farming Practices & Agroforestry Projects <\/p><p><strong>Socially Impactful<br\/><\/strong>Ingredients that come from sources which are dedicated to promoting social equality, education and living wages. Projects  dedicated to women's empowerment, education, equality and improving general livelihood.<\/p>"
           }
         },
         "47338247-06fe-401f-8439-2fdbee1aac55": {
@@ -152,6 +164,8 @@
       "block_order": [
         "b3f439d2-ba5b-40d3-89be-671c35dc40b2",
         "1644419366881604f5-0",
+        "c4fcc757-e664-49d9-9e64-caade07693c4",
+        "e7ac9b5d-d622-4dfb-822e-0a0bfb93ee5c",
         "47338247-06fe-401f-8439-2fdbee1aac55"
       ],
       "settings": {
@@ -181,7 +195,7 @@
         "subheading": "",
         "heading_size": "h4",
         "accent_color": false,
-        "text": "<p>We believe in self responsibility and collective action. We are proud to havealigned with the UN’s integral approach and call to action to end poverty, protect the planet, and ensure that by 2030 all people enjoy peace and prosperity.<\/p><p>We know we can all work together to create a happier, healthier world.<\/p>",
+        "text": "<p>We believe in self responsibility and collective action. We are proud to have aligned with the UN’s integral approach and call to action to end poverty, protect the planet, and ensure that by 2030 all people enjoy peace and prosperity.<\/p><p>We know we can all work together to create a happier, healthier world.<\/p>",
         "button_label": "Button label",
         "button_link": "",
         "alt": "",
