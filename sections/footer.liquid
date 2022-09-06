@@ -33,7 +33,6 @@
       {% render 'svg-plants' %}
     {% endfor %}
   </div>
-
   <div class="section-footer__branding">
     <div class="section-footer__branding__logo">{% render 'svg-logo-stacked' %}</div>
     {%- if section.settings.address -%}
@@ -42,7 +41,6 @@
       </div>
     {%- endif -%}
   </div>
-
   {%- if section.blocks.size > 0 -%}
     <div class="section-footer__blocks">
       {%- for block in section.blocks -%}
@@ -74,6 +72,7 @@
       {%- endfor -%}
     </div>
   {%- endif -%}
+
 
   {% if icons == true %}
     <div class="section-footer__badges">

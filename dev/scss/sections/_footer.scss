@@ -3,8 +3,8 @@
   background: var(--color-background);
   position: relative;
   padding: var(--sectionVerticalSpacing) var(--sectionHorizontalSpacing);
-  display: grid;
-  grid-template-columns: auto auto;
+  display:grid;
+  grid-template-columns: repeat(4, auto);
 
   &__plant-decor {
     display: grid;
@@ -28,9 +28,15 @@
 
   &__branding {
     grid-column: 1 / 2;
+    display: flex;
+    justify-content: space-between;
+    padding: var(--pxSize) 0;
+    order: 2;
 
     &__info {
-      padding-top: var(--pxSize);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
 
       p {
         font-size: 0.75rem;
@@ -49,6 +55,9 @@
     }
 
     &__logo {
+      display: flex;
+      align-items: center;
+
       svg {
         width: 100%;
         height: auto;
@@ -62,11 +71,14 @@
   }
 
   &__badges {
-    grid-column: 1/2;
+    grid-column: 2/-1;
     padding-top: calc(var(--pxSize) / 3);
     display: flex;
+    align-items: center;
+    justify-content: flex-end;
     flex-flow: row wrap;
     gap: calc(var(--pxSize) / 3);
+    order: 3;
 
     &__badge img {
       height: calc(var(--pxSize) / 1.75);
@@ -75,11 +87,28 @@
   }
 
   &__blocks {
-    grid-column: 2 / -1;
+    grid-column: 1 / -1;
+    position: relative;
+    order: 1;
     display: flex;
     gap: var(--pxSize);
-    justify-content: flex-end;
+    justify-content: space-between;
+    padding-bottom: var(--pxSize);
+
+    &:after{
+      content:"";
+      position: absolute;
+      background-color: var(--color-foreground);
+      height: 1px;
+      width: 100%;
+      opacity: .2;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
   }
+
+
 
   &__bottom {
     grid-column: 1 / -1;
@@ -87,6 +116,20 @@
     justify-content: space-between;
     align-items: center;
     padding-top: var(--pxSize);
+    order: 4;
+    position: relative;
+
+    &:before{
+      content:"";
+      position: absolute;
+      background-color: var(--color-foreground);
+      height: 1px;
+      width: 100%;
+      opacity: .2;
+      top: 0;
+      left: 0;
+      right: 0;
+    }
 
     &__copywright,
     .section-footer__links__item__link {
@@ -146,12 +189,15 @@
 
     &__branding {
       grid-column: 1/-1;
+      order: 1;
       display: flex;
       justify-content: space-between;
       margin-bottom: calc(var(--pxSize) / 1.75);
+      padding: 0;
 
       &__logo {
         max-width: 130px;
+        display:block;
 
         svg {
           width: 100%;
@@ -166,16 +212,22 @@
     }
 
     &__blocks {
-      grid-column: 1/-1;
+      grid-column: 1 / -1;
       flex-wrap: wrap;
+      padding-bottom: 0;
 
       &__block {
         flex: 0 0 calc(50% - calc(var(--pxSize) / 2));
+      }
+
+      &:after{
+        content:none;
       }
     }
 
     &__badges {
       gap: calc(var(--pxSize) / 2);
+      grid-column: 1/-1;
       margin-top: var(--sectionVerticalSpacing);
       justify-content: center;
 
@@ -186,6 +238,7 @@
 
     &__bottom {
       flex-direction: column;
+      padding-top: none;
 
       &__sec-links {
         flex-direction: column;
@@ -200,6 +253,10 @@
 
       &__social {
         padding-left: 0;
+      }
+
+      &:before{
+        content:none;
       }
     }
   }
