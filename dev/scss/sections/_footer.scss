@@ -2,9 +2,9 @@
   color: var(--color-foreground);
   background: var(--color-background);
   position: relative;
-  padding: var(--sectionVerticalSpacing) var(--sectionHorizontalSpacing);
+  padding: var(--sectionVerticalSpacing) var(--sectionHorizontalSpacing) calc(var(--sectionVerticalSpacing) / 4) var(--sectionHorizontalSpacing);
   display:grid;
-  grid-template-columns: repeat(4, auto);
+  grid-template-columns: repeat(4, 1fr);
 
   &__plant-decor {
     display: grid;
@@ -37,16 +37,18 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+      grid-column: 2/3;
+      order: 5;
 
       p {
-        font-size: 0.75rem;
+        font-size: 1rem;
       }
 
       a {
         opacity: 1;
         will-change: opacity;
         transition: all 0.25s ease;
-        font-size: 0.75rem;
+        font-size: 1rem;
 
         &:hover {
           opacity: 0.5;
@@ -55,8 +57,9 @@
     }
 
     &__logo {
-      display: flex;
-      align-items: center;
+      grid-column: 1/2;
+      order: 5;
+      padding: var(--pxSize) 0;
 
       svg {
         width: 100%;
@@ -71,17 +74,17 @@
   }
 
   &__badges {
-    grid-column: 2/-1;
+    grid-column: 3/-1;
     padding-top: calc(var(--pxSize) / 3);
     display: flex;
     align-items: center;
     justify-content: flex-end;
     flex-flow: row wrap;
     gap: calc(var(--pxSize) / 3);
-    order: 3;
+    order: 6;
 
     &__badge img {
-      height: calc(var(--pxSize) / 1.75);
+      height: calc(var(--pxSize) / 1.45);
       width: auto;
     }
   }
@@ -95,16 +98,25 @@
     justify-content: space-between;
     padding-bottom: var(--pxSize);
 
-    &:after{
-      content:"";
-      position: absolute;
-      background-color: var(--color-foreground);
-      height: 1px;
-      width: 100%;
-      opacity: .2;
-      bottom: 0;
-      left: 0;
-      right: 0;
+    &__block{
+      padding-bottom: var(--pxSize);
+      position: relative;
+
+      &:after{
+        content:"";
+        position: absolute;
+        background-color: var(--color-foreground);
+        height: 1px;
+        width: 100%;
+        opacity: .2;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+    }
+
+    &__block:first-child{
+      grid-column: 1/2;
     }
   }
 
@@ -116,8 +128,8 @@
     justify-content: space-between;
     align-items: center;
     // padding-top: var(--pxSize);
-    order: 4;
     position: relative;
+    order: 7;
 
     &:before{
       content:"";
@@ -185,7 +197,7 @@
   }
 
   @media screen and (max-width: 850px) {
-    grid-template-columns: 1fr;
+    grid-template-columns: 50%;
 
     &__branding {
       grid-column: 1/-1;
@@ -198,6 +210,8 @@
       &__logo {
         max-width: 130px;
         display:block;
+        order: 1;
+        padding-top:0;
 
         svg {
           width: 100%;
@@ -208,6 +222,8 @@
 
       &__info {
         padding-top: 0;
+        order: 2;
+        padding-bottom: calc(var(--pxSize) / 2);
       }
     }
 
@@ -218,18 +234,21 @@
 
       &__block {
         flex: 0 0 calc(50% - calc(var(--pxSize) / 2));
-      }
+        order: 3;
 
-      &:after{
-        content:none;
+        &:after{
+          content:none;
+        }
       }
     }
 
     &__badges {
       gap: calc(var(--pxSize) / 2);
       grid-column: 1/-1;
-      margin-top: var(--sectionVerticalSpacing);
+      margin-top: calc(var(--sectionVerticalSpacing)/3);
       justify-content: center;
+      grid-column: span 2;
+      padding-bottom: calc(var(--pxSize) / 2);
 
       img {
         height: calc(var(--pxSize) * 1.5);
@@ -239,6 +258,7 @@
     &__bottom {
       flex-direction: column;
       padding-top: none;
+      grid-column: span 2;
 
       &__sec-links {
         flex-direction: column;
@@ -257,6 +277,24 @@
 
       &:before{
         content:none;
+      }
+    }
+  }
+
+  @media screen and (max-width: 676px) {
+    &__branding{
+      &__info{
+        a, p{
+          font-size: .75rem;
+        }
+      }
+    }
+  }
+
+    @media screen and (max-width: 390px) {
+    &__branding {
+      &__info {
+        margin-left: -30px;
       }
     }
   }

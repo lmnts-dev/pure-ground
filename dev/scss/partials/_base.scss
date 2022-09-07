@@ -345,4 +345,11 @@ form {
       }
     }
   }
+
+
+  @media screen and (max-height: 560px) {
+    &__plants{
+      display: none;
+    }
+  }
 }
