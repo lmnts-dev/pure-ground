@@ -307,6 +307,11 @@ form {
       flex: 50%;
     }
 
+    &__btn{
+      position: relative;
+      z-index: 10;
+    }
+
     &__image {
       position: relative;
 
