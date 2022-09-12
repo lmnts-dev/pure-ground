@@ -114,7 +114,7 @@
       "settings": {
         "color_scheme": "sky",
         "hero": false,
-        "icon": true,
+        "icon": false,
         "top_spacing": 50,
         "bottom_spacing": 50
       }
