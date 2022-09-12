@@ -40,8 +40,8 @@
     &__label,
     &__inner {
       display: grid;
-      grid-template-columns: repeat(5, 1fr);    
-      gap: calc(var(--pxSize) / 4);
+      grid-template-columns: repeat(3, 1fr);    
+      gap: var(--pxSize);
 
       &__product-code{
         text-align: center;
@@ -59,6 +59,11 @@
   //table row specific styles
   &__item {
     display: none;
+
+    &:nth-child(even){
+      background: rgba(var(--color-sky), .3);
+    }
+
 
     &__checkbox {
       position: absolute;
@@ -205,15 +210,11 @@
 
     &__item{
       border-bottom: 1px solid var(--color-foreground);
-    }
 
-      //table header AND row styles
-    &__item,
-    &__header {
-      &__label,
-      &__inner {
-        display: grid;
-        grid-template-columns: repeat(5, 120px);    
+      &__label{
+        p{
+          font-size: .8rem;
+        }
       }
     }
   }
