@@ -101,7 +101,7 @@
         "16630167897136c143-0": {
           "type": "heading",
           "settings": {
-            "heading": "We bridge the gap between farmers of organic ingredients and manufacturers of organic food products .",
+            "heading": "We bridge the gap between farmers of organic ingredients and manufacturers of organic food products.",
             "heading_size": "h2",
             "heading_alignment": "center",
             "subheading": ""
@@ -114,7 +114,6 @@
       "settings": {
         "color_scheme": "sky",
         "hero": false,
-        "icon": false,
         "top_spacing": 50,
         "bottom_spacing": 50
       }
