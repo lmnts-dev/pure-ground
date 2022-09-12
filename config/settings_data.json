@@ -32,6 +32,27 @@
               "link": "shopify:\/\/pages\/quality-assurance-organic-integrity"
             }
           },
+          "201fd5e5-d847-4850-8232-368b05f5b75a": {
+            "type": "label",
+            "settings": {
+              "label": "Our Impact",
+              "color": ""
+            }
+          },
+          "878eabb7-b9ce-404d-a952-33183360b7db": {
+            "type": "page",
+            "settings": {
+              "page": "our-values",
+              "image": "shopify:\/\/shop_images\/unsplash_8rTwokBwz1w_0049480e-5067-46a3-9545-7c7be191aad8.jpg"
+            }
+          },
+          "e58fd043-68a5-401e-8b7b-7143691d9a3f": {
+            "type": "page",
+            "settings": {
+              "page": "sustainability-social-and-environmental-impact",
+              "image": "shopify:\/\/shop_images\/unsplash_8rTwokBwz1w-1.jpg"
+            }
+          },
           "d9d4a0f1-92e8-4a6c-964f-c942b3f49c06": {
             "type": "label",
             "settings": {
@@ -51,22 +72,9 @@
               "menu": "about-us"
             }
           },
-          "e58fd043-68a5-401e-8b7b-7143691d9a3f": {
-            "type": "page",
-            "settings": {
-              "page": "sustainability-social-and-environmental-impact",
-              "image": "shopify:\/\/shop_images\/unsplash_8rTwokBwz1w-1.jpg"
-            }
-          },
-          "878eabb7-b9ce-404d-a952-33183360b7db": {
-            "type": "page",
-            "settings": {
-              "page": "our-values",
-              "image": "shopify:\/\/shop_images\/unsplash_8rTwokBwz1w_0049480e-5067-46a3-9545-7c7be191aad8.jpg"
-            }
-          },
           "aabd9f5b-6fb3-4cd3-9443-4ea104e820c9": {
             "type": "label",
+            "disabled": true,
             "settings": {
               "label": "Resources",
               "color": "#a3cddd"
@@ -101,11 +109,12 @@
         "block_order": [
           "74b22fdc-0b59-413a-b25b-92f994bab3a9",
           "0dc547ff-b375-4b78-bad8-9ef9fc4a79d2",
+          "201fd5e5-d847-4850-8232-368b05f5b75a",
+          "878eabb7-b9ce-404d-a952-33183360b7db",
+          "e58fd043-68a5-401e-8b7b-7143691d9a3f",
           "d9d4a0f1-92e8-4a6c-964f-c942b3f49c06",
           "c130bfbf-92b2-4a18-a2bc-3401d7cebf82",
           "c3437a35-11cd-4be2-833c-b85c386e965a",
-          "e58fd043-68a5-401e-8b7b-7143691d9a3f",
-          "878eabb7-b9ce-404d-a952-33183360b7db",
           "aabd9f5b-6fb3-4cd3-9443-4ea104e820c9",
           "b2bcdc3e-53b7-4366-9941-db39b4906944",
           "7f2df142-cc7c-4838-88a4-211f225706f0",
