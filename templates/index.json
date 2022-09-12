@@ -95,6 +95,29 @@
         "bottom_spacing": 20
       }
     },
+    "16630167896c556fcd": {
+      "type": "rich-text",
+      "blocks": {
+        "16630167897136c143-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "We bridge the gap between farmers of organic ingredients and manufacturers of organic food products .",
+            "heading_size": "h2",
+            "heading_alignment": "center",
+            "subheading": ""
+          }
+        }
+      },
+      "block_order": [
+        "16630167897136c143-0"
+      ],
+      "settings": {
+        "color_scheme": "sky",
+        "hero": false,
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
+    },
     "16607057366a572f05": {
       "type": "featured-products",
       "blocks": {
@@ -436,6 +459,7 @@
   "order": [
     "content-with-bg-image",
     "collections-grid",
+    "16630167896c556fcd",
     "16607057366a572f05",
     "16450306926c068d86",
     "164497174668dcfe61",
