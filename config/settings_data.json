@@ -39,6 +39,12 @@
               "color": ""
             }
           },
+          "aaf637d3-e8f0-47b6-879e-fffb724545c5": {
+            "type": "submenu",
+            "settings": {
+              "menu": "our-values"
+            }
+          },
           "878eabb7-b9ce-404d-a952-33183360b7db": {
             "type": "page",
             "settings": {
@@ -110,6 +116,7 @@
           "74b22fdc-0b59-413a-b25b-92f994bab3a9",
           "0dc547ff-b375-4b78-bad8-9ef9fc4a79d2",
           "201fd5e5-d847-4850-8232-368b05f5b75a",
+          "aaf637d3-e8f0-47b6-879e-fffb724545c5",
           "878eabb7-b9ce-404d-a952-33183360b7db",
           "e58fd043-68a5-401e-8b7b-7143691d9a3f",
           "d9d4a0f1-92e8-4a6c-964f-c942b3f49c06",
