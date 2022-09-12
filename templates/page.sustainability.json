@@ -58,6 +58,7 @@
       "settings": {
         "color_scheme": "cream",
         "hero": false,
+        "icon": false,
         "top_spacing": 100,
         "bottom_spacing": 100
       }
@@ -81,6 +82,7 @@
       "settings": {
         "color_scheme": "sky",
         "hero": false,
+        "icon": true,
         "top_spacing": 100,
         "bottom_spacing": 100
       }
@@ -120,6 +122,7 @@
       "settings": {
         "color_scheme": "cream",
         "hero": false,
+        "icon": false,
         "top_spacing": 100,
         "bottom_spacing": 50
       }
@@ -244,6 +247,7 @@
       "settings": {
         "color_scheme": "cream",
         "hero": false,
+        "icon": false,
         "top_spacing": 100,
         "bottom_spacing": 100
       }
