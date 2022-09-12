@@ -18,6 +18,11 @@
         {% if block.settings.subheading %}
           <h3 class="rich-text__subheading h5 __align-{{ block.settings.heading_alignment }}">{{ block.settings.subheading }}</h3>
         {% endif %}
+
+        {% if section.settings.icon %}
+          {% render 'icon-he-she' %}
+        {% endif %}
+
       {%- when 'text' -%}
         {% if block.settings.text %}
           <div class="rich-text__text __article-txt {{ block.settings.text_size }}" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
@@ -80,6 +85,12 @@
       "id": "hero",
       "label": "Use as hero?",
       "info": "Should be selected if this section is the first or second on a page and contains the page title. There should only be one page title/hero used per page."
+    },
+    {
+      "type": "checkbox",
+      "id": "icon",
+      "label": "Add he/she Icon?",
+      "info": "Add optional he/she icon to section."
     },
     {
       "type": "header",
