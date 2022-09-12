@@ -58,13 +58,13 @@
       "settings": {
         "color_scheme": "cream",
         "hero": false,
-        "icon": false,
         "top_spacing": 100,
         "bottom_spacing": 100
       }
     },
     "164442384962d45464": {
       "type": "rich-text",
+      "disabled": true,
       "blocks": {
         "164442384920551cc7-0": {
           "type": "heading",
@@ -82,9 +82,32 @@
       "settings": {
         "color_scheme": "sky",
         "hero": false,
-        "icon": true,
         "top_spacing": 100,
         "bottom_spacing": 100
+      }
+    },
+    "1663019461061612dc": {
+      "type": "split-section",
+      "blocks": {
+        "859cda3f-a2dc-4e11-bfe5-ac90ca202b43": {
+          "type": "heading",
+          "settings": {
+            "heading": "We envision a world in which farmers, manufacturers and consumers come together in the name of a healthier planet and thriving communities.",
+            "heading_size": "h4"
+          }
+        }
+      },
+      "block_order": [
+        "859cda3f-a2dc-4e11-bfe5-ac90ca202b43"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Commence_x_Pure_Ground_Ingredients-_Brand_Mark_-_Brown.png",
+        "hero": false,
+        "color_scheme": "sky",
+        "layout": "reversed",
+        "image_style": "default",
+        "top_spacing": 50,
+        "bottom_spacing": 50
       }
     },
     "1660746979c48fd613": {
@@ -122,7 +145,6 @@
       "settings": {
         "color_scheme": "cream",
         "hero": false,
-        "icon": false,
         "top_spacing": 100,
         "bottom_spacing": 50
       }
@@ -247,7 +269,6 @@
       "settings": {
         "color_scheme": "cream",
         "hero": false,
-        "icon": false,
         "top_spacing": 100,
         "bottom_spacing": 100
       }
@@ -305,6 +326,7 @@
     "166074672815a86e9b",
     "1643818843f333eb74",
     "164442384962d45464",
+    "1663019461061612dc",
     "1660746979c48fd613",
     "16444193660de6d319",
     "16611972534ba504c9",
