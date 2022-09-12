@@ -35,21 +35,9 @@
     }
   }
 
-  svg{
-    width: 50px;
-    top: 50%;
-    transform: translateY(-50%);
-    position: absolute;
-    left: 20vw;
-  }
-
   @media screen and (max-width: 676px) {
     &__subheading {
       margin-bottom: 1.25rem;
-    }
-
-    svg{
-      display: none;
     }
   }
 }
