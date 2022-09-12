@@ -52,14 +52,10 @@
                <p class="p-sm common-name">{{ block.settings.common_name }}</p>
                <p class="p-sm botanical-name">{{ block.settings.botanical_name }}</p>
                <p class="p-sm spec-sheets__item__label__product-code">{{ block.settings.product_code }}</p>
-               {% comment %} <div 
-                  class="spec-sheets__item__dot {% if block.settings.organic %}__dot-filled{% endif %}" 
-                  aria-label="{% if block.settings.organic == false %}Not {% endif %}{{ section.settings.organic_label }}"
-               ></div>
+               
                <div 
-                  class="spec-sheets__item__dot {% if block.settings.fair_trade == "yes" %}__dot-filled{% elsif block.settings.fair_trade == "on_request"%}__dot-bordered{% endif %}" 
-                  aria-label="{% if block.settings.fair_trade == "no" %}Not {{ section.settings.fair_trade_label }}{% elsif block.settings.fair_trade == "on_request" %}{{ section.settings.fair_trade_on_request_disclaimer }}{% else %}{{section.settings.fair_trade_label}}{% endif %}"
-               ></div> {% endcomment %}
+                  class="spec-sheets__item__icon {% if block.settings.fair_trade != "yes" %}hidden{% endif %}" 
+               >{% render 'icon-fair-trade' %}</div>
             </label>
             <div class="spec-sheets__item__content __article-txt">
                <div class="spec-sheets__item__content__inner">
@@ -77,7 +73,10 @@
       {%- endfor -%}
 
       {% if section.settings.fair_trade_on_request_disclaimer != "" %}
-         <p class="spec-sheets__key p-sm __dot-bordered">{{ section.settings.fair_trade_on_request_disclaimer }}</p>
+         <div class="spec-sheets__key">
+            {% render 'icon-fair-trade' %}
+            <p class="spec-sheets__key__text p-sm">{{ section.settings.fair_trade_on_request_disclaimer }}</p>
+         </div>
       {% endif %}
 
       {% comment %} Split categories string into an array {% endcomment %}
@@ -240,8 +239,8 @@
       {
         "type":"text",
         "id":"fair_trade_on_request_disclaimer",
-        "label": "Fair Trade on Request Disclaimer",
-         "default": "Fair Trade on Request"
+        "label": "Sustainably Sourced",
+         "default": "Sustainably Sourced"
       },
       {
          "type": "checkbox",

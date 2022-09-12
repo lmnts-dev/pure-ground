@@ -64,6 +64,23 @@
       background: rgba(var(--color-sky), .3);
     }
 
+    &__icon{
+      width: 30px;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+
+      &.hidden{
+        display:none;
+      }
+
+      svg{
+        width: 30px;
+        height: auto;
+      }
+    }
+
 
     &__checkbox {
       position: absolute;
@@ -80,6 +97,10 @@
       transform: scale(1);
       will-change: transform, opacity;
       transition: all 0.25s ease;
+
+      p{
+        margin-left: calc(var(--pxSize) / 2); 
+      }
 
       &__product-code{
         text-align: center;
@@ -156,47 +177,51 @@
     }
   }
 
-  //dot styles used within table rows and in the table key
-  &__key,
-  &__item__dot {
-    font-style: italic;
-    position: relative;
-
-    //dot
-    &:before {
-      content: "";
-      display: inline-block;
-      position: absolute;
-      height: calc(var(--pxSize) / 4);
-      width: calc(var(--pxSize) / 4);
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      border-radius: 50%;
-    }
-
-    &.__dot-filled:before {
-      background: var(--color-foreground);
-    }
-
-    &.__dot-bordered:before {
-      border: 2px solid var(--color-foreground);
-    }
-  }
-
-  //table key styles
+//table key styles
   &__key {
-    justify-self: end;
     display: flex;
+    justify-content: flex-end;
     align-items: center;
     margin: var(--pxSize) 0 0 0;
-    gap: calc(var(--pxSize) / 6);
 
-    &:before {
-      position: static;
-      transform: none;
+    svg{
+      width: 30px;
+      height: auto;
+    }
+
+    &__text{
+      margin-bottom:0;
+      margin-left: calc(var(--pxSize)/ 3);
     }
   }
+
+  //dot styles used within table rows and in the table key
+  // &__key,
+  // &__item__dot {
+  //   font-style: italic;
+  //   position: relative;
+
+  //   //dot
+  //   &:before {
+  //     content: "";
+  //     display: inline-block;
+  //     position: absolute;
+  //     height: calc(var(--pxSize) / 4);
+  //     width: calc(var(--pxSize) / 4);
+  //     top: 50%;
+  //     left: 50%;
+  //     transform: translate(-50%, -50%);
+  //     border-radius: 50%;
+  //   }
+
+  //   &.__dot-filled:before {
+  //     background: var(--color-foreground);
+  //   }
+
+  //   &.__dot-bordered:before {
+  //     border: 2px solid var(--color-foreground);
+  //   }
+  // }
 
   .hide{
     display: none;
