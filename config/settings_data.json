@@ -47,7 +47,6 @@
           },
           "878eabb7-b9ce-404d-a952-33183360b7db": {
             "type": "page",
-            "disabled": true,
             "settings": {
               "page": "our-values",
               "image": "shopify:\/\/shop_images\/unsplash_8rTwokBwz1w_0049480e-5067-46a3-9545-7c7be191aad8.jpg"
@@ -55,7 +54,6 @@
           },
           "e58fd043-68a5-401e-8b7b-7143691d9a3f": {
             "type": "page",
-            "disabled": true,
             "settings": {
               "page": "sustainability-social-and-environmental-impact",
               "image": "shopify:\/\/shop_images\/unsplash_8rTwokBwz1w-1.jpg"
