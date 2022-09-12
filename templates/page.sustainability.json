@@ -105,7 +105,7 @@
         "hero": false,
         "color_scheme": "sky",
         "layout": "reversed",
-        "image_style": "default",
+        "image_style": "square",
         "top_spacing": 50,
         "bottom_spacing": 50
       }
