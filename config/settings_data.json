@@ -66,46 +66,10 @@
               "color": "#d57a20"
             }
           },
-          "c130bfbf-92b2-4a18-a2bc-3401d7cebf82": {
-            "type": "submenu",
-            "disabled": true,
-            "settings": {
-              "menu": "our-values"
-            }
-          },
           "c3437a35-11cd-4be2-833c-b85c386e965a": {
             "type": "submenu",
             "settings": {
               "menu": "about-us"
-            }
-          },
-          "aabd9f5b-6fb3-4cd3-9443-4ea104e820c9": {
-            "type": "label",
-            "disabled": true,
-            "settings": {
-              "label": "Resources",
-              "color": "#a3cddd"
-            }
-          },
-          "b2bcdc3e-53b7-4366-9941-db39b4906944": {
-            "type": "submenu",
-            "disabled": true,
-            "settings": {
-              "menu": "learn"
-            }
-          },
-          "7f2df142-cc7c-4838-88a4-211f225706f0": {
-            "type": "submenu",
-            "disabled": true,
-            "settings": {
-              "menu": "information"
-            }
-          },
-          "f537cb93-a2e6-4b92-b5fe-d43941dc8f9d": {
-            "type": "articles",
-            "disabled": true,
-            "settings": {
-              "menu": "featured-resources"
             }
           },
           "98795b15-82d5-4be6-a619-b758f820bdc5": {
@@ -131,12 +95,7 @@
           "878eabb7-b9ce-404d-a952-33183360b7db",
           "e58fd043-68a5-401e-8b7b-7143691d9a3f",
           "d9d4a0f1-92e8-4a6c-964f-c942b3f49c06",
-          "c130bfbf-92b2-4a18-a2bc-3401d7cebf82",
           "c3437a35-11cd-4be2-833c-b85c386e965a",
-          "aabd9f5b-6fb3-4cd3-9443-4ea104e820c9",
-          "b2bcdc3e-53b7-4366-9941-db39b4906944",
-          "7f2df142-cc7c-4838-88a4-211f225706f0",
-          "f537cb93-a2e6-4b92-b5fe-d43941dc8f9d",
           "98795b15-82d5-4be6-a619-b758f820bdc5",
           "f537cb93-a2e6-4b92-b5fe-d43941dc8f93"
         ],
