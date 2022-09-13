@@ -40,7 +40,7 @@
     display: flex;
 
     svg {
-      height: calc(var(--navHeight) * 0.75);
+      height: calc(var(--navHeight) * 0.45);
       width: auto;
 
       * {
@@ -109,7 +109,7 @@
   &__dropdown {
     display: none;
     position: fixed;
-    gap: var(--pxSize);
+    gap: calc(var(--pxSize) *1.5);
     top: var(--navHeight);
     left: 0;
     right: 0;
