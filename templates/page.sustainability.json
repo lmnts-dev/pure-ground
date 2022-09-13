@@ -85,7 +85,7 @@
       "type": "image",
       "settings": {
         "image": "shopify:\/\/shop_images\/imageedit_26_4314455304.png",
-        "image_style": "fullwidth __in-grid",
+        "image_style": "fullheight __in-grid",
         "nav_color": false,
         "color_scheme": "sky",
         "top_spacing": 0,
