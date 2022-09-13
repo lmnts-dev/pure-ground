@@ -254,6 +254,18 @@
             "description": "<p>Organic Black Cohosh: This broad spectrum healing root can be used to make a medicinal tea or tincture.<\/p>",
             "category": "General"
           }
+        },
+        "c10da750-9576-4399-ab41-3e86344a6523": {
+          "type": "item",
+          "settings": {
+            "common_name": "Organic Black Pepper",
+            "botanical_name": "Piper nigrum",
+            "product_code": "BLAO",
+            "organic": true,
+            "fair_trade": "yes",
+            "description": "<p>Organic Black Pepper: Found in most kitchens, this popular dried fruit adds depth and kick to any dish.<\/p>",
+            "category": "General"
+          }
         }
       },
       "block_order": [
@@ -272,7 +284,8 @@
         "70002da0-d4b4-4192-9c8e-f31d8a0fe981",
         "151a68ea-4360-4096-912e-87347aa3a929",
         "9c945944-c658-4832-bef5-fb37cf9d4afc",
-        "bee48060-8a2e-40e9-a6fe-a0130eb2c278"
+        "bee48060-8a2e-40e9-a6fe-a0130eb2c278",
+        "c10da750-9576-4399-ab41-3e86344a6523"
       ],
       "settings": {
         "common_name_label": "Common Name",
@@ -294,6 +307,7 @@
       "blocks": {
         "6b2c8e40-c3cb-4976-969b-34100b1ebe70": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "common_name": "Organic Black Pepper",
             "botanical_name": "Piper nigrum",
