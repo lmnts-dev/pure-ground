@@ -321,6 +321,37 @@
         "top_spacing": 0,
         "bottom_spacing": 0
       }
+    },
+    "1663030017bd4a38e5": {
+      "type": "icons-section",
+      "blocks": {
+        "8344dd78-a008-43dd-951e-44fd676081cb": {
+          "type": "image",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/imageedit_14_5053034879.png",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "8344dd78-a008-43dd-951e-44fd676081cb"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "We envision a world in which farmers, manufacturers and consumers come together in the name of a healthier planet and thriving communities.",
+        "subheading": "",
+        "heading_size": "h4",
+        "accent_color": false,
+        "text": "",
+        "button_label": "Button label",
+        "button_link": "",
+        "alt": "",
+        "layout": "two-col",
+        "icon_height": 50,
+        "color_scheme": "sky",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
     }
   },
   "order": [
@@ -335,6 +366,7 @@
     "166126617923b76f7f",
     "16608572869d1a8858",
     "1660747290beaaaf5d",
-    "16607471819bf121f0"
+    "16607471819bf121f0",
+    "1663030017bd4a38e5"
   ]
 }
