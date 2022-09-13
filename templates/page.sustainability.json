@@ -88,7 +88,7 @@
         "image_style": "fullwidth __in-grid",
         "nav_color": false,
         "color_scheme": "sky",
-        "top_spacing": 0,
+        "top_spacing": 10,
         "bottom_spacing": 0
       }
     },
