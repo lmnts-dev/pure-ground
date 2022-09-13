@@ -292,18 +292,6 @@
     "1647550055d229b4ef": {
       "type": "spec-sheets",
       "blocks": {
-        "5f24afcd-d53e-4fd1-a540-5a6088bd9526": {
-          "type": "item",
-          "settings": {
-            "common_name": "",
-            "botanical_name": "",
-            "product_code": "",
-            "organic": false,
-            "fair_trade": "no",
-            "description": "",
-            "category": "General"
-          }
-        },
         "6b2c8e40-c3cb-4976-969b-34100b1ebe70": {
           "type": "item",
           "settings": {
@@ -498,7 +486,6 @@
         }
       },
       "block_order": [
-        "5f24afcd-d53e-4fd1-a540-5a6088bd9526",
         "6b2c8e40-c3cb-4976-969b-34100b1ebe70",
         "cd1a10b0-035b-4248-9cd4-196dc275dc30",
         "11d613c0-7bd4-4ce1-b7e6-02056be866dc",
