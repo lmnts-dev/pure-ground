@@ -43,6 +43,10 @@
       grid-template-columns: repeat(3, 1fr);    
       gap: var(--pxSize);
 
+      p{
+        margin-left: calc(var(--pxSize)/ 2);
+      }
+
       &__product-code{
         text-align: center;
       }

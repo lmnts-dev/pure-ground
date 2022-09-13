@@ -24,7 +24,7 @@
    
 
    {% if section.settings.caption != "" or section.settings.heading != "" or section.settings.subheading != "" or section.settings.text != "" or section.settings.button_link != "" and section.settings.button_label != "" %}
-      <div class="icons-section__text">
+      <div class="icons-section__text {% if section.settings.center_content %}__center{% endif %}">
          {% if section.settings.caption %}
             <span class="icons-section__text__caption">{{ section.settings.caption }}</span>
          {% endif %}
@@ -117,6 +117,11 @@
          "type": "checkbox",
          "id": "accent_color",
          "label": "Add accent color?"
+      },
+      {
+         "type": "center",
+         "id": "center_content",
+         "label": "Center Text Content?"
       },
       {
          "type": "richtext",
