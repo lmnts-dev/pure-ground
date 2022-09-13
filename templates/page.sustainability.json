@@ -275,6 +275,7 @@
     },
     "1660747290beaaaf5d": {
       "type": "featured-articles",
+      "disabled": true,
       "blocks": {
         "20254c1e-c139-4b1c-a067-1d245ee149cc": {
           "type": "article",
