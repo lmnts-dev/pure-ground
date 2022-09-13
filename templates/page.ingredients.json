@@ -488,6 +488,7 @@
         },
         "d049cd88-a12a-442a-b44b-42c5ccba6a14": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "common_name": "Organic Cayenne",
             "botanical_name": "Capsicum",
@@ -535,6 +536,18 @@
     "16475507071b89b3ee": {
       "type": "spec-sheets",
       "blocks": {
+        "01d4f4cd-f75b-4fd4-a1fc-87d1aaa2f2ea": {
+          "type": "item",
+          "settings": {
+            "common_name": "Organic Cayenne",
+            "botanical_name": "Capsicum",
+            "product_code": "CAYO",
+            "organic": true,
+            "fair_trade": "no",
+            "description": "<p>Organic Black Pepper: Found in most kitchens, this popular dried fruit adds depth and kick to any dish.<\/p>",
+            "category": "General"
+          }
+        },
         "fe2498d4-6a81-4360-b5ef-f5946a4a6fbb": {
           "type": "item",
           "settings": {
@@ -717,6 +730,7 @@
         },
         "fd444baf-b56b-4970-9c2a-0c24d9f57870": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "common_name": "Organic Cumin",
             "botanical_name": "Cuminum cyminum",
@@ -729,6 +743,7 @@
         }
       },
       "block_order": [
+        "01d4f4cd-f75b-4fd4-a1fc-87d1aaa2f2ea",
         "fe2498d4-6a81-4360-b5ef-f5946a4a6fbb",
         "2474642c-df33-41a0-9dfc-d8a23bceb586",
         "2a049ad2-7614-4bd3-ad2d-e4aa90afc3af",
@@ -764,6 +779,18 @@
     "1647551375a7aa30c6": {
       "type": "spec-sheets",
       "blocks": {
+        "27df885d-f099-47b9-b990-709d920f6393": {
+          "type": "item",
+          "settings": {
+            "common_name": "Organic Cumin",
+            "botanical_name": "Cuminum cyminum",
+            "product_code": "CUMO",
+            "organic": true,
+            "fair_trade": "yes",
+            "description": "<p>Organic Cumin: Earthy and nutty with a bitter bite, this spice adds warmth and hints of lemon to any dish.<\/p>",
+            "category": "General"
+          }
+        },
         "e19b190f-d2eb-42c8-9039-f6fa81f0aec4": {
           "type": "item",
           "settings": {
@@ -946,6 +973,7 @@
         },
         "3a0f5956-723d-4172-bb4b-7f49ed0cb74b": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "common_name": "Organic Ginseng Root",
             "botanical_name": "Panax ginseng",
@@ -958,6 +986,7 @@
         }
       },
       "block_order": [
+        "27df885d-f099-47b9-b990-709d920f6393",
         "e19b190f-d2eb-42c8-9039-f6fa81f0aec4",
         "2ff49aef-c1f0-4224-84e5-fe69960e56f0",
         "903136f8-c661-4fa3-bc60-d3158943d0aa",
@@ -993,6 +1022,18 @@
     "164755203664628538": {
       "type": "spec-sheets",
       "blocks": {
+        "6acbde59-658f-4c6f-b1da-3c491197ee31": {
+          "type": "item",
+          "settings": {
+            "common_name": "Organic Ginseng Root",
+            "botanical_name": "Panax ginseng",
+            "product_code": "GNSO",
+            "organic": true,
+            "fair_trade": "no",
+            "description": "<p>Organic Ginseng Root: This medicinal herb is known to have a strong bitter taste, but when sweetened or used in soup stocks it produces a light earthy note.<\/p>",
+            "category": "General"
+          }
+        },
         "d850dd52-a2bc-4a6b-9836-62fc1de5a9bf": {
           "type": "item",
           "settings": {
@@ -1175,6 +1216,7 @@
         },
         "4e08eb2e-55b3-4771-a5ba-42bf7d3edbfb": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "common_name": "Organic Lady's Mantle",
             "botanical_name": "Galium verum",
@@ -1187,6 +1229,7 @@
         }
       },
       "block_order": [
+        "6acbde59-658f-4c6f-b1da-3c491197ee31",
         "d850dd52-a2bc-4a6b-9836-62fc1de5a9bf",
         "5e649c9d-a596-4628-bccf-879de6db54c3",
         "ff07ecae-6e5b-4316-a0b2-bfdcde658c38",
@@ -1222,6 +1265,18 @@
     "164755273769f0e65d": {
       "type": "spec-sheets",
       "blocks": {
+        "9231611b-7205-43b9-8fd2-21a718b9dc4f": {
+          "type": "item",
+          "settings": {
+            "common_name": "Organic Lady's Mantle",
+            "botanical_name": "Galium verum",
+            "product_code": "LMMO",
+            "organic": true,
+            "fair_trade": "no",
+            "description": "<p>Organic Lady's Mantle: This long known healing herb makes a bitter medicinal tea or tincture.<\/p>",
+            "category": "General"
+          }
+        },
         "4fe3e381-0d9f-4de2-a039-53b72956d925": {
           "type": "item",
           "settings": {
@@ -1404,6 +1459,7 @@
         },
         "871c4e2c-e8fc-4033-a0f6-ac47616a3107": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "common_name": "Organic Nutmeg",
             "botanical_name": "Myristica fragrans",
@@ -1416,6 +1472,7 @@
         }
       },
       "block_order": [
+        "9231611b-7205-43b9-8fd2-21a718b9dc4f",
         "4fe3e381-0d9f-4de2-a039-53b72956d925",
         "69f922bf-64d4-445f-80c5-942d25bc33ba",
         "bfcbaa24-ba94-4d9c-b7ce-9ef71983e7c1",
@@ -1451,6 +1508,18 @@
     "1647553322f76b62bd": {
       "type": "spec-sheets",
       "blocks": {
+        "dde0ace2-1bf5-47c5-92aa-69d85d32363b": {
+          "type": "item",
+          "settings": {
+            "common_name": "Organic Nutmeg",
+            "botanical_name": "Myristica fragrans",
+            "product_code": "NUTO",
+            "organic": true,
+            "fair_trade": "yes",
+            "description": "<p>Organic Nutmeg: With a sweet taste, this spice adds warmth to any savory or sweet dish.<\/p>",
+            "category": "General"
+          }
+        },
         "3e2a5918-0e9b-41aa-8eeb-e91e293696fe": {
           "type": "item",
           "settings": {
@@ -1633,6 +1702,7 @@
         },
         "b0aa1d1a-a982-4488-ba18-274332743b3d": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "common_name": "Organic Rose",
             "botanical_name": "Rosa damascena",
@@ -1645,6 +1715,7 @@
         }
       },
       "block_order": [
+        "dde0ace2-1bf5-47c5-92aa-69d85d32363b",
         "3e2a5918-0e9b-41aa-8eeb-e91e293696fe",
         "0e4b6ae2-cbc9-41ab-899d-5cfecc6ef5d2",
         "11cf2c41-19fb-4bc3-b5c2-0c0324b70de7",
@@ -1680,6 +1751,18 @@
     "1647554424dfd90706": {
       "type": "spec-sheets",
       "blocks": {
+        "1aedaa57-fa6a-436c-a029-e134c68619e7": {
+          "type": "item",
+          "settings": {
+            "common_name": "Organic Rose",
+            "botanical_name": "Rosa damascena",
+            "product_code": "RSBO",
+            "organic": true,
+            "fair_trade": "no",
+            "description": "<p>Organic Rose: With a sweet floral flavor, these dried flowers add a fragrant and visually stunning addition to any tea blend or dish.<\/p>",
+            "category": "General"
+          }
+        },
         "8f0332f8-b916-4cfe-8391-603d13cf1063": {
           "type": "item",
           "settings": {
@@ -1862,6 +1945,7 @@
         },
         "58e6486f-b28e-4287-8aab-906534b14794": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "common_name": "Organic Valerian Root",
             "botanical_name": "Valeriana officinalis",
@@ -1874,6 +1958,7 @@
         }
       },
       "block_order": [
+        "1aedaa57-fa6a-436c-a029-e134c68619e7",
         "8f0332f8-b916-4cfe-8391-603d13cf1063",
         "89863eb7-94e5-4882-9405-c48e30240dd2",
         "0bc26039-cfe6-4cb8-9410-6901b7b07b52",
@@ -1909,6 +1994,18 @@
     "1647555438d2e0df81": {
       "type": "spec-sheets",
       "blocks": {
+        "16f57c16-d5fa-470b-9935-6d88fb42a4b3": {
+          "type": "item",
+          "settings": {
+            "common_name": "Organic Valerian Root",
+            "botanical_name": "Valeriana officinalis",
+            "product_code": "VALO",
+            "organic": true,
+            "fair_trade": "no",
+            "description": "<p>Organic Valerian Root: With a pungent taste, this root is commonly used in folk medicine to aid with insomnia.<\/p>",
+            "category": "General"
+          }
+        },
         "52629996-f2ed-4067-922b-8a7040d9341c": {
           "type": "item",
           "settings": {
@@ -1971,6 +2068,7 @@
         }
       },
       "block_order": [
+        "16f57c16-d5fa-470b-9935-6d88fb42a4b3",
         "52629996-f2ed-4067-922b-8a7040d9341c",
         "dc9a27ca-ab54-4579-a179-9c319f9fb85e",
         "2a0003a1-965f-41c0-b99b-b9afa01626cd",
