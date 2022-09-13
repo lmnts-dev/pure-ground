@@ -89,12 +89,14 @@
           },
           "b2bcdc3e-53b7-4366-9941-db39b4906944": {
             "type": "submenu",
+            "disabled": true,
             "settings": {
               "menu": "learn"
             }
           },
           "7f2df142-cc7c-4838-88a4-211f225706f0": {
             "type": "submenu",
+            "disabled": true,
             "settings": {
               "menu": "information"
             }
