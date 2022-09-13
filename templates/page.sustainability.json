@@ -77,7 +77,7 @@
         "layout": "two-col",
         "icon_height": 50,
         "color_scheme": "sky",
-        "top_spacing": 50,
+        "top_spacing": 100,
         "bottom_spacing": 0
       }
     },
