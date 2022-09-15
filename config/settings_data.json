@@ -59,6 +59,13 @@
               "image": "shopify:\/\/shop_images\/unsplash_8rTwokBwz1w-1.jpg"
             }
           },
+          "181b4f14-5ca5-4e65-8d3f-9747470e412d": {
+            "type": "page",
+            "settings": {
+              "page": "global-partnerships",
+              "image": "shopify:\/\/shop_images\/2018-08-21_17.54_2.jpg"
+            }
+          },
           "d9d4a0f1-92e8-4a6c-964f-c942b3f49c06": {
             "type": "label",
             "settings": {
@@ -94,6 +101,7 @@
           "aaf637d3-e8f0-47b6-879e-fffb724545c5",
           "878eabb7-b9ce-404d-a952-33183360b7db",
           "e58fd043-68a5-401e-8b7b-7143691d9a3f",
+          "181b4f14-5ca5-4e65-8d3f-9747470e412d",
           "d9d4a0f1-92e8-4a6c-964f-c942b3f49c06",
           "c3437a35-11cd-4be2-833c-b85c386e965a",
           "98795b15-82d5-4be6-a619-b758f820bdc5",
