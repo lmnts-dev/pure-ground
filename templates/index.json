@@ -273,12 +273,6 @@
             "heading_size": "h2"
           }
         },
-        "f12a8383-821b-470a-a571-86338584969b": {
-          "type": "text",
-          "settings": {
-            "text": "<p>We have a global network of growers, co-ops, customers, logistics providers and partners at origin. We are united in our purpose to build a healthier planet, thriving communities and happy customers. <\/p>"
-          }
-        },
         "90418634-e0d9-4c30-9b91-def2eab9b743": {
           "type": "button",
           "settings": {
@@ -290,7 +284,6 @@
       },
       "block_order": [
         "48cabedc-65b7-4986-9a9f-c3a20a4444bb",
-        "f12a8383-821b-470a-a571-86338584969b",
         "90418634-e0d9-4c30-9b91-def2eab9b743"
       ],
       "settings": {
@@ -432,6 +425,7 @@
         "subheading": "Ingredients just the way you want them",
         "heading_size": "h1",
         "accent_color": true,
+        "center_content": false,
         "text": "<p>In our efforts to ensure the integrity we provide, we import the whole organic ingredients.  We do in house micro-reduction and process to meet a wide range of specs. <\/p>",
         "button_label": "Learn More",
         "button_link": "shopify:\/\/pages\/quality-assurance-organic-integrity",
