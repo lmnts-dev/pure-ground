@@ -41,6 +41,7 @@
           },
           "aaf637d3-e8f0-47b6-879e-fffb724545c5": {
             "type": "submenu",
+            "disabled": true,
             "settings": {
               "menu": "our-values"
             }
@@ -75,6 +76,7 @@
           },
           "c3437a35-11cd-4be2-833c-b85c386e965a": {
             "type": "submenu",
+            "disabled": true,
             "settings": {
               "menu": "about-us"
             }
@@ -86,11 +88,25 @@
               "image": "shopify:\/\/shop_images\/Long_Life_Tea.jpg"
             }
           },
+          "5c96bbfa-abb9-4446-b6f1-834fd33d5162": {
+            "type": "page",
+            "settings": {
+              "page": "careers",
+              "image": "shopify:\/\/shop_images\/Rectangle_39_4590f9f9-8c84-44d6-93f4-b64032d7764c.jpg"
+            }
+          },
           "f537cb93-a2e6-4b92-b5fe-d43941dc8f93": {
             "type": "cta",
             "settings": {
               "button_label": "Contact Us",
               "button_link": "shopify:\/\/pages\/contact"
+            }
+          },
+          "5572eabd-54cd-4c0e-a354-66e71e852ae7": {
+            "type": "page",
+            "settings": {
+              "page": "european-operations",
+              "image": "shopify:\/\/shop_images\/Group_236.png"
             }
           }
         },
@@ -105,7 +121,9 @@
           "d9d4a0f1-92e8-4a6c-964f-c942b3f49c06",
           "c3437a35-11cd-4be2-833c-b85c386e965a",
           "98795b15-82d5-4be6-a619-b758f820bdc5",
-          "f537cb93-a2e6-4b92-b5fe-d43941dc8f93"
+          "5c96bbfa-abb9-4446-b6f1-834fd33d5162",
+          "f537cb93-a2e6-4b92-b5fe-d43941dc8f93",
+          "5572eabd-54cd-4c0e-a354-66e71e852ae7"
         ],
         "settings": {
           "always_show_nav": true
