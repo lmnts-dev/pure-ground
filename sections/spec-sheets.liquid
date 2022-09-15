@@ -15,18 +15,19 @@
   {% assign categories = default_category %}
 
    <div id="Spec-sheets-{{ section.id }}" class="spec-sheets color-{{section.settings.color_scheme}}">
+      <div class="spec-sheets__info">
+         {% if section.settings.fair_trade_on_request_disclaimer != "" %}
+            <div class="spec-sheets__info__key">
+               {% render 'icon-fair-trade' %}
+               <p class="spec-sheets__info__key__text p-sm">{{ section.settings.fair_trade_on_request_disclaimer }}</p>
+            </div>
+         {% endif %}
 
-   {% if section.settings.fair_trade_on_request_disclaimer != "" %}
-      <div class="spec-sheets__key">
-         {% render 'icon-fair-trade' %}
-         <p class="spec-sheets__key__text p-sm">{{ section.settings.fair_trade_on_request_disclaimer }}</p>
+         <div class="spec-sheets__info__search">
+            <label for="search">Search:</label>
+            <input class="spec-sheets__info__search__input" type="text" id="search" name="search">
+         </div>
       </div>
-   {% endif %}
-
-   <div class="spec-sheets__search">
-      <label for="search">Search:</label>
-      <input class="spec-sheets__search__input" type="text" id="search" name="search">
-   </div>
 
       {% comment %} Table header {% endcomment %}
       {% if section.settings.hide_header == false %}
