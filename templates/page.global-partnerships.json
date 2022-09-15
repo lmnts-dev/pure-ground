@@ -62,6 +62,17 @@
         "bottom_spacing": 100
       }
     },
+    "1643991355e4feeedb": {
+      "type": "image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/organic-map-edited.png",
+        "image_style": "fullheight",
+        "nav_color": false,
+        "color_scheme": "cream",
+        "top_spacing": 0,
+        "bottom_spacing": 30
+      }
+    },
     "16607621197a568045": {
       "type": "gallery",
       "blocks": {
@@ -138,17 +149,6 @@
         "bottom_spacing": 50
       }
     },
-    "1643991355e4feeedb": {
-      "type": "image",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/organic-map-edited.png",
-        "image_style": "fullheight",
-        "nav_color": false,
-        "color_scheme": "cream",
-        "top_spacing": 50,
-        "bottom_spacing": 30
-      }
-    },
     "16607619309d5aee3c": {
       "type": "content-with-bg-image",
       "blocks": {
@@ -200,8 +200,8 @@
   "order": [
     "1660761679c3d72883",
     "1643818843f333eb74",
-    "16607621197a568045",
     "1643991355e4feeedb",
+    "16607621197a568045",
     "16607619309d5aee3c"
   ]
 }
