@@ -514,23 +514,6 @@
         "bottom_spacing": 0
       }
     },
-    "16632669232130b7d3": {
-      "type": "spec-sheets",
-      "settings": {
-        "common_name_label": "Common Name",
-        "botanical_name_label": "Botanical Name",
-        "organic_label": "Organic",
-        "product_code_label": "Product Code",
-        "fair_trade_label": "Fair Trade",
-        "all_ingredients_label": "All Ingredients",
-        "fair_trade_on_request_disclaimer": "Sustainably Sourced",
-        "hide_header": false,
-        "color_scheme": "cream",
-        "table_color": "sky",
-        "top_spacing": 50,
-        "bottom_spacing": 50
-      }
-    },
     "1663266928fcaffa46": {
       "type": "spec-sheets",
       "blocks": {
@@ -1779,6 +1762,40 @@
         "top_spacing": 50,
         "bottom_spacing": 50
       }
+    },
+    "16632669232130b7d3": {
+      "type": "spec-sheets",
+      "blocks": {
+        "01331909-d8c8-4b7c-8b4a-8128ae72a14e": {
+          "type": "item",
+          "settings": {
+            "common_name": "",
+            "botanical_name": "",
+            "product_code": "",
+            "organic": false,
+            "fair_trade": "no",
+            "description": "",
+            "category": "General"
+          }
+        }
+      },
+      "block_order": [
+        "01331909-d8c8-4b7c-8b4a-8128ae72a14e"
+      ],
+      "settings": {
+        "common_name_label": "Common Name",
+        "botanical_name_label": "Botanical Name",
+        "organic_label": "Organic",
+        "product_code_label": "Product Code",
+        "fair_trade_label": "Fair Trade",
+        "all_ingredients_label": "All Ingredients",
+        "fair_trade_on_request_disclaimer": "Sustainably Sourced",
+        "hide_header": false,
+        "color_scheme": "cream",
+        "table_color": "sky",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
     }
   },
   "order": [
@@ -1786,12 +1803,12 @@
     "main",
     "1663266823923b1bd8",
     "16632668753b21cfd8",
-    "16632669232130b7d3",
     "1663266928fcaffa46",
     "1663266935e6f1785f",
     "166326693928bb183b",
     "1663266943d94fde15",
     "166326694766a53860",
-    "1663266864dd6f1f74"
+    "1663266864dd6f1f74",
+    "16632669232130b7d3"
   ]
 }
