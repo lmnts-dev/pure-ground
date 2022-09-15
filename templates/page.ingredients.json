@@ -267,213 +267,6 @@
             "category": "General"
           }
         },
-        "41141e8e-69d0-40e8-b6d5-05d1ffa0fd0d": {
-          "type": "item",
-          "settings": {
-            "common_name": "",
-            "botanical_name": "",
-            "product_code": "",
-            "organic": false,
-            "fair_trade": "no",
-            "description": "",
-            "category": "General"
-          }
-        },
-        "a9bdfdf7-b9d4-45e0-9f7f-460a67b026ef": {
-          "type": "item",
-          "settings": {
-            "common_name": "",
-            "botanical_name": "",
-            "product_code": "",
-            "organic": false,
-            "fair_trade": "no",
-            "description": "",
-            "category": "General"
-          }
-        },
-        "cc94ee47-6553-468f-942f-46c1bb0375ec": {
-          "type": "item",
-          "settings": {
-            "common_name": "",
-            "botanical_name": "",
-            "product_code": "",
-            "organic": false,
-            "fair_trade": "no",
-            "description": "",
-            "category": "General"
-          }
-        },
-        "056bd278-32b9-4789-b71e-77e416e2c274": {
-          "type": "item",
-          "settings": {
-            "common_name": "",
-            "botanical_name": "",
-            "product_code": "",
-            "organic": false,
-            "fair_trade": "no",
-            "description": "",
-            "category": "General"
-          }
-        },
-        "3215b7bf-63af-4869-a9a7-92f4432fc19a": {
-          "type": "item",
-          "settings": {
-            "common_name": "",
-            "botanical_name": "",
-            "product_code": "",
-            "organic": false,
-            "fair_trade": "no",
-            "description": "",
-            "category": "General"
-          }
-        },
-        "b3e25635-5ee4-46fb-beb3-6773d844827d": {
-          "type": "item",
-          "settings": {
-            "common_name": "",
-            "botanical_name": "",
-            "product_code": "",
-            "organic": false,
-            "fair_trade": "no",
-            "description": "",
-            "category": "General"
-          }
-        },
-        "1ff2bf82-7c47-4cf5-8ceb-9e043f37a823": {
-          "type": "item",
-          "settings": {
-            "common_name": "",
-            "botanical_name": "",
-            "product_code": "",
-            "organic": false,
-            "fair_trade": "no",
-            "description": "",
-            "category": "General"
-          }
-        },
-        "26c3d2c0-58b9-48a2-9789-d711660d0225": {
-          "type": "item",
-          "settings": {
-            "common_name": "",
-            "botanical_name": "",
-            "product_code": "",
-            "organic": false,
-            "fair_trade": "no",
-            "description": "",
-            "category": "General"
-          }
-        },
-        "ad2c145e-be6d-4def-a0d5-3b67a662ea25": {
-          "type": "item",
-          "settings": {
-            "common_name": "",
-            "botanical_name": "",
-            "product_code": "",
-            "organic": false,
-            "fair_trade": "no",
-            "description": "",
-            "category": "General"
-          }
-        },
-        "93c1b13f-6f85-42b3-a4b6-2c3c4f207891": {
-          "type": "item",
-          "settings": {
-            "common_name": "",
-            "botanical_name": "",
-            "product_code": "",
-            "organic": false,
-            "fair_trade": "no",
-            "description": "",
-            "category": "General"
-          }
-        },
-        "303909f9-16cb-4e1b-804b-2ec04d58f6b3": {
-          "type": "item",
-          "settings": {
-            "common_name": "",
-            "botanical_name": "",
-            "product_code": "",
-            "organic": false,
-            "fair_trade": "no",
-            "description": "",
-            "category": "General"
-          }
-        },
-        "60b9abf2-9d58-4c89-98b2-47c80769fb40": {
-          "type": "item",
-          "settings": {
-            "common_name": "",
-            "botanical_name": "",
-            "product_code": "",
-            "organic": false,
-            "fair_trade": "no",
-            "description": "",
-            "category": "General"
-          }
-        },
-        "e19a86c0-c174-487c-9103-89bc1bbc3b77": {
-          "type": "item",
-          "settings": {
-            "common_name": "",
-            "botanical_name": "",
-            "product_code": "",
-            "organic": false,
-            "fair_trade": "no",
-            "description": "",
-            "category": "General"
-          }
-        }
-      },
-      "block_order": [
-        "4a049a02-f5eb-4c33-85b9-2b697b05ef78",
-        "23cbf211-ccb4-443c-b178-3e2489966f4f",
-        "f5374a09-c5c8-41d7-a728-5ae77045bc6d",
-        "1b11e11f-4911-4ad8-9a2d-fa0105d7f7fd",
-        "829378f0-42dc-404b-abfa-cc4dbcdc9538",
-        "c54a5fa6-863c-472e-9bfb-c301195543b6",
-        "e2482830-0951-4af7-8421-c60dd7ef187f",
-        "9c32bf72-d270-4dff-b299-108cb5f9bff0",
-        "756e56de-41fe-4ef1-a35c-d27d8f67b929",
-        "57823745-7e9f-41d9-8547-e13b89bafa8c",
-        "031ed847-ef7d-4956-a7fa-a0cc768849ed",
-        "1a751972-1c39-4ab6-9c27-05ea047b4852",
-        "70002da0-d4b4-4192-9c8e-f31d8a0fe981",
-        "151a68ea-4360-4096-912e-87347aa3a929",
-        "9c945944-c658-4832-bef5-fb37cf9d4afc",
-        "bee48060-8a2e-40e9-a6fe-a0130eb2c278",
-        "c10da750-9576-4399-ab41-3e86344a6523",
-        "41141e8e-69d0-40e8-b6d5-05d1ffa0fd0d",
-        "a9bdfdf7-b9d4-45e0-9f7f-460a67b026ef",
-        "cc94ee47-6553-468f-942f-46c1bb0375ec",
-        "056bd278-32b9-4789-b71e-77e416e2c274",
-        "3215b7bf-63af-4869-a9a7-92f4432fc19a",
-        "b3e25635-5ee4-46fb-beb3-6773d844827d",
-        "1ff2bf82-7c47-4cf5-8ceb-9e043f37a823",
-        "26c3d2c0-58b9-48a2-9789-d711660d0225",
-        "ad2c145e-be6d-4def-a0d5-3b67a662ea25",
-        "93c1b13f-6f85-42b3-a4b6-2c3c4f207891",
-        "303909f9-16cb-4e1b-804b-2ec04d58f6b3",
-        "60b9abf2-9d58-4c89-98b2-47c80769fb40",
-        "e19a86c0-c174-487c-9103-89bc1bbc3b77"
-      ],
-      "settings": {
-        "common_name_label": "Common Name",
-        "botanical_name_label": "Botanical Name",
-        "organic_label": "Organic",
-        "product_code_label": "Product Code",
-        "fair_trade_label": "Sustainably Sourced",
-        "all_ingredients_label": "All Ingredients",
-        "fair_trade_on_request_disclaimer": "",
-        "hide_header": false,
-        "color_scheme": "cream",
-        "table_color": "sky",
-        "top_spacing": 50,
-        "bottom_spacing": 0
-      }
-    },
-    "1647550055d229b4ef": {
-      "type": "spec-sheets",
-      "blocks": {
         "6b2c8e40-c3cb-4976-969b-34100b1ebe70": {
           "type": "item",
           "disabled": true,
@@ -667,45 +460,8 @@
             "description": "<p>Organic Cayenne: Noted as being 10x hotter than jalapeños, this pepper pairs great with lime, basil, and ginger.<\/p>",
             "category": "General"
           }
-        }
-      },
-      "block_order": [
-        "6b2c8e40-c3cb-4976-969b-34100b1ebe70",
-        "cd1a10b0-035b-4248-9cd4-196dc275dc30",
-        "11d613c0-7bd4-4ce1-b7e6-02056be866dc",
-        "e9b253c0-b344-4ccc-9da6-95729f949500",
-        "ba0cbb4c-2013-4497-9e72-682ba482816e",
-        "9addcb9c-2581-4495-bf96-466f1d455fe1",
-        "f1dd1c2e-811a-4f26-85fa-9c1074132616",
-        "75af8ec1-1479-4633-9717-e4b6f446cdc1",
-        "0e5583eb-8150-4288-8d10-ecf0b5b71c52",
-        "b28e26ac-ae50-46bb-9168-e519be789ad0",
-        "65bc9a1d-bee4-485c-89e2-6400822091d7",
-        "8bced0fb-aacd-4efe-aead-7fea6d86e6cd",
-        "f2b02f7e-1d2e-43f6-94fe-023b2511a0e6",
-        "775545cf-6fae-452e-aeb0-862bccfb9c59",
-        "d93a5b54-6eea-4c7f-acd1-658edcfc6419",
-        "d049cd88-a12a-442a-b44b-42c5ccba6a14"
-      ],
-      "settings": {
-        "common_name_label": "",
-        "botanical_name_label": "",
-        "organic_label": "",
-        "product_code_label": "Product Code",
-        "fair_trade_label": "",
-        "all_ingredients_label": "",
-        "fair_trade_on_request_disclaimer": "",
-        "hide_header": true,
-        "color_scheme": "cream",
-        "table_color": "sky",
-        "top_spacing": 0,
-        "bottom_spacing": 0
-      }
-    },
-    "16475507071b89b3ee": {
-      "type": "spec-sheets",
-      "blocks": {
-        "01d4f4cd-f75b-4fd4-a1fc-87d1aaa2f2ea": {
+        },
+         "01d4f4cd-f75b-4fd4-a1fc-87d1aaa2f2ea": {
           "type": "item",
           "settings": {
             "common_name": "Organic Cayenne",
@@ -909,45 +665,7 @@
             "description": "<p>Organic Cumin: Earthy and nutty with a bitter bite, this spice adds warmth and hints of lemon to any dish.<\/p>",
             "category": "General"
           }
-        }
-      },
-      "block_order": [
-        "01d4f4cd-f75b-4fd4-a1fc-87d1aaa2f2ea",
-        "fe2498d4-6a81-4360-b5ef-f5946a4a6fbb",
-        "2474642c-df33-41a0-9dfc-d8a23bceb586",
-        "2a049ad2-7614-4bd3-ad2d-e4aa90afc3af",
-        "bd501d59-5c60-43be-9600-36ddc344d119",
-        "b081ceb2-4efd-41c0-8aa2-e52990429b62",
-        "4532eb59-4964-4bb0-97da-79edb4d994c3",
-        "f15300b5-b6e9-405a-918a-b701a34a24b1",
-        "5b807ba2-4e82-4b64-a16b-ed6bf189b3a5",
-        "1cb7bac6-56b4-43d0-93ad-e3994898efd1",
-        "e9fb0806-2ab7-4480-9cc6-be70300016d9",
-        "eef77d64-ed76-4f11-982f-65e7503b2d22",
-        "19a7031d-414d-481f-834c-f0c16a47635a",
-        "48474ec5-f26d-44c5-99c5-72a86130ac93",
-        "51f64fe5-b767-4c98-a1dc-1a2f61034540",
-        "868b5e3a-a934-48e0-8487-bf88856873a7",
-        "fd444baf-b56b-4970-9c2a-0c24d9f57870"
-      ],
-      "settings": {
-        "common_name_label": "",
-        "botanical_name_label": "",
-        "organic_label": "",
-        "product_code_label": "Product Code",
-        "fair_trade_label": "",
-        "all_ingredients_label": "",
-        "fair_trade_on_request_disclaimer": "",
-        "hide_header": true,
-        "color_scheme": "cream",
-        "table_color": "sky",
-        "top_spacing": 0,
-        "bottom_spacing": 0
-      }
-    },
-    "1647551375a7aa30c6": {
-      "type": "spec-sheets",
-      "blocks": {
+        },
         "27df885d-f099-47b9-b990-709d920f6393": {
           "type": "item",
           "settings": {
@@ -1152,45 +870,7 @@
             "description": "<p>Organic Ginseng Root: This medicinal herb is known to have a strong bitter taste, but when sweetened or used in soup stocks it produces a light earthy note.<\/p>",
             "category": "General"
           }
-        }
-      },
-      "block_order": [
-        "27df885d-f099-47b9-b990-709d920f6393",
-        "e19b190f-d2eb-42c8-9039-f6fa81f0aec4",
-        "2ff49aef-c1f0-4224-84e5-fe69960e56f0",
-        "903136f8-c661-4fa3-bc60-d3158943d0aa",
-        "5e9b8227-7f4c-4c7d-b552-06a2927c1b1d",
-        "6e9f4d30-6bc6-41b0-9795-ad1b16910706",
-        "4bc19448-a1b4-47e9-b284-92dfe7084d1e",
-        "9885a2cc-e71d-4641-9674-1d52093e5e03",
-        "e5e35697-1941-4667-93ec-bf83884aa3a0",
-        "b3bbd190-26db-4808-acc2-76901e66cb76",
-        "0321b150-b70f-4588-bd14-b201cf16ea2a",
-        "a66ee8ae-1bdd-496f-8b12-b55c3ae06f63",
-        "f8a2f4a5-6a2b-4cc7-9596-03aec91d9c18",
-        "627fc3d3-b1cf-4738-a240-155c31c81e8b",
-        "cede7ebd-7f64-4334-b229-cd0b22779a46",
-        "8226f4d8-6918-4077-89bf-c1bf8040a5dc",
-        "3a0f5956-723d-4172-bb4b-7f49ed0cb74b"
-      ],
-      "settings": {
-        "common_name_label": "",
-        "botanical_name_label": "",
-        "organic_label": "",
-        "product_code_label": "Product Code",
-        "fair_trade_label": "",
-        "all_ingredients_label": "",
-        "fair_trade_on_request_disclaimer": "",
-        "hide_header": true,
-        "color_scheme": "cream",
-        "table_color": "sky",
-        "top_spacing": 0,
-        "bottom_spacing": 0
-      }
-    },
-    "164755203664628538": {
-      "type": "spec-sheets",
-      "blocks": {
+        }, 
         "6acbde59-658f-4c6f-b1da-3c491197ee31": {
           "type": "item",
           "settings": {
@@ -1395,45 +1075,7 @@
             "description": "<p>Organic Lady's Mantle: This long known healing herb makes a bitter medicinal tea or tincture.<\/p>",
             "category": "General"
           }
-        }
-      },
-      "block_order": [
-        "6acbde59-658f-4c6f-b1da-3c491197ee31",
-        "d850dd52-a2bc-4a6b-9836-62fc1de5a9bf",
-        "5e649c9d-a596-4628-bccf-879de6db54c3",
-        "ff07ecae-6e5b-4316-a0b2-bfdcde658c38",
-        "e2ca0473-3ad0-49c4-ba26-de5b89182e17",
-        "ca5ee319-03e1-41e3-85b5-faf3e2a6e877",
-        "4db33398-279e-42d1-b382-45c8ba523e3f",
-        "8681f250-d833-4694-81a9-243a61bcc70f",
-        "2680e65e-d419-4927-9532-62d0d4984514",
-        "82a71fcc-9a04-4180-b95d-1816b5fe39be",
-        "bda7438f-e18d-4420-a952-0eb3a8aa5ff1",
-        "7660f4cf-e9b0-4db1-89cd-48bfa8f6419c",
-        "720c1a7d-c776-4560-9e4f-096579505d82",
-        "7397e55f-ab6f-4330-84df-d1709b47e924",
-        "ac055e1d-caaa-484e-afde-ecbc7bfdf139",
-        "603ac64a-b4cb-4faa-bc96-a0d93e8b15bb",
-        "4e08eb2e-55b3-4771-a5ba-42bf7d3edbfb"
-      ],
-      "settings": {
-        "common_name_label": "",
-        "botanical_name_label": "",
-        "organic_label": "",
-        "product_code_label": "Product Code",
-        "fair_trade_label": "",
-        "all_ingredients_label": "",
-        "fair_trade_on_request_disclaimer": "",
-        "hide_header": true,
-        "color_scheme": "cream",
-        "table_color": "sky",
-        "top_spacing": 0,
-        "bottom_spacing": 0
-      }
-    },
-    "164755273769f0e65d": {
-      "type": "spec-sheets",
-      "blocks": {
+        },
         "9231611b-7205-43b9-8fd2-21a718b9dc4f": {
           "type": "item",
           "settings": {
@@ -1638,45 +1280,7 @@
             "description": "<p>Organic Nutmeg: With a sweet taste, this spice adds warmth to any savory or sweet dish.<\/p>",
             "category": "General"
           }
-        }
-      },
-      "block_order": [
-        "9231611b-7205-43b9-8fd2-21a718b9dc4f",
-        "4fe3e381-0d9f-4de2-a039-53b72956d925",
-        "69f922bf-64d4-445f-80c5-942d25bc33ba",
-        "bfcbaa24-ba94-4d9c-b7ce-9ef71983e7c1",
-        "70f8ad84-ee63-49a6-8367-f8abb436c404",
-        "ebb417b5-b5e4-42b9-91e7-7e01517ed729",
-        "86fb961d-6031-44e3-b293-9f4c32347922",
-        "efd14f31-4314-40a6-a75f-27a77c4acb79",
-        "fe76db94-b4dc-4ae7-8c72-cab533285261",
-        "b16526ba-db5c-43f1-8d4a-287b6bb1e12b",
-        "3bbb0c05-0bdf-464c-b9a8-f3110a8d2b6a",
-        "1b271446-3424-4870-9748-416d2d7561b2",
-        "1e98dd86-bb1c-4a1a-9f71-53e21d3881ca",
-        "63580264-c262-4d1a-b38d-0f11929b9bbe",
-        "de275ec6-52f5-4534-b6a5-06a37b023025",
-        "0bbdd9fb-a559-4636-a37d-8b85d4088967",
-        "871c4e2c-e8fc-4033-a0f6-ac47616a3107"
-      ],
-      "settings": {
-        "common_name_label": "",
-        "botanical_name_label": "",
-        "organic_label": "",
-        "product_code_label": "Product Code",
-        "fair_trade_label": "",
-        "all_ingredients_label": "",
-        "fair_trade_on_request_disclaimer": "",
-        "hide_header": true,
-        "color_scheme": "cream",
-        "table_color": "sky",
-        "top_spacing": 0,
-        "bottom_spacing": 0
-      }
-    },
-    "1647553322f76b62bd": {
-      "type": "spec-sheets",
-      "blocks": {
+        },
         "dde0ace2-1bf5-47c5-92aa-69d85d32363b": {
           "type": "item",
           "settings": {
@@ -1881,45 +1485,7 @@
             "description": "<p>Organic Rose: With a sweet floral flavor, these dried flowers add a fragrant and visually stunning addition to any tea blend or dish.<\/p>",
             "category": "General"
           }
-        }
-      },
-      "block_order": [
-        "dde0ace2-1bf5-47c5-92aa-69d85d32363b",
-        "3e2a5918-0e9b-41aa-8eeb-e91e293696fe",
-        "0e4b6ae2-cbc9-41ab-899d-5cfecc6ef5d2",
-        "11cf2c41-19fb-4bc3-b5c2-0c0324b70de7",
-        "26469750-c60e-4817-b190-3679fe553421",
-        "5dafe931-084b-4414-90d5-a5519cc5452f",
-        "37329ddd-df37-4963-8830-4f7b565fffa5",
-        "86a26aee-df16-4d64-92b3-1be6835fc156",
-        "3db5e646-a017-4a1f-8347-742946ec3af1",
-        "a5551269-7bf9-48d3-b678-0fdc8312a3e5",
-        "c322585a-9123-4b2a-9154-f21a34eae560",
-        "c25ca48e-a35c-4211-ae42-e04b5d0ea8e6",
-        "cda6acd3-252e-46f9-9e87-e10486f4f4d4",
-        "2f3d85cc-917c-4127-8d46-91974c6f9ffc",
-        "28aee1f9-3aa4-499c-aa7a-a2d4a06487e5",
-        "27a4c9a5-89a6-45df-866f-538e6a5ef273",
-        "b0aa1d1a-a982-4488-ba18-274332743b3d"
-      ],
-      "settings": {
-        "common_name_label": "",
-        "botanical_name_label": "",
-        "organic_label": "",
-        "product_code_label": "Product Code",
-        "fair_trade_label": "",
-        "all_ingredients_label": "",
-        "fair_trade_on_request_disclaimer": "",
-        "hide_header": true,
-        "color_scheme": "cream",
-        "table_color": "sky",
-        "top_spacing": 0,
-        "bottom_spacing": 0
-      }
-    },
-    "1647554424dfd90706": {
-      "type": "spec-sheets",
-      "blocks": {
+        },
         "1aedaa57-fa6a-436c-a029-e134c68619e7": {
           "type": "item",
           "settings": {
@@ -2124,45 +1690,7 @@
             "description": "<p>Organic Valerian Root: With a pungent taste, this root is commonly used in folk medicine to aid with insomnia.<\/p>",
             "category": "General"
           }
-        }
-      },
-      "block_order": [
-        "1aedaa57-fa6a-436c-a029-e134c68619e7",
-        "8f0332f8-b916-4cfe-8391-603d13cf1063",
-        "89863eb7-94e5-4882-9405-c48e30240dd2",
-        "0bc26039-cfe6-4cb8-9410-6901b7b07b52",
-        "947b31b2-a06a-442d-acb6-73e59363662b",
-        "9c5bccf0-27cf-4c3f-9939-aeaa923e1ed0",
-        "00a3cbc1-ec62-4d3a-8f69-d860e2a3c09a",
-        "f094af5c-29f6-4c75-b5f2-58c16bf7e0c5",
-        "e26563a9-a2c5-4624-b8b0-20d8f6aa5dd0",
-        "0ad44b52-0700-4146-aa9d-06110ad1a11d",
-        "87565ff3-245e-48e9-8f55-396501726c65",
-        "d7ad58d9-8365-41a5-bae3-9587960784b1",
-        "c7d6019a-125f-423e-897b-ed5a01e3cb62",
-        "79e3f14b-cfbe-46b1-82aa-247e44aea6b4",
-        "45f3e3e8-0904-4c3c-93b5-a93b18765e7c",
-        "8c393186-a8ea-4acc-b1d1-c6782bd2ac23",
-        "58e6486f-b28e-4287-8aab-906534b14794"
-      ],
-      "settings": {
-        "common_name_label": "",
-        "botanical_name_label": "",
-        "organic_label": "",
-        "product_code_label": "Product Code",
-        "fair_trade_label": "",
-        "all_ingredients_label": "",
-        "fair_trade_on_request_disclaimer": "",
-        "hide_header": true,
-        "color_scheme": "cream",
-        "table_color": "sky",
-        "top_spacing": 0,
-        "bottom_spacing": 0
-      }
-    },
-    "1647555438d2e0df81": {
-      "type": "spec-sheets",
-      "blocks": {
+        },
         "16f57c16-d5fa-470b-9935-6d88fb42a4b3": {
           "type": "item",
           "settings": {
@@ -2237,6 +1765,141 @@
         }
       },
       "block_order": [
+        "4a049a02-f5eb-4c33-85b9-2b697b05ef78",
+        "23cbf211-ccb4-443c-b178-3e2489966f4f",
+        "f5374a09-c5c8-41d7-a728-5ae77045bc6d",
+        "1b11e11f-4911-4ad8-9a2d-fa0105d7f7fd",
+        "829378f0-42dc-404b-abfa-cc4dbcdc9538",
+        "c54a5fa6-863c-472e-9bfb-c301195543b6",
+        "e2482830-0951-4af7-8421-c60dd7ef187f",
+        "9c32bf72-d270-4dff-b299-108cb5f9bff0",
+        "756e56de-41fe-4ef1-a35c-d27d8f67b929",
+        "57823745-7e9f-41d9-8547-e13b89bafa8c",
+        "031ed847-ef7d-4956-a7fa-a0cc768849ed",
+        "1a751972-1c39-4ab6-9c27-05ea047b4852",
+        "70002da0-d4b4-4192-9c8e-f31d8a0fe981",
+        "151a68ea-4360-4096-912e-87347aa3a929",
+        "9c945944-c658-4832-bef5-fb37cf9d4afc",
+        "bee48060-8a2e-40e9-a6fe-a0130eb2c278",
+        "c10da750-9576-4399-ab41-3e86344a6523",
+        "6b2c8e40-c3cb-4976-969b-34100b1ebe70",
+        "cd1a10b0-035b-4248-9cd4-196dc275dc30",
+        "11d613c0-7bd4-4ce1-b7e6-02056be866dc",
+        "e9b253c0-b344-4ccc-9da6-95729f949500",
+        "ba0cbb4c-2013-4497-9e72-682ba482816e",
+        "9addcb9c-2581-4495-bf96-466f1d455fe1",
+        "f1dd1c2e-811a-4f26-85fa-9c1074132616",
+        "75af8ec1-1479-4633-9717-e4b6f446cdc1",
+        "0e5583eb-8150-4288-8d10-ecf0b5b71c52",
+        "b28e26ac-ae50-46bb-9168-e519be789ad0",
+        "65bc9a1d-bee4-485c-89e2-6400822091d7",
+        "8bced0fb-aacd-4efe-aead-7fea6d86e6cd",
+        "f2b02f7e-1d2e-43f6-94fe-023b2511a0e6",
+        "775545cf-6fae-452e-aeb0-862bccfb9c59",
+        "d93a5b54-6eea-4c7f-acd1-658edcfc6419",
+        "d049cd88-a12a-442a-b44b-42c5ccba6a14",
+        "01d4f4cd-f75b-4fd4-a1fc-87d1aaa2f2ea",
+        "fe2498d4-6a81-4360-b5ef-f5946a4a6fbb",
+        "2474642c-df33-41a0-9dfc-d8a23bceb586",
+        "2a049ad2-7614-4bd3-ad2d-e4aa90afc3af",
+        "bd501d59-5c60-43be-9600-36ddc344d119",
+        "b081ceb2-4efd-41c0-8aa2-e52990429b62",
+        "4532eb59-4964-4bb0-97da-79edb4d994c3",
+        "f15300b5-b6e9-405a-918a-b701a34a24b1",
+        "5b807ba2-4e82-4b64-a16b-ed6bf189b3a5",
+        "1cb7bac6-56b4-43d0-93ad-e3994898efd1",
+        "e9fb0806-2ab7-4480-9cc6-be70300016d9",
+        "eef77d64-ed76-4f11-982f-65e7503b2d22",
+        "19a7031d-414d-481f-834c-f0c16a47635a",
+        "48474ec5-f26d-44c5-99c5-72a86130ac93",
+        "51f64fe5-b767-4c98-a1dc-1a2f61034540",
+        "868b5e3a-a934-48e0-8487-bf88856873a7",
+        "fd444baf-b56b-4970-9c2a-0c24d9f57870",
+        "27df885d-f099-47b9-b990-709d920f6393",
+        "e19b190f-d2eb-42c8-9039-f6fa81f0aec4",
+        "2ff49aef-c1f0-4224-84e5-fe69960e56f0",
+        "903136f8-c661-4fa3-bc60-d3158943d0aa",
+        "5e9b8227-7f4c-4c7d-b552-06a2927c1b1d",
+        "6e9f4d30-6bc6-41b0-9795-ad1b16910706",
+        "4bc19448-a1b4-47e9-b284-92dfe7084d1e",
+        "9885a2cc-e71d-4641-9674-1d52093e5e03",
+        "e5e35697-1941-4667-93ec-bf83884aa3a0",
+        "b3bbd190-26db-4808-acc2-76901e66cb76",
+        "0321b150-b70f-4588-bd14-b201cf16ea2a",
+        "a66ee8ae-1bdd-496f-8b12-b55c3ae06f63",
+        "f8a2f4a5-6a2b-4cc7-9596-03aec91d9c18",
+        "627fc3d3-b1cf-4738-a240-155c31c81e8b",
+        "cede7ebd-7f64-4334-b229-cd0b22779a46",
+        "8226f4d8-6918-4077-89bf-c1bf8040a5dc",
+        "3a0f5956-723d-4172-bb4b-7f49ed0cb74b",
+        "6acbde59-658f-4c6f-b1da-3c491197ee31",
+        "d850dd52-a2bc-4a6b-9836-62fc1de5a9bf",
+        "5e649c9d-a596-4628-bccf-879de6db54c3",
+        "ff07ecae-6e5b-4316-a0b2-bfdcde658c38",
+        "e2ca0473-3ad0-49c4-ba26-de5b89182e17",
+        "ca5ee319-03e1-41e3-85b5-faf3e2a6e877",
+        "4db33398-279e-42d1-b382-45c8ba523e3f",
+        "8681f250-d833-4694-81a9-243a61bcc70f",
+        "2680e65e-d419-4927-9532-62d0d4984514",
+        "82a71fcc-9a04-4180-b95d-1816b5fe39be",
+        "bda7438f-e18d-4420-a952-0eb3a8aa5ff1",
+        "7660f4cf-e9b0-4db1-89cd-48bfa8f6419c",
+        "720c1a7d-c776-4560-9e4f-096579505d82",
+        "7397e55f-ab6f-4330-84df-d1709b47e924",
+        "ac055e1d-caaa-484e-afde-ecbc7bfdf139",
+        "603ac64a-b4cb-4faa-bc96-a0d93e8b15bb",
+        "4e08eb2e-55b3-4771-a5ba-42bf7d3edbfb",
+        "9231611b-7205-43b9-8fd2-21a718b9dc4f",
+        "4fe3e381-0d9f-4de2-a039-53b72956d925",
+        "69f922bf-64d4-445f-80c5-942d25bc33ba",
+        "bfcbaa24-ba94-4d9c-b7ce-9ef71983e7c1",
+        "70f8ad84-ee63-49a6-8367-f8abb436c404",
+        "ebb417b5-b5e4-42b9-91e7-7e01517ed729",
+        "86fb961d-6031-44e3-b293-9f4c32347922",
+        "efd14f31-4314-40a6-a75f-27a77c4acb79",
+        "fe76db94-b4dc-4ae7-8c72-cab533285261",
+        "b16526ba-db5c-43f1-8d4a-287b6bb1e12b",
+        "3bbb0c05-0bdf-464c-b9a8-f3110a8d2b6a",
+        "1b271446-3424-4870-9748-416d2d7561b2",
+        "1e98dd86-bb1c-4a1a-9f71-53e21d3881ca",
+        "63580264-c262-4d1a-b38d-0f11929b9bbe",
+        "de275ec6-52f5-4534-b6a5-06a37b023025",
+        "0bbdd9fb-a559-4636-a37d-8b85d4088967",
+        "871c4e2c-e8fc-4033-a0f6-ac47616a3107",
+        "dde0ace2-1bf5-47c5-92aa-69d85d32363b",
+        "3e2a5918-0e9b-41aa-8eeb-e91e293696fe",
+        "0e4b6ae2-cbc9-41ab-899d-5cfecc6ef5d2",
+        "11cf2c41-19fb-4bc3-b5c2-0c0324b70de7",
+        "26469750-c60e-4817-b190-3679fe553421",
+        "5dafe931-084b-4414-90d5-a5519cc5452f",
+        "37329ddd-df37-4963-8830-4f7b565fffa5",
+        "86a26aee-df16-4d64-92b3-1be6835fc156",
+        "3db5e646-a017-4a1f-8347-742946ec3af1",
+        "a5551269-7bf9-48d3-b678-0fdc8312a3e5",
+        "c322585a-9123-4b2a-9154-f21a34eae560",
+        "c25ca48e-a35c-4211-ae42-e04b5d0ea8e6",
+        "cda6acd3-252e-46f9-9e87-e10486f4f4d4",
+        "2f3d85cc-917c-4127-8d46-91974c6f9ffc",
+        "28aee1f9-3aa4-499c-aa7a-a2d4a06487e5",
+        "27a4c9a5-89a6-45df-866f-538e6a5ef273",
+        "b0aa1d1a-a982-4488-ba18-274332743b3d",
+        "1aedaa57-fa6a-436c-a029-e134c68619e7",
+        "8f0332f8-b916-4cfe-8391-603d13cf1063",
+        "89863eb7-94e5-4882-9405-c48e30240dd2",
+        "0bc26039-cfe6-4cb8-9410-6901b7b07b52",
+        "947b31b2-a06a-442d-acb6-73e59363662b",
+        "9c5bccf0-27cf-4c3f-9939-aeaa923e1ed0",
+        "00a3cbc1-ec62-4d3a-8f69-d860e2a3c09a",
+        "f094af5c-29f6-4c75-b5f2-58c16bf7e0c5",
+        "e26563a9-a2c5-4624-b8b0-20d8f6aa5dd0",
+        "0ad44b52-0700-4146-aa9d-06110ad1a11d",
+        "87565ff3-245e-48e9-8f55-396501726c65",
+        "d7ad58d9-8365-41a5-bae3-9587960784b1",
+        "c7d6019a-125f-423e-897b-ed5a01e3cb62",
+        "79e3f14b-cfbe-46b1-82aa-247e44aea6b4",
+        "45f3e3e8-0904-4c3c-93b5-a93b18765e7c",
+        "8c393186-a8ea-4acc-b1d1-c6782bd2ac23",
+        "58e6486f-b28e-4287-8aab-906534b14794",
         "16f57c16-d5fa-470b-9935-6d88fb42a4b3",
         "52629996-f2ed-4067-922b-8a7040d9341c",
         "dc9a27ca-ab54-4579-a179-9c319f9fb85e",
@@ -2245,32 +1908,24 @@
         "8a7a798e-a22f-4515-be60-60c0865b8d5f"
       ],
       "settings": {
-        "common_name_label": "",
-        "botanical_name_label": "",
-        "organic_label": "",
+        "common_name_label": "Common Name",
+        "botanical_name_label": "Botanical Name",
+        "organic_label": "Organic",
         "product_code_label": "Product Code",
-        "fair_trade_label": "",
-        "all_ingredients_label": "",
-        "fair_trade_on_request_disclaimer": "Sustainably Sourced",
-        "hide_header": true,
+        "fair_trade_label": "Sustainably Sourced",
+        "all_ingredients_label": "All Ingredients",
+        "fair_trade_on_request_disclaimer": "",
+        "hide_header": false,
         "color_scheme": "cream",
         "table_color": "sky",
-        "top_spacing": 0,
-        "bottom_spacing": 100
+        "top_spacing": 50,
+        "bottom_spacing": 0
       }
     }
   },
   "order": [
     "166074672815a86e9b",
     "hero",
-    "1647470795ab7a1dc6",
-    "1647550055d229b4ef",
-    "16475507071b89b3ee",
-    "1647551375a7aa30c6",
-    "164755203664628538",
-    "164755273769f0e65d",
-    "1647553322f76b62bd",
-    "1647554424dfd90706",
-    "1647555438d2e0df81"
+    "1647470795ab7a1dc6"
   ]
 }
