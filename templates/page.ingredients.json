@@ -266,6 +266,162 @@
             "description": "<p>Organic Black Pepper: Found in most kitchens, this popular dried fruit adds depth and kick to any dish.<\/p>",
             "category": "General"
           }
+        },
+        "41141e8e-69d0-40e8-b6d5-05d1ffa0fd0d": {
+          "type": "item",
+          "settings": {
+            "common_name": "",
+            "botanical_name": "",
+            "product_code": "",
+            "organic": false,
+            "fair_trade": "no",
+            "description": "",
+            "category": "General"
+          }
+        },
+        "a9bdfdf7-b9d4-45e0-9f7f-460a67b026ef": {
+          "type": "item",
+          "settings": {
+            "common_name": "",
+            "botanical_name": "",
+            "product_code": "",
+            "organic": false,
+            "fair_trade": "no",
+            "description": "",
+            "category": "General"
+          }
+        },
+        "cc94ee47-6553-468f-942f-46c1bb0375ec": {
+          "type": "item",
+          "settings": {
+            "common_name": "",
+            "botanical_name": "",
+            "product_code": "",
+            "organic": false,
+            "fair_trade": "no",
+            "description": "",
+            "category": "General"
+          }
+        },
+        "056bd278-32b9-4789-b71e-77e416e2c274": {
+          "type": "item",
+          "settings": {
+            "common_name": "",
+            "botanical_name": "",
+            "product_code": "",
+            "organic": false,
+            "fair_trade": "no",
+            "description": "",
+            "category": "General"
+          }
+        },
+        "3215b7bf-63af-4869-a9a7-92f4432fc19a": {
+          "type": "item",
+          "settings": {
+            "common_name": "",
+            "botanical_name": "",
+            "product_code": "",
+            "organic": false,
+            "fair_trade": "no",
+            "description": "",
+            "category": "General"
+          }
+        },
+        "b3e25635-5ee4-46fb-beb3-6773d844827d": {
+          "type": "item",
+          "settings": {
+            "common_name": "",
+            "botanical_name": "",
+            "product_code": "",
+            "organic": false,
+            "fair_trade": "no",
+            "description": "",
+            "category": "General"
+          }
+        },
+        "1ff2bf82-7c47-4cf5-8ceb-9e043f37a823": {
+          "type": "item",
+          "settings": {
+            "common_name": "",
+            "botanical_name": "",
+            "product_code": "",
+            "organic": false,
+            "fair_trade": "no",
+            "description": "",
+            "category": "General"
+          }
+        },
+        "26c3d2c0-58b9-48a2-9789-d711660d0225": {
+          "type": "item",
+          "settings": {
+            "common_name": "",
+            "botanical_name": "",
+            "product_code": "",
+            "organic": false,
+            "fair_trade": "no",
+            "description": "",
+            "category": "General"
+          }
+        },
+        "ad2c145e-be6d-4def-a0d5-3b67a662ea25": {
+          "type": "item",
+          "settings": {
+            "common_name": "",
+            "botanical_name": "",
+            "product_code": "",
+            "organic": false,
+            "fair_trade": "no",
+            "description": "",
+            "category": "General"
+          }
+        },
+        "93c1b13f-6f85-42b3-a4b6-2c3c4f207891": {
+          "type": "item",
+          "settings": {
+            "common_name": "",
+            "botanical_name": "",
+            "product_code": "",
+            "organic": false,
+            "fair_trade": "no",
+            "description": "",
+            "category": "General"
+          }
+        },
+        "303909f9-16cb-4e1b-804b-2ec04d58f6b3": {
+          "type": "item",
+          "settings": {
+            "common_name": "",
+            "botanical_name": "",
+            "product_code": "",
+            "organic": false,
+            "fair_trade": "no",
+            "description": "",
+            "category": "General"
+          }
+        },
+        "60b9abf2-9d58-4c89-98b2-47c80769fb40": {
+          "type": "item",
+          "settings": {
+            "common_name": "",
+            "botanical_name": "",
+            "product_code": "",
+            "organic": false,
+            "fair_trade": "no",
+            "description": "",
+            "category": "General"
+          }
+        },
+        "e19a86c0-c174-487c-9103-89bc1bbc3b77": {
+          "type": "item",
+          "settings": {
+            "common_name": "",
+            "botanical_name": "",
+            "product_code": "",
+            "organic": false,
+            "fair_trade": "no",
+            "description": "",
+            "category": "General"
+          }
         }
       },
       "block_order": [
@@ -285,7 +441,20 @@
         "151a68ea-4360-4096-912e-87347aa3a929",
         "9c945944-c658-4832-bef5-fb37cf9d4afc",
         "bee48060-8a2e-40e9-a6fe-a0130eb2c278",
-        "c10da750-9576-4399-ab41-3e86344a6523"
+        "c10da750-9576-4399-ab41-3e86344a6523",
+        "41141e8e-69d0-40e8-b6d5-05d1ffa0fd0d",
+        "a9bdfdf7-b9d4-45e0-9f7f-460a67b026ef",
+        "cc94ee47-6553-468f-942f-46c1bb0375ec",
+        "056bd278-32b9-4789-b71e-77e416e2c274",
+        "3215b7bf-63af-4869-a9a7-92f4432fc19a",
+        "b3e25635-5ee4-46fb-beb3-6773d844827d",
+        "1ff2bf82-7c47-4cf5-8ceb-9e043f37a823",
+        "26c3d2c0-58b9-48a2-9789-d711660d0225",
+        "ad2c145e-be6d-4def-a0d5-3b67a662ea25",
+        "93c1b13f-6f85-42b3-a4b6-2c3c4f207891",
+        "303909f9-16cb-4e1b-804b-2ec04d58f6b3",
+        "60b9abf2-9d58-4c89-98b2-47c80769fb40",
+        "e19a86c0-c174-487c-9103-89bc1bbc3b77"
       ],
       "settings": {
         "common_name_label": "Common Name",

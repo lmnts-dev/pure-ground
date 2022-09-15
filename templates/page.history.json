@@ -46,7 +46,8 @@
         "16438188434dae6d1d-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Our interest in all-things organic began long before the organic craze hit the States. It didn’t revolve around diet fads or buzzwords or pretty packaging on grocery store shelves, but instead came from one place—our vision of a world where growers, manufacturers, and consumers all came together in the name of better ingredients, sustainable practices, and a happier, healthier planet. <\/p><p>We first founded Pure Ground Ingredients in 2011, but our story starts nearly 20 years prior. Having grown up in a family whose business was fair-trade herbal tea, we always understood the importance of fair-trade—a program that gives products stable prices, ultimately helping farmers and their communities thrive in the face of unpredictable markets. What we noticed at the time was a major void in fair-trade ingredients. Fair-trade coffee, tea, and sugar were all readily available...but that was about it. We knew almost immediately that we wanted to help bring a wider range of high-quality, fair-trade, certified-organic ingredients to consumers—and in order to do that, we needed to start at the source: growers around the globe. So, we packed our bags and embarked on the first of many adventures.<\/p>"
+            "text": "<p>Our interest in all-things organic began long before the organic craze hit the States. It didn’t revolve around diet fads or buzzwords or pretty packaging on grocery store shelves, but instead came from one place—our vision of a world where growers, manufacturers, and consumers all came together in the name of better ingredients, sustainable practices, and a happier, healthier planet. <\/p><p>We first founded Pure Ground Ingredients in 2011, but our story starts nearly 20 years prior. Having grown up in a family whose business was fair-trade herbal tea, we always understood the importance of fair-trade—a program that gives products stable prices, ultimately helping farmers and their communities thrive in the face of unpredictable markets. What we noticed at the time was a major void in fair-trade ingredients. Fair-trade coffee, tea, and sugar were all readily available...but that was about it. We knew almost immediately that we wanted to help bring a wider range of high-quality, fair-trade, certified-organic ingredients to consumers—and in order to do that, we needed to start at the source: growers around the globe. So, we packed our bags and embarked on the first of many adventures.<\/p>",
+            "text_size": "default"
           }
         }
       },
@@ -199,37 +200,6 @@
         "bottom_spacing": 50
       }
     },
-    "16460677599db23d60": {
-      "type": "split-section",
-      "blocks": {
-        "3bace683-18eb-42ab-8cfa-3856140c8447": {
-          "type": "heading",
-          "settings": {
-            "heading": "BRIDGING THE GAP",
-            "heading_size": "caption-lg"
-          }
-        },
-        "16460677595b4c6412-0": {
-          "type": "text",
-          "settings": {
-            "text": "<p>We like to think of ourselves as the bridge between farmers of organic ingredients and manufacturers of organic food products—and our most important role is being a friend to both. It didn’t take us long to learn that farmers thrive when manufacturers thrive, and vice-versa—so we work every day to play a role that adds value to both parties.<\/p><p>Our farmers run small operations and often don’t have the resources they need to get to market on their own... Here we form a bridge: We work with farmers to bring their product to the manufacturers who are looking for it—ultimately helping to bring greater economic value to farmers’ products and their communities. On the other side, we work with manufacturers to source the highest-quality, certified-organic ingredients for their products—ensuring brand integrity and, ultimately, happy consumers.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "3bace683-18eb-42ab-8cfa-3856140c8447",
-        "16460677595b4c6412-0"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/2018-08-21_17.54_1_0e4f3b9e-7a69-4022-bc9a-dda171bbb6e2.jpg",
-        "hero": false,
-        "color_scheme": "cream",
-        "layout": "reversed",
-        "image_style": "square",
-        "top_spacing": 50,
-        "bottom_spacing": 100
-      }
-    },
     "164442397541aa9134": {
       "type": "featured-page-link",
       "settings": {
@@ -248,7 +218,6 @@
     "16607611403a568437",
     "16444193660de6d319",
     "1644419517490faa29",
-    "16460677599db23d60",
     "164442397541aa9134"
   ]
 }
