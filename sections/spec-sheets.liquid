@@ -72,13 +72,6 @@
          {% endif %}
       {%- endfor -%}
 
-      {% if section.settings.fair_trade_on_request_disclaimer != "" %}
-         <div class="spec-sheets__key">
-            {% render 'icon-fair-trade' %}
-            <p class="spec-sheets__key__text p-sm">{{ section.settings.fair_trade_on_request_disclaimer }}</p>
-         </div>
-      {% endif %}
-
       {% comment %} Split categories string into an array {% endcomment %}
       {% assign categories = categories | split: "$$$" | uniq %}
 

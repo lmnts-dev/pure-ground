@@ -30,7 +30,7 @@
   &__icons {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-between;
     gap: var(--pxSize) 0;
 
     &__icon {
@@ -58,7 +58,6 @@
       }
 
       &-row {
-        justify-content: unset;
         gap: calc(var(--pxSize) / 3);
 
         .icons-section__icons__icon {
