@@ -87,7 +87,7 @@
         "button_label": "Button label",
         "button_link": "",
         "alt": "",
-        "layout": "three-col",
+        "layout": "one-col",
         "icon_height": 160,
         "color_scheme": "sky",
         "top_spacing": 100,
