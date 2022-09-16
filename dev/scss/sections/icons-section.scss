@@ -96,5 +96,9 @@
       padding-left: var(--sectionHorizontalSpacing);
       display: block;
     }
+
+    &__icons {
+      justify-content: flex-start;
+    }
   }
 }
