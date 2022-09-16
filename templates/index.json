@@ -396,17 +396,17 @@
             "text": ""
           }
         },
-        "7b23ab34-51cc-4223-afd1-f4b99ff546bc": {
-          "type": "image",
-          "settings": {
-            "icon": "shopify:\/\/shop_images\/sqf-logo-lvl-2.png",
-            "text": ""
-          }
-        },
         "c9b812e5-f261-4a47-ba2e-9218bb41df34": {
           "type": "image",
           "settings": {
             "icon": "shopify:\/\/shop_images\/Group_259.png",
+            "text": ""
+          }
+        },
+        "7b23ab34-51cc-4223-afd1-f4b99ff546bc": {
+          "type": "image",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/sqf-logo-lvl-2.png",
             "text": ""
           }
         }
@@ -416,8 +416,8 @@
         "eb278ae6-0113-4ef0-87a5-e580a5ca5b57",
         "083741a4-199c-4747-a353-d9cadffc415c",
         "5b3880c5-8f0f-4d8c-a47d-2507decae8ed",
-        "7b23ab34-51cc-4223-afd1-f4b99ff546bc",
-        "c9b812e5-f261-4a47-ba2e-9218bb41df34"
+        "c9b812e5-f261-4a47-ba2e-9218bb41df34",
+        "7b23ab34-51cc-4223-afd1-f4b99ff546bc"
       ],
       "settings": {
         "caption": "",
