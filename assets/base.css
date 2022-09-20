@@ -2058,6 +2058,11 @@ input[type="checkbox"] {
   display: none;
 }
 
+.shopify-section.section:not(:nth-child(3)) .spec-sheets .spec-sheets__info__key {
+  display: none;
+}
+
+
 /* Main Header Layout */
 .header-wrapper {
   display: block;

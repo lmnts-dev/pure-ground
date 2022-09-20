@@ -59,7 +59,7 @@
          {% assign category_handle = category | handleize %}
 
          {% comment %} Output item {% endcomment %}
-         <div class="spec-sheets__item __active" data-category="{{ category_handle }}">
+         <div class="spec-sheets__item __active color-{{ section.settings.table_color }}" data-category="{{ category_handle }}">
             <input class="spec-sheets__item__checkbox" type="checkbox" id="Item-{{ section.id }}-{{ forloop.index0 }}">
             <label class="spec-sheets__item__label" for="Item-{{ section.id }}-{{ forloop.index0 }}">
                <p class="p-sm common-name">{{ block.settings.common_name }}</p>
@@ -219,21 +219,9 @@
       },
       {
         "type":"text",
-        "id":"organic_label",
-        "label": "Organic Label",
-         "default": "Organic"
-      },
-      {
-        "type":"text",
         "id":"product_code_label",
         "label": "Product Code Label",
         "default": "Product Code"
-      },
-      {
-        "type":"text",
-        "id":"fair_trade_label",
-        "label": "Fair Trade Label",
-         "default": "Fair Trade"
       },
       {
         "type":"text",
@@ -250,7 +238,7 @@
       {
         "type":"text",
         "id":"fair_trade_disclaimer",
-        "label": "Fair-Trade",
+        "label": "Fair-Trade Label",
          "default": "*Fair-Trade available upon request"
       },
       {
@@ -374,11 +362,6 @@
             "type": "text",
             "id": "product_code",
             "label": "Product Code"
-         },
-         {
-            "type": "checkbox",
-            "id": "organic",
-            "label": "Organic?"
          },
          {
             "type":"select",
