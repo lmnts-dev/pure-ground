@@ -162,6 +162,29 @@
         "bottom_spacing": 50
       }
     },
+    "1663642867a9686654": {
+      "type": "rich-text",
+      "blocks": {
+        "1663642866c52d4d6a-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Partners",
+            "heading_size": "caption-lg",
+            "heading_alignment": "center",
+            "subheading": ""
+          }
+        }
+      },
+      "block_order": [
+        "1663642866c52d4d6a-0"
+      ],
+      "settings": {
+        "color_scheme": "cream",
+        "hero": false,
+        "top_spacing": 100,
+        "bottom_spacing": 0
+      }
+    },
     "1663641871bf71a165": {
       "type": "icons-section",
       "blocks": {
@@ -259,7 +282,7 @@
       "settings": {
         "caption": "",
         "heading": "",
-        "subheading": "Partners",
+        "subheading": "",
         "heading_size": "h4",
         "accent_color": false,
         "text": "",
@@ -270,7 +293,7 @@
         "icon_height": 80,
         "color_scheme": "cream",
         "top_spacing": 50,
-        "bottom_spacing": 50
+        "bottom_spacing": 100
       }
     },
     "164497174668dcfe61": {
@@ -464,6 +487,7 @@
     "collections-grid",
     "16630167896c556fcd",
     "16607057366a572f05",
+    "1663642867a9686654",
     "1663641871bf71a165",
     "164497174668dcfe61",
     "16450418065fdb6a59",
