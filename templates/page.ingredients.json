@@ -261,8 +261,8 @@
         "sustainably_sourced": "Sustainably Sourced",
         "fair_trade_disclaimer": "*Fair-Trade available upon request",
         "hide_header": false,
-        "color_scheme": "sky",
-        "table_color": "cream",
+        "color_scheme": "cream",
+        "table_color": "sky",
         "top_spacing": 50,
         "bottom_spacing": 0
       }
