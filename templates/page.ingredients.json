@@ -279,7 +279,7 @@
         "fair_trade_disclaimer": "*Fair-Trade available upon request",
         "hide_header": false,
         "color_scheme": "cream",
-        "table_color": "grass",
+        "table_color": "sky",
         "top_spacing": 50,
         "bottom_spacing": 0
       }
@@ -493,7 +493,7 @@
         "fair_trade_disclaimer": "*Fair-Trade available upon request",
         "hide_header": true,
         "color_scheme": "cream",
-        "table_color": "grass",
+        "table_color": "sky",
         "top_spacing": 0,
         "bottom_spacing": 0
       }
@@ -718,7 +718,7 @@
         "fair_trade_disclaimer": "*Fair-Trade available upon request",
         "hide_header": true,
         "color_scheme": "cream",
-        "table_color": "grass",
+        "table_color": "sky",
         "top_spacing": 0,
         "bottom_spacing": 0
       }
@@ -943,7 +943,7 @@
         "fair_trade_disclaimer": "*Fair-Trade available upon request",
         "hide_header": true,
         "color_scheme": "cream",
-        "table_color": "grass",
+        "table_color": "sky",
         "top_spacing": 0,
         "bottom_spacing": 0
       }
@@ -1935,7 +1935,7 @@
         "fair_trade_disclaimer": "*Fair-Trade available upon request",
         "hide_header": true,
         "color_scheme": "cream",
-        "table_color": "grass",
+        "table_color": "sky",
         "top_spacing": 0,
         "bottom_spacing": 100
       }
