@@ -19,7 +19,10 @@
          {% if section.settings.fair_trade_on_request_disclaimer != "" %}
             <div class="spec-sheets__info__key">
                {% render 'icon-fair-trade' %}
-               <p class="spec-sheets__info__key__text p-sm">{{ section.settings.fair_trade_on_request_disclaimer }}</p>
+               <div class="spec-sheets__info__key__text">
+                  <p>{{ section.settings.sustainably_sourced }}</p>
+                  <p class="p-sm">{{ section.settings.fair_trade_on_request_disclaimer }}</p>
+                  </div>
             </div>
          {% endif %}
 
@@ -179,7 +182,6 @@
     filterValue=searchField.value.toLowerCase();
     console.log(filterValue,'filtervalue here');
      allItems.map((name)=>{
-      console.log(allItems, ' all tiems');
       if(name.innerHTML.toLowerCase().includes(filterValue)){
          name.classList.remove('hide');
       }
@@ -239,9 +241,15 @@
       },
       {
         "type":"text",
-        "id":"fair_trade_on_request_disclaimer",
+        "id":"sustainably_sourced",
         "label": "Sustainably Sourced",
          "default": "Sustainably Sourced"
+      },
+      {
+        "type":"text",
+        "id":"fair_trade_on_request_disclaimer",
+        "label": "Fair-Trade",
+         "default": "Fair-Trade available upon request"
       },
       {
          "type": "checkbox",

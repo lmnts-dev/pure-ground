@@ -200,6 +200,10 @@
       &__text{
         margin-bottom:0;
         margin-left: calc(var(--pxSize)/ 3);
+
+        p{
+          margin-bottom: 0;
+        }
       }
     }
   }
