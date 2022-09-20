@@ -162,6 +162,117 @@
         "bottom_spacing": 50
       }
     },
+    "1663641871bf71a165": {
+      "type": "icons-section",
+      "blocks": {
+        "404e2d8c-7c3e-4ed5-9c81-6bc70d508fe1": {
+          "type": "image",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/md.png",
+            "text": ""
+          }
+        },
+        "8e825935-d057-429a-91f4-efe3a10e7214": {
+          "type": "image",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/starbucks.png",
+            "text": ""
+          }
+        },
+        "416f6098-bcd9-4b16-91c6-528eb62dd1a9": {
+          "type": "image",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/pngaaa.com-2880818.png",
+            "text": ""
+          }
+        },
+        "f84030d3-3ef8-42fa-9cc4-353a1c6c9ce5": {
+          "type": "image",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/yogi-tea-vector-logo-2.png",
+            "text": ""
+          }
+        },
+        "434eff37-59fb-483a-9138-de05e40b778f": {
+          "type": "image",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/traditional-medicinals-logo.png",
+            "text": ""
+          }
+        },
+        "91c0dedf-6ebc-4fe9-9319-3bc4a47096d1": {
+          "type": "image",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/vitality-works-logo_458c2e5e-4a96-4948-bbe1-5fb9496226ac.png",
+            "text": ""
+          }
+        },
+        "bad9527d-1466-49c9-b213-9cc27aa5164a": {
+          "type": "image",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/amys-logo.png",
+            "text": ""
+          }
+        },
+        "e4233f98-aeaf-4efb-8354-ef079c040adf": {
+          "type": "image",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/pngfind.com-herbs-png-1420548.png",
+            "text": ""
+          }
+        },
+        "ec04c5f8-8bf7-4e7f-ad19-8084df8f5d5a": {
+          "type": "image",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/rishi-tea-logo.png",
+            "text": ""
+          }
+        },
+        "d9957658-bd27-4e4f-8ad8-addf49c9209f": {
+          "type": "image",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/frontier-logo_1.png",
+            "text": ""
+          }
+        },
+        "4b5d25e2-50c0-4d1b-bdc4-f58134ac6dd1": {
+          "type": "image",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/jr-watkins-logo.png",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "404e2d8c-7c3e-4ed5-9c81-6bc70d508fe1",
+        "8e825935-d057-429a-91f4-efe3a10e7214",
+        "416f6098-bcd9-4b16-91c6-528eb62dd1a9",
+        "f84030d3-3ef8-42fa-9cc4-353a1c6c9ce5",
+        "434eff37-59fb-483a-9138-de05e40b778f",
+        "91c0dedf-6ebc-4fe9-9319-3bc4a47096d1",
+        "bad9527d-1466-49c9-b213-9cc27aa5164a",
+        "e4233f98-aeaf-4efb-8354-ef079c040adf",
+        "ec04c5f8-8bf7-4e7f-ad19-8084df8f5d5a",
+        "d9957658-bd27-4e4f-8ad8-addf49c9209f",
+        "4b5d25e2-50c0-4d1b-bdc4-f58134ac6dd1"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "",
+        "subheading": "Partners",
+        "heading_size": "h4",
+        "accent_color": false,
+        "text": "",
+        "button_label": "Button label",
+        "button_link": "",
+        "alt": "",
+        "layout": "three-col",
+        "icon_height": 100,
+        "color_scheme": "cream",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
+    },
     "16450306926c068d86": {
       "type": "icons-row",
       "blocks": {
@@ -425,7 +536,6 @@
         "subheading": "Ingredients just the way you want them",
         "heading_size": "h1",
         "accent_color": true,
-        "center_content": false,
         "text": "<p>In our efforts to ensure the integrity we provide, we import the whole organic ingredients.  We do in house micro-reduction and process to meet a wide range of specs. <\/p>",
         "button_label": "Learn More",
         "button_link": "shopify:\/\/pages\/quality-assurance-organic-integrity",
@@ -455,6 +565,7 @@
     "collections-grid",
     "16630167896c556fcd",
     "16607057366a572f05",
+    "1663641871bf71a165",
     "16450306926c068d86",
     "164497174668dcfe61",
     "16450418065fdb6a59",
