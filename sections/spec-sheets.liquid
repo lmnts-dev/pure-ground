@@ -16,12 +16,14 @@
 
    <div id="Spec-sheets-{{ section.id }}" class="spec-sheets color-{{section.settings.color_scheme}}">
       <div class="spec-sheets__info">
-         {% if section.settings.fair_trade_on_request_disclaimer != "" %}
+         {% if section.settings.sustainably_sourced != "" %}
             <div class="spec-sheets__info__key">
                {% render 'icon-fair-trade' %}
                <div class="spec-sheets__info__key__text">
                   <p>{{ section.settings.sustainably_sourced }}</p>
-                  <p class="p-sm">{{ section.settings.fair_trade_on_request_disclaimer }}</p>
+                  {% if section.settings.fair_trade_disclaimer != "" %}
+                     <p class="p-sm">{{ section.settings.fair_trade_disclaimer }}</p>
+                  {% endif %}
                   </div>
             </div>
          {% endif %}
@@ -243,13 +245,13 @@
         "type":"text",
         "id":"sustainably_sourced",
         "label": "Sustainably Sourced",
-         "default": "Sustainably Sourced"
+         "default": "Not working"
       },
       {
         "type":"text",
-        "id":"fair_trade_on_request_disclaimer",
+        "id":"fair_trade_disclaimer",
         "label": "Fair-Trade",
-         "default": "Fair-Trade available upon request"
+         "default": "*Fair-Trade available upon request"
       },
       {
          "type": "checkbox",
