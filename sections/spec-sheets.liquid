@@ -10,10 +10,6 @@
 {% comment %} Make sure user added items {% endcomment %}
 {% if section.blocks.size > 0 %}
 
-  {% comment %} Variables needed to gather category nav data {% endcomment %}
-  {% assign default_category = "General" %}
-  {% assign categories = default_category %}
-
    <div id="Spec-sheets-{{ section.id }}" class="spec-sheets color-{{section.settings.color_scheme}}">
       <div class="spec-sheets__info">
          {% if section.settings.sustainably_sourced != "" %}
@@ -51,15 +47,8 @@
       {%- for block in section.blocks -%}
          {% if block.settings.common_name %}
 
-         {% comment %} Assign category variables {% endcomment %}
-         {% assign category = default_category %}
-         {% if block.settings.category %}
-            {% assign category = block.settings.category %}
-         {% endif %}
-         {% assign category_handle = category | handleize %}
-
          {% comment %} Output item {% endcomment %}
-         <div class="spec-sheets__item __active color-{{ section.settings.table_color }}" data-category="{{ category_handle }}">
+         <div class="spec-sheets__item __active  color-{{ section.settings.table_color }}">
             <input class="spec-sheets__item__checkbox" type="checkbox" id="Item-{{ section.id }}-{{ forloop.index0 }}">
             <label class="spec-sheets__item__label" for="Item-{{ section.id }}-{{ forloop.index0 }}">
                <p class="p-sm common-name">{{ block.settings.common_name }}</p>
@@ -76,52 +65,8 @@
                </div>
             </div>
          </div>
-
-         {% comment %} 
-            Add aitem category to categories string, 
-            which we will split into an array after the loop is completed 
-         {% endcomment %}
-         {% assign categories = categories | append: "$$$" | append: category %}
          {% endif %}
    {%- endfor -%}
-
-      {% comment %} Split categories string into an array {% endcomment %}
-      {% assign categories = categories | split: "$$$" | uniq %}
-
-      {% comment %} 
-         Output nav if there's more than 
-         one category to navigate through 
-      {% endcomment %}
-      {% if categories.size > 1 %}
-         <ul class="spec-sheets__nav">
-            <li class="spec-sheets__nav__item">
-               <accordions-button
-                  class="spec-sheets__button caption __active"
-                  data-category="all"
-               >
-                  {% if section.settings.all_ingredients_label %}
-                     {{ section.settings.all_ingredients_label }}
-                  {% else %}
-                     all
-                  {% endif %}
-               </accordions-button>
-            </li>
-         {%- for category in categories -%}
-            {% assign category_handle = category | handleize %}
-
-               {% comment %} Each nav item {% endcomment %}
-               <li class="spec-sheets__nav__item">
-               {% comment %} Tag logic below sets listener on {% endcomment %}
-               <accordions-button
-                  class="spec-sheets__button caption"
-                  data-category="{{ category_handle }}"
-               >
-                  {{ category }}
-               </accordions-button>
-               </li>
-         {%- endfor -%}
-         </ul>
-      {% endif %}
    </div>
 {% endif %}
 
@@ -134,46 +79,6 @@
 
       this.setupListener();
     }
-
-    //Add a on click listener to every accordion category nav button
-    setupListener() {
-      this.addEventListener('click', this.updateCategory.bind(this));
-    }
-
-    //on category nav button click, updates what is active
-    updateCategory() {
-
-      //parent element for this section
-      var thisSection = this.parentNode.parentNode.parentNode;
-      //clicked on item's category
-      var category = this.getAttribute('data-category');
-      //all items in this section
-      var faqItems = thisSection.querySelectorAll('.spec-sheets__item');
-      //all nav buttons
-      var faqNavItems = thisSection.querySelectorAll('.spec-sheets__button');
-      
-
-      //remove or add active class on items
-      for ( var i = 0; i < faqItems.length; i++ ){
-        if (faqItems[i].getAttribute('data-category') == category || category == "all"){
-          faqItems[i].classList.add('__active');
-        }
-        else {
-          faqItems[i].classList.remove('__active');
-        }
-      }
-
-      //remove active class on nav buttons
-      for (var i = 0; i < faqNavItems.length; i++ ) {
-        faqNavItems[i].classList.remove('__active');
-      }
-
-      //add active class on clicked item
-      this.classList.add('__active');
-    }
-  }
-
-  customElements.define('accordions-button', AccordionsNavButton);
 
  //Ingredients Filter
 
@@ -205,196 +110,189 @@
   "tag": "section",
   "class": "section",
   "settings": [
-      {
-        "type":"text",
-        "id":"common_name_label",
-        "label": "Common Name Label",
-         "default": "Common Name"
-      },
-      {
-        "type":"text",
-        "id":"botanical_name_label",
-        "label": "Botanical Name Label",
-        "default": "Botanical Name"
-      },
-      {
-        "type":"text",
-        "id":"product_code_label",
-        "label": "Product Code Label",
-        "default": "Product Code"
-      },
-      {
-        "type":"text",
-        "id":"all_ingredients_label",
-        "label": "All Ingredients Label",
-         "default": "All Ingredients"
-      },
-      {
-        "type":"text",
-        "id":"sustainably_sourced",
-        "label": "Sustainably Sourced",
-         "default": "Not working"
-      },
-      {
-        "type":"text",
-        "id":"fair_trade_disclaimer",
-        "label": "Fair-Trade Label",
-         "default": "*Fair-Trade available upon request"
-      },
-      {
-         "type": "checkbox",
-         "id": "hide_header",
-         "label": "Hide table header?"
-      },
-      {
-         "type":"select",
-         "id":"color_scheme",
-         "options":[
-            {
-               "value":"cream",
-               "label":"Cream (Default)"
-            },
-            {
-               "value":"dark-cream",
-               "label":"Dark Cream"
-            },
-            {
-               "value":"grass",
-               "label":"Grass"
-            },
-            {
-               "value":"sun",
-               "label":"Sun"
-            },
-            {
-               "value":"ground",
-               "label":"Ground"
-            },
-            {
-               "value":"sky",
-               "label":"Sky"
-            },
-            {
-               "value":"tan",
-               "label":"Tan"
-            }
-         ],
-         "default":"cream",
-         "label":"Color Scheme"
-      },
-      {
-         "type":"select",
-         "id":"table_color",
-         "options":[
-            {
-               "value":"default",
-               "label":"Default"
-            },
-            {
-               "value":"cream",
-               "label":"Cream (Default)"
-            },
-            {
-               "value":"dark-cream",
-               "label":"Dark Cream"
-            },
-            {
-               "value":"grass",
-               "label":"Grass"
-            },
-            {
-               "value":"sun",
-               "label":"Sun"
-            },
-            {
-               "value":"ground",
-               "label":"Ground"
-            },
-            {
-               "value":"sky",
-               "label":"Sky"
-            },
-            {
-               "value":"tan",
-               "label":"Tan"
-            }
-         ],
-         "default":"sky",
-         "label":"Table Header Color"
-      },
-      {
-         "type":"range",
-         "id":"top_spacing",
-         "min":0,
-         "max":100,
-         "step":10,
-         "unit":"%",
-         "label":"Top Spacing",
-         "default":50
-      },
-      {
-         "type":"range",
-         "id":"bottom_spacing",
-         "min":0,
-         "max":100,
-         "step":10,
-         "unit":"%",
-         "label":"Bottom Spacing",
-         "default":50
-      }
+    {
+      "type": "text",
+      "id": "common_name_label",
+      "label": "Common Name Label",
+      "default": "Common Name"
+    },
+    {
+      "type": "text",
+      "id": "botanical_name_label",
+      "label": "Botanical Name Label",
+      "default": "Botanical Name"
+    },
+    {
+      "type": "text",
+      "id": "product_code_label",
+      "label": "Product Code Label",
+      "default": "Product Code"
+    },
+    {
+      "type": "text",
+      "id": "all_ingredients_label",
+      "label": "All Ingredients Label",
+      "default": "All Ingredients"
+    },
+    {
+      "type": "text",
+      "id": "sustainably_sourced",
+      "label": "Sustainably Sourced",
+      "default": "Not working"
+    },
+    {
+      "type": "text",
+      "id": "fair_trade_disclaimer",
+      "label": "Fair-Trade Label",
+      "default": "*Fair-Trade available upon request"
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_header",
+      "label": "Hide table header?"
+    },
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "options": [
+        {
+          "value": "cream",
+          "label": "Cream (Default)"
+        },
+        {
+          "value": "dark-cream",
+          "label": "Dark Cream"
+        },
+        {
+          "value": "grass",
+          "label": "Grass"
+        },
+        {
+          "value": "sun",
+          "label": "Sun"
+        },
+        {
+          "value": "ground",
+          "label": "Ground"
+        },
+        {
+          "value": "sky",
+          "label": "Sky"
+        },
+        {
+          "value": "tan",
+          "label": "Tan"
+        }
+      ],
+      "default": "cream",
+      "label": "Color Scheme"
+    },
+    {
+      "type": "select",
+      "id": "table_color",
+      "options": [
+        {
+          "value": "default",
+          "label": "Default"
+        },
+        {
+          "value": "cream",
+          "label": "Cream (Default)"
+        },
+        {
+          "value": "dark-cream",
+          "label": "Dark Cream"
+        },
+        {
+          "value": "grass",
+          "label": "Grass"
+        },
+        {
+          "value": "sun",
+          "label": "Sun"
+        },
+        {
+          "value": "ground",
+          "label": "Ground"
+        },
+        {
+          "value": "sky",
+          "label": "Sky"
+        },
+        {
+          "value": "tan",
+          "label": "Tan"
+        }
+      ],
+      "default": "sky",
+      "label": "Table Header Color"
+    },
+    {
+      "type": "range",
+      "id": "top_spacing",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "%",
+      "label": "Top Spacing",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "bottom_spacing",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "%",
+      "label": "Bottom Spacing",
+      "default": 50
+    }
   ],
-   "blocks": [
+  "blocks": [
     {
       "name": "Item",
       "type": "item",
       "settings": [
-         {
-            "type": "text",
-            "id": "common_name",
-            "label": "Common Name"
-         },
-         {
-            "type": "text",
-            "id": "botanical_name",
-            "label": "Botanical Name"
-         },
-         {
-            "type": "text",
-            "id": "product_code",
-            "label": "Product Code"
-         },
-         {
-            "type":"select",
-            "id":"fair_trade",
-            "options": [
-               {
-                  "value":"no",
-                  "label":"No"
-               },
-               {
-                  "value":"yes",
-                  "label":"Yes"
-               },
-               {
-                  "value":"on_request",
-                  "label":"On Request"
-               }
-            ],
-            "default":"no",
-            "label":"Fair Trade?"
-         },
-         {
-            "type": "richtext",
-            "id": "description",
-            "label": "Description"
-         },
-         {
-            "type": "text",
-            "id": "category",
-            "label": "Category",
-            "default": "General",
-            "info": "You can categorize your items into categories like 'General' or 'Spicy'. If no category is written, this item will be categorized as 'General'. The ability to navigate between categories will only display if there are two or more categories in this section."
-         }
+        {
+          "type": "text",
+          "id": "common_name",
+          "label": "Common Name"
+        },
+        {
+          "type": "text",
+          "id": "botanical_name",
+          "label": "Botanical Name"
+        },
+        {
+          "type": "text",
+          "id": "product_code",
+          "label": "Product Code"
+        },
+        {
+          "type": "select",
+          "id": "fair_trade",
+          "options": [
+            {
+              "value": "no",
+              "label": "No"
+            },
+            {
+              "value": "yes",
+              "label": "Yes"
+            },
+            {
+              "value": "on_request",
+              "label": "On Request"
+            }
+          ],
+          "default": "no",
+          "label": "Fair Trade?"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description"
+        }
       ]
     }
   ],
