@@ -72,7 +72,7 @@
             "organic": true,
             "fair_trade": "no",
             "description": "<p>Organic Alfalfa Leaf: This nutrient-dense herb, known for its strengthening properties, is a great addition to tinctures, tea blends, and smoothies<\/p>",
-            "category": "General"
+            "category": "Test"
           }
         },
         "23cbf211-ccb4-443c-b178-3e2489966f4f": {
@@ -298,7 +298,7 @@
         "fair_trade_disclaimer": "*Fair-Trade available upon request",
         "hide_header": false,
         "color_scheme": "cream",
-        "table_color": "sky",
+        "table_color": "ground",
         "top_spacing": 50,
         "bottom_spacing": 0
       }
