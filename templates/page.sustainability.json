@@ -62,6 +62,29 @@
         "bottom_spacing": 100
       }
     },
+    "1663642639a80913b4": {
+      "type": "rich-text",
+      "blocks": {
+        "16636426393915475c-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "We envision a world in which farmers, manufacturers and consumers come together in the name of a healthier planet and thriving communities.",
+            "heading_size": "h2",
+            "heading_alignment": "center",
+            "subheading": ""
+          }
+        }
+      },
+      "block_order": [
+        "16636426393915475c-0"
+      ],
+      "settings": {
+        "color_scheme": "sky",
+        "hero": false,
+        "top_spacing": 50,
+        "bottom_spacing": 10
+      }
+    },
     "1663030017bd4a38e5": {
       "type": "icons-section",
       "blocks": {
@@ -78,11 +101,10 @@
       ],
       "settings": {
         "caption": "",
-        "heading": "We envision a world in which farmers, manufacturers and consumers come together in the name of a healthier planet and thriving communities.",
+        "heading": "",
         "subheading": "",
         "heading_size": "h2",
         "accent_color": false,
-        "center_content": true,
         "text": "",
         "button_label": "Button label",
         "button_link": "",
@@ -90,7 +112,7 @@
         "layout": "one-col",
         "icon_height": 160,
         "color_scheme": "sky",
-        "top_spacing": 100,
+        "top_spacing": 10,
         "bottom_spacing": 0
       }
     },
@@ -204,7 +226,6 @@
         "subheading": "",
         "heading_size": "h4",
         "accent_color": false,
-        "center_content": false,
         "text": "<p>We believe in self responsibility and collective action. We are proud to have aligned with the UN’s integral approach and call to action to end poverty, protect the planet, and ensure that by 2030 all people enjoy peace and prosperity.<\/p><p>We know we can all work together to create a happier, healthier world.<\/p>",
         "button_label": "Button label",
         "button_link": "",
@@ -311,6 +332,7 @@
   "order": [
     "166074672815a86e9b",
     "1643818843f333eb74",
+    "1663642639a80913b4",
     "1663030017bd4a38e5",
     "1660746979c48fd613",
     "16444193660de6d319",
