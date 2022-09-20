@@ -273,107 +273,6 @@
         "bottom_spacing": 50
       }
     },
-    "16450306926c068d86": {
-      "type": "icons-row",
-      "blocks": {
-        "ddc6ae4f-850d-4af2-b30f-b2cfa4c27d8b": {
-          "type": "icon",
-          "settings": {
-            "icon": "shopify:\/\/shop_images\/md.png",
-            "alt": "McCormick logo"
-          }
-        },
-        "0a3401c2-cdcb-45c7-a115-863942ecd068": {
-          "type": "icon",
-          "settings": {
-            "icon": "shopify:\/\/shop_images\/starbucks.png",
-            "alt": "Starbucks logo"
-          }
-        },
-        "d2a015f6-ec5e-4279-a122-c75324dad550": {
-          "type": "icon",
-          "settings": {
-            "icon": "shopify:\/\/shop_images\/pngaaa.com-2880818.png",
-            "alt": "Celestial Seasonings logo"
-          }
-        },
-        "c08a2a5b-6ebe-4cc0-95b3-7691599bfe20": {
-          "type": "icon",
-          "settings": {
-            "icon": "shopify:\/\/shop_images\/yogi-tea-vector-logo-2.png",
-            "alt": "Yogi Logo"
-          }
-        },
-        "0f186d34-13dd-40c1-ae96-9266b6a353d1": {
-          "type": "icon",
-          "settings": {
-            "icon": "shopify:\/\/shop_images\/traditional-medicinals-logo.png",
-            "alt": "Traditional Medicinals logo"
-          }
-        },
-        "66b74de8-3615-45a3-8d9b-351ef30333a9": {
-          "type": "icon",
-          "settings": {
-            "icon": "shopify:\/\/shop_images\/vitality-works-logo_458c2e5e-4a96-4948-bbe1-5fb9496226ac.png",
-            "alt": "Vitality Works"
-          }
-        },
-        "224b3659-8585-4ecd-af3b-1203bae4b59d": {
-          "type": "icon",
-          "settings": {
-            "icon": "shopify:\/\/shop_images\/amys-logo.png",
-            "alt": "Amy's Kitchen Logo"
-          }
-        },
-        "19ea3b46-28e6-4cad-bfe4-432bca3e3973": {
-          "type": "icon",
-          "settings": {
-            "icon": "shopify:\/\/shop_images\/pngfind.com-herbs-png-1420548.png",
-            "alt": "Mountain Rose Herbs"
-          }
-        },
-        "578edcf5-29d4-4dee-8e57-7f52376dfd08": {
-          "type": "icon",
-          "settings": {
-            "icon": "shopify:\/\/shop_images\/rishi-tea-logo.png",
-            "alt": "Starwest Botanicals"
-          }
-        },
-        "c1745d10-1a4a-4570-9a1d-c5496b0280c1": {
-          "type": "icon",
-          "settings": {
-            "icon": "shopify:\/\/shop_images\/frontier-logo_1.png",
-            "alt": "Frontier Co-Op Logo"
-          }
-        },
-        "eeca8ca7-1223-42f4-be66-9d19c9680495": {
-          "type": "icon",
-          "settings": {
-            "icon": "shopify:\/\/shop_images\/jr-watkins-logo.png",
-            "alt": "Watkins Logo"
-          }
-        }
-      },
-      "block_order": [
-        "ddc6ae4f-850d-4af2-b30f-b2cfa4c27d8b",
-        "0a3401c2-cdcb-45c7-a115-863942ecd068",
-        "d2a015f6-ec5e-4279-a122-c75324dad550",
-        "c08a2a5b-6ebe-4cc0-95b3-7691599bfe20",
-        "0f186d34-13dd-40c1-ae96-9266b6a353d1",
-        "66b74de8-3615-45a3-8d9b-351ef30333a9",
-        "224b3659-8585-4ecd-af3b-1203bae4b59d",
-        "19ea3b46-28e6-4cad-bfe4-432bca3e3973",
-        "578edcf5-29d4-4dee-8e57-7f52376dfd08",
-        "c1745d10-1a4a-4570-9a1d-c5496b0280c1",
-        "eeca8ca7-1223-42f4-be66-9d19c9680495"
-      ],
-      "settings": {
-        "heading": "Partners",
-        "color_scheme": "dark-cream",
-        "top_spacing": 50,
-        "bottom_spacing": 50
-      }
-    },
     "164497174668dcfe61": {
       "type": "content-with-bg-image",
       "blocks": {
@@ -566,7 +465,6 @@
     "16630167896c556fcd",
     "16607057366a572f05",
     "1663641871bf71a165",
-    "16450306926c068d86",
     "164497174668dcfe61",
     "16450418065fdb6a59",
     "16608480050d0c5d8c",
