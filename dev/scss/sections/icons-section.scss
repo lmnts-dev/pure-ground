@@ -56,6 +56,10 @@
         justify-content: unset;
         gap: calc(var(--pxSize) / 3);
 
+        &--centered{
+          justify-content: center;
+        }
+
         .icons-section__icons__icon {
           padding: 0;
         }
@@ -91,6 +95,21 @@
     &.__has-image {
       padding-left: var(--sectionHorizontalSpacing);
       display: block;
+    }
+
+    &__icons {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      gap: var(--pxSize) 0;
+
+      &.__layout {
+        &-row {
+          &--centered{
+            justify-content: space-around;
+          }
+        }
+      }
     }
   }
 }
