@@ -289,7 +289,7 @@
         "button_label": "",
         "button_link": "",
         "alt": "",
-        "layout": "three-col",
+        "layout": "row",
         "icon_height": 80,
         "color_scheme": "cream",
         "top_spacing": 50,
