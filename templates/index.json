@@ -480,6 +480,43 @@
         "top_spacing": 0,
         "bottom_spacing": 0
       }
+    },
+    "16636884913eac8f4d": {
+      "type": "featured-articles",
+      "blocks": {
+        "8d1e3888-e336-46b8-ba1c-faaff62ae98b": {
+          "type": "article",
+          "settings": {
+            "article": "guides\/dill"
+          }
+        },
+        "4eed38a0-6bb6-456e-a926-8d4c25d536bd": {
+          "type": "article",
+          "settings": {
+            "article": "guides\/ginger"
+          }
+        },
+        "3b3c4e81-432c-4bce-81e7-622194fb45ad": {
+          "type": "article",
+          "settings": {
+            "article": "guides\/lavender"
+          }
+        }
+      },
+      "block_order": [
+        "8d1e3888-e336-46b8-ba1c-faaff62ae98b",
+        "4eed38a0-6bb6-456e-a926-8d4c25d536bd",
+        "3b3c4e81-432c-4bce-81e7-622194fb45ad"
+      ],
+      "settings": {
+        "heading": "",
+        "button_label": "Button label",
+        "button_link": "",
+        "button_color": "default",
+        "color_scheme": "cream",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
     }
   },
   "order": [
@@ -493,6 +530,7 @@
     "16450418065fdb6a59",
     "16608480050d0c5d8c",
     "16608353231dbe426f",
-    "164442413892b05956"
+    "164442413892b05956",
+    "16636884913eac8f4d"
   ]
 }
