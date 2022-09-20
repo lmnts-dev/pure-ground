@@ -12,10 +12,6 @@
     padding-left: calc(var(--btnHeight) * 1.5);
     padding-right: calc(var(--btnHeight) * 1.5);
     margin-top: calc(var(--sectionVerticalSpacing) / 2);
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
 
       @media screen and (max-width: 676px) {
         padding-left: 0;
@@ -23,7 +19,7 @@
       }
 
     &__icon {
-      margin: calc(var(--vwSize) * 1) calc(var(--vwSize) * 2);
+      margin: 0 calc(var(--vwSize) * 2);
 
       svg {
         height: calc(var(--vwSize) * 4);
@@ -36,7 +32,7 @@
       }
 
       img {
-        height: calc(var(--vwSize) * 2);
+        height: calc(var(--vwSize) * 4);
         width: auto;
 
         @media screen and (max-width: 676px) {
@@ -54,14 +50,12 @@
 
   @media screen and (max-width: 676px) {
     &__icons{
-       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      display: grid;
+      grid-template-columns: repeat(2,50%);
 
       &__icon{
-       display: flex;
-      justify-content: center;
-      width: 44%;
+        display: flex;
+        justify-content: center;
 
         img {
           height: calc(var(--vwSize) * 10);
