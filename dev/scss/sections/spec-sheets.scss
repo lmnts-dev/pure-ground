@@ -60,13 +60,23 @@
     }
   }
 
-  //table row specific styles
-  &__item {
+   //table row specific styles
+    &__item {
     display: none;
     position: relative;
 
     &:nth-child(even){
-      background: var(--color-background);
+      .spec-sheets__item__label, .spec-sheets__item__content{
+        &:before{
+          content:"";
+          background: var(--color-background);
+          opacity: .6;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          z-index: -1;
+        }
+      }
     }
 
     &__icon{
@@ -102,7 +112,7 @@
       transform: scale(1);
       will-change: transform, opacity;
       transition: all 0.25s ease;
-
+      
       p{
         margin-left: calc(var(--pxSize) / 2); 
       }
@@ -123,6 +133,7 @@
       overflow: hidden;
       color: var(--color-foreground);
       width: 100%;
+      position: relative;
 
       &__inner {
         padding: 0 calc(var(--pxSize) / 2) var(--pxSize) calc(var(--pxSize) / 2);
