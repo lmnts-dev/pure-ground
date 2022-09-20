@@ -168,10 +168,10 @@
         "1663642866c52d4d6a-0": {
           "type": "heading",
           "settings": {
-            "heading": "Partners",
-            "heading_size": "h2",
+            "heading": "",
+            "heading_size": "h3",
             "heading_alignment": "center",
-            "subheading": ""
+            "subheading": "Partners"
           }
         }
       },
