@@ -289,8 +289,8 @@
         "button_label": "",
         "button_link": "",
         "alt": "",
-        "layout": "row",
-        "icon_height": 50,
+        "layout": "row--centered",
+        "icon_height": 80,
         "color_scheme": "cream",
         "top_spacing": 50,
         "bottom_spacing": 100
