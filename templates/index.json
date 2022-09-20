@@ -169,7 +169,7 @@
           "type": "heading",
           "settings": {
             "heading": "Partners",
-            "heading_size": "caption-lg",
+            "heading_size": "h2",
             "heading_alignment": "center",
             "subheading": ""
           }
