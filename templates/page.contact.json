@@ -114,7 +114,7 @@
         "be983e8e-4cf3-421c-9ac9-f01149c4c717"
       ],
       "settings": {
-        "include_margins": false
+        "include_margins": true
       }
     }
   },
