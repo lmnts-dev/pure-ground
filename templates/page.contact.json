@@ -87,48 +87,40 @@
     },
     "form": {
       "type": "contact-form",
+      "settings": {
+        "heading": "Send Us A Message",
+        "name_placeholder": "Name",
+        "email_placeholder": "Email",
+        "phone_placeholder": "Phone Number",
+        "subject_placeholder": "Subject",
+        "message_placeholder": "Message",
+        "color_scheme": "cream",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
+    },
+    "16637834949eb0c57a": {
+      "type": "apps",
       "blocks": {
-        "aef2f29c-baf3-4adc-b452-2bf9f2cc8e4b": {
-          "type": "row",
+        "be983e8e-4cf3-421c-9ac9-f01149c4c717": {
+          "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/form-embed-block\/2632fe16-c075-4321-a88b-50b567f42507",
           "settings": {
-            "placeholder-1": "Name",
-            "type-1": "text",
-            "placeholder-2": "Email",
-            "type-2": "email"
-          }
-        },
-        "9f028798-faf2-44b1-b542-781df905ba2d": {
-          "type": "row",
-          "settings": {
-            "placeholder-1": "Phone Number",
-            "type-1": "text",
-            "placeholder-2": "Subject",
-            "type-2": "text"
-          }
-        },
-        "aaf58071-7232-401a-86c6-4049e5d22fd0": {
-          "type": "textarea",
-          "settings": {
-            "placeholder": "Message"
+            "formId": "Tu57am"
           }
         }
       },
       "block_order": [
-        "aef2f29c-baf3-4adc-b452-2bf9f2cc8e4b",
-        "9f028798-faf2-44b1-b542-781df905ba2d",
-        "aaf58071-7232-401a-86c6-4049e5d22fd0"
+        "be983e8e-4cf3-421c-9ac9-f01149c4c717"
       ],
       "settings": {
-        "heading": "Send Us A Message",
-        "color_scheme": "cream",
-        "top_spacing": 50,
-        "bottom_spacing": 50
+        "include_margins": true
       }
     }
   },
   "order": [
     "164435397998025e9c",
     "16611972534ba504c9",
-    "form"
+    "form",
+    "16637834949eb0c57a"
   ]
 }
