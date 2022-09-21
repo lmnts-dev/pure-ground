@@ -10,8 +10,8 @@
       <form class="contact-form__form __form-styles" action="https://formspree.io/f/mnqwgrjp"  method="POST">
         <h2 class="contact-form__header h2">{{ section.settings.heading | escape }}</h2>
 
-        {% assign requiredEmailUsed = false %}
-        {% assign requiredBodyUsed = false %}
+        {% comment %} {% assign requiredEmailUsed = false %}
+        {% assign requiredBodyUsed = false %} {% endcomment %}
        
         {% if form.posted_successfully? %}
             Submitted successfully!
@@ -19,38 +19,37 @@
             {{ form.errors | default_errors }}
         {% endif %}
 
-        {% for block in section.blocks %}
-          {%- case block.type -%}
-            {%- when 'row' -%}
               <div class="contact-form__form__row">
 
                 {% comment %} Gather name attribute for fields {% endcomment %}
-                {% assign name1 = block.settings.placeholder-1 %}
-                {% assign name2 = block.settings.placeholder-2 %}
-                {% if block.settings.type-1 == "email" and requiredEmailUsed == false %}
+                {% comment %} {% if block.settings.type-1 == "email" and requiredEmailUsed == false %}
                   {% assign name1 = "email" %}
                   {% assign requiredEmailUsed = true %}
                 {% endif %}
                 {% if block.settings.type-2 == "email" and requiredEmailUsed == false %}
                   {% assign name2 = "email" %}
                   {% assign requiredEmailUsed = true %}
-                {% endif %}
+                {% endif %} {% endcomment %}
 
                 {% comment %} The fields {% endcomment %}
-                <input type="{{block.settings.type-1}}" name="contact[{{ name1 }}]" placeholder="{{block.settings.placeholder-1}}" value="{{ form.name1 }}" />
-                <input type="{{block.settings.type-2}}" name="contact[{{ name2 }}]" placeholder="{{block.settings.placeholder-2}}" value="{{ form.name2 }}"  />
+                <input type="{{ "text" }}" name="contact[{{ "name" }}]" placeholder="{{ section.settings.name_placeholder }}" value="{{ form.name1 }}" />
+                <input type="{{ "text" }}" name="contact[{{ "email" }}]" placeholder="{{ section.settings.email_placeholder }}" value="{{ form.name2 }}"  />
               </div>
-            {%- when 'textarea' -%}
+
+                <div class="contact-form__form__row">
+                  <input type="{{ "text" }}" name="contact[{{ "phone" }}]" placeholder="{{ section.settings.phone_placeholder }}" value="{{ form.name1 }}" />
+                <input type="{{ "text" }}" name="contact[{{ "subject" }}]" placeholder="{{ section.settings.subject_placeholder }}" value="{{ form.name2 }}"  />
+            
+                </div>
+
                 {% comment %} Gather name attribute for field {% endcomment %}
-                {% assign name = block.settings.placeholder %}
-                {% if requiredBodyUsed == false %}
+                {% comment %} {% if requiredBodyUsed == false %}
                   {% assign name = "body" %}
                   {% assign requiredBodyUsed = true %}
-                {% endif %}
-              <textarea placeholder="{{block.settings.placeholder}}" name="contact[{{ name }}]" rows="8"></textarea>
-          {% endcase %}
-        {% endfor %}
-        <input type="submit" value="Submit" />
+                {% endif %} {% endcomment %}
+              <textarea placeholder="{{ section.settings.message_placeholder }}" name="contact[{{ "body" }}]" rows="8"></textarea>
+
+              <input type="submit" value="Submit" />
         
         {% comment %}
           {%- if form.posted_successfully? -%}
@@ -146,6 +145,36 @@
       "label": "Heading"
     },
     {
+      "type": "text",
+      "id": "name_placeholder",
+      "label": "Name Field Placeholder",
+      "default": "Name"
+    },
+    {
+      "type": "text",
+      "id": "email_placeholder",
+      "label": "Email Field Placeholder",
+      "default": "Email"
+    },
+    {
+      "type": "text",
+      "id": "phone_placeholder",
+      "label": "Phone Number Field Placeholder",
+      "default": "Phone Number"
+    },
+    {
+      "type": "text",
+      "id": "subject_placeholder",
+      "label": "Subject Field Placeholder",
+      "default": "Subject"
+    },
+    {
+      "type": "text",
+      "id": "message_placeholder",
+      "label": "Message Field Placeholder",
+      "default": "Message"
+    },
+    {
       "type": "header",
       "content": "Settings"
     },
@@ -210,67 +239,6 @@
       "default": 50
     }
   ],
-  "blocks": [
-     {
-       "name": "Row of Two Text Fields",
-       "type": "row",
-       "settings": [
-         {
-           "type": "text",
-           "id": "placeholder-1",
-           "label": "First Field Placeholder Text"
-         },
-         {
-           "type": "radio",
-           "id": "type-1",
-           "label": "First Field Type",
-           "options": [
-              {
-                "value": "text",
-                "label": "Text"
-              },
-              {
-                "value": "email",
-                "label": "Email"
-              }
-            ],
-            "default": "text"
-         },
-         {
-           "type": "text",
-           "id": "placeholder-2",
-           "label": "Second Field Placeholder Text"
-         },
-         {
-           "type": "radio",
-           "id": "type-2",
-           "label": "Second Field Type",
-           "options": [
-              {
-                "value": "text",
-                "label": "Text"
-              },
-              {
-                "value": "email",
-                "label": "Email"
-              }
-            ],
-            "default": "text"
-         }
-       ]
-     },
-     {
-       "name": "Textarea",
-       "type": "textarea",
-       "settings": [
-          {
-           "type": "text",
-           "id": "placeholder",
-           "label": "Placeholder"
-         }
-       ]
-     }
-  ],
   "presets": [
     {
       "name": "Contact Form"
@@ -278,3 +246,5 @@
   ]
 }
 {% endschema %}
+
+
