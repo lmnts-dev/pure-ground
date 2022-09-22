@@ -33,7 +33,7 @@
   {% render 'modal' %}
 </div>
 
-{% javascript %}
+{% comment %} {% javascript %}
 
   class ToggleModal extends HTMLElement {
     constructor() {
@@ -56,28 +56,28 @@
 
   //Ingredients Filter
 
- let searchField = document.querySelector('.spec-sheets__info__search__input');
+ let testField = document.querySelector('.spec-sheets__info__search__input');
  let filterValue = '';
 
-  searchField.addEventListener("input", function() {
-    filterValue=searchField.value.toLowerCase();
-    console.log(filterValue,'filtervalue here');
-     allItems.map((name)=>{
-      console.log(allItems, ' all tiems');
-      if(name.innerHTML.toLowerCase().includes(filterValue)){
-         name.classList.remove('hide');
-      }
-      else{
-            name.classList.add('hide');
-      }
-    })
-  });
+  // testField.addEventListener("input", function() {
+  //   filterValue=testField.value.toLowerCase();
+  //   console.log(filterValue,'filtervalue here');
+  //    allItems.map((name)=>{
+  //     console.log(allItems, ' all tiems');
+  //     if(name.innerHTML.toLowerCase().includes(filterValue)){
+  //        name.classList.remove('hide');
+  //     }
+  //     else{
+  //           name.classList.add('hide');
+  //     }
+  //   })
+  // });
 
   let allItems = document.querySelectorAll('.spec-sheets__item');
   allItems = [...allItems];
 
 
-{% endjavascript %}
+{% endjavascript %} {% endcomment %}
 
 {% schema %}
 {
