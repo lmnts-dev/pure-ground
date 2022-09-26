@@ -68,10 +68,10 @@
         "16636426393915475c-0": {
           "type": "heading",
           "settings": {
-            "heading": "We envision a world in which farmers, manufacturers and consumers come together in the name of a healthier planet and thriving communities.",
-            "heading_size": "h2",
+            "heading": "",
+            "heading_size": "h3",
             "heading_alignment": "center",
-            "subheading": ""
+            "subheading": "We envision a world in which farmers, manufacturers and consumers come together in the name of a healthier planet and thriving communities."
           }
         }
       },
