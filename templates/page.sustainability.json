@@ -155,8 +155,28 @@
         "bottom_spacing": 50
       }
     },
+    "1664232245442eebb0": {
+      "type": "icons-section",
+      "settings": {
+        "caption": "",
+        "heading": "Our Sustainably Sourced offering includes ingredients that fall into three tiers:",
+        "subheading": "",
+        "heading_size": "h4",
+        "accent_color": false,
+        "text": "",
+        "button_label": "Button label",
+        "button_link": "",
+        "alt": "",
+        "layout": "three-col",
+        "icon_height": 50,
+        "color_scheme": "cream",
+        "top_spacing": 50,
+        "bottom_spacing": 0
+      }
+    },
     "16642253774563b48a": {
       "type": "rich-text",
+      "disabled": true,
       "blocks": {
         "166422537773f91d56-0": {
           "type": "heading",
@@ -229,7 +249,7 @@
         "color_scheme": "cream",
         "layout": "reversed",
         "image_style": "square",
-        "top_spacing": 10,
+        "top_spacing": 0,
         "bottom_spacing": 100
       }
     },
@@ -359,6 +379,7 @@
     "1663642639a80913b4",
     "1663030017bd4a38e5",
     "1660746979c48fd613",
+    "1664232245442eebb0",
     "16642253774563b48a",
     "16444193660de6d319",
     "16611972534ba504c9",
