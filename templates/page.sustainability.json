@@ -155,13 +155,37 @@
         "bottom_spacing": 50
       }
     },
+    "16642253774563b48a": {
+      "type": "rich-text",
+      "blocks": {
+        "166422537773f91d56-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Our Sustainably Sourced offering includes ingredients that fall into three tiers:",
+            "heading_size": "caption-lg",
+            "heading_alignment": "left",
+            "subheading": ""
+          }
+        }
+      },
+      "block_order": [
+        "166422537773f91d56-0"
+      ],
+      "settings": {
+        "color_scheme": "cream",
+        "hero": false,
+        "top_spacing": 50,
+        "bottom_spacing": 0
+      }
+    },
     "16444193660de6d319": {
       "type": "split-section",
       "blocks": {
         "b3f439d2-ba5b-40d3-89be-671c35dc40b2": {
           "type": "heading",
+          "disabled": true,
           "settings": {
-            "heading": "Our Sustainably Sourced offering includes ingredients that fall into three tiers:",
+            "heading": "",
             "heading_size": "caption-lg"
           }
         },
@@ -205,7 +229,7 @@
         "color_scheme": "cream",
         "layout": "reversed",
         "image_style": "square",
-        "top_spacing": 30,
+        "top_spacing": 10,
         "bottom_spacing": 100
       }
     },
@@ -335,6 +359,7 @@
     "1663642639a80913b4",
     "1663030017bd4a38e5",
     "1660746979c48fd613",
+    "16642253774563b48a",
     "16444193660de6d319",
     "16611972534ba504c9",
     "16608418622ecf558a",
