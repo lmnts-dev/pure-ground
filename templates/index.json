@@ -12,6 +12,7 @@
         },
         "de4c2414-51ee-47ec-aabb-c24c7165f16f": {
           "type": "subheading",
+          "disabled": true,
           "settings": {
             "subheading": "Delivered with purpose & responsibility"
           }
