@@ -25,8 +25,9 @@
       "settings": {
         "text_color": "light",
         "nav_color": true,
+        "image": "shopify:\/\/shop_images\/unsplash_VVe3zOZM88E.jpg",
         "alt": "",
-        "overlay": 20,
+        "overlay": 40,
         "hero": true,
         "fullwidth": true,
         "accent_color": false,
