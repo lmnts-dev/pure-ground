@@ -15,7 +15,11 @@
             <div class="spec-sheets__info__key">
                {% render 'icon-fair-trade' %}
                <div class="spec-sheets__info__key__text">
+                  {% if section.settings.sustainably_link == "" %}
                   <p>{{ section.settings.sustainably_sourced }}</p>
+                  {%- else -%}
+                  <a href= "{{ section.settings.sustainably_link }}" >{{ section.settings.sustainably_sourced }}</a>
+                  {% endif %}
                   {% if section.settings.fair_trade_disclaimer != "" %}
                      <p class="p-sm">{{ section.settings.fair_trade_disclaimer }}</p>
                   {% endif %}
@@ -139,6 +143,11 @@
       "id": "sustainably_sourced",
       "label": "Sustainably Sourced",
       "default": "Not working"
+    },
+    {
+      "type":"url",
+      "id":"sustainably_link",
+      "label":"Sustainably Sourced Link"
     },
     {
       "type": "text",
