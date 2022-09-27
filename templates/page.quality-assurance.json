@@ -82,6 +82,7 @@
     },
     "164442384962d45464": {
       "type": "rich-text",
+      "disabled": true,
       "blocks": {
         "164442384920551cc7-0": {
           "type": "heading",
@@ -113,6 +114,7 @@
     },
     "1660751203d847bc7d": {
       "type": "accordions",
+      "disabled": true,
       "blocks": {
         "1660751203e184b074-0": {
           "type": "accordion",
