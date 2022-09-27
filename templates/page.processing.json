@@ -8,6 +8,36 @@
         "padding_bottom": 28
       }
     },
+    "166430175741d439e6": {
+      "type": "content-with-bg-image",
+      "blocks": {
+        "402301da-7199-41f7-84eb-d17ed3b609aa": {
+          "type": "heading",
+          "settings": {
+            "heading": "Processing",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "402301da-7199-41f7-84eb-d17ed3b609aa"
+      ],
+      "settings": {
+        "text_color": "light",
+        "nav_color": true,
+        "alt": "",
+        "overlay": 20,
+        "hero": true,
+        "fullwidth": true,
+        "accent_color": false,
+        "alignment": "center",
+        "color_scheme": "cream",
+        "top_spacing": 0,
+        "bottom_spacing": 0,
+        "top_internal_spacing": 250,
+        "bottom_internal_spacing": 40
+      }
+    },
     "1664301027d1af682e": {
       "type": "rich-text",
       "blocks": {
@@ -136,6 +166,7 @@
   },
   "order": [
     "main",
+    "166430175741d439e6",
     "1664301027d1af682e",
     "16643010710c9d8c70"
   ]
