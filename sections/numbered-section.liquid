@@ -1,12 +1,12 @@
 {% style %}
-    #Numbered-text-{{ section.id }} {
+    #Numbered-section-{{ section.id }} {
       --topSpacingRatio: {{section.settings.top_spacing}} / 100;
       --bottomSpacingRatio: {{section.settings.bottom_spacing}} / 100;
     }
  {% endstyle %}
 
-<div id="Numbered-text-{{ section.id }}" class="numbered-text __layout-{{section.settings.layout}} __image-style-{{section.settings.image_style}} color-{{section.settings.color_scheme}}">
-  <div class="numbered-text__text">    
+<div id="Numbered-section-{{ section.id }}" class="numbered-section __layout-{{section.settings.layout}} __image-style-{{section.settings.image_style}} color-{{section.settings.color_scheme}}">
+  <div class="numbered-section__text">    
        
 
 
@@ -14,19 +14,19 @@
       {%- case block.type -%}
         {%- when 'heading' -%}
           {% if section.settings.hero %}
-            <h1 class="numbered-text__text__heading {{ block.settings.heading_size }}">{{ block.settings.heading }}</h1>
+            <h1 class="numbered-section__text__heading {{ block.settings.heading_size }}">{{ block.settings.heading }}</h1>
           {% else %}
-            <h2 class="numbered-text__text__heading {{ block.settings.heading_size }}">{{ block.settings.heading }}</h2>
+            <h2 class="numbered-section__text__heading {{ block.settings.heading_size }}">{{ block.settings.heading }}</h2>
           {% endif %}
 
         {%- when 'text' -%}
-          <div class="numbered-text__text__rich-text __article-txt" {{ block.shopify_attributes }}><span>{{ block.settings.text }}</span>{{ block.settings.text }}</div>
+          <div class="numbered-section__text__rich-text __article-txt" {{ block.shopify_attributes }}><span>{{ block.settings.number }}</span>{{ block.settings.text }}</div>
         {%- when 'button' -%}
           {% render 'button', class: "content-with-bg-image", button_label: block.settings.button_label, button_link: block.settings.button_link, button_color: block.settings.button_color %}
 
         {%- when 'icon' -%}
           {%- if block.settings.icon != blank -%}
-            <div class="numbered-text__text__icon">
+            <div class="numbered-section__text__icon">
               {% render 'next-gen-img', image: block.settings.icon %}
             </div>
           {%- endif -%}
@@ -34,7 +34,7 @@
       {%- endcase -%}
     {%- endfor -%}
   </div>
-  <div class="numbered-text__image">
+  <div class="numbered-section__image">
     {%- if section.settings.image != blank -%}
       {% render 'next-gen-img', image: section.settings.image %}
     {%- else -%}
@@ -45,7 +45,7 @@
 
 {% schema %}
 {
-  "name": "Split section",
+  "name": "Numbered Section",
   "tag": "section",
   "settings": [
     {
@@ -204,7 +204,7 @@
       "settings": [
         {
           "type": "number",
-          "id": "Number",
+          "id": "number",
           "default": 1,
           "label": "Add number to be displayed next to text."
         },
@@ -288,7 +288,7 @@
   ],
   "presets": [
     {
-      "name": "Split section",
+      "name": "Numbered section",
       "blocks": [
         {
           "type": "text"
