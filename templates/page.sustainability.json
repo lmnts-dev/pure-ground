@@ -219,7 +219,7 @@
           "type": "text",
           "settings": {
             "Number": 2,
-            "text": "<p><strong>Environmentally Impactful<\/strong><br\/>Ingredients from Regenerative Farms or Agroforestry Projects or those with technical processing upgrades to reduce toxins, increase energy efficiency and decrease negative environmental impacts.<br\/> <br\/><strong>Social Responsibility<br\/><\/strong>Ingredients that come from sources which are dedicated to promoting social equality, women's empowerment, education, living wages, and general livelihood.<\/p>"
+            "text": "<p><strong>Environmentally Impactful<\/strong><br\/>Ingredients from Regenerative Farms or Agroforestry Projects or those with technical processing upgrades to reduce toxins, increase energy efficiency and decrease negative environmental impacts.<\/p>"
           }
         },
         "58180ac4-40c0-4f08-959d-00d4a83736e8": {
@@ -229,13 +229,21 @@
             "button_link": "shopify:\/\/collections",
             "button_color": "default"
           }
+        },
+        "472c541a-1131-4f87-ab0f-526ebf3ace95": {
+          "type": "text",
+          "settings": {
+            "Number": 3,
+            "text": "<p> <br\/><strong>Social Responsibility<br\/><\/strong>Ingredients that come from sources which are dedicated to promoting social equality, women's empowerment, education, living wages, and general livelihood.<\/p>"
+          }
         }
       },
       "block_order": [
         "16643477564f7c1629-0",
         "f75ba095-ad75-4872-b88d-6570e75dff6f",
         "92016852-0d17-4543-92a9-e44f3978378c",
-        "58180ac4-40c0-4f08-959d-00d4a83736e8"
+        "58180ac4-40c0-4f08-959d-00d4a83736e8",
+        "472c541a-1131-4f87-ab0f-526ebf3ace95"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/IMG_4527.jpg",
