@@ -371,6 +371,38 @@
         "top_spacing": 0,
         "bottom_spacing": 0
       }
+    },
+    "1664347756c240a7e9": {
+      "type": "numbered-text",
+      "blocks": {
+        "16643477564f7c1629-0": {
+          "type": "text",
+          "settings": {
+            "Number": 1,
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "16643477564f7c1629-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_color": "default"
+          }
+        }
+      },
+      "block_order": [
+        "16643477564f7c1629-0",
+        "16643477564f7c1629-1"
+      ],
+      "settings": {
+        "hero": false,
+        "color_scheme": "cream",
+        "layout": "default",
+        "image_style": "default",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
     }
   },
   "order": [
@@ -387,6 +419,7 @@
     "166126617923b76f7f",
     "16608572869d1a8858",
     "1660747290beaaaf5d",
-    "16607471819bf121f0"
+    "16607471819bf121f0",
+    "1664347756c240a7e9"
   ]
 }
