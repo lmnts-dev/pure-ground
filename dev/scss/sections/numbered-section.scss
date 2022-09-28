@@ -9,13 +9,27 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    margin-left: 3rem;
 
     &__rich-text{
       display: flex;
+      position: relative;
 
       &__number{
-        background: var(--color-background);
-        color: var(--color-foreground);
+        background: #e3e3e3;
+        border-radius: 50%;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        color: #6e6e6e;
+        display: inline-block;
+        font-weight: bold;
+        line-height: 50px;
+        margin-right: 5px;
+        text-align: center;
+        width: 50px;
+        position: absolute;
+        left: -3rem;
+        font-size: 24px;
       }
     }
 
