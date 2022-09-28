@@ -180,6 +180,7 @@
       "blocks": {
         "166422537773f91d56-0": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Our Sustainably Sourced offering includes ingredients that fall into three tiers:",
             "heading_size": "caption-lg",
@@ -198,17 +199,57 @@
         "bottom_spacing": 0
       }
     },
+    "1664347756c240a7e9": {
+      "type": "numbered-text",
+      "blocks": {
+        "16643477564f7c1629-0": {
+          "type": "text",
+          "settings": {
+            "Number": 1,
+            "text": "<p><strong>Globally Standardized Certifications<\/strong><\/p>"
+          }
+        },
+        "f75ba095-ad75-4872-b88d-6570e75dff6f": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/imageedit_34_4317074377-removebg-preview_1_2.png"
+          }
+        },
+        "92016852-0d17-4543-92a9-e44f3978378c": {
+          "type": "text",
+          "settings": {
+            "Number": 2,
+            "text": "<p><strong>Environmentally Impactful<\/strong><br\/>Ingredients from Regenerative Farms or Agroforestry Projects or those with technical processing upgrades to reduce toxins, increase energy efficiency and decrease negative environmental impacts.<br\/> <br\/><strong>Social Responsibility<br\/><\/strong>Ingredients that come from sources which are dedicated to promoting social equality, women's empowerment, education, living wages, and general livelihood.<\/p>"
+          }
+        },
+        "58180ac4-40c0-4f08-959d-00d4a83736e8": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Sustainable Sourced Ingredients",
+            "button_link": "shopify:\/\/collections",
+            "button_color": "default"
+          }
+        }
+      },
+      "block_order": [
+        "16643477564f7c1629-0",
+        "f75ba095-ad75-4872-b88d-6570e75dff6f",
+        "92016852-0d17-4543-92a9-e44f3978378c",
+        "58180ac4-40c0-4f08-959d-00d4a83736e8"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/IMG_4527.jpg",
+        "hero": false,
+        "color_scheme": "cream",
+        "layout": "reversed",
+        "image_style": "square",
+        "top_spacing": 0,
+        "bottom_spacing": 100
+      }
+    },
     "16444193660de6d319": {
       "type": "split-section",
       "blocks": {
-        "b3f439d2-ba5b-40d3-89be-671c35dc40b2": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "",
-            "heading_size": "caption-lg"
-          }
-        },
         "1644419366881604f5-0": {
           "type": "text",
           "settings": {
@@ -237,7 +278,6 @@
         }
       },
       "block_order": [
-        "b3f439d2-ba5b-40d3-89be-671c35dc40b2",
         "1644419366881604f5-0",
         "c4fcc757-e664-49d9-9e64-caade07693c4",
         "e7ac9b5d-d622-4dfb-822e-0a0bfb93ee5c",
@@ -371,38 +411,6 @@
         "top_spacing": 0,
         "bottom_spacing": 0
       }
-    },
-    "1664347756c240a7e9": {
-      "type": "numbered-text",
-      "blocks": {
-        "16643477564f7c1629-0": {
-          "type": "text",
-          "settings": {
-            "Number": 1,
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
-          }
-        },
-        "16643477564f7c1629-1": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_color": "default"
-          }
-        }
-      },
-      "block_order": [
-        "16643477564f7c1629-0",
-        "16643477564f7c1629-1"
-      ],
-      "settings": {
-        "hero": false,
-        "color_scheme": "cream",
-        "layout": "default",
-        "image_style": "default",
-        "top_spacing": 50,
-        "bottom_spacing": 50
-      }
     }
   },
   "order": [
@@ -413,13 +421,13 @@
     "1660746979c48fd613",
     "1664232245442eebb0",
     "16642253774563b48a",
+    "1664347756c240a7e9",
     "16444193660de6d319",
     "16611972534ba504c9",
     "16608418622ecf558a",
     "166126617923b76f7f",
     "16608572869d1a8858",
     "1660747290beaaaf5d",
-    "16607471819bf121f0",
-    "1664347756c240a7e9"
+    "16607471819bf121f0"
   ]
 }
