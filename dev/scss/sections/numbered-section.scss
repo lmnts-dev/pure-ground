@@ -12,6 +12,11 @@
 
     &__rich-text{
       display: flex;
+
+      &__number{
+        background: var(--color-background);
+        color: var(--color-foreground);
+      }
     }
 
     &__heading {
