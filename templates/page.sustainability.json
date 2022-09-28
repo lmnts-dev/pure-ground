@@ -233,6 +233,7 @@
     },
     "16444193660de6d319": {
       "type": "split-section",
+      "disabled": true,
       "blocks": {
         "1644419366881604f5-0": {
           "type": "text",
