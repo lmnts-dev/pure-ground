@@ -20,7 +20,7 @@
           {% endif %}
 
         {%- when 'text' -%}
-          <div class="numbered-section__text__rich-text __article-txt" {{ block.shopify_attributes }}><span class="numbered-section__text__rich-text__number color-{{ section.settings.table_color }}">{{ block.settings.number }}</span>{{ block.settings.text }}</div>
+          <div class="numbered-section__text__rich-text __article-txt" {{ block.shopify_attributes }}><span class="numbered-section__text__rich-text__number color-{{ section.settings.number_color }}">{{ block.settings.number }}</span>{{ block.settings.text }}</div>
         {%- when 'button' -%}
           {% render 'button', class: "content-with-bg-image", button_label: block.settings.button_label, button_link: block.settings.button_link, button_color: block.settings.button_color %}
 
