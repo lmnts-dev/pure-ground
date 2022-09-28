@@ -1,0 +1,229 @@
+{% style %}
+    #numbered-text-{{ section.id }} {
+      --topSpacingRatio: {{section.settings.top_spacing}} / 100;
+      --bottomSpacingRatio: {{section.settings.bottom_spacing}} / 100;
+    }
+ {% endstyle %}
+
+<div id="numbered-text-{{ section.id }}" class="numbered-text color-{{ section.settings.color_scheme }}">
+  {%- for block in section.blocks -%}
+    {%- case block.type -%}
+
+      {%- when 'heading' -%}
+        {% if section.settings.hero %}
+          <h1 class="numbered-text__heading __align-{{ block.settings.heading_alignment }} {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}</h1>
+        {% else %}
+          <h2 class="numbered-text__heading __align-{{ block.settings.heading_alignment }} {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}</h2>
+        {% endif %}
+        {% if block.settings.subheading %}
+          <h3 class="numbered-text__subheading h5 __align-{{ block.settings.heading_alignment }}">{{ block.settings.subheading }}</h3>
+        {% endif %}
+      {%- when 'text' -%}
+        {% if block.settings.text %}
+          <div class="numbered-text__text __article-txt {{ block.settings.text_size }}" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+        {% endif %}
+
+      {%- when 'button' -%}
+         {% render 'button', class: "numbered-text", button_label: block.settings.button_label, button_link: block.settings.button_link %}
+
+    {%- endcase -%}
+  {%- endfor -%}
+</div>
+
+{% schema %}
+{
+  "name": "numbered text",
+  "tag": "section",
+  "settings": [
+     {
+         "type": "header",
+         "content": "Settings"
+    },
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "options": [
+        {
+          "value": "cream",
+          "label": "Cream (Default)"
+        },
+        {
+          "value": "dark-cream",
+          "label": "Dark Cream"
+        },
+        {
+          "value": "grass",
+          "label": "Grass"
+        },
+        {
+          "value": "sun",
+          "label": "Sun"
+        },
+        {
+          "value": "ground",
+          "label": "Ground"
+        },
+        {
+          "value": "sky",
+          "label": "Sky"
+        },
+        {
+          "value": "tan",
+          "label": "Tan"
+        }
+      ],
+      "default": "cream",
+      "label": "Color Scheme"
+    },
+    {
+      "type": "checkbox",
+      "id": "hero",
+      "label": "Use as hero?",
+      "info": "Should be selected if this section is the first or second on a page and contains the page title. There should only be one page title/hero used per page."
+    },
+    {
+      "type": "header",
+      "content": "Section Spacing"
+    },
+    {
+      "type": "range",
+      "id": "top_spacing",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "%",
+      "label": "Top Spacing",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "bottom_spacing",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "%",
+      "label": "Bottom Spacing",
+      "default": 50
+    }
+  ],
+  "blocks": [
+    {
+      "type": "heading",
+      "name": "Heading",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "default": "Talk about your brand",
+          "label": "Heading"
+        },
+        {
+          "type": "select",
+          "id": "heading_size",
+          "options": [
+            {
+              "value": "h2",
+              "label": "Large"
+            },
+            {
+              "value": "h3",
+              "label": "Medium"
+            },
+            {
+              "value": "caption-lg",
+              "label": "Small"
+            }
+          ],
+          "default": "h3",
+          "label": "Heading Size"
+        },
+        {
+          "type": "select",
+          "id": "heading_alignment",
+          "options": [
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "left",
+              "label": "Left"
+            }
+          ],
+          "default": "center",
+          "label": "Heading Alignment"
+        },
+        {
+          "type": "text",
+          "id": "subheading",
+          "label": "Subheading"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "Text",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "numberedtext",
+          "id": "text",
+          "default": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
+          "label": "Description"
+        },
+        {
+          "type": "select",
+          "id": "text_size",
+          "options": [
+            {
+              "value": "default",
+              "label": "Medium (Default)"
+            },
+            {
+              "value": "p-lg",
+              "label": "Large"
+            }
+          ],
+          "default": "default",
+          "label": "Text Size"
+        }
+      ]
+    },
+    {
+      "type": "button",
+      "name": "Button",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_label",
+          "default": "Button label",
+          "label": "Button Label"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "numbered Text",
+      "blocks": [
+        {
+          "type": "heading"
+        },
+        {
+          "type": "text"
+        },
+        {
+          "type": "button"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
