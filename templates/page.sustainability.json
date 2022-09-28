@@ -224,8 +224,9 @@
         "image": "shopify:\/\/shop_images\/IMG_4527.jpg",
         "hero": false,
         "color_scheme": "cream",
+        "number_color": "sun",
         "layout": "reversed",
-        "image_style": "default",
+        "image_style": "square",
         "top_spacing": 50,
         "bottom_spacing": 50
       }
