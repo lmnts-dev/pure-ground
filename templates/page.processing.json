@@ -2,7 +2,6 @@
   "sections": {
     "main": {
       "type": "main-page",
-      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
@@ -25,9 +24,9 @@
       "settings": {
         "text_color": "light",
         "nav_color": true,
-        "image": "shopify:\/\/shop_images\/unsplash_VVe3zOZM88E.jpg",
+        "image": "shopify:\/\/shop_images\/unsplash_3D43SBDDkAc_ae135df5-6dd9-4c4e-966a-7cf2ff86b9cf.jpg",
         "alt": "",
-        "overlay": 40,
+        "overlay": 50,
         "hero": true,
         "fullwidth": true,
         "accent_color": false,
@@ -35,8 +34,8 @@
         "color_scheme": "cream",
         "top_spacing": 0,
         "bottom_spacing": 0,
-        "top_internal_spacing": 250,
-        "bottom_internal_spacing": 40
+        "top_internal_spacing": 240,
+        "bottom_internal_spacing": 10
       }
     },
     "1664301027d1af682e": {
