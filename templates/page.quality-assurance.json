@@ -17,7 +17,7 @@
       "settings": {
         "text_color": "light",
         "nav_color": true,
-        "image": "shopify:\/\/shop_images\/unsplash_8rTwokBwz1w_a51066fc-0135-4c05-a084-e5bf04c7bdd5.jpg",
+        "image": "shopify:\/\/shop_images\/2018-08-21_17.54_1_ac102e6d-db8e-455f-a14d-4b8bfa316844.jpg",
         "alt": "Spices",
         "overlay": 20,
         "hero": true,
@@ -27,7 +27,7 @@
         "color_scheme": "cream",
         "top_spacing": 0,
         "bottom_spacing": 0,
-        "top_internal_spacing": 250,
+        "top_internal_spacing": 210,
         "bottom_internal_spacing": 40
       }
     },
