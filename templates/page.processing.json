@@ -92,7 +92,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Ingredient Cleaning",
-            "content": "<p>In order to deliver clean goods, we designed our production lines with separation capabilities that insure removal of impurities and foreign objects. Your product will be sifted multiple times and pass numerous safety steps and metal check before final packaging.<\/p>",
+            "content": "<p>In order to deliver clean goods, we designed our production lines with separation capabilities that insure removal of impurities and foreign objects. Your product will and pass numerous safety steps and metal check before final packaging.<\/p>",
             "category": "General"
           }
         },
