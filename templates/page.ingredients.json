@@ -17,8 +17,8 @@
       "settings": {
         "text_color": "light",
         "nav_color": true,
-        "image": "shopify:\/\/shop_images\/unsplash_8rTwokBwz1w_40d48515-02db-4d2b-8a84-dc1ea84963dd.jpg",
-        "alt": "Happy women in field",
+        "image": "shopify:\/\/shop_images\/IMG_5097.jpg",
+        "alt": "Ingredients",
         "overlay": 20,
         "hero": true,
         "fullwidth": true,
@@ -27,8 +27,8 @@
         "color_scheme": "cream",
         "top_spacing": 0,
         "bottom_spacing": 0,
-        "top_internal_spacing": 200,
-        "bottom_internal_spacing": 30
+        "top_internal_spacing": 240,
+        "bottom_internal_spacing": 80
       }
     },
     "hero": {
