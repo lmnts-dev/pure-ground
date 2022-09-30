@@ -37,7 +37,7 @@
         "85ec64ad-882c-45dd-a692-7c3e7e101116": {
           "type": "heading",
           "settings": {
-            "heading": "Farm to Factory",
+            "heading": "",
             "heading_size": "h4"
           }
         },
@@ -216,37 +216,6 @@
         "bottom_spacing": 0
       }
     },
-    "1660751375c6d45d9c": {
-      "type": "split-section",
-      "blocks": {
-        "8fbe44e1-d213-4349-87e4-ecb4dd2dd0d9": {
-          "type": "heading",
-          "settings": {
-            "heading": "Delivering the results you need",
-            "heading_size": "h4"
-          }
-        },
-        "1660751375f91befb1-0": {
-          "type": "text",
-          "settings": {
-            "text": "<p><strong>Certificate of Analysis<\/strong><\/p><p>For every lot you purchase, you will receive a Certificate of Analysis – CoA – stating your ingredient’s plant name, part + origin, cut size, manufacture + expiration dates as well as microbiological, Heavy Metal and Pesticide analytical results.<br\/><br\/>Through our validated treatment process all products can be offered as Ready to Eat (RTE).<br\/><\/p><p>All lots are tested for presence of any heavy metals and confirmed to be within safe and legal limits. Our team will match any additional testing you require. <\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "8fbe44e1-d213-4349-87e4-ecb4dd2dd0d9",
-        "1660751375f91befb1-0"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/MMcIver2022-5151.jpg",
-        "hero": false,
-        "color_scheme": "cream",
-        "layout": "reversed",
-        "image_style": "default",
-        "top_spacing": 50,
-        "bottom_spacing": 50
-      }
-    },
     "16607514865516138c": {
       "type": "icons-section",
       "blocks": {
@@ -318,6 +287,37 @@
         "bottom_spacing": 50
       }
     },
+    "1660751375c6d45d9c": {
+      "type": "split-section",
+      "blocks": {
+        "8fbe44e1-d213-4349-87e4-ecb4dd2dd0d9": {
+          "type": "heading",
+          "settings": {
+            "heading": "Delivering the results you need",
+            "heading_size": "h4"
+          }
+        },
+        "1660751375f91befb1-0": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Certificate of Analysis<\/strong><\/p><p>For every lot you purchase, you will receive a Certificate of Analysis – CoA – stating your ingredient’s botanical identity, part + origin, cut size, manufacture + expiration dates as well as microbiological, Heavy Metal and Pesticide analytical results.<br\/><br\/>Through our validated micro-reduction treatment, all products can be offered as Ready to Eat (RTE).<br\/><\/p><p>All lots are tested for presence of any heavy metals and confirmed to be within safe and legal limits. Our team will match any additional testing you require. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "8fbe44e1-d213-4349-87e4-ecb4dd2dd0d9",
+        "1660751375f91befb1-0"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/MMcIver2022-5151.jpg",
+        "hero": false,
+        "color_scheme": "cream",
+        "layout": "reversed",
+        "image_style": "default",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
+    },
     "16608570942528053e": {
       "type": "content-with-bg-image",
       "blocks": {
@@ -373,8 +373,8 @@
     "164442384962d45464",
     "1660751203d847bc7d",
     "16611972534ba504c7",
-    "1660751375c6d45d9c",
     "16607514865516138c",
+    "1660751375c6d45d9c",
     "16608570942528053e"
   ]
 }
