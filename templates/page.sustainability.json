@@ -194,14 +194,14 @@
           "type": "text",
           "settings": {
             "number": 2,
-            "text": "<p><strong>Environmentally Impactful<\/strong><br\/>Ingredients from Regenerative Farms or Agroforestry Projects or those with technical processing upgrades to reduce toxins, increase energy efficiency and decrease negative environmental impacts.<\/p>"
+            "text": "<p><strong>Environmental Impact<\/strong><br\/>Ingredients from Regenerative Farms or Agroforestry Projects or those with technical processing upgrades to reduce toxins, increase energy efficiency and decrease negative environmental impacts.<\/p>"
           }
         },
         "8da45d37-b53c-4259-ac5b-dd6bd0d8b735": {
           "type": "text",
           "settings": {
             "number": 3,
-            "text": "<p><strong>Social Responsibility<br\/><\/strong>Ingredients that come from sources which are dedicated to promoting social equality, women's empowerment, education, living wages, and general livelihood.<\/p>"
+            "text": "<p><strong>Social Responsibility<br\/><\/strong>Ingredients that come from sources which improve social equality, women's empowerment, education, living wages, and general livelihood.<\/p>"
           }
         },
         "16643508645631e08f-1": {
