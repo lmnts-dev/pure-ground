@@ -17,7 +17,7 @@
       "settings": {
         "text_color": "light",
         "nav_color": true,
-        "image": "shopify:\/\/shop_images\/unsplash_8rTwokBwz1w_40d48515-02db-4d2b-8a84-dc1ea84963dd.jpg",
+        "image": "shopify:\/\/shop_images\/2018-08-21_17.54_4.jpg",
         "alt": "Happy women in field",
         "overlay": 20,
         "hero": true,
@@ -81,8 +81,8 @@
       "settings": {
         "color_scheme": "sky",
         "hero": false,
-        "top_spacing": 50,
-        "bottom_spacing": 10
+        "top_spacing": 30,
+        "bottom_spacing": 30
       }
     },
     "1663030017bd4a38e5": {
@@ -109,8 +109,8 @@
         "button_label": "Button label",
         "button_link": "",
         "alt": "",
-        "layout": "one-col",
-        "icon_height": 160,
+        "layout": "three-col",
+        "icon_height": 180,
         "color_scheme": "sky",
         "top_spacing": 10,
         "bottom_spacing": 0
