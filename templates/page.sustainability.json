@@ -137,6 +137,7 @@
         },
         "16607469781a0891f6-2": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "button_label": "Button label",
             "button_link": ""
@@ -206,6 +207,7 @@
         },
         "16643508645631e08f-1": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "button_label": "Shop Sustainable Sourced Ingredients",
             "button_link": "shopify:\/\/collections",
@@ -221,11 +223,11 @@
         "16643508645631e08f-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/IMG_4527.jpg",
+        "image": "shopify:\/\/shop_images\/unsplash_8rTwokBwz1w-1.jpg",
         "hero": false,
         "color_scheme": "cream",
         "number_color": "sun",
-        "layout": "reversed",
+        "layout": "default",
         "image_style": "square",
         "top_spacing": 50,
         "bottom_spacing": 50
@@ -314,11 +316,12 @@
         "nav_color": false,
         "color_scheme": "cream",
         "top_spacing": 0,
-        "bottom_spacing": 0
+        "bottom_spacing": 40
       }
     },
     "16608572869d1a8858": {
       "type": "rich-text",
+      "disabled": true,
       "blocks": {
         "1660857286bad694f8-0": {
           "type": "heading",

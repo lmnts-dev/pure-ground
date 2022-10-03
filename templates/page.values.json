@@ -17,7 +17,7 @@
       "settings": {
         "text_color": "light",
         "nav_color": true,
-        "image": "shopify:\/\/shop_images\/unsplash_8rTwokBwz1w_0049480e-5067-46a3-9545-7c7be191aad8.jpg",
+        "image": "shopify:\/\/shop_images\/2018-08-14_18.38.50.jpg",
         "alt": "Guys on hillside with picked greens",
         "overlay": 20,
         "hero": true,
@@ -27,8 +27,8 @@
         "color_scheme": "cream",
         "top_spacing": 0,
         "bottom_spacing": 0,
-        "top_internal_spacing": 250,
-        "bottom_internal_spacing": 30
+        "top_internal_spacing": 100,
+        "bottom_internal_spacing": 130
       }
     },
     "1643818843f333eb74": {
