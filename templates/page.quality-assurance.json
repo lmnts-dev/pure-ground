@@ -339,7 +339,7 @@
           "settings": {
             "button_label": "Shop now",
             "button_link": "shopify:\/\/collections",
-            "button_color": "default"
+            "button_color": "grass"
           }
         }
       },
