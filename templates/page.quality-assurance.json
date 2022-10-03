@@ -50,7 +50,7 @@
         "47338247-06fe-401f-8439-2fdbee1aac55": {
           "type": "button",
           "settings": {
-            "button_label": "Shop Organic Ingredients",
+            "button_label": "Shop Ingredients",
             "button_link": "shopify:\/\/collections",
             "button_color": "default"
           }
