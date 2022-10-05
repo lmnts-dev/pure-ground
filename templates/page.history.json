@@ -17,7 +17,7 @@
       "settings": {
         "text_color": "light",
         "nav_color": true,
-        "image": "shopify:\/\/shop_images\/unsplash_8rTwokBwz1w_98970e54-267d-478c-a458-2c6754c1763c.jpg",
+        "image": "shopify:\/\/shop_images\/Screen_Shot_2022-05-06_at_4.08_2.jpg",
         "alt": "Man in sunglasses and hat",
         "overlay": 0,
         "hero": true,
@@ -82,7 +82,7 @@
         "739b4c19-ab21-4c2c-bff1-3454590c958a": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_37_f617cd8a-57db-417f-8e79-0f88719a9a72.jpg",
+            "image": "shopify:\/\/shop_images\/unsplash_obMdrL5pFWI.jpg",
             "alt": "Crops"
           }
         },
@@ -96,14 +96,14 @@
         "d239892f-c15d-4345-9deb-ddb4a4214abd": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-05-06_at_4.13_2.jpg",
+            "image": "shopify:\/\/shop_images\/Rectangle_40_1fd604d3-01d5-4ca1-9279-8f76d15cfa80.jpg",
             "alt": "Black and white photo of three people"
           }
         },
         "f835b275-72f6-484d-8cee-015213bab2d4": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-05-06_at_4.08_2.jpg",
+            "image": "shopify:\/\/shop_images\/2018-08-21_17.54_3.jpg",
             "alt": "Black and white photo of two kids"
           }
         },
