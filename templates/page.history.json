@@ -6,7 +6,7 @@
         "116f642d-f99e-4141-91ed-747acdee3431": {
           "type": "heading",
           "settings": {
-            "heading": "Our Story",
+            "heading": "About us",
             "heading_size": "h1"
           }
         }
@@ -144,7 +144,7 @@
         "ea821701-d216-4b36-82ae-880e4da10e66": {
           "type": "heading",
           "settings": {
-            "heading": "THE EXPLORATION THAT STARTED IT ALL",
+            "heading": "",
             "heading_size": "caption-lg"
           }
         },
@@ -160,7 +160,7 @@
         "1644419366881604f5-0"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Screen_Shot_2022-05-06_at_4.09_1.jpg",
+        "image": "shopify:\/\/shop_images\/Long_Life_Tea.jpg",
         "hero": false,
         "color_scheme": "cream",
         "layout": "reversed",
