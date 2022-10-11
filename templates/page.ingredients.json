@@ -28,7 +28,7 @@
         "top_spacing": 0,
         "bottom_spacing": 0,
         "top_internal_spacing": 240,
-        "bottom_internal_spacing": 80
+        "bottom_internal_spacing": 200
       }
     },
     "hero": {
@@ -38,7 +38,7 @@
           "type": "text",
           "settings": {
             "text": "<p>All ingredients are available in multiple cut sizes for wholesale purchase. To request a sample, spec sheet, COA or pricing please contact us.<\/p>",
-            "text_size": "default"
+            "text_size": "p-lg"
           }
         },
         "8e7d6a5a-567a-451e-9a48-80dff736c35d": {
