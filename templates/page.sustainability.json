@@ -81,8 +81,8 @@
       "settings": {
         "color_scheme": "sky",
         "hero": false,
-        "top_spacing": 30,
-        "bottom_spacing": 30
+        "top_spacing": 40,
+        "bottom_spacing": 0
       }
     },
     "1663030017bd4a38e5": {
@@ -110,10 +110,10 @@
         "button_link": "",
         "alt": "",
         "layout": "three-col",
-        "icon_height": 180,
+        "icon_height": 200,
         "color_scheme": "sky",
         "top_spacing": 10,
-        "bottom_spacing": 0
+        "bottom_spacing": 10
       }
     },
     "1660746979c48fd613": {
