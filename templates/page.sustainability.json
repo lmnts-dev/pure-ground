@@ -362,11 +362,11 @@
     "16607471819bf121f0": {
       "type": "featured-page-link",
       "settings": {
-        "page_link": "our-values",
-        "image": "shopify:\/\/shop_images\/unsplash_8rTwokBwz1w_c9e99f30-b9ba-43c5-a624-1ddfbd6b771d.jpg",
+        "page_link": "global-partnerships",
+        "image": "shopify:\/\/shop_images\/organic-map-edited.png",
         "alt": "Men working on mountainside",
         "color_scheme": "cream",
-        "top_spacing": 0,
+        "top_spacing": 20,
         "bottom_spacing": 0
       }
     }
