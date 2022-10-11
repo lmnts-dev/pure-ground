@@ -27,6 +27,13 @@
               "link": "shopify:\/\/pages\/quality-assurance-organic-integrity"
             }
           },
+          "f8db91fe-274c-4d3d-9762-baf0922ed802": {
+            "type": "link",
+            "settings": {
+              "label": "Processing",
+              "link": "shopify:\/\/pages\/processing"
+            }
+          },
           "201fd5e5-d847-4850-8232-368b05f5b75a": {
             "type": "label",
             "settings": {
@@ -87,6 +94,7 @@
         "block_order": [
           "74b22fdc-0b59-413a-b25b-92f994bab3a9",
           "0dc547ff-b375-4b78-bad8-9ef9fc4a79d2",
+          "f8db91fe-274c-4d3d-9762-baf0922ed802",
           "201fd5e5-d847-4850-8232-368b05f5b75a",
           "878eabb7-b9ce-404d-a952-33183360b7db",
           "e58fd043-68a5-401e-8b7b-7143691d9a3f",
