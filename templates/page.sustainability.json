@@ -62,58 +62,28 @@
         "bottom_spacing": 100
       }
     },
-    "1663642639a80913b4": {
-      "type": "rich-text",
+    "5812db36-cf2d-486b-a996-80d71768e71e": {
+      "type": "split-section",
       "blocks": {
-        "16636426393915475c-0": {
+        "c3b9e557-0f9d-4f52-89f9-70464d422fee": {
           "type": "heading",
           "settings": {
-            "heading": "",
-            "heading_size": "h3",
-            "heading_alignment": "center",
-            "subheading": "We envision a world in which farmers, manufacturers and consumers come together in the name of a healthier planet and thriving communities."
+            "heading": "We envision a world in which farmers, manufacturers and consumers come together in the name of a healthier planet and thriving communities.",
+            "heading_size": "h4"
           }
         }
       },
       "block_order": [
-        "16636426393915475c-0"
+        "c3b9e557-0f9d-4f52-89f9-70464d422fee"
       ],
       "settings": {
-        "color_scheme": "sky",
+        "image": "shopify:\/\/shop_images\/Commence_x_Pure_Ground_Ingredients_-_Globe_Illustration.png",
         "hero": false,
-        "top_spacing": 40,
-        "bottom_spacing": 0
-      }
-    },
-    "1663030017bd4a38e5": {
-      "type": "icons-section",
-      "blocks": {
-        "15a56ecf-b6ef-4dfd-aa06-08fd5762f6ef": {
-          "type": "image",
-          "settings": {
-            "icon": "shopify:\/\/shop_images\/imageedit_16_2660034728_ad5e02dc-9836-4aea-949b-43c3c47de346.png",
-            "text": ""
-          }
-        }
-      },
-      "block_order": [
-        "15a56ecf-b6ef-4dfd-aa06-08fd5762f6ef"
-      ],
-      "settings": {
-        "caption": "",
-        "heading": "",
-        "subheading": "",
-        "heading_size": "h2",
-        "accent_color": false,
-        "text": "",
-        "button_label": "Button label",
-        "button_link": "",
-        "alt": "",
-        "layout": "three-col",
-        "icon_height": 200,
         "color_scheme": "sky",
-        "top_spacing": 10,
-        "bottom_spacing": 10
+        "layout": "reversed",
+        "image_style": "square",
+        "top_spacing": 50,
+        "bottom_spacing": 50
       }
     },
     "1660746979c48fd613": {
@@ -404,8 +374,7 @@
   "order": [
     "166074672815a86e9b",
     "1643818843f333eb74",
-    "1663642639a80913b4",
-    "1663030017bd4a38e5",
+    "5812db36-cf2d-486b-a996-80d71768e71e",
     "1660746979c48fd613",
     "1664232245442eebb0",
     "1664350864010488bc",
