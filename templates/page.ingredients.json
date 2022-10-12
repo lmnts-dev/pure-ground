@@ -60,6 +60,35 @@
         "bottom_spacing": 20
       }
     },
+    "d8723592-d83e-4d59-9d99-36006c60ead6": {
+      "type": "rich-text",
+      "blocks": {
+        "template--14540390989847__d8723592-d83e-4d59-9d99-36006c60ead6-166559467658b36a0f-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
+            "text_size": "default"
+          }
+        },
+        "template--14540390989847__d8723592-d83e-4d59-9d99-36006c60ead6-166559467658b36a0f-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Sustainably Sourced Ingredients",
+            "button_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0562\/9486\/6967\/files\/Pure_Ground_Sustainably_Sourced_List.pdf?v=1665592802"
+          }
+        }
+      },
+      "block_order": [
+        "template--14540390989847__d8723592-d83e-4d59-9d99-36006c60ead6-166559467658b36a0f-1",
+        "template--14540390989847__d8723592-d83e-4d59-9d99-36006c60ead6-166559467658b36a0f-2"
+      ],
+      "settings": {
+        "color_scheme": "cream",
+        "hero": false,
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
+    },
     "1647470795ab7a1dc6": {
       "type": "spec-sheets",
       "blocks": {
@@ -1812,6 +1841,7 @@
   "order": [
     "166074672815a86e9b",
     "hero",
+    "d8723592-d83e-4d59-9d99-36006c60ead6",
     "1647470795ab7a1dc6",
     "1647550055d229b4ef",
     "16475507071b89b3ee",
