@@ -27,15 +27,6 @@
     <p>{{ section.settings.newsletter_description }}<p>
   {% endif %}
 
-  {% form 'customer', class: "newsletter-row__form", action: "https://formspree.io/f/xbjwzbdd" %}
-    {% if form.posted_successfully? %}
-        Submitted successfully!
-    {% else %}
-        {{ form.errors | default_errors }}
-    {% endif %}
-
-    <input type="email" placeholder="Email" name="contact[email]" />
-    <input type="submit" value="Subscribe" />
-  {% endform %}
+  <div class="newsletter-row__form klaviyo-form-{{ section.settings.klaviyo_form_id }}"></div>
   
 </section>
