@@ -24,7 +24,7 @@
         {% endif %}
 
       {%- when 'button' -%}
-         {% render 'button', class: "rich-text", button_label: block.settings.button_label, button_link: block.settings.button_link %}
+         {% render 'button', class: "rich-text", button_label: block.settings.button_label, button_link: block.settings.button_link, open_new_window: block.settings.open_new_window %}
 
     {%- endcase -%}
   {%- endfor -%}
@@ -205,6 +205,11 @@
           "type": "url",
           "id": "button_link",
           "label": "Button Link"
+        },
+        {
+        "type": "boolean",
+        "id": "open_new_window",
+        "label": "Open in new window?"
         }
       ]
     }
