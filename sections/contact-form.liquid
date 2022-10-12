@@ -7,8 +7,7 @@
 
 <div id="Contact-form-{{ section.id }}" class="contact-form color-{{ section.settings.color_scheme }}">
     {% if section.blocks %}
-      <form class="contact-form__form __form-styles" action="https://formspree.io/f/mnqwgrjp"  method="POST">
-        <h2 class="contact-form__header h2">{{ section.settings.heading | escape }}</h2>
+      {% comment %} <form class="contact-form__form __form-styles" action="https://formspree.io/f/mnqwgrjp"  method="POST"> {% endcomment %}
 
               {% comment %} <div class="contact-form__form__row">
 
@@ -41,7 +40,9 @@
               <textarea placeholder="{{ section.settings.message_placeholder }}" name="contact[{{ "body" }}]" rows="8"></textarea>
 
               <input type="submit" value="Submit" /> {% endcomment %}
-        
+        {%- form 'contact', id: 'ContactForm', class: 'isolate __form-styles' -%}
+          <h2 class="contact-form__header h2">{{ section.settings.heading | escape }}</h2>
+
           {%- if form.posted_successfully? -%}
             <div class="form-status form-status-list form__message" tabindex="-1" autofocus>{% render 'icon-success' %} {{ 'templates.contact.form.post_success' | t }}</div>
           {%- elsif form.errors -%}
@@ -89,7 +90,7 @@
           <button type="submit">
             Submit
           </button>
-      </form>
+    {%- endform -%}
     {% endif %}
   </div>
 </div>
