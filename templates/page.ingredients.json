@@ -61,34 +61,38 @@
         "bottom_spacing": 20
       }
     },
-    "d8723592-d83e-4d59-9d99-36006c60ead6": {
-      "type": "rich-text",
+    "5f725e3c-ad09-4de2-a28d-951451b9d008": {
+      "type": "bi-column-text-blocks",
       "blocks": {
-        "22895beb-ebe0-4ca0-a97c-b9ca50d16a9a": {
-          "type": "heading",
+        "template--14540390989847__5f725e3c-ad09-4de2-a28d-951451b9d008-16655973746e9f5fda-0": {
+          "type": "text",
           "settings": {
-            "heading": "Sustaiably Sourced Ingredients",
-            "heading_size": "caption-lg",
-            "heading_alignment": "center",
-            "subheading": ""
+            "heading": "SUSTAINABLY SOURCED INGREDIENTS",
+            "content": "",
+            "button_label": "Download",
+            "button_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0562\/9486\/6967\/files\/Pure_Ground_Sustainably_Sourced_List.pdf?v=1665592802",
+            "button_color": "default"
           }
         },
-        "template--14540390989847__d8723592-d83e-4d59-9d99-36006c60ead6-166559467658b36a0f-2": {
-          "type": "button",
+        "template--14540390989847__5f725e3c-ad09-4de2-a28d-951451b9d008-16655973746e9f5fda-1": {
+          "type": "text",
           "settings": {
-            "button_label": "Download PDF",
-            "button_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0562\/9486\/6967\/files\/Pure_Ground_Sustainably_Sourced_List.pdf?v=1665592802",
-            "open_new_window": true
+            "heading": "Organic Ingredients",
+            "content": "",
+            "button_label": "Download",
+            "button_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0562\/9486\/6967\/files\/Pure_Ground_Organic_Ingredient_List.pdf?v=1665592801",
+            "button_color": "default"
           }
         }
       },
       "block_order": [
-        "22895beb-ebe0-4ca0-a97c-b9ca50d16a9a",
-        "template--14540390989847__d8723592-d83e-4d59-9d99-36006c60ead6-166559467658b36a0f-2"
+        "template--14540390989847__5f725e3c-ad09-4de2-a28d-951451b9d008-16655973746e9f5fda-0",
+        "template--14540390989847__5f725e3c-ad09-4de2-a28d-951451b9d008-16655973746e9f5fda-1"
       ],
       "settings": {
+        "heading": "",
+        "subheading": "Download A PDF Version of Our Ingredients List",
         "color_scheme": "cream",
-        "hero": false,
         "top_spacing": 50,
         "bottom_spacing": 50
       }
@@ -1845,7 +1849,7 @@
   "order": [
     "166074672815a86e9b",
     "hero",
-    "d8723592-d83e-4d59-9d99-36006c60ead6",
+    "5f725e3c-ad09-4de2-a28d-951451b9d008",
     "1647470795ab7a1dc6",
     "1647550055d229b4ef",
     "16475507071b89b3ee",

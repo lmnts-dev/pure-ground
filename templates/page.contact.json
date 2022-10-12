@@ -87,7 +87,6 @@
     },
     "form": {
       "type": "contact-form",
-      "disabled": true,
       "settings": {
         "heading": "Send Us A Message",
         "name_placeholder": "Name",
