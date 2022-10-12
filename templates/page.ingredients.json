@@ -45,7 +45,8 @@
           "type": "button",
           "settings": {
             "button_label": "Contact Us",
-            "button_link": "shopify:\/\/pages\/contact"
+            "button_link": "shopify:\/\/pages\/contact",
+            "open_new_window": false
           }
         }
       },
@@ -76,7 +77,8 @@
           "type": "button",
           "settings": {
             "button_label": "Download PDF",
-            "button_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0562\/9486\/6967\/files\/Pure_Ground_Sustainably_Sourced_List.pdf?v=1665592802"
+            "button_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0562\/9486\/6967\/files\/Pure_Ground_Sustainably_Sourced_List.pdf?v=1665592802",
+            "open_new_window": true
           }
         }
       },
