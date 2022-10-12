@@ -12,5 +12,5 @@
 {% endcomment %}
 
 {% if button_link and button_label %}
-  <a href="{{ button_link }}" class="{% if class %}{{ class }}__btn{% endif %} btn __btn-clr-{{ button_color }}">{{ button_label }}</a>
+  <a href="{{ button_link }}" class="{% if class %}{{ class }}__btn{% endif %} btn __btn-clr-{{ button_color }}" {% if open_new_window %} target="_blank" {% endif %}>{{ button_label }}</a>
 {% endif %}
