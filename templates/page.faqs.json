@@ -15,7 +15,8 @@
         "1644596818ef38f807-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. <\/p>"
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nisl vitae sem fermentum condimentum. Donec at tellus velit. Curabitur porttitor diam nec mi vehicula, ut venenatis neque bibendum. Phasellus in euismod mauris. Maecenas pharetra diam a magna blandit, ac maximus purus fringilla. <\/p>",
+            "text_size": "default"
           }
         }
       },
@@ -109,7 +110,7 @@
         "shipping-2"
       ],
       "settings": {
-        "text": "<p><b>Have a different question?<\/b><\/p><p> <a href=\"\/pages\/contact\" title=\"Contact\">Contact Us<\/a>.<\/p>",
+        "text": "<p><strong>Have a different question?<\/strong><\/p><p> <a href=\"\/pages\/contact\" title=\"Contact\">Contact Us<\/a>.<\/p>",
         "color_scheme": "cream",
         "top_spacing": 50,
         "bottom_spacing": 100
