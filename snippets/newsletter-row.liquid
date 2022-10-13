@@ -22,11 +22,21 @@
   {% if section.settings.newsletter_heading %}
     <h2 class="newsletter-row__heading h5">{{ section.settings.newsletter_heading }}</h2>
   {% endif %}
-
   {% if section.settings.newsletter_description %}
     <p>{{ section.settings.newsletter_description }}<p>
   {% endif %}
 
-  <div class="newsletter-row__form klaviyo-form-{{ section.settings.klaviyo_form_id }}"></div>
+  {% form 'customer', class: "newsletter-row__form" %}
+    {% if form.posted_successfully? %}
+      <span>
+        Thank you for subscribing!
+      </span>
+    {% else %}
+        {{ form.errors | default_errors }}
+    {% endif %}
+
+    <input type="email" {% if form.posted_successfully? %} style="display:none;" {% endif %} placeholder="Email" name="contact[email]" />
+    <input type="submit" {% if form.posted_successfully? %} style="display:none;" {% endif %} value="Subscribe" />
+  {% endform %}
   
 </section>

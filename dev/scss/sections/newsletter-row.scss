@@ -6,11 +6,18 @@
   }
 
   &__form {
-    margin-bottom: calc(var(--sectionVerticalSpacing)/2.5);
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--sectionVerticalSpacing);
 
-    .kl-private-reset-css-Xuajs1:last-of-type{
-      justify-content: flex-start!important;
-      padding-top: 0!important;
+    input[type="email"] {
+      min-width: 300px;
+    }
+
+    input[type="submit"] {
+      border-radius: 0px;
+      background: var(--color-foreground);
+      color: var(--color-background);
     }
   }
 
