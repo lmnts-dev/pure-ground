@@ -89,6 +89,13 @@
               "button_label": "Contact Us",
               "button_link": "shopify:\/\/pages\/contact"
             }
+          },
+          "fe940d6c-8545-4795-b4fe-414a3745b581": {
+            "type": "page",
+            "settings": {
+              "page": "european-operations",
+              "image": "shopify:\/\/shop_images\/rr-abrot-pNIgH0y3upM-unsplash_1.jpg"
+            }
           }
         },
         "block_order": [
@@ -102,7 +109,8 @@
           "d9d4a0f1-92e8-4a6c-964f-c942b3f49c06",
           "98795b15-82d5-4be6-a619-b758f820bdc5",
           "5c96bbfa-abb9-4446-b6f1-834fd33d5162",
-          "f537cb93-a2e6-4b92-b5fe-d43941dc8f93"
+          "f537cb93-a2e6-4b92-b5fe-d43941dc8f93",
+          "fe940d6c-8545-4795-b4fe-414a3745b581"
         ],
         "settings": {
           "always_show_nav": true
@@ -187,7 +195,6 @@
           "newsletter_enable": false,
           "newsletter_heading": "Get the latest in hot deals",
           "newsletter_description": "Join our What’s In Stock mailing list and be a part of the Pure Ground family",
-          "klaviyo_form_id": "WaX7jG",
           "show_social": true,
           "address": "<p>2535 Business Parkway<br\/>Minden, NV 89423<\/p><p><a href=\"mailto:sales@puregroundingredients.com\" title=\"mailto:sales@puregroundingredients.com\">sales@puregroundingredients.com <\/a><br\/><a href=\"tel:775-297-4047\" title=\"tel:775-297-4047\">775-297-4047<\/a><\/p>",
           "secondary_links": "secondary"
