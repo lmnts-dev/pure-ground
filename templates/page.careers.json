@@ -101,6 +101,7 @@
     },
     "164617166466b4b1ef": {
       "type": "career-listings",
+      "disabled": true,
       "blocks": {
         "277f0779-6824-4b72-a2bc-1356120ba8b9": {
           "type": "position",
