@@ -176,13 +176,13 @@
           "type": "heading",
           "settings": {
             "heading": "",
-            "heading_size": "caption-lg"
+            "heading_size": "h5"
           }
         },
         "16444195172a1cbbf5-0": {
           "type": "text",
           "settings": {
-            "text": "<p>Food that's grown without chemicals is medicine and improves lives from farmer to consumer. Now more than ever we are looking to source from regenerative farms to nourish our planet, our communities and ourselves. <\/p><p>-Kevin Lindseth, CEO\/Founder<\/p>"
+            "text": "<p>Food that's grown without chemicals and pesticides is the way that nature intended. <\/p><p>Now more than ever we are looking to source from regenerative farms to nourish our planet, our communities and ourselves. <\/p><p>-Kevin Lindseth, CEO\/Founder<\/p>"
           }
         }
       },
