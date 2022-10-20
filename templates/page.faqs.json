@@ -115,10 +115,42 @@
         "top_spacing": 50,
         "bottom_spacing": 100
       }
+    },
+    "9030456a-5061-41bc-9ab9-ab7c84d6d8e8": {
+      "type": "accordions",
+      "blocks": {
+        "template--14453297741847__9030456a-5061-41bc-9ab9-ab7c84d6d8e8-1666279563435762cf-0": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Example Question In General Category",
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ullamcorper, tortor ut viverra pulvinar, orci tellus elementum odio, et malesuada neque diam vel sem. Curabitur lacus sem, commodo sed lacus id, vulputate tincidunt sapien. Integer nisi libero, venenatis a sapien id, ornare congue diam. Donec mollis justo quis suscipit vulputate. Suspendisse sit amet lobortis felis. Curabitur condimentum justo ac urna mattis, quis elementum magna ullamcorper.<\/p>",
+            "category": "General"
+          }
+        },
+        "2cf93cf3-5e15-409f-9400-7f3f663971e2": {
+          "type": "accordion",
+          "settings": {
+            "heading": "Example Question In General Category",
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ullamcorper, tortor ut viverra pulvinar, orci tellus elementum odio, et malesuada neque diam vel sem. Curabitur lacus sem, commodo sed lacus id, vulputate tincidunt sapien. Integer nisi libero, venenatis a sapien id, ornare congue diam. Donec mollis justo quis suscipit vulputate. Suspendisse sit amet lobortis felis. Curabitur condimentum justo ac urna mattis, quis elementum magna ullamcorper.<\/p>",
+            "category": "General"
+          }
+        }
+      },
+      "block_order": [
+        "template--14453297741847__9030456a-5061-41bc-9ab9-ab7c84d6d8e8-1666279563435762cf-0",
+        "2cf93cf3-5e15-409f-9400-7f3f663971e2"
+      ],
+      "settings": {
+        "text": "",
+        "color_scheme": "cream",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
     }
   },
   "order": [
     "1644596818458e959a",
-    "1644596729a71a0ba5"
+    "1644596729a71a0ba5",
+    "9030456a-5061-41bc-9ab9-ab7c84d6d8e8"
   ]
 }
