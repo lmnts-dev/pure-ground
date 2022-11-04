@@ -14,8 +14,8 @@
           "type": "text",
           "settings": {
             "icon": "none",
-            "text": "{{ product.metafields.descriptors.subtitle.value }}",
-            "text_style": "subtitle"
+            "text": "{{ product.metafields.my_fields.scientific_name.value }}",
+            "text_style": "body"
           }
         },
         "title": {
