@@ -9,9 +9,9 @@
     {% render 'collection-card' collection: collection, shape: "square" %}
 {% endcomment %}
 
-<div class="collection-card {% if shape %}__shape-{{ shape }}{% endif %}">
+<a href="{{collection.url}}" class="collection-card {% if shape %}__shape-{{ shape }}{% endif %}">
   <h3 class="collection-card__title h4">{{collection.title}}</h3>
   {% if collection.image %}
     {% render 'next-gen-img', image: collection.image %}
   {% endif %}
-</div>
+</a>

@@ -1,7 +1,8 @@
 .loading-overlay {
   position: absolute;
-  z-index: 1;
-  width: 1.8rem;
+  z-index: 3;
+  width: 3rem;
+  line-height: 1;
 }
 
 @media screen and (max-width: 749px) {
@@ -18,12 +19,12 @@
 }
 
 .loading-overlay__spinner {
-  width: 1.8rem;
+  width: 3rem;
   display: inline-block;
 }
 
-.spinner {
-  animation: rotator 1.4s linear infinite;
+.icon-spinner {
+  animation: rotator 1.4s infinite linear;
 }
 
 @keyframes rotator {
@@ -40,13 +41,7 @@
   stroke-dashoffset: 0;
   transform-origin: center;
   stroke: rgb(var(--color-foreground));
-  animation: dash 1.4s ease-in-out infinite;
-}
-
-@media screen and (forced-colors: active) {
-  .path{
-    stroke: CanvasText;
-  }
+  animation: dash 1.4s infinite ease;
 }
 
 @keyframes dash {

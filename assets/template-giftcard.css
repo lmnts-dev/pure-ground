@@ -1,8 +1,70 @@
+/* Derived from base colors (theme settings) */
+
+:root {
+  --color-foreground: var(--color-base-text);
+  --color-background: var(--color-base-background);
+}
+
+/* Primary button */
+
+:root {
+  --color-button-background: var(--color-base-accent);
+  --color-button-border: var(--color-base-accent);
+  --color-button-text: var(--color-base-solid-button-labels);
+}
+
+/* Secondary button */
+
+.button--secondary {
+  --color-button-background: var(--color-background);
+  --color-button-border: var(--color-base-outline-button-labels);
+  --color-button-text: var(--color-base-outline-button-labels);
+}
+
+/* Links */
+
+:root {
+  --color-link: var(--color-base-outline-button-labels);
+}
+
+/* Badges */
+
+:root {
+  --color-badge-background: rgba(var(--color-background), 0.95);
+  --color-badge-foreground: rgb(var(--color-foreground));
+  --color-badge-border: rgb(var(--color-border));
+}
+
+/* Duration */
+
+:root {
+  --duration-short: 100ms;
+  --duration-default: 250ms;
+  --duration-long: 500ms;
+}
+
 /* Base */
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
+
+html {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  color: rgb(var(--color-foreground));
+  background-color: rgb(var(--color-background));
+}
+
+.page-width {
+  max-width: var(--page-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+@media screen and (min-width: 750px) {
+  .page-width {
+    padding: 0 5rem;
+  }
 }
 
 a:empty,
@@ -20,48 +82,16 @@ h6:empty {
   display: none;
 }
 
-html {
-  font-size: calc(var(--font-body-scale) * 62.5%);
-  box-sizing: border-box;
-  height: 100%;
-}
-
-body {
-  background-color: rgb(var(--color-base-background-1));
-  color: rgb(var(--color-base-text));
-  font-size: 1.5rem;
-  letter-spacing: 0.07rem;
-  line-height: calc(1 + 0.8 / var(--font-body-scale));
-  max-width: var(--page-width);
-  margin: 0 auto;
-  padding: 0 2rem;
-  flex: 1 0 auto;
-  font-family: var(--font-body-family);
-  font-style: var(--font-body-style);
-  font-weight: var(--font-body-weight);
-}
-
-@media only screen and (min-width: 750px) {
-  body {
-    font-size: 1.6rem;
-    line-height: calc(1 + 0.8 / var(--font-body-scale));
-    padding: 0 5rem;
-  }
-}
-
-::selection {
-  background-color: rgba(var(--color-base-text), 0.2);
-}
-
 h1,
-.h1,
 h2,
+.h1,
 .h2 {
   font-family: var(--font-heading-family);
   font-style: var(--font-heading-style);
   font-weight: var(--font-heading-weight);
   letter-spacing: calc(var(--font-heading-scale) * 0.06rem);
   line-height: calc(1 + 0.3 / max(1, var(--font-heading-scale)));
+  color: rgb(var(--color-heading));
 }
 
 h1,
@@ -84,119 +114,216 @@ h2,
 @media only screen and (min-width: 750px) {
   h2,
   .h2 {
-    font-size: calc(var(--font-heading-scale) * 2.4rem);
+    font-size: calc(var(--font-heading-scale) * 2.8rem);
   }
 }
 
 .skip-to-content-link:focus {
   z-index: 9999;
   position: inherit;
-  overflow: auto;
   width: auto;
   height: auto;
   clip: auto;
 }
 
 .link {
-  cursor: pointer;
-  display: inline-block;
+  line-height: calc(1 + 0.8 / var(--font-body-scale));
+  color: rgb(var(--color-link));
+  font-size: inherit;
   border: none;
-  box-shadow: none;
-  background-color: transparent;
-  padding: 0.4rem;
-  font-size: 1.6rem;
-  line-height: 1;
-  text-decoration: underline;
-  color: rgb(var(--color-base-outline-button-labels));
+  padding: 0;
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
 }
 
-.link:hover {
-  color: rgba(var(--color-base-outline-button-labels), 0.75);
+[dir="rtl"] .link {
+  background-position: left bottom, left bottom;
+}
+
+@media screen and (hover: hover) {
+  .link {
+    background-color: transparent;
+    background-image: linear-gradient(
+        to top,
+        rgb(var(--color-link)) 0px,
+        rgb(var(--color-link)) 0px
+      ),
+      linear-gradient(
+        to top,
+        rgb(var(--color-border)) 0px,
+        rgb(var(--color-border)) 0px
+      );
+    background-repeat: no-repeat;
+    background-position: right bottom, right bottom;
+    background-size: 0% 0.1rem, 100% 0.1rem;
+    transition-property: background-size;
+    transition-timing-function: ease;
+    transition-duration: var(--duration-default);
+  }
+
+  .link:hover {
+    background-position: left bottom, left bottom;
+    background-size: 100% 0.1rem, 100% 0.1rem;
+  }
+
+  [dir="rtl"] .link:hover {
+    background-position: right bottom, right bottom;
+  }
 }
 
 .button {
-  font-family: inherit;
+  position: relative;
+  z-index: 1;
   cursor: pointer;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  border: none;
-  padding: 1.5rem 3rem;
+  box-sizing: border-box;
+  font-family: inherit;
+  padding: 1rem 3rem;
+  padding-top: calc(1rem + var(--font-button-baseline));
   text-decoration: none;
-  background-color: rgb(var(--color-base-accent-1));
-  box-shadow: 0 0 0 0.1rem rgb(var(--color-base-accent-1));
-  color: rgb(var(--color-base-solid-button-labels));
-  min-width: 12rem;
-  height: auto;
-  font-size: 1.5rem;
-  letter-spacing: 0.1rem;
+  border-radius: var(--button-radius);
+  border: var(--button-border-width) solid rgb(var(--color-button-border));
+  color: rgb(var(--color-button-text));
+  background-color: rgb(var(--color-button-background));
+  font-family: var(--font-button-family);
+  min-width: 24rem;
+  max-width: 100%;
+  min-height: 4.6rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition-property: color, background-color, box-shadow;
+  transition-duration: var(--duration-long);
+  transition-timing-function: ease;
+  -webkit-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  box-shadow: var(--button-shadow-horizontal-offset)
+    var(--button-shadow-vertical-offset)
+    rgba(var(--color-shadow), var(--shadow-opacity));
+}
+
+@media screen and (min-width: 750px) {
+  .button {
+    min-height: 5rem;
+  }
+}
+
+.button[disabled] {
+  pointer-events: none;
+}
+
+.button {
+  font-size: var(--font-button-size);
+  letter-spacing: 0.3rem;
   line-height: calc(1 + 0.2 / var(--font-body-scale));
 }
 
-.button::selection {
-  background-color: rgba(var(--color-base-solid-button-labels), 0.3);
+@media screen and (hover: hover) {
+  .button::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    transform: skew(-15deg);
+    background-image: linear-gradient(
+      90deg,
+      transparent,
+      rgba(var(--color-button-text), 0.25),
+      transparent
+    );
+  }
+
+  .button:hover {
+    box-shadow: none;
+    background-color: rgba(var(--color-button-background), 0.85);
+    transition-delay: var(--duration-default);
+  }
+
+  .button:hover::after {
+    animation: shine var(--duration-animate) ease;
+  }
+
+  @keyframes shine {
+    to {
+      left: 100%;
+    }
+  }
 }
 
-.button:hover {
-  box-shadow: 0 0 0 0.2rem rgb(var(--color-base-accent-1));
+.hidden {
+  display: none !important;
 }
 
-.button--secondary {
-  color: rgb(var(--color-base-outline-button-labels));
-  box-shadow: 0 0 0 0.1rem rgb(var(--color-base-outline-button-labels));
-  background-color: transparent;
+@media screen and (max-width: 749px) {
+  .small-hide {
+    display: none !important;
+  }
 }
 
-.button--secondary::selection {
-  background-color: rgba(var(--color-base-outline-button-labels), 0.3);
+@media screen and (min-width: 750px) and (max-width: 989px) {
+  .medium-hide {
+    display: none !important;
+  }
 }
 
-.button--secondary:hover {
-  box-shadow: 0 0 0 0.2rem rgb(var(--color-base-outline-button-labels));
+@media screen and (min-width: 990px) {
+  .large-up-hide {
+    display: none !important;
+  }
 }
 
 .gift-card {
-  padding-bottom: 3.4rem;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+@media screen and (min-width: 990px) {
+  .gift-card {
+    display: grid;
+    column-gap: 5rem;
+    grid-template-columns: 1fr 1fr;
+    text-align: start;
+  }
 }
 
 .gift-card__title {
   text-align: center;
   word-break: break-word;
-  padding: 4rem 0 1.7rem;
+  padding: 3rem 0 2rem;
 }
 
-@media only screen and (min-width: 990px) {
+@media only screen and (min-width: 1320px) {
   .gift-card__title {
-    padding: 6rem 0 2.6rem;
+    padding: 6rem 0 3rem;
   }
 }
 
 .gift-card__image-wrapper {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100%;
-  background-color: rgb(var(--color-base-background-1));
-  margin-bottom: 0.8rem;
-  margin: 0 auto;
-}
-
-@media only screen and (min-width: 750px) {
-  .gift-card__image-wrapper {
-    margin-bottom: 0;
-    width: 40rem;
-  }
+  align-items: flex-start;
+  line-height: 0;
 }
 
 .gift-card__image {
+  width: 40rem;
   max-width: 100%;
-  padding: 0 2rem;
   height: auto;
 }
 
-@media only screen and (min-width: 750px) {
+@media screen and (min-width: 990px) {
+  .gift-card__image-wrapper {
+    justify-content: flex-start;
+  }
+
   .gift-card__image {
-    padding: 0;
+    width: 100%;
   }
 }
 
@@ -207,45 +334,71 @@ h2,
 
 .gift-card__price {
   display: flex;
-  align-items: center;
   justify-content: center;
-  font-size: 1.6rem;
-  font-weight: 400;
-  letter-spacing: 1px;
-  line-height: calc(1 + 0.5 / var(--font-body-scale));
-  opacity: 0.85;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
-.gift-card__price > p:first-child {
-  margin-bottom: 1rem;
-}
-
-@media only screen and (min-width: 750px) {
+@media screen and (min-width: 990px) {
   .gift-card__price {
-    font-size: 2rem;
+    margin-top: 1rem;
+    justify-content: flex-start;
   }
 }
 
-.gift-card__label:not(.badge) {
-  font-weight: 400;
-  opacity: 0.7;
+@media screen and (min-width: 1320px) {
+  .gift-card__price {
+    margin-top: 3rem;
+  }
+}
+
+.gift-card__price p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.gift-card__qr-code {
+  margin-top: 3rem;
+}
+
+.gift-card__qr-code img {
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 990px) {
+  .gift-card__qr-code {
+    margin-top: 0;
+  }
+
+  .gift-card__qr-code img {
+    margin: 0;
+  }
 }
 
 .gift-card__number {
-  background-color: transparent;
+  font-family: inherit;
+  background: none;
   border: none;
-  color: rgb(var(--color-base-text));
+  padding: 0;
+  color: rgb(var(--color-foreground));
   font-size: 1.8rem;
   font-weight: 400;
   line-height: calc(1 + 0.6 / var(--font-body-scale));
-  text-align: center;
   width: 100%;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 @media only screen and (min-width: 750px) {
   .gift-card__number {
     font-size: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .gift-card__number {
+    text-align: start;
   }
 }
 
@@ -255,7 +408,6 @@ h2,
 }
 
 .gift-card__information {
-  text-align: center;
   margin-top: 3rem;
 }
 
@@ -264,52 +416,34 @@ h2,
   letter-spacing: 0.05rem;
   font-weight: 500;
   display: inline;
-  margin-left: 1rem;
+  margin-inline-start: 1rem;
 }
 
 .badge {
-  border: 1px solid transparent;
-  margin: 1.7rem 0 1rem 1rem;
-  border-radius: 4rem;
+  border: 0.1rem solid transparent;
   display: inline-block;
-  font-size: 1.2rem;
-  letter-spacing: 0.1rem;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
   line-height: 1;
-  padding: 0.6rem 1.3rem;
+  padding: 0.8rem 1.6rem;
   text-align: center;
-  background-color: rgb(var(--color-base-background-1));
-  border-color: rgba(var(--color-base-text), 0.04);
-  color: rgb(var(--color-base-text));
-}
-
-.badge--inverse {
-  background-color: rgb(var(--color-base-text));
-  border-color: rgb(var(--color-base-text));
-  color: rgb(var(--color-base-background-1));
+  word-break: break-word;
+  background-color: var(--color-badge-background);
+  border-color: var(--color-badge-border);
+  color: var(--color-badge-foreground);
+  font-family: var(--font-button-family);
+  padding-top: calc(0.8rem + var(--font-button-baseline));
 }
 
 .caption-large {
-  font-size: 1.3rem;
-  line-height: calc(1 + 0.5 / var(--font-body-scale));
-  letter-spacing: 0.04rem;
+  font-size: 1.6rem;
+  line-height: calc(1 + 0.8 / var(--font-body-scale));
+  letter-spacing: 0.1rem;
 }
 
 .gift-card__copy-code {
   margin-bottom: 2.2rem;
-}
-
-.gift-card__qr-code {
-  margin-top: 3rem;
-}
-
-@media only screen and (min-width: 750px) {
-  .gift-card__qr-code {
-    margin-top: 5rem;
-  }
-}
-
-.gift-card__qr-code img {
-  margin: 0 auto;
 }
 
 .gift_card__apple-wallet {
@@ -319,16 +453,31 @@ h2,
 }
 
 .gift-card__buttons {
-  display: flex;
-  flex-direction: column;
   max-width: 25rem;
-  flex-wrap: wrap;
+  display: block;
   margin: 0 auto;
 }
 
-.gift-card__buttons > .button:first-child {
-  display: block;
-  margin-bottom: 2rem;
+.gift-card__buttons .button {
+  width: 100%;
+  min-width: auto;
+}
+
+.gift-card__buttons .button:first-child {
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 750px) {
+  .gift-card__buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    max-width: 100%;
+  }
+
+  .gift-card__buttons .button:first-child {
+    margin-bottom: 0;
+  }
 }
 
 /*
@@ -342,25 +491,25 @@ h2,
 }
 
 *:focus-visible {
-  outline: 0.2rem solid rgba(var(--color-base-text), 0.5);
+  outline: 0.2rem solid rgb(var(--color-keyboard-focus));
   outline-offset: 0.3rem;
-  box-shadow: 0 0 0 0.3rem rgb(var(--color-base-background-1)),
-    0 0 0.5rem 0.4rem rgba(var(--color-base-text), 0.3);
+  box-shadow: 0 0 0 0.3rem rgb(var(--color-background)),
+    0 0 0.5rem 0.4rem rgba(var(--color-keyboard-focus), 0.5);
 }
 
 /* Fallback - for browsers that don't support :focus-visible, a fallback is set for :focus */
 .focused,
 .no-js *:focus {
-  outline: 0.2rem solid rgba(var(--color-foreground), 0.5);
+  outline: 0.2rem solid rgb(var(--color-keyboard-focus));
   outline-offset: 0.3rem;
   box-shadow: 0 0 0 0.3rem rgb(var(--color-background)),
-    0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3);
+    0 0 0.5rem 0.4rem rgba(var(--color-keyboard-focus), 0.5);
 }
 
 .button:focus-visible {
-  box-shadow: 0 0 0 0.1rem rgb(var(--color-base-accent-1)),
-    0 0 0 0.3rem rgb(var(--color-base-background-1)),
-    0 0 0.5rem 0.4rem rgba(var(--color-base-text), 0.3);
+  box-shadow: 0 0 0 0.1rem rgb(var(--color-keyboard-focus)),
+    0 0 0 0.3rem rgb(var(--color-background)),
+    0 0 0.5rem 0.4rem rgba(var(--color-keyboard-focus), 0.5);
 }
 
 /* Negate the fallback side-effect for browsers that support :focus-visible */
@@ -369,38 +518,27 @@ h2,
   box-shadow: none;
 }
 
-.button:focus {
-  box-shadow: 0 0 0 0.1rem rgb(var(--color-base-accent-1)),
-    0 0 0 0.3rem rgb(var(--color-base-background-1)),
-    0 0 0.5rem 0.4rem rgba(var(--color-base-text), 0.3);
-}
-
-.button--secondary:focus-visible {
-  box-shadow: 0 0 0 0.1rem rgb(var(--color-base-outline-button-labels)),
-    0 0 0 0.3rem rgb(var(--color-base-background-1)),
-    0 0 0.5rem 0.4rem rgba(var(--color-base-text), 0.3);
-}
-
-.button--secondary:focus {
-  box-shadow: 0 0 0 0.1rem rgb(var(--color-base-outline-button-labels)),
-    0 0 0 0.3rem rgb(var(--color-base-background-1)),
-    0 0 0.5rem 0.4rem rgba(var(--color-base-text), 0.3);
-}
-
 .form__message {
+  font-family: var(--font-body-family);
   align-items: center;
   display: flex;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   line-height: 1;
   margin-top: 1rem;
-  justify-content: center;
+  margin-bottom: 0;
+  font-weight: 400;
+  color: var(--color-success);
+}
+
+.form__message:empty {
+  display: none;
 }
 
 .form__message .icon {
-  flex-shrink: 0;
-  height: 1.3rem;
-  margin-right: 0.5rem;
-  width: 1.3rem;
+  align-self: flex-start;
+  height: 1.6rem;
+  width: 1.6rem;
+  margin-inline-end: 0.5rem;
 }
 
 @media print {
@@ -409,8 +547,48 @@ h2,
   }
 }
 
-.gradient {
-  background: rgb(var(--color-base-background-1));
-  background: var(--gradient-base-background-1);
-  background-attachment: fixed;
+.price {
+  margin-top: 1rem;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+  color: var(--color-price);
+}
+
+.price--large {
+  font-size: 1.6rem;
+  line-height: calc(1 + 0.5 / var(--font-price-scale));
+  letter-spacing: 0.13rem;
+}
+
+@media screen and (min-width: 750px) {
+  .price--large {
+    font-size: 1.8rem;
+  }
+}
+
+.price bdi {
+  font-family: var(--font-price-family);
+  font-size: calc(var(--font-price-scale) * 2.8rem);
+  line-height: 1;
+}
+
+.price .price__prefix {
+  font-size: 70%;
+  margin-inline-start: 0.3rem;
+  margin-inline-end: 0.3rem;
+}
+
+.price .price__suffix {
+  font-size: 60%;
+  line-height: calc(1 + 0.6 / var(--font-price-scale));
+  margin-inline-start: 0.1rem;
+}
+
+.gift-card__logo {
+  width: auto;
+  height: var(--image-logo-height);
 }

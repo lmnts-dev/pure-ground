@@ -37,7 +37,8 @@
   font-size: 1.2rem;
 }
 
-.pagination__item--current, .pagination__item:hover {
+.pagination__item--current,
+.pagination__item:hover {
   background: rgb(var(--color-sun));
 }
 

@@ -7,21 +7,21 @@
           "type": "link",
           "settings": {
             "label": "All Resources",
-            "link": "shopify:\/\/pages\/resources"
+            "link": "shopify://pages/resources"
           }
         },
         "3534994c-a512-4db7-bc8b-4fd11c47a9f4": {
           "type": "link",
           "settings": {
             "label": "Ingredient Guides",
-            "link": "shopify:\/\/blogs\/guides"
+            "link": "shopify://blogs/guides"
           }
         },
         "db670779-627f-4765-a765-a01925ad520a": {
           "type": "link",
           "settings": {
             "label": "Press & News",
-            "link": "shopify:\/\/blogs\/news"
+            "link": "shopify://blogs/news"
           }
         }
       },
@@ -36,15 +36,29 @@
     },
     "main": {
       "type": "main-blog",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "show_date": true,
+            "show_author": true,
+            "show_comment_count": true
+          }
+        },
+        "summary": { "type": "summary", "settings": {} },
+        "read_more": { "type": "read_more", "settings": {} }
+      },
+      "block_order": ["title", "summary", "read_more"],
       "settings": {
-        "color_scheme": "cream",
-        "top_spacing": 50,
-        "bottom_spacing": 50
+        "per_page": 12,
+        "show_tag_filter": true,
+        "show_image": true,
+        "image_ratio": "landscape",
+        "image_position": "center center",
+        "padding_top": 60,
+        "padding_bottom": 72
       }
     }
   },
-  "order": [
-    "1646172411638785bf",
-    "main"
-  ]
+  "order": ["1646172411638785bf", "main"]
 }

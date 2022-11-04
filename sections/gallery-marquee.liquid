@@ -1,0 +1,160 @@
+{% style %}
+  #Gallery-marquee-{{ section.id }} {
+    --topSpacingRatio: {{section.settings.top_spacing}} / 100;
+    --bottomSpacingRatio: {{section.settings.bottom_spacing}} / 100;
+  }
+{% endstyle %}
+
+{% if section.blocks.size > 0 %}
+  <div id="Gallery-marquee-{{ section.id }}" class="gallery-marquee color-{{section.settings.color_scheme}}">
+    <div class="gallery-marquee__slider" data-flickity='{ 
+      "pageDots": false, 
+      "wrapAround": true,
+      "autoPlay": 2000,
+      "selectedAttraction": 0.0015,
+      "friction": 1,
+      "prevNextButtons": false
+    }'>
+      {% comment %} Output our images twice to avoid seeing a flash when the slider re-places each slide's position {% endcomment %}
+      {% for i in (1..2) %}
+        {%- for block in section.blocks -%}
+          {% assign exteriorIndex = forloop.index0 %}
+          {% assign imagePlacement = forloop.index | modulo: 6 %}
+           
+          {% comment %} Output container with 2 images in it {% endcomment %}
+          {% if imagePlacement == 1 %}
+            <div class="gallery-marquee__group-of-2">
+              {% for i in (1..2) %}
+                {% assign indexToCheck = forloop.index0 | plus: exteriorIndex %}
+                <div class="gallery-marquee__image">
+                  {%- if section.blocks[indexToCheck].settings.image != blank -%}
+                          {% render 'next-gen-img', image: section.blocks[indexToCheck].settings.image, alt: section.blocks[indexToCheck].settings.alt %}
+                  {%- else -%}
+                    {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                  {%- endif -%}
+                </div>
+              {% endfor %}
+            </div>
+          {% endif %}
+
+          {% comment %} Output container with 4 images in it {% endcomment %}
+          {% if imagePlacement == 3 %}
+            <div class="gallery-marquee__group-of-4">
+              {% for i in (1..4) %}
+                {% assign indexToCheck = forloop.index0 | plus: exteriorIndex %}
+                  <div class="gallery-marquee__image">
+                    {%- if section.blocks[indexToCheck].settings.image != blank -%}
+                          {% render 'next-gen-img', image: section.blocks[indexToCheck].settings.image, alt: 'Pure Ground Ingredients' %}
+                    {%- else -%}
+                      {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                    {%- endif -%}
+                  </div>
+              {% endfor %}
+            </div>
+          {% endif %}
+        {%- endfor -%}
+      {%- endfor -%}
+    </div>
+  </div>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Gallery Marquee",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Settings"
+    },
+     {
+      "type": "select",
+      "id": "color_scheme",
+      "options": [
+        {
+          "value": "cream",
+          "label": "Cream (Default)"
+        },
+        {
+          "value": "dark-cream",
+          "label": "Dark Cream"
+        },
+        {
+          "value": "grass",
+          "label": "Grass"
+        },
+        {
+          "value": "sun",
+          "label": "Sun"
+        },
+        {
+          "value": "ground",
+          "label": "Ground"
+        },
+        {
+          "value": "sky",
+          "label": "Sky"
+        },
+        {
+          "value": "tan",
+          "label": "Tan"
+        }
+      ],
+      "default": "cream",
+      "label": "Color Scheme"
+    },
+     {
+      "type": "range",
+      "id": "top_spacing",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "%",
+      "label": "Top Spacing",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "bottom_spacing",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "%",
+      "label": "Bottom Spacing",
+      "default": 50
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Image",
+      "type": "image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "alt",
+          "label": "Alt"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Gallery Marquee",
+      "blocks":[
+        {
+          "type": "image"
+        },
+        {
+          "type": "image"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

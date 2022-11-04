@@ -1,22 +1,24 @@
 class PredictiveSearch extends HTMLElement {
   constructor() {
     super();
+
+    this.modal = this.closest('.search-modal');
     this.cachedResults = {};
     this.input = this.querySelector('input[type="search"]');
     this.predictiveSearchResults = this.querySelector('[data-predictive-search]');
-    this.isOpen = false;
 
     this.setupEventListeners();
   }
 
   setupEventListeners() {
-    const form = this.querySelector('form.search');
-    form.addEventListener('submit', this.onFormSubmit.bind(this));
+    this.querySelector('form.search').addEventListener('submit', this.onFormSubmit.bind(this));
+    this.querySelector('button[type="button"]').addEventListener('click', this.clear.bind(this));
 
     this.input.addEventListener('input', debounce((event) => {
       this.onChange(event);
     }, 300).bind(this));
     this.input.addEventListener('focus', this.onFocus.bind(this));
+
     this.addEventListener('focusout', this.onFocusOut.bind(this));
     this.addEventListener('keyup', this.onKeyup.bind(this));
     this.addEventListener('keydown', this.onKeydown.bind(this));
@@ -30,7 +32,7 @@ class PredictiveSearch extends HTMLElement {
     const searchTerm = this.getQuery();
 
     if (!searchTerm.length) {
-      this.close(true);
+      this.clear();
       return;
     }
 
@@ -42,6 +44,7 @@ class PredictiveSearch extends HTMLElement {
   }
 
   onFocus() {
+    document.body.classList.add('predictive-search--focus');
     const searchTerm = this.getQuery();
 
     if (!searchTerm.length) return;
@@ -51,7 +54,7 @@ class PredictiveSearch extends HTMLElement {
     } else {
       this.getSearchResults(searchTerm);
     }
-  }
+  } 
 
   onFocusOut() {
     setTimeout(() => {
@@ -60,7 +63,7 @@ class PredictiveSearch extends HTMLElement {
   }
 
   onKeyup(event) {
-    if (!this.getQuery().length) this.close(true);
+    if (!this.getQuery().length) this.clear();
     event.preventDefault();
 
     switch (event.code) {
@@ -88,7 +91,7 @@ class PredictiveSearch extends HTMLElement {
 
   switchOption(direction) {
     if (!this.getAttribute('open')) return;
-
+    
     const moveUp = direction === 'up';
     const selectedElement = this.querySelector('[aria-selected="true"]');
     const allElements = this.querySelectorAll('li');
@@ -96,7 +99,7 @@ class PredictiveSearch extends HTMLElement {
 
     if (moveUp && !selectedElement) return;
 
-    this.statusElement.textContent = '';
+    this.statusElement.textContent = ''; 
 
     if (!moveUp && selectedElement) {
       activeElement = selectedElement.nextElementSibling || allElements[0];
@@ -108,7 +111,7 @@ class PredictiveSearch extends HTMLElement {
 
     activeElement.setAttribute('aria-selected', true);
     if (selectedElement) selectedElement.setAttribute('aria-selected', false);
-
+ 
     this.setLiveRegionText(activeElement.textContent);
     this.input.setAttribute('aria-activedescendant', activeElement.id);
   }
@@ -121,6 +124,7 @@ class PredictiveSearch extends HTMLElement {
 
   getSearchResults(searchTerm) {
     const queryKey = searchTerm.replace(" ", "-").toLowerCase();
+    const perPage = this.dataset.perPage || 4;
     this.setLiveRegionLoadingState();
 
     if (this.cachedResults[queryKey]) {
@@ -128,8 +132,8 @@ class PredictiveSearch extends HTMLElement {
       return;
     }
 
-    fetch(`${routes.predictive_search_url}?q=${encodeURIComponent(searchTerm)}&${encodeURIComponent('resources[type]')}=product&${encodeURIComponent('resources[limit]')}=4&section_id=predictive-search`)
-      .then((response) => {
+    fetch(`${window.routes.predictive_search_url}?q=${encodeURIComponent(searchTerm)}&${encodeURIComponent('resources[type]')}=product&${encodeURIComponent('resources[limit]')}=${perPage}&section_id=predictive-search`)
+      .then((response) => { 
         if (!response.ok) {
           var error = new Error(response.status);
           this.close();
@@ -142,11 +146,13 @@ class PredictiveSearch extends HTMLElement {
         const resultsMarkup = new DOMParser().parseFromString(text, 'text/html').querySelector('#shopify-section-predictive-search').innerHTML;
         this.cachedResults[queryKey] = resultsMarkup;
         this.renderSearchResults(resultsMarkup);
+        
+        if (this.modal) this.modal.classList.add('searching');
       })
       .catch((error) => {
         this.close();
         throw error;
-      });
+      }); 
   }
 
   setLiveRegionLoadingState() {
@@ -160,7 +166,7 @@ class PredictiveSearch extends HTMLElement {
   setLiveRegionText(statusText) {
     this.statusElement.setAttribute('aria-hidden', 'false');
     this.statusElement.textContent = statusText;
-
+    
     setTimeout(() => {
       this.statusElement.setAttribute('aria-hidden', 'true');
     }, 1000);
@@ -168,35 +174,24 @@ class PredictiveSearch extends HTMLElement {
 
   renderSearchResults(resultsMarkup) {
     this.predictiveSearchResults.innerHTML = resultsMarkup;
-    this.setAttribute('results', true);
+    this.setAttribute('results', true);  
 
     this.setLiveRegionResults();
     this.open();
   }
 
-  setLiveRegionResults() {
+  setLiveRegionResults() { 
     this.removeAttribute('loading');
     this.setLiveRegionText(this.querySelector('[data-predictive-search-live-region-count-value]').textContent);
   }
 
-  getResultsMaxHeight() {
-    this.resultsMaxHeight = window.innerHeight - document.getElementById('shopify-section-header').getBoundingClientRect().bottom;
-    return this.resultsMaxHeight;
-  }
-
   open() {
-    this.predictiveSearchResults.style.maxHeight = this.resultsMaxHeight || `${this.getResultsMaxHeight()}px`;
     this.setAttribute('open', true);
     this.input.setAttribute('aria-expanded', true);
-    this.isOpen = true;
+    document.body.classList.add('predictive-search--focus');
   }
 
-  close(clearSearchTerm = false) {
-    if (clearSearchTerm) {
-      this.input.value = '';
-      this.removeAttribute('results');
-    }
-
+  close() {
     const selected = this.querySelector('[aria-selected="true"]');
 
     if (selected) selected.setAttribute('aria-selected', false);
@@ -204,10 +199,14 @@ class PredictiveSearch extends HTMLElement {
     this.input.setAttribute('aria-activedescendant', '');
     this.removeAttribute('open');
     this.input.setAttribute('aria-expanded', false);
-    this.resultsMaxHeight = false
-    this.predictiveSearchResults.removeAttribute('style');
+    document.body.classList.remove('predictive-search--focus');
+  }
 
-    this.isOpen = false;
+  clear() {
+    this.input.value = '';
+    this.removeAttribute('open');
+    this.removeAttribute('results');
+    if (!this.modal) this.input.focus();
   }
 }
 

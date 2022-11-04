@@ -11,11 +11,10 @@ if (!customElements.get('pickup-availability')) {
     }
 
     fetchAvailability(variantId) {
-      let rootUrl = this.dataset.rootUrl;
-      if (!rootUrl.endsWith("/")) {
-        rootUrl = rootUrl + "/";
-      }
-      const variantSectionUrl = `${rootUrl}variants/${variantId}/?section_id=pickup-availability`;
+      let variantSectionUrl = `${window.routes.root_url}/variants/${variantId}/?section_id=pickup-availability`;
+      
+      // remove double `/` in case shop might have /en or language in URL
+      variantSectionUrl = variantSectionUrl.replace('//', '/');
 
       fetch(variantSectionUrl)
         .then(response => response.text())
@@ -25,7 +24,7 @@ if (!customElements.get('pickup-availability')) {
             .querySelector('.shopify-section');
           this.renderPreview(sectionInnerHTML);
         })
-        .catch(e => {
+        .catch(() => {
           const button = this.querySelector('button');
           if (button) button.removeEventListener('click', this.onClickRefreshList);
           this.renderError();
@@ -57,8 +56,7 @@ if (!customElements.get('pickup-availability')) {
 
       document.body.appendChild(sectionInnerHTML.querySelector('pickup-availability-drawer'));
 
-      const button = this.querySelector('button');
-      if (button) button.addEventListener('click', (evt) => {
+      this.querySelector('button').addEventListener('click', (evt) => {
         document.querySelector('pickup-availability-drawer').show(evt.target);
       });
     }
@@ -91,15 +89,16 @@ if (!customElements.get('pickup-availability-drawer')) {
     hide() {
       this.removeAttribute('open');
       document.body.removeEventListener('click', this.onBodyClick);
-      document.body.classList.remove('overflow-hidden');
+      document.body.classList.remove('pickup-availability--open');
       removeTrapFocus(this.focusElement);
     }
 
     show(focusElement) {
+      setScrollbarWidth();
       this.focusElement = focusElement;
       this.setAttribute('open', '');
       document.body.addEventListener('click', this.onBodyClick);
-      document.body.classList.add('overflow-hidden');
+      document.body.classList.add('pickup-availability--open');
       trapFocus(this);
     }
   });

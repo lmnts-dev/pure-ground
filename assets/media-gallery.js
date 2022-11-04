@@ -2,6 +2,7 @@ if (!customElements.get('media-gallery')) {
   customElements.define('media-gallery', class MediaGallery extends HTMLElement {
     constructor() {
       super();
+
       this.elements = {
         liveRegion: this.querySelector('[id^="GalleryStatus"]'),
         viewer: this.querySelector('[id^="GalleryViewer"]'),
@@ -12,17 +13,19 @@ if (!customElements.get('media-gallery')) {
 
       this.elements.viewer.addEventListener('slideChanged', debounce(this.onSlideChanged.bind(this), 500));
       this.elements.thumbnails.querySelectorAll('[data-target]').forEach((mediaToSwitch) => {
-        mediaToSwitch.querySelector('button').addEventListener('click', this.setActiveMedia.bind(this, mediaToSwitch.dataset.target, false));
+        mediaToSwitch.querySelector('button').addEventListener('click', this.setActiveMedia.bind(this, mediaToSwitch.dataset.target, false, true));
       });
-      if (this.dataset.desktopLayout !== 'stacked' && this.mql.matches) this.removeListSemantic();
+      if (this.dataset.desktopLayout === 'thumbnail_slider' && this.mql.matches) this.removeListSemantic();
     }
 
     onSlideChanged(event) {
+      if (event.detail.currentElement == undefined) return;
+
       const thumbnail = this.elements.thumbnails.querySelector(`[data-target="${ event.detail.currentElement.dataset.mediaId }"]`);
       this.setActiveThumbnail(thumbnail);
     }
 
-    setActiveMedia(mediaId, prepend) {
+    setActiveMedia(mediaId, prepend, scrollIntoView = true) {
       const activeMedia = this.elements.viewer.querySelector(`[data-media-id="${ mediaId }"]`);
       this.elements.viewer.querySelectorAll('[data-media-id]').forEach((element) => {
         element.classList.remove('is-active');
@@ -43,7 +46,7 @@ if (!customElements.get('media-gallery')) {
         if (this.elements.thumbnails) {
           activeMedia.parentElement.scrollTo({ left: activeMedia.offsetLeft });
         }
-        if (!this.elements.thumbnails || this.dataset.desktopLayout === 'stacked') {
+        if ((!this.elements.thumbnails || this.dataset.desktopLayout === 'stacked') && scrollIntoView) {
           activeMedia.scrollIntoView({behavior: 'smooth'});
         }
       });
@@ -58,8 +61,13 @@ if (!customElements.get('media-gallery')) {
     setActiveThumbnail(thumbnail) {
       if (!this.elements.thumbnails || !thumbnail) return;
 
-      this.elements.thumbnails.querySelectorAll('button').forEach((element) => element.removeAttribute('aria-current'));
+      this.elements.thumbnails.querySelectorAll('[id^="Slide-"]').forEach((element) => {
+        element.classList.remove('is-active');
+        element.querySelector('button').removeAttribute('aria-current');
+      });
+      thumbnail.classList.add('is-active');
       thumbnail.querySelector('button').setAttribute('aria-current', true);
+
       if (this.elements.thumbnails.isSlideVisible(thumbnail, 10)) return;
 
       this.elements.thumbnails.slider.scrollTo({ left: thumbnail.offsetLeft });

@@ -1,16 +1,12 @@
 class FacetFiltersForm extends HTMLElement {
   constructor() {
     super();
-    this.onActiveFilterClick = this.onActiveFilterClick.bind(this);
 
+    this.onActiveFilterClick = this.onActiveFilterClick.bind(this);
     this.debouncedOnSubmit = debounce((event) => {
       this.onSubmitHandler(event);
     }, 500);
-
     this.querySelector('form').addEventListener('input', this.debouncedOnSubmit.bind(this));
-
-    const facetWrapper = this.querySelector('#FacetsWrapperDesktop');
-    if (facetWrapper) facetWrapper.addEventListener('keyup', onKeyUpEscape);
   }
 
   static setListeners() {
@@ -22,23 +18,25 @@ class FacetFiltersForm extends HTMLElement {
     window.addEventListener('popstate', onHistoryChange);
   }
 
-  static toggleActiveFacets(disable = true) {
-    document.querySelectorAll('.js-facet-remove').forEach((element) => {
-      element.classList.toggle('disabled', disable);
-    });
-  }
-
   static renderPage(searchParams, event, updateURLHash = true) {
     FacetFiltersForm.searchParamsPrev = searchParams;
     const sections = FacetFiltersForm.getSections();
+    const facetDrawer = document.getElementById('FacetDrawer');
     const countContainer = document.getElementById('ProductCount');
+    const countContainerMobile = document.getElementById('ProductCountMobile');
     const countContainerDesktop = document.getElementById('ProductCountDesktop');
     document.getElementById('ProductGridContainer').querySelector('.collection').classList.add('loading');
     if (countContainer){
       countContainer.classList.add('loading');
-    }
+    }   
+    if (countContainerMobile){
+      countContainerMobile.classList.add('loading');
+    } 
     if (countContainerDesktop){
       countContainerDesktop.classList.add('loading');
+    }
+    if (facetDrawer){
+      facetDrawer.classList.add('loading');
     }
 
     sections.forEach((section) => {
@@ -51,6 +49,8 @@ class FacetFiltersForm extends HTMLElement {
     });
 
     if (updateURLHash) FacetFiltersForm.updateURLHash(searchParams);
+    
+    document.dispatchEvent(new CustomEvent('collection:reloaded'));
   }
 
   static renderSectionFromFetch(url, event) {
@@ -62,6 +62,9 @@ class FacetFiltersForm extends HTMLElement {
         FacetFiltersForm.renderFilters(html, event);
         FacetFiltersForm.renderProductGridContainer(html);
         FacetFiltersForm.renderProductCount(html);
+      })
+      .catch((e) => {
+        console.error(e);
       });
   }
 
@@ -74,14 +77,24 @@ class FacetFiltersForm extends HTMLElement {
 
   static renderProductGridContainer(html) {
     document.getElementById('ProductGridContainer').innerHTML = new DOMParser().parseFromString(html, 'text/html').getElementById('ProductGridContainer').innerHTML;
+    
+    const layoutSwitcher = document.querySelector('#FacetFiltersForm layout-switcher');
+    if (layoutSwitcher) layoutSwitcher.onButtonClick(layoutSwitcher.querySelector('.list-view__item--active'));
   }
 
   static renderProductCount(html) {
     const count = new DOMParser().parseFromString(html, 'text/html').getElementById('ProductCount').innerHTML
     const container = document.getElementById('ProductCount');
+    const containerMobile = document.getElementById('ProductCountMobile');
     const containerDesktop = document.getElementById('ProductCountDesktop');
-    container.innerHTML = count;
-    container.classList.remove('loading');
+    if (container) {
+      container.innerHTML = count;
+      container.classList.remove('loading');
+    }
+    if (containerMobile) {
+      containerMobile.innerHTML = count;
+      containerMobile.classList.remove('loading');
+    }
     if (containerDesktop) {
       containerDesktop.innerHTML = count;
       containerDesktop.classList.remove('loading');
@@ -93,9 +106,9 @@ class FacetFiltersForm extends HTMLElement {
 
     const facetDetailsElements =
       parsedHTML.querySelectorAll('#FacetFiltersForm .js-filter, #FacetFiltersFormMobile .js-filter');
-    const matchesIndex = (element) => {
+    const matchesIndex = (element) => { 
       const jsFilter = event ? event.target.closest('.js-filter') : undefined;
-      return jsFilter ? element.dataset.index === jsFilter.dataset.index : false;
+      return jsFilter ? element.dataset.index === jsFilter.dataset.index : false; 
     }
     const facetsToRender = Array.from(facetDetailsElements).filter(element => !matchesIndex(element));
     const countsToRender = Array.from(facetDetailsElements).find(matchesIndex);
@@ -108,6 +121,11 @@ class FacetFiltersForm extends HTMLElement {
     FacetFiltersForm.renderAdditionalElements(parsedHTML);
 
     if (countsToRender) FacetFiltersForm.renderCounts(countsToRender, event.target.closest('.js-filter'));
+
+    const facetDrawer = document.getElementById('FacetDrawer');
+    if (facetDrawer) {
+      facetDrawer.classList.remove('loading');
+    }
   }
 
   static renderActiveFacets(html) {
@@ -118,19 +136,17 @@ class FacetFiltersForm extends HTMLElement {
       if (!activeFacetsElement) return;
       document.querySelector(selector).innerHTML = activeFacetsElement.innerHTML;
     })
-
-    FacetFiltersForm.toggleActiveFacets(false);
   }
 
   static renderAdditionalElements(html) {
-    const mobileElementSelectors = ['.mobile-facets__open', '.mobile-facets__count', '.sorting'];
+    const mobileElementSelectors = ['.mobile-facets__open', '.facets__open', '.sorting'];
 
     mobileElementSelectors.forEach((selector) => {
       if (!html.querySelector(selector)) return;
       document.querySelector(selector).innerHTML = html.querySelector(selector).innerHTML;
     });
 
-    document.getElementById('FacetFiltersFormMobile').closest('menu-drawer').bindEvents();
+    document.getElementById('FacetFiltersFormMobile').closest('facet-drawer').bindEvents();
   }
 
   static renderCounts(source, target) {
@@ -163,31 +179,109 @@ class FacetFiltersForm extends HTMLElement {
 
   onActiveFilterClick(event) {
     event.preventDefault();
-    FacetFiltersForm.toggleActiveFacets();
-    const url = event.currentTarget.href.indexOf('?') == -1 ? '' : event.currentTarget.href.slice(event.currentTarget.href.indexOf('?') + 1);
-    FacetFiltersForm.renderPage(url);
+    FacetFiltersForm.renderPage(new URL(event.currentTarget.href).searchParams.toString());
   }
 }
-
 FacetFiltersForm.filterData = [];
 FacetFiltersForm.searchParamsInitial = window.location.search.slice(1);
 FacetFiltersForm.searchParamsPrev = window.location.search.slice(1);
 customElements.define('facet-filters-form', FacetFiltersForm);
 FacetFiltersForm.setListeners();
 
-class PriceRange extends HTMLElement {
+class FacetRemove extends HTMLElement {
   constructor() {
     super();
-    this.querySelectorAll('input')
-      .forEach(element => element.addEventListener('change', this.onRangeChange.bind(this)));
 
-    this.setMinAndMaxValues();
+    this.querySelector('a').addEventListener('click', (event) => {
+      event.preventDefault();
+      const form = this.closest('facet-filters-form') || document.querySelector('facet-filters-form');
+      form.onActiveFilterClick(event);
+    });
   }
+}
+customElements.define('facet-remove', FacetRemove);
+
+class PriceRange extends HTMLElement {
+	constructor() {
+    super();
+
+    this.min = Number(this.dataset.min);
+		this.max = Number(this.dataset.max);
+    this.track = this.querySelector(".price-range__track");
+		this.handles = [...this.querySelectorAll(".price-range__thumbs")];
+		this.startPos = 0;
+		this.activeHandle;
+		
+		this.handles.forEach(handle => {
+			handle.addEventListener("mousedown", this.startMove.bind(this));
+		})
+		
+		window.addEventListener("mouseup", this.stopMove.bind(this));
+
+    this.querySelectorAll('input').forEach(
+      element => element.addEventListener('change', this.onRangeChange.bind(this))
+    );
+	}
 
   onRangeChange(event) {
     this.adjustToValidValues(event.currentTarget);
     this.setMinAndMaxValues();
   }
+	
+	startMove(e) {
+		this.startPos = e.offsetX;
+		this.activeHandle = e.target;
+		this.moveListener = this.move.bind(this);
+		window.addEventListener("mousemove", this.moveListener);
+	}
+	
+	move(e) {
+		const isLower = this.activeHandle.classList.contains("is-lower");
+		const property = isLower ? "--progress-lower" : "--progress-upper";
+		const parentRect = this.track.getBoundingClientRect();
+		const handleRect = this.activeHandle.getBoundingClientRect();
+		let newX = e.clientX - parentRect.x - this.startPos;
+		
+    if (isLower) {
+			const otherX = parseInt(this.style.getPropertyValue("--progress-upper"));
+      const percentageX = otherX * parentRect.width / 100;
+			newX = Math.min(newX, percentageX - handleRect.width);
+			newX = Math.max(newX, 0 - handleRect.width/2);
+		}
+    else {
+			const otherX = parseInt(this.style.getPropertyValue("--progress-lower"));
+      const percentageX = otherX * parentRect.width / 100;
+			newX = Math.max(newX, percentageX);
+			newX = Math.min(newX, parentRect.width - handleRect.width/2);
+		}
+
+    const percentage = (newX + handleRect.width/2) / parentRect.width;
+    const valuenow = this.calcHandleValue(percentage);
+    this.style.setProperty(property, percentage * 100 + "%");
+		this.activeHandle.ariaValueNow = valuenow;
+
+    const output = this.activeHandle.nextElementSibling;
+    const text = output.querySelector('.price-range__output-text');
+    text.innerHTML = valuenow;
+
+    const inputs = this.querySelectorAll('input');
+    const input = isLower ? inputs[0] : inputs[1];
+    input.value = valuenow;
+    
+    this.adjustToValidValues(input);
+    this.setMinAndMaxValues();
+	}
+	
+	calcHandleValue(percentage) {
+		return Math.round(percentage * (this.max - this.min) + this.min);
+	}
+	
+	stopMove() {
+		window.removeEventListener("mousemove", this.moveListener);
+    const form = this.closest('form');
+    
+    if (this.activeHandle && form) form.dispatchEvent(new Event('input'));
+	}
 
   setMinAndMaxValues() {
     const inputs = this.querySelectorAll('input');
@@ -208,18 +302,140 @@ class PriceRange extends HTMLElement {
     if (value > max) input.value = max;
   }
 }
-
 customElements.define('price-range', PriceRange);
 
-class FacetRemove extends HTMLElement {
+class LayoutSwitcher extends HTMLElement {
+	constructor() {
+    super();
+
+    this.cookieName = 'beyours:collection-layout';
+
+    this.initLayoutMode();
+    this.querySelectorAll('.list-view__item').forEach(
+      (button) => button.addEventListener('click', this.onButtonClick.bind(this))
+    );
+	}
+	
+  onButtonClick(event) {
+    const target = event.target ? event.target : event;
+    this.changeLayoutMode(target, target.dataset.layoutMode);
+  }
+
+  initLayoutMode() {
+    if (isStorageSupported('local')) {
+      const layoutMode = window.localStorage.getItem(this.cookieName);
+
+      if (layoutMode !== null) {
+        const target = this.querySelector(`.list-view__item[data-layout-mode="${layoutMode}"]`);
+
+        if (target) {
+          this.changeLayoutMode(target, layoutMode);
+        }
+      }
+    }
+  }
+
+  changeLayoutMode(target, layoutMode) {
+    const productGrid = document.getElementById('product-grid');
+
+    if (productGrid.classList.contains('collection--empty')) {
+      return;
+    }
+
+    const removedClass = ['list', 'grid', 'grid--1-col', 'grid--2-col', 'grid--3-col-tablet', 'grid--2-col-desktop', 'grid--3-col-desktop', 'grid--4-col-desktop'];
+    removedClass.forEach((removed) => {
+      productGrid.classList.remove(removed);
+    });
+
+    let addedClass = [];
+    switch (layoutMode) {
+      case 'list':
+        addedClass = ['grid', 'grid--1-col', 'grid--2-col-desktop', 'list'];
+        break;
+
+      case 'grid-2':
+        addedClass = ['grid', 'grid--2-col'];
+        break;
+
+      case 'grid-3':
+        addedClass = ['grid', 'grid--2-col', 'grid--3-col-tablet', 'grid--3-col-desktop'];
+        break;
+
+      case 'grid-4':
+        addedClass = ['grid', 'grid--2-col', 'grid--3-col-tablet', 'grid--4-col-desktop'];
+        break;
+    }
+    addedClass.forEach((added) => {
+      productGrid.classList.add(added);
+    });
+
+    this.querySelectorAll('.list-view__item').forEach(
+      (button) => button.classList.remove('list-view__item--active')
+    );
+
+    target.classList.add('list-view__item--active');
+
+    if (isStorageSupported('local')) {
+      window.localStorage.setItem(this.cookieName, layoutMode);
+    }
+  }
+}
+customElements.define('layout-switcher', LayoutSwitcher);
+
+class StickyFacetFilters extends HTMLElement {
   constructor() {
     super();
-    this.querySelector('a').addEventListener('click', (event) => {
-      event.preventDefault();
-      const form = this.closest('facet-filters-form') || document.querySelector('facet-filters-form');
-      form.onActiveFilterClick(event);
+  }
+
+  connectedCallback() {
+    this.onScrollHandler = this.onScroll.bind(this);
+
+    window.addEventListener('scroll', this.onScrollHandler, false);
+    this.onScrollHandler();
+  }
+
+  disconnectedCallback() {
+    window.removeEventListener('scroll', this.onScrollHandler);
+  }
+
+  onScroll() {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > this.parentNode.offsetTop) {
+      requestAnimationFrame(this.reveal.bind(this));
+    } else {
+      requestAnimationFrame(this.reset.bind(this));
+    }
+  }
+
+  reveal() {
+    this.classList.add('shopify-section-filters-sticky');
+  }
+
+  reset() {
+    this.classList.remove('shopify-section-filters-sticky');
+  }
+}
+customElements.define('sticky-facet-filters', StickyFacetFilters);
+
+class ShowMoreButton extends HTMLElement {
+  constructor() {
+    super();
+
+    const attributes = {
+      expanded: 'aria-expanded'
+    };
+
+    const button = this.querySelector('.button-show-more');
+    button.addEventListener('click', () => {
+      const filter = this.closest('.js-filter');
+      filter.setAttribute(
+        attributes.expanded,
+        (filter.getAttribute(attributes.expanded) === 'false').toString()
+      );
+
+      this.querySelectorAll('.visually-hidden').forEach(element => element.classList.toggle('hidden'));
     });
   }
 }
-
-customElements.define('facet-remove', FacetRemove);
+customElements.define('show-more-button', ShowMoreButton);

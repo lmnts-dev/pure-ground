@@ -13,9 +13,7 @@
           }
         }
       },
-      "block_order": [
-        "1647888127708a88e2-0"
-      ],
+      "block_order": ["1647888127708a88e2-0"],
       "settings": {
         "color_scheme": "cream",
         "hero": false,
@@ -24,61 +22,61 @@
       }
     },
     "166119697609797ea7": {
-      "type": "gallery",
+      "type": "gallery-marquee",
       "blocks": {
         "1661196976de61f233-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_34_156649c1-f649-4d61-ab6e-42c2aa31bb39.jpg",
+            "image": "shopify://shop_images/Rectangle_34_156649c1-f649-4d61-ab6e-42c2aa31bb39.jpg",
             "alt": "Four workers in lab"
           }
         },
         "1661196976de61f233-1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2018-08-21_17.54_1_ac102e6d-db8e-455f-a14d-4b8bfa316844.jpg",
+            "image": "shopify://shop_images/2018-08-21_17.54_1_ac102e6d-db8e-455f-a14d-4b8bfa316844.jpg",
             "alt": "Working discussing at a table"
           }
         },
         "b3a22e88-f789-4d14-b292-94aca4170021": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/unsplash_3D43SBDDkAc_ae135df5-6dd9-4c4e-966a-7cf2ff86b9cf.jpg",
+            "image": "shopify://shop_images/unsplash_3D43SBDDkAc_ae135df5-6dd9-4c4e-966a-7cf2ff86b9cf.jpg",
             "alt": "Workers inspecting ingredients in lab"
           }
         },
         "821e7cd8-e8bf-46d7-8fe6-135a60353865": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_40_42e0348e-51db-4ec9-90ec-150ccf08fdd9.jpg",
+            "image": "shopify://shop_images/Rectangle_40_42e0348e-51db-4ec9-90ec-150ccf08fdd9.jpg",
             "alt": "Workers having meeting at table"
           }
         },
         "42d6892b-ff60-456d-abf4-76b6d1db35d6": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_38_e1c2881a-759c-46e5-b75f-c65d392fadc3.jpg",
+            "image": "shopify://shop_images/Rectangle_38_e1c2881a-759c-46e5-b75f-c65d392fadc3.jpg",
             "alt": "Two workers talking"
           }
         },
         "52cf6ce2-b4d2-459a-a6eb-8395303e1e07": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_39_4590f9f9-8c84-44d6-93f4-b64032d7764c.jpg",
+            "image": "shopify://shop_images/Rectangle_39_4590f9f9-8c84-44d6-93f4-b64032d7764c.jpg",
             "alt": "Group of volunteers"
           }
         },
         "639c105f-5cab-4374-a1f8-2e6a87f452e1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_36_d558afd5-e424-4495-a97d-2c9df48efceb.jpg",
+            "image": "shopify://shop_images/Rectangle_36_d558afd5-e424-4495-a97d-2c9df48efceb.jpg",
             "alt": "Worker holding an award"
           }
         },
         "f971be3e-1459-4727-9e42-1cfdf2423378": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_33_2ebb98f6-c1ef-4df5-b905-cf4d965f5cb8.jpg",
+            "image": "shopify://shop_images/Rectangle_33_2ebb98f6-c1ef-4df5-b905-cf4d965f5cb8.jpg",
             "alt": "Worker holding bags of ingredients"
           }
         }
@@ -106,11 +104,11 @@
         "277f0779-6824-4b72-a2bc-1356120ba8b9": {
           "type": "position",
           "settings": {
-            "heading": "Production Planner\/Master Scheduler",
+            "heading": "Production Planner/Master Scheduler",
             "location": "Minden",
-            "details": "<p>The Planner is responsible for the review and release of individual orders to production, while<br\/>ensuring that customer requirements are clearly and accurately communicated and fall within<br\/>Company capacities and policies. Schedules order workflows for each applicable operation<br\/>according to established process sequences and lead times and integrates multiple orders into a<br\/>master schedule that maximizes production output and minimizes costs to produce goods. The<br\/>Planner collaborates with senior management and sales to ensure that product on hand is<br\/>properly allocated to best fulfill company and customer needs.<\/p>",
+            "details": "<p>The Planner is responsible for the review and release of individual orders to production, while<br/>ensuring that customer requirements are clearly and accurately communicated and fall within<br/>Company capacities and policies. Schedules order workflows for each applicable operation<br/>according to established process sequences and lead times and integrates multiple orders into a<br/>master schedule that maximizes production output and minimizes costs to produce goods. The<br/>Planner collaborates with senior management and sales to ensure that product on hand is<br/>properly allocated to best fulfill company and customer needs.</p>",
             "button_label": "Apply Now",
-            "button_link": "https:\/\/apply.workable.com\/pgi-organics\/",
+            "button_link": "https://apply.workable.com/pgi-organics/",
             "department": "Operations"
           }
         },
@@ -119,9 +117,9 @@
           "settings": {
             "heading": "Quality Assurance Technician",
             "location": "Minden",
-            "details": "<p>Performs product inspections at receiving and shipping, report product quality and conditions<br\/>to each respective buyer, conducts daily, weekly & monthly sanitation check of assigned areas in<br\/>accordance with HACCP and company’s procedures. Reports defects and inconsistencies to the Quality Assurance Manager. In the absence of the Quality Technician the Quality Manager will assume the<br\/>responsibilities of the position.<\/p>",
+            "details": "<p>Performs product inspections at receiving and shipping, report product quality and conditions<br/>to each respective buyer, conducts daily, weekly & monthly sanitation check of assigned areas in<br/>accordance with HACCP and company’s procedures. Reports defects and inconsistencies to the Quality Assurance Manager. In the absence of the Quality Technician the Quality Manager will assume the<br/>responsibilities of the position.</p>",
             "button_label": "Apply Now",
-            "button_link": "https:\/\/apply.workable.com\/pgi-organics\/",
+            "button_link": "https://apply.workable.com/pgi-organics/",
             "department": "General"
           }
         },
@@ -130,20 +128,20 @@
           "settings": {
             "heading": "Customer Service Representative",
             "location": "Minden",
-            "details": "<p>Pure Ground Ingredients, a Certified B Corporation, is seeking an experienced Customer<br\/>Service Representative to support the firms’ current and prospective customer base. This role<br\/>is on-site at our HQ\/plant located in the Carson Valley Business Park between Carson City and<br\/>Minden, NV.<br\/><\/p><p>The position will report to the VP, Sales & Marketing. The successful candidate is likely to be an<br\/>experienced CSR with strong communication and data management skills or an accomplished B2B sales representative seeking to transition from the field to a support role.<\/p>",
+            "details": "<p>Pure Ground Ingredients, a Certified B Corporation, is seeking an experienced Customer<br/>Service Representative to support the firms’ current and prospective customer base. This role<br/>is on-site at our HQ/plant located in the Carson Valley Business Park between Carson City and<br/>Minden, NV.<br/></p><p>The position will report to the VP, Sales & Marketing. The successful candidate is likely to be an<br/>experienced CSR with strong communication and data management skills or an accomplished B2B sales representative seeking to transition from the field to a support role.</p>",
             "button_label": "Apply Now",
-            "button_link": "https:\/\/apply.workable.com\/pgi-organics\/",
+            "button_link": "https://apply.workable.com/pgi-organics/",
             "department": "Marketing"
           }
         },
         "d1a8345b-710d-44e5-a206-df753df54d70": {
           "type": "position",
           "settings": {
-            "heading": "Order Selector\/Inventory Specialist",
+            "heading": "Order Selector/Inventory Specialist",
             "location": "Minden",
-            "details": "<p>Pure Ground Ingredients, a Certified B Corporation, and Equal Opportunity Employer is seeking an<br\/>experienced Order Selector\/Inventory Specialist for our Minden, NV manufacturing facility. We source<br\/>organic botanicals, herbs, and spices worldwide and sell them across North America and Europe from<br\/>our facilities in Minden, Reno, and The Netherlands. First and second shifts available.<br\/><\/p><p>Desired qualifications:<br\/>• Experience working in a manufacturing or distribution facility serving internal and external<br\/>customers.<br\/>• Food industry experience is a plus<br\/>• Experience managing physical inventory within an inventory management system<br\/>• Understanding of inventory location assignment and controls such as cycle counts<br\/>• Experience with a WMS is a plus<br\/>• Basic understanding of shipping and receiving procedures<br\/>• High attention to order accuracy utilizing customary weight, measure, and labeling methods<br\/>• At PGI, quality is everyone’s job<br\/>• Forklift Certified (standing and sitting) preferred<br\/>• PGI will certify experienced forklift operators meeting other qualifications for the role<\/p>",
+            "details": "<p>Pure Ground Ingredients, a Certified B Corporation, and Equal Opportunity Employer is seeking an<br/>experienced Order Selector/Inventory Specialist for our Minden, NV manufacturing facility. We source<br/>organic botanicals, herbs, and spices worldwide and sell them across North America and Europe from<br/>our facilities in Minden, Reno, and The Netherlands. First and second shifts available.<br/></p><p>Desired qualifications:<br/>• Experience working in a manufacturing or distribution facility serving internal and external<br/>customers.<br/>• Food industry experience is a plus<br/>• Experience managing physical inventory within an inventory management system<br/>• Understanding of inventory location assignment and controls such as cycle counts<br/>• Experience with a WMS is a plus<br/>• Basic understanding of shipping and receiving procedures<br/>• High attention to order accuracy utilizing customary weight, measure, and labeling methods<br/>• At PGI, quality is everyone’s job<br/>• Forklift Certified (standing and sitting) preferred<br/>• PGI will certify experienced forklift operators meeting other qualifications for the role</p>",
             "button_label": "Apply Now",
-            "button_link": "https:\/\/apply.workable.com\/pgi-organics\/",
+            "button_link": "https://apply.workable.com/pgi-organics/",
             "department": "General"
           }
         },
@@ -152,9 +150,9 @@
           "settings": {
             "heading": "Inside Sales Specialist",
             "location": "Minden",
-            "details": "<p>Pure Ground Ingredients, a Certified B Corporation, is seeking an Inside Sales Specialist This role is on-site in<br\/>our HQ\/plant located between Carson City and Minden, NV. For the right candidate, the role could easily<br\/>transition to hybrid.<br\/><\/p><p>The position will report to the VP, Sales & Marketing. The successful candidate is likely to be an experienced inside salesperson with strong communication and data management skills or an accomplished sales<br\/>representative seeking to transition away from the field or an exceptional CSR interested in higher income<br\/>potential.<\/p>",
+            "details": "<p>Pure Ground Ingredients, a Certified B Corporation, is seeking an Inside Sales Specialist This role is on-site in<br/>our HQ/plant located between Carson City and Minden, NV. For the right candidate, the role could easily<br/>transition to hybrid.<br/></p><p>The position will report to the VP, Sales & Marketing. The successful candidate is likely to be an experienced inside salesperson with strong communication and data management skills or an accomplished sales<br/>representative seeking to transition away from the field or an exceptional CSR interested in higher income<br/>potential.</p>",
             "button_label": "Apply Now",
-            "button_link": "https:\/\/apply.workable.com\/pgi-organics\/",
+            "button_link": "https://apply.workable.com/pgi-organics/",
             "department": "Marketing"
           }
         }
@@ -168,7 +166,7 @@
       ],
       "settings": {
         "heading": "Open Positions",
-        "text": "<p>We’re looking for people to join the team who are as excited as we are to build positive global impact of supporting of customers, suppliers and network of growers and partners around the world. <\/p>",
+        "text": "<p>We’re looking for people to join the team who are as excited as we are to build positive global impact of supporting of customers, suppliers and network of growers and partners around the world. </p>",
         "top_spacing": 50,
         "bottom_spacing": 50
       }
@@ -179,42 +177,42 @@
         "316ee8ce-2225-496c-84b0-718633c4bc58": {
           "type": "image",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/Group_269.png",
+            "icon": "shopify://shop_images/Group_269.png",
             "text": "Paid company holidays and Paid Time Off"
           }
         },
         "99102a26-6e8a-4299-9424-fb60527cb671": {
           "type": "image",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/Group_264.png",
+            "icon": "shopify://shop_images/Group_264.png",
             "text": "Dental and Vision"
           }
         },
         "bc7dcbf7-5ac6-4789-9ffc-6963ead871fe": {
           "type": "image",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/Group_271.png",
+            "icon": "shopify://shop_images/Group_271.png",
             "text": "Competitive hourly wage"
           }
         },
         "cf7f733f-4e3b-4e4d-9d2a-2fd2c4784098": {
           "type": "image",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/Group_268.png",
+            "icon": "shopify://shop_images/Group_268.png",
             "text": "401(k) plan with match"
           }
         },
         "a2492840-6bf3-4623-bd10-43d1c2164221": {
           "type": "image",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/Group_267.png",
+            "icon": "shopify://shop_images/Group_267.png",
             "text": "Growth-oriented"
           }
         },
         "0bb6dd77-e9c4-4d4d-b6e5-5df7ed8769c2": {
           "type": "image",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/Group_270.png",
+            "icon": "shopify://shop_images/Group_270.png",
             "text": "Health insurance with company contribution"
           }
         }
@@ -233,7 +231,7 @@
         "subheading": "",
         "heading_size": "h2",
         "accent_color": false,
-        "text": "<p>There’s life at work and life outside of work. We want everyone to be healthy and have the resources and support they need.<\/p>",
+        "text": "<p>There’s life at work and life outside of work. We want everyone to be healthy and have the resources and support they need.</p>",
         "button_label": "Button label",
         "button_link": "",
         "alt": "",
@@ -264,7 +262,7 @@
           "type": "button",
           "settings": {
             "button_label": "Apply Now",
-            "button_link": "https:\/\/apply.workable.com\/pgi-organics\/",
+            "button_link": "https://apply.workable.com/pgi-organics/",
             "button_color": "default"
           }
         }
@@ -277,7 +275,7 @@
       "settings": {
         "text_color": "light",
         "nav_color": false,
-        "image": "shopify:\/\/shop_images\/unsplash_V0xp-dTS3z0_88cecadb-633c-4c82-8158-3d123d9a0e4d.jpg",
+        "image": "shopify://shop_images/unsplash_V0xp-dTS3z0_88cecadb-633c-4c82-8158-3d123d9a0e4d.jpg",
         "alt": "Woman working in lab",
         "overlay": 20,
         "hero": false,
