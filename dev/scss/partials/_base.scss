@@ -25,13 +25,23 @@ body {
 
   main {
     > *:first-child:not(.section-image__wrapper):not(.content-with-bg-image__wrapper) {
-      margin-top: var(--navHeight);
+      /* margin-top: var(--navHeight);*/
     }
+  }
+}
+
+main {
+  padding-top: var(--navHeight);
+
+  > .section-image__wrapper:first-child,
+  .content-with-bg-image__wrapper:first-child {
+    margin-top: calc(var(--navHeight) * -1);
   }
 }
 
 //Sections' space and color defaults
 ////////////////////////////////////
+
 main > section > div,
 body > div > section,
 body > div > footer {
@@ -307,7 +317,7 @@ form {
       flex: 50%;
     }
 
-    &__btn{
+    &__btn {
       position: relative;
       z-index: 10;
     }
@@ -346,9 +356,8 @@ form {
     }
   }
 
-
   @media screen and (max-height: 560px) {
-    &__plants{
+    &__plants {
       display: none;
     }
   }

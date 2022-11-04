@@ -2,8 +2,9 @@
   color: var(--color-foreground);
   background: var(--color-background);
   position: relative;
-  padding: var(--sectionVerticalSpacing) var(--sectionHorizontalSpacing) calc(var(--sectionVerticalSpacing) / 4) var(--sectionHorizontalSpacing);
-  display:grid;
+  padding: var(--sectionVerticalSpacing) var(--sectionHorizontalSpacing)
+    calc(var(--sectionVerticalSpacing) / 4) var(--sectionHorizontalSpacing);
+  display: grid;
   grid-template-columns: repeat(4, 1fr);
 
   &__plant-decor {
@@ -34,14 +35,15 @@
       grid-column: 2/3;
       order: 5;
       position: relative;
+      padding: var(--pxSize) 0;
 
-      &:before{
-        content:"";
+      &:before {
+        content: "";
         position: absolute;
         background-color: var(--color-foreground);
         height: 1px;
         width: 100%;
-        opacity: .2;
+        opacity: 0.2;
         top: 0;
         left: 0;
         right: 0;
@@ -69,13 +71,13 @@
       padding: var(--pxSize) 0;
       position: relative;
 
-      &:before{
-        content:"";
+      &:before {
+        content: "";
         position: absolute;
         background-color: var(--color-foreground);
         height: 1px;
         width: 100%;
-        opacity: .2;
+        opacity: 0.2;
         top: 0;
         left: 0;
         right: 0;
@@ -95,7 +97,7 @@
 
   &__badges {
     grid-column: 3/-1;
-    padding-top: calc(var(--pxSize) / 3);
+    padding: var(--pxSize) 0;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -104,13 +106,13 @@
     order: 6;
     position: relative;
 
-    &:before{
-      content:"";
+    &:before {
+      content: "";
       position: absolute;
       background-color: var(--color-foreground);
       height: 1px;
       width: 100%;
-      opacity: .2;
+      opacity: 0.2;
       top: 0;
       left: 0;
       right: 0;
@@ -131,17 +133,15 @@
     justify-content: space-between;
     padding-bottom: var(--pxSize);
 
-    &__block{
+    &__block {
       padding-bottom: var(--pxSize);
       position: relative;
     }
 
-    &__block:first-child{
+    &__block:first-child {
       grid-column: 1/2;
     }
   }
-
-
 
   &__bottom {
     grid-column: 1 / -1;
@@ -152,13 +152,13 @@
     position: relative;
     order: 7;
 
-    &:before{
-      content:"";
+    &:before {
+      content: "";
       position: absolute;
       background-color: var(--color-foreground);
       height: 1px;
       width: 100%;
-      opacity: .2;
+      opacity: 0.2;
       top: 0;
       left: 0;
       right: 0;
@@ -187,6 +187,7 @@
     }
 
     &__social {
+      display: flex;
       padding-left: var(--pxSize);
     }
   }
@@ -223,13 +224,13 @@
     &__branding {
       &__logo {
         max-width: 130px;
-        display:block;
+        display: block;
         order: 1;
-        padding-top:0;
+        padding-top: 0;
 
-      &:before{
-        content:none;
-      }
+        &:before {
+          content: none;
+        }
 
         svg {
           width: 100%;
@@ -243,8 +244,8 @@
         order: 2;
         padding-bottom: calc(var(--pxSize) / 2);
 
-        &:before{
-          content:none;
+        &:before {
+          content: none;
         }
       }
     }
@@ -263,13 +264,13 @@
     &__badges {
       gap: calc(var(--pxSize) / 2);
       grid-column: 1/-1;
-      margin-top: calc(var(--sectionVerticalSpacing)/3);
+      margin-top: calc(var(--sectionVerticalSpacing) / 3);
       justify-content: center;
       grid-column: span 2;
       padding-bottom: calc(var(--pxSize) / 2);
 
-      &:before{
-        content:none;
+      &:before {
+        content: none;
       }
 
       img {
@@ -297,23 +298,24 @@
         padding-left: 0;
       }
 
-      &:before{
-        content:none;
+      &:before {
+        content: none;
       }
     }
   }
 
   @media screen and (max-width: 676px) {
-    &__branding{
-      &__info{
-        a, p{
-          font-size: .75rem;
+    &__branding {
+      &__info {
+        a,
+        p {
+          font-size: 0.75rem;
         }
       }
     }
   }
 
-    @media screen and (max-width: 390px) {
+  @media screen and (max-width: 390px) {
     &__branding {
       &__info {
         margin-left: -30px;
@@ -321,4 +323,3 @@
     }
   }
 }
-
