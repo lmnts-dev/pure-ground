@@ -26,9 +26,14 @@
             "price_size": "medium"
           }
         },
-        "rating": {
-          "type": "rating",
+        "d1ab0c61-7c4c-4a66-a549-b036f271ddbc": {
+          "type": "shopify:\/\/apps\/product-reviews\/blocks\/star_rating\/bae150af-8da8-48b2-9867-398188115e5f",
           "settings": {
+            "stars_fill_color": "#3d1f0d",
+            "star_size": 15,
+            "text_align": "flex-start",
+            "product": "{{product}}",
+            "stars_text_empty": "No reviews"
           }
         },
         "price": {
@@ -70,7 +75,7 @@
       "block_order": [
         "subtitle",
         "title",
-        "rating",
+        "d1ab0c61-7c4c-4a66-a549-b036f271ddbc",
         "price",
         "0a58c381-05f8-4f32-a458-34161063193c",
         "variant_picker",
@@ -83,7 +88,7 @@
         "media_size": "medium",
         "gallery_layout": "thumbnail_slider",
         "image_ratio": "square",
-        "show_thumbnails": false,
+        "show_thumbnails": true,
         "hide_variants": true,
         "enable_image_zoom": true,
         "enable_video_looping": false,
@@ -115,11 +120,36 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "1668627549c95660f0": {
+      "type": "apps",
+      "blocks": {
+        "feddef1a-3f70-4824-af13-95402442fa42": {
+          "type": "shopify:\/\/apps\/product-reviews\/blocks\/star_rating\/bae150af-8da8-48b2-9867-398188115e5f",
+          "settings": {
+            "stars_fill_color": "#000000",
+            "star_size": 15,
+            "text_align": "center",
+            "product": "{{product}}",
+            "stars_text_empty": "No reviews"
+          }
+        }
+      },
+      "block_order": [
+        "feddef1a-3f70-4824-af13-95402442fa42"
+      ],
+      "settings": {
+        "include_margins": true,
+        "show_divider": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "empty-space",
     "main",
-    "product-recommendations"
+    "product-recommendations",
+    "1668627549c95660f0"
   ]
 }
