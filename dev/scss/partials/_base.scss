@@ -169,10 +169,13 @@ form {
   display: inline-flex;
   text-align: center;
   font-size: 0.875rem;
+  letter-spacing: 0.02rem;
   font-weight: 500;
   margin: 1rem 0 0 0;
   align-items: center;
   -webkit-appearance: none;
+  text-transform: none;
+  border: 0px solid var(--color-btn);
 
   &:hover {
     background: var(--color-btn-hover);

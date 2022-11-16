@@ -4,6 +4,7 @@ h3,
 h4,
 h5,
 h6,
+.h0,
 .h1,
 .h2,
 .h3,
@@ -21,7 +22,8 @@ h6,
 }
 
 h1,
-.h1 {
+.h1,
+.h0 {
   font-size: 4rem;
   font-weight: 900;
 
@@ -155,6 +157,28 @@ p,
 a {
   color: var(--color-foreground);
   text-decoration: none;
+}
+
+.pill {
+  --pillSize: calc(var(--pxSize) / 1.25);
+  font-size: 0.8125rem;
+  letter-spacing: 0.02rem;
+  height: var(--pillSize);
+  line-height: var(--pillSize);
+  border-radius: var(--pillSize);
+  padding: 0 calc(var(--pillSize) / 3);
+  margin: 0;
+  box-shadow: none;
+  min-width: auto;
+  min-height: auto;
+  border: 1px solid var(--color-btn);
+  color: var(--color-btn);
+  font-weight: 500;
+
+  &--active {
+    background-color: var(--color-btn);
+    color: var(--color-btn-txt);
+  }
 }
 
 ul,
