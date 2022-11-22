@@ -8,7 +8,7 @@
 
 <link rel="stylesheet" href="{{ 'component-deferred-media.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-product-review.css' | asset_url }}" media="print" onload="this.media='all'">
-
+{% assign show_dynamic_checkout = false %}
 {%- style -%}
   .section-{{ section.id }}-padding {
     padding-top: calc({{ section.settings.padding_top }}px * 0.75);
@@ -58,9 +58,27 @@
 {%- endif -%}
 
 <section class="main-product page-width section-{{ section.id }}-padding">
-  <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}{% if section.settings.gallery_layout == 'thumbnail_slider' and section.settings.show_thumbnails == false %} product--hide-thumbnails{% endif %}{% if section.settings.mobile_image_ratio == 'adapt' %} product--mobile-adapt{% endif %}{% unless section.settings.enable_image_zoom %} product--zoom-disabled{% endunless %}">
+  {%- if section.settings.breadcrumb_text_style != "none" -%}
+    <div class="breadcrumb-wrapper">
+      {% render 'breadcrumbs', text_style: section.settings.breadcrumb_text_style, show_divider: false %}
+    </div>
+  {% endif %}
+
+  <div 
+    class="product product--{{ section.settings.media_size }} 
+    product--{{ section.settings.media_position }} 
+    product--{{ section.settings.gallery_layout }} 
+    grid grid--1-col 
+    {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}
+    {% if section.settings.gallery_layout == 'thumbnail_slider' and section.settings.show_thumbnails == false %} product--hide-thumbnails{% endif %}
+    {% if section.settings.mobile_image_ratio == 'adapt' %} product--mobile-adapt{% endif %}
+    {% unless section.settings.enable_image_zoom %} product--zoom-disabled{% endunless %}"
+  >
     <product-recently-viewed data-product-id="{{ product.id }}" class="hidden"></product-recently-viewed>
     <div class="grid__item product__media-wrapper">
+      {% if product.metafields.custom.images_badge %}
+        <div class="main-product__images-badge"><span>{{ product.metafields.custom.images_badge }}</span></div>
+      {% endif %}
       <span id="ProductImages"></span>
       <media-gallery id="MediaGallery-{{ section.id }}" role="region"{% if section.settings.enable_sticky_info %} class="product__media-gallery"{% endif %} aria-label="{{ 'products.product.media.gallery_viewer' | t }}" data-desktop-layout="{{ section.settings.gallery_layout }}">
         <div id="GalleryStatus-{{ section.id }}" class="visually-hidden" role="status"></div>
@@ -212,10 +230,11 @@
           </button>
         {%- endif -%}
 
-        {%- if product.media.size > 1 and media_count > 1 and section.settings.gallery_layout == 'thumbnail_slider' or section.settings.show_mobile_thumbnails -%}
+        {%- if product.media.size > 1 and media_count > 1 and section.settings.gallery_layout == 'thumbnail_slider' or section.settings.show_mobile_thumbnails or section.settings.thumbnail_dots -%}
           <thumbnail-slider id="GalleryThumbnails-{{ section.id }}"
-            class="thumbnail-slider slider-mobile-gutter{% unless section.settings.show_mobile_thumbnails %} small-hide{% endunless %}{% if media_count <= 3 %} thumbnail-slider--no-slide{% endif %}"
-          >
+            class="thumbnail-slider slider-mobile-gutter{% if section.settings.gallery_layout == 'thumbnail_slider' and section.settings.thumbnail_dots == true %} thumbnail-dots {% endif %}{% unless section.settings.show_mobile_thumbnails %} small-hide{% endunless %}{% if media_count <= 3 %} thumbnail-slider--no-slide{% endif %}"
+            style="{% if section.settings.thumbnail_dots %}display: flex;{% endif %}"
+            >
             <ul id="Slider-Thumbnails-{{ section.id }}"
               class="thumbnail-list list-unstyled slider slider--mobile{% if section.settings.gallery_layout == 'thumbnail_slider' %} slider--tablet-up{% endif %}"
               data-media-count="{{ product.media.size }}"
@@ -951,7 +970,7 @@
                   <button
                     type="submit"
                     name="add"
-                    class="product-form__submit button{% if block.settings.show_dynamic_checkout %} button--secondary{% endif %} button--full-width"
+                    class="product-form__submit button{% if show_dynamic_checkout %} button--secondary{% endif %} button--full-width"
                     {%- if product.selected_or_first_available_variant.available == false %} disabled="disabled"{% endif -%}
                     {%- if product.template_suffix == 'pre-order' %} data-pre-order="true"{% endif -%}
                   >
@@ -967,12 +986,20 @@
                       endif
                     -%}
                   </button>
-                  {%- if block.settings.show_dynamic_checkout -%}
+                  {%- if show_dynamic_checkout -%}
                     {{ form | payment_button }}
                   {%- endif -%}
+                  {% if product.metafields.custom.request_c_of_a_results %}
+                    <a href="/" class="button __btn-clr-ground">Request C of A Results</a>
+                  {% endif %}
                 </div>
               {%- endform -%}
             </product-form>
+            {% if product.metafields.custom.request_a_sample %}
+              <div class="rte p-sm">
+                <a href="/">Request a sample</a>
+              </div>
+            {% endif %}
             {{ 'component-pickup-availability.css' | asset_url | stylesheet_tag }}
 
             {%- assign pick_up_availabilities = product.selected_or_first_available_variant.store_availabilities | where: 'pick_up_enabled', true -%}
@@ -1107,10 +1134,6 @@
             </div>
           {%- when 'spacing' -%}
             <div class="spacing-section" style="--spacing-section-desktop: {{ block.settings.desktop_height }}px; --spacing-section-mobile: {{ block.settings.mobile_height }}px;" {{ block.shopify_attributes }}></div>
-          {%- when 'breadcrumb' -%}
-            <div class="breadcrumb-wrapper" {{ block.shopify_attributes }}>
-              {% render 'breadcrumbs', text_style: block.settings.text_style, show_divider: block.settings.show_divider %}
-            </div>
           {%- when 'complementary' -%}
             <product-recommendations class="complementary-products{% if block.settings.make_collapsible_row %} is-accordion{% endif %} no-js-hidden" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit={{ block.settings.product_list_limit }}&intent=complementary">
               {%- if recommendations.performed and recommendations.products_count > 0 -%}
@@ -1486,39 +1509,6 @@
   "blocks": [
     {
       "type": "@app"
-    },
-    {
-      "type": "breadcrumb",
-      "name": "t:sections.main-product.blocks.breadcrumb.name",
-      "limit": 1,
-      "settings": [
-        {
-          "type": "select",
-          "id": "text_style",
-          "options": [
-            {
-              "value": "body",
-              "label": "t:sections.main-product.blocks.breadcrumb.settings.text_style.options__1.label"
-            },
-            {
-              "value": "subtitle",
-              "label": "t:sections.main-product.blocks.breadcrumb.settings.text_style.options__2.label"
-            },
-            {
-              "value": "uppercase",
-              "label": "t:sections.main-product.blocks.breadcrumb.settings.text_style.options__3.label"
-            }
-          ],
-          "default": "body",
-          "label": "t:sections.main-product.blocks.breadcrumb.settings.text_style.label"
-        },
-        {
-          "type": "checkbox",
-          "id": "show_divider",
-          "default": false,
-          "label": "t:sections.all.show_divider.label"
-        }
-      ]
     },
     {
       "type": "text",
@@ -1987,14 +1977,14 @@
           "id": "show_quantity_selector",
           "default": true,
           "label": "t:sections.main-product.blocks.buy_buttons.settings.show_quantity_selector.label"
-        },
+        }/*,
         {
           "type": "checkbox",
           "id": "show_dynamic_checkout",
           "default": true,
           "label": "t:sections.main-product.blocks.buy_buttons.settings.show_dynamic_checkout.label",
           "info": "t:sections.main-product.blocks.buy_buttons.settings.show_dynamic_checkout.info"
-        }
+        }*/
       ]
     },
     {
@@ -3119,6 +3109,30 @@
     },
     {
       "type": "select",
+      "id": "breadcrumb_text_style",
+      "options": [
+        {
+          "value": "hide",
+          "label": "Don't Show"
+        },
+        {
+          "value": "body",
+          "label": "t:sections.main-product.blocks.breadcrumb.settings.text_style.options__1.label"
+        },
+        {
+          "value": "subtitle",
+          "label": "t:sections.main-product.blocks.breadcrumb.settings.text_style.options__2.label"
+        },
+        {
+          "value": "uppercase",
+          "label": "t:sections.main-product.blocks.breadcrumb.settings.text_style.options__3.label"
+        }
+      ],
+      "default": "body",
+      "label": "Breadcrumb style"
+    },
+    {
+      "type": "select",
       "id": "media_position",
       "options": [
         {
@@ -3213,6 +3227,13 @@
       "id": "show_thumbnails",
       "default": true,
       "label": "t:sections.main-product.settings.show_thumbnails.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "thumbnail_dots",
+      "default": false,
+      "label": "Reduce thumbnail images to dots?",
+      "info": "Only applies when show thumbnails is enabled, and the layout 'Slider' is selected"
     },
     {
       "type": "checkbox",

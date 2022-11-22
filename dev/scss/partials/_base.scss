@@ -160,9 +160,10 @@ form {
 ////////////////////////////////////
 
 .btn {
+  --btnRadius: 7px;
   height: var(--btnHeight);
   line-height: var(--btnHeight);
-  border-radius: 7px;
+  border-radius: var(--btnRadius);
   background: var(--color-btn);
   color: var(--color-btn-txt);
   padding: 0 calc(var(--btnHeight) / 2);

@@ -154,7 +154,8 @@ p,
   font-size: 1.3125rem;
 }
 
-a {
+a,
+.link {
   color: var(--color-foreground);
   text-decoration: none;
 }
@@ -220,6 +221,7 @@ li {
     opacity: 1;
     will-change: opacity;
     transition: all 0.25s ease;
+    background-image: none;
 
     &:after {
       content: "";

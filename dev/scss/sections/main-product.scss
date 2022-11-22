@@ -3,6 +3,58 @@
     color: var(--color-btn);
   }
 
+  &__images-badge {
+    @extend .h2;
+    position: absolute;
+    font-weight: 900;
+    top: 0;
+    left: 0;
+    color: var(--color-btn);
+    text-transform: uppercase;
+    z-index: 2;
+    transform: rotate(-10deg) translate(-30%, -50%);
+
+    span {
+      z-index: 2;
+      position: relative;
+    }
+
+    &:before {
+      content: "";
+      background: var(--color-background-alt);
+      border-radius: 45% 65% 40% 60%;
+      padding-top: 65%;
+      width: 65%;
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(-45deg);
+      z-index: 1;
+    }
+  }
+
+  .breadcrumb-wrapper {
+    position: relative;
+    z-index: 3;
+    margin-bottom: calc(var(--pxSize) * 2);
+    nav {
+      justify-content: flex-start;
+      opacity: 0.7;
+
+      a,
+      span {
+        @extend .caption-sm;
+        margin-bottom: 0;
+      }
+
+      span {
+        transform: scale(-0.8);
+        margin: 0 calc(var(--pxSize) / 5);
+      }
+    }
+  }
+
   .product-form {
     &__input {
       gap: calc(var(--pxSize) / 5) calc(var(--pxSize) / 2.5);
@@ -29,6 +81,14 @@
     }
 
     &__buttons {
+      gap: calc(var(--pxSize) / 5) calc(var(--pxSize) / 2.5);
+
+      > * {
+        min-width: auto !important;
+        flex-grow: 0 !important;
+        width: auto !important;
+        margin: 0;
+      }
     }
 
     &__quantity {
@@ -38,19 +98,147 @@
         @extend .btn;
         @extend .__with-border;
         border-width: 1px;
+        width: auto;
+        margin: 0;
+        padding: 0 calc(var(--pxSize) / 5);
+        border-radius: var(--btnRadius);
+
+        &:hover {
+          background: none;
+          color: var(--color-accent);
+        }
+
+        input {
+          width: var(--pxSize);
+          @extend .p-sm;
+          margin: 0;
+        }
+
+        .quantity {
+          &__button {
+            width: auto;
+            flex: auto;
+
+            svg {
+              stroke: none;
+              margin: 0;
+            }
+          }
+        }
       }
     }
   }
 
   .product {
-    &__description {
-      @extend .p-sm;
-    }
-
     &__text {
       &.caption-with-letter-spacing {
         @extend .caption-sm;
         color: var(--color-btn);
+        margin: 0;
+      }
+    }
+
+    &__info-container {
+      padding-top: 0;
+      display: flex;
+      flex-direction: column;
+      gap: calc(var(--pxSize) / 3);
+
+      > * + * {
+        margin: 0;
+      }
+
+      .spr-summary-starrating {
+        margin: 0;
+
+        a {
+          @extend .p-sm;
+          margin: 0;
+        }
+      }
+
+      .product {
+        &__description {
+          margin-top: 0;
+          @extend .p-sm;
+        }
+      }
+
+      .price {
+        &__prefix,
+        &__suffix {
+          @extend .h5;
+          vertical-align: baseline;
+        }
+
+        .price-item {
+          @extend .h5;
+          color: var(--color-btn);
+
+          * {
+            color: var(--color-btn);
+          }
+        }
+      }
+    }
+
+    &__media-gallery {
+      .thumbnail-slider {
+        margin: 0;
+        height: var(--pxSize);
+
+        &.thumbnail-dots {
+          .slider-buttons {
+            display: none;
+          }
+
+          ul {
+            justify-content: center;
+
+            li {
+              width: calc(var(--pxSize) / 5);
+              height: calc(var(--pxSize) / 5);
+              border-radius: 50%;
+              background: transparent;
+              border: 1px solid var(--color-btn);
+
+              &.is-active {
+                background: var(--color-btn);
+              }
+
+              button {
+                img {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .slider-buttons {
+        justify-content: space-between;
+        width: 100%;
+
+        .slider-button {
+          background: transparent;
+
+          &:before {
+            content: "";
+            opacity: 0.5;
+            position: absolute;
+            inset: 0;
+            background: var(--color-background);
+          }
+
+          &:after {
+            content: none;
+          }
+
+          svg {
+            position: relative;
+          }
+        }
       }
     }
   }
@@ -60,6 +248,7 @@
     @extend .btn;
     min-height: auto;
     min-width: auto;
+    margin: 0;
   }
 
   @media screen and (min-width: 750px) {
