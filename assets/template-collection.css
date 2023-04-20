@@ -58,4 +58,5 @@
 .cart_button_holder input[type="submit"]{width:100%;border-radius: 0; display: block;}
 .new_filter{display:flex !important; }
 .new_filter .facet-filters{padding-left:0 !important; }
-.new_filter .caption-large label{text-transform:capitalize !important;}
+.new_filter .caption-large label{text-transform:capitalize !important; font-size:22px;}
+.new_filter select{font-size:22px;}
