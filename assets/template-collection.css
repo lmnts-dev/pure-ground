@@ -69,5 +69,5 @@
 .pro_grid_item{width:calc(50% - 20px); }  
 }
 @media screen and (max-width: 480px) {
-  .pro_grid_item{width:calc(100% - 20px); } 
+  .pro_grid_item{width:calc(100%); } 
 }
