@@ -49,5 +49,5 @@
 }
 
 /* New Css */
-.pro_grid{display:flex; gap:65px;}
-.pro_grid_item{width:25%; flex-shrink: 0; }
+.pro_grid{display:flex; gap:64px;}
+.pro_grid_item{width:calc(25% - 32px); flex-shrink: 0; }
