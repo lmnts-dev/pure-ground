@@ -1526,6 +1526,9 @@
           "label": "Enable quick add button",
           "info": "Optimal with popup or drawer cart type."
         },
+        "header_mobile": {
+          "content": "Mobile Layout"
+        },
         "columns_mobile": {
           "label": "Number of columns on mobile",
           "options__1": {
