@@ -503,9 +503,6 @@
           },
           "info": "Add images by editing your collections. [Learn more](https:\/\/help.shopify.com\/en\/manual\/products\/collections)"
         },
-        "image_shape": {
-          "label": "Image Shape"
-        },
         "swipe_on_mobile": {
           "label": "Enable swipe on mobile"
         },
