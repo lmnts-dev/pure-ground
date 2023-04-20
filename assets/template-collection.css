@@ -55,11 +55,11 @@
 .pro_grid .card__media img{height:auto !important; }
 .pro_grid_item .card__information{ padding:0 !important; }
 .cart_button_holder{text-align:center;}
-.cart_button_holder input[type="submit"]{width:100%;border-radius: 0; display: block;}
+.cart_button_holder input[type="submit"]{width:100%;border-radius: 0; display: block;cursor:pointer;}
 .new_filter{display:flex !important; }
 .new_filter .facet-filters{padding-left:0 !important; }
 .new_filter .caption-large label{text-transform:capitalize !important; font-size:22px;}
 .new_filter select{font-size:22px;}
 .pro_grid_item .btn{background: transparent; border-top:1px solid #e4d7c6; font-weight: 400; text-transform: uppercase;}
-.pro_grid_item .btn:hover{background:#366a2f; opacity: 1; cursor:pointer;}
+.pro_grid_item .btn:hover{background:#366a2f; opacity: 1; }
 .pro_grid_item .price__regular{font-size:23px; color:#366a2f;font-weight: bold; letter-spacing: 0;}
