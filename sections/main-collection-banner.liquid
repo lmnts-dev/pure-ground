@@ -8,8 +8,6 @@
   }
 {%- endstyle -%}
 
-{% render 'next-gen-img', image: section.settings.image, alt: section.settings.alt %}
-
 <div class="collection-hero{% if section.settings.show_collection_image and collection.image %} collection-hero--with-image{% endif %} color-{{ section.settings.color_scheme }} gradient">
   <div class="collection-hero__inner page-width">
     <div class="collection-hero__text-wrapper">
@@ -80,13 +78,7 @@
       ],
       "default": "background-1",
       "label": "t:sections.all.colors.label"
-    },
-    {
-         "type": "image_picker",
-         "id": "image",
-         "label": "Image",
-         "info": "Shop Page Banner. Will show only Shop Page"
-      }
+    }
   ]
 }
 {% endschema %}
