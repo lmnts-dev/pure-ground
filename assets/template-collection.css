@@ -62,4 +62,4 @@
 .new_filter select{font-size:22px;}
 .pro_grid_item .btn{background: transparent; border-top:1px solid #e4d7c6; font-weight: 400; text-transform: uppercase;}
 .pro_grid_item .btn:hover{background:#366a2f; opacity: 1; }
-.pro_grid_item .price__regular{font-size:23px; color:#366a2f;}
+.pro_grid_item .price__regular{font-size:23px; color:#366a2f;font-weight: bold; letter-spacing: 0;}
