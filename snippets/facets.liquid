@@ -25,7 +25,7 @@
 <div class="facets-container">
   {%- unless collapse_on_larger_devices -%}
     <facet-filters-form class="facets small-hide">
-      <form id="FacetFiltersForm" class="facets__form">
+      <form id="FacetFiltersForm" class="facets__form new_filter">
 
         {%- if results.terms -%}
           <input type="hidden" name="q" value="{{ results.terms | escape }}">
