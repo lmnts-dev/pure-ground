@@ -55,4 +55,4 @@
 .pro_grid .card__media img{height:auto !important; }
 .pro_grid_item .card__information{ padding:0 !important; }
 .cart_button_holder{text-align:center;}
-.cart_button_holder input[type="submit"]{width:100%;}
+.cart_button_holder input[type="submit"]{width:100%;border-radius: 0; display: block;}
