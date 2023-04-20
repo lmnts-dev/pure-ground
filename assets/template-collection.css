@@ -50,6 +50,6 @@
 
 /* New Css */
 .pro_grid{display:flex; gap:64px;}
-.pro_grid_item{width:calc(25% - 32px); flex-shrink: 0; border:1px solif #e4d7c6; }
+.pro_grid_item{width:calc(25% - 32px); flex-shrink: 0; border:1px solid #e4d7c6; }
 .pro_grid .card__media{margin:0 !important; width: 100%;}
 .pro_grid .card__media img{height:auto !important; }
