@@ -52,4 +52,4 @@
 .pro_grid{display:flex; gap:64px;}
 .pro_grid_item{width:calc(25% - 32px); flex-shrink: 0; }
 .pro_grid .card__media{margin:0 !important; width: 100%;}
-.pro_grid .card__media img{height:auto; }
+.pro_grid .card__media img{height:auto !important; }
