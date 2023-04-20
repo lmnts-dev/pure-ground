@@ -49,8 +49,8 @@
 }
 
 /* New Css */
-.pro_grid{display:flex; gap:64px;    flex-wrap: wrap;}
-.pro_grid_item{width:calc(25% - 32px);  border:1px solid #e4d7c6; }
+.pro_grid{display:flex; gap:60px;    flex-wrap: wrap;}
+.pro_grid_item{width:calc(25% - 45px);  border:1px solid #e4d7c6; }
 .pro_grid .card__media{margin:0 !important; width: 100%;}
 .pro_grid .card__media img{height:auto !important; }
 .pro_grid_item .card__information{ padding:0 !important; }
