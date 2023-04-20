@@ -9,10 +9,17 @@
             "heading": "{{ collection.title }}",
             "heading_size": "h1"
           }
+        },
+        "7bd7c297-5037-4f91-b4d5-39d09fd7e0c2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>All ingredients are available in multiple cut sizes for wholesale purchase. <\/p>"
+          }
         }
       },
       "block_order": [
-        "e1cdeff8-c826-4602-8b23-bf620c52765a"
+        "e1cdeff8-c826-4602-8b23-bf620c52765a",
+        "7bd7c297-5037-4f91-b4d5-39d09fd7e0c2"
       ],
       "settings": {
         "text_color": "light",
