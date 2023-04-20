@@ -49,7 +49,7 @@
 }
 
 /* New Css */
-.pro_grid{display:flex; gap:64px;}
+.pro_grid{display:flex; gap:64px;    flex-wrap: wrap;}
 .pro_grid_item{width:calc(25% - 32px);  border:1px solid #e4d7c6; }
 .pro_grid .card__media{margin:0 !important; width: 100%;}
 .pro_grid .card__media img{height:auto !important; }
@@ -63,3 +63,7 @@
 .pro_grid_item .btn{background: transparent; border-top:1px solid #e4d7c6; font-weight: 400; text-transform: uppercase;}
 .pro_grid_item .btn:hover{background:#366a2f; opacity: 1; }
 .pro_grid_item .price__regular{font-size:23px; color:#366a2f;font-weight: bold; letter-spacing: 0;}
+
+@media screen and (max-width: 1024px) {
+  
+}
