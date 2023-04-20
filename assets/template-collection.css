@@ -56,4 +56,5 @@
 .pro_grid_item .card__information{ padding:0 !important; }
 .cart_button_holder{text-align:center;}
 .cart_button_holder input[type="submit"]{width:100%;border-radius: 0; display: block;}
-.new_filter{display:flex !importent; }
+.new_filter{display:flex !important; }
+.new_filter .facet-filters{padding-left:0 !important; }
