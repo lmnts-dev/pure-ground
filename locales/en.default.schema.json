@@ -1508,6 +1508,10 @@
         },
         "collapse_on_larger_devices": {
           "label": "Collapse on desktop"
+        },
+        "enable_quick_buy": {
+          "label": "Enable quick add button",
+          "info": "Optimal with popup or drawer cart type."
         }
       }
     },
