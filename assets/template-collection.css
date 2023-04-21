@@ -70,7 +70,7 @@
 .mobile-facets__header,.mobile-facets__inner{background-color: #e1dddd!important;}
 .disclosure-has-popup[open]>summary+* {z-index: 1000!important}
 .mobile-facets__close{z-index:1001!important}
-.mobile-facets__footer button{color: #fff!important;;font-size:18px;letter-spacing:0;min-width:auto;margin:0}
+.mobile-facets__footer button{color: #fff!important;;font-size:18px;letter-spacing:0;min-width:auto;margin:0; min-height: auto;}
 .mobile-facets__sort .select__select {white-space: pre-wrap;}
 
 
