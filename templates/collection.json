@@ -14,7 +14,8 @@
         "5d46b271-e2a8-406d-9859-e72325d29dc4": {
           "type": "text",
           "settings": {
-            "text": "<p>All ingredients are available in multiple cut sizes for wholesale purchase. <\/p>"
+            "text": "<p>All ingredients are available in multiple cut sizes for wholesale purchase. <\/p>",
+            "text_other": "<p>{{ shop.brand.short_description }}<\/p>"
           }
         }
       },
