@@ -52,7 +52,7 @@
 
 
       {%- if section.settings.image != blank -%}
-         {% render 'next-gen-img', image: section.settings.image, alt: section.settings.alt %}
+         {% render 'next-gen-img', image: section.settings.image_other, alt: section.settings.alt %}
       {%- else -%}
          {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
       {%- endif -%}
@@ -95,7 +95,7 @@
       {
          "type": "image_picker",
          "id": "image",
-         "label": "Mani Image"
+         "label": "Main Image"
       },
       {
          "type": "image_picker",
