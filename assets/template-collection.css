@@ -64,6 +64,7 @@
 .pro_grid_item .btn:hover{background:#366a2f; opacity: 1; }
 .pro_grid_item .price__regular{font-size:23px; color:#366a2f;font-weight: bold; letter-spacing: 0;}
 .mobile-facets__main{background-color: #efe9e9;}
+.new_text_width{max-width:800px;}
 
 @media screen and (max-width: 1200px) {
   .pro_grid{gap:20px;}
