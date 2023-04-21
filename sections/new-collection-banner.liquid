@@ -19,7 +19,7 @@
 
 <div id="Content-with-bg-image-{{ section.id }}" class="content-with-bg-image color-{{section.settings.color_scheme}} __align-{{section.settings.alignment}} __text-color-{{section.settings.text_color}} {% if section.settings.fullwidth %}__fullwidth{% endif %} {% if section.settings.accent_color %}__accent-color{% endif %}">
    <div class="content-with-bg-image__inner">
-
+      {% assign currentCol = collection.handle %}
       {%- for block in section.blocks -%}
          {%- case block.type -%}
 
@@ -52,7 +52,7 @@
 
 
       {%- if section.settings.image != blank -%}
-         {% assign currentCol = collection.handle %}
+         
           {%- if currentCol == "all" -%}
              {% render 'next-gen-img', image: section.settings.image, alt: section.settings.alt %}
           {%- else -%}   
