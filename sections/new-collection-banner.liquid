@@ -28,9 +28,15 @@
 
             {%- when 'heading' -%}
                {% if section.settings.hero %}
-                  <h1 class="content-with-bg-image__heading {% if block.settings.heading_size %}{{block.settings.heading_size}}{% else %}h2{% endif %}">{{ block.settings.heading | escape }}</h1>
+                  {%- if currentCol == "all" -%}
+                    <h1 class="content-with-bg-image__heading {% if block.settings.heading_size %}{{block.settings.heading_size}}{% else %}h2{% endif %}">{{ block.settings.heading | escape }}</h1>
+                  {%- else -%} 
+                    <h1 class="content-with-bg-image__heading {% if block.settings.heading_size %}{{block.settings.heading_size}}{% else %}h2{% endif %}">{{ block.settings.heading_other | escape }}</h1>
+                  {% endif %}  
                {% else %}
+                 
                   <h2 class="content-with-bg-image__heading {% if block.settings.heading_size %}{{block.settings.heading_size}}{% endif %}">{{ block.settings.heading | escape }}</h2>
+     
                {% endif %}
 
             {%- when 'subheading' -%}
@@ -41,6 +47,7 @@
                {% endif %}
 
             {%- when 'text' -%}
+           
                <div class="content-with-bg-image__text __article-txt">{{ block.settings.text }}</div>
 
             {%- when 'button' -%}
