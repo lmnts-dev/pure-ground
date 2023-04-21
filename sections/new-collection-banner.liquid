@@ -51,7 +51,7 @@
 
             {%- when 'text' -%}
                {%- if currentCol == "all" -%}
-                  <div class="content-with-bg-image__text __article-txt">{{ block.settings.text }}</div>
+                  <div class="content-with-bg-image__text __article-txt new_text_width" >{{ block.settings.text }}</div>
                {%- else -%} 
                   <div class="content-with-bg-image__text __article-txt">{{ block.settings.text_other }}</div>
                {% endif %} 
