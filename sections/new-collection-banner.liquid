@@ -53,7 +53,7 @@
                {%- if currentCol == "all" -%}
                   <div class="content-with-bg-image__text __article-txt new_text_width" >{{ block.settings.text }}</div>
                {%- else -%} 
-                  <div class="content-with-bg-image__text __article-txt">{{ block.settings.text_other }}</div>
+                  <div class="content-with-bg-image__text __article-txt new_text_width" >{{ block.settings.text_other }}</div>
                {% endif %} 
             {%- when 'button' -%}
                  {% render 'button', class: "content-with-bg-image", button_label: block.settings.button_label, button_link: block.settings.button_link, button_color: block.settings.button_color %}
