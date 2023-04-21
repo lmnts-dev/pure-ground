@@ -72,7 +72,7 @@
 .mobile-facets__close{z-index:1001!important}
 .mobile-facets__footer button{color: #fff!important;;font-size:18px;letter-spacing:0;min-width:auto;margin:0; min-height: auto;}
 .mobile-facets__sort .select__select {white-space: pre-wrap;}
-.mobile-facets {z-index: 1000;}
+.mobile-facets {z-index: 1000 !important;}
 
 
 @media screen and (max-width: 1200px) {
