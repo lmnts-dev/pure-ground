@@ -65,7 +65,8 @@
 .pro_grid_item .price__regular{font-size:23px; color:#366a2f;font-weight: bold; letter-spacing: 0;}
 .mobile-facets__main{background-color: #efe9e9;}
 .new_text_width{max-width:800px;}
-.facet-filters__field .select__select{width:100%; padding-right:20px;display:block;}
+.facet-filters__field .select{width:100%;}
+.facet-filters__label{width:100px;}
 
 
 
