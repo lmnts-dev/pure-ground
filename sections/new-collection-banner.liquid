@@ -52,10 +52,15 @@
 
 
       {%- if section.settings.image != blank -%}
-         {% render 'next-gen-img', image: section.settings.image_other, alt: section.settings.alt %}
+        
+         {% render 'next-gen-img', image: section.settings.image, alt: section.settings.alt %}
+        
       {%- else -%}
          {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
       {%- endif -%}
+
+      {% assign currentCol = collection.handle %}
+      {{ currentCol }}
 
    </div>
 </div>
