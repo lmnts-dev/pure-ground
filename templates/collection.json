@@ -25,6 +25,7 @@
         "text_color": "light",
         "nav_color": true,
         "image": "shopify:\/\/shop_images\/IMG_5097.jpg",
+        "image_other": "{{ collection.image }}",
         "alt": "",
         "overlay": 50,
         "hero": true,
