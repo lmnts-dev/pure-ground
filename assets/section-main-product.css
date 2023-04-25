@@ -78,9 +78,9 @@
 .product__info-wrapper .product-form__buttons {
     gap: 20px;justify-content:flex-start
 }
-.product__info-wrapper .product-form__submit{border: 2px solid #3d290d;padding:15px 35px;margin-bottom:0;border-radius:10px;font-size: 20px;max-height:auto!important;min-width:auto!important;}
+.product__info-wrapper .product-form__submit{border: 2px solid #3d290d;padding:15px 35px;margin-bottom:0;border-radius:10px;font-size: 20px;min-height:auto!important;min-width:auto!important;}
 .product__info-wrapper .product-form__submit:hover{background: #3d290d;color:#fff;opacity:1}
-.product__info-wrapper .shopify-payment-button__button{color:#fff;padding:10px;margin-bottom:0;border-radius:10px;opacity:1;font-size: 20px;max-height:auto!important;min-width:auto!important;;}
+.product__info-wrapper .shopify-payment-button__button{color:#fff;padding:10px;margin-bottom:0;border-radius:10px;opacity:1;font-size: 20px;min-height:auto!important;min-width:auto!important;;}
 .product__info-wrapper .shopify-payment-button__button:hover{background: #3d290d;color:#fff;border:0!important;outline: 0!important;box-shadow: none!important;}
 .product__info-wrapper .shopify-payment-button__button:hover::after {opacity:0}
 
