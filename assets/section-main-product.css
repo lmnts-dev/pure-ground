@@ -20,6 +20,10 @@
   padding-left: 0;
   padding-bottom: 0;
 }
+.price-item.price-item--regular {font-size: 29px;color: rgb(54, 106, 47);font-weight: bold;line-height: 1.7;text-align: left;}
+
+
+
 
 @media screen and (min-width: 750px) {
   .product--thumbnail .product__media-gallery,
