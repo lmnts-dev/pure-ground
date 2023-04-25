@@ -240,7 +240,7 @@
                   </div>
                   {% render 'icon-caret' %}
                 </summary>
-                <div class="accordion__content rte __article-txt" id="ProductAccordion-{{ block.id }}-{{ section.id }}">
+                <div class="accordion__content rte" id="ProductAccordion-{{ block.id }}-{{ section.id }}">
                   {{ block.settings.content }}
                   {{ block.settings.page.content }}
                 </div>
@@ -572,14 +572,17 @@
       const ua = window.navigator.userAgent;
       const msie = ua.indexOf('MSIE ');
       const trident = ua.indexOf('Trident/');
+
       return (msie > 0 || trident > 0);
     }
+
     if (!isIE()) return;
     const hiddenInput = document.querySelector('#{{ product_form_id }} input[name="id"]');
     const noScriptInputWrapper = document.createElement('div');
     const variantSwitcher = document.querySelector('variant-radios[data-section="{{ section.id }}"]') || document.querySelector('variant-selects[data-section="{{ section.id }}"]');
     noScriptInputWrapper.innerHTML = document.querySelector('.product-form__noscript-wrapper-{{ section.id }}').textContent;
     variantSwitcher.outerHTML = noScriptInputWrapper.outerHTML;
+
     document.querySelector('#Variants-{{ section.id }}').addEventListener('change', function(event) {
       hiddenInput.value = event.currentTarget.value;
     });
