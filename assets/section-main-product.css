@@ -72,15 +72,15 @@
   font-weight: bold;
 }
 .product__info-wrapper .product-form__buttons > * {
-    max-width: calc(50% - 10px);
+    width: calc(50% - 10px);
 }
 
 .product__info-wrapper .product-form__buttons {
     gap: 20px;justify-content:flex-start
 }
-.product__info-wrapper .product-form__submit{border: 2px solid #3d290d;padding:20px 35px;margin-bottom:0;border-radius:10px;font-size: 20px;min-height:75px;min-width:auto!important;}
+.product__info-wrapper .product-form__submit{border: 2px solid #3d290d;padding:0 10px;margin-bottom:0;border-radius:10px;font-size: 20px;min-height:75px;min-width:auto!important;}
 .product__info-wrapper .product-form__submit:hover{background: #3d290d;color:#fff;opacity:1}
-.product__info-wrapper .shopify-payment-button__button{color:#fff;padding:20px 35px;margin-bottom:0;border-radius:10px;font-size: 20px;min-height:75px;min-width:auto!important;}
+.product__info-wrapper .shopify-payment-button__button{color:#fff;padding:0 10px;margin-bottom:0;border-radius:10px;font-size: 20px;min-height:75px;min-width:auto!important;}
 .product__info-wrapper .shopify-payment-button__button:hover{background: #3d290d;color:#fff;border:0!important;outline: 0!important;box-shadow: none!important;opacity:1}
 .product__info-wrapper .shopify-payment-button__button:hover::after {opacity:0}
 
@@ -614,6 +614,7 @@ a.product__text {
   .product__media-item--variant:first-child {
     padding-right: 1.5rem;
   }
+    .product__info-wrapper .product-form__submit,.product__info-wrapper .shopify-payment-button__button {min-height:60px;}
 }
 
 @media screen and (min-width: 750px) and (max-width: 989px) {
