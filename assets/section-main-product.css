@@ -72,7 +72,7 @@
   font-weight: bold;
 }
 .product__info-wrapper .product-form__buttons > * {
-    max-width: calc(50% - 10px);
+    max-width: calc(50% - 10px);min-height:50px;min-width:auto;
 }
 
 .product__info-wrapper .product-form__buttons {
