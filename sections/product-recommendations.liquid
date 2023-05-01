@@ -1,3 +1,4 @@
+Test {{ recommendations.products_count }}
 {%- if section.settings.show_product_recommendations -%}
   <div class="product-recommendations" data-product-id="{{ product.id }}" data-limit="4">
     {%- if recommendations.products_count > 0 -%}
