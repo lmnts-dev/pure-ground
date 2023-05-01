@@ -1,79 +1,201 @@
-{%- if section.settings.show_product_recommendations -%}
-  <div class="product-recommendations" data-product-id="{{ product.id }}" data-limit="4">
-    {%- if recommendations.products_count > 0 -%}
-      <h2>{{ section.settings.heading }}</h2>
-      <ul>
-        {%- for product in recommendations.products -%}
-        <li class="product">
-          <a href="{{ product.url }}">
-            <img class="product__img" src="{{ product.featured_image | img_url: '300x300' }}" alt="{{ product.featured_image.alt }}" />
-            <p class="product__title">{{ product.title }}</p>
-            <p class="product__price">{{ product.price | money}}</p>
-          </a>
-        </li>
-        {%- endfor -%}
-      </ul>
-    {%- endif -%}
+{% if section.settings.show_related_products == true %}
+<br><br>
+<div class="product-template__container page-width" itemscope itemtype="http://schema.org/Product" id="ProductSection-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="product" data-enable-history-state="true">
+
+{% comment %}
+  Number of related items per row,
+  and number of rows.
+{% endcomment %}
+
+{% assign number_of_related_products_per_row = section.settings.related_grid_num %}
+{% assign number_of_rows = section.settings.related_grid_row %}
+
+{% comment %}
+  Heading.
+  Leave blank if you don't need one.
+{% endcomment %}
+
+{% assign heading = section.settings.related_title %}
+
+{% comment %}
+  Set either or both to true, if you want
+  to limit yourself to items with same vendor, and/or type.
+{% endcomment %}
+
+{% assign same_vendor = false %}
+{% assign same_type = false %}
+
+{% comment %}
+  Collections to ignore.
+  Never pick related items from those.
+{% endcomment %}
+
+{% assign exclusions = 'frontpage,all' | split: ',' %}
+
+{% comment %}
+  Looking for a relevant collection.
+{% endcomment %}
+
+{% if product.metafields.c_f['Related Products'] %}
+  {% assign collection = collections[product.metafields.c_f['Related Products']] %}
+{% endif %}
+
+{% assign found_a_collection = false %}
+{% if collection and collection.all_products_count > 1 %}
+  {% unless exclusions contains collection.handle %}
+    {% assign found_a_collection = true %}
+  {% endunless %}
+{% endif %}
+{% unless found_a_collection %}
+  {% for c in product.collections %}
+    {% unless exclusions contains c.handle or c.all_products_count < 2 %}
+      {% assign found_a_collection = true %}
+      {% assign collection = c %}
+      {% break %}
+    {% endunless %}
+  {% endfor %}
+{% endunless %}
+
+{% comment %}
+  If we have a relevant collection.
+{% endcomment %}
+
+{% if found_a_collection %}
+
+  {% assign counter = 0 %}
+  {% assign break_at = number_of_rows | times: number_of_related_products_per_row %}
+  {% assign current_product = product %}
+  
+  {% case number_of_related_products_per_row %}
+    {% when '1' %}
+      {% assign grid_item_width = '' %}
+  {%- assign max_height = 700 -%}
+    {% when '2' %}
+      {% assign grid_item_width = 'small--one-half medium-up--one-half' %}
+  	  {%- assign max_height = 530 -%}
+    {% when '3' %}
+      {% assign grid_item_width = 'small--one-half medium-up--one-third' %}
+      {%- assign max_height = 345 -%}
+    {% when '4' %}
+      {% assign grid_item_width = 'small--one-half medium-up--one-quarter' %}
+  {%- assign max_height = 250 -%}
+    {% when '5' %}
+      {% assign grid_item_width = 'small--one-half medium-up--one-fifth' %}
+  {%- assign max_height = 195 -%}
+    {% when '6' %}
+      {% assign grid_item_width = 'small--one-half medium-up--one-sixth' %}
+  {%- assign max_height = 195 -%}
+    {% else %}
+      {% assign grid_item_width = 'small--one-half medium-up--one-quarter' %}
+  {%- assign max_height = 195 -%}
+  {% endcase %}
+
+
+  {% capture related_items %}
+<div class="grid grid--uniform{% if collection.products_count > 0 %} grid--view-items{% endif %}">
+
+  {% for product in collection.products %}
+  {% unless product.handle == current_product.handle %}
+  {% unless same_vendor and current_product.vendor != product.vendor %}
+  {% unless same_type and current_product.type != product.type %}
+  <div class="grid__item {{ grid_item_width }}">
+    {% include 'product-card-grid', max_height: max_height %}
   </div>
-{%- endif -%}
+  {% assign counter = counter | plus: 1 %}
+  {% if counter == break_at %}
+  {% break %}
+  {% endif %}
+  {% endunless %}
+  {% endunless %}
+  {% endunless %}
+  {% endfor %}
+</div>
+  {% endcapture %}
+
+  {% assign related_items = related_items | trim %}
+
+  {% unless related_items == blank %}
+
+  <aside class="grid">
+    <div class="grid__item">
+      {% unless heading == blank %}
+      <header class="section-header">
+        <h2 class="section-header__title">{{ heading }}</h2>
+      </header>
+      {% endunless %}
+      <div class="grid-uniform">
+        {{ related_items }}
+      </div>
+    </div>
+  </aside>
+
+  {% endunless %}
+     
+{% endif %}
+  
+</div>
+{% endif %}
 
 {% schema %}
 {
-  "name": "Product recommendations",
+  "name": "Related products",
   "settings": [
-	{
+    {
       "type": "checkbox",
-      "id": "show_product_recommendations",
-      "label": "Turn on product recommendations",
+      "id": "show_related_products",
+      "label": "Show related products",
       "default": false
     },
     {
+      "id": "related_title",
       "type": "text",
-      "id": "heading",
-      "label": "Heading",
-      "default": "You might also like"
-    }
-  ],
-  "presets": [
+      "label": "Section title",
+      "default": "Other fine products"
+    },
     {
-      "name": "Product recommendations"
+      "type": "select",
+      "id": "related_grid_num",
+      "label": "Products per row (Desktop)",
+      "default": "4",
+      "options": [
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        },
+        {
+          "value": "4",
+          "label": "4"
+        },
+        {
+          "value": "5",
+          "label": "5"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "related_grid_row",
+      "label": "Number of rows (Desktop)",
+      "default": "1",
+      "options": [
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ]
     }
   ]
 }
 {% endschema %}
-
-{% javascript %}
-var loadProductRecommendationsIntoSection = function() {
-  // Look for an element with class 'product-recommendations'
-  var productRecommendationsSection = document.querySelector(".product-recommendations");
-  if (productRecommendationsSection === null) { return; }
-  // Read product id from data attribute
-  var productId = productRecommendationsSection.dataset.productId;
-  // Read limit from data attribute
-  var limit = productRecommendationsSection.dataset.limit;
-  // Build request URL
-  var requestUrl = "/recommendations/products?section_id=product-recommendations&limit="+limit+"&product_id="+productId;
-  // Create request and submit it using Ajax
-  var request = new XMLHttpRequest();
-  request.open("GET", requestUrl);
-  request.onload = function() {
-    if (request.status >= 200 && request.status < 300) {
-      var container = document.createElement("div");
-      container.innerHTML = request.response;
-      productRecommendationsSection.parentElement.innerHTML = container.querySelector(".product-recommendations").innerHTML;
-    }
-  };
-  request.send();
-};
-// If your section has theme settings, the theme editor
-// reloads the section as you edit those settings. When that happens, the
-// recommendations need to be fetched again.
-// See https://help.shopify.com/en/themes/development/sections/integration-with-theme-editor
-document.addEventListener("shopify:section:load", function(event) {
-  if (event.detail.sectionId === "product-recommendations") {
-    loadProductRecommendationsIntoSection();
-  }
-});
-// Fetching the recommendations on page load
-loadProductRecommendationsIntoSection();
-{% endjavascript %}
