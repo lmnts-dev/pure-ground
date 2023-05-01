@@ -62,9 +62,54 @@
         "padding_top": 36,
         "padding_bottom": 12
       }
+    },
+    "261cdf47-c947-498b-9239-01a6e1863b98": {
+      "type": "featured-products",
+      "blocks": {
+        "25434cb3-20a0-4305-bbaa-2a536f21a15b": {
+          "type": "product",
+          "settings": {
+            "product": "organic-basil"
+          }
+        },
+        "7565d8cb-80d4-4436-8810-32ca78c7e33e": {
+          "type": "product",
+          "settings": {
+            "product": "organic-cayenne-chile"
+          }
+        },
+        "11e408ab-77a8-4e13-a120-41fc57169049": {
+          "type": "product",
+          "settings": {
+            "product": "organic-chile-peppers-red"
+          }
+        },
+        "c8b46a97-dac5-4fe1-ae54-bbff1b871d6e": {
+          "type": "product",
+          "settings": {
+            "product": "organic-onion"
+          }
+        }
+      },
+      "block_order": [
+        "25434cb3-20a0-4305-bbaa-2a536f21a15b",
+        "7565d8cb-80d4-4436-8810-32ca78c7e33e",
+        "11e408ab-77a8-4e13-a120-41fc57169049",
+        "c8b46a97-dac5-4fe1-ae54-bbff1b871d6e"
+      ],
+      "settings": {
+        "heading": "Lorem ipsum dolor sit",
+        "button_label": "",
+        "button_link": "",
+        "button_color": "default",
+        "color_scheme": "cream",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "261cdf47-c947-498b-9239-01a6e1863b98"
   ]
 }
