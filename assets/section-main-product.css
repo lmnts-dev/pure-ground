@@ -117,13 +117,13 @@
 
 @media screen and (min-width: 990px) {
   .product--large:not(.product--no-media) .product__media-wrapper {
-    max-width: 500px;
+    max-width: 700px;
     width: calc(65% - var(--grid-desktop-horizontal-spacing) / 2);
   }
 
   .product--large:not(.product--no-media) .product__info-wrapper {
     padding-left: 4rem;
-    max-width: 45%;
+    max-width: 55%;
     width: calc(35% - var(--grid-desktop-horizontal-spacing) / 2);
   }
 
