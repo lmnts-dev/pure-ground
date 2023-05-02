@@ -86,7 +86,7 @@
 
 .price__container .price__sale{color:#366a2f !important;}
 .price__container .price__regular{color:#366a2f !important;}
-
+.product__title{font-size:32px; }
 
 @media screen and (min-width: 750px) {
   .product--thumbnail .product__media-gallery,
