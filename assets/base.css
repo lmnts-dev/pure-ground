@@ -2108,7 +2108,7 @@ input[type="checkbox"] {
 .cart-item__quantity-wrapper{align-items: center;}
 .cart-item__quantity-wrapper .quantity button {border: solid 1px rgb(228,215,198);min-height: 60px;min-width: 60px;border-radius: 0;}
 .cart-item__quantity-wrapper .quantity input {border-style: solid;border-color: #e4d7c6;min-height: 60px;min-width: 80px;border-radius: 0;border-width: 1px 0;font-weight: 700;}
-.button{color: #fff;}
+.cart__ctas .button{color: #fff;}
 
 @media screen and (max-width: 989px) {
   .header__heading,
