@@ -2106,6 +2106,7 @@ input[type="checkbox"] {
 
 /* New Style */
 .cart-item__quantity-wrapper{align-items: center;}
+.cart-item__quantity-wrapper .quantity button {border: solid 1px rgb(228,215,198);min-height: 60px;min-width: 60px;border-radius: 0;}
 
 @media screen and (max-width: 989px) {
   .header__heading,
