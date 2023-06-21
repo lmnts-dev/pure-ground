@@ -2103,6 +2103,10 @@ input[type="checkbox"] {
   width: 100%;
 }
 
+
+/* New Style */
+.cart-item__quantity-wrapper{align-items: center;}
+
 @media screen and (max-width: 989px) {
   .header__heading,
   .header__heading-link {
