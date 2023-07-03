@@ -28,7 +28,7 @@
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
-            "picker_type": "dropdown"
+            "picker_type": "button"
           }
         },
         "quantity_selector": {
@@ -110,10 +110,8 @@
     "654a937b-711a-4ea7-9733-7f0aea0ff711": {
       "type": "product-recommendations",
       "settings": {
-        "show_related_products": true,
-        "related_title": "Other fine products",
-        "related_grid_num": "4",
-        "related_grid_row": "1"
+        "show_product_recommendations": false,
+        "heading": "You might also like"
       }
     }
   },
