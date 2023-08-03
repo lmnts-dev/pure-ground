@@ -582,9 +582,10 @@
     variantSwitcher.outerHTML = noScriptInputWrapper.outerHTML;
     document.querySelector('#Variants-{{ section.id }}').addEventListener('change', function(event) {
       hiddenInput.value = event.currentTarget.value;
+      alert("ddd");
     });
   });
-  alert("ddd");
+  
 </script>
 
 {%- if first_3d_model -%}
