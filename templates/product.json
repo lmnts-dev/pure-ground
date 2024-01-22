@@ -20,6 +20,20 @@
           "settings": {
           }
         },
+        "text_cNzn8e": {
+          "type": "text",
+          "settings": {
+            "text": "Country of Origin: {{ product.metafields.custom.country_of_origin.value }}",
+            "text_style": "body"
+          }
+        },
+        "text_pJeMte": {
+          "type": "text",
+          "settings": {
+            "text": "Latin Name:  {{ product.metafields.custom.botanical_name.value }}",
+            "text_style": "body"
+          }
+        },
         "price": {
           "type": "price",
           "settings": {
@@ -47,6 +61,8 @@
         "title",
         "caption",
         "description",
+        "text_cNzn8e",
+        "text_pJeMte",
         "price",
         "variant_picker",
         "quantity_selector",
