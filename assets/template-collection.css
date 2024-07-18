@@ -77,7 +77,7 @@
 span.sm_heading{ color:#0d1d2d; font-weight:normal; display:block; padding:0 0 10px 0; font-size:16px}
 span.sm_heading2{ color:#4f575f; font-weight:normal ; display:block; padding:0 0 10px 0; font-size:16px}
 .card__information{ padding:0 0 0 30px;}
-.box_2{ padding:0;}
+.card__content.box_2 {  padding: 0 0 0 30px;}
 
 
 .pro_grid .card__media{margin:0 !important; width: 100%;}
