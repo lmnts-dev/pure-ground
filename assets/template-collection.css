@@ -52,13 +52,16 @@
 
 .pro_grid{display:block;}
 .pro_grid_item{width:100%;  border:1px solid #e4d7c6; }
-.pro_box_holder{display:flex;}
+.pro_box_holder{display:flex; align-items: center;}
 .pro_box_holder .box_1{width:135px; flex-shrink:0; }
 .pro_box_holder .box_3{width:395px; flex-shrink:0; margin-left:auto;}
 
 .box_3 input[type=submit]{ width:100%; background:#3d290d; padding:22px 22px; text-align:center; border:none; outline:none; font-size:17px; color:#fff; text-transform:capitalize; height: auto;   padding: 22px 22px;
-    line-height: 1; border-radius:5px;}
-
+    line-height: 1; border-radius:5px !important;}
+.pro_box_holder .card__badge { display:none;}
+.box_2 .card__information{ text-align:left;  }
+.box_2 h5.card__heading{ font-weight:500; color:#0d1d2d; font-size:30px;}
+.pro_grid_item{ border-left:none; border-right:none; padding:40px 0}
 
 .pro_grid .card__media{margin:0 !important; width: 100%;}
 .pro_grid .card__media img{height:auto !important; }
