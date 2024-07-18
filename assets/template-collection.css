@@ -53,6 +53,8 @@
 .pro_grid{display:block;}
 .pro_grid_item{width:100%;  border:1px solid #e4d7c6; }
 .pro_box_holder{display:flex;}
+.pro_box_holder .box_1{width:135px; flex-shrink:0; }
+.pro_box_holder .box_3{width:395px; flex-shrink:0; margin-left:auto;}
 
 
 .pro_grid .card__media{margin:0 !important; width: 100%;}
