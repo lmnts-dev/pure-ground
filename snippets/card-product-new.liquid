@@ -107,6 +107,23 @@
           {% assign current_variant = card_product.selected_or_first_available_variant %}
           <span class="sm_heading">{{ current_variant.sku }}</span>
           <span class="sm_heading">Package Type</span>
+
+          <div class="pkg_type_holder">
+              <div class="pkg_box">
+                  <h5>Single Case</h5>
+                  <p>30 lbs</p>
+              </div>
+              <div class="pkg_box">
+                  <h5>Full Pallet</h5>
+                  <p>10 Cases</p>
+              </div>
+              <div class="pkg_box">
+                  <h5>Country of Origin</h5>
+                  <p>Germany</p>
+              </div>
+          
+          </div>
+          
           <div class="card-information">
             {%- if show_vendor -%}
               <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>
