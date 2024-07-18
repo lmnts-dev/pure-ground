@@ -39,7 +39,7 @@
     >
       <div class="card__inner {% if settings.card_style == 'standard' %}color-{{ settings.card_color_scheme }}{% endif %}{% if card_product.featured_media or settings.card_style == 'standard' %} ratio{% endif %}" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
         {%- if card_product.featured_media -%}
-          <div class="card__media">
+          <div class="card__media box_1">
            <a href="{{ card_product.url | default: '#' }}" class="">
             <div class="media media--transparent media--hover-effect">
               <img
@@ -98,7 +98,7 @@
           </div>
         </div>
       </div>
-      <div class="card__content">
+      <div class="card__content box_2">
         <div class="card__information">
           <h3 class="card__heading{% if card_product.featured_media or settings.card_style == 'standard' %} h5{% endif %}"> 
               {{ card_product.title | escape }}          
@@ -149,7 +149,7 @@
         
   
       </div>
-      <div class="cart_button_holder"> 
+      <div class="cart_button_holder box_3"> 
             <form method="post" action="/cart/add">
                   <input type="hidden" name="id" value="{{ card_product.variants.first.id }}" />
                   <input min="1" type="hidden" id="quantity" name="quantity" value="1"/>
