@@ -37,6 +37,7 @@
       {% if card_product.featured_media == nil and settings.card_style == 'card' %} ratio{% endif %} pro_box_holder"
       style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
     >
+      <div class="cardInnerBox">
       <div class="card__inner box_1 {% if settings.card_style == 'standard' %}color-{{ settings.card_color_scheme }}{% endif %}{% if card_product.featured_media or settings.card_style == 'standard' %} ratio{% endif %}" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
         {%- if card_product.featured_media -%}
           <div class="card__media">
@@ -169,6 +170,7 @@
         </div>
         
   
+      </div>
       </div>
       <div class="cart_button_holder box_3"> 
              {% render 'price', product: card_product, price_class: '' %}
