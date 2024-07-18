@@ -114,7 +114,8 @@ span.sm_heading2{ color:#4f575f; font-weight:normal ; display:block; padding:0 0
   .pro_grid_item{width:100% }  
 }
 @media screen and (max-width: 1120px) {
-
+.pro_box_holder .box_3{ width:250px;}
+  .box_3 a{ font-size:15px; line-height:1.3}
 }
 
 
