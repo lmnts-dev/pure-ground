@@ -125,6 +125,8 @@ span.sm_heading2{ color:#4f575f; font-weight:normal ; display:block; padding:0 0
 }
 @media screen and (max-width: 991px) {
 .pro_box_holder{ flex-wrap:wrap}
+  .cardInnerBox{ width:100%}
+  .pro_box_holder .box_3{ margin-left:0}
   
 }
 
