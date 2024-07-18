@@ -172,11 +172,12 @@
       </div>
       <div class="cart_button_holder box_3"> 
              {% render 'price', product: card_product, price_class: '' %}
-            <form method="post" action="/cart/add">
+             <a href="">See Product Details & Specification</a>
+            <!-- <form method="post" action="/cart/add">
                   <input type="hidden" name="id" value="{{ card_product.variants.first.id }}" />
                   <input min="1" type="hidden" id="quantity" name="quantity" value="1"/>
                   <input type="submit" value="Add to cart" class="btn" />
-            </form>
+            </form> -->
         </div>
   
     </div>
