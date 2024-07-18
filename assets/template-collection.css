@@ -127,6 +127,7 @@ span.sm_heading2{ color:#4f575f; font-weight:normal ; display:block; padding:0 0
 .pro_box_holder{ flex-wrap:wrap}
   .cardInnerBox{ width:100%}
   .pro_box_holder .box_3{ margin-left:0; width:inherit}
+  .box_3 .price{ text-align:left;}
   
   
 }
