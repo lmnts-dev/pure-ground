@@ -129,7 +129,13 @@ span.sm_heading2{ color:#4f575f; font-weight:normal ; display:block; padding:0 0
   .pro_box_holder .box_3{ margin-left:0}
   
 }
-
+@media screen and (max-width: 630px) {
+.card__information, .card__content.box_2{ padding:0 0 0 15px}
+  .pkg_box h6{ font-size:14px}
+  .pkg_box p{ font-size:14px}
+  .box_2 h5.card__heading{ font-size:18px;}
+  span.sm_heading, span.sm_heading2{ font-size:14px}
+}
 
 @media screen and (max-width: 480px) {
   .pro_grid_item{width:calc(100%); } 
