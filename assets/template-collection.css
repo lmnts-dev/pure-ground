@@ -111,7 +111,8 @@ span.sm_heading2{ color:#4f575f; font-weight:normal ; display:block; padding:0 0
 
 @media screen and (max-width: 1200px) {
   .pro_grid{gap:20px;}
-  .pro_grid_item{width:calc(25% - 20px); }  
+  .pro_grid_item{width:100% } 
+  
   
 
   
