@@ -58,6 +58,10 @@
 
 .box_3 input[type=submit]{ width:100%; background:#3d290d; padding:22px 22px; text-align:center; border:none; outline:none; font-size:17px; color:#fff; text-transform:capitalize; height: auto;   padding: 22px 22px;
     line-height: 1; border-radius:5px !important;}
+
+.box_3 a{ width:100%; background:#3d290d; padding:22px 22px; text-align:center; border:none; outline:none; font-size:17px; color:#fff; text-transform:capitalize; height: auto;   padding: 22px 22px;
+    line-height: 1; border-radius:5px !important;}
+
 .pro_box_holder .card__badge { display:none;}
 .box_2 .card__information{ text-align:left;  }
 .box_2 h5.card__heading{ font-weight:500; color:#0d1d2d; font-size:30px;}
