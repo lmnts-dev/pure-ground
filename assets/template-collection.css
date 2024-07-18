@@ -53,7 +53,7 @@
 .pro_grid{display:block;}
 .pro_grid_item{width:100%;  border:1px solid #e4d7c6; }
 .pro_box_holder{display:flex; align-items: center;}
-.pro_box_holder .box_1{width:135px; flex-shrink:0; margin-top:10px; }
+.pro_box_holder .box_1{width:135px; flex-shrink:0; margin-top:12px; }
 .pro_box_holder .box_3{width:395px; flex-shrink:0; margin-left:auto;}
 
 .box_3 input[type=submit]{ width:100%; background:#3d290d; padding:22px 22px; text-align:center; border:none; outline:none; font-size:17px; color:#fff; text-transform:capitalize; height: auto;   padding: 22px 22px;
@@ -108,6 +108,10 @@ span.sm_heading2{ color:#4f575f; font-weight:normal ; display:block; padding:0 0
 @media screen and (max-width: 1200px) {
   .pro_grid{gap:20px;}
   .pro_grid_item{width:calc(25% - 20px); }  
+
+  .pro_box_holder .box_3{ width:340px;}
+
+  
 }
 @media screen and (max-width: 1024px) {
 .pro_grid{gap:40px;}
