@@ -63,7 +63,7 @@
     line-height: 1; border-radius:5px !important; display:block}
 .box_3 a:hover{ text-decoration:none; }
 
-.box_3 .price{ font-size:28px; color:#366a2f; font-weight:700}
+.box_3 .price{ font-size:28px; color:#366a2f; font-weight:700; margin:0 0 10px 0}
 
 
 .pro_box_holder .card__badge { display:none;}
