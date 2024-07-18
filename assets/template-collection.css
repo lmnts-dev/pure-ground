@@ -62,6 +62,9 @@
 .box_2 .card__information{ text-align:left;  }
 .box_2 h5.card__heading{ font-weight:500; color:#0d1d2d; font-size:30px;}
 .pro_grid_item{ border-left:none; border-right:none; padding:40px 0}
+.sm_heading{display:block;}
+
+
 
 .pro_grid .card__media{margin:0 !important; width: 100%;}
 .pro_grid .card__media img{height:auto !important; }
