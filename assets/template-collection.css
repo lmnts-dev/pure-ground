@@ -71,6 +71,9 @@
 .box_2 h5.card__heading{ font-weight:500; color:#0d1d2d; font-size:30px;}
 .pro_grid_item{ border-left:none; border-right:none; padding:40px 0}
 .sm_heading{display:block;}
+.pkg_type_holder{ display:flex; gap:80px;}
+.pkg_box h6{ color:#0d1d2d; font-size:19px; margin:0; padding:0 0 0 0}
+.pkg_box p{ font-size:18px; color:#4f575f}
 
 
 
