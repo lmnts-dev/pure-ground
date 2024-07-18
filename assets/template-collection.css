@@ -56,6 +56,8 @@
 .pro_box_holder .box_1{width:135px; flex-shrink:0; }
 .pro_box_holder .box_3{width:395px; flex-shrink:0; margin-left:auto;}
 
+.box_3 input[type=submit]{ width:100%; background:#3d290d; padding:22px 22px; text-align:center; border:none; outline:none; font-size:17px; color:#fff; text-transform:capitalize;}
+
 
 .pro_grid .card__media{margin:0 !important; width: 100%;}
 .pro_grid .card__media img{height:auto !important; }
