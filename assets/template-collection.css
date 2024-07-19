@@ -108,6 +108,8 @@ span.sm_heading2{ color:#4f575f; font-weight:normal ; display:block; padding:0 0
 .cat_list_holder a{ width:14.28%;}
 .cat_list_holder a img{ max-width:100% !important}
 
+.cat_list_holder .collection-list-item p{ font-size:14px !important}
+
 @media screen and (max-width: 1500px) {
 .pro_box_holder .box_3{ width:340px;}
 .pkg_type_holder{ gap:50px}
