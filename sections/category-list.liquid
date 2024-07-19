@@ -29,8 +29,8 @@
         {{ 'collection-' | append: current | placeholder_svg_tag: 'placeholder-svg placeholder-svg--small' }}
       {% endif %}
 
-      {%- assign default_label = 'homepage.onboarding.collection_title' | t -%}
-      <p>{{ collection.title | default: default_label }}</p>
+      
+      <p>{{ collection.title }}</p>
     </a>
   {% endfor %}
 
