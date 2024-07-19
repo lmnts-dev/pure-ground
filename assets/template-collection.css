@@ -104,7 +104,7 @@ span.sm_heading2{ color:#4f575f; font-weight:normal ; display:block; padding:0 0
 .mobile-facets__sort .select__select {white-space: pre-wrap;}
 .mobile-facets {z-index: 1000 !important;}
 
-.cat_list_holder{ display:flex; gap:30px;  }
+.cat_list_holder{ display:flex; gap:50px; text-align:center;  }
 .cat_list_holder a{ width:14.28%;}
 .cat_list_holder a img{ max-width:100% !important}
 
