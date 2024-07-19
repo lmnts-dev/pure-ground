@@ -90,20 +90,48 @@
         "collection_zyfptV": {
           "type": "collection",
           "settings": {
-            "collection": ""
+            "collection": "organic-culinary-herbs-spices-and-vegetables"
           }
         },
         "collection_tDYNDz": {
           "type": "collection",
           "settings": {
-            "collection": ""
+            "collection": "organic-dried-chiles"
+          }
+        },
+        "collection_ybxDr6": {
+          "type": "collection",
+          "settings": {
+            "collection": "organic-herbs-roots-and-flowers"
+          }
+        },
+        "collection_GY4HJQ": {
+          "type": "collection",
+          "settings": {
+            "collection": "rainforest-alliance-certified"
+          }
+        },
+        "collection_eWDWFn": {
+          "type": "collection",
+          "settings": {
+            "collection": "sustainably-sourced-organic-ingredients"
+          }
+        },
+        "collection_QBqGMn": {
+          "type": "collection",
+          "settings": {
+            "collection": "teas-leaves"
           }
         }
       },
       "block_order": [
         "collection_byRp3V",
         "collection_zyfptV",
-        "collection_tDYNDz"
+        "collection_tDYNDz",
+        "collection_ybxDr6",
+        "collection_GY4HJQ",
+        "collection_eWDWFn",
+        "collection_QBqGMn"
       ],
       "settings": {
         "title": "Collection list"
