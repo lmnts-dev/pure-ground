@@ -81,7 +81,7 @@
     "category_list_PD3ghE": {
       "type": "category-list",
       "blocks": {
-        "collection_byRp3V": {
+        "collection_YLJGty": {
           "type": "collection",
           "settings": {
             "collection": "all-ingredients"
@@ -125,7 +125,7 @@
         }
       },
       "block_order": [
-        "collection_byRp3V",
+        "collection_YLJGty",
         "collection_zyfptV",
         "collection_tDYNDz",
         "collection_ybxDr6",
