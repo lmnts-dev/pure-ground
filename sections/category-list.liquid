@@ -18,7 +18,7 @@
       {% if collection.image != blank or collection.products.first != blank %}
         {%- assign image_object = collection.image | default: collection.products.first.featured_image -%}
         <div class="collection-list__image">
-          {% include 'responsive-image' with
+          {% include 'product-media' with
             image: image_object,
             max_width: 480,
             max_height: 480
