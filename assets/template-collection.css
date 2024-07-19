@@ -51,7 +51,7 @@
 /* New Css */
 
 .pro_grid{display:block;}
-.pro_grid_item{width:100%;  border:1px solid #e4d7c6; }
+.pro_grid_item{width:100%;  border-bottom:1px solid #e4d7c6; }
 .pro_box_holder{display:flex; align-items: center;}
 .pro_box_holder .box_1{width:135px; flex-shrink:0; margin-top:12px; }
 .pro_box_holder .box_3{width:395px; flex-shrink:0; margin-left:auto;}
