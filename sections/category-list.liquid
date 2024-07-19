@@ -7,6 +7,7 @@
   - Collection
 {%- endcomment -%}
 <section class="collection-list page-width">
+  <div class="cat_holder">
   {% if section.settings.title != blank %}
     <h2 class="collection-list__title">{{ section.settings.title | escape }}</h2>
   {% endif %}
@@ -37,6 +38,7 @@
   {% if section.blocks.size == 0 %}
     {% include 'no-blocks' %}
   {% endif %}
+    </div>
 </section>
 
 {% schema %}
