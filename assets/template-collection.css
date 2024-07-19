@@ -136,7 +136,7 @@ span.sm_heading2{ color:#4f575f; font-weight:normal ; display:block; padding:0 0
   .pro_box_holder .box_3{ margin-left:0; width:inherit}
   .box_3 .price{ text-align:left;}
   .cat_list_holder{ flex-wrap:wrap;}
-  ..cat_list_holder a{ width:20%}
+  .cat_list_holder a{ width:20%}
   
   
 }
