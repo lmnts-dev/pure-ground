@@ -11,7 +11,7 @@
   {% if section.settings.title != blank %}
     <h2 class="collection-list__title">{{ section.settings.title | escape }}</h2>
   {% endif %}
-
+  <div class="cat_list_holder">
   {% for block in section.blocks %}
     {%- assign collection = collections[block.settings.collection] -%}
 
@@ -34,6 +34,7 @@
       <p>{{ collection.title }}</p>
     </a>
   {% endfor %}
+  </div>
 
   {% if section.blocks.size == 0 %}
     {% include 'no-blocks' %}
