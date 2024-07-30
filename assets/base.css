@@ -2661,7 +2661,7 @@ details-disclosure > details {
 
 .price-item.price-item--regular{ font-weight:500 !important}
 .cus_info_hold{ border-top:1px solid #b6b6b4; border-bottom:1px solid #b6b6b4; padding:25px 0}
-.item_holder_content{ display:flex; justify-content:space-between; }
+.item_holder_content{ display:flex; justify-content:space-between; gap:50px; text-align:center;  }
 .item_hold h4{ font-weight:500; font-size:16px; color:#0d1d2d}
 
 
