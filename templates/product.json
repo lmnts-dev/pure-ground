@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "main": {
@@ -34,6 +43,13 @@
             "text_style": "body"
           }
         },
+        "text_RR8gtL": {
+          "type": "text",
+          "settings": {
+            "text": "Cut size : {{ product.metafields.custom.cut_size.value }}",
+            "text_style": "body"
+          }
+        },
         "price": {
           "type": "price",
           "settings": {
@@ -63,6 +79,7 @@
         "description",
         "text_cNzn8e",
         "text_pJeMte",
+        "text_RR8gtL",
         "price",
         "variant_picker",
         "quantity_selector",
