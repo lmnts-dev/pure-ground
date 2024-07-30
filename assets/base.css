@@ -2674,6 +2674,7 @@ details-disclosure > details {
   .item_hold span{ font-size:14px}
 }
 @media screen and (min-width: 480px) {
-  .item_holder_content{ flex-direction:column }
+  .item_holder_content{ flex-direction:column ; align-items: flex-start;  text-align: left;}
+  .item_hold span a{ justify-content:flex-start}
 }
 
