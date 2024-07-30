@@ -17,6 +17,11 @@
           "settings": {
           }
         },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
         "rating_BXxWm7": {
           "type": "rating",
           "settings": {
@@ -26,11 +31,6 @@
           "type": "custom_info",
           "settings": {
             "custom_info_holder": ""
-          }
-        },
-        "price": {
-          "type": "price",
-          "settings": {
           }
         },
         "variant_picker": {
@@ -53,9 +53,9 @@
       },
       "block_order": [
         "title",
+        "price",
         "rating_BXxWm7",
         "custom_info_icMKUi",
-        "price",
         "variant_picker",
         "quantity_selector",
         "buy_buttons"
