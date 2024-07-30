@@ -215,6 +215,10 @@
 
              
                 {{ product.metafields.custom.certifications }}
+
+              {% for item in product.metafields.custom.certifications %}
+                {{ item }}
+              {% endfor %}
             
               
                <span>{{ product.metafields.custom.certifications.value }}</span>
