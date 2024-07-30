@@ -216,9 +216,9 @@
              
                 {{ product.metafields.custom.certifications }}
 
-              {% for item in product.metafields.custom.certifications %}
-                {{ item }}
-              {% endfor %}
+                {% for filter in product.metafields.custom.certifications.values %}
+                      {{ filter }}
+                {% endfor %}
             
               
                <span>{{ product.metafields.custom.certifications.value }}</span>
