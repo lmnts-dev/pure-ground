@@ -2664,6 +2664,7 @@ details-disclosure > details {
 .item_holder_content{ display:flex; justify-content:space-between; gap:50px; text-align:center; margin-top:35px;  }
 .item_hold h4{ font-weight:500; font-size:16px; color:#0d1d2d; margin: 0 0 12px 0;}
 .item_hold span{ color:#0d1d2d; font-size:15px; }
+.item_hold span a{ display: flex; align-items: center; justify-content: center;  gap: 10px;}
 
 
 
