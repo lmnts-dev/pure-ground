@@ -214,13 +214,11 @@
               <h4>CERTIFICATIONS</h4> 
 
              
-                {{ product.metafields.custom.certifications }}
+  
 
-                {%- assign r = product.metafields.custom.certifications | split:"," -%}
-
-                {%- for p in r -%}               
-                  {{ p }}                
-                {%- endfor -%}
+               {% for item in product.metafields.custom.certifications.value %}
+                    {{ item }}--
+               {% endfor %}
 
 
             
