@@ -216,9 +216,13 @@
              
                 {{ product.metafields.custom.certifications }}
 
-                {% for filter in product.metafields.custom.certifications.values %}
-                      {{ filter }}
-                {% endfor %}
+                {%- assign r = product.metafields.custom.certifications | split:"," -%}
+
+                {%- for p in r -%}               
+                  {{ p }}                
+                {%- endfor -%}
+
+
             
               
                <span>{{ product.metafields.custom.certifications.value }}</span>
