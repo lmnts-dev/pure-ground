@@ -212,18 +212,11 @@
             </div>
             <div class="item_hold">
               <h4>CERTIFICATIONS</h4> 
-
-             
-  
-
+              <span>
                {% for item in product.metafields.custom.certifications.value %}
-                    {{ item }}--
+                    {{ item }} -
                {% endfor %}
-
-
-            
-              
-               <span>{{ product.metafields.custom.certifications.value }}</span>
+              </span>
             </div>      
           </div>
             
