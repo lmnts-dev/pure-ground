@@ -208,7 +208,7 @@
             </div>
             <div class="item_hold">
               <h4>SPECIFICATION</h4> 
-              <span> <img src="{{ 'pdf-icon.png' | asset_url }}" /> {{ product.metafields.custom.spec_sheet | file_url | remove: getFile }}</span>
+              <span> <a href="{{ product.metafields.custom.spec_sheet | file_url | remove: getFile }}" target="_blank" ><img src="{{ 'pdf-icon.png' | asset_url }}" /> Veiw </a></span>
             </div>
             <div class="item_hold">
               <h4>CERTIFICATIONS</h4> 
