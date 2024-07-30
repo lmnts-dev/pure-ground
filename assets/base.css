@@ -2111,6 +2111,8 @@ input[type="checkbox"] {
 .cart__ctas .button{color: #fff;}
 .cart__warnings .button{color: #fff;}
 
+.product__media img{border-radius:10px;}
+
 @media screen and (max-width: 989px) {
   .header__heading,
   .header__heading-link {
