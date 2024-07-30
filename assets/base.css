@@ -2666,6 +2666,7 @@ details-disclosure > details {
 .item_hold span{ color:#0d1d2d; font-size:15px; }
 .item_hold span a{ display: flex; align-items: center; justify-content: center;  gap: 10px;}
 .item_hold:last-child span{ color:#366a2f}
+.txt_holder p{ font-size: 19px;  margin: 0 0 5px 0;  font-weight: 400;  color: #0d1d2d;}
 
 
 
