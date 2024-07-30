@@ -2665,6 +2665,7 @@ details-disclosure > details {
 .item_hold h4{ font-weight:500; font-size:16px; color:#0d1d2d; margin: 0 0 12px 0;}
 .item_hold span{ color:#0d1d2d; font-size:15px; }
 .item_hold span a{ display: flex; align-items: center; justify-content: center;  gap: 10px;}
+.item_hold:last-child span{ color:#366a2f}
 
 
 
