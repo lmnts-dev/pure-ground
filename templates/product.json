@@ -22,39 +22,6 @@
           "settings": {
           }
         },
-        "caption": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.metafields.descriptors.subtitle.value }}",
-            "text_style": "subtitle"
-          }
-        },
-        "description": {
-          "type": "description",
-          "settings": {
-          }
-        },
-        "text_cNzn8e": {
-          "type": "text",
-          "settings": {
-            "text": "Country of Origin: {{ product.metafields.custom.country_of_origin.value }}",
-            "text_style": "body"
-          }
-        },
-        "text_pJeMte": {
-          "type": "text",
-          "settings": {
-            "text": "Latin Name:  {{ product.metafields.custom.botanical_name.value }}",
-            "text_style": "body"
-          }
-        },
-        "text_RR8gtL": {
-          "type": "text",
-          "settings": {
-            "text": "Cut size : {{ product.metafields.custom.cut_size.value }}",
-            "text_style": "body"
-          }
-        },
         "custom_info_icMKUi": {
           "type": "custom_info",
           "settings": {
@@ -87,11 +54,6 @@
       "block_order": [
         "title",
         "rating_BXxWm7",
-        "caption",
-        "description",
-        "text_cNzn8e",
-        "text_pJeMte",
-        "text_RR8gtL",
         "custom_info_icMKUi",
         "price",
         "variant_picker",
