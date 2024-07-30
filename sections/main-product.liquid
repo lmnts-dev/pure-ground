@@ -204,22 +204,24 @@
               <p>Latin Name : {{ product.metafields.custom.botanical_name }}</p>
               <p>Cut size : {{ product.metafields.custom.cut_size }}</p>
             </div>
-            <div class="item_hold">
-              <h4>ITEM CODE</h4> 
-               <span>{{ product.metafields.custom.item_code }}</span>
+            <div class="item_holder_content">
+              <div class="item_hold">
+                <h4>ITEM CODE</h4> 
+                 <span>{{ product.metafields.custom.item_code }}</span>
+              </div>
+              <div class="item_hold">
+                <h4>SPECIFICATION</h4> 
+                <span> <a href="{{ product.metafields.custom.spec_sheet | file_url | remove: getFile }}" target="_blank" ><img src="{{ 'pdf-icon.png' | asset_url }}" /> Veiw </a></span>
+              </div>
+              <div class="item_hold">
+                <h4>CERTIFICATIONS</h4> 
+                <span>
+                 {% for item in product.metafields.custom.certifications.value %}
+                      {{ item }} -
+                 {% endfor %}
+                </span>
+              </div>  
             </div>
-            <div class="item_hold">
-              <h4>SPECIFICATION</h4> 
-              <span> <a href="{{ product.metafields.custom.spec_sheet | file_url | remove: getFile }}" target="_blank" ><img src="{{ 'pdf-icon.png' | asset_url }}" /> Veiw </a></span>
-            </div>
-            <div class="item_hold">
-              <h4>CERTIFICATIONS</h4> 
-              <span>
-               {% for item in product.metafields.custom.certifications.value %}
-                    {{ item }} -
-               {% endfor %}
-              </span>
-            </div>      
           </div>
             
           {%- when 'title' -%}
