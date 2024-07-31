@@ -77,8 +77,8 @@
         "easy_tabs_product_tabs_easytabs_block_product_widget_fq8MEK": {
           "type": "shopify:\/\/apps\/easy-tabs-product-tabs\/blocks\/easytabs-block-product-widget\/118e2a90-d31f-4cdf-b5c9-747e2bddd19a",
           "settings": {
-            "placement_selector": "",
-            "multiple_widgets": true
+            "placement_selector": "{{ product.metafields.custom.item_code.value }}{{ product.metafields.custom.country_of_origin.value }}",
+            "multiple_widgets": false
           }
         }
       },
