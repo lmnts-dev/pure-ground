@@ -22,7 +22,7 @@
 {% endif %}
 
 {% comment %} TODO change this to <a> tag for phase 2 {% endcomment %}
-  <span href="{{ url }}" class="product-card also-like __style-{% if style %}{{style}}{% else %}default{% endif %}">
+  <a href="{{ url }}" class="product-card also-like __style-{% if style %}{{style}}{% else %}default{% endif %}">
     <div class="product-card__image">
       {% if product.featured_image %}
         {% render 'next-gen-img', image: product.featured_image %}
@@ -42,4 +42,4 @@
        
       </div>
     </div>
-  </span>
+  </a>
