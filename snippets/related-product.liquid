@@ -100,10 +100,8 @@
   {% unless related_items == blank %}
 
 <div  class="featured-products">
-      {% unless heading == blank %}
-      <header class="section-header">
-        <h2 class="section-header__title featured-products__heading">{{ heading }}</h1>
-      </header>
+      {% unless heading == blank %}   
+        <h2 class="section-header__title featured-products__heading">{{ heading }}</h1>   
       {% endunless %}
       <div class="grid-uniform">
         {{ related_items }}
