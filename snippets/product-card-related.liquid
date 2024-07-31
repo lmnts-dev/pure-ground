@@ -22,7 +22,7 @@
 {% endif %}
 
 {% comment %} TODO change this to <a> tag for phase 2 {% endcomment %}
-  <span  class="product-card also-like __style-{% if style %}{{style}}{% else %}default{% endif %}">
+  <span  class="product-card also-like __style-{% if style %}{{style}}{% else %}default{% endif %}" style="--productCardImageRatio:100%;">
     <a href="{{ url }}">
     <div class="product-card__image">
       {% if product.featured_image %}
