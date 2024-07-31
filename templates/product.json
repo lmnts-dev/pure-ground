@@ -77,7 +77,7 @@
         "easy_tabs_product_tabs_easytabs_block_product_widget_fq8MEK": {
           "type": "shopify:\/\/apps\/easy-tabs-product-tabs\/blocks\/easytabs-block-product-widget\/118e2a90-d31f-4cdf-b5c9-747e2bddd19a",
           "settings": {
-            "placement_selector": "{{ product.metafields.custom.certifications | metafield_text }}{{ product.metafields.custom.botanical_name.value }}",
+            "placement_selector": "",
             "multiple_widgets": true
           }
         }
