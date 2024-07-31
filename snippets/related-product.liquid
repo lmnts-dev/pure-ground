@@ -103,9 +103,9 @@
       {% unless heading == blank %}   
         <h2 class="featured-products__heading h4">{{ heading }}</h1>   
       {% endunless %}
-      <div class="">
+      <toggle-modal class="featured-products__container" data-type="container">
         {{ related_items }}
-      </div>
+      </toggle-modal>
 </div>
 
   {% endunless %}
