@@ -105,6 +105,7 @@
         "11e408ab-77a8-4e13-a120-41fc57169049",
         "c8b46a97-dac5-4fe1-ae54-bbff1b871d6e"
       ],
+      "disabled": true,
       "settings": {
         "heading": "You may also like",
         "button_label": "",
@@ -114,18 +115,10 @@
         "top_spacing": 50,
         "bottom_spacing": 50
       }
-    },
-    "654a937b-711a-4ea7-9733-7f0aea0ff711": {
-      "type": "product-recommendations",
-      "settings": {
-        "show_product_recommendations": true,
-        "heading": "You might also like"
-      }
     }
   },
   "order": [
     "main",
-    "261cdf47-c947-498b-9239-01a6e1863b98",
-    "654a937b-711a-4ea7-9733-7f0aea0ff711"
+    "261cdf47-c947-498b-9239-01a6e1863b98"
   ]
 }
