@@ -1,0 +1,69 @@
+{% comment %}
+    Renders an product card
+
+    Expects:
+    - product: {Object or "default"} product object. When "default", use fake content
+    - style: {String} The setting changes the layout of the card, accepts nothing ("default"), and "stacked"
+
+    Usage:
+    {% render 'product-card' product: product, style: "stacked" %}
+{% endcomment %}
+
+{% if product == "default" or product.title == undefined %}
+  {% assign url = "/" %}
+  {% assign title = "Product" %}
+  {% assign price_min = "500" %}
+  {% assign price_max = "1000" %}
+{% else %}
+  {% assign url = product.url %}
+  {% assign title = product.title %}
+  {% assign price_min = product.price_min %}
+  {% assign price_max = product.price_max %}
+{% endif %}
+
+{% comment %} TODO change this to <a> tag for phase 2 {% endcomment %}
+  <span href="{{ url }}" class="product-card also-like __style-{% if style %}{{style}}{% else %}default{% endif %}">
+    <div class="product-card__image">
+      {% if product.featured_image %}
+        {% render 'next-gen-img', image: product.featured_image %}
+      {% else %}
+          <div class="product-card__image__placeholder"></div>
+      {% endif %}
+    </div>
+    <div class="product-card__content">     
+      <div class="product-card__content__info">   
+        <h3 class="product-card__heading caption">
+            {{ title }}   
+        </h3>
+        {% if product.metafields.my_fields.scientific_name %}
+          <p class="product-card__code caption-sm">{{ product.metafields.my_fields.scientific_name }}</p>
+        {% endif %}
+
+        {% comment %}
+          TODO: Uncomment for phase 2
+          <p class="product-card__price p-sm">
+            {% if price_max == price_min %}
+              {{ price_max | money }}
+            {% else %}
+              {{ price_min | money }} - {{price_max | money }}
+            {% endif %}
+          </p>
+        {% endcomment %}
+
+        {% comment %}
+        <div class="product-card__stars">
+          {% render 'svg-star' %}
+          {% render 'svg-star' %}
+          {% render 'svg-star' %}
+          <span class="product-card__reviews p-sm">12 Reviews</span>
+          <span class="product-card__reviews-number p-sm">(12)</span>
+        </div>
+      {% endcomment %}
+      </div>
+
+      {% if style != "stacked" %}
+        {% comment %} TODO {% endcomment %}
+        <button class="btn" type="button" class="">Add to Cart</button>
+      {% endif %}
+    </div>
+  </span>
