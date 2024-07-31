@@ -84,7 +84,7 @@
       {% unless product.handle == current_product.handle %}
          {% unless same_vendor and current_product.vendor != product.vendor %}
            {% unless same_type and current_product.type != product.type %}
-             {% render 'product-card', product: block.settings.product, style: "stacked" %}
+             {% include 'product-card' %}
              {% assign counter = counter | plus: 1 %}
              {% if counter == break_at %}
                {% break %}
