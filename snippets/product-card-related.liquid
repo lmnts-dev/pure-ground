@@ -41,7 +41,8 @@
         {% endif %}
 
        <!-- <button class="btn" type="button" class="">Add to Cart</button> -->
-
+        {% include 'product-price', variant: product %}
+        
         <form method="post" action="/cart/add">
           <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
           <input min="1" type="hidden" id="quantity" name="quantity" value="1"/>
