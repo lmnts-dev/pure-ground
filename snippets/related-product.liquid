@@ -99,8 +99,7 @@
 
   {% unless related_items == blank %}
 
-  <aside class="grid">
-    <div class="grid__item">
+<div  class="featured-products">
       {% unless heading == blank %}
       <header class="section-header">
         <h2 class="section-header__title">{{ heading }}</h1>
@@ -109,8 +108,7 @@
       <div class="grid-uniform">
         {{ related_items }}
       </div>
-    </div>
-  </aside>
+</div>
 
   {% endunless %}
      
