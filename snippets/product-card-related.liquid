@@ -39,31 +39,7 @@
           <p class="product-card__code caption-sm">{{ product.metafields.my_fields.scientific_name }}</p>
         {% endif %}
 
-        {% comment %}
-          TODO: Uncomment for phase 2
-          <p class="product-card__price p-sm">
-            {% if price_max == price_min %}
-              {{ price_max | money }}
-            {% else %}
-              {{ price_min | money }} - {{price_max | money }}
-            {% endif %}
-          </p>
-        {% endcomment %}
-
-        {% comment %}
-        <div class="product-card__stars">
-          {% render 'svg-star' %}
-          {% render 'svg-star' %}
-          {% render 'svg-star' %}
-          <span class="product-card__reviews p-sm">12 Reviews</span>
-          <span class="product-card__reviews-number p-sm">(12)</span>
-        </div>
-      {% endcomment %}
+       
       </div>
-
-      {% if style != "stacked" %}
-        {% comment %} TODO {% endcomment %}
-        <button class="btn" type="button" class="">Add to Cart</button>
-      {% endif %}
     </div>
   </span>
