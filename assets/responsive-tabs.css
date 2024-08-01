@@ -10,12 +10,13 @@
     display: inline-block;
     margin: 0;
     list-style: none;
+  flex-grow: 1;
 }
 
 .r-tabs .r-tabs-panel {
     padding: 15px;
     display: none;
-  flex-grow: 1;
+  
 }
 
 .r-tabs .r-tabs-accordion-title {
