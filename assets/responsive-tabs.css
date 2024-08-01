@@ -11,6 +11,9 @@
     margin: 0;
     list-style: none;
   flex-grow: 1;
+  border-left:1px solid #55534f;
+  border-right:1px solid #55534f;
+  border-bottom:1px solid #55534f;
 }
 
 .r-tabs .r-tabs-panel {
