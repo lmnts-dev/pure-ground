@@ -66,16 +66,16 @@
 	color: #fff;
 	font-weight: bold;
 	text-decoration: none;
-	text-shadow: 0 1px rgba(0, 0, 0, 0.4);
+	text-shadow: 0 0px rgba(0, 0, 0, 0.4);
 	font-size: 14px;
 
-	border-top-right-radius: 4px;
-	border-top-left-radius: 4px;
+	border-top-right-radius: 0px;
+	border-top-left-radius: 0px;
 }
 
 /* Active accordion anchor */
 .r-tabs .r-tabs-accordion-title.r-tabs-state-active .r-tabs-anchor {
-	background-color: #fff;
+	background-color: transparent;
 	color: #55534f;
 	text-shadow: none;
 }
