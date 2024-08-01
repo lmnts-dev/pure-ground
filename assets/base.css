@@ -2667,6 +2667,8 @@ details-disclosure > details {
 .item_hold span a{ display: flex; align-items: center; justify-content: center;  gap: 10px;}
 .item_hold:last-child span{ color:#366a2f}
 .txt_holder p{ font-size: 19px;  margin: 0 0 5px 0;  font-weight: 400;  color: #0d1d2d;}
+.shpg_payicon_holder{ display:flex; justify-content:space-between; align-items:center; margin:0 0 45px 0}
+
 @media screen and (max-width: 1199px) {
   .item_holder_content{ gap:20px; }
   .item_hold h4{ font-size:14px;}
