@@ -16,9 +16,11 @@
   border-bottom:1px solid #55534f;
 }
 
-.r-tabs-nav li:first-child{ border-left:none}
+/* .r-tabs-nav li:first-child{ border-left:none}
 .r-tabs-nav li:last-child{ border-left:none; border-right:none}
+.r-tabs-nav li:nth-child(2){ border-left:none; border-right:none} */
 
+li.r-tabs-state-active{ border-bottom:none;}
 
 .r-tabs .r-tabs-panel {
     padding: 15px;
