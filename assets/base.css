@@ -2670,7 +2670,7 @@ details-disclosure > details {
 .shpg_payicon_holder{ display:flex; justify-content:space-between; align-items:center;}
 .tab_holder{ margin-top:45px}
 .featured-products{ margin:45px 0 0 0 }
-.featured-products__heading{ width:100%; text-align:left;}
+.featured-products__heading{ width:100%; text-align:left !important;}
 
 @media screen and (max-width: 1199px) {
   .item_holder_content{ gap:20px; }
