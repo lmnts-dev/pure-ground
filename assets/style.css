@@ -7,8 +7,8 @@
 	border-top: 1px solid #55534f;
 	border-right: 1px solid #55534f;
 	border-left: 1px solid #55534f;
-	border-bottom: 4px solid #55534f;
-	border-radius: 4px;
+	border-bottom: 1px solid #55534f;
+	border-radius: 0px;
 
 }
 
@@ -47,7 +47,7 @@
 .r-tabs .r-tabs-panel {
 	background-color: transparent;
 
-	border-bottom: 1px solid 55534f;
+	border-bottom: 1px solid #55534f;
 
 	border-bottom-right-radius: 0px;
 	border-bottom-left-radius: 0px;
@@ -58,14 +58,10 @@
 .r-tabs .r-tabs-accordion-title .r-tabs-anchor {
 	display: block;
 	padding: 10px;
-
 	background-color: #55534f;
 	color: #fff;
-	font-weight: bold;
 	text-decoration: none;
-	text-shadow: 0 0px rgba(0, 0, 0, 0.4);
 	font-size: 14px;
-
 	border-top-right-radius: 0px;
 	border-top-left-radius: 0px;
 }
