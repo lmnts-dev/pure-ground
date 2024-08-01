@@ -47,7 +47,7 @@
 .r-tabs .r-tabs-panel {
 	background-color: transparent;
 
-	border-bottom: 1px solid #55534f;
+	border-bottom: 0px solid #55534f;
 
 	border-bottom-right-radius: 0px;
 	border-bottom-left-radius: 0px;
