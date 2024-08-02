@@ -2695,7 +2695,7 @@ details-disclosure > details {
     font-size: 20px;
     min-height: 75px;
     min-width: auto !important; width: 100% !important;
-    color: #fff;
+    color: #fff; background:#3d290d !important;
     max-width: 305px !important;
     border: none !important; line-height: calc(1 + .2 / var(--font-body-scale));}
 
