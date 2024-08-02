@@ -2676,6 +2676,7 @@ details-disclosure > details {
 .product__info-wrapper .select__select{ border-radius:8px; background:#fff !important; }
 .product__info-wrapper .form__label{ font-size:18px;}
 .quantity{ background:#fff; }
+.product__info-wrapper .quantity input{ flex-flow:0}
 
 @media screen and (max-width: 1199px) {
   .item_holder_content{ gap:20px; }
