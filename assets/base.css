@@ -2688,6 +2688,7 @@ details-disclosure > details {
 .product__info-wrapper .product-form__submit{  width: 100% !important;  color: #fff;  max-width: inherit;}
 .product__info-wrapper .product-form__buttons{ width:100%!important ; flex-grow:0; }
 
+
 @media screen and (max-width: 1199px) {
   .item_holder_content{ gap:20px; }
   .item_hold h4{ font-size:14px;}
