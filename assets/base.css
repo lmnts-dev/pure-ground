@@ -2688,7 +2688,16 @@ details-disclosure > details {
 .product__info-wrapper .product-form__submit{  width: 100% !important;  color: #fff;  max-width: 305px !important; border: none !important;}
 .product__info-wrapper .product-form__buttons{ width:100%!important ; }
 .button:after, .shopify-challenge__button:after, .customer button:after, .shopify-payment-button__button--unbranded:after{ display:none !important}
-
+.product-samples-button{ letter-spacing: 0;
+    padding: 0 5px;
+    margin-bottom: 0;
+    border-radius: 10px;
+    font-size: 20px;
+    min-height: 75px;
+    min-width: auto !important; width: 100% !important;
+    color: #fff;
+    max-width: 305px !important;
+    border: none !important; line-height: calc(1 + .2 / var(--font-body-scale));}
 
 @media screen and (max-width: 1199px) {
   .item_holder_content{ gap:20px; }
