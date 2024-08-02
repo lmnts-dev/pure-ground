@@ -2671,6 +2671,8 @@ details-disclosure > details {
 .tab_holder{ margin-top:45px}
 .featured-products{ margin:45px 0 0 0 }
 .featured-products__heading{ width:100%; text-align:left !important;}
+.variant_box_holder{ display:flex; gap:25px}
+.variant_box_holder div{ flex-grow:1}
 
 @media screen and (max-width: 1199px) {
   .item_holder_content{ gap:20px; }
