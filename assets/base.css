@@ -2727,6 +2727,7 @@ details-disclosure > details {
   .btn_holder form{ display:block}
   .product__info-wrapper .product-form__submit{ max-width: inherit !important}
   .product-samples-button{   max-width: inherit !important ; margin-top:15px;}
+  .shpg_payicon_holder{ flex-direction: column;  gap: 15px;}
   
   
   
