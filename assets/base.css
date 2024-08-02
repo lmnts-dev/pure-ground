@@ -2673,6 +2673,9 @@ details-disclosure > details {
 .featured-products__heading{ width:100%; text-align:left !important;}
 .variant_box_holder{ display:flex; justify-content: space-between;}
 .variant_box_holder > div {  flex-grow: 1;  flex-shrink: 0;  width: 48%;}
+.variant_box_holder .variant_box{ margin:0 1% 0 0 }
+.variant_box_holder .variant_box:last-child{ margin:0 0 0 1%}
+
 .product__info-wrapper .select__select{ border-radius:8px; background:#fff !important; }
 .product__info-wrapper .form__label{ font-size:18px;}
 .quantity{ background:#fff; display: flex;}
