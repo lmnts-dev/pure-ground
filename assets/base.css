@@ -2697,7 +2697,8 @@ details-disclosure > details {
   .variant_box_holder > div {  flex-grow: 1;  flex-shrink: 0;  width: 100%;}
   .variant_box_holder .variant_box{ margin:0 0 0 0 }
   .variant_box_holder .variant_box:last-child{ margin:0 0 0 0}
-  .variant_box_holder{ display:block}
+  .variant_box_holder{ display: block}
+  .product-form__input .select{ max-width:100% !important}
   
 }
 
