@@ -2686,7 +2686,7 @@ details-disclosure > details {
 .btn_holder form{display:flex; gap:25px}
 .product-samples-button-wrap{ width:50%}
 .product__info-wrapper .product-form__submit{  width: 100% !important;  color: #fff;  max-width: inherit;}
-.product__info-wrapper .product-form__buttons{ width:100%!important ; flex-grow:0; }
+.product__info-wrapper .product-form__buttons{ width:100%!important ; }
 
 
 @media screen and (max-width: 1199px) {
