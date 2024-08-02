@@ -2709,6 +2709,11 @@ details-disclosure > details {
   .item_hold span{ font-size:14px}
   .product__info-wrapper .form__label{ font-size:17px;}
 }
+@media screen and (max-width: 740px) {
+.product-samples-button{ min-height:60px;}
+}
+
+
 @media screen and (max-width: 480px) {
   .item_holder_content{ flex-direction:column ; align-items: flex-start;  text-align: left; gap:30px;}
   .item_hold span a{ justify-content:flex-start}
