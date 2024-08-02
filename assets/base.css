@@ -2697,7 +2697,10 @@ details-disclosure > details {
     min-width: auto !important; width: 100% !important;
     color: #fff; background:#3d290d !important;
     max-width: 305px !important;
-    border: none !important; line-height: calc(1 + .2 / var(--font-body-scale));}
+    border: none !important; line-height: calc(1 + .2 / var(--font-body-scale)); font-size: 20px;
+    line-height: 22px;
+    color: #fff;
+    font-weight: 400;}
 
 @media screen and (max-width: 1199px) {
   .item_holder_content{ gap:20px; }
