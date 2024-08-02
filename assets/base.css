@@ -2709,7 +2709,7 @@ details-disclosure > details {
   .item_hold span{ font-size:14px}
   .product__info-wrapper .form__label{ font-size:17px;}
 }
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 750px) {
 .product-samples-button{ min-height:60px;}
 }
 
