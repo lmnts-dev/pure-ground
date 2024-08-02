@@ -2712,7 +2712,8 @@ details-disclosure > details {
   .product__info-wrapper .form__label{ font-size:17px;}
 }
 @media screen and (max-width: 768px) {
-.r-tabs .r-tabs-panel{padding:10px;}
+.r-tabs .r-tabs-panel{padding:10px !important;}
+.r-tabs .r-tabs-panel p{font-size:16px !important;}
 }
 @media screen and (max-width: 750px) {
 .product-samples-button{ min-height:60px;}
