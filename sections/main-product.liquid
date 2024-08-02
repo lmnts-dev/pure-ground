@@ -534,15 +534,13 @@
         </ul>
 
         <div id="tab-1">
-            <p><strong>Ships In :</strong> 7 Business Days</p>
-            <p><strong>Ships From :</strong> Las Cruces, NM</p>
-            <p><strong>Box Dimensions :</strong> 15.5"L x 14"H x 11.5"W</p>
+            {{ product.metafields.custom.shipping_information }}
         </div>
         <div id="tab-2">
             {{ product.description }}
         </div>
         <div id="tab-3">
-            <p>Mauris facilisis elit ut sem eleifend accumsan molestie sit amet dolor. </p>
+            {{ product.metafields.custom.sample_policy }}
         </div>
     </div> 
 </div>                      
