@@ -2702,12 +2702,17 @@ details-disclosure > details {
     color: #fff !important;
     font-weight: 400; text-transform:none !important}
 
+
+
 @media screen and (max-width: 1199px) {
   .item_holder_content{ gap:20px; }
   .item_hold h4{ font-size:14px;}
   .txt_holder p{ font-size:16px;}
   .item_hold span{ font-size:14px}
   .product__info-wrapper .form__label{ font-size:17px;}
+}
+@media screen and (max-width: 768px) {
+.r-tabs .r-tabs-panel{padding:10px;}
 }
 @media screen and (max-width: 750px) {
 .product-samples-button{ min-height:60px;}
