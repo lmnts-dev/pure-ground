@@ -2699,7 +2699,7 @@ details-disclosure > details {
   .variant_box_holder .variant_box:last-child{ margin:0 0 0 0}
   .variant_box_holder{ display: block}
   .product-form__input .select{ max-width:100% !important}
-  .variant_box_holder{ padding:0 0 30px 0!important}
+  .variant_box_holder{ padding:0 0 10px 0!important}
   
 }
 
