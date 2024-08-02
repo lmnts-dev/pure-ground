@@ -2683,6 +2683,7 @@ details-disclosure > details {
 .quantity__button:first-child{ border-radius:8px 0 0 8px !important;}
 .quantity__button:last-child{ border-radius:0 8px 8px 0 !important;}
 .product__info-wrapper .select__select, .product__info-wrapper .quantity input{ font-size:16px; font-weight:400 !important}
+.btn_holder form{display:flex;}
 
 @media screen and (max-width: 1199px) {
   .item_holder_content{ gap:20px; }
