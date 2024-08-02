@@ -2700,7 +2700,7 @@ details-disclosure > details {
     border: none !important; line-height: calc(1 + .2 / var(--font-body-scale)); font-size: 20px;
     line-height: 22px;
     color: #fff !important;
-    font-weight: 400; text-transform:normal !important}
+    font-weight: 400; text-transform:none !important}
 
 @media screen and (max-width: 1199px) {
   .item_holder_content{ gap:20px; }
