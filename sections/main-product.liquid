@@ -217,7 +217,7 @@
                 <h4>CERTIFICATIONS</h4> 
                 <span>
                  {% for item in product.metafields.custom.certifications.value %}
-                      {{ item }} -
+                      {{ item }}  {% unless forloop.last %}-{% endunless %}
                  {% endfor %}
                 </span>
               </div>  
