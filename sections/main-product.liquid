@@ -534,13 +534,13 @@
         </ul>
 
         <div id="tab-1">
-            {{ product.metafields.custom.shipping_information }}
+            {{ product.metafields.custom.shipping_information | metafield_tag  }}
         </div>
         <div id="tab-2">
             {{ product.description }}
         </div>
         <div id="tab-3">
-            {{ product.metafields.custom.sample_policy }}
+            {{ product.metafields.custom.sample_policy | metafield_tag  }}
         </div>
     </div> 
 </div>                      
