@@ -2673,7 +2673,7 @@ details-disclosure > details {
 .featured-products__heading{ width:100%; text-align:left !important;}
 .variant_box_holder{ display:flex; gap:25px}
 .variant_box_holder div{ flex-grow:1}
-.product__info-wrapper .select__select{ border-radius:8px; background:#fff; }
+.product__info-wrapper .select__select{ border-radius:8px; background:#fff !important; }
 
 @media screen and (max-width: 1199px) {
   .item_holder_content{ gap:20px; }
