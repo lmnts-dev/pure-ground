@@ -2685,7 +2685,7 @@ details-disclosure > details {
 .product__info-wrapper .select__select, .product__info-wrapper .quantity input{ font-size:16px; font-weight:400 !important}
 .btn_holder form{display:flex; gap:25px}
 .product-samples-button-wrap{ width:50%}
-.product__info-wrapper .product-form__submit{  width: 100% !important;  color: #fff;  max-width: inherit;}
+.product__info-wrapper .product-form__submit{  width: 100% !important;  color: #fff;  max-width: 305px !important;}
 .product__info-wrapper .product-form__buttons{ width:100%!important ; }
 
 
