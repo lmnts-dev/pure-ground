@@ -2697,7 +2697,7 @@ details-disclosure > details {
     min-width: auto !important; width: 100% !important;
     color: #fff; background:#3d290d !important;
     max-width: 305px !important;
-    border: none !important; line-height: calc(1 + .2 / var(--font-body-scale)); font-size: 20px;
+    border: none !important; line-height: calc(1 + .2 / var(--font-body-scale)); font-size: 20px !important;
     line-height: 22px;
     color: #fff !important;
     font-weight: 400; text-transform:none !important}
@@ -2707,6 +2707,7 @@ details-disclosure > details {
   .item_hold h4{ font-size:14px;}
   .txt_holder p{ font-size:16px;}
   .item_hold span{ font-size:14px}
+  .product__info-wrapper .form__label{ font-size:17px;}
 }
 @media screen and (max-width: 480px) {
   .item_holder_content{ flex-direction:column ; align-items: flex-start;  text-align: left; gap:30px;}
