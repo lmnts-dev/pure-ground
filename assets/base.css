@@ -2693,5 +2693,11 @@ details-disclosure > details {
 @media screen and (max-width: 480px) {
   .item_holder_content{ flex-direction:column ; align-items: flex-start;  text-align: left; gap:30px;}
   .item_hold span a{ justify-content:flex-start}
+
+  .variant_box_holder > div {  flex-grow: 1;  flex-shrink: 0;  width: 100%;}
+  .variant_box_holder .variant_box{ margin:0 0 0 0 }
+  .variant_box_holder .variant_box:last-child{ margin:0 0 0 0}
+  .variant_box_holder{ display:block}
+  
 }
 
