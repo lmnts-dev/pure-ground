@@ -237,7 +237,7 @@
 
                 {% for item in product.metafields.custom.certifications.value %}
                       {%- assign logo_url =  item | downcase | remove: " "  -%}
-                      <img src="{{ item | downcase | remove: " "}}.png" alt="{{ item }}" /> 
+                      <img src="{{logo_url}}.png" alt="{{ item }}" /> 
                  {% endfor %}
                 
               </div>
