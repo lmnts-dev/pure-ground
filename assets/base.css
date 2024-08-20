@@ -2703,6 +2703,9 @@ details-disclosure > details {
     font-weight: 400; text-transform:none !important}
 
 
+.dhamnaHolder{ display:flex;justify-content:space-between; align-items:center}
+
+
 
 @media screen and (max-width: 1199px) {
   .item_holder_content{ gap:20px; }
