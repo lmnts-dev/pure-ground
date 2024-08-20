@@ -2705,7 +2705,7 @@ details-disclosure > details {
 
 .dhamnaHolder{ display:flex;justify-content:space-between; align-items:center}
 .logo_holder{ display:flex;justify-content:space-between; align-items:center; gap:15px }
-.logo_holder img{ width:90px; }
+.logo_holder img{ width:50px; }
 
 
 
