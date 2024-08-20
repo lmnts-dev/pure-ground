@@ -234,6 +234,10 @@
                 {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
               </div>
               <div class="logo_holder">
+
+                {% for item in product.metafields.custom.certifications.value %}
+                      {{ item }}
+                 {% endfor %}
                 
               </div>
               
