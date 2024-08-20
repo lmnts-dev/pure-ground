@@ -236,7 +236,7 @@
               <div class="logo_holder">
 
                 {% for item in product.metafields.custom.certifications.value %}
-                      {{ item }}
+                      {{ item | downcase | remove: " "}}
                  {% endfor %}
                 
               </div>
