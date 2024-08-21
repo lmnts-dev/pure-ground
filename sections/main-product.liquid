@@ -187,7 +187,11 @@
 
       <p>hhh</p>
 
-      {{ product.metafields.custom.related_products }}
+       {% for item in product.metafields.custom.related_products.value %}
+          {{ item }}
+       {% endfor %}
+
+
 
       
     </div>
