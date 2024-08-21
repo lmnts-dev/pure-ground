@@ -184,18 +184,11 @@
           </slider-component>
         {%- endif -%}
       </media-gallery>
-
-      
-      
+     
       {{ product.shopify--discovery--product_recommendation.complementary_products.value }}
         {% assign rp = product.shopify--discovery--product_recommendation.complementary_products.value %}
       {{ rp }}
-       
-       
-
-
-
-      
+             
     </div>
     <div class="product__info-wrapper grid__item{% if settings.page_width > 1400 and section.settings.media_size == "small" %} product__info-wrapper--extra-padding{% endif %}">
       <div id="ProductInfo-{{ section.id }}" class="product__info-container{% if section.settings.enable_sticky_info %} product__info-container--sticky{% endif %}">
