@@ -186,10 +186,11 @@
       </media-gallery>
 
       <p>hhh</p>
-       {{ shopify--discovery--product_recommendation.related_products }}
-       {% for item in product.metafields.custom.related_products.value %}
-          {{ item }}
-       {% endfor %}
+
+      {% assign rp = shopify--discovery--product_recommendation.complementary_products %}
+      {{ rp }}
+       
+       
 
 
 
