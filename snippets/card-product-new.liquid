@@ -105,8 +105,9 @@
               {{ card_product.title | escape }}          
           </h3>
           {% for item in card_product.metafields.custom.certifications.value %}
-             <a href="#">{{ item }}</a>  {% unless forloop.last %}-{% endunless %}
-          {% endfor %}
+          {%- assign logo_url =  item | downcase | remove: " "  | append: ".png"  -%}
+            <a href="#"><img src="{{logo_url | asset_url }}" alt="{{ item }}" /> </a>
+          {% endfor %} 
 
           {% assign current_variant = card_product.selected_or_first_available_variant %}
           <span class="sm_heading">Item Code : {{ card_product.metafields.custom.item_code }}</span> <!-- {{ current_variant.sku }} -->
