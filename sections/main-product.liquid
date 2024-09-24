@@ -187,7 +187,7 @@
 
        {% assign bundle_products = product.metafields.custom.test_pro.value %}
        {% for bundle_product in bundle_products %}
-       {{ bundle_products }}
+       {% include 'card-product-new', bundle_product %}
        {% endfor %}
       
 
