@@ -193,10 +193,11 @@
         {%- endif -%}
       </media-gallery>
 
+      {% assign releted_cust_size = product.metafields.custom.test_pro.value %}
+      {% if releted_cust_size !="" %} 
       <div class="extra_cut_holder">
         <p>Other cut sizes available:</p>
-          {% assign releted_cust_size = product.metafields.custom.test_pro.value %}
-            {% if releted_cust_size !="" %}              
+                       
               {% for prod in releted_cust_size %}
                 {% if prod.available == true %}
                   <span class="rel_cut_btn">
@@ -205,10 +206,10 @@
                     </a>
                   </span>
                 {% endif %}
-              {% endfor %}
-            {% endif %}  
+              {% endfor %}             
       </div>
-       
+      {% endif %}
+      
     </div>
     <div class="product__info-wrapper grid__item{% if settings.page_width > 1400 and section.settings.media_size == "small" %} product__info-wrapper--extra-padding{% endif %}">
       <div id="ProductInfo-{{ section.id }}" class="product__info-container{% if section.settings.enable_sticky_info %} product__info-container--sticky{% endif %}">
