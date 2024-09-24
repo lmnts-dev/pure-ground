@@ -185,7 +185,7 @@
         {%- endif -%}
       </media-gallery>
      
-       {% for item in product.metafields.custom.test_pro.value %}
+       {% for item in product.metafields.custom.test_pro.value.id %}
             {{ item }}  {% unless forloop.last %}-{% endunless %}
        {% endfor %}
 
