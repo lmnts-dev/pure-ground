@@ -184,14 +184,13 @@
           </slider-component>
         {%- endif -%}
       </media-gallery>
-     
-       {% for item in product.metafields.custom.test_pro.value.id %}
-            {{ item }}  {% unless forloop.last %}-{% endunless %}
-       {% endfor %}
 
+       {% assign bundle_products = product.metafields.custom.test_pro.value %}
+       {% for bundle_product in bundle_products %}
+       {% include 'card-product-new', bundle_product %}
+       {% endfor %}
       
-        {% assign rp = product.metafields.custom.test_pro %}
-        {{ rp }}
+
              
     </div>
     <div class="product__info-wrapper grid__item{% if settings.page_width > 1400 and section.settings.media_size == "small" %} product__info-wrapper--extra-padding{% endif %}">
