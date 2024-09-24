@@ -1,12 +1,16 @@
-{{ 'component-rating.css' | asset_url | stylesheet_tag }}
-
 {%- if bundle_product and bundle_product != empty -%}
 
 <h3 class="card__heading">
   <a href="#" class="full-unstyled-link">
-    {{ bundle_product.product_title}}
+    {{ bundle_product.product_title }}
   </a>
 </h3>
+
+  <h3 class="card__heading">
+              <a href="{{ card_product.url | default: '#' }}" class="full-unstyled-link">
+                {{ card_product.title | escape }}
+              </a>
+            </h3>
          
 {% endif %}
 
