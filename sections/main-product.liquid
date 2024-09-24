@@ -240,7 +240,7 @@
                 <h4>SPECIFICATION</h4> 
                 <span> <a href="{{ product.metafields.custom.spec_sheet | file_url | remove: getFile }}" target="_blank" ><img src="{{ 'pdf-icon.png' | asset_url }}" height="" width="" /> Veiw </a></span>
               </div>
-              <div class="item_hold">
+              <div class="item_hold cert-hold">
                 <h4>CERTIFICATIONS</h4> 
                 <span>
                  {% for item in product.metafields.custom.certifications.value %}
