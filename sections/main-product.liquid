@@ -185,7 +185,7 @@
         {%- endif -%}
       </media-gallery>
 
-       {% assign bundle_products = product.metafields.custom.test_pro %}
+       {% assign bundle_products = product.metafields.custom.test_pro.value.id %}
        {% for bundle_product in bundle_products %}
        {% include 'same-type-card', bundle_product %}
        {% endfor %}
