@@ -185,9 +185,13 @@
         {%- endif -%}
       </media-gallery>
      
-      {{ product.metafields.custom.test_pro }}
-        {% assign rp = product.metafields.custom.test_pro.value %}
-      {{ rp }}
+       {% for item in product.metafields.custom.test_pro.value %}
+            {{ item }}  {% unless forloop.last %}-{% endunless %}
+       {% endfor %}
+
+      
+        {% assign rp = product.metafields.custom.test_pro %}
+        {{ rp }}
              
     </div>
     <div class="product__info-wrapper grid__item{% if settings.page_width > 1400 and section.settings.media_size == "small" %} product__info-wrapper--extra-padding{% endif %}">
