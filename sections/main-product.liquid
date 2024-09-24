@@ -186,8 +186,18 @@
       </media-gallery>
 
       <div style="border:1px solid red;">
-
-        dfdffdf
+          {% assign releted_cust_size = product.metafields.custom.test_pro.value %}
+            {% if releted_cust_size !="" %}  
+            <span>
+              {% for prod in releted_cust_size %}
+                {% if prod.available == true %}
+                  <a href="{{ prod.url }}" class="related-product" aria-label="{{prod.title}}" title="{{ prod.title }}">
+                    {{ prod.title }}
+                  </a>
+                {% endif %}
+              {% endfor %}
+            </span>
+            {% endif %}  
       </div>
        
     </div>
