@@ -185,22 +185,20 @@
         {%- endif -%}
       </media-gallery>
 
-       {% assign bundle_products = product.metafields.custom.test_pro.value %}
-       {% for bundle_product in bundle_products %}
-       {% include 'same-type-card', bundle_product %}
-       {% endfor %}
-
+   
   
-  {% assign mentionproduct = product.metafields.custom.test_pro.value %}
+  {% assign releted_cust_size = product.metafields.custom.test_pro.value %}
+    {% if releted_cust_size !="" %}  
     <div class="related-products" id="related-products-{{ block.id }}">
-      {% for prod in mentionproduct %}
+      {% for prod in releted_cust_size %}
         {% if prod.available == true %}
           <a href="{{ prod.url }}" class="related-product" aria-label="{{prod.title}}" title="{{ prod.title }}">
-            <img class="related-product__image" src="{{ prod.images[0] | img_url: '500x' }}" alt="{{ prod.title }}">
+            {{ prod.title }}
           </a>
         {% endif %}
       {% endfor %}
     </div>
+    {% endif %}  
   
       
 
