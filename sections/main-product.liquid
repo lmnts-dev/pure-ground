@@ -187,18 +187,7 @@
 
    
   
-  {% assign releted_cust_size = product.metafields.custom.test_pro.value %}
-    {% if releted_cust_size !="" %}  
-    <div class="related-products" id="related-products-{{ block.id }}">
-      {% for prod in releted_cust_size %}
-        {% if prod.available == true %}
-          <a href="{{ prod.url }}" class="related-product" aria-label="{{prod.title}}" title="{{ prod.title }}">
-            {{ prod.title }}
-          </a>
-        {% endif %}
-      {% endfor %}
-    </div>
-    {% endif %}  
+ 
   
       
 
