@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function updateSKU() {
+        alert("ddd");
         let selectedOptions = [];
         document.querySelectorAll(".select__select").forEach(select => {
             selectedOptions.push(select.value);
