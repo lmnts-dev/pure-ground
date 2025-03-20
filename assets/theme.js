@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
         let selectedOptions = [];
 
         // Loop through all selected options and get their values
-        document.querySelectorAll(".single-option-selector").forEach(select => {
+        document.querySelectorAll(".select__select").forEach(select => {
             selectedOptions.push(select.value);
         });
 
