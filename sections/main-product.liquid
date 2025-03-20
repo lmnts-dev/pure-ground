@@ -748,6 +748,24 @@
   }
 </script>
 
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const skuElement = document.getElementById("variant-sku");
+    const variantSelect = document.querySelector("[name='id']");
+
+    if (variantSelect) {
+        variantSelect.addEventListener("change", function() {
+            let selectedOption = variantSelect.options[variantSelect.selectedIndex];
+            let variantSku = selectedOption.getAttribute("data-sku");
+
+            if (variantSku) {
+                skuElement.textContent = variantSku;
+            }
+        });
+    }
+});
+</script>                      
+
 {% schema %}
 {
   "name": "t:sections.main-product.name",
