@@ -708,7 +708,29 @@
     });     
   });
 
-  
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const skuElement = document.getElementById("variant-sku");
+    const variantSelectors = document.querySelectorAll("[name='id'], .single-option-selector");
+    const variants = {{ product.variants | json }};
+
+    function updateSKU() {
+        let selectedVariantId = document.querySelector("[name='id']").value; // Get selected variant ID
+        let matchedVariant = variants.find(variant => variant.id == selectedVariantId);
+
+        if (matchedVariant) {
+            skuElement.textContent = matchedVariant.sku || "N/A"; // Show SKU or "N/A" if not available
+        }
+    }
+
+    if (variantSelectors.length > 0) {
+        variantSelectors.forEach(selector => {
+            selector.addEventListener("change", updateSKU);
+        });
+    }
+
+    updateSKU(); // Run once on page load
+});
   
 </script>
 
