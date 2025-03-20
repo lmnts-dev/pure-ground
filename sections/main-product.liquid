@@ -399,6 +399,21 @@
                             </option>
                           {%- endfor -%}
                         </select>
+
+                        <select name="id" id="Variants-{{ section.id }}" class="select__select" form="{{ product_form_id }}">
+                        {%- for variant in product.variants -%}
+                          <option
+                            {% if variant == product.selected_or_first_available_variant %}selected="selected"{% endif %}
+                            {% if variant.available == false %}disabled{% endif %}
+                            value="{{ variant.id }}" data-sku="{{ variant.sku }}"
+                          >
+                            {{ variant.title }}
+                            {%- if variant.available == false %} - {{ 'products.product.sold_out' | t }}{% endif %}
+                            - {{ variant.price | money | strip_html }}
+                          </option>
+                        {%- endfor -%}
+                      </select>
+                        
                         {% render 'icon-caret' %}
                       </div>
                     </div>
