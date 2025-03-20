@@ -4,7 +4,8 @@
 document.addEventListener("DOMContentLoaded", function() {
     const skuElement = document.getElementById("variant-sku");
     const productOptions = document.querySelectorAll(".select__select"); // Adjust if your theme uses different selectors
-
+    alert(productOptions);
+  
     if (productOptions.length > 0) {
         productOptions.forEach(option => {
             option.addEventListener("change", function() {
@@ -14,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function updateSKU() {
-        alert("ddd");
+       
         let selectedOptions = [];
         document.querySelectorAll(".select__select").forEach(select => {
             selectedOptions.push(select.value);
