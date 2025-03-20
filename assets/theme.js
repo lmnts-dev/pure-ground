@@ -3,11 +3,11 @@
 
 document.addEventListener("DOMContentLoaded", function () {
     const skuElement = document.getElementById("variant-sku");
-    const variantSelectors = document.querySelectorAll("[name='id'], .single-option-selector");
+    const variantSelectors = document.querySelectorAll("[name='options'], .select__select");
     const variants = {{ product.variants | json }};
 
     function updateSKU() {
-        let selectedVariantId = document.querySelector("[name='id']").value; // Get the selected variant ID
+        let selectedVariantId = document.querySelector("[name='options']").value; // Get the selected variant ID
         let matchedVariant = variants.find(variant => variant.id == selectedVariantId);
 
         if (matchedVariant) {
