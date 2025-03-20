@@ -705,16 +705,7 @@
     variantSwitcher.outerHTML = noScriptInputWrapper.outerHTML;
     document.querySelector('#Variants-{{ section.id }}').addEventListener('change', function(event) {
       hiddenInput.value = event.currentTarget.value;
-    });
-
-    var  tt = document.querySelector('#{{ product_form_id }} input[name="id"]');
- 
-
-  document.querySelector('#Option-template-{{ section.id }}-0').addEventListener('change', function(event) {
-       alert(tt);
-    });
-
-     
+    });     
   });
 
   
