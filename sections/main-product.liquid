@@ -241,7 +241,7 @@
               {% if product.metafields.custom.item_code != blank %}
               <div class="item_hold">
                 <h4>ITEM CODE</h4> 
-                 <span id="variant-sku">{{ product.metafields.custom.item_code }}</span>
+                 <span id="variant-sku">{{ product.variants.first.sku }}</span>
                  <!-- <p>SKU: <span id="variant-sku">{{ product.variants.first.sku }}</span></p> -->
               </div>
               {% endif %}
