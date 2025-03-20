@@ -394,13 +394,11 @@
                           form="{{ product_form_id }}"
                         >
                           {%- for value in option.values -%}
-                            <option value="{{ value | escape }}"  {% if option.selected_value == value %}selected="selected"{% endif %}>
+                            <option value="{{ value | escape }}" {% if option.selected_value == value %}selected="selected"{% endif %}>
                               {{ value }}
                             </option>
                           {%- endfor -%}
                         </select>
-
-                        
                         {% render 'icon-caret' %}
                       </div>
                     </div>
@@ -423,7 +421,7 @@
                       <option
                         {% if variant == product.selected_or_first_available_variant %}selected="selected"{% endif %}
                         {% if variant.available == false %}disabled{% endif %}
-                        value="{{ variant.id }}" data-sku="{{ variant.sku }}"
+                        value="{{ variant.id }}"
                       >
                         {{ variant.title }}
                         {%- if variant.available == false %} - {{ 'products.product.sold_out' | t }}{% endif %}
@@ -749,24 +747,6 @@
     ]
   }
 </script>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    const skuElement = document.getElementById("variant-sku");
-    const variantSelect = document.querySelector("[name='id']");
-
-    if (variantSelect) {
-        variantSelect.addEventListener("change", function() {
-            let selectedOption = variantSelect.options[variantSelect.selectedIndex];
-            let variantSku = selectedOption.getAttribute("data-sku");
-
-            if (variantSku) {
-                skuElement.textContent = variantSku;
-            }
-        });
-    }
-});
-</script>                      
 
 {% schema %}
 {
