@@ -245,10 +245,13 @@
                  <!-- <p>SKU: <span id="variant-sku">{{ product.variants.first.sku }}</span></p> -->
               </div>
               {% endif %}
+              {% if product.metafields.custom.spec_sheet != blank %}
               <div class="item_hold">
                 <h4>SPECIFICATION</h4> 
                 <span> <a href="{{ product.metafields.custom.spec_sheet | file_url | remove: getFile }}" target="_blank" ><img src="{{ 'pdf-icon.png' | asset_url }}" height="" width="" /> Veiw </a></span>
               </div>
+              {% endif %}
+              {% if product.metafields.custom.certifications.value != blank %}
               <div class="item_hold cert-hold">
                 <h4>CERTIFICATIONS</h4> 
                 <span>
@@ -256,7 +259,10 @@
                       <a href="#">{{ item }}</a>  {% unless forloop.last %}-{% endunless %}
                  {% endfor %}
                 </span>
-              </div>  
+              </div> 
+              {% endif %}
+
+              
             </div>
           </div>
             
