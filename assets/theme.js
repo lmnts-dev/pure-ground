@@ -3,30 +3,29 @@
 
 document.addEventListener("DOMContentLoaded", function() {
     const skuElement = document.getElementById("variant-sku");
-    const productOptions = document.querySelectorAll(".select__select"); // Adjust if your theme uses different selectors
-    alert(productOptions);
-  
-    if (productOptions.length > 0) {
-        productOptions.forEach(option => {
-            option.addEventListener("change", function() {
-                updateSKU();
-            });
+    const productForm = document.querySelector("form[action*='/cart/add']");
+    const variants = JSON.parse('{{ product.variants | json }}'); // Get all variants from Shopify
+
+    if (productForm) {
+        productForm.addEventListener("change", function() {
+            updateSKU();
         });
     }
 
     function updateSKU() {
-       
         let selectedOptions = [];
-        document.querySelectorAll(".select__select").forEach(select => {
+
+        // Loop through all selected options and get their values
+        document.querySelectorAll(".single-option-selector").forEach(select => {
             selectedOptions.push(select.value);
         });
 
-        let variants = JSON.parse('{{ product.variants | json }}'); // Get all variants
-
+        // Find the matching variant based on selected options
         let matchedVariant = variants.find(variant => {
-            return variant.options.every((opt, index) => opt === selectedOptions[index]);
+            return variant.options.every((option, index) => option === selectedOptions[index]);
         });
 
+        // Update the SKU if a matching variant is found
         if (matchedVariant) {
             skuElement.textContent = matchedVariant.sku || "N/A"; // Show SKU or "N/A" if not available
         }
