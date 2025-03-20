@@ -238,11 +238,13 @@
               {% endif %}
             </div>
             <div class="item_holder_content">
+              {% if product.metafields.custom.item_code != blank %}
               <div class="item_hold">
                 <h4>ITEM CODE</h4> 
                  <span>{{ product.metafields.custom.item_code }}</span>
                  <!-- <p>SKU: <span id="variant-sku">{{ product.variants.first.sku }}</span></p> -->
               </div>
+              {% endif %}
               <div class="item_hold">
                 <h4>SPECIFICATION</h4> 
                 <span> <a href="{{ product.metafields.custom.spec_sheet | file_url | remove: getFile }}" target="_blank" ><img src="{{ 'pdf-icon.png' | asset_url }}" height="" width="" /> Veiw </a></span>
