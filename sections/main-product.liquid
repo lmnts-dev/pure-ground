@@ -739,16 +739,10 @@
 document.addEventListener("DOMContentLoaded", function() {
 
      function updateCartCount() {
-        fetch('/cart.js')
-        .then(response => response.json())
-        .then(data => {
-            let cartCount = data.item_count;
-            let cartBubble = document.querySelector(".cart-icon-bubble");
-            if (cartBubble) {
-                cartBubble.textContent = cartCount;
-                cartBubble.style.display = cartCount > 0 ? "block" : "none";
-            }
-        });
+
+            let cartBubble = document.querySelector(".cart-count-bubble");
+            alert(cartBubble);
+       
     }
   
     document.querySelectorAll('form[action*="/cart/add"]').forEach(form => {
