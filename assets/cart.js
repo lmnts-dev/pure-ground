@@ -39,7 +39,7 @@ class CartItems extends HTMLElement {
       },
       {
         id: 'cart-icon-bubble',
-        section: 'cart-count-bubble',
+        section: 'cart-icon-bubble',
         selector: '.shopify-section'
       },
       {
