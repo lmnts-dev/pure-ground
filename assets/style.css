@@ -85,4 +85,6 @@
 .cart-notification.active .button--full-width{ width: 100px; height: 40px; line-height: 40px; border-radius: 7px; background: var(--color-btn); color: var(--color-btn-txt); padding: 0 calc(var(--btnHeight) / 2); display: inline-flex; text-align: center;    font-size: .875rem;    font-weight: 500;    margin: 0;
     align-items: center; -webkit-appearance: none;overflow: hidden;  min-height: inherit;}
 
+.cart-notification__links>* {  margin-top: 1rem;  font-size: 16px;}
+
 
