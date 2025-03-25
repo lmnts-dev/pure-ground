@@ -736,48 +736,13 @@
 </script>
 
 <script>
-document.addEventListener("DOMContentLoaded", function() {
-
-     function updateCartCount() {
-        fetch('/cart.js')
-        .then(response => response.json())
-        .then(data => {
-            let cartCount = data.item_count;
-            let cartBubble = document.querySelector(".cart-icon-bubble");
-            if (cartBubble) {
-                cartBubble.textContent = cartCount;
-                cartBubble.style.display = cartCount > 0 ? "block" : "none";
-            }
-        });
-    }
-  
-    document.querySelectorAll('form[action*="/cart/add"]').forEach(form => {
-        form.addEventListener("submit", function(event) {
-            event.preventDefault(); // Prevent default form submission
-            alert("ddd");
-            //document.querySelector(".cart-notification").classList.add("active");
-            // Optional: Auto-hide after 3 seconds
-                //setTimeout(() => {
-                //    document.querySelector(".cart-notification").classList.remove("active");
-               // }, 3000);
-           // updateCartCount();
-          
-            //let formData = new FormData(this);
-            //this.form = this.querySelector('form');
-            //const formData = new FormData(this.form);
-
-          let formData = new FormData(event.target.closest("form")); // Ensure we get the correct form
-
-            fetch(event.target.closest("form").action, {
-                method: "POST",
-                body: formData
-            })
-            .then(response => response.json())
-            .then(data => {
-                window.location.href = "/cart"; // Redirect to cart page
-            })
-            .catch(error => console.error("Error:", error));
-        });
+$(document).on("submit", 'form[action*="/cart/add"]', function(event) {
+    event.preventDefault();
+    let form = $(this);
+    
+    $.post(form.attr("action"), form.serialize())
+    .done(function() {
+        window.location.href = "/cart"; // Redirect after adding product
     });
 });
 </script>
