@@ -93,5 +93,6 @@
 
 .product-media-modal[open]{ z-index:99999 !important; }
 .product-media-modal{ background:rgba(0,0,0,0.5) !important}
+.product-media-modal__toggle{ background:#fff !important; }
 
 
