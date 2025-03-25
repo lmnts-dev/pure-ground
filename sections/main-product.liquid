@@ -741,7 +741,7 @@ document.addEventListener("DOMContentLoaded", function() {
      function updateCartCount() {
             var snapValue = $(".cart-count-bubble span").first().text();
             var currentValue = $(".quantity__input").val();
-            var ttl = snapValue+currentValue;
+            var ttl = parseFloat(snapValue) + parseFloat(currentValue);
             $(".cart-count-bubble span").first().text("NEW VALUE");
           
             alert(ttl);
