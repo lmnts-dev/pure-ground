@@ -325,6 +325,7 @@ document.addEventListener("DOMContentLoaded", function() {
             })
             .then(response => response.json())
             .then(data => {
+                alert("ddd");
                 // Show cart notification
                  updateCartCount();
                 document.querySelector(".cart-notification").classList.add("active");
