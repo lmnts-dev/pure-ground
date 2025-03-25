@@ -135,3 +135,21 @@ class CartItems extends HTMLElement {
 }
 
 customElements.define('cart-items', CartItems);
+
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelectorAll('.product-form__submit button').forEach(button => {
+        button.addEventListener("click", function(event) {
+            event.preventDefault(); // Prevent default behavior
+            
+            let form = this.closest("form");
+            let formData = new FormData(form);
+
+            fetch('/cart/add.js', {
+                method: "POST",
+                body: formData
+            }).then(() => {
+                window.location.href = "/cart"; // Redirect to cart page
+            });
+        });
+    });
+});
