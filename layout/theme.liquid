@@ -229,8 +229,7 @@
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ "accessibility.skip_to_text" | t }}
     </a>
-    <div class="cart-notification">Item added to cart!</div>
-
+   
     {% comment %}{% section 'announcement-bar' %}{% endcomment %}
     {% section 'header' %}
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
@@ -294,6 +293,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     document.querySelectorAll('form[action*="/cart/add"]').forEach(form => {
         form.addEventListener("submit", function(event) {
+            alert("sss");
             event.preventDefault(); // Prevent default form submission
 
             let formData = new FormData(this);
