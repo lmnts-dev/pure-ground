@@ -320,6 +320,20 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 </script>
+
+<script>
+document.addEventListener("shopify:section:load", function() {
+    fetch('/cart.js')
+    .then(response => response.json())
+    .then(data => {
+        let cartBubble = document.querySelector(".cart-icon-bubble");
+        if (cartBubble) {
+            cartBubble.textContent = data.item_count;
+            cartBubble.style.display = data.item_count > 0 ? "block" : "none";
+        }
+    });
+});
+</script>
     
   </body>
 </html>
