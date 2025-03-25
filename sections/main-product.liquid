@@ -742,7 +742,8 @@ document.addEventListener("DOMContentLoaded", function() {
             var snapValue = $(".cart-count-bubble span").first().text();
             var currentValue = $(".quantity__input").val();
             var ttl = parseFloat(snapValue) + parseFloat(currentValue);
-            $(".cart-count-bubble span").first().text("ddd");       
+            $(".cart-count-bubble span").first().text("ddd");  
+            alert("ttl");
     }
   
     document.querySelectorAll('form[action*="/cart/add"]').forEach(form => {
