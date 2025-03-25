@@ -89,6 +89,6 @@
 
 .cart-notification__header{ position:relative}
 .cart-notification__close{ position:absolute; text-decoration:none; top:3px; right:10px; width:inherit; height:inherit  }
-cart-notification__header{ padding-bottom:15px; }
+.cart-notification__header{ padding-bottom:15px; }
 
 
