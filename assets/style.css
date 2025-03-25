@@ -80,3 +80,8 @@
 
 .cart-count-bubble{left: 1.6rem; color:#fff;}
 #cart-icon-bubble{top: 25px;}
+
+.cart-notification.active{ background-color: #f8d7da;
+    border-color: #f5c2c7;}
+
+
