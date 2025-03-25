@@ -295,6 +295,10 @@ document.addEventListener("DOMContentLoaded", function() {
         form.addEventListener("submit", function(event) {
             event.preventDefault(); // Prevent default form submission
             document.querySelector(".cart-notification").classList.add("show");
+            // Optional: Auto-hide after 3 seconds
+                setTimeout(() => {
+                    document.querySelector(".cart-notification").classList.remove("show");
+                }, 3000);
             let formData = new FormData(this);
             
             fetch(this.action, {
