@@ -766,24 +766,17 @@ document.addEventListener("DOMContentLoaded", function() {
             //this.form = this.querySelector('form');
             //const formData = new FormData(this.form);
 
-          alert("asaa");
-            
-            fetch(this.action, {
+          let formData = new FormData(event.target.closest("form")); // Ensure we get the correct form
+
+            fetch(event.target.closest("form").action, {
                 method: "POST",
                 body: formData
             })
             .then(response => response.json())
             .then(data => {
-                alert("ddd");
-                // Show cart notification
-                 updateCartCount();
-                document.querySelector(".cart-notification").classList.add("active");
-
-                // Optional: Auto-hide after 3 seconds
-                setTimeout(() => {
-                    document.querySelector(".cart-notification").classList.remove("active");
-                }, 3000);
-            });
+                window.location.href = "/cart"; // Redirect to cart page
+            })
+            .catch(error => console.error("Error:", error));
         });
     });
 });
