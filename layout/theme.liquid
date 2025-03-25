@@ -294,10 +294,10 @@ document.addEventListener("DOMContentLoaded", function() {
     document.querySelectorAll('form[action*="/cart/add"]').forEach(form => {
         form.addEventListener("submit", function(event) {
             event.preventDefault(); // Prevent default form submission
-            document.querySelector(".cart-notification").classList.add("show");
+            document.querySelector(".cart-notification").classList.add("active");
             // Optional: Auto-hide after 3 seconds
                 setTimeout(() => {
-                    document.querySelector(".cart-notification").classList.remove("show");
+                    document.querySelector(".cart-notification").classList.remove("active");
                 }, 3000);
             let formData = new FormData(this);
             
