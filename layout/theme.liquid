@@ -315,7 +315,8 @@ document.addEventListener("DOMContentLoaded", function() {
                // }, 3000);
            // updateCartCount();
           
-            let formData = new FormData(this);
+            //let formData = new FormData(this);
+            const formData = new FormData(this.form);
             
             fetch(this.action, {
                 method: "POST",
