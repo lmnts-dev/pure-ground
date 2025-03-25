@@ -14,13 +14,23 @@
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
-
+  .price{margin-top:20px;}
+  .pro_top_holder{flex-wrap:nowrap;}
+  .rel_cut_btn a{background-color: #fff;border: 1px solid #0d1d2d;color: #0d1d2d;padding: 15px 30px;display: inline-block;margin-bottom: 15px;border-radius: 10px;font-size: 16px;}
+  .product__media-wrapper{width:100% !important;}
+  
+  @media screen and (max-width: 989px) {
+   .pro_top_holder{flex-wrap:wrap;} 
+  }
+  
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+  
+  
 {%- endstyle -%}
 
 <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
@@ -33,8 +43,8 @@
 {%- endif -%}
 
 <section class="page-width section-{{ section.id }}-padding">
-  <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.gallery_layout }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
-    <div class="grid__item product__media-wrapper">
+  <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.gallery_layout }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %} pro_top_holder">
+    <div class="product__media-wrapper">
       <media-gallery id="MediaGallery-{{ section.id }}" role="region" {% if section.settings.enable_sticky_info %}class="product__media-gallery"{% endif %} aria-label="{{ 'products.product.media.gallery_viewer' | t }}" data-desktop-layout="{{ section.settings.gallery_layout }}">
         <div id="GalleryStatus-{{ section.id }}" class="visually-hidden" role="status"></div>
         <slider-component id="GalleryViewer-{{ section.id }}" class="slider-mobile-gutter">
@@ -183,6 +193,24 @@
           </slider-component>
         {%- endif -%}
       </media-gallery>
+
+      {% assign releted_cust_size = product.metafields.custom.test_pro.value %}
+      {% if releted_cust_size != blank %} 
+      <div class="extra_cut_holder">
+        <p>Other cut sizes available:</p>
+                       
+              {% for prod in releted_cust_size %}
+                {% if prod.available == true %}
+                  <span class="rel_cut_btn">
+                    <a href="{{ prod.url }}" title="{{ prod.title }}">
+                      {{ prod.title }}
+                    </a>
+                  </span>
+                {% endif %}
+              {% endfor %}             
+      </div>
+      {% endif %}
+      
     </div>
     <div class="product__info-wrapper grid__item{% if settings.page_width > 1400 and section.settings.media_size == "small" %} product__info-wrapper--extra-padding{% endif %}">
       <div id="ProductInfo-{{ section.id }}" class="product__info-container{% if section.settings.enable_sticky_info %} product__info-container--sticky{% endif %}">
@@ -196,13 +224,64 @@
             <p class="product__text{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}" {{ block.shopify_attributes }}>
               {{- block.settings.text -}}
             </p>
+          {%- when 'custom_info' -%}
+          <div class="cus_info_hold">
+            <div class="txt_holder">
+              {% if product.metafields.custom.country_of_origin != blank %}
+              <p>Country of Origin : {{ product.metafields.custom.country_of_origin }}</p>
+              {% endif %} 
+              {% if product.metafields.custom.botanical_name != blank %}
+              <p>Latin Name : {{ product.metafields.custom.botanical_name }}</p>
+              {% endif %} 
+              {% if product.metafields.custom.cut_size != blank %}
+              <p>Cut size : {{ product.metafields.custom.cut_size }}</p>
+              {% endif %}
+            </div>
+            <div class="item_holder_content">
+              {% if product.metafields.custom.item_code != blank %}
+              <div class="item_hold">
+                <h4>ITEM CODE</h4> 
+                 <span id="variant-sku">{{ product.variants.first.sku }}</span>
+                 <!-- <p>SKU: <span id="variant-sku">{{ product.variants.first.sku }}</span></p> -->
+              </div>
+              {% endif %}
+              {% if product.metafields.custom.spec_sheet != blank %}
+              <div class="item_hold">
+                <h4>SPECIFICATION</h4> 
+                <span> <a href="{{ product.metafields.custom.spec_sheet | file_url | remove: getFile }}" target="_blank" ><img src="{{ 'pdf-icon.png' | asset_url }}" height="" width="" /> View </a></span>
+              </div>
+              {% endif %}
+              {% if product.metafields.custom.certifications.value != blank %}
+              <div class="item_hold cert-hold">
+                <h4>CERTIFICATIONS</h4> 
+                <span>
+                 {% for item in product.metafields.custom.certifications.value %}
+                      <a href="#">{{ item }}</a>  {% unless forloop.last %}-{% endunless %}
+                 {% endfor %}
+                </span>
+              </div> 
+              {% endif %}
+
+              
+            </div>
+          </div>
+            
           {%- when 'title' -%}
             <h1 class="product__title" {{ block.shopify_attributes }}>
               {{ product.title | escape }}
             </h1>
           {%- when 'price' -%}
-            <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
-              {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
+            <div class="no-js-hidden dhamnaHolder" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
+              <div class="price_holder">
+                {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
+              </div>
+              <div class="logo_holder">
+                      {% for item in product.metafields.custom.certifications.value %}
+                      {%- assign logo_url =  item | downcase | remove: " "  | append: ".png"  -%}
+                        <a href="#"><img src="{{logo_url | asset_url }}" alt="{{ item }}" /> </a>
+                      {% endfor %}                
+              </div>
+              
             </div>
             {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
               <div class="product__tax caption rte">
@@ -240,36 +319,11 @@
                   </div>
                   {% render 'icon-caret' %}
                 </summary>
-                <div class="accordion__content rte" id="ProductAccordion-{{ block.id }}-{{ section.id }}">
+                <div class="accordion__content rte __article-txt" id="ProductAccordion-{{ block.id }}-{{ section.id }}">
                   {{ block.settings.content }}
                   {{ block.settings.page.content }}
                 </div>
               </details>
-            </div>
-          {%- when 'quantity_selector' -%}
-            <div class="product-form__input product-form__quantity{% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_vertical_offset < 0 %} product-form__quantity-top{% endif %}" {{ block.shopify_attributes }}>
-              <label class="form__label" for="Quantity-{{ section.id }}">
-                {{ 'products.product.quantity.label' | t }}
-              </label>
-
-              <quantity-input class="quantity">
-                <button class="quantity__button no-js-hidden" name="minus" type="button">
-                  <span class="visually-hidden">{{ 'products.product.quantity.decrease' | t: product: product.title | escape }}</span>
-                  {% render 'icon-minus' %}
-                </button>
-                <input class="quantity__input"
-                    type="number"
-                    name="quantity"
-                    id="Quantity-{{ section.id }}"
-                    min="1"
-                    value="1"
-                    form="{{ product_form_id }}"
-                  >
-                <button class="quantity__button no-js-hidden" name="plus" type="button">
-                  <span class="visually-hidden">{{ 'products.product.quantity.increase' | t: product: product.title | escape }}</span>
-                  {% render 'icon-plus' %}
-                </button>
-              </quantity-input>
             </div>
           {%- when 'popup' -%}
               <modal-opener class="product-popup-modal__opener no-js-hidden" data-modal="#PopupModal-{{ block.id }}" {{ block.shopify_attributes }}>
@@ -314,7 +368,10 @@
             </share-button>
             <script src="{{ 'share.js' | asset_url }}" defer="defer"></script>
           {%- when 'variant_picker' -%}
+            
             {%- unless product.has_only_default_variant -%}
+            <div class="variant_box_holder">  
+            <div class="variant_box">
               {%- if block.settings.picker_type == 'button' -%}
                 <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
                   {%- for option in product.options_with_values -%}
@@ -366,6 +423,7 @@
                   </script>
                 </variant-selects>
               {%- endif -%}
+              </div>
             {%- endunless -%}
 
             <noscript class="product-form__noscript-wrapper-{{ section.id }}">
@@ -389,9 +447,42 @@
                 </div>
               </div>
             </noscript>
+
+            {%- when 'quantity_selector' -%}
+            <div class="variant_box">
+            <div class="product-form__input product-form__quantity{% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_vertical_offset < 0 %} product-form__quantity-top{% endif %}" {{ block.shopify_attributes }}>
+              <label class="form__label" for="Quantity-{{ section.id }}">
+                {{ 'products.product.quantity.label' | t }}
+              </label>
+
+              <quantity-input class="quantity">
+                <button class="quantity__button no-js-hidden" name="minus" type="button">
+                  <span class="visually-hidden">{{ 'products.product.quantity.decrease' | t: product: product.title | escape }}</span>
+                  {% render 'icon-minus' %}
+                </button>
+                <input class="quantity__input"
+                    type="number"
+                    name="quantity"
+                    id="Quantity-{{ section.id }}"
+                    min="1"
+                    value="1"
+                    form="{{ product_form_id }}"
+                  >
+                <button class="quantity__button no-js-hidden" name="plus" type="button">
+                  <span class="visually-hidden">{{ 'products.product.quantity.increase' | t: product: product.title | escape }}</span>
+                  {% render 'icon-plus' %}
+                </button>
+              </quantity-input>
+            </div>
+            </div>
+            </div>
+            
+            
           {%- when 'buy_buttons' -%}
-            <div {{ block.shopify_attributes }}>
+            <div {{ block.shopify_attributes }} style="margin:-30px 0 30px 0;">
+              
               <product-form class="product-form">
+                <div class="btn_holder">
                 <div class="product-form__error-message-wrapper" role="alert" hidden>
                   <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-error" viewBox="0 0 13 13">
                     <circle cx="6.5" cy="6.50049" r="5.5" stroke="white" stroke-width="2"/>
@@ -403,7 +494,9 @@
                 </div>
 
                 {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
+                 
                   <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" disabled>
+                  <input type="hidden" name="return_to" value="/cart">
                   <div class="product-form__buttons">
                     <button
                       type="submit"
@@ -428,7 +521,9 @@
                       {{ form | payment_button }}
                     {%- endif -%}
                   </div>
+                
                 {%- endform -%}
+                </div>       
               </product-form>
 
               {{ 'component-pickup-availability.css' | asset_url | stylesheet_tag }}
@@ -478,10 +573,38 @@
             {%- endif -%}
           {%- endcase -%}
         {%- endfor -%}
+
+         <div class="shpg_payicon_holder">
+           <div class="shpg"><img src="{{ 'car-icon.png' | asset_url }}" height="" width="" /> View live shipping rates in cart</div>
+           <div class="shpg_cart"><img src="{{ 'visa.png' | asset_url }}" height="" width="" /></div>
+         </div>             
       </div>
     </div>
   </div>
 
+<div class="tab_holder">
+    <div id="horizontalTab">
+        <ul>
+            <li><a href="#tab-1">Shipping Information</a></li>
+            <li><a href="#tab-2">Certificate of Analysis – COA</a></li>
+            <li><a href="#tab-3">Sample policy</a></li>
+        </ul>
+
+        <div id="tab-1">
+            {{ product.metafields.custom.shipping_information | metafield_tag  }}
+        </div>
+        <div id="tab-2">
+            {{ product.description }}
+        </div>
+        <div id="tab-3">
+            {{ product.metafields.custom.sample_policy | metafield_tag  }}
+        </div>
+    </div> 
+</div>                      
+                      
+ {% include 'related-product' %}                     
+                 
+                        
   <product-modal id="ProductModal-{{ section.id }}" class="product-media-modal media-modal">
     <div class="product-media-modal__dialog" role="dialog" aria-label="{{ 'products.modal.label' | t }}" aria-modal="true" tabindex="-1">
       <button id="ModalClose-{{ section.id }}" type="button" class="product-media-modal__toggle" aria-label="{{ 'accessibility.close' | t }}">{% render 'icon-close' %}</button>
@@ -572,22 +695,93 @@
       const ua = window.navigator.userAgent;
       const msie = ua.indexOf('MSIE ');
       const trident = ua.indexOf('Trident/');
-
       return (msie > 0 || trident > 0);
     }
-
     if (!isIE()) return;
     const hiddenInput = document.querySelector('#{{ product_form_id }} input[name="id"]');
     const noScriptInputWrapper = document.createElement('div');
     const variantSwitcher = document.querySelector('variant-radios[data-section="{{ section.id }}"]') || document.querySelector('variant-selects[data-section="{{ section.id }}"]');
+    
     noScriptInputWrapper.innerHTML = document.querySelector('.product-form__noscript-wrapper-{{ section.id }}').textContent;
     variantSwitcher.outerHTML = noScriptInputWrapper.outerHTML;
-
     document.querySelector('#Variants-{{ section.id }}').addEventListener('change', function(event) {
       hiddenInput.value = event.currentTarget.value;
-    });
+    });     
   });
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const skuElement = document.getElementById("variant-sku");
+    const variantSelectors = document.querySelectorAll("[name='id'], .single-option-selector");
+    const variants = {{ product.variants | json }};
+
+    function updateSKU() {
+        let selectedVariantId = document.querySelector("[name='id']").value; // Get selected variant ID
+        let matchedVariant = variants.find(variant => variant.id == selectedVariantId);
+
+        if (matchedVariant) {
+            skuElement.textContent = matchedVariant.sku || "N/A"; // Show SKU or "N/A" if not available
+        }
+    }
+
+    if (variantSelectors.length > 0) {
+        variantSelectors.forEach(selector => {
+            selector.addEventListener("change", updateSKU);
+        });
+    }
+
+    updateSKU(); // Run once on page load
+});
+  
 </script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+
+     function updateCartCount() {
+        fetch('/cart.js')
+        .then(response => response.json())
+        .then(data => {
+            let cartCount = data.item_count;
+            let cartBubble = document.querySelector(".cart-icon-bubble");
+            if (cartBubble) {
+                cartBubble.textContent = cartCount;
+                cartBubble.style.display = cartCount > 0 ? "block" : "none";
+            }
+        });
+    }
+  
+    document.querySelectorAll('form[action*="/cart/add"]').forEach(form => {
+        form.addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent default form submission
+            alert("ddd");
+            //document.querySelector(".cart-notification").classList.add("active");
+            // Optional: Auto-hide after 3 seconds
+                //setTimeout(() => {
+                //    document.querySelector(".cart-notification").classList.remove("active");
+               // }, 3000);
+           // updateCartCount();
+          
+            //let formData = new FormData(this);
+            //this.form = this.querySelector('form');
+            //const formData = new FormData(this.form);
+
+          let formData = new FormData(event.target.closest("form")); // Ensure we get the correct form
+
+            fetch(event.target.closest("form").action, {
+                method: "POST",
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                window.location.href = "/cart"; // Redirect to cart page
+            })
+            .catch(error => console.error("Error:", error));
+        });
+    });
+});
+</script>
+    
 
 {%- if first_3d_model -%}
   <script type="application/json" id="ProductJSON-{{ product.id }}">
@@ -1005,6 +1199,18 @@
         {
           "type": "paragraph",
           "content": "t:sections.main-product.blocks.rating.settings.paragraph.content"
+        }
+      ]
+    },
+    {
+      "type": "custom_info",
+      "name": "Custom Info",
+      "settings": [
+        {
+          "type": "text",
+          "id": "custom_info_holder",
+          "label": "Custom Info",
+          "default": "Custom Info"
         }
       ]
     }
