@@ -87,4 +87,7 @@
 
 .cart-notification__links>* {  margin-top: 1rem;  font-size: 16px;}
 
+#cart-notification{ position:relative}
+#cart-notification .cart-notification__close modal__close-button{ position:absolute; text-decoration:none; top:10px; right:10px;  }
+
 
