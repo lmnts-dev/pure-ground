@@ -291,6 +291,20 @@
 
     <script>
 document.addEventListener("DOMContentLoaded", function() {
+
+     function updateCartCount() {
+        fetch('/cart.js')
+        .then(response => response.json())
+        .then(data => {
+            let cartCount = data.item_count;
+            let cartBubble = document.querySelector(".cart-icon-bubble");
+            if (cartBubble) {
+                cartBubble.textContent = cartCount;
+                cartBubble.style.display = cartCount > 0 ? "block" : "none";
+            }
+        });
+    }
+  
     document.querySelectorAll('form[action*="/cart/add"]').forEach(form => {
         form.addEventListener("submit", function(event) {
             event.preventDefault(); // Prevent default form submission
@@ -299,6 +313,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 setTimeout(() => {
                     document.querySelector(".cart-notification").classList.remove("active");
                 }, 3000);
+            updateCartCount();
+          
             let formData = new FormData(this);
             
             fetch(this.action, {
@@ -317,20 +333,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 }, 3000);
             });
         });
-    });
-});
-</script>
-
-<script>
-document.addEventListener("shopify:section:load", function() {
-    fetch('/cart.js')
-    .then(response => response.json())
-    .then(data => {
-        let cartBubble = document.querySelector(".cart-icon-bubble");
-        if (cartBubble) {
-            cartBubble.textContent = data.item_count;
-            cartBubble.style.display = data.item_count > 0 ? "block" : "none";
-        }
     });
 });
 </script>
