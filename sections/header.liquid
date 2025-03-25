@@ -87,6 +87,8 @@
   </{% if style == "on-scroll" %}sticky-header{% else %}header{% endif %}>
 {% endfor %}
 
+{%- render 'cart-notification', color_scheme: section.settings.color_scheme -%}
+
 {% javascript %}
 
   class HamburgerButton extends HTMLElement {
