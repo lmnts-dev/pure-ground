@@ -738,6 +738,7 @@
 <script>
 jQuery(document).on("submit", 'form[action*="/cart/add"]', function(event) {
     event.preventDefault();
+    alert("ddd");
     let form = $(this);
     
     jQuery.post(form.attr("action"), form.serialize())
