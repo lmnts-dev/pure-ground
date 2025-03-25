@@ -739,9 +739,9 @@
 document.addEventListener("DOMContentLoaded", function() {
 
      function updateCartCount() {
-
-            let cartBubble = document.querySelector(".cart-count-bubble");
-            alert(cartBubble);
+            var snapValue = $(".cart-count-bubble span").text();
+          
+            alert(snapValue);
        
     }
   
