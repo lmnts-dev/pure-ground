@@ -97,11 +97,11 @@ class CartItems extends HTMLElement {
 
   updateLiveRegions(line, itemCount) {
     if (this.currentItemCount === itemCount) {
-      document.getElementById(`Line-item-error-${line}`)
+      document.getElementById('Line-item-error-${line}')
         .querySelector('.cart-item__error-text')
         .innerHTML = window.cartStrings.quantityError.replace(
           '[quantity]',
-          document.getElementById(`Quantity-${line}`).value
+          document.getElementById('Quantity-${line}').value
         );
     }
 
@@ -124,7 +124,7 @@ class CartItems extends HTMLElement {
 
   enableLoading(line) {
     document.getElementById('main-cart-items').classList.add('cart__items--disabled');
-    this.querySelectorAll(`#CartItem-${line} .loading-overlay`).forEach((overlay) => overlay.classList.remove('hidden'));
+    this.querySelectorAll('#CartItem-${line} .loading-overlay').forEach((overlay) => overlay.classList.remove('hidden'));
     document.activeElement.blur();
     this.lineItemStatusElement.setAttribute('aria-hidden', false);
   }
