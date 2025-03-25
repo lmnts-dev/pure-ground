@@ -17,7 +17,7 @@
     {% assign style = "relative" %}
   {% endif %}
 
-  <{% if style == "on-scroll" %}sticky-header{% else %}header{% endif %} class="{{ className }} __style-{{ style }} {% if section.settings.always_show_nav %}__always-show-nav{% endif %}">
+  <header class="{{ className }} __style-{{ style }} {% if section.settings.always_show_nav %}__always-show-nav{% endif %}">
 
     {% comment %} Logo {% endcomment %}
     <a class="{{ className }}__logo" href="/">{% render 'svg-logo' %}</a>
