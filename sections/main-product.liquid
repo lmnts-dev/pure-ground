@@ -736,11 +736,11 @@
 </script>
 
 <script>
-$(document).on("submit", 'form[action*="/cart/add"]', function(event) {
+jQuery(document).on("submit", 'form[action*="/cart/add"]', function(event) {
     event.preventDefault();
     let form = $(this);
     
-    $.post(form.attr("action"), form.serialize())
+    jQuery.post(form.attr("action"), form.serialize())
     .done(function() {
         window.location.href = "/cart"; // Redirect after adding product
     });
