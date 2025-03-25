@@ -30,7 +30,7 @@ if (!customElements.get('product-form')) {
       formData.append('sections_url', window.location.pathname);
       config.body = formData;
 
-      fetch(`${routes.cart_add_url}`, config)
+      fetch('${routes.cart_add_url}', config)
         .then((response) => response.json())
         .then((response) => {
           if (response.status) {
