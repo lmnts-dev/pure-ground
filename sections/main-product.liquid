@@ -735,6 +735,60 @@
   
 </script>
 
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+
+     function updateCartCount() {
+        fetch('/cart.js')
+        .then(response => response.json())
+        .then(data => {
+            let cartCount = data.item_count;
+            let cartBubble = document.querySelector(".cart-icon-bubble");
+            if (cartBubble) {
+                cartBubble.textContent = cartCount;
+                cartBubble.style.display = cartCount > 0 ? "block" : "none";
+            }
+        });
+    }
+  
+    document.querySelectorAll('form[action*="/cart/add"]').forEach(form => {
+        form.addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent default form submission
+            //document.querySelector(".cart-notification").classList.add("active");
+            // Optional: Auto-hide after 3 seconds
+                //setTimeout(() => {
+                //    document.querySelector(".cart-notification").classList.remove("active");
+               // }, 3000);
+           // updateCartCount();
+          
+            //let formData = new FormData(this);
+            this.form = this.querySelector('form');
+            const formData = new FormData(this.form);
+
+          alert(formData);
+            
+            fetch(this.action, {
+                method: "POST",
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                alert("ddd");
+                // Show cart notification
+                 updateCartCount();
+                document.querySelector(".cart-notification").classList.add("active");
+
+                // Optional: Auto-hide after 3 seconds
+                setTimeout(() => {
+                    document.querySelector(".cart-notification").classList.remove("active");
+                }, 3000);
+            });
+        });
+    });
+});
+</script>
+    
+
 {%- if first_3d_model -%}
   <script type="application/json" id="ProductJSON-{{ product.id }}">
     {{ product.media | where: 'media_type', 'model' | json }}
