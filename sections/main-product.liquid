@@ -742,8 +742,7 @@ document.addEventListener("DOMContentLoaded", function() {
             var snapValue = $(".cart-count-bubble .sh_cnt").first().text();
             var currentValue = $(".quantity__input").val();
             var ttl = parseFloat(snapValue) + parseFloat(currentValue);
-            $("header.cart-count-bubble .sh_cnt").first().text(ttl); 
-            $("sticky-header.cart-count-bubble .sh_cnt").first().text(ttl); 
+            $(".cart-count-bubble .sh_cnt").first().text(ttl);  
            
     }
   
