@@ -15,7 +15,7 @@ if (!customElements.get('product-form')) {
       if (submitButton.classList.contains('loading')) return;
 
       this.handleErrorMessage();
-     this.cartNotification.setActiveElement(document.activeElement);
+     //this.cartNotification.setActiveElement(document.activeElement);
 
       submitButton.setAttribute('aria-disabled', true);
       submitButton.classList.add('loading');
@@ -26,11 +26,11 @@ if (!customElements.get('product-form')) {
       delete config.headers['Content-Type'];
 
       const formData = new FormData(this.form);
-      formData.append('sections', this.cartNotification.getSectionsToRender().map((section) => section.id));
+      //formData.append('sections', this.cartNotification.getSectionsToRender().map((section) => section.id));
       formData.append('sections_url', window.location.pathname);
       config.body = formData;
 
-      fetch('${routes.cart_add_url}', config)
+      fetch(`${routes.cart_add_url}`, config)
         .then((response) => response.json())
         .then((response) => {
           if (response.status) {
