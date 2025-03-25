@@ -739,10 +739,10 @@
 document.addEventListener("DOMContentLoaded", function() {
 
      function updateCartCount() {
-            var snapValue = $(".cart-count-bubble span").first().text();
+            var snapValue = $(".cart-count-bubble .sh_cnt").first().text();
             var currentValue = $(".quantity__input").val();
             var ttl = parseFloat(snapValue) + parseFloat(currentValue);
-            $(".cart-count-bubble span").first().text("ddd");  
+            $(".cart-count-bubble .sh_cnt").first().text("ddd");  
             alert("ttl");
     }
   
