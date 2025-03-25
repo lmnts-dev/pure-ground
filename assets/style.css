@@ -91,6 +91,7 @@
 .cart-notification__close{ position:absolute; text-decoration:none; top:3px; right:10px; width:inherit; height:inherit  }
 .cart-notification__header{ padding-bottom:15px; }
 
-.product-media-modal[open]{ z-index:99999;}
+.product-media-modal[open]{ z-index:99999 !importanbt; }
+.product-media-modal{ background:rgba(0,0,0,0.5) !important}
 
 
