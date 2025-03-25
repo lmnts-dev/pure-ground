@@ -318,6 +318,8 @@ document.addEventListener("DOMContentLoaded", function() {
             //let formData = new FormData(this);
             this.form = this.querySelector('form');
             const formData = new FormData(this.form);
+
+          alert(formData);
             
             fetch(this.action, {
                 method: "POST",
