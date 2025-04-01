@@ -2710,6 +2710,9 @@ details-disclosure > details {
 .logo_holder img{ width:50px; }
 .box_2 h3{display:flex;gap:5px;}
 
+.variant_box_holder variant-selects.no-js-hidden {display: flex;flex-wrap: wrap;justify-content: space-between;}
+.variant_box{ width:48%;}
+.variant_box_holder .variant_box{ margin:0 !important}
 
 
 @media screen and (max-width: 1199px) {
