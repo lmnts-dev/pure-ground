@@ -270,18 +270,18 @@
             <h1 class="product__title" {{ block.shopify_attributes }}>
               {{ product.title | escape }}
             </h1>
-          {%- when 'price' -%}
-            <div class="no-js-hidden dhamnaHolder" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
-              <div class="price_holder">
-                {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
-              </div>
-              <div class="logo_holder">
+            <div class="logo_holder">
                       {% for item in product.metafields.custom.certifications.value %}
                       {%- assign logo_url =  item | downcase | remove: " "  | append: ".png"  -%}
                         <a href="#"><img src="{{logo_url | asset_url }}" alt="{{ item }}" /> </a>
                       {% endfor %}                
               </div>
-              
+          {%- when 'price' -%}
+            <div class="no-js-hidden dhamnaHolder" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
+              <div class="price_holder">
+                {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
+              </div>
+ 
             </div>
             {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
               <div class="product__tax caption rte">
