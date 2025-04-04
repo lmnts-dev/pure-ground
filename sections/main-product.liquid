@@ -272,7 +272,9 @@
             </h1>
           {%- when 'price' -%}
             <div class="no-js-hidden dhamnaHolder" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
-              
+              <div class="price_holder">
+                {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
+              </div>
               <div class="logo_holder">
                       {% for item in product.metafields.custom.certifications.value %}
                       {%- assign logo_url =  item | downcase | remove: " "  | append: ".png"  -%}
@@ -537,11 +539,7 @@
               
             </div>
             
-            <div class="price_holder">
-                {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
-            </div>
-
-        
+            
           {%- when 'buy_buttons' -%}
             <div {{ block.shopify_attributes }} style="margin:-30px 0 30px 0;">
               
