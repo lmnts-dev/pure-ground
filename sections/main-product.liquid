@@ -270,35 +270,7 @@
             <h1 class="product__title" {{ block.shopify_attributes }}>
               {{ product.title | escape }}
             </h1>
-          {%- when 'price' -%}
-            <div class="no-js-hidden dhamnaHolder" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
-              <div class="price_holder">
-                {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
-              </div>
-              <div class="logo_holder">
-                      {% for item in product.metafields.custom.certifications.value %}
-                      {%- assign logo_url =  item | downcase | remove: " "  | append: ".png"  -%}
-                        <a href="#"><img src="{{logo_url | asset_url }}" alt="{{ item }}" /> </a>
-                      {% endfor %}                
-              </div>
-              
-            </div>
-            {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
-              <div class="product__tax caption rte">
-                {%- if shop.taxes_included -%}
-                  {{ 'products.product.include_taxes' | t }}
-                {%- endif -%}
-                {%- if shop.shipping_policy.body != blank -%}
-                  {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
-                {%- endif -%}
-              </div>
-            {%- endif -%}
-            <div {{ block.shopify_attributes }}>
-              {%- form 'product', product, id: 'product-form-installment', class: 'installment caption-large' -%}
-                <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
-                {{ form | payment_terms }}
-              {%- endform -%}
-            </div>
+          
           {%- when 'description' -%}
             {%- if product.description != blank -%}
               <div class="product__description rte">
@@ -537,6 +509,36 @@
              {% endcomment %}  
 
               
+            </div>
+
+            {%- when 'price' -%}
+            <div class="no-js-hidden dhamnaHolder" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
+              <div class="price_holder">
+                {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
+              </div>
+              <div class="logo_holder">
+                      {% for item in product.metafields.custom.certifications.value %}
+                      {%- assign logo_url =  item | downcase | remove: " "  | append: ".png"  -%}
+                        <a href="#"><img src="{{logo_url | asset_url }}" alt="{{ item }}" /> </a>
+                      {% endfor %}                
+              </div>
+              
+            </div>
+            {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
+              <div class="product__tax caption rte">
+                {%- if shop.taxes_included -%}
+                  {{ 'products.product.include_taxes' | t }}
+                {%- endif -%}
+                {%- if shop.shipping_policy.body != blank -%}
+                  {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
+                {%- endif -%}
+              </div>
+            {%- endif -%}
+            <div {{ block.shopify_attributes }}>
+              {%- form 'product', product, id: 'product-form-installment', class: 'installment caption-large' -%}
+                <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+                {{ form | payment_terms }}
+              {%- endform -%}
             </div>
             
             
