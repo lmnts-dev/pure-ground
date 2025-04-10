@@ -2675,7 +2675,7 @@ details-disclosure > details {
 .featured-products__heading{ width:100%; text-align:left !important;}
 .variant_box_holder{ /*display:flex; justify-content: space-between; */ margin:0 !important}
 .variant_box_holder > div { /* flex-grow: 1;  flex-shrink: 0;  width: 48%; */}
-.ymq-options-box{width: 50%;}
+.ymq-options-box{width: 50% !important;}
 .variant_box_holder .variant_box{ margin:0 1% 0 0 }
 .variant_box_holder .variant_box:last-child{ margin:0 0 0 1%}
 
