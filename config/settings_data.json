@@ -267,6 +267,11 @@
         "type": "shopify://apps/king-product-options-variant/blocks/app-embed/ce104259-52b1-4720-9ecf-76b34cae0401",
         "disabled": true,
         "settings": {}
+      },
+      "6289495341927022121": {
+        "type": "shopify://apps/ymq-cart-drawer-cart-upsell/blocks/app-embed/998af8a7-571f-419f-b29a-2dd178cb5578",
+        "disabled": false,
+        "settings": {}
       }
     }
   },
