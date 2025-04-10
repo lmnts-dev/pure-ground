@@ -34,6 +34,48 @@
 {%- endstyle -%}
 
 <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const productForm = document.querySelector('form[action^="/cart"]');
+    if (!productForm) return;
+
+    const variants = JSON.parse(document.querySelector('[type="application/json"][data-product-json]').textContent).variants;
+    const optionSelectors = productForm.querySelectorAll('select');
+
+    function updateOptions(changedIndex) {
+        const selectedValues = Array.from(optionSelectors).map(select => select.value);
+
+        optionSelectors.forEach((select, index) => {
+            if (index <= changedIndex) return; // Don't update current or earlier selects
+
+            const prevSelections = selectedValues.slice(0, index); // Get prior selections
+            const currentOptions = Array.from(select.options);
+
+            currentOptions.forEach(option => {
+                option.disabled = true;
+
+                const matching = variants.find(variant => {
+                    if (variant.available !== true) return false;
+
+                    const options = [...prevSelections, option.value];
+                    return options.every((val, idx) => val === variant[`option${idx + 1}`]);
+                });
+
+                if (matching) option.disabled = false;
+            });
+        });
+    }
+
+    optionSelectors.forEach((select, index) => {
+        select.addEventListener('change', () => {
+            updateOptions(index);
+        });
+    });
+
+    // Trigger on page load
+    updateOptions(-1);
+});
+</script>
 
 {%- assign first_3d_model = product.media | where: "media_type", "model" | first -%}
 {%- if first_3d_model -%}
