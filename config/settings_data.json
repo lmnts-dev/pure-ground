@@ -1,14 +1,23 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
-    "modal_image": "shopify:\/\/shop_images\/unsplash_1RrszXCTq5U.jpg",
+    "modal_image": "shopify://shop_images/unsplash_1RrszXCTq5U.jpg",
     "modal_heading": "Online shopping coming soon!",
-    "modal_text": "<p>Exciting stuff ahead - we're currently building out our online shopping experience. In the meantime, please peruse our products list or reach out if you'd like to request more information. You can reach us at:<\/p><p><a href=\"mailto:info@puregroundingredients.com\" title=\"mailto:info@puregroundingredients.com\">info@puregroundingredients.com<\/a><\/p><p><a href=\"tel:775-297-4047\" title=\"tel:775-297-4047\">775-297-4047<\/a><\/p>",
+    "modal_text": "<p>Exciting stuff ahead - we're currently building out our online shopping experience. In the meantime, please peruse our products list or reach out if you'd like to request more information. You can reach us at:</p><p><a href=\"mailto:info@puregroundingredients.com\" title=\"mailto:info@puregroundingredients.com\">info@puregroundingredients.com</a></p><p><a href=\"tel:775-297-4047\" title=\"tel:775-297-4047\">775-297-4047</a></p>",
     "button_label": "View Products List",
-    "button_link": "shopify:\/\/pages\/ingredients",
+    "button_link": "shopify://pages/ingredients",
     "modal_newsletter": false,
     "resources_page": "resources",
-    "social_instagram_link": "https:\/\/www.instagram.com\/puregroundingredients\/",
-    "social_linkedin_link": "https:\/\/www.linkedin.com\/company\/pure-ground-ingredients\/",
+    "social_instagram_link": "https://www.instagram.com/puregroundingredients/",
+    "social_linkedin_link": "https://www.linkedin.com/company/pure-ground-ingredients/",
     "sections": {
       "header": {
         "type": "header",
@@ -17,21 +26,21 @@
             "type": "link",
             "settings": {
               "label": "Shop Ingredients",
-              "link": "shopify:\/\/pages\/ingredients"
+              "link": "shopify://pages/ingredients"
             }
           },
           "f8db91fe-274c-4d3d-9762-baf0922ed802": {
             "type": "link",
             "settings": {
               "label": "Processing",
-              "link": "shopify:\/\/pages\/processing"
+              "link": "shopify://pages/processing"
             }
           },
           "0dc547ff-b375-4b78-bad8-9ef9fc4a79d2": {
             "type": "link",
             "settings": {
               "label": "Quality Assurance",
-              "link": "shopify:\/\/pages\/quality-assurance-organic-integrity"
+              "link": "shopify://pages/quality-assurance-organic-integrity"
             }
           },
           "201fd5e5-d847-4850-8232-368b05f5b75a": {
@@ -45,21 +54,21 @@
             "type": "page",
             "settings": {
               "page": "our-values",
-              "image": "shopify:\/\/shop_images\/2018-08-14_18.28.09.jpg"
+              "image": "shopify://shop_images/2018-08-14_18.28.09.jpg"
             }
           },
           "e58fd043-68a5-401e-8b7b-7143691d9a3f": {
             "type": "page",
             "settings": {
               "page": "sustainability-social-and-environmental-impact",
-              "image": "shopify:\/\/shop_images\/unsplash_8rTwokBwz1w-1.jpg"
+              "image": "shopify://shop_images/unsplash_8rTwokBwz1w-1.jpg"
             }
           },
           "181b4f14-5ca5-4e65-8d3f-9747470e412d": {
             "type": "page",
             "settings": {
               "page": "global-partnerships",
-              "image": "shopify:\/\/shop_images\/2018-08-21_17.54_2.jpg"
+              "image": "shopify://shop_images/2018-08-21_17.54_2.jpg"
             }
           },
           "d9d4a0f1-92e8-4a6c-964f-c942b3f49c06": {
@@ -73,28 +82,28 @@
             "type": "page",
             "settings": {
               "page": "about-us",
-              "image": "shopify:\/\/shop_images\/Long_Life_Tea.jpg"
+              "image": "shopify://shop_images/Long_Life_Tea.jpg"
             }
           },
           "5c96bbfa-abb9-4446-b6f1-834fd33d5162": {
             "type": "page",
             "settings": {
               "page": "careers",
-              "image": "shopify:\/\/shop_images\/Rectangle_39_4590f9f9-8c84-44d6-93f4-b64032d7764c.jpg"
+              "image": "shopify://shop_images/Rectangle_39_4590f9f9-8c84-44d6-93f4-b64032d7764c.jpg"
             }
           },
           "f537cb93-a2e6-4b92-b5fe-d43941dc8f93": {
             "type": "cta",
             "settings": {
               "button_label": "Contact Us",
-              "button_link": "shopify:\/\/pages\/contact"
+              "button_link": "shopify://pages/contact"
             }
           },
           "fe940d6c-8545-4795-b4fe-414a3745b581": {
             "type": "page",
             "settings": {
               "page": "european-operations",
-              "image": "shopify:\/\/shop_images\/jezael-melgoza-HYQvV8wWX18-unsplash_1.jpg"
+              "image": "shopify://shop_images/jezael-melgoza-HYQvV8wWX18-unsplash_1.jpg"
             }
           }
         },
@@ -151,31 +160,31 @@
           "af0a88bc-d01b-432f-ac8b-a2653eb0ba1b": {
             "type": "icon",
             "settings": {
-              "icon": "shopify:\/\/shop_images\/Artboard_98.png"
+              "icon": "shopify://shop_images/Artboard_98.png"
             }
           },
           "9b57e61c-0bb7-49b2-8f09-7beff78f127d": {
             "type": "icon",
             "settings": {
-              "icon": "shopify:\/\/shop_images\/Artboard_100.png"
+              "icon": "shopify://shop_images/Artboard_100.png"
             }
           },
           "44610579-d3ab-4f0a-859d-1ac5c84dff68": {
             "type": "icon",
             "settings": {
-              "icon": "shopify:\/\/shop_images\/Artboard_99.png"
+              "icon": "shopify://shop_images/Artboard_99.png"
             }
           },
           "32885bae-e632-4d43-8d21-6bf4cbfa96df": {
             "type": "icon",
             "settings": {
-              "icon": "shopify:\/\/shop_images\/Artboard_97.png"
+              "icon": "shopify://shop_images/Artboard_97.png"
             }
           },
           "c6530dc9-7dc0-400c-84f8-707ed85d5b43": {
             "type": "icon",
             "settings": {
-              "icon": "shopify:\/\/shop_images\/Halal_Certified_33365059-b7ca-4ea9-a960-8d6f66949826.png"
+              "icon": "shopify://shop_images/Halal_Certified_33365059-b7ca-4ea9-a960-8d6f66949826.png"
             }
           }
         },
@@ -196,14 +205,14 @@
           "newsletter_heading": "Get the latest in hot deals",
           "newsletter_description": "Join our What’s In Stock mailing list and be a part of the Pure Ground family",
           "show_social": true,
-          "address": "<p>2535 Business Parkway<br\/>Minden, NV 89423<\/p><p><a href=\"mailto:sales@puregroundingredients.com\" title=\"mailto:sales@puregroundingredients.com\">sales@puregroundingredients.com <\/a><br\/><a href=\"tel:775-297-4047\" title=\"tel:775-297-4047\">775-297-4047<\/a><\/p>",
+          "address": "<p>2535 Business Parkway<br/>Minden, NV 89423</p><p><a href=\"mailto:sales@puregroundingredients.com\" title=\"mailto:sales@puregroundingredients.com\">sales@puregroundingredients.com </a><br/><a href=\"tel:775-297-4047\" title=\"tel:775-297-4047\">775-297-4047</a></p>",
           "secondary_links": "secondary"
         }
       },
       "main-password-header": {
         "type": "main-password-header",
         "settings": {
-          "logo": "shopify:\/\/shop_images\/Commence_x_Pure_Ground_Ingredients-_Wordmark_Horizontal_Left_-_Brown_1.png",
+          "logo": "shopify://shop_images/Commence_x_Pure_Ground_Ingredients-_Wordmark_Horizontal_Left_-_Brown_1.png",
           "logo_max_width": 210,
           "color_scheme": "background-1"
         }
@@ -215,27 +224,49 @@
         }
       }
     },
-    "content_for_index": [
-
-    ],
+    "content_for_index": [],
     "blocks": {
       "855628211100114053": {
-        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
+        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": false,
+        "settings": {}
+      },
+      "11651401770006824842": {
+        "type": "shopify://apps/ymq-product-options-variants/blocks/app-embed/86b91121-1f62-4e27-9812-b70a823eb918",
+        "disabled": false,
+        "settings": {}
+      },
+      "16889442260165808700": {
+        "type": "shopify://apps/product-samples/blocks/sample-page-sticky/4f181f24-29df-48f7-859c-60e47224d06d",
         "disabled": false,
         "settings": {
+          "section_id": "",
+          "button_title": "Explore our samples",
+          "position": "left",
+          "enabled": false,
+          "corner_radius": 0,
+          "border_width": 2,
+          "border_style": "solid",
+          "edge_border_toggle": true,
+          "width": 0,
+          "width_unit": "%",
+          "background": "#fff",
+          "color": "#000",
+          "border_color": "#000",
+          "hover_background": "#000",
+          "hover_color": "#fff",
+          "hover_border_color": "#000",
+          "inherit_font": true,
+          "font": "helvetica_n4",
+          "font_size": 14,
+          "font_weight": "inherit",
+          "text_transform": "none"
         }
       },
       "5294968793578418440": {
-        "type": "shopify:\/\/apps\/king-product-options-variant\/blocks\/app-embed\/ce104259-52b1-4720-9ecf-76b34cae0401",
-        "disabled": false,
-        "settings": {
-        }
-      },
-      "11651401770006824842": {
-        "type": "shopify:\/\/apps\/ymq-product-options-variants\/blocks\/app-embed\/86b91121-1f62-4e27-9812-b70a823eb918",
-        "disabled": false,
-        "settings": {
-        }
+        "type": "shopify://apps/king-product-options-variant/blocks/app-embed/ce104259-52b1-4720-9ecf-76b34cae0401",
+        "disabled": true,
+        "settings": {}
       }
     }
   },
@@ -244,16 +275,14 @@
       "sections": {
         "header": {
           "type": "header",
-          "settings": {
-          }
+          "settings": {}
         },
         "footer": {
           "type": "footer",
           "blocks": {
             "footer-0": {
               "type": "link_list",
-              "settings": {
-              }
+              "settings": {}
             },
             "footer-1": {
               "type": "link_list",
@@ -273,13 +302,11 @@
         },
         "main-password-header": {
           "type": "main-password-header",
-          "settings": {
-          }
+          "settings": {}
         },
         "main-password-footer": {
           "type": "main-password-footer",
-          "settings": {
-          }
+          "settings": {}
         }
       }
     }
