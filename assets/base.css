@@ -2715,6 +2715,7 @@ details-disclosure > details {
 .variant_box{ width:48%;}
 .variant_box_holder .variant_box{ margin:0 !important}
 
+.new_sec_holder{display: flex;justify-content: space-between;align-items: center;}
 
 @media screen and (max-width: 1199px) {
   .item_holder_content{ gap:20px; }
