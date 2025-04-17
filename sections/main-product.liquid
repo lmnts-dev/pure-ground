@@ -239,6 +239,8 @@
               {% endif %}
             </div>
             <div class="item_holder_content">
+            
+              {% comment %}
               {% if product.metafields.custom.item_code != blank %}
               <div class="item_hold">
                 <h4>ITEM CODE</h4> 
@@ -252,6 +254,8 @@
                 <span> <a href="{{ product.metafields.custom.spec_sheet | file_url | remove: getFile }}" target="_blank" ><img src="{{ 'pdf-icon.png' | asset_url }}" height="" width="" /> View </a></span>
               </div>
               {% endif %}
+              {% endcomment %}
+            
               {% if product.metafields.custom.certifications.value != blank %}
               <div class="item_hold cert-hold">
                 <h4>CERTIFICATIONS</h4> 
