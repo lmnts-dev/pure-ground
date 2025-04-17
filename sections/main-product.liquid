@@ -291,31 +291,7 @@
               {{ product.title | escape }}
             </h1>
             
-          {%- when 'price' -%}
-            <div class="variant_box">
-            <div class="no-js-hidden dhamnaHolder" id="price-{{ section.id }}" style="margin:0 0 50px 0;" role="status" {{ block.shopify_attributes }}>
-              <div class="price_holder">
-                {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
-              </div>
- 
-            </div>
-            {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
-              <div class="product__tax caption rte">
-                {%- if shop.taxes_included -%}
-                  {{ 'products.product.include_taxes' | t }}
-                {%- endif -%}
-                {%- if shop.shipping_policy.body != blank -%}
-                  {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
-                {%- endif -%}
-              </div>
-            {%- endif -%}
-            <div {{ block.shopify_attributes }}>
-              {%- form 'product', product, id: 'product-form-installment', class: 'installment caption-large' -%}
-                <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
-                {{ form | payment_terms }}
-              {%- endform -%}
-            </div>
-            </div>
+          
             
           {%- when 'description' -%}
             {%- if product.description != blank -%}
@@ -474,7 +450,7 @@
               </div>
             </noscript>
            </div>
-
+          <div class="variant_box_holder" >
           {%- when 'quantity_selector' -%}
             <div class="variant_box">
             <div class="product-form__input product-form__quantity{% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_vertical_offset < 0 %} product-form__quantity-top{% endif %}" {{ block.shopify_attributes }}>
@@ -502,7 +478,33 @@
               </quantity-input>
             </div>
             </div>
-            
+
+        {%- when 'price' -%}
+            <div class="variant_box">
+            <div class="no-js-hidden dhamnaHolder" id="price-{{ section.id }}" style="margin:0 0 50px 0;" role="status" {{ block.shopify_attributes }}>
+              <div class="price_holder">
+                {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
+              </div>
+ 
+            </div>
+            {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
+              <div class="product__tax caption rte">
+                {%- if shop.taxes_included -%}
+                  {{ 'products.product.include_taxes' | t }}
+                {%- endif -%}
+                {%- if shop.shipping_policy.body != blank -%}
+                  {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
+                {%- endif -%}
+              </div>
+            {%- endif -%}
+            <div {{ block.shopify_attributes }}>
+              {%- form 'product', product, id: 'product-form-installment', class: 'installment caption-large' -%}
+                <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+                {{ form | payment_terms }}
+              {%- endform -%}
+            </div>
+            </div>
+          </div>   
             
           {%- when 'buy_buttons' -%}
             <div {{ block.shopify_attributes }} style="margin:-30px 0 30px 0;">
