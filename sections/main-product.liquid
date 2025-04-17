@@ -239,6 +239,12 @@
               {% endif %}
             </div>
             <div class="item_holder_content">
+              {% if product.metafields.custom.spec_sheet != blank %}
+              <div class="item_hold">
+                <h4>SPECIFICATION</h4> 
+                <span> <a href="{{ product.metafields.custom.spec_sheet | file_url | remove: getFile }}" target="_blank" ><img src="{{ 'pdf-icon.png' | asset_url }}" height="" width="" /> View </a></span>
+              </div>
+              {% endif %}
             
               {% comment %}
               {% if product.metafields.custom.item_code != blank %}
@@ -254,7 +260,7 @@
                 <span> <a href="{{ product.metafields.custom.spec_sheet | file_url | remove: getFile }}" target="_blank" ><img src="{{ 'pdf-icon.png' | asset_url }}" height="" width="" /> View </a></span>
               </div>
               {% endif %}
-              {% endcomment %}
+             
             
               {% if product.metafields.custom.certifications.value != blank %}
               <div class="item_hold cert-hold">
@@ -266,6 +272,7 @@
                 </span>
               </div> 
               {% endif %}
+              {% endcomment %}
 
               
             </div>
