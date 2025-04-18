@@ -2730,7 +2730,8 @@ details-disclosure > details {
  
 }
 @media screen and (max-width: 750px) {
-.product-samples-button{ min-height:60px;}
+  .product-samples-button{ min-height:60px;}
+  .ymq-options-box{width: 100% !important;}
 }
 
 
