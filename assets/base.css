@@ -2725,8 +2725,8 @@ details-disclosure > details {
   .product__info-wrapper .form__label{ font-size:17px;}
 }
 @media screen and (max-width: 768px) {
-.r-tabs .r-tabs-panel{padding:10px !important;}
-.r-tabs .r-tabs-panel p{font-size:16px !important;}
+  .r-tabs .r-tabs-panel{padding:10px !important;}
+  .r-tabs .r-tabs-panel p{font-size:16px !important;}
  
 }
 @media screen and (max-width: 750px) {
@@ -2749,8 +2749,6 @@ details-disclosure > details {
   .product__info-wrapper .product-form__submit{ max-width: inherit !important}
   .product-samples-button{   max-width: inherit !important ; margin-top:15px;}
   .shpg_payicon_holder{ flex-direction: column;  gap: 15px;}
-  .variant_box{ width:100%;} 
-  
-  
+  .variant_box{ width:100%;}  
 }
 
