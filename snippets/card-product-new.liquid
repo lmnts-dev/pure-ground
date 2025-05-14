@@ -118,7 +118,7 @@
               <div class="pkg_box">
                   <h6>Cut Size</h6>
                   {% assign target_option_name = "Cut Size" %}
-                    {% for option in product.options_with_values %}
+                    {% for option in card_product.options_with_values %}
                       {% if option.name == target_option_name %}
                         {% for value in option.values %}
                           <p>{{ value }}</p>
