@@ -99,6 +99,7 @@
         padding: 2rem 5rem !important;
     }
 .box_1 .card__media{border-radius: 10px !important;}
+.cat_list_holder img{border-radius: 10px !important;}
 @media screen and (min-width: 990px) {
     .product-media-modal__content {
         padding: 2rem 20rem !important;
