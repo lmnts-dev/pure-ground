@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "content-with-bg-image": {
@@ -20,14 +29,14 @@
         "c03f8710-4d17-4f09-abe7-9c38351b138f": {
           "type": "text",
           "settings": {
-            "text": "<p>Pure Ground Ingredients raises the bar in sustainable sourcing & impact driven ingredients<\/p>"
+            "text": "<p>Pure Ground Ingredients raises the bar in sustainable sourcing & impact driven ingredients</p>"
           }
         },
         "98e4e98c-6256-4af7-8682-879282cdcf70": {
           "type": "button",
           "settings": {
             "button_label": "Shop Ingredients",
-            "button_link": "shopify:\/\/collections",
+            "button_link": "shopify://collections",
             "button_color": "cream"
           }
         }
@@ -41,7 +50,7 @@
       "settings": {
         "text_color": "dark",
         "nav_color": false,
-        "image": "shopify:\/\/shop_images\/pure_ground_hero.jpg",
+        "image": "shopify://shop_images/pure_ground_hero.jpg",
         "alt": "Landscape image with field",
         "overlay": 0,
         "hero": true,
@@ -73,7 +82,7 @@
         "teas": {
           "type": "collection",
           "settings": {
-            "collection": "organic-culinary-herbs-spices-and-vegetables"
+            "collection": "culinary-herbs"
           }
         },
         "fair": {
@@ -121,7 +130,6 @@
     },
     "16607057366a572f05": {
       "type": "featured-products",
-      "disabled": true,
       "blocks": {
         "9af9a09f-58ec-436b-aaaa-fa7e7a93dc09": {
           "type": "product",
@@ -154,10 +162,11 @@
         "5dd74829-5dc1-433a-8f51-1caa66be2f07",
         "cda3e555-5ff3-4cb6-b6fd-5819cff49872"
       ],
+      "disabled": true,
       "settings": {
         "heading": "Featured Organic Ingredients",
         "button_label": "Shop All Ingredients",
-        "button_link": "shopify:\/\/collections",
+        "button_link": "shopify://collections",
         "button_color": "default",
         "color_scheme": "cream",
         "top_spacing": 100,
@@ -193,77 +202,77 @@
         "404e2d8c-7c3e-4ed5-9c81-6bc70d508fe1": {
           "type": "image",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/md.png",
+            "icon": "shopify://shop_images/md.png",
             "text": ""
           }
         },
         "8e825935-d057-429a-91f4-efe3a10e7214": {
           "type": "image",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/starbucks.png",
+            "icon": "shopify://shop_images/starbucks.png",
             "text": ""
           }
         },
         "416f6098-bcd9-4b16-91c6-528eb62dd1a9": {
           "type": "image",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/pngaaa.com-2880818.png",
+            "icon": "shopify://shop_images/pngaaa.com-2880818.png",
             "text": ""
           }
         },
         "f84030d3-3ef8-42fa-9cc4-353a1c6c9ce5": {
           "type": "image",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/yogi-tea-vector-logo-2.png",
+            "icon": "shopify://shop_images/yogi-tea-vector-logo-2.png",
             "text": ""
           }
         },
         "434eff37-59fb-483a-9138-de05e40b778f": {
           "type": "image",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/traditional-medicinals-logo.png",
+            "icon": "shopify://shop_images/traditional-medicinals-logo.png",
             "text": ""
           }
         },
         "91c0dedf-6ebc-4fe9-9319-3bc4a47096d1": {
           "type": "image",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/vitality-works-logo_458c2e5e-4a96-4948-bbe1-5fb9496226ac.png",
+            "icon": "shopify://shop_images/vitality-works-logo_458c2e5e-4a96-4948-bbe1-5fb9496226ac.png",
             "text": ""
           }
         },
         "bad9527d-1466-49c9-b213-9cc27aa5164a": {
           "type": "image",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/amys-logo.png",
+            "icon": "shopify://shop_images/amys-logo.png",
             "text": ""
           }
         },
         "e4233f98-aeaf-4efb-8354-ef079c040adf": {
           "type": "image",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/pngfind.com-herbs-png-1420548.png",
+            "icon": "shopify://shop_images/pngfind.com-herbs-png-1420548.png",
             "text": ""
           }
         },
         "ec04c5f8-8bf7-4e7f-ad19-8084df8f5d5a": {
           "type": "image",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/rishi-tea-logo.png",
+            "icon": "shopify://shop_images/rishi-tea-logo.png",
             "text": ""
           }
         },
         "d9957658-bd27-4e4f-8ad8-addf49c9209f": {
           "type": "image",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/frontier-logo_1.png",
+            "icon": "shopify://shop_images/frontier-logo_1.png",
             "text": ""
           }
         },
         "4b5d25e2-50c0-4d1b-bdc4-f58134ac6dd1": {
           "type": "image",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/jr-watkins-logo.png",
+            "icon": "shopify://shop_images/jr-watkins-logo.png",
             "text": ""
           }
         }
@@ -312,7 +321,7 @@
           "type": "button",
           "settings": {
             "button_label": "Our Values",
-            "button_link": "shopify:\/\/pages\/our-values",
+            "button_link": "shopify://pages/our-values",
             "button_color": "default"
           }
         }
@@ -324,7 +333,7 @@
       "settings": {
         "text_color": "light",
         "nav_color": false,
-        "image": "shopify:\/\/shop_images\/IMG_4504.jpg",
+        "image": "shopify://shop_images/IMG_4504.jpg",
         "alt": "Woman on Moringa farm",
         "overlay": 20,
         "hero": false,
@@ -340,14 +349,13 @@
     },
     "16450418065fdb6a59": {
       "type": "content-slider",
-      "disabled": true,
       "blocks": {
         "b02402c1-f3cf-4b34-babb-b5b5a71c5cad": {
           "type": "slide",
           "settings": {
             "text": "We are very thankful to be working with PGI for over 7 years and hope to continue to do so long into the future.  We take comfort in working with a company that shares our same values and integrity when supplying only the best quality products in the world.  Working with PGI has been such a great experience that we like to think of PGI not only as our clients but our friends as well and wish them great success in the future to come.",
             "author": "",
-            "image": "shopify:\/\/shop_images\/rr-abrot-pNIgH0y3upM-unsplash_1.jpg",
+            "image": "shopify://shop_images/rr-abrot-pNIgH0y3upM-unsplash_1.jpg",
             "alt": "Rolling hills landscape"
           }
         },
@@ -356,7 +364,7 @@
           "settings": {
             "text": "\"You guys are the best and I appreciate the heck out of you.  The Pure Ground Ingredients team is fast, friendly and an overall pleasure to work with. Samples arrive within days of a request and the quality is excellent. I’m grateful to have them as a resource.\"",
             "author": "",
-            "image": "shopify:\/\/shop_images\/shridhar-gupta-dZxQn4VEv2M-unsplash_1.jpg",
+            "image": "shopify://shop_images/shridhar-gupta-dZxQn4VEv2M-unsplash_1.jpg",
             "alt": "Rows of produce in field"
           }
         },
@@ -365,7 +373,7 @@
           "settings": {
             "text": "\"I am over delighted to inform whole world that past many years PGI has given us over-helming tremendous support to our company which infact has helped many marginal farmers in INDIA. PGI  transformed many livehoods in INDIA with their constant support on pricing and continuous intake of goods . When all other competitors of PGI takes advantage of poor suppliers in India, PGI has always helped us even though there were issues and their support was to the highest level. I really wish and pray that PGI will be the Number 1 Organic Company in the world very soon and we keep supplying to them with our heart.\"",
             "author": "",
-            "image": "shopify:\/\/shop_images\/austin-distel-rxpThOwuVgE-unsplash_1.jpg",
+            "image": "shopify://shop_images/austin-distel-rxpThOwuVgE-unsplash_1.jpg",
             "alt": "Piles of different spices"
           }
         },
@@ -374,7 +382,7 @@
           "settings": {
             "text": "\"I do like Pure Ground entrepreneurial spirit. It is a company that has innovation, quality, safety and sustainability at the center of its growth agenda\"",
             "author": "",
-            "image": "shopify:\/\/shop_images\/jezael-melgoza-HYQvV8wWX18-unsplash_1.jpg",
+            "image": "shopify://shop_images/jezael-melgoza-HYQvV8wWX18-unsplash_1.jpg",
             "alt": "Jars of spices"
           }
         }
@@ -385,6 +393,7 @@
         "bbb86467-9856-4aa5-a40e-826958f624c9",
         "46e8aee6-c855-431e-8386-356dca1e1314"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "cream",
         "top_spacing": 50,
@@ -406,42 +415,42 @@
         "9dd965fa-450e-4f92-9e6a-22ebd7b9c33d": {
           "type": "image",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/Group_253.png",
+            "icon": "shopify://shop_images/Group_253.png",
             "text": ""
           }
         },
         "eb278ae6-0113-4ef0-87a5-e580a5ca5b57": {
           "type": "image",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/Group_256.png",
+            "icon": "shopify://shop_images/Group_256.png",
             "text": ""
           }
         },
         "083741a4-199c-4747-a353-d9cadffc415c": {
           "type": "image",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/Group_258.png",
+            "icon": "shopify://shop_images/Group_258.png",
             "text": ""
           }
         },
         "5b3880c5-8f0f-4d8c-a47d-2507decae8ed": {
           "type": "image",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/Group_254.png",
+            "icon": "shopify://shop_images/Group_254.png",
             "text": ""
           }
         },
         "c9b812e5-f261-4a47-ba2e-9218bb41df34": {
           "type": "image",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/Group_259.png",
+            "icon": "shopify://shop_images/Group_259.png",
             "text": ""
           }
         },
         "7b23ab34-51cc-4223-afd1-f4b99ff546bc": {
           "type": "image",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/sqf-logo-lvl-2.png",
+            "icon": "shopify://shop_images/sqf-logo-lvl-2.png",
             "text": ""
           }
         }
@@ -460,10 +469,10 @@
         "subheading": "Ingredients just the way you want them",
         "heading_size": "h1",
         "accent_color": true,
-        "text": "<p>We import the whole organic ingredients and do in house micro-reduction and processing to meet a wide range of specs. <\/p>",
+        "text": "<p>We import the whole organic ingredients and do in house micro-reduction and processing to meet a wide range of specs. </p>",
         "button_label": "Learn More",
-        "button_link": "shopify:\/\/pages\/processing",
-        "image": "shopify:\/\/shop_images\/unsplash_pBwMdofMxtU_928eb7d0-5768-4a73-98fc-3ddd5481da44.jpg",
+        "button_link": "shopify://pages/processing",
+        "image": "shopify://shop_images/unsplash_pBwMdofMxtU_928eb7d0-5768-4a73-98fc-3ddd5481da44.jpg",
         "alt": "Birds eye view of road running through crops",
         "layout": "row",
         "icon_height": 80,
@@ -476,7 +485,7 @@
       "type": "featured-page-link",
       "settings": {
         "page_link": "sustainability-social-and-environmental-impact",
-        "image": "shopify:\/\/shop_images\/CAPO_2018_8.jpg",
+        "image": "shopify://shop_images/CAPO_2018_8.jpg",
         "alt": "Image alt text",
         "color_scheme": "cream",
         "top_spacing": 0,
