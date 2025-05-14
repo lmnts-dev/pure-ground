@@ -120,12 +120,17 @@
                   {% assign target_option_name = "Cut Size" %}
                     {% for option in card_product.options_with_values %}
                       {% if option.name == target_option_name %}
+                        <p>
                         {% for value in option.values %}
-                          <p>{{ value }}</p>
+                          <span>{{ value }}</span>
                         {% endfor %}
+                        </p>
                       {% endif %}
                     {% endfor %}
+                  {% comment %} 
                   <p>{{ card_product.metafields.custom.cut_size }}</p>
+                   {% endcomment %}
+  
               </div>
               <div class="pkg_box">
                   <h6>Single Case</h6>
