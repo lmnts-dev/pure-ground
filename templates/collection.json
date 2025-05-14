@@ -66,7 +66,7 @@
         "collection_YLJGty": {
           "type": "collection",
           "settings": {
-            "collection": "all-ingredients"
+            "collection": "spices"
           }
         },
         "collection_zyfptV": {
@@ -84,25 +84,25 @@
         "collection_ybxDr6": {
           "type": "collection",
           "settings": {
-            "collection": "organic-herbs-roots-and-flowers"
+            "collection": "botanicals"
           }
         },
         "collection_GY4HJQ": {
           "type": "collection",
           "settings": {
-            "collection": "rainforest-alliance-certified"
+            "collection": "vegetables"
           }
         },
         "collection_eWDWFn": {
           "type": "collection",
           "settings": {
-            "collection": "sustainably-sourced-organic-ingredients"
+            "collection": "seeds"
           }
         },
         "collection_QBqGMn": {
           "type": "collection",
           "settings": {
-            "collection": "teas-leaves"
+            "collection": "sustainably-sourced-organic-ingredients"
           }
         }
       },
