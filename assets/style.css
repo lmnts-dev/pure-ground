@@ -98,7 +98,7 @@
 .product-media-modal__content {
         padding: 2rem 5rem !important;
     }
-
+.card .media.media--hover-effect>img:only-child, .card-wrapper .media.media--hover-effect>img:only-child{border-radius: 10px;}
 @media screen and (min-width: 990px) {
     .product-media-modal__content {
         padding: 2rem 20rem !important;
