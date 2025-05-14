@@ -117,6 +117,14 @@
           <div class="pkg_type_holder">
               <div class="pkg_box">
                   <h6>Cut Size</h6>
+                  {% assign target_option_name = "Cut Size" %}
+                    {% for option in product.options_with_values %}
+                      {% if option.name == target_option_name %}
+                        {% for value in option.values %}
+                          <p>{{ value }}</p>
+                        {% endfor %}
+                      {% endif %}
+                    {% endfor %}
                   <p>{{ card_product.metafields.custom.cut_size }}</p>
               </div>
               <div class="pkg_box">
