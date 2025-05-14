@@ -46,7 +46,11 @@
       <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
       <span class="price-item price-item--regular">
         
-        Starting at {{ money_price }} $/lbs
+        {{ money_price }}
+       
+        Starting at {{ product.price_min | money_without_currency }} $/lbs
+
+        
       </span>
     </div>
     <div class="price__sale">
