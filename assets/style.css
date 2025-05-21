@@ -106,6 +106,7 @@
 .cont-btn a:hover{ opacity: .7;}
 .text-align{text-align: center;}
 .text-align img{width: 120px;}
+
 @media screen and (min-width: 990px) {
     .product-media-modal__content {
         padding: 2rem 20rem !important;
