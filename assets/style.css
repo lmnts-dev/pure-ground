@@ -100,6 +100,7 @@
     }
 .box_1 .card__media{border-radius: 10px !important;}
 .cat_list_holder img{border-radius: 10px !important;}
+.featured-products__container .product-card__image{border-radius: 15px;}
 @media screen and (min-width: 990px) {
     .product-media-modal__content {
         padding: 2rem 20rem !important;
