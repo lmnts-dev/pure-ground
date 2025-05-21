@@ -104,6 +104,8 @@
 .cont-btn{display: flex; gap: 10px;}
 .cont-btn a { display: inline-block;padding: 6px 24px; text-align: center; cursor: pointer; line-height: 50px !important;letter-spacing: 0;margin-bottom: 0;    border-radius: 10px;min-height: 50px;    min-width: auto !important;    width: 100% !important;background: #3d290d !important;    max-width: 200px !important;    border: none !important;color: #fff !important;    font-weight: 400;    text-transform: none !important;}
 .cont-btn a:hover{ opacity: .7;}
+.text-align{text-align: center;}
+.text-align img{width: 120px;}
 @media screen and (min-width: 990px) {
     .product-media-modal__content {
         padding: 2rem 20rem !important;
