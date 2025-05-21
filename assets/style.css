@@ -101,6 +101,8 @@
 .box_1 .card__media{border-radius: 10px !important;}
 .cat_list_holder img{border-radius: 10px !important;}
 .featured-products__container .product-card__image{border-radius: 15px;}
+.cont-btn{display: flex; gap: 10px;}
+.cont-btn a { display: inline-block;padding: 6px 24px; text-align: center; cursor: pointer; line-height: 22px;letter-spacing: 0;margin-bottom: 0;    border-radius: 10px;min-height: 75px;    min-width: auto !important;    width: 100% !important;background: #3d290d !important;    max-width: 305px !important;    border: none !important;color: #fff !important;    font-weight: 400;    text-transform: none !important;}
 @media screen and (min-width: 990px) {
     .product-media-modal__content {
         padding: 2rem 20rem !important;
