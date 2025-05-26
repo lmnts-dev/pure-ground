@@ -228,9 +228,7 @@
           {%- when 'custom_info' -%}
           <div class="cus_info_hold">
             <div class="txt_holder">
-              {% if product.metafields.custom.botanical_name != blank %}
-              <p>Latin Name : <i>{{ product.metafields.custom.botanical_name }}</i></p>
-              {% endif %}
+              
             
               {% if product.metafields.custom.country_of_origin != blank %}
               <p>Country of Origin : {{ product.metafields.custom.country_of_origin }}</p>
@@ -292,6 +290,9 @@
             <h1 class="product__title" {{ block.shopify_attributes }}>
               {{ product.title | escape }}
             </h1>
+            {% if product.metafields.custom.botanical_name != blank %}
+              <p>Latin Name : <i>{{ product.metafields.custom.botanical_name }}</i></p>
+              {% endif %}
             
           
             
