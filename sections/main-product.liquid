@@ -624,6 +624,7 @@
             <li><a href="#tab-1">Shipping Information</a></li>
             <li><a href="#tab-2">Certificate of Analysis – COA</a></li>
             <li><a href="#tab-3">Sample policy</a></li>
+            <li><a href="#tab-4">Cut-Size & Particle Size Guide</a></li>
         </ul>
 
         <div id="tab-1">
@@ -644,6 +645,9 @@
             {% comment %}
             <div class="txt-center"><img src="{{ 'bottom-logo.png' | asset_url }}" height="" width="120" /></div>
             {% endcomment %}
+        </div>
+        <div id="tab-4">
+            {{ product.metafields.custom.sample_policy | metafield_tag  }}
         </div>
     </div> 
 </div>                      
