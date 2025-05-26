@@ -2686,7 +2686,7 @@ details-disclosure > details {
 .quantity__button:first-child{ border-radius:8px 0 0 8px !important;}
 .quantity__button:last-child{ border-radius:0 8px 8px 0 !important;}
 .product__info-wrapper .select__select, .product__info-wrapper .quantity input{ font-size:16px; font-weight:400 !important}
-.btn_holder form{display:flex; gap:25px}
+.btn_holder form{display:flex; gap:3px}
 .product-samples-button-wrap{ width:50%}
 .product__info-wrapper .product-form__submit{  width: 100% !important;  color: #fff;  max-width: 305px !important; border: none !important;}
 .product__info-wrapper .product-form__buttons{ width:100%!important ; }
@@ -2712,7 +2712,7 @@ details-disclosure > details {
 .box_2 h3{display:flex;gap:5px;}
 
 .variant_box_holder variant-selects.no-js-hidden {display: flex;flex-wrap: wrap;justify-content: space-between;}
-.variant_box{ width:48%;}
+.variant_box{ width:49.5%;}
 .variant_box_holder .variant_box{ margin:0 !important}
 
 .new_sec_holder{display: flex;justify-content: space-between;align-items: center;}
