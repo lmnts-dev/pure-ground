@@ -2718,6 +2718,7 @@ details-disclosure > details {
 .new_sec_holder{display: flex;justify-content: space-between;align-items: center;}
 .variant_box .price_holder{width: 100%; text-align: center;}
 .r-tabs-panel p{line-height: 35px;}
+.in_same_line{display: flex; align-items: center; gap: 15px;}
 @media screen and (max-width: 1199px) {
   .item_holder_content{ gap:20px; }
   .item_hold h4{ font-size:14px;}
