@@ -6,6 +6,10 @@
   - Heading: title of the collection list section
   - Collection
 {%- endcomment -%}
+<style>
+  .mdl-txt{padding-top:30px; font-size:24px; text-align:center;}
+</style>
+
 <section class="collection-list page-width">
   <div class="cat_holder">
   {% if section.settings.title != blank %}
@@ -39,7 +43,7 @@
   {% if section.blocks.size == 0 %}
     {% include 'no-blocks' %}
   {% endif %}
-    <p style="padding-top:30px; font-size:24px; text-align:center;">Most items available in multiple cut-sizes <a href="#" class="product-samples-button">Cut Size Guide</a></p>
+    <p class="mdl-txt">Most items available in multiple cut-sizes <a href="#" class="product-samples-button">Cut Size Guide</a></p>
     </div>
 </section>
 
