@@ -113,7 +113,7 @@
           
 
           {% assign current_variant = card_product.selected_or_first_available_variant %}
-          <span class="sm_heading">Latin Name : {{ card_product.metafields.custom.botanical_name }}</span> <!-- {{ current_variant.sku }} -->
+          <span class="sm_heading">{{ card_product.metafields.custom.botanical_name }}</span> <!-- {{ current_variant.sku }} -->
           <span class="sm_heading2">Package Type</span>
 
           <div class="pkg_type_holder">
