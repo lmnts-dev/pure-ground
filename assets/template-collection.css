@@ -145,7 +145,7 @@ span.sm_heading2{ color:#4f575f; font-weight:normal ; display:block; padding:0 0
   
 }
 @media screen and (max-width: 630px) {
-.card__information, .card__content.box_2{ padding:0 15px 0 0}
+  /* .card__information, .card__content.box_2{ padding:0 15px 0 0} */ 
   .pkg_box h6{ font-size:14px}
   .pkg_box p{ font-size:14px}
   .box_2 h5.card__heading{ font-size:18px; margin:0 0 10px 0}
