@@ -114,8 +114,9 @@
 
           {% assign current_variant = card_product.selected_or_first_available_variant %}
           <span class="sm_heading">{{ card_product.metafields.custom.botanical_name }}</span> <!-- {{ current_variant.sku }} -->
+          {% comment %}
           <span class="sm_heading2">Package Type</span>
-
+          {% endcomment %}
           <div class="pkg_type_holder">
               {% comment %} 
               <div class="pkg_box">
