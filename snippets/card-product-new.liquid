@@ -16,7 +16,8 @@
 
 {{ 'component-rating.css' | asset_url | stylesheet_tag }}
 <style>
-  .pkg_box p span{display:block;}
+  .pkg_box p span{/*display:block; */}
+  .cardInnerBox{width:100%;}
 </style>
 {%- if card_product and card_product != empty -%}
   {%- liquid
