@@ -117,6 +117,7 @@
           <span class="sm_heading2">Package Type</span>
 
           <div class="pkg_type_holder">
+              {% comment %} 
               <div class="pkg_box">
                   <h6>Cut Size</h6>
                   {% assign target_option_name = "Cut Size" %}
@@ -129,11 +130,10 @@
                         </p>
                       {% endif %}
                     {% endfor %}
-                  {% comment %} 
+                  
                   <p>{{ card_product.metafields.custom.cut_size }}</p>
-                   {% endcomment %}
-  
               </div>
+              {% endcomment %}
               {% comment %}
               <div class="pkg_box">
                   <h6>Single Case</h6>
