@@ -142,6 +142,8 @@ span.sm_heading2{ color:#4f575f; font-weight:normal ; display:block; padding:0 0
   .cat_list_holder{ flex-wrap:wrap;}
   .cat_list_holder a{ width:20%}
   .box_3 a{padding: 10px 22px;}
+  .mdl-txt p{display: inherit;}
+  .mdl-txt p a{display: inline-block;}
   
   
 }
