@@ -106,10 +106,12 @@
         <div class="card__information">
           <h3 class="card__heading{% if card_product.featured_media or settings.card_style == 'standard' %} h5{% endif %}"> 
               {{ card_product.title | escape }}  
+               {% comment %}
                {% for item in card_product.metafields.custom.certifications.value %}
                 {%- assign logo_url =  item | downcase | remove: " "  | append: ".png"  -%}
                   <img style="width:30px;" src="{{logo_url | asset_url }}" alt="{{ item }}" /> 
                 {% endfor %} 
+               {% endcomment %}
           </h3>
           
 
