@@ -160,7 +160,7 @@ span.sm_heading2{ color:#4f575f; font-weight:normal ; display:block; padding:0 0
   .pro_box_holder .box_1{ width:100%; margin:0 0 15px 0}
   .pkg_type_holder{ gap:10px}  
   .cat_list_holder a{ width:48%}
-  
+  .card__information, .card__content.box_2{padding: 0 0 15px 0;}
   
   
 }
