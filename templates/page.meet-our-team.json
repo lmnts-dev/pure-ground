@@ -17,6 +17,30 @@
         "padding_bottom": 28
       }
     },
+    "rich_text_jmhqJY": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_PDKwhN": {
+          "type": "heading",
+          "settings": {
+            "heading": "Meet the Sales Team",
+            "heading_size": "h3",
+            "heading_alignment": "center",
+            "subheading": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_PDKwhN"
+      ],
+      "name": "Rich Text",
+      "settings": {
+        "color_scheme": "cream",
+        "hero": false,
+        "top_spacing": 50,
+        "bottom_spacing": 0
+      }
+    },
     "image_grid_WrgNaL": {
       "type": "image-grid",
       "blocks": {
@@ -105,6 +129,7 @@
   },
   "order": [
     "main",
+    "rich_text_jmhqJY",
     "image_grid_WrgNaL",
     "content_slider_cyAit7"
   ]
