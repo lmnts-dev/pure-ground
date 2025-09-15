@@ -38,10 +38,74 @@
         "top_spacing": 50,
         "bottom_spacing": 50
       }
+    },
+    "content_slider_cyAit7": {
+      "type": "content-slider",
+      "blocks": {
+        "slide_R3Fzaj": {
+          "type": "slide",
+          "settings": {
+            "text": "Talk about your brand, provide a quote or add another piece of text that you want to display in this slide",
+            "author": "Author Name",
+            "image": "shopify://shop_images/Nancy_Nguyen_2025_Use_this_one.jpg",
+            "alt": ""
+          }
+        },
+        "slide_7nMBhK": {
+          "type": "slide",
+          "settings": {
+            "text": "Talk about your brand, provide a quote or add another piece of text that you want to display in this slide",
+            "author": "Author Name",
+            "image": "shopify://shop_images/Don_Kempf_2025.jpg",
+            "alt": ""
+          }
+        },
+        "slide_MnmTwP": {
+          "type": "slide",
+          "settings": {
+            "text": "Talk about your brand, provide a quote or add another piece of text that you want to display in this slide",
+            "author": "Author Name",
+            "image": "shopify://shop_images/Bob_McKinnon_2025.jpg",
+            "alt": ""
+          }
+        },
+        "slide_HXWpWh": {
+          "type": "slide",
+          "settings": {
+            "text": "Talk about your brand, provide a quote or add another piece of text that you want to display in this slide",
+            "author": "Author Name",
+            "image": "shopify://shop_images/Brittany_Mackey_2025.jpg",
+            "alt": ""
+          }
+        },
+        "slide_EwDpka": {
+          "type": "slide",
+          "settings": {
+            "text": "Talk about your brand, provide a quote or add another piece of text that you want to display in this slide",
+            "author": "Author Name",
+            "image": "shopify://shop_images/Chavonne_Sales_2025.jpg",
+            "alt": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_R3Fzaj",
+        "slide_7nMBhK",
+        "slide_MnmTwP",
+        "slide_HXWpWh",
+        "slide_EwDpka"
+      ],
+      "name": "Content Slider",
+      "settings": {
+        "color_scheme": "cream",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
     }
   },
   "order": [
     "main",
-    "image_grid_WrgNaL"
+    "image_grid_WrgNaL",
+    "content_slider_cyAit7"
   ]
 }
