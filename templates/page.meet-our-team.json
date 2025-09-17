@@ -47,7 +47,7 @@
         "image_AAfFmU": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Sales_Team_2025.jpg",
+            "image": "shopify://shop_images/Sales_Team_2025_1d16836d-ef38-42c7-825e-13ff9f7481f8.jpg",
             "image_width": "full"
           }
         }
@@ -84,15 +84,6 @@
             "alt": ""
           }
         },
-        "slide_MnmTwP": {
-          "type": "slide",
-          "settings": {
-            "text": "Talk about your brand, provide a quote or add another piece of text that you want to display in this slide",
-            "author": "Author Name",
-            "image": "shopify://shop_images/Bob_McKinnon_2025.jpg",
-            "alt": ""
-          }
-        },
         "slide_HXWpWh": {
           "type": "slide",
           "settings": {
@@ -115,7 +106,6 @@
       "block_order": [
         "slide_R3Fzaj",
         "slide_7nMBhK",
-        "slide_MnmTwP",
         "slide_HXWpWh",
         "slide_EwDpka"
       ],
