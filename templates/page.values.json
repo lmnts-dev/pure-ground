@@ -147,37 +147,6 @@
         "bottom_spacing": 40
       }
     },
-    "1660763108b06b283c": {
-      "type": "rich-text",
-      "blocks": {
-        "166076310846034c62-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Certified B Corp",
-            "heading_size": "h2",
-            "heading_alignment": "center",
-            "subheading": ""
-          }
-        },
-        "166076310846034c62-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pure Ground Ingredients has been a B-Corp since 2019 and was the second B-Corp in the state of Nevada.  In our continued commitment to use our business for doing good, we fully transitioned to becoming a public benefit corporation in 2022.  Certified B Corporations are leaders in the global movement for an inclusive, equitable, and regenerative economy. </p>",
-            "text_size": "p-lg"
-          }
-        }
-      },
-      "block_order": [
-        "166076310846034c62-0",
-        "166076310846034c62-1"
-      ],
-      "settings": {
-        "color_scheme": "cream",
-        "hero": false,
-        "top_spacing": 50,
-        "bottom_spacing": 50
-      }
-    },
     "1660762995e5e236a9": {
       "type": "rich-text",
       "blocks": {
@@ -246,6 +215,37 @@
         "bottom_spacing": 50
       }
     },
+    "1660763108b06b283c": {
+      "type": "rich-text",
+      "blocks": {
+        "166076310846034c62-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Certified B Corp",
+            "heading_size": "h2",
+            "heading_alignment": "center",
+            "subheading": ""
+          }
+        },
+        "166076310846034c62-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pure Ground Ingredients has been a B-Corp since 2019 and was the second B-Corp in the state of Nevada.  In our continued commitment to use our business for doing good, we fully transitioned to becoming a public benefit corporation in 2022.  Certified B Corporations are leaders in the global movement for an inclusive, equitable, and regenerative economy. </p>",
+            "text_size": "p-lg"
+          }
+        }
+      },
+      "block_order": [
+        "166076310846034c62-0",
+        "166076310846034c62-1"
+      ],
+      "settings": {
+        "color_scheme": "cream",
+        "hero": false,
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
+    },
     "16444230281a285739": {
       "type": "featured-page-link",
       "settings": {
@@ -262,9 +262,9 @@
     "1660762522a095a17b",
     "1643818843f333eb74",
     "164512802361beb3e6",
-    "1660763108b06b283c",
     "1660762995e5e236a9",
     "166119931541528774",
+    "1660763108b06b283c",
     "16444230281a285739"
   ]
 }
