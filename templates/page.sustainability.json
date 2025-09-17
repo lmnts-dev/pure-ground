@@ -58,20 +58,11 @@
             "text": "<p>Pure Ground Ingredients has been a B-Corp since 2019 and was the second B-Corp in the state of Nevada. In our continued commitment to use our business for doing good, we fully transitioned to becoming a public benefit corporation in 2022. Certified B Corporations are leaders in the global movement for an inclusive, equitable, and regenerative economy.<br/><br/></p>",
             "text_size": "default"
           }
-        },
-        "button_TeWUCn": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "open_new_window": false
-          }
         }
       },
       "block_order": [
         "heading_rxnfp8",
-        "text_T9qqMg",
-        "button_TeWUCn"
+        "text_T9qqMg"
       ],
       "name": "Rich Text",
       "settings": {
