@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "166074672815a86e9b": {
@@ -17,7 +26,7 @@
       "settings": {
         "text_color": "light",
         "nav_color": true,
-        "image": "shopify:\/\/shop_images\/2018-08-21_17.54_4.jpg",
+        "image": "shopify://shop_images/2018-08-21_17.54_4.jpg",
         "alt": "Happy women in field",
         "overlay": 20,
         "hero": true,
@@ -29,6 +38,47 @@
         "bottom_spacing": 0,
         "top_internal_spacing": 200,
         "bottom_internal_spacing": 30
+      }
+    },
+    "rich_text_JG8LQ9": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_rxnfp8": {
+          "type": "heading",
+          "settings": {
+            "heading": "Certified B Corp",
+            "heading_size": "h2",
+            "heading_alignment": "center",
+            "subheading": ""
+          }
+        },
+        "text_T9qqMg": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pure Ground Ingredients has been a B-Corp since 2019 and was the second B-Corp in the state of Nevada. In our continued commitment to use our business for doing good, we fully transitioned to becoming a public benefit corporation in 2022. Certified B Corporations are leaders in the global movement for an inclusive, equitable, and regenerative economy.<br/><br/></p>",
+            "text_size": "default"
+          }
+        },
+        "button_TeWUCn": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "open_new_window": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_rxnfp8",
+        "text_T9qqMg",
+        "button_TeWUCn"
+      ],
+      "name": "Rich Text",
+      "settings": {
+        "color_scheme": "cream",
+        "hero": false,
+        "top_spacing": 50,
+        "bottom_spacing": 50
       }
     },
     "1643818843f333eb74": {
@@ -46,7 +96,7 @@
         "16438188434dae6d1d-1": {
           "type": "text",
           "settings": {
-            "text": "<p>At Pure Ground Ingredients, we like to think of ourselves as the bridge between farmers  and our customers – and our most important role is being a friend to both. We strive to act in  a conscious manner that yields a positive impact  – to the environment,  grower communities, as well as our own. <\/p>",
+            "text": "<p>At Pure Ground Ingredients, we like to think of ourselves as the bridge between farmers  and our customers – and our most important role is being a friend to both. We strive to act in  a conscious manner that yields a positive impact  – to the environment,  grower communities, as well as our own. </p>",
             "text_size": "p-lg"
           }
         }
@@ -77,7 +127,7 @@
         "c3b9e557-0f9d-4f52-89f9-70464d422fee"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Commence_x_Pure_Ground_Ingredients_-_Globe_Illustration.png",
+        "image": "shopify://shop_images/Commence_x_Pure_Ground_Ingredients_-_Globe_Illustration.png",
         "hero": false,
         "color_scheme": "sun",
         "layout": "reversed",
@@ -101,7 +151,7 @@
         "16607469781a0891f6-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Our ingredients are more than they seem. They are the sum of all the relationships, creativity, labor and life that made them possible. We carefully select our suppliers, auditing and inspecting to ensure each is meeting standards for quality, food safety, organic compliance, positive environmental impact and ethical working conditions. We have been working for over 25 years to develop our supply chain and offer a wide range of sustainably sourced materials.<\/p>",
+            "text": "<p>Our ingredients are more than they seem. They are the sum of all the relationships, creativity, labor and life that made them possible. We carefully select our suppliers, auditing and inspecting to ensure each is meeting standards for quality, food safety, organic compliance, positive environmental impact and ethical working conditions. We have been working for over 25 years to develop our supply chain and offer a wide range of sustainably sourced materials.</p>",
             "text_size": "p-lg"
           }
         },
@@ -110,7 +160,8 @@
           "disabled": true,
           "settings": {
             "button_label": "Button label",
-            "button_link": ""
+            "button_link": "",
+            "open_new_window": false
           }
         }
       },
@@ -152,27 +203,27 @@
           "type": "text",
           "settings": {
             "number": 1,
-            "text": "<p><strong>Globally Standardized Certifications<\/strong><\/p>"
+            "text": "<p><strong>Globally Standardized Certifications</strong></p>"
           }
         },
         "ddf8517f-fe9b-45ab-81aa-a14dbff3c9fa": {
           "type": "icon",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/imageedit_34_4317074377-removebg-preview_1_2.png"
+            "icon": "shopify://shop_images/imageedit_34_4317074377-removebg-preview_1_2.png"
           }
         },
         "bc8fa740-ef9d-4418-bede-ffe51b13d71b": {
           "type": "text",
           "settings": {
             "number": 2,
-            "text": "<p><strong>Environmental Impact<\/strong><br\/>Ingredients from Regenerative Farms or Agroforestry Projects or those with technical processing upgrades to reduce toxins, increase energy efficiency and decrease negative environmental impacts.<\/p>"
+            "text": "<p><strong>Environmental Impact</strong><br/>Ingredients from Regenerative Farms or Agroforestry Projects or those with technical processing upgrades to reduce toxins, increase energy efficiency and decrease negative environmental impacts.</p>"
           }
         },
         "8da45d37-b53c-4259-ac5b-dd6bd0d8b735": {
           "type": "text",
           "settings": {
             "number": 3,
-            "text": "<p><strong>Social Responsibility<br\/><\/strong>Ingredients that come from sources which improve social equality,  education, living wages, women's empowerment and general livelihood.<\/p>"
+            "text": "<p><strong>Social Responsibility<br/></strong>Ingredients that come from sources which improve social equality,  education, living wages, women's empowerment and general livelihood.</p>"
           }
         },
         "16643508645631e08f-1": {
@@ -180,7 +231,7 @@
           "disabled": true,
           "settings": {
             "button_label": "Shop Sustainable Sourced Ingredients",
-            "button_link": "shopify:\/\/collections",
+            "button_link": "shopify://collections",
             "button_color": "default"
           }
         }
@@ -193,7 +244,7 @@
         "16643508645631e08f-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/unsplash_8rTwokBwz1w-1.jpg",
+        "image": "shopify://shop_images/unsplash_8rTwokBwz1w-1.jpg",
         "hero": false,
         "color_scheme": "cream",
         "number_color": "sun",
@@ -205,31 +256,30 @@
     },
     "16444193660de6d319": {
       "type": "split-section",
-      "disabled": true,
       "blocks": {
         "1644419366881604f5-0": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Globally Standardized Certifications<\/strong><\/p>"
+            "text": "<p><strong>Globally Standardized Certifications</strong></p>"
           }
         },
         "c4fcc757-e664-49d9-9e64-caade07693c4": {
           "type": "icon",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/imageedit_34_4317074377-removebg-preview_1_2.png"
+            "icon": "shopify://shop_images/imageedit_34_4317074377-removebg-preview_1_2.png"
           }
         },
         "e7ac9b5d-d622-4dfb-822e-0a0bfb93ee5c": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Environmentally Impactful<\/strong><br\/>Ingredients from Regenerative Farms or Agroforestry Projects or those with technical processing upgrades to reduce toxins, increase energy efficiency and decrease negative environmental impacts.<br\/> <br\/><strong>Social Responsibility<br\/><\/strong>Ingredients that come from sources which are dedicated to promoting social equality, women's empowerment, education, living wages, and general livelihood.<\/p>"
+            "text": "<p><strong>Environmentally Impactful</strong><br/>Ingredients from Regenerative Farms or Agroforestry Projects or those with technical processing upgrades to reduce toxins, increase energy efficiency and decrease negative environmental impacts.<br/> <br/><strong>Social Responsibility<br/></strong>Ingredients that come from sources which are dedicated to promoting social equality, women's empowerment, education, living wages, and general livelihood.</p>"
           }
         },
         "47338247-06fe-401f-8439-2fdbee1aac55": {
           "type": "button",
           "settings": {
             "button_label": "Shop Sustainable Sourced Ingredients",
-            "button_link": "shopify:\/\/collections",
+            "button_link": "shopify://collections",
             "button_color": "default"
           }
         }
@@ -240,8 +290,9 @@
         "e7ac9b5d-d622-4dfb-822e-0a0bfb93ee5c",
         "47338247-06fe-401f-8439-2fdbee1aac55"
       ],
+      "disabled": true,
       "settings": {
-        "image": "shopify:\/\/shop_images\/IMG_4527.jpg",
+        "image": "shopify://shop_images/IMG_4527.jpg",
         "hero": false,
         "color_scheme": "cream",
         "layout": "reversed",
@@ -267,7 +318,7 @@
         "subheading": "",
         "heading_size": "h4",
         "accent_color": false,
-        "text": "<p>We are proud to have aligned with the UN's  integral approach and call to action to end poverty, protect the planet, and ensure that by 2030 all people enjoy peace and prosperity.<\/p><p>We know we can all work together to create a happier, healthier world.<\/p>",
+        "text": "<p>We are proud to have aligned with the UN's  integral approach and call to action to end poverty, protect the planet, and ensure that by 2030 all people enjoy peace and prosperity.</p><p>We know we can all work together to create a happier, healthier world.</p>",
         "button_label": "Button label",
         "button_link": "",
         "alt": "",
@@ -281,7 +332,7 @@
     "166126617923b76f7f": {
       "type": "image",
       "settings": {
-        "image": "shopify:\/\/shop_images\/UN_Commitments.png",
+        "image": "shopify://shop_images/UN_Commitments.png",
         "image_style": "fullheight __in-grid",
         "nav_color": false,
         "color_scheme": "cream",
@@ -291,7 +342,6 @@
     },
     "16608572869d1a8858": {
       "type": "rich-text",
-      "disabled": true,
       "blocks": {
         "1660857286bad694f8-0": {
           "type": "heading",
@@ -305,7 +355,7 @@
         "1660857286bad694f8-1": {
           "type": "text",
           "settings": {
-            "text": "<p>We are committed to actively supporting the communities we source from and set aside resources to invest in social projects with our partners.  We have contributed to building schools and enhancing education, supported orphanages, purchased trucks & tractors for working the land.  We have literally built bridges and provided training in agricultural practices. Check out our sustainability stories to see what we’ve been up to and how we are honoring our commitments to sustainable development.<\/p>",
+            "text": "<p>We are committed to actively supporting the communities we source from and set aside resources to invest in social projects with our partners.  We have contributed to building schools and enhancing education, supported orphanages, purchased trucks & tractors for working the land.  We have literally built bridges and provided training in agricultural practices. Check out our sustainability stories to see what we’ve been up to and how we are honoring our commitments to sustainable development.</p>",
             "text_size": "p-lg"
           }
         }
@@ -314,6 +364,7 @@
         "1660857286bad694f8-0",
         "1660857286bad694f8-1"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "cream",
         "hero": false,
@@ -323,24 +374,23 @@
     },
     "1660747290beaaaf5d": {
       "type": "featured-articles",
-      "disabled": true,
       "blocks": {
         "20254c1e-c139-4b1c-a067-1d245ee149cc": {
           "type": "article",
           "settings": {
-            "article": "news\/2019-pioneer-award-winners"
+            "article": "news/2019-pioneer-award-winners"
           }
         },
         "d5f9af9e-3a53-4979-81da-209d197de4ad": {
           "type": "article",
           "settings": {
-            "article": "news\/2019-nevada-sba-small-business-week-award"
+            "article": "news/2019-nevada-sba-small-business-week-award"
           }
         },
         "d5f9af9e-3a53-4979-81da-209d197de4ag": {
           "type": "article",
           "settings": {
-            "article": "news\/recognition-from-gov-sisolak"
+            "article": "news/recognition-from-gov-sisolak"
           }
         }
       },
@@ -349,6 +399,7 @@
         "d5f9af9e-3a53-4979-81da-209d197de4ad",
         "d5f9af9e-3a53-4979-81da-209d197de4ag"
       ],
+      "disabled": true,
       "settings": {
         "heading": "Sustainability Stories",
         "button_label": "Button label",
@@ -363,7 +414,7 @@
       "type": "featured-page-link",
       "settings": {
         "page_link": "global-partnerships",
-        "image": "shopify:\/\/shop_images\/organic-map-edited.png",
+        "image": "shopify://shop_images/organic-map-edited.png",
         "alt": "Men working on mountainside",
         "color_scheme": "cream",
         "top_spacing": 20,
@@ -373,6 +424,7 @@
   },
   "order": [
     "166074672815a86e9b",
+    "rich_text_JG8LQ9",
     "1643818843f333eb74",
     "5812db36-cf2d-486b-a996-80d71768e71e",
     "1660746979c48fd613",
