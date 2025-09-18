@@ -51,13 +51,6 @@
               "color": ""
             }
           },
-          "878eabb7-b9ce-404d-a952-33183360b7db": {
-            "type": "page",
-            "settings": {
-              "page": "our-values",
-              "image": "shopify://shop_images/2018-08-14_18.28.09.jpg"
-            }
-          },
           "e58fd043-68a5-401e-8b7b-7143691d9a3f": {
             "type": "page",
             "settings": {
@@ -77,6 +70,13 @@
             "settings": {
               "label": "About Us",
               "color": "#d57a20"
+            }
+          },
+          "878eabb7-b9ce-404d-a952-33183360b7db": {
+            "type": "page",
+            "settings": {
+              "page": "our-values",
+              "image": "shopify://shop_images/2018-08-14_18.28.09.jpg"
             }
           },
           "98795b15-82d5-4be6-a619-b758f820bdc5": {
@@ -113,10 +113,10 @@
           "f8db91fe-274c-4d3d-9762-baf0922ed802",
           "0dc547ff-b375-4b78-bad8-9ef9fc4a79d2",
           "201fd5e5-d847-4850-8232-368b05f5b75a",
-          "878eabb7-b9ce-404d-a952-33183360b7db",
           "e58fd043-68a5-401e-8b7b-7143691d9a3f",
           "181b4f14-5ca5-4e65-8d3f-9747470e412d",
           "d9d4a0f1-92e8-4a6c-964f-c942b3f49c06",
+          "878eabb7-b9ce-404d-a952-33183360b7db",
           "98795b15-82d5-4be6-a619-b758f820bdc5",
           "5c96bbfa-abb9-4446-b6f1-834fd33d5162",
           "f537cb93-a2e6-4b92-b5fe-d43941dc8f93",
