@@ -63,6 +63,37 @@
         "bottom_spacing": 50
       }
     },
+    "rich_text_kV3CHi": {
+      "type": "rich-text",
+      "blocks": {
+        "text_FBfPAy": {
+          "type": "text",
+          "settings": {
+            "text": "<p><br/>As a sales team, we connect customers with the highest-quality ingredients while upholding our values of integrity, responsibility, and sustainability—creating solutions that deliver impact far beyond the order.<br/></p>",
+            "text_size": "default"
+          }
+        },
+        "button_UQb7UC": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "open_new_window": false
+          }
+        }
+      },
+      "block_order": [
+        "text_FBfPAy",
+        "button_UQb7UC"
+      ],
+      "name": "Rich Text",
+      "settings": {
+        "color_scheme": "cream",
+        "hero": false,
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
+    },
     "image_grid_WULGeB": {
       "type": "image-grid",
       "blocks": {
@@ -414,18 +445,6 @@
             "image": "shopify://shop_images/Alejandra_Soriano_2025_Website_ddafad6e-6ab9-4b7a-97d1-8a42e1a507d2.jpg",
             "image_width": "third"
           }
-        },
-        "image_WP8KKQ": {
-          "type": "image",
-          "settings": {
-            "image_width": "half"
-          }
-        },
-        "image_rgRXt4": {
-          "type": "image",
-          "settings": {
-            "image_width": "half"
-          }
         }
       },
       "block_order": [
@@ -435,9 +454,7 @@
         "image_Xc869a",
         "image_dDTNKz",
         "image_t73CV3",
-        "image_w4dtEb",
-        "image_WP8KKQ",
-        "image_rgRXt4"
+        "image_w4dtEb"
       ],
       "name": "Image Grid",
       "settings": {
@@ -452,6 +469,7 @@
     "main",
     "rich_text_jmhqJY",
     "image_grid_WrgNaL",
+    "rich_text_kV3CHi",
     "image_grid_WULGeB",
     "content_slider_cyAit7",
     "divider_j7qp9A",
