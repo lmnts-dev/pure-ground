@@ -294,6 +294,13 @@
             "image": "shopify://shop_images/Omar_Quintero_2025_Website.jpg",
             "image_width": "third"
           }
+        },
+        "image_RCDX7H": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/jorg_2_0934042a-c3db-48f4-9490-f83fe51ec5d4.jpg",
+            "image_width": "third"
+          }
         }
       },
       "block_order": [
@@ -302,7 +309,8 @@
         "image_wnhTqg",
         "image_bj7wWp",
         "image_Cfkp4j",
-        "image_fHRzfR"
+        "image_fHRzfR",
+        "image_RCDX7H"
       ],
       "name": "Image Grid",
       "settings": {
