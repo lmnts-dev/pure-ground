@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "16607598452556c86a": {
@@ -6,7 +15,7 @@
         "116f642d-f99e-4141-91ed-747acdee3431": {
           "type": "heading",
           "settings": {
-            "heading": "About us",
+            "heading": "Our History",
             "heading_size": "h1"
           }
         }
@@ -17,7 +26,7 @@
       "settings": {
         "text_color": "light",
         "nav_color": true,
-        "image": "shopify:\/\/shop_images\/Screen_Shot_2022-05-06_at_4.08_2.jpg",
+        "image": "shopify://shop_images/Screen_Shot_2022-05-06_at_4.08_2.jpg",
         "alt": "Man in sunglasses and hat",
         "overlay": 0,
         "hero": true,
@@ -46,7 +55,7 @@
         "16438188434dae6d1d-1": {
           "type": "text",
           "settings": {
-            "text": "<p>My father was suffering from a debilitating neurological disorder for years and western medicine doctors said that nothing could be done for him. We turned to alternatives and after taking a traditional chinese herbal formula for 6 months he had completely recovered. This was when our family journey into chinese medicine began. <\/p><p>At the time our doctor was having trouble sourcing the herbs so we decided to help. I soon found myself on farms in South America and later on Africa and Asia. Naturally, I gravitated towards organic farms since we were searching for the medicinal aspects and started creating supply chains for herbal tea companies.<\/p>",
+            "text": "<p>My father was suffering from a debilitating neurological disorder for years and western medicine doctors said that nothing could be done for him. We turned to alternatives and after taking a traditional chinese herbal formula for 6 months he had completely recovered. This was when our family journey into chinese medicine began. </p><p>At the time our doctor was having trouble sourcing the herbs so we decided to help. I soon found myself on farms in South America and later on Africa and Asia. Naturally, I gravitated towards organic farms since we were searching for the medicinal aspects and started creating supply chains for herbal tea companies.</p>",
             "text_size": "default"
           }
         }
@@ -68,56 +77,56 @@
         "16607611409a888436-1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-05-06_at_4.08_1.jpg",
+            "image": "shopify://shop_images/Screen_Shot_2022-05-06_at_4.08_1.jpg",
             "alt": "Flowers"
           }
         },
         "c8800a15-2897-46bb-a50c-52b3738f7298": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-05-06_at_4.14_1.jpg",
+            "image": "shopify://shop_images/Screen_Shot_2022-05-06_at_4.14_1.jpg",
             "alt": "Group photo"
           }
         },
         "739b4c19-ab21-4c2c-bff1-3454590c958a": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/unsplash_obMdrL5pFWI.jpg",
+            "image": "shopify://shop_images/unsplash_obMdrL5pFWI.jpg",
             "alt": "Crops"
           }
         },
         "9a40b987-ceab-4911-8f2b-c24ac822dcf1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-05-06_at_4.07_1.jpg",
+            "image": "shopify://shop_images/Screen_Shot_2022-05-06_at_4.07_1.jpg",
             "alt": "Couple by flowers"
           }
         },
         "d239892f-c15d-4345-9deb-ddb4a4214abd": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_40_1fd604d3-01d5-4ca1-9279-8f76d15cfa80.jpg",
+            "image": "shopify://shop_images/Rectangle_40_1fd604d3-01d5-4ca1-9279-8f76d15cfa80.jpg",
             "alt": "Black and white photo of three people"
           }
         },
         "f835b275-72f6-484d-8cee-015213bab2d4": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2018-08-21_17.54_3.jpg",
+            "image": "shopify://shop_images/2018-08-21_17.54_3.jpg",
             "alt": "Black and white photo of two kids"
           }
         },
         "87fd8ce7-763d-4d11-83e8-b61fbcc55ca4": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-05-06_at_4.13_1.jpg",
+            "image": "shopify://shop_images/Screen_Shot_2022-05-06_at_4.13_1.jpg",
             "alt": "Two men with mountains in background"
           }
         },
         "16607611409a888436-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-05-06_at_4.09_1.jpg",
+            "image": "shopify://shop_images/Screen_Shot_2022-05-06_at_4.09_1.jpg",
             "alt": "Original image taken on trip"
           }
         }
@@ -151,7 +160,7 @@
         "1644419366881604f5-0": {
           "type": "text",
           "settings": {
-            "text": "<p>My father was so inspired he became a traditional chinese medicine doctor, ran a clinic for over 40 years and founded the Tao Healing Arts Society in New York.<\/p><p>My passion for using food and herbs for improving my family's health grew into sourcing hundreds of ingredients. Many of the relationships I created with suppliers over 20 years ago provide for Pure Ground to this day. <\/p>"
+            "text": "<p>My father was so inspired he became a traditional chinese medicine doctor, ran a clinic for over 40 years and founded the Tao Healing Arts Society in New York.</p><p>My passion for using food and herbs for improving my family's health grew into sourcing hundreds of ingredients. Many of the relationships I created with suppliers over 20 years ago provide for Pure Ground to this day. </p>"
           }
         }
       },
@@ -160,7 +169,7 @@
         "1644419366881604f5-0"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Long_Life_Tea.jpg",
+        "image": "shopify://shop_images/Long_Life_Tea.jpg",
         "hero": false,
         "color_scheme": "cream",
         "layout": "reversed",
@@ -182,7 +191,7 @@
         "16444195172a1cbbf5-0": {
           "type": "text",
           "settings": {
-            "text": "<p>Food that's grown without chemicals and pesticides is the way that nature intended. <\/p><p>Now more than ever we are looking to source from regenerative farms to nourish our planet, our communities and ourselves. <\/p><p>-Kevin Lindseth, CEO\/Founder<\/p>"
+            "text": "<p>Food that's grown without chemicals and pesticides is the way that nature intended. </p><p>Now more than ever we are looking to source from regenerative farms to nourish our planet, our communities and ourselves. </p><p>-Kevin Lindseth, CEO/Founder</p>"
           }
         }
       },
@@ -191,7 +200,7 @@
         "16444195172a1cbbf5-0"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Screen_Shot_2022-05-06_at_4.11_1.jpg",
+        "image": "shopify://shop_images/Screen_Shot_2022-05-06_at_4.11_1.jpg",
         "hero": false,
         "color_scheme": "cream",
         "layout": "default",
@@ -204,7 +213,7 @@
       "type": "featured-page-link",
       "settings": {
         "page_link": "sustainability-social-and-environmental-impact",
-        "image": "shopify:\/\/shop_images\/landscape.jpg",
+        "image": "shopify://shop_images/landscape.jpg",
         "alt": "Hillside covered in trees",
         "color_scheme": "cream",
         "top_spacing": 0,
