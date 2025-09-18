@@ -24,7 +24,7 @@
           "type": "heading",
           "settings": {
             "heading": "Meet the Sales Team",
-            "heading_size": "h3",
+            "heading_size": "h2",
             "heading_alignment": "center",
             "subheading": ""
           }
@@ -54,6 +54,52 @@
       },
       "block_order": [
         "image_AAfFmU"
+      ],
+      "name": "Image Grid",
+      "settings": {
+        "row_height": 340,
+        "color_scheme": "cream",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
+    },
+    "image_grid_WULGeB": {
+      "type": "image-grid",
+      "blocks": {
+        "image_Y64WN4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Nancy_Nguyen_2025_Website.jpg",
+            "image_width": "third"
+          }
+        },
+        "image_7Pbd39": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Don_Kempf_2025_Website.jpg",
+            "image_width": "third"
+          }
+        },
+        "image_7DR6XT": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Brittany_Mackey_2025_Website.jpg",
+            "image_width": "third"
+          }
+        },
+        "image_kENc78": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Chavonne_Sales_2025_Website.jpg",
+            "image_width": "third"
+          }
+        }
+      },
+      "block_order": [
+        "image_Y64WN4",
+        "image_7Pbd39",
+        "image_7DR6XT",
+        "image_kENc78"
       ],
       "name": "Image Grid",
       "settings": {
@@ -109,8 +155,280 @@
         "slide_HXWpWh",
         "slide_EwDpka"
       ],
+      "disabled": true,
       "name": "Content Slider",
       "settings": {
+        "color_scheme": "cream",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
+    },
+    "divider_j7qp9A": {
+      "type": "divider",
+      "name": "Divider",
+      "settings": {
+        "style": "dots",
+        "color_scheme": "cream",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
+    },
+    "rich_text_wmfdYD": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_nmbXEB": {
+          "type": "heading",
+          "settings": {
+            "heading": "Meet the Quality Team",
+            "heading_size": "h2",
+            "heading_alignment": "center",
+            "subheading": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_nmbXEB"
+      ],
+      "name": "Rich Text",
+      "settings": {
+        "color_scheme": "cream",
+        "hero": false,
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
+    },
+    "image_grid_aP9bt7": {
+      "type": "image-grid",
+      "blocks": {
+        "image_9BEjQt": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Quality_Team_2025_663b1df8-270e-42e8-8cc4-1bd850557d4a.jpg",
+            "image_width": "full"
+          }
+        }
+      },
+      "block_order": [
+        "image_9BEjQt"
+      ],
+      "name": "Image Grid",
+      "settings": {
+        "row_height": 340,
+        "color_scheme": "cream",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
+    },
+    "rich_text_xEDa7c": {
+      "type": "rich-text",
+      "blocks": {
+        "text_mtGnc4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our team helps to ensures the highest quality standards by using multiple safeguards, including extensive product testing and screening, as well as microbial reduction through a validated 5-log process control applied across a variety of spice and herb ingredients. </p>",
+            "text_size": "default"
+          }
+        },
+        "button_WTn3at": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "open_new_window": false
+          }
+        }
+      },
+      "block_order": [
+        "text_mtGnc4",
+        "button_WTn3at"
+      ],
+      "name": "Rich Text",
+      "settings": {
+        "color_scheme": "cream",
+        "hero": false,
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
+    },
+    "image_grid_XC74AV": {
+      "type": "image-grid",
+      "blocks": {
+        "image_BUHwHB": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Natalia_Marzec_2025_Website.jpg",
+            "image_width": "third"
+          }
+        },
+        "image_abUyYp": {
+          "type": "image",
+          "settings": {
+            "image_width": "half"
+          }
+        },
+        "image_wnhTqg": {
+          "type": "image",
+          "settings": {
+            "image_width": "half"
+          }
+        },
+        "image_bj7wWp": {
+          "type": "image",
+          "settings": {
+            "image_width": "half"
+          }
+        },
+        "image_Cfkp4j": {
+          "type": "image",
+          "settings": {
+            "image_width": "half"
+          }
+        },
+        "image_fHRzfR": {
+          "type": "image",
+          "settings": {
+            "image_width": "half"
+          }
+        }
+      },
+      "block_order": [
+        "image_BUHwHB",
+        "image_abUyYp",
+        "image_wnhTqg",
+        "image_bj7wWp",
+        "image_Cfkp4j",
+        "image_fHRzfR"
+      ],
+      "name": "Image Grid",
+      "settings": {
+        "row_height": 340,
+        "color_scheme": "cream",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
+    },
+    "divider_GVBj3x": {
+      "type": "divider",
+      "name": "Divider",
+      "settings": {
+        "style": "dots",
+        "color_scheme": "cream",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
+    },
+    "rich_text_cyXtyc": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_P3HLze": {
+          "type": "heading",
+          "settings": {
+            "heading": "Other Key Individuals",
+            "heading_size": "h3",
+            "heading_alignment": "center",
+            "subheading": ""
+          }
+        },
+        "button_YqEYVD": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "open_new_window": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_P3HLze",
+        "button_YqEYVD"
+      ],
+      "name": "Rich Text",
+      "settings": {
+        "color_scheme": "cream",
+        "hero": false,
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
+    },
+    "image_grid_TemhaM": {
+      "type": "image-grid",
+      "blocks": {
+        "image_wGi7jy": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Kevin_Lindseth_2025_bcf2212d-e7f8-40cf-920e-137db025523f.jpg",
+            "image_width": "third"
+          }
+        },
+        "image_Xc869a": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Britain_Traub_2025_f7db8132-78fa-4e0b-b115-31e233f9d756.jpg",
+            "image_width": "third"
+          }
+        },
+        "image_FKhpVj": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Israel_Pereda_Paramo_2025_dfe71ffc-044b-42c9-b0a3-b7ce2ff4dbd3.jpg",
+            "image_width": "third"
+          }
+        },
+        "image_GJUx4X": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Brandi_Barajas_2025_THIS_ONE_0fd30b5d-126f-40f9-8a2e-1f6c26023ade.jpg",
+            "image_width": "third"
+          }
+        },
+        "image_t73CV3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Megan_Glogosh_2025_66ff1044-d17b-4362-819f-528741c9e32e.jpg",
+            "image_width": "third"
+          }
+        },
+        "image_dDTNKz": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Mickey_McKeon_2025_77a83c96-5099-43f9-b9a6-4cbce98535c2.jpg",
+            "image_width": "third"
+          }
+        },
+        "image_w4dtEb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Alejandra_Soriano_2025_Website_ddafad6e-6ab9-4b7a-97d1-8a42e1a507d2.jpg",
+            "image_width": "third"
+          }
+        },
+        "image_WP8KKQ": {
+          "type": "image",
+          "settings": {
+            "image_width": "half"
+          }
+        },
+        "image_rgRXt4": {
+          "type": "image",
+          "settings": {
+            "image_width": "half"
+          }
+        }
+      },
+      "block_order": [
+        "image_wGi7jy",
+        "image_Xc869a",
+        "image_FKhpVj",
+        "image_GJUx4X",
+        "image_t73CV3",
+        "image_dDTNKz",
+        "image_w4dtEb",
+        "image_WP8KKQ",
+        "image_rgRXt4"
+      ],
+      "name": "Image Grid",
+      "settings": {
+        "row_height": 340,
         "color_scheme": "cream",
         "top_spacing": 50,
         "bottom_spacing": 50
@@ -121,6 +439,15 @@
     "main",
     "rich_text_jmhqJY",
     "image_grid_WrgNaL",
-    "content_slider_cyAit7"
+    "image_grid_WULGeB",
+    "content_slider_cyAit7",
+    "divider_j7qp9A",
+    "rich_text_wmfdYD",
+    "image_grid_aP9bt7",
+    "rich_text_xEDa7c",
+    "image_grid_XC74AV",
+    "divider_GVBj3x",
+    "rich_text_cyXtyc",
+    "image_grid_TemhaM"
   ]
 }
