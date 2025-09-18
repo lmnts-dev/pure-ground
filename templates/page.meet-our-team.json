@@ -263,31 +263,36 @@
         "image_abUyYp": {
           "type": "image",
           "settings": {
-            "image_width": "half"
+            "image": "shopify://shop_images/Brittany_Reichardt_2025_Website_49dc1c9b-30c0-4fd8-b11c-89b2833cb9cf.jpg",
+            "image_width": "third"
           }
         },
         "image_wnhTqg": {
           "type": "image",
           "settings": {
-            "image_width": "half"
+            "image": "shopify://shop_images/Hilary_Pineda_2025_Website.jpg",
+            "image_width": "third"
           }
         },
         "image_bj7wWp": {
           "type": "image",
           "settings": {
-            "image_width": "half"
+            "image": "shopify://shop_images/Maria_Moreira_Website.jpg",
+            "image_width": "third"
           }
         },
         "image_Cfkp4j": {
           "type": "image",
           "settings": {
-            "image_width": "half"
+            "image": "shopify://shop_images/Angelica_Cortez_2025_Website.jpg",
+            "image_width": "third"
           }
         },
         "image_fHRzfR": {
           "type": "image",
           "settings": {
-            "image_width": "half"
+            "image": "shopify://shop_images/Omar_Quintero_2025_Website.jpg",
+            "image_width": "third"
           }
         }
       },
@@ -356,42 +361,42 @@
         "image_wGi7jy": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Kevin_Lindseth_2025_bcf2212d-e7f8-40cf-920e-137db025523f.jpg",
-            "image_width": "third"
-          }
-        },
-        "image_Xc869a": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Britain_Traub_2025_f7db8132-78fa-4e0b-b115-31e233f9d756.jpg",
+            "image": "shopify://shop_images/Kevin_Lindseth_2025_Website.jpg",
             "image_width": "third"
           }
         },
         "image_FKhpVj": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Israel_Pereda_Paramo_2025_dfe71ffc-044b-42c9-b0a3-b7ce2ff4dbd3.jpg",
+            "image": "shopify://shop_images/tesssst.jpg",
             "image_width": "third"
           }
         },
         "image_GJUx4X": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Brandi_Barajas_2025_THIS_ONE_0fd30b5d-126f-40f9-8a2e-1f6c26023ade.jpg",
+            "image": "shopify://shop_images/Brandi_Barajas_2025_Website.jpg",
             "image_width": "third"
           }
         },
-        "image_t73CV3": {
+        "image_Xc869a": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Megan_Glogosh_2025_66ff1044-d17b-4362-819f-528741c9e32e.jpg",
+            "image": "shopify://shop_images/Britain_Traub_2025_Website.jpg",
             "image_width": "third"
           }
         },
         "image_dDTNKz": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Mickey_McKeon_2025_77a83c96-5099-43f9-b9a6-4cbce98535c2.jpg",
+            "image": "shopify://shop_images/Mickey_McKeon_2025_Website.jpg",
+            "image_width": "third"
+          }
+        },
+        "image_t73CV3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Megan_Glogosh_2025_Website.jpg",
             "image_width": "third"
           }
         },
@@ -417,11 +422,11 @@
       },
       "block_order": [
         "image_wGi7jy",
-        "image_Xc869a",
         "image_FKhpVj",
         "image_GJUx4X",
-        "image_t73CV3",
+        "image_Xc869a",
         "image_dDTNKz",
+        "image_t73CV3",
         "image_w4dtEb",
         "image_WP8KKQ",
         "image_rgRXt4"
