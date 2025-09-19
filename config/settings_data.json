@@ -44,6 +44,13 @@
               "image": "shopify://shop_images/Long_Life_Tea.jpg"
             }
           },
+          "page_EwrDL7": {
+            "type": "page",
+            "settings": {
+              "page": "our-team",
+              "image": "shopify://shop_images/Quality_Team_2025_663b1df8-270e-42e8-8cc4-1bd850557d4a.jpg"
+            }
+          },
           "5c96bbfa-abb9-4446-b6f1-834fd33d5162": {
             "type": "page",
             "settings": {
@@ -112,6 +119,7 @@
           "d9d4a0f1-92e8-4a6c-964f-c942b3f49c06",
           "878eabb7-b9ce-404d-a952-33183360b7db",
           "98795b15-82d5-4be6-a619-b758f820bdc5",
+          "page_EwrDL7",
           "5c96bbfa-abb9-4446-b6f1-834fd33d5162",
           "fe940d6c-8545-4795-b4fe-414a3745b581",
           "201fd5e5-d847-4850-8232-368b05f5b75a",
