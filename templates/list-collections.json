@@ -60,23 +60,16 @@
           "settings": {
             "collection": "organic-dried-chiles"
           }
-        },
-        "collection_4qgwLM": {
-          "type": "collection",
-          "settings": {
-            "collection": "vegetables"
-          }
         }
       },
       "block_order": [
         "collection_Weqr8r",
         "collection_WECcRa",
-        "collection_m4iGeN",
-        "collection_4qgwLM"
+        "collection_m4iGeN"
       ],
       "name": "Collections Grid",
       "settings": {
-        "heading": "Browse",
+        "heading": "",
         "color_scheme": "cream",
         "top_spacing": 50,
         "bottom_spacing": 50
@@ -100,7 +93,7 @@
         "collection_fmbAyk": {
           "type": "collection",
           "settings": {
-            "collection": "sustainably-sourced-organic-ingredients"
+            "collection": "vegetables"
           }
         }
       },
