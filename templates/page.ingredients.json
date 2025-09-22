@@ -76,7 +76,7 @@
         "template--14540390989847__5f725e3c-ad09-4de2-a28d-951451b9d008-16655973746e9f5fda-1": {
           "type": "text",
           "settings": {
-            "heading": "Organic Ingredients",
+            "heading": "Organic Products",
             "content": "",
             "button_label": "Download PDF",
             "button_link": "https://cdn.shopify.com/s/files/1/0562/9486/6967/files/Pure_Ground_Organic_Ingredient_List.pdf?v=1665592801",
@@ -100,7 +100,7 @@
       ],
       "settings": {
         "heading": "",
-        "subheading": "Download A PDF Version of Our Ingredients List",
+        "subheading": "Download A PDF Version of Our Product List",
         "color_scheme": "cream",
         "top_spacing": 50,
         "bottom_spacing": 50
