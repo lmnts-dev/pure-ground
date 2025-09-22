@@ -106,6 +106,20 @@
         "bottom_spacing": 50
       }
     },
+    "featured_articles_bkMXVV": {
+      "type": "featured-articles",
+      "disabled": true,
+      "name": "Featured Articles",
+      "settings": {
+        "heading": "",
+        "button_label": "Button label",
+        "button_link": "",
+        "button_color": "default",
+        "color_scheme": "cream",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
+    },
     "1647470795ab7a1dc6": {
       "type": "spec-sheets",
       "blocks": {
@@ -1859,6 +1873,7 @@
     "166074672815a86e9b",
     "hero",
     "5f725e3c-ad09-4de2-a28d-951451b9d008",
+    "featured_articles_bkMXVV",
     "1647470795ab7a1dc6",
     "1647550055d229b4ef",
     "16475507071b89b3ee",
