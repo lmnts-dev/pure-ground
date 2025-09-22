@@ -1,0 +1,128 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "rating_BXxWm7": {
+          "type": "rating",
+          "settings": {}
+        },
+        "custom_info_icMKUi": {
+          "type": "custom_info",
+          "settings": {
+            "custom_info_holder": ""
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "dropdown"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "text_UTN3wR": {
+          "type": "text",
+          "settings": {
+            "text": "12% OFF starting at 6 cases",
+            "text_style": "body"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "rating_BXxWm7",
+        "custom_info_icMKUi",
+        "variant_picker",
+        "quantity_selector",
+        "price",
+        "text_UTN3wR",
+        "buy_buttons"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "gallery_layout": "thumbnail_slider",
+        "media_size": "small",
+        "mobile_thumbnails": "show",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 24,
+        "padding_bottom": 16
+      }
+    },
+    "261cdf47-c947-498b-9239-01a6e1863b98": {
+      "type": "featured-products",
+      "blocks": {
+        "25434cb3-20a0-4305-bbaa-2a536f21a15b": {
+          "type": "product",
+          "settings": {
+            "product": "organic-basil"
+          }
+        },
+        "7565d8cb-80d4-4436-8810-32ca78c7e33e": {
+          "type": "product",
+          "settings": {
+            "product": "organic-cayenne-chile"
+          }
+        },
+        "11e408ab-77a8-4e13-a120-41fc57169049": {
+          "type": "product",
+          "settings": {
+            "product": "organic-chile-peppers-red"
+          }
+        },
+        "c8b46a97-dac5-4fe1-ae54-bbff1b871d6e": {
+          "type": "product",
+          "settings": {
+            "product": "organic-onion"
+          }
+        }
+      },
+      "block_order": [
+        "25434cb3-20a0-4305-bbaa-2a536f21a15b",
+        "7565d8cb-80d4-4436-8810-32ca78c7e33e",
+        "11e408ab-77a8-4e13-a120-41fc57169049",
+        "c8b46a97-dac5-4fe1-ae54-bbff1b871d6e"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "button_label": "",
+        "button_link": "",
+        "button_color": "default",
+        "color_scheme": "cream",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
+    }
+  },
+  "order": [
+    "main",
+    "261cdf47-c947-498b-9239-01a6e1863b98"
+  ]
+}
