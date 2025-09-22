@@ -71,8 +71,8 @@
       "settings": {
         "heading": "",
         "color_scheme": "cream",
-        "top_spacing": 50,
-        "bottom_spacing": 50
+        "top_spacing": 20,
+        "bottom_spacing": 0
       }
     },
     "collections_grid_jAbgQR": {
@@ -106,8 +106,8 @@
       "settings": {
         "heading": "",
         "color_scheme": "cream",
-        "top_spacing": 50,
-        "bottom_spacing": 50
+        "top_spacing": 20,
+        "bottom_spacing": 20
       }
     },
     "main": {
