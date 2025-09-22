@@ -96,13 +96,15 @@
           "page_H8c3LC": {
             "type": "page",
             "settings": {
-              "page": "processing"
+              "page": "processing",
+              "image": "shopify://shop_images/unsplash_3D43SBDDkAc_ae135df5-6dd9-4c4e-966a-7cf2ff86b9cf.jpg"
             }
           },
           "page_BAaH9C": {
             "type": "page",
             "settings": {
-              "page": "quality-assurance-organic-integrity"
+              "page": "quality-assurance-organic-integrity",
+              "image": "shopify://shop_images/MMcIver2022-5850.jpg"
             }
           },
           "74b22fdc-0b59-413a-b25b-92f994bab3a9": {
