@@ -82,6 +82,41 @@
         "bottom_spacing": 50
       }
     },
+    "collections_grid_jAbgQR": {
+      "type": "collections-grid",
+      "blocks": {
+        "collection_TTUCAc": {
+          "type": "collection",
+          "settings": {
+            "collection": "seeds"
+          }
+        },
+        "collection_EfCNJz": {
+          "type": "collection",
+          "settings": {
+            "collection": "spices"
+          }
+        },
+        "collection_fmbAyk": {
+          "type": "collection",
+          "settings": {
+            "collection": "sustainably-sourced-organic-ingredients"
+          }
+        }
+      },
+      "block_order": [
+        "collection_TTUCAc",
+        "collection_EfCNJz",
+        "collection_fmbAyk"
+      ],
+      "name": "Collections Grid",
+      "settings": {
+        "heading": "",
+        "color_scheme": "cream",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
+    },
     "main": {
       "type": "main-list-collections",
       "disabled": true,
@@ -1854,6 +1889,7 @@
   "order": [
     "1645465766aa7fad07",
     "collections_grid_KJqd8w",
+    "collections_grid_jAbgQR",
     "main",
     "1663266823923b1bd8",
     "16632668753b21cfd8",
