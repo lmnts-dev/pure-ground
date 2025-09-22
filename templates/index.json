@@ -35,7 +35,7 @@
         "98e4e98c-6256-4af7-8682-879282cdcf70": {
           "type": "button",
           "settings": {
-            "button_label": "Shop Now",
+            "button_label": "Shop Ingredients",
             "button_link": "shopify://collections",
             "button_color": "cream"
           }
