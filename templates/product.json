@@ -122,6 +122,17 @@
     },
     "featured_articles_jdGJQ7": {
       "type": "featured-articles",
+      "blocks": {
+        "article_JPEk9y": {
+          "type": "article",
+          "settings": {
+            "article": "guides/chamomile"
+          }
+        }
+      },
+      "block_order": [
+        "article_JPEk9y"
+      ],
       "disabled": true,
       "name": "Featured Articles",
       "settings": {
