@@ -86,6 +86,25 @@
               "image": "shopify://shop_images/unsplash_8rTwokBwz1w-1.jpg"
             }
           },
+          "label_xxGtdz": {
+            "type": "label",
+            "settings": {
+              "label": "Our Standards",
+              "color": ""
+            }
+          },
+          "page_H8c3LC": {
+            "type": "page",
+            "settings": {
+              "page": "processing"
+            }
+          },
+          "page_BAaH9C": {
+            "type": "page",
+            "settings": {
+              "page": "quality-assurance-organic-integrity"
+            }
+          },
           "74b22fdc-0b59-413a-b25b-92f994bab3a9": {
             "type": "link",
             "settings": {
@@ -95,6 +114,7 @@
           },
           "f8db91fe-274c-4d3d-9762-baf0922ed802": {
             "type": "link",
+            "disabled": true,
             "settings": {
               "label": "Processing",
               "link": "shopify://pages/processing"
@@ -102,6 +122,7 @@
           },
           "0dc547ff-b375-4b78-bad8-9ef9fc4a79d2": {
             "type": "link",
+            "disabled": true,
             "settings": {
               "label": "Quality Assurance",
               "link": "shopify://pages/quality-assurance-organic-integrity"
@@ -132,6 +153,9 @@
           "201fd5e5-d847-4850-8232-368b05f5b75a",
           "181b4f14-5ca5-4e65-8d3f-9747470e412d",
           "e58fd043-68a5-401e-8b7b-7143691d9a3f",
+          "label_xxGtdz",
+          "page_H8c3LC",
+          "page_BAaH9C",
           "74b22fdc-0b59-413a-b25b-92f994bab3a9",
           "f8db91fe-274c-4d3d-9762-baf0922ed802",
           "0dc547ff-b375-4b78-bad8-9ef9fc4a79d2",
