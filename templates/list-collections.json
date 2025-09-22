@@ -40,8 +40,51 @@
         "bottom_internal_spacing": 30
       }
     },
+    "collections_grid_KJqd8w": {
+      "type": "collections-grid",
+      "blocks": {
+        "collection_Weqr8r": {
+          "type": "collection",
+          "settings": {
+            "collection": "organic-herbs-roots-and-flowers"
+          }
+        },
+        "collection_WECcRa": {
+          "type": "collection",
+          "settings": {
+            "collection": "culinary-herbs"
+          }
+        },
+        "collection_m4iGeN": {
+          "type": "collection",
+          "settings": {
+            "collection": "organic-dried-chiles"
+          }
+        },
+        "collection_4qgwLM": {
+          "type": "collection",
+          "settings": {
+            "collection": "vegetables"
+          }
+        }
+      },
+      "block_order": [
+        "collection_Weqr8r",
+        "collection_WECcRa",
+        "collection_m4iGeN",
+        "collection_4qgwLM"
+      ],
+      "name": "Collections Grid",
+      "settings": {
+        "heading": "Browse",
+        "color_scheme": "cream",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
+    },
     "main": {
       "type": "main-list-collections",
+      "disabled": true,
       "settings": {
         "heading": "",
         "sort": "alphabetical",
@@ -1810,6 +1853,7 @@
   },
   "order": [
     "1645465766aa7fad07",
+    "collections_grid_KJqd8w",
     "main",
     "1663266823923b1bd8",
     "16632668753b21cfd8",
