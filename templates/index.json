@@ -14,6 +14,7 @@
       "blocks": {
         "ai_gen_block_2ab6a08_EYgrCw": {
           "type": "ai_gen_block_2ab6a08",
+          "disabled": true,
           "settings": {
             "placeholder_text": "Search products...",
             "enable_predictive_search": true,
