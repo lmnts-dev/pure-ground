@@ -404,6 +404,19 @@
                       </li>
                     {%- endfor -%}
                   </ul>
+                  <!-- 🔎 Search bar inside mobile drawer -->
+<form action="{{ routes.search_url }}" method="get" role="search" class="menu-drawer__search">
+  <input 
+    type="search" 
+    name="q" 
+    placeholder="Search…" 
+    class="menu-drawer__search-input"
+    aria-label="Search"
+  >
+  <button type="submit" class="menu-drawer__search-button">
+    {% render 'icon-search' %}
+  </button>
+</form>
                 </nav>
                 <div class="menu-drawer__utility-links">
                   {%- if shop.customer_accounts_enabled -%}
@@ -558,6 +571,19 @@
             </li>
           {%- endfor -%}
         </ul>
+        <!-- 🔎 Search bar inside desktop header -->
+<form action="{{ routes.search_url }}" method="get" role="search" class="header__search">
+  <input 
+    type="search" 
+    name="q" 
+    placeholder="Search…" 
+    class="header__search-input"
+    aria-label="Search"
+  >
+  <button type="submit" class="header__search-button">
+    {% render 'icon-search' %}
+  </button>
+</form>
       </nav>
     {%- endif -%}
 
