@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "164435397998025e9c": {
@@ -20,7 +29,7 @@
         "164435397975ac4950-0": {
           "type": "text",
           "settings": {
-            "text": "<p>Want to request more information?Whatever you wish to communicate, please use give us call, email or use the form below:<\/p>"
+            "text": "<p>Want to request more information?Whatever you wish to communicate, please use give us call, email or use the form below:</p>"
           }
         },
         "a7d76b5b-4b29-40cb-aeb1-19fd4c0e8647": {
@@ -33,7 +42,7 @@
         "eba96e60-4b73-4bbf-a5a1-f0df199cd8c1": {
           "type": "text",
           "settings": {
-            "text": "<p>Pure Ground Ingredients<br\/>2535 Business Parkway<br\/>Minden, NV 89423<\/p>"
+            "text": "<p>Pure Ground Ingredients<br/>2535 Business Parkway<br/>Minden, NV 89423</p>"
           }
         },
         "08fd0e00-47d9-49b5-8d75-bda3b9ca13bc": {
@@ -46,13 +55,26 @@
         "7cce6bb7-5dc2-4816-b956-cc78a5d5cb9c": {
           "type": "text",
           "settings": {
-            "text": "<p>sales@puregroundingredients.com<br\/>775-297-4047<\/p>"
+            "text": "<p>sales@puregroundingredients.com<br/>775-297-4047</p>"
+          }
+        },
+        "heading_kHiGTV": {
+          "type": "heading",
+          "settings": {
+            "heading": "Specific Requests",
+            "heading_size": "h4"
+          }
+        },
+        "text_hGYYGg": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Nancy Nguyen- </strong><em>Director of Business Development:</em></p><p>nancy@puregroundingredients.com</p><p><strong>Don Kempf- </strong><em>Business Unit Manager Spice and Food Category:</em></p><p><em> </em>don@puregroundingredients.com</p><p><strong> </strong></p><p></p>"
           }
         },
         "cedd98a5-6f29-4b03-a62b-bb73c8eab2c7": {
           "type": "icon",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/Commence_x_Pure_Ground_-_Heart_Illustration_1.png"
+            "icon": "shopify://shop_images/Commence_x_Pure_Ground_-_Heart_Illustration_1.png"
           }
         }
       },
@@ -64,10 +86,12 @@
         "eba96e60-4b73-4bbf-a5a1-f0df199cd8c1",
         "08fd0e00-47d9-49b5-8d75-bda3b9ca13bc",
         "7cce6bb7-5dc2-4816-b956-cc78a5d5cb9c",
+        "heading_kHiGTV",
+        "text_hGYYGg",
         "cedd98a5-6f29-4b03-a62b-bb73c8eab2c7"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/unsplash_uaHShoIDGeo.jpg",
+        "image": "shopify://shop_images/unsplash_uaHShoIDGeo.jpg",
         "hero": true,
         "color_scheme": "cream",
         "layout": "default",
