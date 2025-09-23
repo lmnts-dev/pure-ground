@@ -164,11 +164,7 @@
           "link_gixage",
           "f537cb93-a2e6-4b92-b5fe-d43941dc8f93"
         ],
-        "custom_css": [
-          ".menu-drawer__search {display: flex; margin-top: 1rem; padding: 0 1rem;}",
-          ".menu-drawer__search-input {flex: 1; padding: 0.5rem 0.75rem; border: 1px solid #ddd; border-radius: 4px 0 0 4px; font-size: 1rem;}",
-          ".menu-drawer__search-button {padding: 0.5rem; border: 1px solid #ddd; border-left: none; border-radius: 0 4px 4px 0; background-color: #f5f5f5; cursor: pointer;}"
-        ],
+        "custom_css": [],
         "settings": {
           "always_show_nav": true
         }
@@ -356,5 +352,12 @@
         }
       }
     }
+  },
+  "platform_customizations": {
+    "custom_css": [
+      ".menu-drawer__search {display: flex; margin-top: 1rem; padding: 0 1rem;}",
+      ".menu-drawer__search-input {flex: 1; padding: 0.5rem 0.75rem; border: 1px solid #ddd; border-radius: 4px 0 0 4px; font-size: 1rem;}",
+      ".menu-drawer__search-button {padding: 0.5rem; border: 1px solid #ddd; border-left: none; border-radius: 0 4px 4px 0; background-color: #f5f5f5; cursor: pointer;}"
+    ]
   }
 }
