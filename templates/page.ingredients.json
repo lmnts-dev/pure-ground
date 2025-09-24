@@ -28,7 +28,7 @@
         "nav_color": true,
         "image": "shopify://shop_images/2018-08-21_17.31_1.jpg",
         "alt": "Ingredients",
-        "overlay": 30,
+        "overlay": 50,
         "hero": true,
         "fullwidth": true,
         "accent_color": false,
@@ -36,8 +36,8 @@
         "color_scheme": "cream",
         "top_spacing": 0,
         "bottom_spacing": 0,
-        "top_internal_spacing": 240,
-        "bottom_internal_spacing": 200
+        "top_internal_spacing": 170,
+        "bottom_internal_spacing": 150
       }
     },
     "hero": {
