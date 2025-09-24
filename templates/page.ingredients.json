@@ -26,9 +26,9 @@
       "settings": {
         "text_color": "light",
         "nav_color": true,
-        "image": "shopify://shop_images/IMG_5097.jpg",
+        "image": "shopify://shop_images/2018-08-21_17.31_1.jpg",
         "alt": "Ingredients",
-        "overlay": 20,
+        "overlay": 30,
         "hero": true,
         "fullwidth": true,
         "accent_color": false,
@@ -70,6 +70,97 @@
         "bottom_spacing": 20
       }
     },
+    "collections_grid_3twiQY": {
+      "type": "collections-grid",
+      "blocks": {
+        "collection_xymLab": {
+          "type": "collection",
+          "settings": {
+            "collection": "sustainably-sourced-organic-ingredients"
+          }
+        }
+      },
+      "block_order": [
+        "collection_xymLab"
+      ],
+      "name": "Collections Grid",
+      "settings": {
+        "heading": "",
+        "color_scheme": "cream",
+        "top_spacing": 10,
+        "bottom_spacing": 0
+      }
+    },
+    "collections_grid_4bkeJQ": {
+      "type": "collections-grid",
+      "blocks": {
+        "collection_i4fwia": {
+          "type": "collection",
+          "settings": {
+            "collection": "organic-herbs-roots-and-flowers"
+          }
+        },
+        "collection_qqACUF": {
+          "type": "collection",
+          "settings": {
+            "collection": "culinary-herbs"
+          }
+        },
+        "collection_7MCdfi": {
+          "type": "collection",
+          "settings": {
+            "collection": "organic-dried-chiles"
+          }
+        }
+      },
+      "block_order": [
+        "collection_i4fwia",
+        "collection_qqACUF",
+        "collection_7MCdfi"
+      ],
+      "name": "Collections Grid",
+      "settings": {
+        "heading": "",
+        "color_scheme": "cream",
+        "top_spacing": 20,
+        "bottom_spacing": 0
+      }
+    },
+    "collections_grid_nVCbad": {
+      "type": "collections-grid",
+      "blocks": {
+        "collection_fNKNfx": {
+          "type": "collection",
+          "settings": {
+            "collection": "seeds"
+          }
+        },
+        "collection_kJRVPj": {
+          "type": "collection",
+          "settings": {
+            "collection": "spices"
+          }
+        },
+        "collection_LtqV7J": {
+          "type": "collection",
+          "settings": {
+            "collection": "vegetables"
+          }
+        }
+      },
+      "block_order": [
+        "collection_fNKNfx",
+        "collection_kJRVPj",
+        "collection_LtqV7J"
+      ],
+      "name": "Collections Grid",
+      "settings": {
+        "heading": "",
+        "color_scheme": "cream",
+        "top_spacing": 10,
+        "bottom_spacing": 10
+      }
+    },
     "5f725e3c-ad09-4de2-a28d-951451b9d008": {
       "type": "bi-column-text-blocks",
       "blocks": {
@@ -101,20 +192,6 @@
       "settings": {
         "heading": "",
         "subheading": "Download A PDF Version of Our Product List",
-        "color_scheme": "cream",
-        "top_spacing": 50,
-        "bottom_spacing": 50
-      }
-    },
-    "featured_articles_bkMXVV": {
-      "type": "featured-articles",
-      "disabled": true,
-      "name": "Featured Articles",
-      "settings": {
-        "heading": "",
-        "button_label": "Button label",
-        "button_link": "",
-        "button_color": "default",
         "color_scheme": "cream",
         "top_spacing": 50,
         "bottom_spacing": 50
@@ -1872,8 +1949,10 @@
   "order": [
     "166074672815a86e9b",
     "hero",
+    "collections_grid_3twiQY",
+    "collections_grid_4bkeJQ",
+    "collections_grid_nVCbad",
     "5f725e3c-ad09-4de2-a28d-951451b9d008",
-    "featured_articles_bkMXVV",
     "1647470795ab7a1dc6",
     "1647550055d229b4ef",
     "16475507071b89b3ee",
