@@ -131,36 +131,6 @@
         "bottom_spacing": 0
       }
     },
-    "hero": {
-      "type": "rich-text",
-      "blocks": {
-        "48570e99-406c-4968-bd13-96aa95ec96aa": {
-          "type": "text",
-          "settings": {
-            "text": "<p>All products are available in multiple cut sizes for wholesale purchase. To request a sample, spec sheet, COA or pricing please contact us.</p>",
-            "text_size": "p-lg"
-          }
-        },
-        "8e7d6a5a-567a-451e-9a48-80dff736c35d": {
-          "type": "button",
-          "settings": {
-            "button_label": "Contact Us",
-            "button_link": "shopify://pages/contact",
-            "open_new_window": false
-          }
-        }
-      },
-      "block_order": [
-        "48570e99-406c-4968-bd13-96aa95ec96aa",
-        "8e7d6a5a-567a-451e-9a48-80dff736c35d"
-      ],
-      "settings": {
-        "color_scheme": "cream",
-        "hero": true,
-        "top_spacing": 80,
-        "bottom_spacing": 20
-      }
-    },
     "5f725e3c-ad09-4de2-a28d-951451b9d008": {
       "type": "bi-column-text-blocks",
       "blocks": {
@@ -197,6 +167,36 @@
         "bottom_spacing": 50
       }
     },
+    "hero": {
+      "type": "rich-text",
+      "blocks": {
+        "48570e99-406c-4968-bd13-96aa95ec96aa": {
+          "type": "text",
+          "settings": {
+            "text": "<p>All products are available in multiple cut sizes for wholesale purchase. To request a sample, spec sheet, COA or pricing please contact us.</p>",
+            "text_size": "p-lg"
+          }
+        },
+        "8e7d6a5a-567a-451e-9a48-80dff736c35d": {
+          "type": "button",
+          "settings": {
+            "button_label": "Contact Us",
+            "button_link": "shopify://pages/contact",
+            "open_new_window": false
+          }
+        }
+      },
+      "block_order": [
+        "48570e99-406c-4968-bd13-96aa95ec96aa",
+        "8e7d6a5a-567a-451e-9a48-80dff736c35d"
+      ],
+      "settings": {
+        "color_scheme": "cream",
+        "hero": true,
+        "top_spacing": 80,
+        "bottom_spacing": 20
+      }
+    },
     "divider_qjFRAk": {
       "type": "divider",
       "name": "Divider",
@@ -213,8 +213,8 @@
     "collections_grid_4bkeJQ",
     "collections_grid_nVCbad",
     "collections_grid_3twiQY",
-    "hero",
     "5f725e3c-ad09-4de2-a28d-951451b9d008",
+    "hero",
     "divider_qjFRAk"
   ]
 }
