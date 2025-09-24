@@ -191,9 +191,9 @@
         "8e7d6a5a-567a-451e-9a48-80dff736c35d"
       ],
       "settings": {
-        "color_scheme": "cream",
+        "color_scheme": "ground",
         "hero": true,
-        "top_spacing": 80,
+        "top_spacing": 40,
         "bottom_spacing": 20
       }
     },
