@@ -40,42 +40,6 @@
         "bottom_internal_spacing": 150
       }
     },
-    "5f725e3c-ad09-4de2-a28d-951451b9d008": {
-      "type": "bi-column-text-blocks",
-      "blocks": {
-        "template--14540390989847__5f725e3c-ad09-4de2-a28d-951451b9d008-16655973746e9f5fda-1": {
-          "type": "text",
-          "settings": {
-            "heading": "Organic Products",
-            "content": "",
-            "button_label": "Download PDF",
-            "button_link": "https://cdn.shopify.com/s/files/1/0562/9486/6967/files/Pure_Ground_Organic_Ingredient_List.pdf?v=1665592801",
-            "button_color": "default"
-          }
-        },
-        "template--14540390989847__5f725e3c-ad09-4de2-a28d-951451b9d008-16655973746e9f5fda-0": {
-          "type": "text",
-          "settings": {
-            "heading": "Sustainably Sourced Ingredients",
-            "content": "",
-            "button_label": "Download PDF",
-            "button_link": "https://cdn.shopify.com/s/files/1/0562/9486/6967/files/Pure_Ground_Sustainably_Sourced_List.pdf?v=1665592802",
-            "button_color": "default"
-          }
-        }
-      },
-      "block_order": [
-        "template--14540390989847__5f725e3c-ad09-4de2-a28d-951451b9d008-16655973746e9f5fda-1",
-        "template--14540390989847__5f725e3c-ad09-4de2-a28d-951451b9d008-16655973746e9f5fda-0"
-      ],
-      "settings": {
-        "heading": "",
-        "subheading": "Download A PDF Version of Our Product List",
-        "color_scheme": "cream",
-        "top_spacing": 50,
-        "bottom_spacing": 50
-      }
-    },
     "collections_grid_4bkeJQ": {
       "type": "collections-grid",
       "blocks": {
@@ -167,6 +131,42 @@
         "bottom_spacing": 0
       }
     },
+    "5f725e3c-ad09-4de2-a28d-951451b9d008": {
+      "type": "bi-column-text-blocks",
+      "blocks": {
+        "template--14540390989847__5f725e3c-ad09-4de2-a28d-951451b9d008-16655973746e9f5fda-1": {
+          "type": "text",
+          "settings": {
+            "heading": "Organic Products",
+            "content": "",
+            "button_label": "Download PDF",
+            "button_link": "https://cdn.shopify.com/s/files/1/0562/9486/6967/files/Pure_Ground_Organic_Ingredient_List.pdf?v=1665592801",
+            "button_color": "default"
+          }
+        },
+        "template--14540390989847__5f725e3c-ad09-4de2-a28d-951451b9d008-16655973746e9f5fda-0": {
+          "type": "text",
+          "settings": {
+            "heading": "Sustainably Sourced Ingredients",
+            "content": "",
+            "button_label": "Download PDF",
+            "button_link": "https://cdn.shopify.com/s/files/1/0562/9486/6967/files/Pure_Ground_Sustainably_Sourced_List.pdf?v=1665592802",
+            "button_color": "default"
+          }
+        }
+      },
+      "block_order": [
+        "template--14540390989847__5f725e3c-ad09-4de2-a28d-951451b9d008-16655973746e9f5fda-1",
+        "template--14540390989847__5f725e3c-ad09-4de2-a28d-951451b9d008-16655973746e9f5fda-0"
+      ],
+      "settings": {
+        "heading": "",
+        "subheading": "Download A PDF Version of Our Product List",
+        "color_scheme": "cream",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
+    },
     "hero": {
       "type": "rich-text",
       "blocks": {
@@ -200,10 +200,10 @@
   },
   "order": [
     "166074672815a86e9b",
-    "5f725e3c-ad09-4de2-a28d-951451b9d008",
     "collections_grid_4bkeJQ",
     "collections_grid_nVCbad",
     "collections_grid_3twiQY",
-    "hero"
+    "hero",
+    "5f725e3c-ad09-4de2-a28d-951451b9d008"
   ]
 }
