@@ -128,7 +128,7 @@
         "heading": "",
         "color_scheme": "cream",
         "top_spacing": 10,
-        "bottom_spacing": 0
+        "bottom_spacing": 20
       }
     },
     "5f725e3c-ad09-4de2-a28d-951451b9d008": {
@@ -162,8 +162,8 @@
       "settings": {
         "heading": "",
         "subheading": "Download A PDF Version of Our Product List",
-        "color_scheme": "cream",
-        "top_spacing": 50,
+        "color_scheme": "grass",
+        "top_spacing": 40,
         "bottom_spacing": 50
       }
     },
@@ -191,7 +191,7 @@
         "8e7d6a5a-567a-451e-9a48-80dff736c35d"
       ],
       "settings": {
-        "color_scheme": "grass",
+        "color_scheme": "cream",
         "hero": true,
         "top_spacing": 40,
         "bottom_spacing": 20
