@@ -105,27 +105,6 @@
         "bottom_spacing": 0
       }
     },
-    "collections_grid_3twiQY": {
-      "type": "collections-grid",
-      "blocks": {
-        "collection_xymLab": {
-          "type": "collection",
-          "settings": {
-            "collection": "sustainably-sourced-organic-ingredients"
-          }
-        }
-      },
-      "block_order": [
-        "collection_xymLab"
-      ],
-      "name": "Collections Grid",
-      "settings": {
-        "heading": "",
-        "color_scheme": "cream",
-        "top_spacing": 10,
-        "bottom_spacing": 0
-      }
-    },
     "collections_grid_nVCbad": {
       "type": "collections-grid",
       "blocks": {
@@ -159,6 +138,27 @@
         "color_scheme": "cream",
         "top_spacing": 10,
         "bottom_spacing": 10
+      }
+    },
+    "collections_grid_3twiQY": {
+      "type": "collections-grid",
+      "blocks": {
+        "collection_xymLab": {
+          "type": "collection",
+          "settings": {
+            "collection": "sustainably-sourced-organic-ingredients"
+          }
+        }
+      },
+      "block_order": [
+        "collection_xymLab"
+      ],
+      "name": "Collections Grid",
+      "settings": {
+        "heading": "",
+        "color_scheme": "cream",
+        "top_spacing": 10,
+        "bottom_spacing": 0
       }
     },
     "5f725e3c-ad09-4de2-a28d-951451b9d008": {
@@ -1950,8 +1950,8 @@
     "166074672815a86e9b",
     "hero",
     "collections_grid_4bkeJQ",
-    "collections_grid_3twiQY",
     "collections_grid_nVCbad",
+    "collections_grid_3twiQY",
     "5f725e3c-ad09-4de2-a28d-951451b9d008",
     "1647470795ab7a1dc6",
     "1647550055d229b4ef",
