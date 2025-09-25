@@ -1,0 +1,142 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "f65a28de-0fcc-4a1d-8c0e-9d15bbe4eafe": {
+      "type": "new-collection-banner",
+      "blocks": {
+        "05c474c4-e3d6-498c-b5b1-866cb2c56a56": {
+          "type": "heading",
+          "settings": {
+            "heading": "Shop",
+            "heading_other": "{{ collection.title }}",
+            "heading_size": "h1"
+          }
+        },
+        "5d46b271-e2a8-406d-9859-e72325d29dc4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>All ingredients are available in multiple cut sizes for wholesale purchase. </p>",
+            "text_other": "<p>{{ collection.metafields.custom.banner_text.value }}</p>"
+          }
+        }
+      },
+      "block_order": [
+        "05c474c4-e3d6-498c-b5b1-866cb2c56a56",
+        "5d46b271-e2a8-406d-9859-e72325d29dc4"
+      ],
+      "disabled": true,
+      "settings": {
+        "text_color": "light",
+        "nav_color": true,
+        "image": "shopify://shop_images/IMG_5097.jpg",
+        "image_other": "{{ collection.image }}",
+        "alt": "",
+        "overlay": 50,
+        "hero": true,
+        "fullwidth": true,
+        "accent_color": false,
+        "alignment": "center",
+        "color_scheme": "cream",
+        "top_spacing": 0,
+        "bottom_spacing": 0,
+        "top_internal_spacing": 200,
+        "bottom_internal_spacing": 200
+      }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": true,
+        "color_scheme": "accent-1"
+      }
+    },
+    "category_list_PD3ghE": {
+      "type": "category-list",
+      "blocks": {
+        "collection_YLJGty": {
+          "type": "collection",
+          "settings": {
+            "collection": "spices"
+          }
+        },
+        "collection_zyfptV": {
+          "type": "collection",
+          "settings": {
+            "collection": "culinary-herbs"
+          }
+        },
+        "collection_tDYNDz": {
+          "type": "collection",
+          "settings": {
+            "collection": "organic-dried-chiles"
+          }
+        },
+        "collection_GY4HJQ": {
+          "type": "collection",
+          "settings": {
+            "collection": "vegetables"
+          }
+        },
+        "collection_eWDWFn": {
+          "type": "collection",
+          "settings": {
+            "collection": "seeds"
+          }
+        },
+        "collection_QBqGMn": {
+          "type": "collection",
+          "settings": {
+            "collection": "sustainably-sourced-organic-ingredients"
+          }
+        }
+      },
+      "block_order": [
+        "collection_YLJGty",
+        "collection_zyfptV",
+        "collection_tDYNDz",
+        "collection_GY4HJQ",
+        "collection_eWDWFn",
+        "collection_QBqGMn"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Categories"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 24,
+        "columns_desktop": 4,
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "enable_filtering": false,
+        "filter_type": "horizontal",
+        "enable_sorting": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "f65a28de-0fcc-4a1d-8c0e-9d15bbe4eafe",
+    "banner",
+    "category_list_PD3ghE",
+    "product-grid"
+  ]
+}
