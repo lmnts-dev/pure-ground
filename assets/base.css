@@ -2753,25 +2753,3 @@ details-disclosure > details {
   .shpg_payicon_holder{ flex-direction: column;  gap: 15px;}
   .variant_box{ width:100%;}  
 }
-.collection-layout {
-  display: flex;
-  gap: 2rem;
-}
-
-.collection-sidebar {
-  width: 250px;
-  flex-shrink: 0;
-}
-
-.collection-products {
-  flex: 1;
-}
-
-/* Optional styling for filter box */
-.collection-sidebar .facets {
-  border: 1px solid #ddd;
-  padding: 1rem;
-  border-radius: 6px;
-  background: #fff;
-}
-
