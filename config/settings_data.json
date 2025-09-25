@@ -12,7 +12,7 @@
     "modal_image": "shopify://shop_images/unsplash_1RrszXCTq5U.jpg",
     "modal_heading": "Online shopping coming soon!",
     "modal_text": "<p>Exciting stuff ahead - we're currently building out our online shopping experience. In the meantime, please peruse our products list or reach out if you'd like to request more information. You can reach us at:</p><p><a href=\"mailto:info@puregroundingredients.com\" title=\"mailto:info@puregroundingredients.com\">info@puregroundingredients.com</a></p><p><a href=\"tel:775-297-4047\" title=\"tel:775-297-4047\">775-297-4047</a></p>",
-    "button_label": "View Products List",
+    "button_label": "",
     "button_link": "shopify://pages/ingredients",
     "modal_newsletter": false,
     "resources_page": "resources",
