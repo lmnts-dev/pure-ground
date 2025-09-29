@@ -132,6 +132,7 @@
           },
           "link_gixage": {
             "type": "link",
+            "disabled": true,
             "settings": {
               "label": "Shop Now",
               "link": "shopify://collections/vegetables"
