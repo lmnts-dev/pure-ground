@@ -247,6 +247,18 @@
         "image_LzTrf9": {
           "type": "image",
           "settings": {
+            "image_width": "third"
+          }
+        },
+        "image_q9cFC6": {
+          "type": "image",
+          "settings": {
+            "image_width": "half"
+          }
+        },
+        "image_AztxLq": {
+          "type": "image",
+          "settings": {
             "image_width": "half"
           }
         }
@@ -273,7 +285,9 @@
         "image_ckXfdF",
         "image_Wczqxz",
         "image_Frf4MC",
-        "image_LzTrf9"
+        "image_LzTrf9",
+        "image_q9cFC6",
+        "image_AztxLq"
       ],
       "name": "Image Grid",
       "settings": {
