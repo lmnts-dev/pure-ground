@@ -11,6 +11,7 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
@@ -25,13 +26,57 @@
             "common_name": "Alfalfa Leaf",
             "botanical_name": "Medicago Sativa",
             "product_code": "ALFO",
+            "fair_trade": "yes",
+            "description": ""
+          }
+        },
+        "item_FVkRTX": {
+          "type": "item",
+          "settings": {
+            "common_name": "Artichoke Leaves",
+            "botanical_name": "Cynara Scolymus",
+            "product_code": "ARTO",
+            "fair_trade": "no",
+            "description": ""
+          }
+        },
+        "item_cr7tEt": {
+          "type": "item",
+          "settings": {
+            "common_name": "Ashwagandha",
+            "botanical_name": "Withania Somnifera",
+            "product_code": "ASHO",
+            "fair_trade": "yes",
+            "description": ""
+          }
+        },
+        "item_pH4pER": {
+          "type": "item",
+          "settings": {
+            "common_name": "Astragalus Root",
+            "botanical_name": "Astragulis Membranaceus",
+            "product_code": "ASTO",
+            "fair_trade": "no",
+            "description": ""
+          }
+        },
+        "item_BYmdDR": {
+          "type": "item",
+          "settings": {
+            "common_name": "Bilberries",
+            "botanical_name": "Vaccinium Myrtillus",
+            "product_code": "BILO",
             "fair_trade": "no",
             "description": ""
           }
         }
       },
       "block_order": [
-        "item_ahUxk7"
+        "item_ahUxk7",
+        "item_FVkRTX",
+        "item_cr7tEt",
+        "item_pH4pER",
+        "item_BYmdDR"
       ],
       "name": "Spec Sheets",
       "settings": {
@@ -48,10 +93,200 @@
         "top_spacing": 50,
         "bottom_spacing": 50
       }
+    },
+    "image_grid_KLK4xz": {
+      "type": "image-grid",
+      "blocks": {
+        "image_ccGQNJ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ALFO-PW_copy_website.jpg",
+            "image_width": "third"
+          }
+        },
+        "image_MQJccn": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ASHO-PI_copy_website.jpg",
+            "image_width": "third"
+          }
+        },
+        "image_dja67i": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ASTO-PW_copy_website.jpg",
+            "image_width": "third"
+          }
+        },
+        "image_JpJbpq": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/MTSO-WH_copy_website.jpg",
+            "image_width": "third"
+          }
+        },
+        "image_RGFWKf": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/DARO-TC_copy_website.jpg",
+            "image_width": "third"
+          }
+        },
+        "image_t7pmCL": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/PSFO-TC_copy_website.jpg",
+            "image_width": "third"
+          }
+        },
+        "image_C4yR3n": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/BURO-TC_copy_website.jpg",
+            "image_width": "third"
+          }
+        },
+        "image_YRL6Cb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/BILO-BL_copy_website.jpg",
+            "image_width": "third"
+          }
+        },
+        "image_bpXeHg": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/MULO-GN_copy_website.jpg",
+            "image_width": "third"
+          }
+        },
+        "image_FMBNTn": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/LVBP-WH_copy_website.jpg",
+            "image_width": "third"
+          }
+        },
+        "image_qmPiLd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/EPHO-CS_copy_website.jpg",
+            "image_width": "third"
+          }
+        },
+        "image_H9xnF8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/RSBO-WH_copy_website.jpg",
+            "image_width": "third"
+          }
+        },
+        "image_4M8ggf": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/SARO-PW_copy_websitee.jpg",
+            "image_width": "third"
+          }
+        },
+        "image_EgAhbQ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/CTBO-WH_copy_website.jpg",
+            "image_width": "third"
+          }
+        },
+        "image_X3RdQb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/RASO-GN_copy_website.jpg",
+            "image_width": "third"
+          }
+        },
+        "image_EVVf3p": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/LAVO-WH_copy_Website.jpg",
+            "image_width": "third"
+          }
+        },
+        "image_VxUH4y": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/SPEO-TC_copy_Website.jpg",
+            "image_width": "third"
+          }
+        },
+        "image_wLbiYh": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/BLEO-CS_copy_website.jpg",
+            "image_width": "third"
+          }
+        },
+        "image_ckXfdF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ELFO-TC_copy_website.jpg",
+            "image_width": "third"
+          }
+        },
+        "image_Wczqxz": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/WCBO-PW_copy_website.jpg",
+            "image_width": "third"
+          }
+        },
+        "image_Frf4MC": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ELEO-PW_copy_website.jpg",
+            "image_width": "third"
+          }
+        },
+        "image_LzTrf9": {
+          "type": "image",
+          "settings": {
+            "image_width": "half"
+          }
+        }
+      },
+      "block_order": [
+        "image_ccGQNJ",
+        "image_MQJccn",
+        "image_dja67i",
+        "image_JpJbpq",
+        "image_RGFWKf",
+        "image_t7pmCL",
+        "image_C4yR3n",
+        "image_YRL6Cb",
+        "image_bpXeHg",
+        "image_FMBNTn",
+        "image_qmPiLd",
+        "image_H9xnF8",
+        "image_4M8ggf",
+        "image_EgAhbQ",
+        "image_X3RdQb",
+        "image_EVVf3p",
+        "image_VxUH4y",
+        "image_wLbiYh",
+        "image_ckXfdF",
+        "image_Wczqxz",
+        "image_Frf4MC",
+        "image_LzTrf9"
+      ],
+      "name": "Image Grid",
+      "settings": {
+        "row_height": 260,
+        "color_scheme": "ground",
+        "top_spacing": 30,
+        "bottom_spacing": 30
+      }
     }
   },
   "order": [
     "main",
-    "spec_sheets_JixNeL"
+    "spec_sheets_JixNeL",
+    "image_grid_KLK4xz"
   ]
 }
