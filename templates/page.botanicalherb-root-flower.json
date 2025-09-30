@@ -15,9 +15,43 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "spec_sheets_JixNeL": {
+      "type": "spec-sheets",
+      "blocks": {
+        "item_ahUxk7": {
+          "type": "item",
+          "settings": {
+            "common_name": "Alfalfa Leaf",
+            "botanical_name": "Medicago Sativa",
+            "product_code": "ALFO",
+            "fair_trade": "no",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_ahUxk7"
+      ],
+      "name": "Spec Sheets",
+      "settings": {
+        "common_name_label": "Common Name",
+        "botanical_name_label": "Botanical Name",
+        "product_code_label": "Product Code",
+        "all_ingredients_label": "All Ingredients",
+        "sustainably_sourced": "Not working",
+        "sustainably_link": "",
+        "fair_trade_disclaimer": "*Fair-Trade available upon request",
+        "hide_header": false,
+        "color_scheme": "cream",
+        "table_color": "sky",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "spec_sheets_JixNeL"
   ]
 }
