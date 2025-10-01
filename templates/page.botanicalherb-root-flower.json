@@ -80,9 +80,9 @@
       "settings": {
         "heading": "",
         "subheading": "Download A PDF Version of Our Product List",
-        "color_scheme": "cream",
-        "top_spacing": 50,
-        "bottom_spacing": 50
+        "color_scheme": "dark-cream",
+        "top_spacing": 20,
+        "bottom_spacing": 0
       }
     },
     "image_grid_KLK4xz": {
