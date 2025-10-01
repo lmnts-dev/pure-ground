@@ -130,18 +130,18 @@
             "image_width": "third"
           }
         },
-        "image_NmkCKp": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/women-harvesting.jpg",
-            "image_width": "full"
-          }
-        },
         "image_wLbiYh": {
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/PAPO-GR_copy_website.jpg",
             "image_width": "third"
+          }
+        },
+        "image_NmkCKp": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/M3dDyhmwsqvkZmPa85t2rc.jpg",
+            "image_width": "half"
           }
         }
       },
@@ -152,8 +152,8 @@
         "image_AdH8Nr",
         "image_YRL6Cb",
         "image_JWmbC6",
-        "image_NmkCKp",
-        "image_wLbiYh"
+        "image_wLbiYh",
+        "image_NmkCKp"
       ],
       "name": "Image Grid",
       "settings": {
