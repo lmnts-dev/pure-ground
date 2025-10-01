@@ -48,6 +48,43 @@
         "bottom_internal_spacing": 40
       }
     },
+    "bi_column_text_blocks_TmqJAq": {
+      "type": "bi-column-text-blocks",
+      "blocks": {
+        "text_PEiXbU": {
+          "type": "text",
+          "settings": {
+            "heading": "Organic Products",
+            "content": "",
+            "button_label": "Download PDF",
+            "button_link": "https://cdn.shopify.com/s/files/1/0562/9486/6967/files/Pure_Ground_Organic_Ingredient_List.pdf?v=1665592801",
+            "button_color": "sun"
+          }
+        },
+        "text_6TfPG7": {
+          "type": "text",
+          "settings": {
+            "heading": "Sustainability Sourced Products b",
+            "content": "",
+            "button_label": "Download PDF",
+            "button_link": "https://cdn.shopify.com/s/files/1/0562/9486/6967/files/Pure_Ground_Sustainably_Sourced_List.pdf?v=1665592802",
+            "button_color": "sun"
+          }
+        }
+      },
+      "block_order": [
+        "text_PEiXbU",
+        "text_6TfPG7"
+      ],
+      "name": "Bi-Column Text Blocks",
+      "settings": {
+        "heading": "",
+        "subheading": "Download a PDF Version of our Product List",
+        "color_scheme": "dark-cream",
+        "top_spacing": 10,
+        "bottom_spacing": 20
+      }
+    },
     "image_grid_KLK4xz": {
       "type": "image-grid",
       "blocks": {
@@ -472,6 +509,7 @@
   "order": [
     "main",
     "content_with_bg_image_WDDewi",
+    "bi_column_text_blocks_TmqJAq",
     "image_grid_KLK4xz",
     "spec_sheets_JixNeL"
   ]
