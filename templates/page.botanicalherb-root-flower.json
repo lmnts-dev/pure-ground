@@ -17,81 +17,35 @@
         "padding_bottom": 28
       }
     },
-    "spec_sheets_JixNeL": {
-      "type": "spec-sheets",
+    "content_with_bg_image_WDDewi": {
+      "type": "content-with-bg-image",
       "blocks": {
-        "item_ahUxk7": {
-          "type": "item",
+        "subheading_9KCm3R": {
+          "type": "subheading",
           "settings": {
-            "common_name": "Alfalfa Leaf",
-            "botanical_name": "Medicago Sativa",
-            "product_code": "ALFO",
-            "fair_trade": "yes",
-            "description": ""
-          }
-        },
-        "item_FVkRTX": {
-          "type": "item",
-          "settings": {
-            "common_name": "Artichoke Leaves",
-            "botanical_name": "Cynara Scolymus",
-            "product_code": "ARTO",
-            "fair_trade": "no",
-            "description": ""
-          }
-        },
-        "item_cr7tEt": {
-          "type": "item",
-          "settings": {
-            "common_name": "Ashwagandha",
-            "botanical_name": "Withania Somnifera",
-            "product_code": "ASHO",
-            "fair_trade": "yes",
-            "description": ""
-          }
-        },
-        "item_pH4pER": {
-          "type": "item",
-          "settings": {
-            "common_name": "Astragalus Root",
-            "botanical_name": "Astragulis Membranaceus",
-            "product_code": "ASTO",
-            "fair_trade": "no",
-            "description": ""
-          }
-        },
-        "item_BYmdDR": {
-          "type": "item",
-          "settings": {
-            "common_name": "Bilberries",
-            "botanical_name": "Vaccinium Myrtillus",
-            "product_code": "BILO",
-            "fair_trade": "no",
-            "description": ""
+            "subheading": "Organic Botanical Herbs, Roots & Flowers"
           }
         }
       },
       "block_order": [
-        "item_ahUxk7",
-        "item_FVkRTX",
-        "item_cr7tEt",
-        "item_pH4pER",
-        "item_BYmdDR"
+        "subheading_9KCm3R"
       ],
-      "name": "Spec Sheets",
+      "name": "Content with Bg Image",
       "settings": {
-        "common_name_label": "Common Name",
-        "botanical_name_label": "Botanical Name",
-        "product_code_label": "Product Code",
-        "all_ingredients_label": "All Ingredients",
-        "sustainably_sourced": "Not working",
-        "sustainably_link": "",
-        "fair_trade_disclaimer": "*Fair-Trade available upon request",
-        "hide_header": false,
+        "text_color": "light",
+        "nav_color": true,
+        "image": "shopify://shop_images/unsplash_xDwEa2kaeJA.jpg",
+        "alt": "",
+        "overlay": 30,
+        "hero": false,
+        "fullwidth": true,
+        "accent_color": false,
+        "alignment": "left",
         "color_scheme": "cream",
-        "table_color": "sky",
-        "top_spacing": 50,
-        "bottom_spacing": 50
+        "top_spacing": 0,
+        "bottom_spacing": 0,
+        "top_internal_spacing": 180,
+        "bottom_internal_spacing": 100
       }
     },
     "image_grid_KLK4xz": {
@@ -137,6 +91,13 @@
           "settings": {
             "image": "shopify://shop_images/BLCO-PI_copy_website.jpg",
             "image_width": "third"
+          }
+        },
+        "image_NmkCKp": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/About_Components-1.jpg",
+            "image_width": "full"
           }
         },
         "image_wLbiYh": {
@@ -188,6 +149,13 @@
             "image_width": "third"
           }
         },
+        "image_EtF3rV": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Organic.png",
+            "image_width": "third"
+          }
+        },
         "image_RGFWKf": {
           "type": "image",
           "settings": {
@@ -235,6 +203,13 @@
           "settings": {
             "image": "shopify://shop_images/JUNO-WH_copy_website.jpg",
             "image_width": "third"
+          }
+        },
+        "image_jED4nw": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/unsplash_8rTwokBwz1w_c9e99f30-b9ba-43c5-a624-1ddfbd6b771d.jpg",
+            "image_width": "half"
           }
         },
         "image_FMBNTn": {
@@ -334,12 +309,6 @@
             "image": "shopify://shop_images/WCBO-PW_copy_website.jpg",
             "image_width": "third"
           }
-        },
-        "image_NmkCKp": {
-          "type": "image",
-          "settings": {
-            "image_width": "third"
-          }
         }
       },
       "block_order": [
@@ -349,6 +318,7 @@
         "image_AdH8Nr",
         "image_YRL6Cb",
         "image_JWmbC6",
+        "image_NmkCKp",
         "image_wLbiYh",
         "image_C4yR3n",
         "image_89Ggm3",
@@ -356,6 +326,7 @@
         "image_EgAhbQ",
         "image_347h37",
         "image_iXneAm",
+        "image_EtF3rV",
         "image_RGFWKf",
         "image_qmPiLd",
         "image_B7MJqf",
@@ -363,6 +334,7 @@
         "image_Frf4MC",
         "image_t6VNGK",
         "image_4DeBRV",
+        "image_jED4nw",
         "image_FMBNTn",
         "image_EVVf3p",
         "image_t3d8k6",
@@ -376,21 +348,98 @@
         "image_H9xnF8",
         "image_4M8ggf",
         "image_VxUH4y",
-        "image_Wczqxz",
-        "image_NmkCKp"
+        "image_Wczqxz"
       ],
       "name": "Image Grid",
       "settings": {
-        "row_height": 260,
+        "row_height": 280,
         "color_scheme": "ground",
         "top_spacing": 30,
         "bottom_spacing": 30
+      }
+    },
+    "spec_sheets_JixNeL": {
+      "type": "spec-sheets",
+      "blocks": {
+        "item_ahUxk7": {
+          "type": "item",
+          "settings": {
+            "common_name": "Alfalfa Leaf",
+            "botanical_name": "Medicago Sativa",
+            "product_code": "ALFO",
+            "fair_trade": "yes",
+            "description": ""
+          }
+        },
+        "item_FVkRTX": {
+          "type": "item",
+          "settings": {
+            "common_name": "Artichoke Leaves",
+            "botanical_name": "Cynara Scolymus",
+            "product_code": "ARTO",
+            "fair_trade": "no",
+            "description": ""
+          }
+        },
+        "item_cr7tEt": {
+          "type": "item",
+          "settings": {
+            "common_name": "Ashwagandha",
+            "botanical_name": "Withania Somnifera",
+            "product_code": "ASHO",
+            "fair_trade": "yes",
+            "description": ""
+          }
+        },
+        "item_pH4pER": {
+          "type": "item",
+          "settings": {
+            "common_name": "Astragalus Root",
+            "botanical_name": "Astragulis Membranaceus",
+            "product_code": "ASTO",
+            "fair_trade": "no",
+            "description": ""
+          }
+        },
+        "item_BYmdDR": {
+          "type": "item",
+          "settings": {
+            "common_name": "Bilberries",
+            "botanical_name": "Vaccinium Myrtillus",
+            "product_code": "BILO",
+            "fair_trade": "no",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_ahUxk7",
+        "item_FVkRTX",
+        "item_cr7tEt",
+        "item_pH4pER",
+        "item_BYmdDR"
+      ],
+      "name": "Spec Sheets",
+      "settings": {
+        "common_name_label": "Common Name",
+        "botanical_name_label": "Botanical Name",
+        "product_code_label": "Product Code",
+        "all_ingredients_label": "All Ingredients",
+        "sustainably_sourced": "Not working",
+        "sustainably_link": "",
+        "fair_trade_disclaimer": "*Fair-Trade available upon request",
+        "hide_header": false,
+        "color_scheme": "cream",
+        "table_color": "sky",
+        "top_spacing": 50,
+        "bottom_spacing": 50
       }
     }
   },
   "order": [
     "main",
-    "spec_sheets_JixNeL",
-    "image_grid_KLK4xz"
+    "content_with_bg_image_WDDewi",
+    "image_grid_KLK4xz",
+    "spec_sheets_JixNeL"
   ]
 }
