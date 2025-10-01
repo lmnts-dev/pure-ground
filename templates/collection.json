@@ -271,11 +271,22 @@
             "button_link": "shopify://pages/organic-spices-vegetables-and-herbs",
             "button_color": "grass"
           }
+        },
+        "text_nm7T3j": {
+          "type": "text",
+          "settings": {
+            "heading": "",
+            "content": "",
+            "button_label": "Organic Dried Chiles",
+            "button_link": "shopify://pages/organic-dried-chiles",
+            "button_color": "default"
+          }
         }
       },
       "block_order": [
         "text_aPeLEp",
-        "text_6dY9Nt"
+        "text_6dY9Nt",
+        "text_nm7T3j"
       ],
       "name": "Bi-Column Text Blocks",
       "settings": {
