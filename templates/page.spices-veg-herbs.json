@@ -215,7 +215,7 @@
         "image_jED4nw": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/add-certain-spices-only-at-the-end-1683560012.jpg",
+            "image": "shopify://shop_images/unsplash_obMdrL5pFWI.jpg",
             "image_width": "half"
           }
         },
@@ -386,7 +386,7 @@
       "settings": {
         "row_height": 280,
         "color_scheme": "dark-cream",
-        "top_spacing": 0,
+        "top_spacing": 20,
         "bottom_spacing": 30
       }
     },
