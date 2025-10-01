@@ -51,6 +51,13 @@
     "image_grid_KLK4xz": {
       "type": "image-grid",
       "blocks": {
+        "image_cmETNT": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/add-certain-spices-only-at-the-end-1683560012.jpg",
+            "image_width": "full"
+          }
+        },
         "image_ccGQNJ": {
           "type": "image",
           "settings": {
@@ -333,6 +340,7 @@
         }
       },
       "block_order": [
+        "image_cmETNT",
         "image_ccGQNJ",
         "image_MQJccn",
         "image_dja67i",
@@ -378,7 +386,7 @@
       "settings": {
         "row_height": 280,
         "color_scheme": "dark-cream",
-        "top_spacing": 30,
+        "top_spacing": 0,
         "bottom_spacing": 30
       }
     },
