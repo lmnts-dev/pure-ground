@@ -90,27 +90,18 @@
             "text": "<p> In the meantime, please peruse our products list (product tab) or reach out if you'd like to request more information. You can reach us at:</p><p><a href=\"mailto:info@puregroundingredients.com\" title=\"mailto:info@puregroundingredients.com\">info@puregroundingredients.com</a></p><p><a href=\"tel:775-297-4047\" title=\"tel:775-297-4047\">775-297-4047</a></p>",
             "text_size": "default"
           }
-        },
-        "button_ph3M8M": {
-          "type": "button",
-          "settings": {
-            "button_label": "view products",
-            "button_link": "shopify://pages/ingredients",
-            "open_new_window": false
-          }
         }
       },
       "block_order": [
         "heading_iiPqKc",
-        "text_aXNQ3f",
-        "button_ph3M8M"
+        "text_aXNQ3f"
       ],
       "name": "Rich Text",
       "settings": {
         "color_scheme": "cream",
         "hero": false,
         "top_spacing": 50,
-        "bottom_spacing": 30
+        "bottom_spacing": 0
       }
     },
     "category_list_PD3ghE": {
@@ -257,6 +248,43 @@
         "top_spacing": 0,
         "bottom_spacing": 50
       }
+    },
+    "bi_column_text_blocks_mTDVkw": {
+      "type": "bi-column-text-blocks",
+      "blocks": {
+        "text_aPeLEp": {
+          "type": "text",
+          "settings": {
+            "heading": "",
+            "content": "",
+            "button_label": "Botanicals, Herbs, Roots, Flowers",
+            "button_link": "shopify://pages/organic-botanical-herbs-roots-and-flowers",
+            "button_color": "default"
+          }
+        },
+        "text_6dY9Nt": {
+          "type": "text",
+          "settings": {
+            "heading": "",
+            "content": "",
+            "button_label": "Culinary Spices, Vegetables & Herbs",
+            "button_link": "shopify://pages/organic-spices-vegetables-and-herbs",
+            "button_color": "grass"
+          }
+        }
+      },
+      "block_order": [
+        "text_aPeLEp",
+        "text_6dY9Nt"
+      ],
+      "name": "Bi-Column Text Blocks",
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "color_scheme": "cream",
+        "top_spacing": 0,
+        "bottom_spacing": 50
+      }
     }
   },
   "order": [
@@ -267,6 +295,7 @@
     "category_list_PD3ghE",
     "product-grid",
     "collections_grid_YXRWy9",
-    "collections_grid_N9dGPQ"
+    "collections_grid_N9dGPQ",
+    "bi_column_text_blocks_mTDVkw"
   ]
 }
