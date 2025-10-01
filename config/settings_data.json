@@ -106,8 +106,30 @@
               "image": "shopify://shop_images/MMcIver2022-5850.jpg"
             }
           },
+          "label_H6ezX7": {
+            "type": "label",
+            "settings": {
+              "label": "Products",
+              "color": ""
+            }
+          },
+          "page_9DW89G": {
+            "type": "page",
+            "settings": {
+              "page": "organic-botanical-herbs-roots-and-flowers",
+              "image": "shopify://shop_images/unsplash_xDwEa2kaeJA.jpg"
+            }
+          },
+          "page_9ch7K6": {
+            "type": "page",
+            "settings": {
+              "page": "organic-spices-vegetables-and-herbs",
+              "image": "shopify://shop_images/add-certain-spices-only-at-the-end-1683560012.jpg"
+            }
+          },
           "74b22fdc-0b59-413a-b25b-92f994bab3a9": {
             "type": "link",
+            "disabled": true,
             "settings": {
               "label": "Products",
               "link": "shopify://pages/ingredients"
@@ -141,6 +163,9 @@
           "label_xxGtdz",
           "page_H8c3LC",
           "page_BAaH9C",
+          "label_H6ezX7",
+          "page_9DW89G",
+          "page_9ch7K6",
           "74b22fdc-0b59-413a-b25b-92f994bab3a9",
           "link_gixage",
           "f537cb93-a2e6-4b92-b5fe-d43941dc8f93"
