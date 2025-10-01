@@ -35,8 +35,8 @@
         "98e4e98c-6256-4af7-8682-879282cdcf70": {
           "type": "button",
           "settings": {
-            "button_label": "Shop Ingredients",
-            "button_link": "shopify://collections",
+            "button_label": "View Products",
+            "button_link": "shopify://pages/organic-botanical-herbs-roots-and-flowers",
             "button_color": "cream"
           }
         }
