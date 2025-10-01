@@ -152,7 +152,7 @@
         "image_EtF3rV": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Organic.png",
+            "image": "shopify://shop_images/USDA_organic_seal_svg.png",
             "image_width": "third"
           }
         },
