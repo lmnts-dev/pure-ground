@@ -450,19 +450,19 @@
         "text_RqgbYT": {
           "type": "text",
           "settings": {
-            "heading": "Heading",
-            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ullamcorper, tortor ut viverra pulvinar, orci tellus elementum odio, et malesuada neque diam vel sem. Curabitur lacus sem, commodo sed lacus id, vulputate tincidunt sapien.</p>",
-            "button_label": "",
-            "button_link": "",
+            "heading": "Organic Products",
+            "content": "",
+            "button_label": "Download PDF",
+            "button_link": "https://cdn.shopify.com/s/files/1/0562/9486/6967/files/Pure_Ground_Organic_Ingredient_List.pdf?v=1665592801",
             "button_color": "default"
           }
         },
         "text_fMakfW": {
           "type": "text",
           "settings": {
-            "heading": "Heading",
-            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ullamcorper, tortor ut viverra pulvinar, orci tellus elementum odio, et malesuada neque diam vel sem. Curabitur lacus sem, commodo sed lacus id, vulputate tincidunt sapien.</p>",
-            "button_label": "",
+            "heading": "Sustainably Sourced Ingredients",
+            "content": "",
+            "button_label": "Download PDF",
             "button_link": "",
             "button_color": "default"
           }
