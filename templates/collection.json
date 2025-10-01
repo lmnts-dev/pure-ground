@@ -60,6 +60,18 @@
         "color_scheme": "accent-1"
       }
     },
+    "image_ELBKMF": {
+      "type": "image",
+      "name": "Image",
+      "settings": {
+        "image": "shopify://shop_images/unsplash_IQVFVH0ajag.jpg",
+        "image_style": "fullwidth",
+        "nav_color": false,
+        "color_scheme": "cream",
+        "top_spacing": 0,
+        "bottom_spacing": 0
+      }
+    },
     "rich_text_gQxPzr": {
       "type": "rich-text",
       "blocks": {
@@ -82,8 +94,8 @@
         "button_ph3M8M": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
-            "button_link": "",
+            "button_label": "view products",
+            "button_link": "shopify://pages/ingredients",
             "open_new_window": false
           }
         }
@@ -98,7 +110,7 @@
         "color_scheme": "cream",
         "hero": false,
         "top_spacing": 50,
-        "bottom_spacing": 0
+        "bottom_spacing": 30
       }
     },
     "category_list_PD3ghE": {
@@ -201,6 +213,7 @@
         "collection_aUiRhY",
         "collection_BKkV7P"
       ],
+      "disabled": true,
       "name": "Collections Grid",
       "settings": {
         "heading": "",
@@ -236,6 +249,7 @@
         "collection_qwDeeY",
         "collection_YtXKjb"
       ],
+      "disabled": true,
       "name": "Collections Grid",
       "settings": {
         "heading": "",
@@ -248,6 +262,7 @@
   "order": [
     "f65a28de-0fcc-4a1d-8c0e-9d15bbe4eafe",
     "banner",
+    "image_ELBKMF",
     "rich_text_gQxPzr",
     "category_list_PD3ghE",
     "product-grid",
