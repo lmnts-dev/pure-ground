@@ -443,12 +443,50 @@
         "top_spacing": 50,
         "bottom_spacing": 50
       }
+    },
+    "bi_column_text_blocks_Pe8Qcw": {
+      "type": "bi-column-text-blocks",
+      "blocks": {
+        "text_RqgbYT": {
+          "type": "text",
+          "settings": {
+            "heading": "Heading",
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ullamcorper, tortor ut viverra pulvinar, orci tellus elementum odio, et malesuada neque diam vel sem. Curabitur lacus sem, commodo sed lacus id, vulputate tincidunt sapien.</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_color": "default"
+          }
+        },
+        "text_fMakfW": {
+          "type": "text",
+          "settings": {
+            "heading": "Heading",
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ullamcorper, tortor ut viverra pulvinar, orci tellus elementum odio, et malesuada neque diam vel sem. Curabitur lacus sem, commodo sed lacus id, vulputate tincidunt sapien.</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_color": "default"
+          }
+        }
+      },
+      "block_order": [
+        "text_RqgbYT",
+        "text_fMakfW"
+      ],
+      "name": "Bi-Column Text Blocks",
+      "settings": {
+        "heading": "",
+        "subheading": "Download A PDF Version of Our Product List",
+        "color_scheme": "cream",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
     }
   },
   "order": [
     "main",
     "content_with_bg_image_WDDewi",
     "image_grid_KLK4xz",
-    "spec_sheets_JixNeL"
+    "spec_sheets_JixNeL",
+    "bi_column_text_blocks_Pe8Qcw"
   ]
 }
