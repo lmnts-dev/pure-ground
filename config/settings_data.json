@@ -114,25 +114,8 @@
               "link": "shopify://pages/ingredients"
             }
           },
-          "f8db91fe-274c-4d3d-9762-baf0922ed802": {
-            "type": "link",
-            "disabled": true,
-            "settings": {
-              "label": "Processing",
-              "link": "shopify://pages/processing"
-            }
-          },
-          "0dc547ff-b375-4b78-bad8-9ef9fc4a79d2": {
-            "type": "link",
-            "disabled": true,
-            "settings": {
-              "label": "Quality Assurance",
-              "link": "shopify://pages/quality-assurance-organic-integrity"
-            }
-          },
           "link_gixage": {
             "type": "link",
-            "disabled": true,
             "settings": {
               "label": "Shop Now",
               "link": "shopify://collections/vegetables"
@@ -160,8 +143,6 @@
           "page_H8c3LC",
           "page_BAaH9C",
           "74b22fdc-0b59-413a-b25b-92f994bab3a9",
-          "f8db91fe-274c-4d3d-9762-baf0922ed802",
-          "0dc547ff-b375-4b78-bad8-9ef9fc4a79d2",
           "link_gixage",
           "f537cb93-a2e6-4b92-b5fe-d43941dc8f93"
         ],

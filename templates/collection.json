@@ -115,6 +115,7 @@
     },
     "product-grid": {
       "type": "main-collection-product-grid",
+      "disabled": true,
       "settings": {
         "products_per_page": 24,
         "columns_desktop": 3,
@@ -131,12 +132,84 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "collections_grid_YXRWy9": {
+      "type": "collections-grid",
+      "blocks": {
+        "collection_rXGiMJ": {
+          "type": "collection",
+          "settings": {
+            "collection": "organic-herbs-roots-and-flowers"
+          }
+        },
+        "collection_aUiRhY": {
+          "type": "collection",
+          "settings": {
+            "collection": "culinary-herbs"
+          }
+        },
+        "collection_BKkV7P": {
+          "type": "collection",
+          "settings": {
+            "collection": "organic-dried-chiles"
+          }
+        }
+      },
+      "block_order": [
+        "collection_rXGiMJ",
+        "collection_aUiRhY",
+        "collection_BKkV7P"
+      ],
+      "name": "Collections Grid",
+      "settings": {
+        "heading": "Online Store is COMING SOON!!",
+        "color_scheme": "cream",
+        "top_spacing": 50,
+        "bottom_spacing": 20
+      }
+    },
+    "collections_grid_N9dGPQ": {
+      "type": "collections-grid",
+      "blocks": {
+        "collection_fFCnr6": {
+          "type": "collection",
+          "settings": {
+            "collection": "seeds"
+          }
+        },
+        "collection_qwDeeY": {
+          "type": "collection",
+          "settings": {
+            "collection": "vegetables"
+          }
+        },
+        "collection_YtXKjb": {
+          "type": "collection",
+          "settings": {
+            "collection": "spices"
+          }
+        }
+      },
+      "block_order": [
+        "collection_fFCnr6",
+        "collection_qwDeeY",
+        "collection_YtXKjb"
+      ],
+      "name": "Collections Grid",
+      "settings": {
+        "heading": "",
+        "color_scheme": "cream",
+        "top_spacing": 0,
+        "bottom_spacing": 50
+      }
     }
   },
   "order": [
     "f65a28de-0fcc-4a1d-8c0e-9d15bbe4eafe",
     "banner",
     "category_list_PD3ghE",
-    "product-grid"
+    "product-grid",
+    "collections_grid_YXRWy9",
+    "collections_grid_N9dGPQ"
   ]
 }
