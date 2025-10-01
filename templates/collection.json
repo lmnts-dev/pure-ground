@@ -60,6 +60,47 @@
         "color_scheme": "accent-1"
       }
     },
+    "rich_text_gQxPzr": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_iiPqKc": {
+          "type": "heading",
+          "settings": {
+            "heading": "ONLINE STORE COMMING SOON!",
+            "heading_size": "h2",
+            "heading_alignment": "center",
+            "subheading": ""
+          }
+        },
+        "text_aXNQ3f": {
+          "type": "text",
+          "settings": {
+            "text": "<p> In the meantime, please peruse our products list (product tab) or reach out if you'd like to request more information. You can reach us at:</p><p><a href=\"mailto:info@puregroundingredients.com\" title=\"mailto:info@puregroundingredients.com\">info@puregroundingredients.com</a></p><p><a href=\"tel:775-297-4047\" title=\"tel:775-297-4047\">775-297-4047</a></p>",
+            "text_size": "default"
+          }
+        },
+        "button_ph3M8M": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "open_new_window": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_iiPqKc",
+        "text_aXNQ3f",
+        "button_ph3M8M"
+      ],
+      "name": "Rich Text",
+      "settings": {
+        "color_scheme": "cream",
+        "hero": false,
+        "top_spacing": 50,
+        "bottom_spacing": 0
+      }
+    },
     "category_list_PD3ghE": {
       "type": "category-list",
       "blocks": {
@@ -162,7 +203,7 @@
       ],
       "name": "Collections Grid",
       "settings": {
-        "heading": "Online Store is COMING SOON!!",
+        "heading": "",
         "color_scheme": "cream",
         "top_spacing": 50,
         "bottom_spacing": 20
@@ -207,6 +248,7 @@
   "order": [
     "f65a28de-0fcc-4a1d-8c0e-9d15bbe4eafe",
     "banner",
+    "rich_text_gQxPzr",
     "category_list_PD3ghE",
     "product-grid",
     "collections_grid_YXRWy9",
