@@ -261,6 +261,13 @@
             "image_width": "third"
           }
         },
+        "image_XtfrM8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2018-08-21_17.31_1.jpg",
+            "image_width": "third"
+          }
+        },
         "image_t7pmCL": {
           "type": "image",
           "settings": {
@@ -342,6 +349,7 @@
         "image_JpJbpq",
         "image_bpXeHg",
         "image_AztxLq",
+        "image_XtfrM8",
         "image_t7pmCL",
         "image_LzTrf9",
         "image_X3RdQb",
@@ -353,7 +361,7 @@
       "name": "Image Grid",
       "settings": {
         "row_height": 280,
-        "color_scheme": "ground",
+        "color_scheme": "dark-cream",
         "top_spacing": 30,
         "bottom_spacing": 30
       }
