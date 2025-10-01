@@ -427,6 +427,7 @@
         "item_pH4pER",
         "item_BYmdDR"
       ],
+      "disabled": true,
       "name": "Spec Sheets",
       "settings": {
         "common_name_label": "Common Name",
