@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "166074672815a86e9b": {
@@ -17,7 +26,7 @@
       "settings": {
         "text_color": "light",
         "nav_color": true,
-        "image": "shopify:\/\/shop_images\/2018-08-21_17.54_1_ac102e6d-db8e-455f-a14d-4b8bfa316844.jpg",
+        "image": "shopify://shop_images/2018-08-21_17.54_1_ac102e6d-db8e-455f-a14d-4b8bfa316844.jpg",
         "alt": "Spices",
         "overlay": 20,
         "hero": true,
@@ -44,14 +53,14 @@
         "1644419366881604f5-0": {
           "type": "text",
           "settings": {
-            "text": "<p>We source raw materials from around the world and perform comprehensive testing including pesticides, heavy metals and microtoxins. <\/p><p>Through our validated micro-reduction treatment, all products can be offered as Ready to Eat (RTE). <\/p><p>We employ a number of practices that ensure we are providing our customers the absolute best in organic ingredients with a level of quality and consistency that is unsurpassed. We are proud to be a part of a global supply web that is increasing the public awareness of the health benefits of using organic herbs and spices grown without chemicals and pesticides.<\/p>"
+            "text": "<p>We source raw materials from around the world and perform comprehensive testing including pesticides, heavy metals and microtoxins. </p><p>Through our validated micro-reduction treatment, all products can be offered as Ready to Eat (RTE). </p><p>We employ a number of practices that ensure we are providing our customers the absolute best in organic ingredients with a level of quality and consistency that is unsurpassed. We are proud to be a part of a global supply web that is increasing the public awareness of the health benefits of using organic herbs and spices grown without chemicals and pesticides.</p>"
           }
         },
         "47338247-06fe-401f-8439-2fdbee1aac55": {
           "type": "button",
           "settings": {
             "button_label": "Shop Ingredients",
-            "button_link": "shopify:\/\/collections",
+            "button_link": "shopify://collections",
             "button_color": "default"
           }
         }
@@ -62,7 +71,7 @@
         "47338247-06fe-401f-8439-2fdbee1aac55"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/MMcIver2022-5151.jpg",
+        "image": "shopify://shop_images/MMcIver2022-5151.jpg",
         "hero": false,
         "color_scheme": "cream",
         "layout": "default",
@@ -82,7 +91,6 @@
     },
     "164442384962d45464": {
       "type": "rich-text",
-      "disabled": true,
       "blocks": {
         "164442384920551cc7-0": {
           "type": "heading",
@@ -96,7 +104,7 @@
         "1fa509c0-88d9-4f15-ab93-3b487a4304ea": {
           "type": "text",
           "settings": {
-            "text": "<p>Your needs and specifications are met at our state of the art facility. We offer an array of processing and treatment options to provide organic ingredients that meet your business needs. <\/p>",
+            "text": "<p>Your needs and specifications are met at our state of the art facility. We offer an array of processing and treatment options to provide organic ingredients that meet your business needs. </p>",
             "text_size": "p-lg"
           }
         }
@@ -105,6 +113,7 @@
         "164442384920551cc7-0",
         "1fa509c0-88d9-4f15-ab93-3b487a4304ea"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "cream",
         "hero": false,
@@ -114,13 +123,12 @@
     },
     "1660751203d847bc7d": {
       "type": "accordions",
-      "disabled": true,
       "blocks": {
         "1660751203e184b074-0": {
           "type": "accordion",
           "settings": {
             "heading": "Product Development",
-            "content": "<p>Launching a new line? From ingredient sourcing to custom packaging we have you covered. <\/p>",
+            "content": "<p>Launching a new line? From ingredient sourcing to custom packaging we have you covered. </p>",
             "category": "General"
           }
         },
@@ -128,7 +136,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Blending",
-            "content": "<p>We've been in this business a while and so have our blend masters. Send us your blend and we will be happy to match it.  Looking to develop a new flavor profile? Our team is legendary on the development of  flavorful, nicely textured & colored culinary, tea & herbal blends. <\/p>",
+            "content": "<p>We've been in this business a while and so have our blend masters. Send us your blend and we will be happy to match it.  Looking to develop a new flavor profile? Our team is legendary on the development of  flavorful, nicely textured & colored culinary, tea & herbal blends. </p>",
             "category": "General"
           }
         },
@@ -136,7 +144,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Ingredient Cleaning",
-            "content": "<p>In order to deliver clean goods, we designed our production lines with separation capabilities that insure removal of impurities and foreign objects. Your product will be sifted multiple times and pass numerous safety steps and metal check before final packaging.<\/p>",
+            "content": "<p>In order to deliver clean goods, we designed our production lines with separation capabilities that insure removal of impurities and foreign objects. Your product will be sifted multiple times and pass numerous safety steps and metal check before final packaging.</p>",
             "category": "General"
           }
         },
@@ -144,7 +152,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Roasting",
-            "content": "<p>Like your Garlic roasted? Our in house, smokeless roasting technology allows us to create different flavors. Roasted items include Chicory, Marshmallow, Dandelion, Chiles, Paprika, Carob and Garlic.<\/p>",
+            "content": "<p>Like your Garlic roasted? Our in house, smokeless roasting technology allows us to create different flavors. Roasted items include Chicory, Marshmallow, Dandelion, Chiles, Paprika, Carob and Garlic.</p>",
             "category": "General"
           }
         },
@@ -152,7 +160,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Private Labeling",
-            "content": "<p>When you need to let your company shine, ask us to package with your own labels. Our quality organic ingredients can arrive at your warehouse with your own labeling, ready to be sold under your name. White labeling is also available upon request.<\/p>",
+            "content": "<p>When you need to let your company shine, ask us to package with your own labels. Our quality organic ingredients can arrive at your warehouse with your own labeling, ready to be sold under your name. White labeling is also available upon request.</p>",
             "category": "General"
           }
         },
@@ -160,7 +168,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Co-Packaging",
-            "content": "<p>We offer private label services, offering a variety of industries with multiple packaging options.  Whether you are looking to pack single ingredients or blends, we are happy to be growing this aspect of our service offering. <\/p>",
+            "content": "<p>We offer private label services, offering a variety of industries with multiple packaging options.  Whether you are looking to pack single ingredients or blends, we are happy to be growing this aspect of our service offering. </p>",
             "category": "General"
           }
         },
@@ -168,7 +176,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Ingredient Sourcing",
-            "content": "<p>We consider our decades of experience in global sourcing our expertise. We pride ourselves in our robust network and have fostered long term relationships to deliver multi origin sourced ingredients. We know our producers and how to provide  quality you need at a competitive price. Fair Trade, Fair for Life, Rainforest Alliance, Fair Wilde, Regenerative, Impact Driven, we've got you covered. If there's an ingredient that isn't on our list, don't hesitate to ask.<\/p>",
+            "content": "<p>We consider our decades of experience in global sourcing our expertise. We pride ourselves in our robust network and have fostered long term relationships to deliver multi origin sourced ingredients. We know our producers and how to provide  quality you need at a competitive price. Fair Trade, Fair for Life, Rainforest Alliance, Fair Wilde, Regenerative, Impact Driven, we've got you covered. If there's an ingredient that isn't on our list, don't hesitate to ask.</p>",
             "category": "General"
           }
         },
@@ -176,7 +184,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Micro Reduction",
-            "content": "<p>Verified clean products only. All our organic ingredients are treated and tested to ensure food safety. We offer multiple treatment options including a modern Infra-Red and water treatment that is proven to be gentle on the precious ingredients. Our treatment in 3rd party verified for every lot.<\/p>",
+            "content": "<p>Verified clean products only. All our organic ingredients are treated and tested to ensure food safety. We offer multiple treatment options including a modern Infra-Red and water treatment that is proven to be gentle on the precious ingredients. Our treatment in 3rd party verified for every lot.</p>",
             "category": "General"
           }
         },
@@ -184,7 +192,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Metal Detection",
-            "content": "<p>All goods go through a NIST certified and FDA approved Gravity detector. Additionally all mills and processing machinery are fitted with industrial strength magnets. Sifting at multiple production steps further insures absolute purity of your ingredients.<\/p>",
+            "content": "<p>All goods go through a NIST certified and FDA approved Gravity detector. Additionally all mills and processing machinery are fitted with industrial strength magnets. Sifting at multiple production steps further insures absolute purity of your ingredients.</p>",
             "category": "General"
           }
         }
@@ -200,6 +208,7 @@
         "692bceb5-4fd0-4fd6-81db-45c5512d0424",
         "1d07681c-9e3a-46e2-9f00-1d1670bec431"
       ],
+      "disabled": true,
       "settings": {
         "text": "",
         "color_scheme": "cream",
@@ -222,42 +231,42 @@
         "f3ecbf11-b5f3-484c-82b7-293477ee0863": {
           "type": "image",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/Group_253.png",
+            "icon": "shopify://shop_images/Group_253.png",
             "text": "Certified USDA Organic"
           }
         },
         "9238b523-e68f-4b6c-92de-965b6ae45bff": {
           "type": "image",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/Group_254.png",
+            "icon": "shopify://shop_images/Group_254.png",
             "text": "Halal Certified"
           }
         },
         "b5ed4ab9-114a-46e0-a632-e0ac53372802": {
           "type": "image",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/Group_258.png",
+            "icon": "shopify://shop_images/Group_258.png",
             "text": "Certified Kosher"
           }
         },
         "09c7b188-05b6-4b3c-a90b-d6faa5cdf10b": {
           "type": "image",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/Group_257.png",
+            "icon": "shopify://shop_images/Group_257.png",
             "text": "Level 2 SQF Certified"
           }
         },
         "d259bf74-17d9-4ad6-8a1e-484e8c7a768a": {
           "type": "image",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/Group_256.png",
+            "icon": "shopify://shop_images/Group_256.png",
             "text": "Certified B Corporation"
           }
         },
         "1d53f10a-72fd-44cb-9f47-ccd9a6c5c112": {
           "type": "image",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/Group_259.png",
+            "icon": "shopify://shop_images/Group_259.png",
             "text": "Skal Biocontrole (EOCC) Certified"
           }
         }
@@ -276,7 +285,7 @@
         "subheading": "",
         "heading_size": "h4",
         "accent_color": false,
-        "text": "<p>Pure Ground is committed to food safety. Food safety and operational excellence is insured by continuous training, frequent audits and inspections. <br\/><br\/>Good Manufacturing Practices are central to our operation.<br\/><\/p><p>Per HACCP, all goods go through a NIST certified and FDA approved Gravity detector. Additionally all mills and processing machinery are fitted with industrial strength magnets. Sifting at multiple production steps further insures absolute purity of your ingredients.<\/p><p>All products handled at Pure Ground Ingredients are verified gluten free. Allergens in our warehouse are strictly segregated, marked and handled separately so that non-allergen products remain allergen free.<\/p>",
+        "text": "<p>Pure Ground is committed to food safety. Food safety and operational excellence is insured by continuous training, frequent audits and inspections. <br/><br/>Good Manufacturing Practices are central to our operation.<br/></p><p>Per HACCP, all goods go through a NIST certified and FDA approved Gravity detector. Additionally all mills and processing machinery are fitted with industrial strength magnets. Sifting at multiple production steps further insures absolute purity of your ingredients.</p><p>All products handled at Pure Ground Ingredients are verified gluten free. Allergens in our warehouse are strictly segregated, marked and handled separately so that non-allergen products remain allergen free.</p>",
         "button_label": "Button label",
         "button_link": "",
         "alt": "",
@@ -300,7 +309,7 @@
         "1660751375f91befb1-0": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Certificate of Analysis<\/strong><\/p><p>For every lot you purchase, you will receive a Certificate of Analysis – CoA – stating your ingredient’s botanical identity, part + origin, cut size, manufacture + expiration dates as well as microbiological, Heavy Metal and Pesticide analytical results.<br\/><\/p><p>All lots are tested for presence of any heavy metals and confirmed to be within safe and legal limits. Our team will match any additional testing you require. <\/p>"
+            "text": "<p><strong>Certificate of Analysis</strong></p><p>For every lot you purchase, you will receive a Certificate of Analysis – CoA – stating your ingredient’s botanical identity, part + origin, cut size, manufacture + expiration dates as well as microbiological, Heavy Metal and Pesticide analytical results.<br/></p><p>All lots are tested for presence of any heavy metals and confirmed to be within safe and legal limits. Our team will match any additional testing you require. </p>"
           }
         }
       },
@@ -309,7 +318,7 @@
         "1660751375f91befb1-0"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/MMcIver2022-5850.jpg",
+        "image": "shopify://shop_images/MMcIver2022-5850.jpg",
         "hero": false,
         "color_scheme": "cream",
         "layout": "reversed",
@@ -337,8 +346,8 @@
         "6ccd4883-d12c-43f9-b4e0-5eb193debff2": {
           "type": "button",
           "settings": {
-            "button_label": "Shop now",
-            "button_link": "shopify:\/\/collections",
+            "button_label": "View products",
+            "button_link": "shopify://pages/organic-botanical-herbs-roots-and-flowers",
             "button_color": "grass"
           }
         }
@@ -351,7 +360,7 @@
       "settings": {
         "text_color": "light",
         "nav_color": false,
-        "image": "shopify:\/\/shop_images\/unsplash_V0xp-dTS3z0_8e90d319-11bf-4cc5-b98d-d06c2475232e.jpg",
+        "image": "shopify://shop_images/unsplash_V0xp-dTS3z0_8e90d319-11bf-4cc5-b98d-d06c2475232e.jpg",
         "alt": "Barrels of spices",
         "overlay": 20,
         "hero": false,
