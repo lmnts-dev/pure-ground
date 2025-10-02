@@ -20,15 +20,16 @@
     "content_with_bg_image_WDDewi": {
       "type": "content-with-bg-image",
       "blocks": {
-        "subheading_9KCm3R": {
-          "type": "subheading",
+        "heading_Md7RF7": {
+          "type": "heading",
           "settings": {
-            "subheading": "Organic Chilies"
+            "heading": "Organic Chilies",
+            "heading_size": "h2"
           }
         }
       },
       "block_order": [
-        "subheading_9KCm3R"
+        "heading_Md7RF7"
       ],
       "name": "Content with Bg Image",
       "settings": {
@@ -162,12 +163,25 @@
         "top_spacing": 20,
         "bottom_spacing": 30
       }
+    },
+    "featured_page_link_nMJV3X": {
+      "type": "featured-page-link",
+      "name": "Featured Page Link",
+      "settings": {
+        "page_link": "organic-botanical-herbs-roots-and-flowers",
+        "image": "shopify://shop_images/unsplash_xDwEa2kaeJA.jpg",
+        "alt": "",
+        "color_scheme": "cream",
+        "top_spacing": 0,
+        "bottom_spacing": 0
+      }
     }
   },
   "order": [
     "main",
     "content_with_bg_image_WDDewi",
     "bi_column_text_blocks_TmqJAq",
-    "image_grid_KLK4xz"
+    "image_grid_KLK4xz",
+    "featured_page_link_nMJV3X"
   ]
 }
