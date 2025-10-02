@@ -20,15 +20,16 @@
     "content_with_bg_image_WDDewi": {
       "type": "content-with-bg-image",
       "blocks": {
-        "subheading_9KCm3R": {
-          "type": "subheading",
+        "heading_PPGdpi": {
+          "type": "heading",
           "settings": {
-            "subheading": "Organic Culinary Spices, Vegetables & Herbs"
+            "heading": "Organic Culinary Spices, Vegetables & Herbs",
+            "heading_size": "h2"
           }
         }
       },
       "block_order": [
-        "subheading_9KCm3R"
+        "heading_PPGdpi"
       ],
       "name": "Content with Bg Image",
       "settings": {
