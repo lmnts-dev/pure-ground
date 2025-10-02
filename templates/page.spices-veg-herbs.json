@@ -504,6 +504,18 @@
         "top_spacing": 50,
         "bottom_spacing": 50
       }
+    },
+    "featured_page_link_h4NJ3Y": {
+      "type": "featured-page-link",
+      "name": "Featured Page Link",
+      "settings": {
+        "page_link": "organic-dried-chiles",
+        "image": "shopify://shop_images/DSC_0090.jpg",
+        "alt": "",
+        "color_scheme": "cream",
+        "top_spacing": 0,
+        "bottom_spacing": 0
+      }
     }
   },
   "order": [
@@ -511,6 +523,7 @@
     "content_with_bg_image_WDDewi",
     "bi_column_text_blocks_TmqJAq",
     "image_grid_KLK4xz",
-    "spec_sheets_JixNeL"
+    "spec_sheets_JixNeL",
+    "featured_page_link_h4NJ3Y"
   ]
 }
