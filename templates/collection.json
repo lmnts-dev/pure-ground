@@ -204,7 +204,6 @@
         "collection_aUiRhY",
         "collection_BKkV7P"
       ],
-      "disabled": true,
       "name": "Collections Grid",
       "settings": {
         "heading": "",
@@ -240,7 +239,6 @@
         "collection_qwDeeY",
         "collection_YtXKjb"
       ],
-      "disabled": true,
       "name": "Collections Grid",
       "settings": {
         "heading": "",
@@ -305,8 +303,8 @@
     "rich_text_gQxPzr",
     "category_list_PD3ghE",
     "product-grid",
+    "bi_column_text_blocks_mTDVkw",
     "collections_grid_YXRWy9",
-    "collections_grid_N9dGPQ",
-    "bi_column_text_blocks_mTDVkw"
+    "collections_grid_N9dGPQ"
   ]
 }
