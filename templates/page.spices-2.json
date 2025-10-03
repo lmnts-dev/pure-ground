@@ -96,10 +96,24 @@
             "image_width": "third"
           }
         },
-        "image_MQJccn": {
+        "image_dJAPHD": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/WHIO-WH_copy_website_4537f958-0339-4419-add0-306eba3e1b39.jpg",
+            "image": "shopify://shop_images/CSSO-WH_copy_website_e999ff8f-bce0-4474-9c66-9f0acd87ab3a.jpg",
+            "image_width": "third"
+          }
+        },
+        "image_wLbiYh": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/CINO-SK_copy_website_d67a84af-a736-447e-9ca7-817bf54e1531.jpg",
+            "image_width": "third"
+          }
+        },
+        "image_HBNFDA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/CLOO-WH_450_copy_website_e4c283b2-3e55-4904-9f36-ebbeb8b8bb3e.jpg",
             "image_width": "third"
           }
         },
@@ -107,6 +121,13 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/CORO-WH_copy_website_6ad0956d-a9ca-44b8-8d3e-8b707c3572cf.jpg",
+            "image_width": "third"
+          }
+        },
+        "image_YU4Wk4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/FOEO-WH_copy_website_aac6d653-ea7d-4e5e-8d11-a9b318ef6af4.jpg",
             "image_width": "third"
           }
         },
@@ -124,6 +145,13 @@
             "image_width": "third"
           }
         },
+        "image_Pmhzta": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/STAP-WH_copy_website_9ccd816e-073b-423c-a422-28a883aad403.jpg",
+            "image_width": "third"
+          }
+        },
         "image_JWmbC6": {
           "type": "image",
           "settings": {
@@ -131,64 +159,49 @@
             "image_width": "third"
           }
         },
-        "image_Pmhzta": {
-          "type": "image",
-          "settings": {
-            "image_width": "half"
-          }
-        },
         "image_NY4tKi": {
           "type": "image",
           "settings": {
-            "image_width": "half"
+            "image": "shopify://shop_images/NUTO-TC_copy_website_9002e528-63d1-4eb1-9b29-9ff283e81fb6.jpg",
+            "image_width": "third"
           }
         },
         "image_VVNViP": {
           "type": "image",
           "settings": {
-            "image_width": "half"
+            "image": "shopify://shop_images/PAPO-GR_copy_website.jpg",
+            "image_width": "third"
           }
         },
-        "image_dJAPHD": {
+        "image_MQJccn": {
           "type": "image",
           "settings": {
-            "image_width": "half"
-          }
-        },
-        "image_YU4Wk4": {
-          "type": "image",
-          "settings": {
-            "image_width": "half"
-          }
-        },
-        "image_wLbiYh": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/CINO-SK_copy_website_d67a84af-a736-447e-9ca7-817bf54e1531.jpg",
+            "image": "shopify://shop_images/WHIO-WH_copy_website_4537f958-0339-4419-add0-306eba3e1b39.jpg",
             "image_width": "third"
           }
         },
         "image_NmkCKp": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/M3dDyhmwsqvkZmPa85t2rc.jpg",
+            "image": "shopify://shop_images/Screenshot_2025-10-03_103314.png",
             "image_width": "half"
           }
         }
       },
       "block_order": [
         "image_ccGQNJ",
-        "image_MQJccn",
+        "image_dJAPHD",
+        "image_wLbiYh",
+        "image_HBNFDA",
         "image_dja67i",
+        "image_YU4Wk4",
         "image_AdH8Nr",
         "image_YRL6Cb",
-        "image_JWmbC6",
         "image_Pmhzta",
+        "image_JWmbC6",
         "image_NY4tKi",
         "image_VVNViP",
-        "image_dJAPHD",
-        "image_YU4Wk4",
-        "image_wLbiYh",
+        "image_MQJccn",
         "image_NmkCKp"
       ],
       "name": "Image Grid",
