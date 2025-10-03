@@ -98,6 +98,7 @@
         "teas",
         "fair"
       ],
+      "disabled": true,
       "settings": {
         "heading": "The Best in Organic Ingredients",
         "color_scheme": "cream",
@@ -124,6 +125,76 @@
       "settings": {
         "color_scheme": "sky",
         "hero": false,
+        "top_spacing": 30,
+        "bottom_spacing": 20
+      }
+    },
+    "image_grid_6CkEcU": {
+      "type": "image-grid",
+      "blocks": {
+        "image_9RUb4X": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/botanical_herbs_roots_and_flowers.jpg",
+            "image_width": "half"
+          }
+        },
+        "image_Vh8rji": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/organic_vegetables.jpg",
+            "image_width": "half"
+          }
+        },
+        "image_E93m64": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/dried_chiles.jpg",
+            "image_width": "half"
+          }
+        },
+        "image_XUGDUp": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/pic_1.jpg",
+            "image_width": "half"
+          }
+        },
+        "image_DTDrw8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/organic_spices.jpg",
+            "image_width": "half"
+          }
+        },
+        "image_MY3ATQ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/organic_seeds.jpg",
+            "image_width": "half"
+          }
+        },
+        "image_Nykm4W": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/sustainably_sourced.jpg",
+            "image_width": "half"
+          }
+        }
+      },
+      "block_order": [
+        "image_9RUb4X",
+        "image_Vh8rji",
+        "image_E93m64",
+        "image_XUGDUp",
+        "image_DTDrw8",
+        "image_MY3ATQ",
+        "image_Nykm4W"
+      ],
+      "name": "Image Grid",
+      "settings": {
+        "row_height": 260,
+        "color_scheme": "cream",
         "top_spacing": 30,
         "bottom_spacing": 20
       }
@@ -170,6 +241,16 @@
         "button_color": "default",
         "color_scheme": "cream",
         "top_spacing": 100,
+        "bottom_spacing": 50
+      }
+    },
+    "divider_fxFxC7": {
+      "type": "divider",
+      "name": "Divider",
+      "settings": {
+        "style": "dots",
+        "color_scheme": "cream",
+        "top_spacing": 50,
         "bottom_spacing": 50
       }
     },
@@ -497,7 +578,9 @@
     "content-with-bg-image",
     "collections-grid",
     "16630167896c556fcd",
+    "image_grid_6CkEcU",
     "16607057366a572f05",
+    "divider_fxFxC7",
     "1663642867a9686654",
     "1663641871bf71a165",
     "164497174668dcfe61",
