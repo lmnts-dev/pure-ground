@@ -1,0 +1,187 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "content_with_bg_image_WDDewi": {
+      "type": "content-with-bg-image",
+      "blocks": {
+        "heading_Md7RF7": {
+          "type": "heading",
+          "settings": {
+            "heading": "Organic Chilies",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Md7RF7"
+      ],
+      "name": "Content with Bg Image",
+      "settings": {
+        "text_color": "light",
+        "nav_color": true,
+        "image": "shopify://shop_images/DSC_0090.jpg",
+        "alt": "",
+        "overlay": 50,
+        "hero": false,
+        "fullwidth": true,
+        "accent_color": false,
+        "alignment": "left",
+        "color_scheme": "dark-cream",
+        "top_spacing": 0,
+        "bottom_spacing": 0,
+        "top_internal_spacing": 180,
+        "bottom_internal_spacing": 40
+      }
+    },
+    "bi_column_text_blocks_TmqJAq": {
+      "type": "bi-column-text-blocks",
+      "blocks": {
+        "text_PEiXbU": {
+          "type": "text",
+          "settings": {
+            "heading": "Organic Products",
+            "content": "",
+            "button_label": "Download PDF",
+            "button_link": "https://cdn.shopify.com/s/files/1/0562/9486/6967/files/Pure_Ground_Organic_Ingredient_List.pdf?v=1665592801",
+            "button_color": "sun"
+          }
+        },
+        "text_6TfPG7": {
+          "type": "text",
+          "settings": {
+            "heading": "Sustainability Sourced Products",
+            "content": "",
+            "button_label": "Download PDF",
+            "button_link": "https://cdn.shopify.com/s/files/1/0562/9486/6967/files/Pure_Ground_Sustainably_Sourced_List.pdf?v=1665592802",
+            "button_color": "sun"
+          }
+        }
+      },
+      "block_order": [
+        "text_PEiXbU",
+        "text_6TfPG7"
+      ],
+      "name": "Bi-Column Text Blocks",
+      "settings": {
+        "heading": "",
+        "subheading": "Download a PDF Version of our Product List",
+        "color_scheme": "dark-cream",
+        "top_spacing": 10,
+        "bottom_spacing": 20
+      }
+    },
+    "image_grid_KLK4xz": {
+      "type": "image-grid",
+      "blocks": {
+        "image_ccGQNJ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ANCO-GR_copy_website.jpg",
+            "image_width": "third"
+          }
+        },
+        "image_MQJccn": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/BIRO-GR_copy_website.jpg",
+            "image_width": "third"
+          }
+        },
+        "image_dja67i": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/CAYO-GR_copy_website.jpg",
+            "image_width": "third"
+          }
+        },
+        "image_AdH8Nr": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/CHIO-FL_copy_website.jpg",
+            "image_width": "third"
+          }
+        },
+        "image_YRL6Cb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/CHPO-WH_copy_website.jpg",
+            "image_width": "third"
+          }
+        },
+        "image_JWmbC6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/HABO-WH2_copy_websitev.jpg",
+            "image_width": "third"
+          }
+        },
+        "image_wLbiYh": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/PAPO-GR_copy_website.jpg",
+            "image_width": "third"
+          }
+        },
+        "image_NmkCKp": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/M3dDyhmwsqvkZmPa85t2rc.jpg",
+            "image_width": "half"
+          }
+        }
+      },
+      "block_order": [
+        "image_ccGQNJ",
+        "image_MQJccn",
+        "image_dja67i",
+        "image_AdH8Nr",
+        "image_YRL6Cb",
+        "image_JWmbC6",
+        "image_wLbiYh",
+        "image_NmkCKp"
+      ],
+      "name": "Image Grid",
+      "settings": {
+        "row_height": 280,
+        "color_scheme": "dark-cream",
+        "top_spacing": 20,
+        "bottom_spacing": 30
+      }
+    },
+    "featured_page_link_nMJV3X": {
+      "type": "featured-page-link",
+      "name": "Featured Page Link",
+      "settings": {
+        "page_link": "organic-botanical-herbs-roots-and-flowers",
+        "image": "shopify://shop_images/unsplash_xDwEa2kaeJA.jpg",
+        "alt": "",
+        "color_scheme": "cream",
+        "top_spacing": 0,
+        "bottom_spacing": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "content_with_bg_image_WDDewi",
+    "bi_column_text_blocks_TmqJAq",
+    "image_grid_KLK4xz",
+    "featured_page_link_nMJV3X"
+  ]
+}
