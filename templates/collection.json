@@ -177,6 +177,65 @@
         "padding_bottom": 0
       }
     },
+    "bi_column_text_blocks_mTDVkw": {
+      "type": "bi-column-text-blocks",
+      "blocks": {
+        "text_aPeLEp": {
+          "type": "text",
+          "settings": {
+            "heading": "",
+            "content": "",
+            "button_label": "Botanicals, Herbs, Roots, Flowers",
+            "button_link": "shopify://pages/organic-botanical-herbs-roots-and-flowers",
+            "button_color": "default"
+          }
+        },
+        "text_6dY9Nt": {
+          "type": "text",
+          "settings": {
+            "heading": "",
+            "content": "",
+            "button_label": "Culinary Spices, Vegetables & Herbs",
+            "button_link": "shopify://pages/organic-spices-vegetables-and-herbs",
+            "button_color": "grass"
+          }
+        },
+        "text_nm7T3j": {
+          "type": "text",
+          "settings": {
+            "heading": "",
+            "content": "",
+            "button_label": "Organic Dried Chiles",
+            "button_link": "shopify://pages/organic-dried-chiles",
+            "button_color": "default"
+          }
+        },
+        "text_QMtgRf": {
+          "type": "text",
+          "settings": {
+            "heading": "",
+            "content": "",
+            "button_label": "Organic Seeds",
+            "button_link": "shopify://pages/seeds",
+            "button_color": "default"
+          }
+        }
+      },
+      "block_order": [
+        "text_aPeLEp",
+        "text_6dY9Nt",
+        "text_nm7T3j",
+        "text_QMtgRf"
+      ],
+      "name": "Bi-Column Text Blocks",
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "color_scheme": "cream",
+        "top_spacing": 0,
+        "bottom_spacing": 50
+      }
+    },
     "collections_grid_YXRWy9": {
       "type": "collections-grid",
       "blocks": {
@@ -242,54 +301,6 @@
       "name": "Collections Grid",
       "settings": {
         "heading": "",
-        "color_scheme": "cream",
-        "top_spacing": 0,
-        "bottom_spacing": 50
-      }
-    },
-    "bi_column_text_blocks_mTDVkw": {
-      "type": "bi-column-text-blocks",
-      "blocks": {
-        "text_aPeLEp": {
-          "type": "text",
-          "settings": {
-            "heading": "",
-            "content": "",
-            "button_label": "Botanicals, Herbs, Roots, Flowers",
-            "button_link": "shopify://pages/organic-botanical-herbs-roots-and-flowers",
-            "button_color": "default"
-          }
-        },
-        "text_6dY9Nt": {
-          "type": "text",
-          "settings": {
-            "heading": "",
-            "content": "",
-            "button_label": "Culinary Spices, Vegetables & Herbs",
-            "button_link": "shopify://pages/organic-spices-vegetables-and-herbs",
-            "button_color": "grass"
-          }
-        },
-        "text_nm7T3j": {
-          "type": "text",
-          "settings": {
-            "heading": "",
-            "content": "",
-            "button_label": "Organic Dried Chiles",
-            "button_link": "shopify://pages/organic-dried-chiles",
-            "button_color": "default"
-          }
-        }
-      },
-      "block_order": [
-        "text_aPeLEp",
-        "text_6dY9Nt",
-        "text_nm7T3j"
-      ],
-      "name": "Bi-Column Text Blocks",
-      "settings": {
-        "heading": "",
-        "subheading": "",
         "color_scheme": "cream",
         "top_spacing": 0,
         "bottom_spacing": 50
