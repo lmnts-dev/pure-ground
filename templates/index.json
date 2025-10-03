@@ -98,7 +98,6 @@
         "teas",
         "fair"
       ],
-      "disabled": true,
       "settings": {
         "heading": "The Best in Organic Ingredients",
         "color_scheme": "cream",
@@ -191,6 +190,7 @@
         "image_MY3ATQ",
         "image_Nykm4W"
       ],
+      "disabled": true,
       "name": "Image Grid",
       "settings": {
         "row_height": 260,
