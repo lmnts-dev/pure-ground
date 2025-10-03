@@ -23,7 +23,7 @@
         "heading_Md7RF7": {
           "type": "heading",
           "settings": {
-            "heading": "Organic Chilies",
+            "heading": "Organic Spices",
             "heading_size": "h2"
           }
         }
@@ -35,7 +35,7 @@
       "settings": {
         "text_color": "light",
         "nav_color": true,
-        "image": "shopify://shop_images/DSC_0090.jpg",
+        "image": "shopify://shop_images/how-to-properly-store-spices.jpg",
         "alt": "",
         "overlay": 50,
         "hero": false,
@@ -92,49 +92,79 @@
         "image_ccGQNJ": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/ANCO-GR_copy_website.jpg",
+            "image": "shopify://shop_images/BLAO-WH_copy_website_ab2d080d-74eb-44dc-8c31-e572ccc516a8.jpg",
             "image_width": "third"
           }
         },
         "image_MQJccn": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/BIRO-GR_copy_website.jpg",
+            "image": "shopify://shop_images/WHIO-WH_copy_website_4537f958-0339-4419-add0-306eba3e1b39.jpg",
             "image_width": "third"
           }
         },
         "image_dja67i": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/CAYO-GR_copy_website.jpg",
+            "image": "shopify://shop_images/CORO-WH_copy_website_6ad0956d-a9ca-44b8-8d3e-8b707c3572cf.jpg",
             "image_width": "third"
           }
         },
         "image_AdH8Nr": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/CHIO-FL_copy_website.jpg",
+            "image": "shopify://shop_images/CUMO-WH_copy_website_06e8c50d-7453-470b-9f4d-9f26686129a5.jpg",
             "image_width": "third"
           }
         },
         "image_YRL6Cb": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/CHPO-WH_copy_website.jpg",
+            "image": "shopify://shop_images/FENO-WH_copy_website_b8973089-3524-4f79-8d80-cc66a60e3118.jpg",
             "image_width": "third"
           }
         },
         "image_JWmbC6": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/HABO-WH2_copy_websitev.jpg",
+            "image": "shopify://shop_images/TUMO-SL_copy_website.jpg",
             "image_width": "third"
+          }
+        },
+        "image_Pmhzta": {
+          "type": "image",
+          "settings": {
+            "image_width": "half"
+          }
+        },
+        "image_NY4tKi": {
+          "type": "image",
+          "settings": {
+            "image_width": "half"
+          }
+        },
+        "image_VVNViP": {
+          "type": "image",
+          "settings": {
+            "image_width": "half"
+          }
+        },
+        "image_dJAPHD": {
+          "type": "image",
+          "settings": {
+            "image_width": "half"
+          }
+        },
+        "image_YU4Wk4": {
+          "type": "image",
+          "settings": {
+            "image_width": "half"
           }
         },
         "image_wLbiYh": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/PAPO-GR_copy_website.jpg",
+            "image": "shopify://shop_images/CINO-SK_copy_website_d67a84af-a736-447e-9ca7-817bf54e1531.jpg",
             "image_width": "third"
           }
         },
@@ -153,6 +183,11 @@
         "image_AdH8Nr",
         "image_YRL6Cb",
         "image_JWmbC6",
+        "image_Pmhzta",
+        "image_NY4tKi",
+        "image_VVNViP",
+        "image_dJAPHD",
+        "image_YU4Wk4",
         "image_wLbiYh",
         "image_NmkCKp"
       ],
