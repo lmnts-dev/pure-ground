@@ -43,10 +43,34 @@
         "top_spacing": 50,
         "bottom_spacing": 50
       }
+    },
+    "blog_listings_Ryk3HQ": {
+      "type": "blog-listings",
+      "name": "Blog Listings",
+      "settings": {
+        "blog": "guides",
+        "image": "shopify://shop_images/2018-08-21_17.54_1-1.jpg",
+        "color_scheme": "cream",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
+    },
+    "blog_listings_Kftakn": {
+      "type": "blog-listings",
+      "name": "Blog Listings",
+      "settings": {
+        "blog": "news",
+        "image": "shopify://shop_images/unsplash_pBwMdofMxtU_928eb7d0-5768-4a73-98fc-3ddd5481da44.jpg",
+        "color_scheme": "cream",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
     }
   },
   "order": [
     "1646172411638785bf",
-    "main"
+    "main",
+    "blog_listings_Ryk3HQ",
+    "blog_listings_Kftakn"
   ]
 }
