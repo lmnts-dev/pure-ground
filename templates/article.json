@@ -15,6 +15,7 @@
     },
     "featured_articles_DPCDfz": {
       "type": "featured-articles",
+      "disabled": true,
       "name": "Featured Articles",
       "settings": {
         "heading": "",
