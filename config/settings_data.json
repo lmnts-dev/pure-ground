@@ -72,20 +72,6 @@
               "color": ""
             }
           },
-          "181b4f14-5ca5-4e65-8d3f-9747470e412d": {
-            "type": "page",
-            "settings": {
-              "page": "global-partnerships",
-              "image": "shopify://shop_images/2018-08-21_17.54_2.jpg"
-            }
-          },
-          "e58fd043-68a5-401e-8b7b-7143691d9a3f": {
-            "type": "page",
-            "settings": {
-              "page": "sustainability-social-and-environmental-impact",
-              "image": "shopify://shop_images/unsplash_8rTwokBwz1w-1.jpg"
-            }
-          },
           "page_H8c3LC": {
             "type": "page",
             "settings": {
@@ -98,6 +84,20 @@
             "settings": {
               "page": "quality-assurance-organic-integrity",
               "image": "shopify://shop_images/MMcIver2022-5850.jpg"
+            }
+          },
+          "181b4f14-5ca5-4e65-8d3f-9747470e412d": {
+            "type": "page",
+            "settings": {
+              "page": "global-partnerships",
+              "image": "shopify://shop_images/2018-08-21_17.54_2.jpg"
+            }
+          },
+          "e58fd043-68a5-401e-8b7b-7143691d9a3f": {
+            "type": "page",
+            "settings": {
+              "page": "sustainability-social-and-environmental-impact",
+              "image": "shopify://shop_images/unsplash_8rTwokBwz1w-1.jpg"
             }
           },
           "label_H6ezX7": {
@@ -173,10 +173,10 @@
           "5c96bbfa-abb9-4446-b6f1-834fd33d5162",
           "fe940d6c-8545-4795-b4fe-414a3745b581",
           "201fd5e5-d847-4850-8232-368b05f5b75a",
-          "181b4f14-5ca5-4e65-8d3f-9747470e412d",
-          "e58fd043-68a5-401e-8b7b-7143691d9a3f",
           "page_H8c3LC",
           "page_BAaH9C",
+          "181b4f14-5ca5-4e65-8d3f-9747470e412d",
+          "e58fd043-68a5-401e-8b7b-7143691d9a3f",
           "label_H6ezX7",
           "page_9DW89G",
           "page_9ch7K6",
