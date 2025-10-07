@@ -81,7 +81,7 @@
         "16609416342d0014aa-1"
       ],
       "settings": {
-        "color_scheme": "tan",
+        "color_scheme": "cream",
         "hero": false,
         "top_spacing": 20,
         "bottom_spacing": 20
@@ -92,7 +92,7 @@
       "name": "Divider",
       "settings": {
         "style": "dots",
-        "color_scheme": "tan",
+        "color_scheme": "cream",
         "top_spacing": 50,
         "bottom_spacing": 50
       }
@@ -112,7 +112,7 @@
       ],
       "settings": {
         "article": "guides/tarragon",
-        "color_scheme": "tan",
+        "color_scheme": "cream",
         "top_spacing": 50,
         "bottom_spacing": 30
       }
@@ -134,8 +134,8 @@
     "1645488674b1f1a56b",
     "content_with_bg_image_GwLcxc",
     "1660941634edabbc71",
-    "divider_t9qbTH",
     "1645466577d7fad930",
+    "divider_t9qbTH",
     "featured_page_link_9nQh4r"
   ]
 }
