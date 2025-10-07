@@ -42,7 +42,7 @@
         "16609416342d0014aa-0": {
           "type": "heading",
           "settings": {
-            "heading": "The Inside Look",
+            "heading": "Press & News",
             "heading_size": "h2",
             "heading_alignment": "center",
             "subheading": ""
@@ -51,7 +51,7 @@
         "16609416342d0014aa-1": {
           "type": "text",
           "settings": {
-            "text": "<p>At Pure Ground, every spice tells a story.  See how we honor each ingredients origin with care, precision and uncompromising standards for quality safety and flavor.</p>",
+            "text": "<p>At Pure Ground, we believe our people are our greatest strength. We also don't just serve customers- we collaborate with them.</p>",
             "text_size": "default"
           }
         }
@@ -70,18 +70,18 @@
     "1645466577d7fad930": {
       "type": "recent-articles",
       "blocks": {
-        "b9ef49bb-a21a-4911-b988-76b8703cea55": {
+        "blog_CjVfHD": {
           "type": "blog",
           "settings": {
-            "blog": "guides"
+            "blog": "news"
           }
         }
       },
       "block_order": [
-        "b9ef49bb-a21a-4911-b988-76b8703cea55"
+        "blog_CjVfHD"
       ],
       "settings": {
-        "article": "guides/sugar",
+        "article": "news/2019-pioneer-award-winners",
         "color_scheme": "cream",
         "top_spacing": 50,
         "bottom_spacing": 0
@@ -91,8 +91,8 @@
       "type": "featured-page-link",
       "name": "Featured Page Link",
       "settings": {
-        "page_link": "",
-        "image": "shopify://shop_images/WhatsApp_Image_2025-09-30_at_7.17.55_PM.jpg",
+        "page_link": "the-inside-look",
+        "image": "shopify://shop_images/z5782283536010_373d67726a174e651d94fe4ec9f03cbf.jpg",
         "alt": "",
         "color_scheme": "cream",
         "top_spacing": 0,
