@@ -135,11 +135,18 @@
               "image": "shopify://shop_images/Seed-Drying-Methods-3.jpg"
             }
           },
-          "link_PAcd8q": {
-            "type": "link",
+          "label_wVxYGh": {
+            "type": "label",
             "settings": {
-              "label": "Learn",
-              "link": "shopify://blogs/guides"
+              "label": "Blog",
+              "color": ""
+            }
+          },
+          "page_iNejhy": {
+            "type": "page",
+            "settings": {
+              "page": "the-inside-look",
+              "image": "shopify://shop_images/z5782283536010_373d67726a174e651d94fe4ec9f03cbf.jpg"
             }
           },
           "74b22fdc-0b59-413a-b25b-92f994bab3a9": {
@@ -182,7 +189,8 @@
           "page_9ch7K6",
           "page_yLWjNM",
           "page_CDdUVn",
-          "link_PAcd8q",
+          "label_wVxYGh",
+          "page_iNejhy",
           "74b22fdc-0b59-413a-b25b-92f994bab3a9",
           "link_gixage",
           "f537cb93-a2e6-4b92-b5fe-d43941dc8f93"
