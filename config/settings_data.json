@@ -100,6 +100,27 @@
               "image": "shopify://shop_images/unsplash_8rTwokBwz1w-1.jpg"
             }
           },
+          "label_wVxYGh": {
+            "type": "label",
+            "settings": {
+              "label": "Blog",
+              "color": ""
+            }
+          },
+          "page_iNejhy": {
+            "type": "page",
+            "settings": {
+              "page": "the-inside-look",
+              "image": "shopify://shop_images/z5782283536010_373d67726a174e651d94fe4ec9f03cbf.jpg"
+            }
+          },
+          "page_49CYqg": {
+            "type": "page",
+            "settings": {
+              "page": "press-and-news",
+              "image": "shopify://shop_images/Rectangle_40_42e0348e-51db-4ec9-90ec-150ccf08fdd9.jpg"
+            }
+          },
           "label_H6ezX7": {
             "type": "label",
             "settings": {
@@ -133,27 +154,6 @@
             "settings": {
               "page": "seeds",
               "image": "shopify://shop_images/Seed-Drying-Methods-3.jpg"
-            }
-          },
-          "label_wVxYGh": {
-            "type": "label",
-            "settings": {
-              "label": "Blog",
-              "color": ""
-            }
-          },
-          "page_iNejhy": {
-            "type": "page",
-            "settings": {
-              "page": "the-inside-look",
-              "image": "shopify://shop_images/z5782283536010_373d67726a174e651d94fe4ec9f03cbf.jpg"
-            }
-          },
-          "page_49CYqg": {
-            "type": "page",
-            "settings": {
-              "page": "press-and-news",
-              "image": "shopify://shop_images/Rectangle_40_42e0348e-51db-4ec9-90ec-150ccf08fdd9.jpg"
             }
           },
           "74b22fdc-0b59-413a-b25b-92f994bab3a9": {
@@ -191,14 +191,14 @@
           "page_BAaH9C",
           "181b4f14-5ca5-4e65-8d3f-9747470e412d",
           "e58fd043-68a5-401e-8b7b-7143691d9a3f",
+          "label_wVxYGh",
+          "page_iNejhy",
+          "page_49CYqg",
           "label_H6ezX7",
           "page_9DW89G",
           "page_9ch7K6",
           "page_yLWjNM",
           "page_CDdUVn",
-          "label_wVxYGh",
-          "page_iNejhy",
-          "page_49CYqg",
           "74b22fdc-0b59-413a-b25b-92f994bab3a9",
           "link_gixage",
           "f537cb93-a2e6-4b92-b5fe-d43941dc8f93"
