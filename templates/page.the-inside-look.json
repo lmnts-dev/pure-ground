@@ -12,13 +12,6 @@
     "1645488674b1f1a56b": {
       "type": "sub-navigation",
       "blocks": {
-        "6306711e-e412-4cfc-8c26-439da8c25027": {
-          "type": "link",
-          "settings": {
-            "label": "All Resources",
-            "link": "shopify://pages/resources"
-          }
-        },
         "99613ba6-4a93-4210-8756-93cf3484f4c3": {
           "type": "link",
           "settings": {
@@ -35,10 +28,10 @@
         }
       },
       "block_order": [
-        "6306711e-e412-4cfc-8c26-439da8c25027",
         "99613ba6-4a93-4210-8756-93cf3484f4c3",
         "1df92e6a-f91d-4489-a472-9acbcd16ca9c"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "sky"
       }
@@ -49,7 +42,7 @@
         "16609416342d0014aa-0": {
           "type": "heading",
           "settings": {
-            "heading": "Pure Ground For Unity",
+            "heading": "The Inside Look",
             "heading_size": "h2",
             "heading_alignment": "center",
             "subheading": ""
@@ -58,7 +51,7 @@
         "16609416342d0014aa-1": {
           "type": "text",
           "settings": {
-            "text": "<p>At Pure Ground, we’re all about making positive change, within ourselves, our communities and  for our planet.  See how we’re implementing our value system inside & outside.</p>",
+            "text": "<p>At Pure Ground, every spice tells a story.  See how we honor each ingredients origin with care, precision and uncompromising standards for quality safety and flavor.</p>",
             "text_size": "default"
           }
         }
@@ -68,21 +61,15 @@
         "16609416342d0014aa-1"
       ],
       "settings": {
-        "color_scheme": "cream",
+        "color_scheme": "grass",
         "hero": false,
         "top_spacing": 50,
-        "bottom_spacing": 50
+        "bottom_spacing": 20
       }
     },
     "1645466577d7fad930": {
       "type": "recent-articles",
       "blocks": {
-        "9a09bbc2-9007-4141-99ee-cc95e8512bee": {
-          "type": "blog",
-          "settings": {
-            "blog": "news"
-          }
-        },
         "b9ef49bb-a21a-4911-b988-76b8703cea55": {
           "type": "blog",
           "settings": {
@@ -91,34 +78,25 @@
         }
       },
       "block_order": [
-        "9a09bbc2-9007-4141-99ee-cc95e8512bee",
         "b9ef49bb-a21a-4911-b988-76b8703cea55"
       ],
       "settings": {
-        "article": "",
+        "article": "guides/sugar",
         "color_scheme": "cream",
         "top_spacing": 50,
         "bottom_spacing": 0
       }
     },
-    "16444369586030090c": {
-      "type": "blog-listings",
+    "featured_page_link_9nQh4r": {
+      "type": "featured-page-link",
+      "name": "Featured Page Link",
       "settings": {
-        "blog": "guides",
-        "image": "shopify://shop_images/ingredients_9e1eb5cc-a0c9-4b7f-a2f9-feeefd322b99.jpg",
+        "page_link": "",
+        "image": "shopify://shop_images/WhatsApp_Image_2025-09-30_at_7.17.55_PM.jpg",
+        "alt": "",
         "color_scheme": "cream",
-        "top_spacing": 50,
-        "bottom_spacing": 50
-      }
-    },
-    "164443697608885640": {
-      "type": "blog-listings",
-      "settings": {
-        "blog": "news",
-        "image": "shopify://shop_images/unsplash_EAt30ojfzOI.jpg",
-        "color_scheme": "cream",
-        "top_spacing": 50,
-        "bottom_spacing": 50
+        "top_spacing": 0,
+        "bottom_spacing": 0
       }
     }
   },
@@ -126,7 +104,6 @@
     "1645488674b1f1a56b",
     "1660941634edabbc71",
     "1645466577d7fad930",
-    "16444369586030090c",
-    "164443697608885640"
+    "featured_page_link_9nQh4r"
   ]
 }

@@ -18,13 +18,44 @@
         "bottom_spacing": 50
       }
     },
+    "content_with_bg_image_Ay7EVb": {
+      "type": "content-with-bg-image",
+      "blocks": {
+        "subheading_E4LFaE": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "The Ground Truth Blog"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_E4LFaE"
+      ],
+      "name": "Content with Bg Image",
+      "settings": {
+        "text_color": "light",
+        "nav_color": true,
+        "image": "shopify://shop_images/landscape_of_trees.jpg",
+        "alt": "",
+        "overlay": 20,
+        "hero": false,
+        "fullwidth": true,
+        "accent_color": false,
+        "alignment": "center",
+        "color_scheme": "dark-cream",
+        "top_spacing": 0,
+        "bottom_spacing": 0,
+        "top_internal_spacing": 100,
+        "bottom_internal_spacing": 40
+      }
+    },
     "1646172411638785bf": {
       "type": "sub-navigation",
       "blocks": {
         "3534994c-a512-4db7-bc8b-4fd11c47a9f4": {
           "type": "link",
           "settings": {
-            "label": "Ingredient Guides",
+            "label": "The Inside Look",
             "link": "shopify://blogs/guides"
           }
         },
@@ -65,12 +96,24 @@
         "top_spacing": 50,
         "bottom_spacing": 50
       }
+    },
+    "recent_articles_7LKWYb": {
+      "type": "recent-articles",
+      "name": "Recent Articles",
+      "settings": {
+        "article": "guides/tarragon",
+        "color_scheme": "cream",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
     }
   },
   "order": [
     "main",
+    "content_with_bg_image_Ay7EVb",
     "1646172411638785bf",
     "blog_listings_Ryk3HQ",
-    "blog_listings_Kftakn"
+    "blog_listings_Kftakn",
+    "recent_articles_7LKWYb"
   ]
 }
