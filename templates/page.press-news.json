@@ -1,0 +1,109 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1645488674b1f1a56b": {
+      "type": "sub-navigation",
+      "blocks": {
+        "99613ba6-4a93-4210-8756-93cf3484f4c3": {
+          "type": "link",
+          "settings": {
+            "label": "Ingredient Guides",
+            "link": "shopify://blogs/guides"
+          }
+        },
+        "1df92e6a-f91d-4489-a472-9acbcd16ca9c": {
+          "type": "link",
+          "settings": {
+            "label": "Press & News",
+            "link": "shopify://blogs/news"
+          }
+        }
+      },
+      "block_order": [
+        "99613ba6-4a93-4210-8756-93cf3484f4c3",
+        "1df92e6a-f91d-4489-a472-9acbcd16ca9c"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "sky"
+      }
+    },
+    "1660941634edabbc71": {
+      "type": "rich-text",
+      "blocks": {
+        "16609416342d0014aa-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "The Inside Look",
+            "heading_size": "h2",
+            "heading_alignment": "center",
+            "subheading": ""
+          }
+        },
+        "16609416342d0014aa-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At Pure Ground, every spice tells a story.  See how we honor each ingredients origin with care, precision and uncompromising standards for quality safety and flavor.</p>",
+            "text_size": "default"
+          }
+        }
+      },
+      "block_order": [
+        "16609416342d0014aa-0",
+        "16609416342d0014aa-1"
+      ],
+      "settings": {
+        "color_scheme": "grass",
+        "hero": false,
+        "top_spacing": 50,
+        "bottom_spacing": 20
+      }
+    },
+    "1645466577d7fad930": {
+      "type": "recent-articles",
+      "blocks": {
+        "b9ef49bb-a21a-4911-b988-76b8703cea55": {
+          "type": "blog",
+          "settings": {
+            "blog": "guides"
+          }
+        }
+      },
+      "block_order": [
+        "b9ef49bb-a21a-4911-b988-76b8703cea55"
+      ],
+      "settings": {
+        "article": "guides/sugar",
+        "color_scheme": "cream",
+        "top_spacing": 50,
+        "bottom_spacing": 0
+      }
+    },
+    "featured_page_link_9nQh4r": {
+      "type": "featured-page-link",
+      "name": "Featured Page Link",
+      "settings": {
+        "page_link": "",
+        "image": "shopify://shop_images/WhatsApp_Image_2025-09-30_at_7.17.55_PM.jpg",
+        "alt": "",
+        "color_scheme": "cream",
+        "top_spacing": 0,
+        "bottom_spacing": 0
+      }
+    }
+  },
+  "order": [
+    "1645488674b1f1a56b",
+    "1660941634edabbc71",
+    "1645466577d7fad930",
+    "featured_page_link_9nQh4r"
+  ]
+}
