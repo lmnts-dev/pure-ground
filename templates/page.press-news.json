@@ -36,6 +36,26 @@
         "color_scheme": "sky"
       }
     },
+    "content_with_bg_image_dKyAjN": {
+      "type": "content-with-bg-image",
+      "name": "Content with Bg Image",
+      "settings": {
+        "text_color": "light",
+        "nav_color": true,
+        "image": "shopify://shop_images/2018-08-21_17.54_1_ac102e6d-db8e-455f-a14d-4b8bfa316844.jpg",
+        "alt": "",
+        "overlay": 30,
+        "hero": false,
+        "fullwidth": true,
+        "accent_color": false,
+        "alignment": "left",
+        "color_scheme": "cream",
+        "top_spacing": 0,
+        "bottom_spacing": 0,
+        "top_internal_spacing": 170,
+        "bottom_internal_spacing": 80
+      }
+    },
     "1660941634edabbc71": {
       "type": "rich-text",
       "blocks": {
@@ -63,7 +83,7 @@
       "settings": {
         "color_scheme": "grass",
         "hero": false,
-        "top_spacing": 50,
+        "top_spacing": 20,
         "bottom_spacing": 20
       }
     },
@@ -84,7 +104,17 @@
         "article": "news/2019-pioneer-award-winners",
         "color_scheme": "cream",
         "top_spacing": 50,
-        "bottom_spacing": 0
+        "bottom_spacing": 30
+      }
+    },
+    "divider_kDUtKc": {
+      "type": "divider",
+      "name": "Divider",
+      "settings": {
+        "style": "dots",
+        "color_scheme": "cream",
+        "top_spacing": 50,
+        "bottom_spacing": 50
       }
     },
     "featured_page_link_9nQh4r": {
@@ -102,8 +132,10 @@
   },
   "order": [
     "1645488674b1f1a56b",
+    "content_with_bg_image_dKyAjN",
     "1660941634edabbc71",
     "1645466577d7fad930",
+    "divider_kDUtKc",
     "featured_page_link_9nQh4r"
   ]
 }
