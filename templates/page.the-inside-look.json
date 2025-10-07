@@ -87,6 +87,16 @@
         "bottom_spacing": 0
       }
     },
+    "divider_i8jPBd": {
+      "type": "divider",
+      "name": "Divider",
+      "settings": {
+        "style": "dots",
+        "color_scheme": "cream",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
+    },
     "1645466577d7fad930": {
       "type": "recent-articles",
       "blocks": {
@@ -111,10 +121,10 @@
       "type": "divider",
       "name": "Divider",
       "settings": {
-        "style": "dots",
+        "style": "grass",
         "color_scheme": "cream",
         "top_spacing": 50,
-        "bottom_spacing": 50
+        "bottom_spacing": 20
       }
     },
     "featured_page_link_9nQh4r": {
@@ -134,6 +144,7 @@
     "1645488674b1f1a56b",
     "content_with_bg_image_GwLcxc",
     "1660941634edabbc71",
+    "divider_i8jPBd",
     "1645466577d7fad930",
     "divider_t9qbTH",
     "featured_page_link_9nQh4r"
