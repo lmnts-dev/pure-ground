@@ -87,6 +87,16 @@
         "bottom_spacing": 20
       }
     },
+    "divider_M3VQwE": {
+      "type": "divider",
+      "name": "Divider",
+      "settings": {
+        "style": "dots",
+        "color_scheme": "cream",
+        "top_spacing": 50,
+        "bottom_spacing": 50
+      }
+    },
     "1645466577d7fad930": {
       "type": "recent-articles",
       "blocks": {
@@ -111,10 +121,10 @@
       "type": "divider",
       "name": "Divider",
       "settings": {
-        "style": "dots",
+        "style": "grass",
         "color_scheme": "cream",
         "top_spacing": 50,
-        "bottom_spacing": 50
+        "bottom_spacing": 20
       }
     },
     "featured_page_link_9nQh4r": {
@@ -127,16 +137,6 @@
         "color_scheme": "cream",
         "top_spacing": 0,
         "bottom_spacing": 0
-      }
-    },
-    "divider_M3VQwE": {
-      "type": "divider",
-      "name": "Divider",
-      "settings": {
-        "style": "dots",
-        "color_scheme": "cream",
-        "top_spacing": 50,
-        "bottom_spacing": 50
       }
     }
   },
