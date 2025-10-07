@@ -91,7 +91,7 @@
       "type": "featured-page-link",
       "name": "Featured Page Link",
       "settings": {
-        "page_link": "",
+        "page_link": "press-and-news",
         "image": "shopify://shop_images/WhatsApp_Image_2025-09-30_at_7.17.55_PM.jpg",
         "alt": "",
         "color_scheme": "cream",
