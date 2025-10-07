@@ -36,6 +36,26 @@
         "color_scheme": "sky"
       }
     },
+    "content_with_bg_image_GwLcxc": {
+      "type": "content-with-bg-image",
+      "name": "Content with Bg Image",
+      "settings": {
+        "text_color": "light",
+        "nav_color": true,
+        "image": "shopify://shop_images/turkey_tarragon_team_2025.jpg",
+        "alt": "",
+        "overlay": 30,
+        "hero": false,
+        "fullwidth": true,
+        "accent_color": false,
+        "alignment": "left",
+        "color_scheme": "cream",
+        "top_spacing": 0,
+        "bottom_spacing": 0,
+        "top_internal_spacing": 250,
+        "bottom_internal_spacing": 140
+      }
+    },
     "1660941634edabbc71": {
       "type": "rich-text",
       "blocks": {
@@ -61,10 +81,20 @@
         "16609416342d0014aa-1"
       ],
       "settings": {
-        "color_scheme": "grass",
+        "color_scheme": "tan",
         "hero": false,
-        "top_spacing": 50,
+        "top_spacing": 20,
         "bottom_spacing": 20
+      }
+    },
+    "divider_t9qbTH": {
+      "type": "divider",
+      "name": "Divider",
+      "settings": {
+        "style": "dots",
+        "color_scheme": "tan",
+        "top_spacing": 50,
+        "bottom_spacing": 50
       }
     },
     "1645466577d7fad930": {
@@ -81,10 +111,10 @@
         "b9ef49bb-a21a-4911-b988-76b8703cea55"
       ],
       "settings": {
-        "article": "guides/sugar",
-        "color_scheme": "cream",
+        "article": "guides/tarragon",
+        "color_scheme": "tan",
         "top_spacing": 50,
-        "bottom_spacing": 0
+        "bottom_spacing": 30
       }
     },
     "featured_page_link_9nQh4r": {
@@ -102,7 +132,9 @@
   },
   "order": [
     "1645488674b1f1a56b",
+    "content_with_bg_image_GwLcxc",
     "1660941634edabbc71",
+    "divider_t9qbTH",
     "1645466577d7fad930",
     "featured_page_link_9nQh4r"
   ]
