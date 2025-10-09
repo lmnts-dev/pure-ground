@@ -54,7 +54,7 @@
         "text_RqgbYT": {
           "type": "text",
           "settings": {
-            "heading": "Organic Products",
+            "heading": "Organic Products List",
             "content": "",
             "button_label": "Download PDF",
             "button_link": "https://cdn.shopify.com/s/files/1/0562/9486/6967/files/Pure_Ground_Organic_Ingredient_List.pdf?v=1665592801",
@@ -79,7 +79,7 @@
       "name": "Bi-Column Text Blocks",
       "settings": {
         "heading": "",
-        "subheading": "Download A PDF Version of Our Product List",
+        "subheading": "Explore our collection of certified organic botanical herbs, roots, and flowers — sustainably sourced and carefully processed for purity and potency. From herbal teas to natural formulations, Pure Ground Ingredients offers bulk botanicals you can trust for quality and consistency.",
         "color_scheme": "dark-cream",
         "top_spacing": 20,
         "bottom_spacing": 0
