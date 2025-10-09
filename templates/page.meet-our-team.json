@@ -140,6 +140,38 @@
         "bottom_spacing": 50
       }
     },
+    "rich_text_Hgg3Nr": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_acUgc4": {
+          "type": "heading",
+          "settings": {
+            "heading": "Contact Us",
+            "heading_size": "h3",
+            "heading_alignment": "center",
+            "subheading": ""
+          }
+        },
+        "text_dBFfwQ": {
+          "type": "text",
+          "settings": {
+            "text": "<p></p><p><strong>Nancy Nguyen-</strong> nancy@puregroundingredients.com</p><p><strong>Don Kempf-</strong> don@puregroundingredients.com</p><p><strong>Brittany Mackey</strong> - Bmackey@puregroundingredients.com</p><p><strong>Chavonne Sales - </strong>csales@puregroundingredients.com</p>",
+            "text_size": "default"
+          }
+        }
+      },
+      "block_order": [
+        "heading_acUgc4",
+        "text_dBFfwQ"
+      ],
+      "name": "Rich Text",
+      "settings": {
+        "color_scheme": "cream",
+        "hero": false,
+        "top_spacing": 30,
+        "bottom_spacing": 50
+      }
+    },
     "content_slider_cyAit7": {
       "type": "content-slider",
       "blocks": {
@@ -471,6 +503,7 @@
     "image_grid_WrgNaL",
     "rich_text_kV3CHi",
     "image_grid_WULGeB",
+    "rich_text_Hgg3Nr",
     "content_slider_cyAit7",
     "divider_j7qp9A",
     "rich_text_wmfdYD",
