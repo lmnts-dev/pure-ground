@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -25,7 +34,7 @@
       "settings": {
         "text_color": "light",
         "nav_color": true,
-        "image": "shopify:\/\/shop_images\/unsplash_3D43SBDDkAc_ae135df5-6dd9-4c4e-966a-7cf2ff86b9cf.jpg",
+        "image": "shopify://shop_images/unsplash_3D43SBDDkAc_ae135df5-6dd9-4c4e-966a-7cf2ff86b9cf.jpg",
         "alt": "",
         "overlay": 30,
         "hero": true,
@@ -54,7 +63,7 @@
         "16643010277fef7de6-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Your needs and specifications are met at our state of the art facility. We offer an array of processing and treatment options to provide organic ingredients that meet your business needs. <\/p>",
+            "text": "<p>Your needs and specifications are met at our state of the art facility. We offer an array of processing and treatment options to provide organic ingredients that meet your business needs. </p>",
             "text_size": "p-lg"
           }
         }
@@ -77,7 +86,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Product Development",
-            "content": "<p>Launching a new line? From ingredient sourcing to custom packaging we have you covered. <\/p>",
+            "content": "<p>Launching a new product line? From <strong>organic ingredient sourcing to custom packaging and processing</strong>, we provide end-to-end solutions to bring your creations to market.</p>",
             "category": "General"
           }
         },
@@ -85,7 +94,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Blending",
-            "content": "<p>We've been in this business a while and so have our blend masters. Send us your blend and we will be happy to match it.  Looking to develop a new flavor profile? Our team is legendary on the development of  flavorful, nicely textured & colored culinary, tea & herbal blends. <\/p>",
+            "content": "<p>We've been in this business a while and so have our blend masters. Send us your blend and we will be happy to match it.  Looking to develop a new flavor profile? <br/> From <strong>culinary spices to tea and herbal blends</strong>, our team specializes in creating <strong>flavorful, well-balanced, and visually appealing products</strong> tailored to your specifications.</p>",
             "category": "General"
           }
         },
@@ -93,7 +102,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Ingredient Cleaning",
-            "content": "<p>In order to deliver clean goods, we designed our production lines with separation capabilities that insure removal of impurities and foreign objects. Your product will and pass numerous safety steps and metal check before final packaging.<\/p>",
+            "content": "<p>To ensure the highest quality, our production lines are designed with <strong>advanced separation systems</strong> that remove impurities and foreign objects. Each product undergoes <strong>rigorous safety checks, including metal detection</strong>, before final packaging, guaranteeing clean, reliable, and safe ingredients.<br/></p>",
             "category": "General"
           }
         },
@@ -101,7 +110,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Roasting",
-            "content": "<p>Like your Garlic roasted? Our in house, smokeless roasting technology allows us to create different flavors. Roasted items include Chicory, Marshmallow, Dandelion, Chiles, Paprika, Carob and Garlic.<\/p>",
+            "content": "<p>Like your Garlic roasted? Our in house, smokeless roasting technology allows us to create a variety of different flavors. Roasted ingredients include Chicory, Marshmallow, Dandelion, Chiles, Paprika, Carob and Garlic all carefully processed for maximum taste and quality.</p>",
             "category": "General"
           }
         },
@@ -109,7 +118,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Private Labeling",
-            "content": "<p>When you need to let your company shine, ask us to package with your own labels. Our quality organic ingredients can arrive at your warehouse with your own labeling, ready to be sold under your name. White labeling is also available upon request.<\/p>",
+            "content": "<p>Make your brand stand out with <strong>custom-labeled packaging</strong> from Pure Ground Ingredients. Our <strong>high-quality organic ingredients</strong> can be delivered directly to your warehouse with your labels, ready for sale. <strong>White labeling</strong> is also available upon request to simplify your product launch.</p>",
             "category": "General"
           }
         },
@@ -117,7 +126,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Co-Packaging",
-            "content": "<p>We offer private label services, offering a variety of industries with multiple packaging options.  Whether you are looking to pack single ingredients or blends, we are happy to be growing this aspect of our service offering. <\/p>",
+            "content": "<p>We provide <strong>private label services</strong> with a variety of packaging options to suit multiple industries. Whether you’re packaging <strong>single ingredients or custom blends</strong>, we are proud to support the growth of your brand with high-quality, ready-to-sell products.<br/></p>",
             "category": "General"
           }
         },
@@ -125,7 +134,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Ingredient Sourcing",
-            "content": "<p>We consider our decades of experience in global sourcing our expertise. We pride ourselves in our robust network and have fostered long term relationships to deliver multi origin sourced ingredients. We know our producers and how to provide  quality you need at a competitive price. Fair Trade, Fair for Life, Rainforest Alliance, Fair Wilde, Regenerative, Impact Driven, we've got you covered. If there's an ingredient that isn't on our list, don't hesitate to ask.<\/p>",
+            "content": "<p>We consider our decades of experience in global sourcing our expertise. We pride ourselves in our robust network and have fostered long term relationships to deliver multi origin sourced ingredients. We know our producers and how to provide  quality you need at a competitive price. Fair Trade, Fair for Life, Rainforest Alliance, Fair Wilde, Regenerative, Impact Driven, we've got you covered. If there's an ingredient that isn't on our list, don't hesitate to ask.</p>",
             "category": "General"
           }
         },
@@ -133,7 +142,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Micro Reduction",
-            "content": "<p>All of our organic ingredients are treated using our 3rd party validated 5 log Micro-Reduction system ensuring your product is pathogen free. Using a state of the art infrared system, there is no color deterioration and less impact on essential oils resulting in better flavor profile and optimal color results.<\/p>",
+            "content": "<p>All of our organic ingredients are treated using our 3rd party validated 5 log Micro-Reduction system ensuring your product is pathogen free. Our state-of-the-art <strong>infrared technology</strong> preserves natural color and essential oils, resulting in a superior <strong>flavor profile</strong> and optimal visual quality.<br/><br/></p>",
             "category": "General"
           }
         },
@@ -141,7 +150,7 @@
           "type": "accordion",
           "settings": {
             "heading": "Metal Detection",
-            "content": "<p>All goods go through a NIST certified and FDA approved Gravity detector. Additionally all mills and processing machinery are fitted with industrial strength magnets. Sifting at multiple production steps further insures absolute purity of your ingredients.<\/p>",
+            "content": "<p>All goods go through a NIST certified and FDA approved Gravity detector. Additionally all mills and processing machinery are fitted with industrial strength magnets. Sifting at multiple production steps further insures absolute purity of your ingredients.</p>",
             "category": "General"
           }
         }
