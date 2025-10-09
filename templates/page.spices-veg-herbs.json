@@ -55,7 +55,7 @@
         "text_PEiXbU": {
           "type": "text",
           "settings": {
-            "heading": "Organic Products",
+            "heading": "Organic Products List",
             "content": "",
             "button_label": "Download PDF",
             "button_link": "https://cdn.shopify.com/s/files/1/0562/9486/6967/files/Pure_Ground_Organic_Ingredient_List.pdf?v=1665592801",
@@ -80,7 +80,7 @@
       "name": "Bi-Column Text Blocks",
       "settings": {
         "heading": "",
-        "subheading": "Download a PDF Version of our Product List",
+        "subheading": "Pure Ground Ingredients provides premium organic culinary spices, vegetables, and herbs grown and processed to the highest standards. Our bulk ingredients deliver unmatched flavor, color, and aroma — perfect for seasoning blends, soups, sauces, and gourmet recipes.",
         "color_scheme": "dark-cream",
         "top_spacing": 10,
         "bottom_spacing": 20
