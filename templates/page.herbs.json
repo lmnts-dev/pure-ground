@@ -55,7 +55,7 @@
         "text_PEiXbU": {
           "type": "text",
           "settings": {
-            "heading": "Organic Products",
+            "heading": "Organic Product List",
             "content": "",
             "button_label": "Download PDF",
             "button_link": "https://cdn.shopify.com/s/files/1/0562/9486/6967/files/Pure_Ground_Organic_Ingredient_List.pdf?v=1665592801",
@@ -80,9 +80,9 @@
       "name": "Bi-Column Text Blocks",
       "settings": {
         "heading": "",
-        "subheading": "Download a PDF Version of our Product List",
+        "subheading": "We offer  a diverse selection of certified organic seeds, sustainably sourced and carefully processed for freshness and purity. Our seeds are ideal for culinary use, spice blends, and wellness formulations, delivering consistent flavor and nutrition.",
         "color_scheme": "dark-cream",
-        "top_spacing": 10,
+        "top_spacing": 40,
         "bottom_spacing": 20
       }
     },
@@ -145,24 +145,6 @@
             "image_width": "third"
           }
         },
-        "image_6hxA74": {
-          "type": "image",
-          "settings": {
-            "image_width": "third"
-          }
-        },
-        "image_ixR676": {
-          "type": "image",
-          "settings": {
-            "image_width": "third"
-          }
-        },
-        "image_WELU3D": {
-          "type": "image",
-          "settings": {
-            "image_width": "third"
-          }
-        },
         "image_eMndDw": {
           "type": "image",
           "settings": {
@@ -180,9 +162,6 @@
         "image_VxUH4y",
         "image_Wczqxz",
         "image_pxVUaV",
-        "image_6hxA74",
-        "image_ixR676",
-        "image_WELU3D",
         "image_eMndDw"
       ],
       "name": "Image Grid",
