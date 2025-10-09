@@ -29,7 +29,7 @@
         "c03f8710-4d17-4f09-abe7-9c38351b138f": {
           "type": "text",
           "settings": {
-            "text": "<p>Pure Ground Ingredients raises the bar in sustainable sourcing & impact driven ingredients</p>"
+            "text": "<p>Pure Ground Ingredients raises the bar in sustainable sourcing & impact driven organic ingredients</p>"
           }
         },
         "98e4e98c-6256-4af7-8682-879282cdcf70": {
@@ -111,7 +111,7 @@
         "16630167897136c143-0": {
           "type": "heading",
           "settings": {
-            "heading": "Bridging the gap between organic farmers and manufacturers to bring you the best in organic ingredients",
+            "heading": "Bridging the gap between organic farmers and manufacturers we deliver the highest-quality organic herbs, spices, roots and botanicals straight to your business.",
             "heading_size": "h2",
             "heading_alignment": "center",
             "subheading": ""
@@ -124,7 +124,7 @@
       "settings": {
         "color_scheme": "sky",
         "hero": false,
-        "top_spacing": 30,
+        "top_spacing": 20,
         "bottom_spacing": 20
       }
     },
@@ -287,13 +287,6 @@
             "text": ""
           }
         },
-        "8e825935-d057-429a-91f4-efe3a10e7214": {
-          "type": "image",
-          "settings": {
-            "icon": "shopify://shop_images/starbucks.png",
-            "text": ""
-          }
-        },
         "416f6098-bcd9-4b16-91c6-528eb62dd1a9": {
           "type": "image",
           "settings": {
@@ -360,7 +353,6 @@
       },
       "block_order": [
         "404e2d8c-7c3e-4ed5-9c81-6bc70d508fe1",
-        "8e825935-d057-429a-91f4-efe3a10e7214",
         "416f6098-bcd9-4b16-91c6-528eb62dd1a9",
         "f84030d3-3ef8-42fa-9cc4-353a1c6c9ce5",
         "434eff37-59fb-483a-9138-de05e40b778f",
@@ -550,7 +542,7 @@
         "subheading": "Ingredients just the way you want them",
         "heading_size": "h1",
         "accent_color": true,
-        "text": "<p>We import the whole organic ingredients and do in house micro-reduction and processing to meet a wide range of specs. </p>",
+        "text": "<p><br/>Pure Ground Ingredients imports whole organic ingredients and handles the <strong>micro-reduction, milling, and processing in-house</strong>, ensuring consistent quality, flavor, and specification compliance.<br/></p>",
         "button_label": "Learn More",
         "button_link": "shopify://pages/processing",
         "image": "shopify://shop_images/unsplash_pBwMdofMxtU_928eb7d0-5768-4a73-98fc-3ddd5481da44.jpg",
